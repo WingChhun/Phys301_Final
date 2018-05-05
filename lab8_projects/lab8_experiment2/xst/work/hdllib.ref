@@ -1,0 +1,6 @@
+EN dcm_50m NULL C:/Users/James/Documents/Xlink_projects/swag/DCM_50M.vhd sub00/vhpl00 1522169111
+EN lab8_experiment2 NULL C:/Users/James/Documents/Xlink_projects/lab8_projects/lab8_experiment2/lab8_experiment2.vhf sub00/vhpl04 1522169115
+EN fjkc_mxilinx_lab8_experiment2 NULL C:/Users/James/Documents/Xlink_projects/lab8_projects/lab8_experiment2/lab8_experiment2.vhf sub00/vhpl02 1522169113
+AR fjkc_mxilinx_lab8_experiment2 behavioral C:/Users/James/Documents/Xlink_projects/lab8_projects/lab8_experiment2/lab8_experiment2.vhf sub00/vhpl03 1522169114
+AR lab8_experiment2 behavioral C:/Users/James/Documents/Xlink_projects/lab8_projects/lab8_experiment2/lab8_experiment2.vhf sub00/vhpl05 1522169116
+AR dcm_50m behavioral C:/Users/James/Documents/Xlink_projects/swag/DCM_50M.vhd sub00/vhpl01 1522169112

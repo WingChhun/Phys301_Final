@@ -1,0 +1,33 @@
+xst -intstyle ise -ifn "C:/Users/James/Documents/Xlink_projects/lab7_projects/lab7_projects/lab7_shiftreg4.xst" -ofn "C:/Users/James/Documents/Xlink_projects/lab7_projects/lab7_projects/lab7_shiftreg4.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab7_shiftreg4.ucf -p xc3s100e-cp132-4 lab7_shiftreg4.ngc lab7_shiftreg4.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o lab7_shiftreg4_map.ncd lab7_shiftreg4.ngd lab7_shiftreg4.pcf 
+par -w -intstyle ise -ol high -t 1 lab7_shiftreg4_map.ncd lab7_shiftreg4.ncd lab7_shiftreg4.pcf 
+xst -intstyle ise -ifn "C:/Users/James/Documents/Xlink_projects/lab7_projects/lab7_projects/lab7_shiftreg4.xst" -ofn "C:/Users/James/Documents/Xlink_projects/lab7_projects/lab7_projects/lab7_shiftreg4.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab7_shiftreg4.ucf -p xc3s100e-cp132-4 lab7_shiftreg4.ngc lab7_shiftreg4.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o lab7_shiftreg4_map.ncd lab7_shiftreg4.ngd lab7_shiftreg4.pcf 
+par -w -intstyle ise -ol high -t 1 lab7_shiftreg4_map.ncd lab7_shiftreg4.ncd lab7_shiftreg4.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab7_shiftreg4.ucf -p xc3s100e-cp132-4 lab7_shiftreg4.ngc lab7_shiftreg4.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o lab7_shiftreg4_map.ncd lab7_shiftreg4.ngd lab7_shiftreg4.pcf 
+par -w -intstyle ise -ol high -t 1 lab7_shiftreg4_map.ncd lab7_shiftreg4.ncd lab7_shiftreg4.pcf 
+xst -intstyle ise -ifn "C:/Users/James/Documents/Xlink_projects/lab7_projects/lab7_projects/lab7_shiftreg4.xst" -ofn "C:/Users/James/Documents/Xlink_projects/lab7_projects/lab7_projects/lab7_shiftreg4.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab7_shiftreg4.ucf -p xc3s100e-cp132-4 lab7_shiftreg4.ngc lab7_shiftreg4.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o lab7_shiftreg4_map.ncd lab7_shiftreg4.ngd lab7_shiftreg4.pcf 
+par -w -intstyle ise -ol high -t 1 lab7_shiftreg4_map.ncd lab7_shiftreg4.ncd lab7_shiftreg4.pcf 
+xst -intstyle ise -ifn "C:/Users/James/Documents/Xlink_projects/lab7_projects/lab7_projects/lab7_shiftreg4.xst" -ofn "C:/Users/James/Documents/Xlink_projects/lab7_projects/lab7_projects/lab7_shiftreg4.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab7_shiftreg4.ucf -p xc3s100e-cp132-4 lab7_shiftreg4.ngc lab7_shiftreg4.ngd  
+xst -intstyle ise -ifn "C:/Users/James/Documents/Xlink_projects/lab7_projects/lab7_projects/lab7_shiftreg4.xst" -ofn "C:/Users/James/Documents/Xlink_projects/lab7_projects/lab7_projects/lab7_shiftreg4.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab7_shiftreg4.ucf -p xc3s100e-cp132-4 lab7_shiftreg4.ngc lab7_shiftreg4.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o lab7_shiftreg4_map.ncd lab7_shiftreg4.ngd lab7_shiftreg4.pcf 
+par -w -intstyle ise -ol high -t 1 lab7_shiftreg4_map.ncd lab7_shiftreg4.ncd lab7_shiftreg4.pcf 
+xst -intstyle ise -ifn "C:/Users/James/Documents/Xlink_projects/lab7_projects/lab7_projects/lab7_shiftreg4.xst" -ofn "C:/Users/James/Documents/Xlink_projects/lab7_projects/lab7_projects/lab7_shiftreg4.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab7_shiftreg4.ucf -p xc3s100e-cp132-4 lab7_shiftreg4.ngc lab7_shiftreg4.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o lab7_shiftreg4_map.ncd lab7_shiftreg4.ngd lab7_shiftreg4.pcf 
+par -w -intstyle ise -ol high -t 1 lab7_shiftreg4_map.ncd lab7_shiftreg4.ncd lab7_shiftreg4.pcf 
+xst -intstyle ise -ifn "C:/Users/James/Documents/Xlink_projects/lab7_projects/lab7_projects/lab7_shiftreg4.xst" -ofn "C:/Users/James/Documents/Xlink_projects/lab7_projects/lab7_projects/lab7_shiftreg4.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab7_shiftreg4.ucf -p xc3s100e-cp132-4 lab7_shiftreg4.ngc lab7_shiftreg4.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o lab7_shiftreg4_map.ncd lab7_shiftreg4.ngd lab7_shiftreg4.pcf 
+par -w -intstyle ise -ol high -t 1 lab7_shiftreg4_map.ncd lab7_shiftreg4.ncd lab7_shiftreg4.pcf 
+xst -intstyle ise -ifn "C:/Users/James/Documents/Xlink_projects/lab7_projects/lab7_projects/lab7_shiftreg4.xst" -ofn "C:/Users/James/Documents/Xlink_projects/lab7_projects/lab7_projects/lab7_shiftreg4.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab7_shiftreg4.ucf -p xc3s100e-cp132-4 lab7_shiftreg4.ngc lab7_shiftreg4.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o lab7_shiftreg4_map.ncd lab7_shiftreg4.ngd lab7_shiftreg4.pcf 
+par -w -intstyle ise -ol high -t 1 lab7_shiftreg4_map.ncd lab7_shiftreg4.ncd lab7_shiftreg4.pcf 

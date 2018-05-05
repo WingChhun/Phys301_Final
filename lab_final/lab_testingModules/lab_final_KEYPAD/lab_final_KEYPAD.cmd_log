@@ -1,0 +1,74 @@
+xst -intstyle ise -ifn "C:/Users/James/Documents/Xlink_projects/lab_final/lab_testingModules/lab_final_KEYPAD/lab_final_KEYPAD.xst" -ofn "C:/Users/James/Documents/Xlink_projects/lab_final/lab_testingModules/lab_final_KEYPAD/lab_final_KEYPAD.syr" 
+xst -intstyle ise -ifn "C:/Users/James/Documents/Xlink_projects/lab_final/lab_testingModules/lab_final_KEYPAD/lab_final_KEYPAD.xst" -ofn "C:/Users/James/Documents/Xlink_projects/lab_final/lab_testingModules/lab_final_KEYPAD/lab_final_KEYPAD.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab_final_KEYPAD.ucf -p xc3s100e-cp132-4 lab_final_KEYPAD.ngc lab_final_KEYPAD.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o lab_final_KEYPAD_map.ncd lab_final_KEYPAD.ngd lab_final_KEYPAD.pcf 
+par -w -intstyle ise -ol high -t 1 lab_final_KEYPAD_map.ncd lab_final_KEYPAD.ncd lab_final_KEYPAD.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml lab_final_KEYPAD.twx lab_final_KEYPAD.ncd -o lab_final_KEYPAD.twr lab_final_KEYPAD.pcf -ucf lab_final_KEYPAD.ucf 
+bitgen -intstyle ise -f lab_final_KEYPAD.ut lab_final_KEYPAD.ncd 
+xst -intstyle ise -ifn "C:/Users/James/Documents/Xlink_projects/lab_final/lab_testingModules/lab_final_KEYPAD/lab_final_KEYPAD.xst" -ofn "C:/Users/James/Documents/Xlink_projects/lab_final/lab_testingModules/lab_final_KEYPAD/lab_final_KEYPAD.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab_final_KEYPAD.ucf -p xc3s100e-cp132-4 lab_final_KEYPAD.ngc lab_final_KEYPAD.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o lab_final_KEYPAD_map.ncd lab_final_KEYPAD.ngd lab_final_KEYPAD.pcf 
+par -w -intstyle ise -ol high -t 1 lab_final_KEYPAD_map.ncd lab_final_KEYPAD.ncd lab_final_KEYPAD.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml lab_final_KEYPAD.twx lab_final_KEYPAD.ncd -o lab_final_KEYPAD.twr lab_final_KEYPAD.pcf -ucf lab_final_KEYPAD.ucf 
+bitgen -intstyle ise -f lab_final_KEYPAD.ut lab_final_KEYPAD.ncd 
+xst -intstyle ise -ifn "C:/Users/James/Documents/Xlink_projects/lab_final/lab_testingModules/lab_final_KEYPAD/lab_final_KEYPAD.xst" -ofn "C:/Users/James/Documents/Xlink_projects/lab_final/lab_testingModules/lab_final_KEYPAD/lab_final_KEYPAD.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab_final_KEYPAD.ucf -p xc3s100e-cp132-4 lab_final_KEYPAD.ngc lab_final_KEYPAD.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o lab_final_KEYPAD_map.ncd lab_final_KEYPAD.ngd lab_final_KEYPAD.pcf 
+par -w -intstyle ise -ol high -t 1 lab_final_KEYPAD_map.ncd lab_final_KEYPAD.ncd lab_final_KEYPAD.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml lab_final_KEYPAD.twx lab_final_KEYPAD.ncd -o lab_final_KEYPAD.twr lab_final_KEYPAD.pcf -ucf lab_final_KEYPAD.ucf 
+bitgen -intstyle ise -f lab_final_KEYPAD.ut lab_final_KEYPAD.ncd 
+xst -intstyle ise -ifn "C:/Users/James/Documents/Xlink_projects/lab_final/lab_testingModules/lab_final_KEYPAD/lab_final_KEYPAD.xst" -ofn "C:/Users/James/Documents/Xlink_projects/lab_final/lab_testingModules/lab_final_KEYPAD/lab_final_KEYPAD.syr" 
+xst -intstyle ise -ifn "C:/Users/James/Documents/Xlink_projects/lab_final/lab_testingModules/lab_final_KEYPAD/lab_final_KEYPAD.xst" -ofn "C:/Users/James/Documents/Xlink_projects/lab_final/lab_testingModules/lab_final_KEYPAD/lab_final_KEYPAD.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab_final_KEYPAD.ucf -p xc3s100e-cp132-4 lab_final_KEYPAD.ngc lab_final_KEYPAD.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o lab_final_KEYPAD_map.ncd lab_final_KEYPAD.ngd lab_final_KEYPAD.pcf 
+par -w -intstyle ise -ol high -t 1 lab_final_KEYPAD_map.ncd lab_final_KEYPAD.ncd lab_final_KEYPAD.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml lab_final_KEYPAD.twx lab_final_KEYPAD.ncd -o lab_final_KEYPAD.twr lab_final_KEYPAD.pcf -ucf lab_final_KEYPAD.ucf 
+bitgen -intstyle ise -f lab_final_KEYPAD.ut lab_final_KEYPAD.ncd 
+xst -intstyle ise -ifn "C:/Users/James/Documents/Xlink_projects/lab_final/lab_testingModules/lab_final_KEYPAD/lab_final_KEYPAD.xst" -ofn "C:/Users/James/Documents/Xlink_projects/lab_final/lab_testingModules/lab_final_KEYPAD/lab_final_KEYPAD.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab_final_KEYPAD.ucf -p xc3s100e-cp132-4 lab_final_KEYPAD.ngc lab_final_KEYPAD.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o lab_final_KEYPAD_map.ncd lab_final_KEYPAD.ngd lab_final_KEYPAD.pcf 
+par -w -intstyle ise -ol high -t 1 lab_final_KEYPAD_map.ncd lab_final_KEYPAD.ncd lab_final_KEYPAD.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml lab_final_KEYPAD.twx lab_final_KEYPAD.ncd -o lab_final_KEYPAD.twr lab_final_KEYPAD.pcf -ucf lab_final_KEYPAD.ucf 
+bitgen -intstyle ise -f lab_final_KEYPAD.ut lab_final_KEYPAD.ncd 
+xst -intstyle ise -ifn "C:/Users/James/Documents/Xlink_projects/lab_final/lab_testingModules/lab_final_KEYPAD/lab_final_KEYPAD.xst" -ofn "C:/Users/James/Documents/Xlink_projects/lab_final/lab_testingModules/lab_final_KEYPAD/lab_final_KEYPAD.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab_final_KEYPAD.ucf -p xc3s100e-cp132-4 lab_final_KEYPAD.ngc lab_final_KEYPAD.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o lab_final_KEYPAD_map.ncd lab_final_KEYPAD.ngd lab_final_KEYPAD.pcf 
+par -w -intstyle ise -ol high -t 1 lab_final_KEYPAD_map.ncd lab_final_KEYPAD.ncd lab_final_KEYPAD.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml lab_final_KEYPAD.twx lab_final_KEYPAD.ncd -o lab_final_KEYPAD.twr lab_final_KEYPAD.pcf -ucf lab_final_KEYPAD.ucf 
+bitgen -intstyle ise -f lab_final_KEYPAD.ut lab_final_KEYPAD.ncd 
+xst -intstyle ise -ifn "C:/Users/James/Documents/Xlink_projects/lab_final/lab_testingModules/lab_final_KEYPAD/lab_final_KEYPAD.xst" -ofn "C:/Users/James/Documents/Xlink_projects/lab_final/lab_testingModules/lab_final_KEYPAD/lab_final_KEYPAD.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab_final_KEYPAD.ucf -p xc3s100e-cp132-4 lab_final_KEYPAD.ngc lab_final_KEYPAD.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o lab_final_KEYPAD_map.ncd lab_final_KEYPAD.ngd lab_final_KEYPAD.pcf 
+par -w -intstyle ise -ol high -t 1 lab_final_KEYPAD_map.ncd lab_final_KEYPAD.ncd lab_final_KEYPAD.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml lab_final_KEYPAD.twx lab_final_KEYPAD.ncd -o lab_final_KEYPAD.twr lab_final_KEYPAD.pcf -ucf lab_final_KEYPAD.ucf 
+bitgen -intstyle ise -f lab_final_KEYPAD.ut lab_final_KEYPAD.ncd 
+xst -intstyle ise -ifn "C:/Users/James/Documents/Xlink_projects/lab_final/lab_testingModules/lab_final_KEYPAD/lab_final_KEYPAD.xst" -ofn "C:/Users/James/Documents/Xlink_projects/lab_final/lab_testingModules/lab_final_KEYPAD/lab_final_KEYPAD.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab_final_KEYPAD.ucf -p xc3s100e-cp132-4 lab_final_KEYPAD.ngc lab_final_KEYPAD.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o lab_final_KEYPAD_map.ncd lab_final_KEYPAD.ngd lab_final_KEYPAD.pcf 
+par -w -intstyle ise -ol high -t 1 lab_final_KEYPAD_map.ncd lab_final_KEYPAD.ncd lab_final_KEYPAD.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml lab_final_KEYPAD.twx lab_final_KEYPAD.ncd -o lab_final_KEYPAD.twr lab_final_KEYPAD.pcf -ucf lab_final_KEYPAD.ucf 
+bitgen -intstyle ise -f lab_final_KEYPAD.ut lab_final_KEYPAD.ncd 
+xst -intstyle ise -ifn "C:/Users/James/Documents/Xlink_projects/lab_final/lab_testingModules/lab_final_KEYPAD/lab_final_KEYPAD.xst" -ofn "C:/Users/James/Documents/Xlink_projects/lab_final/lab_testingModules/lab_final_KEYPAD/lab_final_KEYPAD.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab_final_KEYPAD.ucf -p xc3s100e-cp132-4 lab_final_KEYPAD.ngc lab_final_KEYPAD.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o lab_final_KEYPAD_map.ncd lab_final_KEYPAD.ngd lab_final_KEYPAD.pcf 
+par -w -intstyle ise -ol high -t 1 lab_final_KEYPAD_map.ncd lab_final_KEYPAD.ncd lab_final_KEYPAD.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml lab_final_KEYPAD.twx lab_final_KEYPAD.ncd -o lab_final_KEYPAD.twr lab_final_KEYPAD.pcf -ucf lab_final_KEYPAD.ucf 
+bitgen -intstyle ise -f lab_final_KEYPAD.ut lab_final_KEYPAD.ncd 
+xst -intstyle ise -ifn "C:/Users/James/Documents/Xlink_projects/lab_final/lab_testingModules/lab_final_KEYPAD/lab_final_KEYPAD.xst" -ofn "C:/Users/James/Documents/Xlink_projects/lab_final/lab_testingModules/lab_final_KEYPAD/lab_final_KEYPAD.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab_final_KEYPAD.ucf -p xc3s100e-cp132-4 lab_final_KEYPAD.ngc lab_final_KEYPAD.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o lab_final_KEYPAD_map.ncd lab_final_KEYPAD.ngd lab_final_KEYPAD.pcf 
+par -w -intstyle ise -ol high -t 1 lab_final_KEYPAD_map.ncd lab_final_KEYPAD.ncd lab_final_KEYPAD.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml lab_final_KEYPAD.twx lab_final_KEYPAD.ncd -o lab_final_KEYPAD.twr lab_final_KEYPAD.pcf -ucf lab_final_KEYPAD.ucf 
+bitgen -intstyle ise -f lab_final_KEYPAD.ut lab_final_KEYPAD.ncd 
+xst -intstyle ise -ifn "C:/Users/James/Documents/Xlink_projects/lab_final/lab_testingModules/lab_final_KEYPAD/lab_final_KEYPAD.xst" -ofn "C:/Users/James/Documents/Xlink_projects/lab_final/lab_testingModules/lab_final_KEYPAD/lab_final_KEYPAD.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab_final_KEYPAD.ucf -p xc3s100e-cp132-4 lab_final_KEYPAD.ngc lab_final_KEYPAD.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o lab_final_KEYPAD_map.ncd lab_final_KEYPAD.ngd lab_final_KEYPAD.pcf 
+par -w -intstyle ise -ol high -t 1 lab_final_KEYPAD_map.ncd lab_final_KEYPAD.ncd lab_final_KEYPAD.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml lab_final_KEYPAD.twx lab_final_KEYPAD.ncd -o lab_final_KEYPAD.twr lab_final_KEYPAD.pcf -ucf lab_final_KEYPAD.ucf 
+bitgen -intstyle ise -f lab_final_KEYPAD.ut lab_final_KEYPAD.ncd 
+xst -intstyle ise -ifn "C:/Users/James/Documents/Xlink_projects/lab_final/lab_testingModules/lab_final_KEYPAD/lab_final_KEYPAD.xst" -ofn "C:/Users/James/Documents/Xlink_projects/lab_final/lab_testingModules/lab_final_KEYPAD/lab_final_KEYPAD.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab_final_KEYPAD.ucf -p xc3s100e-cp132-4 lab_final_KEYPAD.ngc lab_final_KEYPAD.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o lab_final_KEYPAD_map.ncd lab_final_KEYPAD.ngd lab_final_KEYPAD.pcf 
+par -w -intstyle ise -ol high -t 1 lab_final_KEYPAD_map.ncd lab_final_KEYPAD.ncd lab_final_KEYPAD.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml lab_final_KEYPAD.twx lab_final_KEYPAD.ncd -o lab_final_KEYPAD.twr lab_final_KEYPAD.pcf -ucf lab_final_KEYPAD.ucf 
+bitgen -intstyle ise -f lab_final_KEYPAD.ut lab_final_KEYPAD.ncd 

@@ -1,0 +1,2 @@
+sch2sym -intstyle ise -family spartan3e -w -refsym D_Register C:/Users/James/Documents/Xlink_projects/lab_final/lab_final/D_Register.sch C:/Users/James/Documents/Xlink_projects/lab_final/lab_final/D_Register.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym D_Register C:/Users/James/Documents/Xlink_projects/lab_final/lab_final/D_Register.sch C:/Users/James/Documents/Xlink_projects/lab_final/lab_final/D_Register.sym 

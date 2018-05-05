@@ -1,0 +1,22 @@
+sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl lab6_experiment2_drc.vhf -w C:/Users/James/Documents/Xlink_projects/lab6_projects/lab6_experiment2/lab6_experiment2.sch 
+xst -intstyle ise -ifn "C:/Users/James/Documents/Xlink_projects/lab6_projects/lab6_experiment2/lab6_experiment2.xst" -ofn "C:/Users/James/Documents/Xlink_projects/lab6_projects/lab6_experiment2/lab6_experiment2.syr" 
+xst -intstyle ise -ifn "C:/Users/James/Documents/Xlink_projects/lab6_projects/lab6_experiment2/lab6_experiment2.xst" -ofn "C:/Users/James/Documents/Xlink_projects/lab6_projects/lab6_experiment2/lab6_experiment2.syr" 
+xst -intstyle ise -ifn "C:/Users/James/Documents/Xlink_projects/lab6_projects/lab6_experiment2/lab6_experiment2.xst" -ofn "C:/Users/James/Documents/Xlink_projects/lab6_projects/lab6_experiment2/lab6_experiment2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab6_experiment2.ucf -p xc3s100e-cp132-4 lab6_experiment2.ngc lab6_experiment2.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o lab6_experiment2_map.ncd lab6_experiment2.ngd lab6_experiment2.pcf 
+par -w -intstyle ise -ol high -t 1 lab6_experiment2_map.ncd lab6_experiment2.ncd lab6_experiment2.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml lab6_experiment2.twx lab6_experiment2.ncd -o lab6_experiment2.twr lab6_experiment2.pcf -ucf lab6_experiment2.ucf 
+bitgen -intstyle ise -f lab6_experiment2.ut lab6_experiment2.ncd 
+xst -intstyle ise -ifn "C:/Users/James/Documents/Xlink_projects/lab6_projects/lab6_experiment2/lab6_experiment2.xst" -ofn "C:/Users/James/Documents/Xlink_projects/lab6_projects/lab6_experiment2/lab6_experiment2.syr" 
+xst -intstyle ise -ifn "C:/Users/James/Documents/Xlink_projects/lab6_projects/lab6_experiment2/lab6_experiment2.xst" -ofn "C:/Users/James/Documents/Xlink_projects/lab6_projects/lab6_experiment2/lab6_experiment2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab6_experiment2.ucf -p xc3s100e-cp132-4 lab6_experiment2.ngc lab6_experiment2.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o lab6_experiment2_map.ncd lab6_experiment2.ngd lab6_experiment2.pcf 
+par -w -intstyle ise -ol high -t 1 lab6_experiment2_map.ncd lab6_experiment2.ncd lab6_experiment2.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml lab6_experiment2.twx lab6_experiment2.ncd -o lab6_experiment2.twr lab6_experiment2.pcf -ucf lab6_experiment2.ucf 
+bitgen -intstyle ise -f lab6_experiment2.ut lab6_experiment2.ncd 
+xst -intstyle ise -ifn "C:/Users/James/Documents/Xlink_projects/lab6_projects/lab6_experiment2/lab6_experiment2.xst" -ofn "C:/Users/James/Documents/Xlink_projects/lab6_projects/lab6_experiment2/lab6_experiment2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab6_experiment2.ucf -p xc3s100e-cp132-4 lab6_experiment2.ngc lab6_experiment2.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o lab6_experiment2_map.ncd lab6_experiment2.ngd lab6_experiment2.pcf 
+par -w -intstyle ise -ol high -t 1 lab6_experiment2_map.ncd lab6_experiment2.ncd lab6_experiment2.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml lab6_experiment2.twx lab6_experiment2.ncd -o lab6_experiment2.twr lab6_experiment2.pcf -ucf lab6_experiment2.ucf 
+bitgen -intstyle ise -f lab6_experiment2.ut lab6_experiment2.ncd 

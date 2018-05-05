@@ -1,0 +1,64 @@
+V3 41
+FL C:/Users/James/Documents/Xlink_projects/lab8_projects/lab8_experiment5/lab6_experimen3.vhf 2018/03/29.11:35:10 P.20131013
+EN work/lab6_experimen3 1522348820 \
+      FL C:/Users/James/Documents/Xlink_projects/lab8_projects/lab8_experiment5/lab6_experimen3.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/lab6_experimen3/BEHAVIORAL 1522348821 \
+      FL C:/Users/James/Documents/Xlink_projects/lab8_projects/lab8_experiment5/lab6_experimen3.vhf \
+      EN work/lab6_experimen3 1522348820 CP DCM_50M CP sel_strobeB CP GND CP VCC \
+      CP bin2BCD3en CP mux4SSD CP SSD_1dig
+FL C:/Users/James/Documents/Xlink_projects/lab8_projects/lab8_experiment5/lab8_experiment5.vhf 2018/03/29.11:40:06 P.20131013
+EN work/FJKC_MXILINX_lab8_experiment5 1522348822 \
+      FL C:/Users/James/Documents/Xlink_projects/lab8_projects/lab8_experiment5/lab8_experiment5.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/FJKC_MXILINX_lab8_experiment5/BEHAVIORAL 1522348823 \
+      FL C:/Users/James/Documents/Xlink_projects/lab8_projects/lab8_experiment5/lab8_experiment5.vhf \
+      EN work/FJKC_MXILINX_lab8_experiment5 1522348822 CP FDC CP AND3B2 CP AND3B1 \
+      CP OR3 CP AND2B1
+EN work/lab8_experiment5 1522348824 \
+      FL C:/Users/James/Documents/Xlink_projects/lab8_projects/lab8_experiment5/lab8_experiment5.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/lab8_experiment5/BEHAVIORAL 1522348825 \
+      FL C:/Users/James/Documents/Xlink_projects/lab8_projects/lab8_experiment5/lab8_experiment5.vhf \
+      EN work/lab8_experiment5 1522348824 CP FJKC_MXILINX_lab8_experiment5 \
+      CP DCM_50M CP GND CP PULLUP CP PULLDOWN CP AND2 CP lab6_experimen3
+FL C:/Users/James/Documents/Xlink_projects/swag/bin2BCD3en.vhd 2016/09/28.15:04:02 P.20131013
+EN work/bin2BCD3en 1522348814 \
+      FL C:/Users/James/Documents/Xlink_projects/swag/bin2BCD3en.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179 LB UNISIM PH unisim/VCOMPONENTS 1381692182
+AR work/bin2BCD3en/Behavioral 1522348815 \
+      FL C:/Users/James/Documents/Xlink_projects/swag/bin2BCD3en.vhd \
+      EN work/bin2BCD3en 1522348814
+FL C:/Users/James/Documents/Xlink_projects/swag/DCM_50M.vhd 2016/09/28.15:03:58 P.20131013
+EN work/DCM_50M 1522348810 \
+      FL C:/Users/James/Documents/Xlink_projects/swag/DCM_50M.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/DCM_50M/Behavioral 1522348811 \
+      FL C:/Users/James/Documents/Xlink_projects/swag/DCM_50M.vhd EN work/DCM_50M 1522348810
+FL C:/Users/James/Documents/Xlink_projects/swag/mux4SSD.vhd 2016/09/28.15:04:24 P.20131013
+EN work/mux4SSD 1522348816 \
+      FL C:/Users/James/Documents/Xlink_projects/swag/mux4SSD.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/mux4SSD/Behavioral 1522348817 \
+      FL C:/Users/James/Documents/Xlink_projects/swag/mux4SSD.vhd EN work/mux4SSD 1522348816
+FL C:/Users/James/Documents/Xlink_projects/swag/sel_strobeB.vhd 2016/09/28.15:04:28 P.20131013
+EN work/sel_strobeB 1522348812 \
+      FL C:/Users/James/Documents/Xlink_projects/swag/sel_strobeB.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/sel_strobeB/Behavioral 1522348813 \
+      FL C:/Users/James/Documents/Xlink_projects/swag/sel_strobeB.vhd \
+      EN work/sel_strobeB 1522348812
+FL C:/Users/James/Documents/Xlink_projects/swag/SSD_1dig.vhd 2016/09/28.15:04:34 P.20131013
+EN work/SSD_1dig 1522348818 \
+      FL C:/Users/James/Documents/Xlink_projects/swag/SSD_1dig.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/SSD_1dig/Behavioral 1522348819 \
+      FL C:/Users/James/Documents/Xlink_projects/swag/SSD_1dig.vhd \
+      EN work/SSD_1dig 1522348818

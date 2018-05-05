@@ -1,0 +1,5 @@
+MODULE keypad_shift
+	SUBMODULE shiftreg_hex2D
+		INSTANCE XLXI_40
+	SUBMODULE shiftreg_hex2D
+		INSTANCE XLXI_42

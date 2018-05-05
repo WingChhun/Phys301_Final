@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/Users/James/Documents/Xlink_projects/lab6_experiment1_1/DCM_100M_isim_beh.exe" -prj "C:/Users/James/Documents/Xlink_projects/lab6_experiment1_1/DCM_100M_beh.prj" "work.DCM_100M" 

@@ -1,0 +1,54 @@
+#Data input
+NET "D[0]" LOC =P11;
+NET "D[1]" LOC =L3;
+NET "D[2]" LOC =K3;
+NET "D[3]" LOC =B4;
+
+NET "EN" LOC = F3;
+#Output LED'
+NET "Qin[0]" LOC =M5;
+NET "Qin[1]" LOC =M11;
+NET "Qin[2]" LOC =P7;
+NET "Qin[3]" LOC =P6;
+NET "Qin[4]" LOC =N5;
+NET "Qin[5]" LOC =N4;
+NET "Qin[6]" LOC =P4;
+NET "Qin[7]" LOC =G1;
+
+#Clock
+NET "CLKin" LOC =G12;
+NET "CLKin2" LOC =C11; 
+NET "Clock" LOC =B8; #System clock for BCD to Binary module
+NET "CLKin" CLOCK_DEDICATED_ROUTE = FALSE;
+NET "CLKin2" CLOCK_DEDICATED_ROUTE = FALSE;
+
+#Enable shfitrg
+NET "shiftRegMode" LOC = N3;
+#CLR
+NET "CLR" LOC = A7;
+#NET "addBits" LOC = M4;s
+
+#Outputs BCD
+
+#Anodes 0 -3
+
+NET "anO[3]" LOC = K14;
+
+NET "anO[2]" LOC = M13;
+NET "anO[1]" LOC = J12; #First anode 
+NET "anO[0]" LOC = F12; #SEcond anode on board
+
+
+
+NET "sseg[7]" LOC = N13; # decimal point dont need 
+
+NET "sseg[0]" LOC = M12; #CG
+NET "sseg[1]" LOC = L13; #CF
+NET "sseg[2]" LOC = P12; #CE
+NET "sseg[3]" LOC = N11; #CD
+NET "sseg[4]" LOC = N14; #CC
+NET "sseg[5]" LOC = H12; #CB
+NET "sseg[6]" LOC = L14; #CA
+
+
+

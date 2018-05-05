@@ -1,0 +1,1684 @@
+Release 14.7 Map P.20131013 (nt64)
+Xilinx Mapping Report File for Design 'lab_final'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off
+-c 100 -o lab_final_map.ncd lab_final.ngd lab_final.pcf 
+Target Device  : xc3s100e
+Target Package : cp132
+Target Speed   : -4
+Mapper Version : spartan3e -- $Revision: 1.55 $
+Mapped Date    : Fri May 04 22:12:55 2018
+
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:    3
+Logic Utilization:
+  Number of Slice Flip Flops:           228 out of   1,920   11%
+  Number of 4 input LUTs:               497 out of   1,920   25%
+Logic Distribution:
+  Number of occupied Slices:            366 out of     960   38%
+    Number of Slices containing only related logic:     366 out of     366 100%
+    Number of Slices containing unrelated logic:          0 out of     366   0%
+      *See NOTES below for an explanation of the effects of unrelated logic.
+  Total Number of 4 input LUTs:         563 out of   1,920   29%
+    Number used as logic:               497
+    Number used as a route-thru:         66
+
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+  Number of bonded IOBs:                 31 out of      83   37%
+  Number of BUFGMUXs:                     6 out of      24   25%
+
+  Number of RPM macros:            1
+Average Fanout of Non-Clock Nets:                2.41
+
+Peak Memory Usage:  329 MB
+Total REAL time to MAP completion:  2 secs 
+Total CPU time to MAP completion:   2 secs 
+
+NOTES:
+
+   Related logic is defined as being logic that shares connectivity - e.g. two
+   LUTs are "related" if they share common inputs.  When assembling slices,
+   Map gives priority to combine logic that is related.  Doing so results in
+   the best timing performance.
+
+   Unrelated logic shares no connectivity.  Map will only begin packing
+   unrelated logic into a slice once 99% of the slices are occupied through
+   related logic packing.
+
+   Note that once logic distribution reaches the 99% level through related
+   logic packing, this does not mean the device is completely utilized.
+   Unrelated logic packing will then begin, continuing until all usable LUTs
+   and FFs are occupied.  Depending on your timing budget, increased levels of
+   unrelated logic packing may adversely affect the overall timing performance
+   of your design.
+
+Table of Contents
+-----------------
+Section 1 - Errors
+Section 2 - Warnings
+Section 3 - Informational
+Section 4 - Removed Logic Summary
+Section 5 - Removed Logic
+Section 6 - IOB Properties
+Section 7 - RPMs
+Section 8 - Guide Report
+Section 9 - Area Group and Partition Summary
+Section 10 - Timing Report
+Section 11 - Configuration String Information
+Section 12 - Control Set Information
+Section 13 - Utilization by Hierarchy
+
+Section 1 - Errors
+------------------
+
+Section 2 - Warnings
+--------------------
+WARNING:MapLib:701 - Signal IRorDR connected to top level port IRorDR has been
+   removed.
+WARNING:MapLib:701 - Signal AorD connected to top level port AorD has been
+   removed.
+WARNING:Pack:249 - The following adjacent carry multiplexers occupy different
+   slice components.  The resulting carry chain will have suboptimal timing.
+   	XLXI_42/XLXI_133/XLXI_41/Mcompar_cnt10k_cmp_ge0000_cy<10>
+   	XLXI_42/XLXI_133/XLXI_41/Mcount_cnt10k_cy<0>
+
+Section 3 - Informational
+-------------------------
+INFO:LIT:243 - Logical network XLXI_38/XLXI_1/OFL has no load.
+INFO:LIT:395 - The above info message is repeated 11 more times for the
+   following (max. 5 shown):
+   XLXI_38/XLXI_1/S<0>,
+   XLXI_38/XLXI_1/S<1>,
+   XLXI_38/XLXI_1/S<2>,
+   XLXI_38/XLXI_1/S<3>,
+   XLXI_38/XLXI_1/S<4>
+   To see the details of these info messages, please use the -detail switch.
+INFO:MapLib:562 - No environment variables are currently set.
+INFO:LIT:244 - All of the single ended outputs in this design are using slew
+   rate limited output drivers. The delay on speed critical single ended outputs
+   can be dramatically reduced by designating them as fast outputs.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+ 143 block(s) removed
+ 583 block(s) optimized away
+ 110 signal(s) removed
+
+Section 5 - Removed Logic
+-------------------------
+
+The trimmed logic report below shows the logic removed from your design due to
+sourceless or loadless signals, and VCC or ground connections.  If the removal
+of a signal or symbol results in the subsequent removal of an additional signal
+or symbol, the message explaining that second removal will be indented.  This
+indentation will be repeated as a chain of related logic is removed.
+
+To quickly locate the original cause for the removal of a chain of logic, look
+above the place where that logic is listed in the trimming report, then locate
+the lines that are least indented (begin at the leftmost edge).
+
+Loadless block "XLXI_42/XLXI_121/XLXI_129/XLXI_60/XLXI_1" (XOR) removed.
+Loadless block "XLXI_42/XLXI_121/XLXI_129/XLXI_60/XLXI_2" (XOR) removed.
+Loadless block "XLXI_42/XLXI_121/XLXI_129/XLXI_60/XLXI_3" (XOR) removed.
+Loadless block "XLXI_42/XLXI_121/XLXI_129/XLXI_60/XLXI_4" (XOR) removed.
+Loadless block "XLXI_42/XLXI_121/XLXI_129/XLXI_60/XLXI_5" (XOR) removed.
+Loadless block "XLXI_42/XLXI_121/XLXI_129/XLXI_60/XLXI_6" (XOR) removed.
+Loadless block "XLXI_42/XLXI_121/XLXI_129/XLXI_60/XLXI_7" (XOR) removed.
+Loadless block "XLXI_42/XLXI_121/XLXI_129/XLXI_60/XLXI_8" (XOR) removed.
+Loadless block "XLXI_42/XLXI_121/XLXI_130/XLXI_60/XLXI_1" (XOR) removed.
+ The signal "XLXI_42/XLXI_121/XLXI_130/Q_DUMMY<0>" is loadless and has been
+removed.
+  Loadless block "XLXI_42/XLXI_121/XLXI_130/XLXI_46/I_Q0" (FF) removed.
+   The signal "XLXI_42/XLXI_121/XLXI_130/XLXN_343" is loadless and has been
+removed.
+   The signal "XLXI_42/XLXI_121/XLXI_130/XLXN_313" is loadless and has been
+removed.
+    Loadless block "XLXI_42/XLXI_121/XLXI_130/XLXI_63" (OR) removed.
+Loadless block "XLXI_42/XLXI_121/XLXI_130/XLXI_60/XLXI_2" (XOR) removed.
+ The signal "XLXI_42/XLXI_121/XLXI_130/Q_DUMMY<1>" is loadless and has been
+removed.
+  Loadless block "XLXI_42/XLXI_121/XLXI_130/XLXI_46/I_Q1" (FF) removed.
+Loadless block "XLXI_42/XLXI_121/XLXI_130/XLXI_60/XLXI_3" (XOR) removed.
+ The signal "XLXI_42/XLXI_121/XLXI_130/Q_DUMMY<2>" is loadless and has been
+removed.
+  Loadless block "XLXI_42/XLXI_121/XLXI_130/XLXI_46/I_Q2" (FF) removed.
+Loadless block "XLXI_42/XLXI_121/XLXI_130/XLXI_60/XLXI_4" (XOR) removed.
+ The signal "XLXI_42/XLXI_121/XLXI_130/Q_DUMMY<3>" is loadless and has been
+removed.
+  Loadless block "XLXI_42/XLXI_121/XLXI_130/XLXI_46/I_Q3" (FF) removed.
+Loadless block "XLXI_42/XLXI_121/XLXI_130/XLXI_60/XLXI_5" (XOR) removed.
+ The signal "XLXI_42/XLXI_121/XLXI_130/G_DUMMY<0>" is loadless and has been
+removed.
+  Loadless block "XLXI_42/XLXI_121/XLXI_130/XLXI_47/I_Q0" (FF) removed.
+Loadless block "XLXI_42/XLXI_121/XLXI_130/XLXI_60/XLXI_6" (XOR) removed.
+ The signal "XLXI_42/XLXI_121/XLXI_130/G_DUMMY<1>" is loadless and has been
+removed.
+  Loadless block "XLXI_42/XLXI_121/XLXI_130/XLXI_47/I_Q1" (FF) removed.
+Loadless block "XLXI_42/XLXI_121/XLXI_130/XLXI_60/XLXI_7" (XOR) removed.
+ The signal "XLXI_42/XLXI_121/XLXI_130/G_DUMMY<2>" is loadless and has been
+removed.
+  Loadless block "XLXI_42/XLXI_121/XLXI_130/XLXI_47/I_Q2" (FF) removed.
+Loadless block "XLXI_42/XLXI_121/XLXI_130/XLXI_60/XLXI_8" (XOR) removed.
+ The signal "XLXI_42/XLXI_121/XLXI_130/G_DUMMY<3>" is loadless and has been
+removed.
+  Loadless block "XLXI_42/XLXI_121/XLXI_130/XLXI_47/I_Q3" (FF) removed.
+Loadless block "XLXI_42/XLXI_121/XLXI_132/XLXI_60/XLXI_1" (XOR) removed.
+ The signal "XLXI_42/XLXI_121/XLXI_132/Q_DUMMY<0>" is loadless and has been
+removed.
+  Loadless block "XLXI_42/XLXI_121/XLXI_132/XLXI_46/I_Q0" (FF) removed.
+   The signal "XLXI_42/XLXI_121/XLXI_132/XLXN_343" is loadless and has been
+removed.
+   The signal "XLXI_42/XLXI_121/XLXI_132/XLXN_313" is loadless and has been
+removed.
+    Loadless block "XLXI_42/XLXI_121/XLXI_132/XLXI_63" (OR) removed.
+Loadless block "XLXI_42/XLXI_121/XLXI_132/XLXI_60/XLXI_2" (XOR) removed.
+ The signal "XLXI_42/XLXI_121/XLXI_132/Q_DUMMY<1>" is loadless and has been
+removed.
+  Loadless block "XLXI_42/XLXI_121/XLXI_132/XLXI_46/I_Q1" (FF) removed.
+Loadless block "XLXI_42/XLXI_121/XLXI_132/XLXI_60/XLXI_3" (XOR) removed.
+ The signal "XLXI_42/XLXI_121/XLXI_132/Q_DUMMY<2>" is loadless and has been
+removed.
+  Loadless block "XLXI_42/XLXI_121/XLXI_132/XLXI_46/I_Q2" (FF) removed.
+Loadless block "XLXI_42/XLXI_121/XLXI_132/XLXI_60/XLXI_4" (XOR) removed.
+ The signal "XLXI_42/XLXI_121/XLXI_132/Q_DUMMY<3>" is loadless and has been
+removed.
+  Loadless block "XLXI_42/XLXI_121/XLXI_132/XLXI_46/I_Q3" (FF) removed.
+Loadless block "XLXI_42/XLXI_121/XLXI_132/XLXI_60/XLXI_5" (XOR) removed.
+ The signal "XLXI_42/XLXI_121/XLXI_132/G_DUMMY<0>" is loadless and has been
+removed.
+  Loadless block "XLXI_42/XLXI_121/XLXI_132/XLXI_47/I_Q0" (FF) removed.
+Loadless block "XLXI_42/XLXI_121/XLXI_132/XLXI_60/XLXI_6" (XOR) removed.
+ The signal "XLXI_42/XLXI_121/XLXI_132/G_DUMMY<1>" is loadless and has been
+removed.
+  Loadless block "XLXI_42/XLXI_121/XLXI_132/XLXI_47/I_Q1" (FF) removed.
+Loadless block "XLXI_42/XLXI_121/XLXI_132/XLXI_60/XLXI_7" (XOR) removed.
+ The signal "XLXI_42/XLXI_121/XLXI_132/G_DUMMY<2>" is loadless and has been
+removed.
+  Loadless block "XLXI_42/XLXI_121/XLXI_132/XLXI_47/I_Q2" (FF) removed.
+Loadless block "XLXI_42/XLXI_121/XLXI_132/XLXI_60/XLXI_8" (XOR) removed.
+ The signal "XLXI_42/XLXI_121/XLXI_132/G_DUMMY<3>" is loadless and has been
+removed.
+  Loadless block "XLXI_42/XLXI_121/XLXI_132/XLXI_47/I_Q3" (FF) removed.
+Loadless block "XLXI_42/XLXI_133/XLXI_42" (BUF) removed.
+Loadless block "XLXI_42/XLXI_4" (AND) removed.
+Loadless block "XLXI_42/XLXI_65/XLXI_35/XLXI_4" (BUF) removed.
+ The signal "AorD_IBUF" is loadless and has been removed.
+  Loadless block "AorD_IBUF" (BUF) removed.
+   The signal "AorD" is loadless and has been removed.
+    Loadless block "AorD" (PAD) removed.
+Loadless block "XLXI_42/XLXI_98" (AND) removed.
+The signal "XLXI_38/XLXI_1/C6O" is sourceless and has been removed.
+ Sourceless block "XLXI_38/XLXI_1/I_36_221" (XOR) removed.
+  The signal "XLXI_38/XLXI_1/OFL" is sourceless and has been removed.
+The signal "XLXI_38/XLXI_1/CO" is sourceless and has been removed.
+The signal "XLXI_38/XLXI_1/I0" is sourceless and has been removed.
+ Sourceless block "XLXI_38/XLXI_1/I_36_73" (XOR) removed.
+  The signal "XLXI_38/XLXI_1/S<0>" is sourceless and has been removed.
+ Sourceless block "XLXI_38/XLXI_1/I_36_111" (MUX) removed.
+  The signal "XLXI_38/XLXI_1/I_36_111/O" is sourceless and has been removed.
+The signal "XLXI_38/XLXI_1/I1" is sourceless and has been removed.
+ Sourceless block "XLXI_38/XLXI_1/I_36_74" (XOR) removed.
+  The signal "XLXI_38/XLXI_1/S<1>" is sourceless and has been removed.
+ Sourceless block "XLXI_38/XLXI_1/I_36_55" (MUX) removed.
+  The signal "XLXI_38/XLXI_1/I_36_55/O" is sourceless and has been removed.
+The signal "XLXI_38/XLXI_1/I2" is sourceless and has been removed.
+ Sourceless block "XLXI_38/XLXI_1/I_36_76" (XOR) removed.
+  The signal "XLXI_38/XLXI_1/S<2>" is sourceless and has been removed.
+ Sourceless block "XLXI_38/XLXI_1/I_36_62" (MUX) removed.
+  The signal "XLXI_38/XLXI_1/I_36_62/O" is sourceless and has been removed.
+The signal "XLXI_38/XLXI_1/I3" is sourceless and has been removed.
+ Sourceless block "XLXI_38/XLXI_1/I_36_75" (XOR) removed.
+  The signal "XLXI_38/XLXI_1/S<3>" is sourceless and has been removed.
+ Sourceless block "XLXI_38/XLXI_1/I_36_58" (MUX) removed.
+  The signal "XLXI_38/XLXI_1/I_36_58/O" is sourceless and has been removed.
+The signal "XLXI_38/XLXI_1/I4" is sourceless and has been removed.
+ Sourceless block "XLXI_38/XLXI_1/I_36_78" (XOR) removed.
+  The signal "XLXI_38/XLXI_1/S<4>" is sourceless and has been removed.
+ Sourceless block "XLXI_38/XLXI_1/I_36_63" (MUX) removed.
+  The signal "XLXI_38/XLXI_1/I_36_63/O" is sourceless and has been removed.
+The signal "XLXI_38/XLXI_1/I5" is sourceless and has been removed.
+ Sourceless block "XLXI_38/XLXI_1/I_36_77" (XOR) removed.
+  The signal "XLXI_38/XLXI_1/S<5>" is sourceless and has been removed.
+ Sourceless block "XLXI_38/XLXI_1/I_36_110" (MUX) removed.
+  The signal "XLXI_38/XLXI_1/I_36_110/O" is sourceless and has been removed.
+The signal "XLXI_38/XLXI_1/I6" is sourceless and has been removed.
+ Sourceless block "XLXI_38/XLXI_1/I_36_81" (XOR) removed.
+  The signal "XLXI_38/XLXI_1/S<6>" is sourceless and has been removed.
+ Sourceless block "XLXI_38/XLXI_1/I_36_107" (MUX) removed.
+The signal "XLXI_38/XLXI_1/I7" is sourceless and has been removed.
+ Sourceless block "XLXI_38/XLXI_1/I_36_64" (MUX) removed.
+ Sourceless block "XLXI_38/XLXI_1/I_36_80" (XOR) removed.
+  The signal "XLXI_38/XLXI_1/S<7>" is sourceless and has been removed.
+The signal "XLXI_38/XLXI_1/dummy" is sourceless and has been removed.
+The signal "XLXI_42/XLXI_121/XLXI_129/XLXI_59/CO" is sourceless and has been
+removed.
+ Sourceless block "XLXI_42/XLXI_121/XLXI_129/XLXI_59/I_36_239" (XOR) removed.
+  The signal "XLXI_42/XLXI_121/XLXI_129/XLXI_59/OFL" is sourceless and has been
+removed.
+The signal "XLXI_42/XLXI_121/XLXI_129/XLXI_59/dummy" is sourceless and has been
+removed.
+The signal "XLXI_42/XLXI_121/XLXI_130/XLXI_59/C6O" is sourceless and has been
+removed.
+ Sourceless block "XLXI_42/XLXI_121/XLXI_130/XLXI_59/I_36_239" (XOR) removed.
+  The signal "XLXI_42/XLXI_121/XLXI_130/XLXI_59/OFL" is sourceless and has been
+removed.
+The signal "XLXI_42/XLXI_121/XLXI_130/XLXI_59/CO" is sourceless and has been
+removed.
+The signal "XLXI_42/XLXI_121/XLXI_130/XLXI_59/I0" is sourceless and has been
+removed.
+ Sourceless block "XLXI_42/XLXI_121/XLXI_130/XLXI_59/I_36_73" (XOR) removed.
+  The signal "XLXI_42/XLXI_121/XLXI_130/S<0>" is sourceless and has been removed.
+ Sourceless block "XLXI_42/XLXI_121/XLXI_130/XLXI_59/I_36_111" (MUX) removed.
+  The signal "XLXI_42/XLXI_121/XLXI_130/XLXI_59/I_36_111/O" is sourceless and has
+been removed.
+The signal "XLXI_42/XLXI_121/XLXI_130/XLXI_59/I1" is sourceless and has been
+removed.
+ Sourceless block "XLXI_42/XLXI_121/XLXI_130/XLXI_59/I_36_74" (XOR) removed.
+  The signal "XLXI_42/XLXI_121/XLXI_130/S<1>" is sourceless and has been removed.
+ Sourceless block "XLXI_42/XLXI_121/XLXI_130/XLXI_59/I_36_55" (MUX) removed.
+  The signal "XLXI_42/XLXI_121/XLXI_130/XLXI_59/I_36_55/O" is sourceless and has
+been removed.
+The signal "XLXI_42/XLXI_121/XLXI_130/XLXI_59/I2" is sourceless and has been
+removed.
+ Sourceless block "XLXI_42/XLXI_121/XLXI_130/XLXI_59/I_36_76" (XOR) removed.
+  The signal "XLXI_42/XLXI_121/XLXI_130/S<2>" is sourceless and has been removed.
+ Sourceless block "XLXI_42/XLXI_121/XLXI_130/XLXI_59/I_36_62" (MUX) removed.
+  The signal "XLXI_42/XLXI_121/XLXI_130/XLXI_59/I_36_62/O" is sourceless and has
+been removed.
+The signal "XLXI_42/XLXI_121/XLXI_130/XLXI_59/I3" is sourceless and has been
+removed.
+ Sourceless block "XLXI_42/XLXI_121/XLXI_130/XLXI_59/I_36_75" (XOR) removed.
+  The signal "XLXI_42/XLXI_121/XLXI_130/S<3>" is sourceless and has been removed.
+ Sourceless block "XLXI_42/XLXI_121/XLXI_130/XLXI_59/I_36_58" (MUX) removed.
+  The signal "XLXI_42/XLXI_121/XLXI_130/XLXI_59/I_36_58/O" is sourceless and has
+been removed.
+The signal "XLXI_42/XLXI_121/XLXI_130/XLXI_59/I4" is sourceless and has been
+removed.
+ Sourceless block "XLXI_42/XLXI_121/XLXI_130/XLXI_59/I_36_78" (XOR) removed.
+  The signal "XLXI_42/XLXI_121/XLXI_130/S<4>" is sourceless and has been removed.
+ Sourceless block "XLXI_42/XLXI_121/XLXI_130/XLXI_59/I_36_63" (MUX) removed.
+  The signal "XLXI_42/XLXI_121/XLXI_130/XLXI_59/I_36_63/O" is sourceless and has
+been removed.
+The signal "XLXI_42/XLXI_121/XLXI_130/XLXI_59/I5" is sourceless and has been
+removed.
+ Sourceless block "XLXI_42/XLXI_121/XLXI_130/XLXI_59/I_36_77" (XOR) removed.
+  The signal "XLXI_42/XLXI_121/XLXI_130/S<5>" is sourceless and has been removed.
+ Sourceless block "XLXI_42/XLXI_121/XLXI_130/XLXI_59/I_36_110" (MUX) removed.
+  The signal "XLXI_42/XLXI_121/XLXI_130/XLXI_59/I_36_110/O" is sourceless and has
+been removed.
+The signal "XLXI_42/XLXI_121/XLXI_130/XLXI_59/I6" is sourceless and has been
+removed.
+ Sourceless block "XLXI_42/XLXI_121/XLXI_130/XLXI_59/I_36_81" (XOR) removed.
+  The signal "XLXI_42/XLXI_121/XLXI_130/S<6>" is sourceless and has been removed.
+ Sourceless block "XLXI_42/XLXI_121/XLXI_130/XLXI_59/I_36_107" (MUX) removed.
+The signal "XLXI_42/XLXI_121/XLXI_130/XLXI_59/I7" is sourceless and has been
+removed.
+ Sourceless block "XLXI_42/XLXI_121/XLXI_130/XLXI_59/I_36_64" (MUX) removed.
+ Sourceless block "XLXI_42/XLXI_121/XLXI_130/XLXI_59/I_36_80" (XOR) removed.
+  The signal "XLXI_42/XLXI_121/XLXI_130/S<7>" is sourceless and has been removed.
+The signal "XLXI_42/XLXI_121/XLXI_130/XLXI_59/dummy" is sourceless and has been
+removed.
+The signal "XLXI_42/XLXI_121/XLXI_132/XLXI_59/C6O" is sourceless and has been
+removed.
+ Sourceless block "XLXI_42/XLXI_121/XLXI_132/XLXI_59/I_36_239" (XOR) removed.
+  The signal "XLXI_42/XLXI_121/XLXI_132/XLXI_59/OFL" is sourceless and has been
+removed.
+The signal "XLXI_42/XLXI_121/XLXI_132/XLXI_59/CO" is sourceless and has been
+removed.
+The signal "XLXI_42/XLXI_121/XLXI_132/XLXI_59/I0" is sourceless and has been
+removed.
+ Sourceless block "XLXI_42/XLXI_121/XLXI_132/XLXI_59/I_36_73" (XOR) removed.
+  The signal "XLXI_42/XLXI_121/XLXI_132/S<0>" is sourceless and has been removed.
+ Sourceless block "XLXI_42/XLXI_121/XLXI_132/XLXI_59/I_36_111" (MUX) removed.
+  The signal "XLXI_42/XLXI_121/XLXI_132/XLXI_59/I_36_111/O" is sourceless and has
+been removed.
+The signal "XLXI_42/XLXI_121/XLXI_132/XLXI_59/I1" is sourceless and has been
+removed.
+ Sourceless block "XLXI_42/XLXI_121/XLXI_132/XLXI_59/I_36_74" (XOR) removed.
+  The signal "XLXI_42/XLXI_121/XLXI_132/S<1>" is sourceless and has been removed.
+ Sourceless block "XLXI_42/XLXI_121/XLXI_132/XLXI_59/I_36_55" (MUX) removed.
+  The signal "XLXI_42/XLXI_121/XLXI_132/XLXI_59/I_36_55/O" is sourceless and has
+been removed.
+The signal "XLXI_42/XLXI_121/XLXI_132/XLXI_59/I2" is sourceless and has been
+removed.
+ Sourceless block "XLXI_42/XLXI_121/XLXI_132/XLXI_59/I_36_76" (XOR) removed.
+  The signal "XLXI_42/XLXI_121/XLXI_132/S<2>" is sourceless and has been removed.
+ Sourceless block "XLXI_42/XLXI_121/XLXI_132/XLXI_59/I_36_62" (MUX) removed.
+  The signal "XLXI_42/XLXI_121/XLXI_132/XLXI_59/I_36_62/O" is sourceless and has
+been removed.
+The signal "XLXI_42/XLXI_121/XLXI_132/XLXI_59/I3" is sourceless and has been
+removed.
+ Sourceless block "XLXI_42/XLXI_121/XLXI_132/XLXI_59/I_36_75" (XOR) removed.
+  The signal "XLXI_42/XLXI_121/XLXI_132/S<3>" is sourceless and has been removed.
+ Sourceless block "XLXI_42/XLXI_121/XLXI_132/XLXI_59/I_36_58" (MUX) removed.
+  The signal "XLXI_42/XLXI_121/XLXI_132/XLXI_59/I_36_58/O" is sourceless and has
+been removed.
+The signal "XLXI_42/XLXI_121/XLXI_132/XLXI_59/I4" is sourceless and has been
+removed.
+ Sourceless block "XLXI_42/XLXI_121/XLXI_132/XLXI_59/I_36_78" (XOR) removed.
+  The signal "XLXI_42/XLXI_121/XLXI_132/S<4>" is sourceless and has been removed.
+ Sourceless block "XLXI_42/XLXI_121/XLXI_132/XLXI_59/I_36_63" (MUX) removed.
+  The signal "XLXI_42/XLXI_121/XLXI_132/XLXI_59/I_36_63/O" is sourceless and has
+been removed.
+The signal "XLXI_42/XLXI_121/XLXI_132/XLXI_59/I5" is sourceless and has been
+removed.
+ Sourceless block "XLXI_42/XLXI_121/XLXI_132/XLXI_59/I_36_77" (XOR) removed.
+  The signal "XLXI_42/XLXI_121/XLXI_132/S<5>" is sourceless and has been removed.
+ Sourceless block "XLXI_42/XLXI_121/XLXI_132/XLXI_59/I_36_110" (MUX) removed.
+  The signal "XLXI_42/XLXI_121/XLXI_132/XLXI_59/I_36_110/O" is sourceless and has
+been removed.
+The signal "XLXI_42/XLXI_121/XLXI_132/XLXI_59/I6" is sourceless and has been
+removed.
+ Sourceless block "XLXI_42/XLXI_121/XLXI_132/XLXI_59/I_36_81" (XOR) removed.
+  The signal "XLXI_42/XLXI_121/XLXI_132/S<6>" is sourceless and has been removed.
+ Sourceless block "XLXI_42/XLXI_121/XLXI_132/XLXI_59/I_36_107" (MUX) removed.
+The signal "XLXI_42/XLXI_121/XLXI_132/XLXI_59/I7" is sourceless and has been
+removed.
+ Sourceless block "XLXI_42/XLXI_121/XLXI_132/XLXI_59/I_36_64" (MUX) removed.
+ Sourceless block "XLXI_42/XLXI_121/XLXI_132/XLXI_59/I_36_80" (XOR) removed.
+  The signal "XLXI_42/XLXI_121/XLXI_132/S<7>" is sourceless and has been removed.
+The signal "XLXI_42/XLXI_121/XLXI_132/XLXI_59/dummy" is sourceless and has been
+removed.
+
+The trimmed logic reported below is either:
+   1. part of a cycle
+   2. part of disabled logic
+   3. a side-effect of other trimmed logic
+
+The signal "IRorDR" is unused and has been removed.
+ Unused block "IRorDR" (PAD) removed.
+The signal "IRorDR_IBUF" is unused and has been removed.
+ Unused block "IRorDR_IBUF" (BUF) removed.
+The signal "XLXI_42/EN_IReg" is unused and has been removed.
+ Unused block "XLXI_42/XLXI_118" (BUF) removed.
+The signal "XLXI_42/XLXI_111/XLXI_6/mem_0_not0001_inv" is unused and has been
+removed.
+ Unused block "XLXI_42/XLXI_132/XLXI_1/mem_0_and00011" (ROM) removed.
+The signal "XLXI_42/XLXI_111/XLXI_6/mem_30_and0000" is unused and has been
+removed.
+ Unused block "XLXI_42/XLXI_132/XLXI_1/mem_30_and00001" (ROM) removed.
+The signal "XLXI_42/XLXI_65/XLXI_28/RST_inv" is unused and has been removed.
+The signal "XLXI_42/XLXI_65/XLXN_44" is unused and has been removed.
+Unused block "XLXI_38/XLXI_1/I_36_100" (XOR) removed.
+Unused block "XLXI_38/XLXI_1/I_36_222" (BUF) removed.
+Unused block "XLXI_38/XLXI_1/I_36_109" (XOR) removed.
+Unused block "XLXI_38/XLXI_1/I_36_226" (BUF) removed.
+Unused block "XLXI_38/XLXI_1/I_36_50" (XOR) removed.
+Unused block "XLXI_38/XLXI_1/I_36_112" (BUF) removed.
+Unused block "XLXI_38/XLXI_1/I_36_56" (XOR) removed.
+Unused block "XLXI_38/XLXI_1/I_36_223" (BUF) removed.
+Unused block "XLXI_38/XLXI_1/I_36_57" (XOR) removed.
+Unused block "XLXI_38/XLXI_1/I_36_224" (BUF) removed.
+Unused block "XLXI_38/XLXI_1/I_36_59" (XOR) removed.
+Unused block "XLXI_38/XLXI_1/I_36_227" (BUF) removed.
+Unused block "XLXI_38/XLXI_1/I_36_60" (XOR) removed.
+Unused block "XLXI_38/XLXI_1/I_36_225" (BUF) removed.
+Unused block "XLXI_38/XLXI_1/I_36_79" (XOR) removed.
+Unused block "XLXI_38/XLXI_1/I_36_228" (BUF) removed.
+Unused block "XLXI_38/XLXI_1/XST_GND" (ZERO) removed.
+Unused block "XLXI_42/XLXI_121/XLXI_129/XLXI_59/XST_GND" (ZERO) removed.
+Unused block "XLXI_42/XLXI_121/XLXI_130/XLXI_59/I_36_221" (XOR) removed.
+Unused block "XLXI_42/XLXI_121/XLXI_130/XLXI_59/I_36_222" (XOR) removed.
+Unused block "XLXI_42/XLXI_121/XLXI_130/XLXI_59/I_36_223" (XOR) removed.
+Unused block "XLXI_42/XLXI_121/XLXI_130/XLXI_59/I_36_224" (XOR) removed.
+Unused block "XLXI_42/XLXI_121/XLXI_130/XLXI_59/I_36_225" (XOR) removed.
+Unused block "XLXI_42/XLXI_121/XLXI_130/XLXI_59/I_36_228" (XOR) removed.
+Unused block "XLXI_42/XLXI_121/XLXI_130/XLXI_59/I_36_229" (XOR) removed.
+Unused block "XLXI_42/XLXI_121/XLXI_130/XLXI_59/I_36_230" (XOR) removed.
+Unused block "XLXI_42/XLXI_121/XLXI_130/XLXI_59/XST_GND" (ZERO) removed.
+Unused block "XLXI_42/XLXI_121/XLXI_132/XLXI_59/I_36_221" (XOR) removed.
+Unused block "XLXI_42/XLXI_121/XLXI_132/XLXI_59/I_36_222" (XOR) removed.
+Unused block "XLXI_42/XLXI_121/XLXI_132/XLXI_59/I_36_223" (XOR) removed.
+Unused block "XLXI_42/XLXI_121/XLXI_132/XLXI_59/I_36_224" (XOR) removed.
+Unused block "XLXI_42/XLXI_121/XLXI_132/XLXI_59/I_36_225" (XOR) removed.
+Unused block "XLXI_42/XLXI_121/XLXI_132/XLXI_59/I_36_228" (XOR) removed.
+Unused block "XLXI_42/XLXI_121/XLXI_132/XLXI_59/I_36_229" (XOR) removed.
+Unused block "XLXI_42/XLXI_121/XLXI_132/XLXI_59/I_36_230" (XOR) removed.
+Unused block "XLXI_42/XLXI_121/XLXI_132/XLXI_59/XST_GND" (ZERO) removed.
+Unused block "XLXI_42/XLXI_65/XLXI_35/XLXI_5" (PULLDOWN) removed.
+Unused block "XLXI_42/XLXI_121/XLXI_129/XLXI_59/I_36_64" (MUX) removed.
+
+Optimized Block(s):
+TYPE 		BLOCK
+LUT3 		XLXI_42/XLXI_111/XLXI_6/Mmux_Q_mux0000_10
+   optimized to 0
+LUT3 		XLXI_42/XLXI_111/XLXI_6/Mmux_Q_mux0000_101
+   optimized to 0
+LUT3 		XLXI_42/XLXI_111/XLXI_6/Mmux_Q_mux0000_102
+   optimized to 0
+LUT3 		XLXI_42/XLXI_111/XLXI_6/Mmux_Q_mux0000_103
+   optimized to 0
+LUT3 		XLXI_42/XLXI_111/XLXI_6/Mmux_Q_mux0000_104
+   optimized to 0
+LUT3 		XLXI_42/XLXI_111/XLXI_6/Mmux_Q_mux0000_105
+   optimized to 0
+LUT3 		XLXI_42/XLXI_111/XLXI_6/Mmux_Q_mux0000_106
+   optimized to 0
+LUT3 		XLXI_42/XLXI_111/XLXI_6/Mmux_Q_mux0000_107
+   optimized to 0
+LUT3 		XLXI_42/XLXI_111/XLXI_6/Mmux_Q_mux0000_6
+   optimized to 0
+LUT3 		XLXI_42/XLXI_111/XLXI_6/Mmux_Q_mux0000_61
+   optimized to 0
+LUT3 		XLXI_42/XLXI_111/XLXI_6/Mmux_Q_mux0000_62
+   optimized to 0
+LUT3 		XLXI_42/XLXI_111/XLXI_6/Mmux_Q_mux0000_63
+   optimized to 0
+LUT3 		XLXI_42/XLXI_111/XLXI_6/Mmux_Q_mux0000_64
+   optimized to 0
+LUT3 		XLXI_42/XLXI_111/XLXI_6/Mmux_Q_mux0000_65
+   optimized to 0
+LUT3 		XLXI_42/XLXI_111/XLXI_6/Mmux_Q_mux0000_66
+   optimized to 0
+LUT3 		XLXI_42/XLXI_111/XLXI_6/Mmux_Q_mux0000_67
+   optimized to 0
+LUT3 		XLXI_42/XLXI_111/XLXI_6/Mmux_Q_mux0000_7
+   optimized to 0
+LUT3 		XLXI_42/XLXI_111/XLXI_6/Mmux_Q_mux0000_71
+   optimized to 0
+LUT3 		XLXI_42/XLXI_111/XLXI_6/Mmux_Q_mux0000_710
+   optimized to 0
+LUT3 		XLXI_42/XLXI_111/XLXI_6/Mmux_Q_mux0000_714
+   optimized to 0
+LUT3 		XLXI_42/XLXI_111/XLXI_6/Mmux_Q_mux0000_716
+   optimized to 0
+LUT3 		XLXI_42/XLXI_111/XLXI_6/Mmux_Q_mux0000_717
+   optimized to 0
+LUT3 		XLXI_42/XLXI_111/XLXI_6/Mmux_Q_mux0000_718
+   optimized to 0
+LUT3 		XLXI_42/XLXI_111/XLXI_6/Mmux_Q_mux0000_719
+   optimized to 0
+LUT3 		XLXI_42/XLXI_111/XLXI_6/Mmux_Q_mux0000_72
+   optimized to 0
+LUT3 		XLXI_42/XLXI_111/XLXI_6/Mmux_Q_mux0000_721
+   optimized to 0
+LUT3 		XLXI_42/XLXI_111/XLXI_6/Mmux_Q_mux0000_722
+   optimized to 0
+LUT3 		XLXI_42/XLXI_111/XLXI_6/Mmux_Q_mux0000_723
+   optimized to 0
+LUT3 		XLXI_42/XLXI_111/XLXI_6/Mmux_Q_mux0000_725
+   optimized to 0
+LUT3 		XLXI_42/XLXI_111/XLXI_6/Mmux_Q_mux0000_726
+   optimized to 0
+LUT3 		XLXI_42/XLXI_111/XLXI_6/Mmux_Q_mux0000_727
+   optimized to 0
+LUT3 		XLXI_42/XLXI_111/XLXI_6/Mmux_Q_mux0000_728
+   optimized to 0
+LUT3 		XLXI_42/XLXI_111/XLXI_6/Mmux_Q_mux0000_730
+   optimized to 0
+LUT3 		XLXI_42/XLXI_111/XLXI_6/Mmux_Q_mux0000_74
+   optimized to 0
+LUT3 		XLXI_42/XLXI_111/XLXI_6/Mmux_Q_mux0000_75
+   optimized to 0
+LUT3 		XLXI_42/XLXI_111/XLXI_6/Mmux_Q_mux0000_76
+   optimized to 0
+LUT3 		XLXI_42/XLXI_111/XLXI_6/Mmux_Q_mux0000_77
+   optimized to 0
+LUT3 		XLXI_42/XLXI_111/XLXI_6/Mmux_Q_mux0000_79
+   optimized to 0
+LUT3 		XLXI_42/XLXI_111/XLXI_6/Mmux_Q_mux0000_810
+   optimized to 0
+LUT3 		XLXI_42/XLXI_111/XLXI_6/Mmux_Q_mux0000_813
+   optimized to 0
+LUT3 		XLXI_42/XLXI_111/XLXI_6/Mmux_Q_mux0000_814
+   optimized to 0
+LUT3 		XLXI_42/XLXI_111/XLXI_6/Mmux_Q_mux0000_819
+   optimized to 0
+LUT3 		XLXI_42/XLXI_111/XLXI_6/Mmux_Q_mux0000_823
+   optimized to 0
+LUT3 		XLXI_42/XLXI_111/XLXI_6/Mmux_Q_mux0000_828
+   optimized to 0
+LUT3 		XLXI_42/XLXI_111/XLXI_6/Mmux_Q_mux0000_830
+   optimized to 0
+LUT3 		XLXI_42/XLXI_111/XLXI_6/Mmux_Q_mux0000_832
+   optimized to 0
+LUT3 		XLXI_42/XLXI_111/XLXI_6/Mmux_Q_mux0000_833
+   optimized to 0
+LUT3 		XLXI_42/XLXI_111/XLXI_6/Mmux_Q_mux0000_834
+   optimized to 0
+LUT3 		XLXI_42/XLXI_111/XLXI_6/Mmux_Q_mux0000_836
+   optimized to 0
+LUT3 		XLXI_42/XLXI_111/XLXI_6/Mmux_Q_mux0000_837
+   optimized to 0
+LUT3 		XLXI_42/XLXI_111/XLXI_6/Mmux_Q_mux0000_838
+   optimized to 0
+LUT3 		XLXI_42/XLXI_111/XLXI_6/Mmux_Q_mux0000_839
+   optimized to 0
+LUT3 		XLXI_42/XLXI_111/XLXI_6/Mmux_Q_mux0000_840
+   optimized to 0
+LUT3 		XLXI_42/XLXI_111/XLXI_6/Mmux_Q_mux0000_843
+   optimized to 0
+LUT3 		XLXI_42/XLXI_111/XLXI_6/Mmux_Q_mux0000_86
+   optimized to 0
+LUT3 		XLXI_42/XLXI_111/XLXI_6/Mmux_Q_mux0000_88
+   optimized to 0
+LUT3 		XLXI_42/XLXI_111/XLXI_6/Mmux_Q_mux0000_9
+   optimized to 0
+LUT3 		XLXI_42/XLXI_111/XLXI_6/Mmux_Q_mux0000_910
+   optimized to 0
+LUT3 		XLXI_42/XLXI_111/XLXI_6/Mmux_Q_mux0000_912
+   optimized to 0
+LUT3 		XLXI_42/XLXI_111/XLXI_6/Mmux_Q_mux0000_913
+   optimized to 0
+LUT3 		XLXI_42/XLXI_111/XLXI_6/Mmux_Q_mux0000_914
+   optimized to 0
+LUT3 		XLXI_42/XLXI_111/XLXI_6/Mmux_Q_mux0000_915
+   optimized to 0
+LUT3 		XLXI_42/XLXI_111/XLXI_6/Mmux_Q_mux0000_916
+   optimized to 0
+LUT3 		XLXI_42/XLXI_111/XLXI_6/Mmux_Q_mux0000_917
+   optimized to 0
+LUT3 		XLXI_42/XLXI_111/XLXI_6/Mmux_Q_mux0000_918
+   optimized to 0
+LUT3 		XLXI_42/XLXI_111/XLXI_6/Mmux_Q_mux0000_919
+   optimized to 0
+LUT3 		XLXI_42/XLXI_111/XLXI_6/Mmux_Q_mux0000_92
+   optimized to 0
+LUT3 		XLXI_42/XLXI_111/XLXI_6/Mmux_Q_mux0000_921
+   optimized to 0
+LUT3 		XLXI_42/XLXI_111/XLXI_6/Mmux_Q_mux0000_922
+   optimized to 0
+LUT3 		XLXI_42/XLXI_111/XLXI_6/Mmux_Q_mux0000_923
+   optimized to 0
+LUT3 		XLXI_42/XLXI_111/XLXI_6/Mmux_Q_mux0000_924
+   optimized to 0
+LUT3 		XLXI_42/XLXI_111/XLXI_6/Mmux_Q_mux0000_925
+   optimized to 0
+LUT3 		XLXI_42/XLXI_111/XLXI_6/Mmux_Q_mux0000_926
+   optimized to 0
+LUT3 		XLXI_42/XLXI_111/XLXI_6/Mmux_Q_mux0000_927
+   optimized to 0
+LUT3 		XLXI_42/XLXI_111/XLXI_6/Mmux_Q_mux0000_928
+   optimized to 0
+LUT3 		XLXI_42/XLXI_111/XLXI_6/Mmux_Q_mux0000_929
+   optimized to 0
+LUT3 		XLXI_42/XLXI_111/XLXI_6/Mmux_Q_mux0000_930
+   optimized to 0
+LUT3 		XLXI_42/XLXI_111/XLXI_6/Mmux_Q_mux0000_931
+   optimized to 0
+LUT3 		XLXI_42/XLXI_111/XLXI_6/Mmux_Q_mux0000_95
+   optimized to 0
+LUT3 		XLXI_42/XLXI_111/XLXI_6/Mmux_Q_mux0000_96
+   optimized to 0
+LUT3 		XLXI_42/XLXI_111/XLXI_6/Mmux_Q_mux0000_98
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_0_0
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_0_1
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_0_2
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_0_3
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_0_4
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_0_5
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_0_6
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_0_7
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_10_0
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_10_1
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_10_2
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_10_3
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_10_4
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_10_5
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_10_6
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_10_7
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_11_1
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_11_4
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_11_5
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_11_6
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_12_0
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_12_2
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_12_3
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_12_5
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_12_6
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_12_7
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_13_1
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_13_4
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_13_5
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_13_6
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_14_1
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_14_4
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_14_5
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_14_6
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_15_0
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_15_1
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_15_2
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_15_3
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_15_4
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_15_5
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_15_6
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_15_7
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_16_0
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_16_2
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_16_3
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_16_4
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_16_6
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_16_7
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_17_0
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_17_1
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_17_2
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_17_3
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_17_4
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_17_5
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_17_6
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_17_7
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_18_0
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_18_1
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_18_2
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_18_3
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_18_4
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_18_5
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_18_6
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_18_7
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_19_1
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_19_2
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_19_5
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_19_6
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_1_0
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_1_1
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_1_2
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_1_3
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_1_4
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_1_5
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_1_6
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_1_7
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_20_2
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_20_3
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_20_6
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_20_7
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_21_0
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_21_1
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_21_2
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_21_3
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_21_4
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_21_5
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_21_6
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_21_7
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_22_0
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_22_1
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_22_2
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_22_3
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_22_4
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_22_5
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_22_6
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_22_7
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_23_0
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_23_1
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_23_2
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_23_3
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_23_4
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_23_5
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_23_6
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_23_7
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_24_1
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_24_5
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_24_6
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_25_0
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_25_1
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_25_2
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_25_3
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_25_4
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_25_5
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_25_6
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_25_7
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_26_0
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_26_1
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_26_2
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_26_4
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_26_5
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_26_6
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_27_0
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_27_1
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_27_2
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_27_3
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_27_4
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_27_5
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_27_6
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_27_7
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_28_0
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_28_1
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_28_4
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_28_7
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_29_0
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_29_1
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_29_2
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_29_3
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_29_4
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_29_5
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_29_6
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_29_7
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_2_3
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_2_4
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_2_5
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_2_6
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_2_7
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_30_0
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_30_1
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_30_2
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_30_3
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_30_4
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_30_5
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_30_6
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_30_7
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_31_0
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_31_1
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_31_2
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_31_3
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_31_4
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_31_5
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_31_6
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_31_7
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_3_0
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_3_3
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_3_4
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_3_5
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_3_6
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_3_7
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_4_0
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_4_1
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_4_2
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_4_3
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_4_4
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_4_5
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_4_6
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_4_7
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_5_0
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_5_1
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_5_2
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_5_3
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_5_4
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_5_5
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_5_6
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_5_7
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_6_0
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_6_1
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_6_3
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_6_4
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_6_5
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_6_6
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_6_7
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_7_2
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_7_3
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_8_1
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_8_3
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_8_4
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_8_5
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_8_6
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_8_7
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_9_0
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_9_1
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_9_2
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_9_3
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_9_4
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_9_5
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_9_6
+   optimized to 0
+FDE 		XLXI_42/XLXI_111/XLXI_6/mem_9_7
+   optimized to 0
+AND3B1 		XLXI_42/XLXI_111/XLXI_7
+XOR2 		XLXI_42/XLXI_121/XLXI_129/XLXI_59/I_36_221
+XOR2 		XLXI_42/XLXI_121/XLXI_129/XLXI_59/I_36_222
+XOR2 		XLXI_42/XLXI_121/XLXI_129/XLXI_59/I_36_223
+XOR2 		XLXI_42/XLXI_121/XLXI_129/XLXI_59/I_36_224
+AND3 		XLXI_42/XLXI_121/XLXI_130/XLXI_119
+FDCE 		XLXI_42/XLXI_121/XLXI_130/XLXI_41/I_Q0
+   optimized to 0
+FDCE 		XLXI_42/XLXI_121/XLXI_130/XLXI_41/I_Q1
+   optimized to 0
+FDCE 		XLXI_42/XLXI_121/XLXI_130/XLXI_41/I_Q2
+   optimized to 0
+FDCE 		XLXI_42/XLXI_121/XLXI_130/XLXI_41/I_Q3
+   optimized to 0
+FDCE 		XLXI_42/XLXI_121/XLXI_130/XLXI_41/I_Q4
+   optimized to 0
+FDCE 		XLXI_42/XLXI_121/XLXI_130/XLXI_41/I_Q5
+   optimized to 0
+FDCE 		XLXI_42/XLXI_121/XLXI_130/XLXI_41/I_Q6
+   optimized to 0
+FDCE 		XLXI_42/XLXI_121/XLXI_130/XLXI_41/I_Q7
+   optimized to 0
+AND3 		XLXI_42/XLXI_121/XLXI_132/XLXI_119
+FDCE 		XLXI_42/XLXI_121/XLXI_132/XLXI_41/I_Q0
+   optimized to 0
+FDCE 		XLXI_42/XLXI_121/XLXI_132/XLXI_41/I_Q1
+   optimized to 0
+FDCE 		XLXI_42/XLXI_121/XLXI_132/XLXI_41/I_Q2
+   optimized to 0
+FDCE 		XLXI_42/XLXI_121/XLXI_132/XLXI_41/I_Q3
+   optimized to 0
+FDCE 		XLXI_42/XLXI_121/XLXI_132/XLXI_41/I_Q4
+   optimized to 0
+FDCE 		XLXI_42/XLXI_121/XLXI_132/XLXI_41/I_Q5
+   optimized to 0
+FDCE 		XLXI_42/XLXI_121/XLXI_132/XLXI_41/I_Q6
+   optimized to 0
+FDCE 		XLXI_42/XLXI_121/XLXI_132/XLXI_41/I_Q7
+   optimized to 0
+LUT3 		XLXI_42/XLXI_132/XLXI_1/Mmux_Q_mux0000_103
+   optimized to 0
+LUT3 		XLXI_42/XLXI_132/XLXI_1/Mmux_Q_mux0000_104
+   optimized to 0
+LUT3 		XLXI_42/XLXI_132/XLXI_1/Mmux_Q_mux0000_105
+   optimized to 0
+LUT3 		XLXI_42/XLXI_132/XLXI_1/Mmux_Q_mux0000_106
+   optimized to 0
+LUT3 		XLXI_42/XLXI_132/XLXI_1/Mmux_Q_mux0000_107
+   optimized to 0
+LUT3 		XLXI_42/XLXI_132/XLXI_1/Mmux_Q_mux0000_6
+   optimized to 0
+LUT3 		XLXI_42/XLXI_132/XLXI_1/Mmux_Q_mux0000_712
+   optimized to 0
+LUT3 		XLXI_42/XLXI_132/XLXI_1/Mmux_Q_mux0000_713
+   optimized to 0
+LUT3 		XLXI_42/XLXI_132/XLXI_1/Mmux_Q_mux0000_714
+   optimized to 0
+LUT3 		XLXI_42/XLXI_132/XLXI_1/Mmux_Q_mux0000_715
+   optimized to 0
+LUT3 		XLXI_42/XLXI_132/XLXI_1/Mmux_Q_mux0000_716
+   optimized to 0
+LUT3 		XLXI_42/XLXI_132/XLXI_1/Mmux_Q_mux0000_717
+   optimized to 0
+LUT3 		XLXI_42/XLXI_132/XLXI_1/Mmux_Q_mux0000_718
+   optimized to 0
+LUT3 		XLXI_42/XLXI_132/XLXI_1/Mmux_Q_mux0000_719
+   optimized to 0
+LUT3 		XLXI_42/XLXI_132/XLXI_1/Mmux_Q_mux0000_720
+   optimized to 0
+LUT3 		XLXI_42/XLXI_132/XLXI_1/Mmux_Q_mux0000_721
+   optimized to 0
+LUT3 		XLXI_42/XLXI_132/XLXI_1/Mmux_Q_mux0000_722
+   optimized to 0
+LUT3 		XLXI_42/XLXI_132/XLXI_1/Mmux_Q_mux0000_723
+   optimized to 0
+LUT3 		XLXI_42/XLXI_132/XLXI_1/Mmux_Q_mux0000_724
+   optimized to 0
+LUT3 		XLXI_42/XLXI_132/XLXI_1/Mmux_Q_mux0000_725
+   optimized to 0
+LUT3 		XLXI_42/XLXI_132/XLXI_1/Mmux_Q_mux0000_726
+   optimized to 0
+LUT3 		XLXI_42/XLXI_132/XLXI_1/Mmux_Q_mux0000_727
+   optimized to 0
+LUT3 		XLXI_42/XLXI_132/XLXI_1/Mmux_Q_mux0000_728
+   optimized to 0
+LUT3 		XLXI_42/XLXI_132/XLXI_1/Mmux_Q_mux0000_729
+   optimized to 0
+LUT3 		XLXI_42/XLXI_132/XLXI_1/Mmux_Q_mux0000_73
+   optimized to 0
+LUT3 		XLXI_42/XLXI_132/XLXI_1/Mmux_Q_mux0000_730
+   optimized to 0
+LUT3 		XLXI_42/XLXI_132/XLXI_1/Mmux_Q_mux0000_731
+   optimized to 0
+LUT3 		XLXI_42/XLXI_132/XLXI_1/Mmux_Q_mux0000_818
+   optimized to 0
+LUT3 		XLXI_42/XLXI_132/XLXI_1/Mmux_Q_mux0000_819
+   optimized to 0
+LUT3 		XLXI_42/XLXI_132/XLXI_1/Mmux_Q_mux0000_820
+   optimized to 0
+LUT3 		XLXI_42/XLXI_132/XLXI_1/Mmux_Q_mux0000_821
+   optimized to 0
+LUT3 		XLXI_42/XLXI_132/XLXI_1/Mmux_Q_mux0000_822
+   optimized to 0
+LUT3 		XLXI_42/XLXI_132/XLXI_1/Mmux_Q_mux0000_824
+   optimized to 0
+LUT3 		XLXI_42/XLXI_132/XLXI_1/Mmux_Q_mux0000_825
+   optimized to 0
+LUT3 		XLXI_42/XLXI_132/XLXI_1/Mmux_Q_mux0000_826
+   optimized to 0
+LUT3 		XLXI_42/XLXI_132/XLXI_1/Mmux_Q_mux0000_827
+   optimized to 0
+LUT3 		XLXI_42/XLXI_132/XLXI_1/Mmux_Q_mux0000_828
+   optimized to 0
+LUT3 		XLXI_42/XLXI_132/XLXI_1/Mmux_Q_mux0000_829
+   optimized to 0
+LUT3 		XLXI_42/XLXI_132/XLXI_1/Mmux_Q_mux0000_830
+   optimized to 0
+LUT3 		XLXI_42/XLXI_132/XLXI_1/Mmux_Q_mux0000_831
+   optimized to 0
+LUT3 		XLXI_42/XLXI_132/XLXI_1/Mmux_Q_mux0000_832
+   optimized to 0
+LUT3 		XLXI_42/XLXI_132/XLXI_1/Mmux_Q_mux0000_833
+   optimized to 0
+LUT3 		XLXI_42/XLXI_132/XLXI_1/Mmux_Q_mux0000_834
+   optimized to 0
+LUT3 		XLXI_42/XLXI_132/XLXI_1/Mmux_Q_mux0000_835
+   optimized to 0
+LUT3 		XLXI_42/XLXI_132/XLXI_1/Mmux_Q_mux0000_836
+   optimized to 0
+LUT3 		XLXI_42/XLXI_132/XLXI_1/Mmux_Q_mux0000_837
+   optimized to 0
+LUT3 		XLXI_42/XLXI_132/XLXI_1/Mmux_Q_mux0000_838
+   optimized to 0
+LUT3 		XLXI_42/XLXI_132/XLXI_1/Mmux_Q_mux0000_839
+   optimized to 0
+LUT3 		XLXI_42/XLXI_132/XLXI_1/Mmux_Q_mux0000_84
+   optimized to 0
+LUT3 		XLXI_42/XLXI_132/XLXI_1/Mmux_Q_mux0000_840
+   optimized to 0
+LUT3 		XLXI_42/XLXI_132/XLXI_1/Mmux_Q_mux0000_841
+   optimized to 0
+LUT3 		XLXI_42/XLXI_132/XLXI_1/Mmux_Q_mux0000_842
+   optimized to 0
+LUT3 		XLXI_42/XLXI_132/XLXI_1/Mmux_Q_mux0000_843
+   optimized to 0
+LUT3 		XLXI_42/XLXI_132/XLXI_1/Mmux_Q_mux0000_844
+   optimized to 0
+LUT3 		XLXI_42/XLXI_132/XLXI_1/Mmux_Q_mux0000_845
+   optimized to 0
+LUT3 		XLXI_42/XLXI_132/XLXI_1/Mmux_Q_mux0000_846
+   optimized to 0
+LUT3 		XLXI_42/XLXI_132/XLXI_1/Mmux_Q_mux0000_847
+   optimized to 0
+LUT3 		XLXI_42/XLXI_132/XLXI_1/Mmux_Q_mux0000_911
+   optimized to 0
+LUT3 		XLXI_42/XLXI_132/XLXI_1/Mmux_Q_mux0000_913
+   optimized to 0
+LUT3 		XLXI_42/XLXI_132/XLXI_1/Mmux_Q_mux0000_915
+   optimized to 0
+LUT3 		XLXI_42/XLXI_132/XLXI_1/Mmux_Q_mux0000_917
+   optimized to 0
+LUT3 		XLXI_42/XLXI_132/XLXI_1/Mmux_Q_mux0000_918
+   optimized to 0
+LUT3 		XLXI_42/XLXI_132/XLXI_1/Mmux_Q_mux0000_919
+   optimized to 0
+LUT3 		XLXI_42/XLXI_132/XLXI_1/Mmux_Q_mux0000_921
+   optimized to 0
+LUT3 		XLXI_42/XLXI_132/XLXI_1/Mmux_Q_mux0000_922
+   optimized to 0
+LUT3 		XLXI_42/XLXI_132/XLXI_1/Mmux_Q_mux0000_923
+   optimized to 0
+LUT3 		XLXI_42/XLXI_132/XLXI_1/Mmux_Q_mux0000_925
+   optimized to 0
+LUT3 		XLXI_42/XLXI_132/XLXI_1/Mmux_Q_mux0000_926
+   optimized to 0
+LUT3 		XLXI_42/XLXI_132/XLXI_1/Mmux_Q_mux0000_927
+   optimized to 0
+LUT3 		XLXI_42/XLXI_132/XLXI_1/Mmux_Q_mux0000_929
+   optimized to 0
+LUT3 		XLXI_42/XLXI_132/XLXI_1/Mmux_Q_mux0000_930
+   optimized to 0
+LUT3 		XLXI_42/XLXI_132/XLXI_1/Mmux_Q_mux0000_931
+   optimized to 0
+LUT3 		XLXI_42/XLXI_132/XLXI_1/Mmux_Q_mux0000_96
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_0_0
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_0_1
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_0_2
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_0_3
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_0_4
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_0_5
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_0_6
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_0_7
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_10_0
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_10_3
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_10_4
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_10_5
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_10_6
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_10_7
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_11_0
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_11_2
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_11_3
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_11_4
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_11_5
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_11_6
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_11_7
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_12_2
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_12_3
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_12_4
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_12_5
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_12_6
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_12_7
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_13_1
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_13_3
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_13_4
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_13_5
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_13_6
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_13_7
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_14_0
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_14_3
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_14_4
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_14_5
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_14_6
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_14_7
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_15_0
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_15_1
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_15_3
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_15_4
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_15_5
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_15_6
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_15_7
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_16_1
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_16_3
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_16_4
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_16_5
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_16_6
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_16_7
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_17_0
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_18_3
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_18_4
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_18_5
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_18_6
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_18_7
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_19_1
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_19_2
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_19_3
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_19_4
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_19_5
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_19_6
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_19_7
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_1_3
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_1_4
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_1_5
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_1_6
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_1_7
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_20_0
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_20_2
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_20_3
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_20_4
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_20_5
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_20_6
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_20_7
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_21_1
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_21_3
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_21_4
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_21_5
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_21_6
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_21_7
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_22_0
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_22_3
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_22_4
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_22_5
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_22_6
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_22_7
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_23_1
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_23_3
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_23_4
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_23_5
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_23_6
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_23_7
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_24_0
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_24_3
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_24_4
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_24_5
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_24_6
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_24_7
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_25_1
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_25_3
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_25_4
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_25_5
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_25_6
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_25_7
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_26_0
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_26_3
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_26_4
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_26_5
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_26_6
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_26_7
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_27_1
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_27_3
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_27_4
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_27_5
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_27_6
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_27_7
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_28_0
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_28_3
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_28_4
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_28_5
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_28_6
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_28_7
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_29_1
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_29_3
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_29_4
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_29_5
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_29_6
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_29_7
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_2_1
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_2_2
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_2_3
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_2_4
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_2_5
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_2_6
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_2_7
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_30_0
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_30_1
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_30_2
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_30_3
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_30_4
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_30_5
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_30_6
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_30_7
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_31_0
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_3_0
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_3_2
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_3_3
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_3_4
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_3_5
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_3_6
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_3_7
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_4_0
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_4_1
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_4_2
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_4_4
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_4_5
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_4_6
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_4_7
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_5_1
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_5_3
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_5_4
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_5_5
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_5_6
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_5_7
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_6_0
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_6_3
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_6_4
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_6_5
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_6_6
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_6_7
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_7_1
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_7_2
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_7_4
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_7_5
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_7_6
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_7_7
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_8_0
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_8_2
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_8_3
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_8_4
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_8_5
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_8_6
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_8_7
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_9_1
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_9_3
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_9_4
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_9_5
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_9_6
+   optimized to 0
+FDE 		XLXI_42/XLXI_132/XLXI_1/mem_9_7
+   optimized to 0
+PULLUP 		XLXI_42/XLXI_133/XLXI_39
+PULLDOWN 		XLXI_42/XLXI_65/XLXI_24
+PULLUP 		XLXI_42/XLXI_65/XLXI_25
+INV 		XLXI_42/XLXI_65/XLXI_28/RST_inv1_INV_0
+INV 		XLXI_42/XLXI_95
+GND 		XST_GND
+VCC 		XST_VCC
+
+To enable printing of redundant blocks removed and signals merged, set the
+detailed map report option and rerun map.
+
+Section 6 - IOB Properties
+--------------------------
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| IOB Name                           | Type             | Direction | IO Standard          | Diff  | Drive    | Slew | Reg (s)      | Resistor | IOB      |
+|                                    |                  |           |                      | Term  | Strength | Rate |              |          | Delay    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Clock                              | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| EN_D_Memory                        | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| EN_I_Memory                        | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| EN_hex                             | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| EnableDataLED                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| EnableInstructionLED               | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| RunMode                            | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| RunModeLED                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| WCLK_shiftReg                      | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| anO<0>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| anO<1>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| anO<2>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| anO<3>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| btn_CLR                            | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| btn_writeData                      | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| colO<0>                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| colO<1>                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| colO<2>                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| colO<3>                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| row<0>                             | IBUF             | INPUT     | LVCMOS25             |       |          |      |              | PULLDOWN | 0 / 0    |
+| row<1>                             | IBUF             | INPUT     | LVCMOS25             |       |          |      |              | PULLDOWN | 0 / 0    |
+| row<2>                             | IBUF             | INPUT     | LVCMOS25             |       |          |      |              | PULLDOWN | 0 / 0    |
+| row<3>                             | IBUF             | INPUT     | LVCMOS25             |       |          |      |              | PULLDOWN | 0 / 0    |
+| sseg<0>                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| sseg<1>                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| sseg<2>                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| sseg<3>                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| sseg<4>                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| sseg<5>                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| sseg<6>                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| sseg<7>                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Section 7 - RPMs
+----------------
+XLXI_42_XLXI_121_XLXI_129_XLXI_59_10    
+
+Section 8 - Guide Report
+------------------------
+Guide not run on this design.
+
+Section 9 - Area Group and Partition Summary
+--------------------------------------------
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Area Group Information
+----------------------
+
+  No area groups were found in this design.
+
+----------------------
+
+Section 10 - Timing Report
+--------------------------
+This design was not run using timing mode.
+
+Section 11 - Configuration String Details
+-----------------------------------------
+Use the "-detail" map option to print out Configuration Strings
+
+Section 12 - Control Set Information
+------------------------------------
+No control set information for this architecture.
+
+Section 13 - Utilization by Hierarchy
+-------------------------------------
+Use the "-detail" map option to print out the Utilization by Hierarchy section.

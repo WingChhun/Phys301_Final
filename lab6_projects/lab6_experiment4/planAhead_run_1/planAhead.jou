@@ -1,0 +1,11 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7
+# Build 321239 by xbuild on Fri Sep 27 19:31:35 MDT 2013
+# Start of session at: Thu Mar 01 10:33:51 2018
+# Process ID: 6164
+# Log file: C:/Users/James/Documents/Xlink_projects/lab6_projects/lab6_experiment4/planAhead_run_1/planAhead.log
+# Journal file: C:/Users/James/Documents/Xlink_projects/lab6_projects/lab6_experiment4/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source C:/Users/James/Documents/Xlink_projects/lab6_projects/lab6_experiment4/pa.fromHdl.tcl
+update_compile_order -fileset sim_1

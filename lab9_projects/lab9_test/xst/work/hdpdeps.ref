@@ -1,0 +1,17 @@
+V3 13
+FL C:/Users/James/Documents/Xlink_projects/lab9_projects/lab9_test/test.vhf 2018/04/18.20:37:18 P.20131013
+EN work/FJKCE_MXILINX_test 1524109529 \
+      FL C:/Users/James/Documents/Xlink_projects/lab9_projects/lab9_test/test.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/FJKCE_MXILINX_test/BEHAVIORAL 1524109530 \
+      FL C:/Users/James/Documents/Xlink_projects/lab9_projects/lab9_test/test.vhf \
+      EN work/FJKCE_MXILINX_test 1524109529 CP FDCE CP AND3B2 CP AND3B1 CP OR3 \
+      CP AND2B1
+EN work/test 1524109531 \
+      FL C:/Users/James/Documents/Xlink_projects/lab9_projects/lab9_test/test.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/test/BEHAVIORAL 1524109532 \
+      FL C:/Users/James/Documents/Xlink_projects/lab9_projects/lab9_test/test.vhf \
+      EN work/test 1524109531 CP FJKCE_MXILINX_test CP PULLUP

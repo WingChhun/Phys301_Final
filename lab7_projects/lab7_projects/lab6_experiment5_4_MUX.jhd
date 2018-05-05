@@ -1,0 +1,11 @@
+MODULE lab6_experiment5_4_MUX
+	SUBMODULE lab6_experiment5_2_1_MUX
+		INSTANCE XLXI_2
+	SUBMODULE lab6_experiment5_2_1_MUX
+		INSTANCE XLXI_3
+	SUBMODULE lab6_experiment5_2_1_MUX
+		INSTANCE XLXI_4
+	SUBMODULE lab6_experiment5_2_1_MUX
+		INSTANCE XLXI_5
+	SUBMODULE lab6_experimen3
+		INSTANCE XLXI_8

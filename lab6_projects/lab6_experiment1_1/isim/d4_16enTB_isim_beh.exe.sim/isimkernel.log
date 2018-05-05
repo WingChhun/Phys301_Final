@@ -1,0 +1,29 @@
+Command line:
+   d4_16enTB_isim_beh.exe
+     -simmode  gui
+     -simrunnum  1
+     -socket  38323
+
+Sat Feb 24 17:28:24 2018
+
+
+ Elaboration Time: 0.046875 sec
+ Current Memory Usage: 881.353 Meg
+
+ Total Signals          : 6
+ Total Nets             : 21
+ Total Signal Drivers   : 3
+ Total Blocks           : 5
+ Total Primitive Blocks : 4
+ Total Processes        : 2
+ Total Traceable Variables  : 11
+ Total Scalar Nets and Variables : 400
+Total Line Count : 37
+
+ Total Simulation Time: 0.078125 sec
+
+ Current Memory Usage: 409.494 Meg
+
+Sat Feb 24 20:24:15 2018
+
+

@@ -1,0 +1,5 @@
+MODULE test_hexShifter
+	SUBMODULE shiftreg_hex2D
+		INSTANCE XLXI_6
+	SUBMODULE shiftreg_hex2D
+		INSTANCE XLXI_7

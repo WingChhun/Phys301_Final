@@ -1,0 +1,15 @@
+V3 11
+FL C:/Users/James/Documents/Xlink_projects/lab8_projects/lab8_experiment1/lab8_experiment1.vhf 2018/03/27.09:24:00 P.20131013
+EN work/lab8_experiment1 1522167846 \
+      FL C:/Users/James/Documents/Xlink_projects/lab8_projects/lab8_experiment1/lab8_experiment1.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/lab8_experiment1/BEHAVIORAL 1522167847 \
+      FL C:/Users/James/Documents/Xlink_projects/lab8_projects/lab8_experiment1/lab8_experiment1.vhf \
+      EN work/lab8_experiment1 1522167846 CP DCM_50M CP FD CP INV CP PULLDOWN
+FL C:/Users/James/Documents/Xlink_projects/swag/DCM_50M.vhd 2016/09/28.15:03:58 P.20131013
+EN work/DCM_50M 1522167844 \
+      FL C:/Users/James/Documents/Xlink_projects/swag/DCM_50M.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/DCM_50M/Behavioral 1522167845 \
+      FL C:/Users/James/Documents/Xlink_projects/swag/DCM_50M.vhd EN work/DCM_50M 1522167844

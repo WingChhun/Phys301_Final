@@ -1,0 +1,12 @@
+xst -intstyle ise -ifn "C:/Users/James/Documents/Xlink_projects/lab8_projects/lab8_experiment6/lab8_experiment6.xst" -ofn "C:/Users/James/Documents/Xlink_projects/lab8_projects/lab8_experiment6/lab8_experiment6.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab8_experiment6.ucf -p xc3s100e-cp132-4 lab8_experiment6.ngc lab8_experiment6.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o lab8_experiment6_map.ncd lab8_experiment6.ngd lab8_experiment6.pcf 
+par -w -intstyle ise -ol high -t 1 lab8_experiment6_map.ncd lab8_experiment6.ncd lab8_experiment6.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml lab8_experiment6.twx lab8_experiment6.ncd -o lab8_experiment6.twr lab8_experiment6.pcf -ucf lab8_experiment6.ucf 
+bitgen -intstyle ise -f lab8_experiment6.ut lab8_experiment6.ncd 
+xst -intstyle ise -ifn "C:/Users/James/Documents/Xlink_projects/lab8_projects/lab8_experiment6/lab8_experiment6.xst" -ofn "C:/Users/James/Documents/Xlink_projects/lab8_projects/lab8_experiment6/lab8_experiment6.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab8_experiment6.ucf -p xc3s100e-cp132-4 lab8_experiment6.ngc lab8_experiment6.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o lab8_experiment6_map.ncd lab8_experiment6.ngd lab8_experiment6.pcf 
+par -w -intstyle ise -ol high -t 1 lab8_experiment6_map.ncd lab8_experiment6.ncd lab8_experiment6.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml lab8_experiment6.twx lab8_experiment6.ncd -o lab8_experiment6.twr lab8_experiment6.pcf -ucf lab8_experiment6.ucf 
+bitgen -intstyle ise -f lab8_experiment6.ut lab8_experiment6.ncd 

@@ -1,0 +1,35 @@
+#INPUT DEVICES
+
+
+#Programming Mode Constraints
+NET "CLK" LOC =B8 ; #CLssOCK
+
+NET "nCS" LOC = G12;
+NET "nWE" LOC =N3;
+NET "WCLK" LOC = A7;
+
+NET "A[0]" LOC = F3;
+NET "A[1]" LOC = E2;
+
+NET "D[0]" LOC = P11;
+NET "D[1]" LOC = L3;
+NET "D[2]" LOC = K3;
+NET "D[3]" LOC = B4;
+
+
+
+#Anodes 0 -3
+NET "anO[3]" LOC = K14;
+NET "anO[2]" LOC = M13;
+NET "anO[1]" LOC = J12; #First anode 
+NET "anO[0]" LOC = F12; #SEcond anode on board
+#Plan ahead Cathode output
+NET "sseg[7]" LOC = N13; # decimal point dont need 
+NET "sseg[0]" LOC = M12; #CG
+NET "sseg[1]" LOC = L13; #CF
+NET "sseg[2]" LOC = P12; #CE
+NET "sseg[3]" LOC = N11; #CD
+NET "sseg[4]" LOC = N14; #CC
+NET "sseg[5]" LOC = H12; #CB
+NET "sseg[6]" LOC = L14; #CA
+

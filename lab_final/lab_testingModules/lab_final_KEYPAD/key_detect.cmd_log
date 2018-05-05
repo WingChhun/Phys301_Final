@@ -1,0 +1,2 @@
+vhdtdtfi -lib work ../../modules/key_detect.vhd -prj lab_final_KEYPAD -o key_detect.spl -module key_detect -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e key_detect.spl C:/Users/James/Documents/Xlink_projects/lab_final/lab_testingModules/lab_final_KEYPAD/key_detect.sym 

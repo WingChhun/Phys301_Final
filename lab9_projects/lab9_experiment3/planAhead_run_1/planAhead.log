@@ -1,0 +1,71 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7
+# Build 321239 by xbuild on Fri Sep 27 19:31:35 MDT 2013
+# Start of session at: Tue Apr 17 06:57:38 2018
+# Process ID: 7176
+# Log file: C:/Users/James/Documents/Xlink_projects/lab9_projects/lab9_experiment3/planAhead_run_1/planAhead.log
+# Journal file: C:/Users/James/Documents/Xlink_projects/lab9_projects/lab9_experiment3/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Common 17-86] Your PlanAhead license expires in -1629 day(s)
+INFO: [Device 21-36] Loading parts and site information from C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source C:/Users/James/Documents/Xlink_projects/lab9_projects/lab9_experiment3/pa.fromHdl.tcl
+# create_project -name lab9_experiment3 -dir "C:/Users/James/Documents/Xlink_projects/lab9_projects/lab9_experiment3/planAhead_run_1" -part xc3s100ecp132-4
+# set_param project.pinAheadLayout yes
+# set srcset [get_property srcset [current_run -impl]]
+# set_property target_constrs_file "lab9_experiment3.ucf" [current_fileset -constrset]
+Adding file 'C:/Users/James/Documents/Xlink_projects/lab9_projects/lab9_experiment3/lab9_experiment3.ucf' to fileset 'constrs_1'
+# set hdlfile [add_files [list {../../swag/SSD_1dig.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {../../swag/sel_strobeB.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {../../swag/mux4SSD.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {../../swag/DCM_50M.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {../../swag/bin2BCD3en.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {lab6_experimen3.vhf}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {lab9_experiment3.vhf}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set_property top lab9_experiment3 $srcset
+# add_files [list {lab9_experiment3.ucf}] -fileset [get_property constrset [current_run]]
+# open_rtl_design -part xc3s100ecp132-4
+Using Verific elaboration
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Parsing VHDL file "C:/Users/James/Documents/Xlink_projects/swag/SSD_1dig.vhd" into library work
+Parsing VHDL file "C:/Users/James/Documents/Xlink_projects/swag/sel_strobeB.vhd" into library work
+Parsing VHDL file "C:/Users/James/Documents/Xlink_projects/swag/mux4SSD.vhd" into library work
+Parsing VHDL file "C:/Users/James/Documents/Xlink_projects/swag/DCM_50M.vhd" into library work
+Parsing VHDL file "C:/Users/James/Documents/Xlink_projects/swag/bin2BCD3en.vhd" into library work
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+Parsing VHDL file "C:/Users/James/Documents/Xlink_projects/lab9_projects/lab9_experiment3/lab6_experimen3.vhf" into library work
+Parsing VHDL file "C:/Users/James/Documents/Xlink_projects/lab9_projects/lab9_experiment3/lab9_experiment3.vhf" into library work
+INFO: [Designutils 20-910] Reading macro library C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn
+Parsing EDIF File [C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn]
+INFO: [Common 17-344] 'open_rtl_design' was cancelled
+INFO: [Common 17-344] 'source' was cancelled
+update_compile_order -fileset sim_1
+exit
+ERROR: [PlanAhead 12-106] *** Exception: ui.h.b: Found deleted key in HTclEventBroker. Verify if the classes listed here call cleanup()
+HTclEvent: DEBUG_PORT_CONFIG_CHANGE   Classes: ui.views.aR 
+HTclEvent: SIGNAL_BUS_MODIFY   Classes: ui.views.aR 
+HTclEvent: SIGNAL_MODIFY   Classes: ui.views.aR 
+HTclEvent: DEBUG_CORE_CONFIG_CHANGE   Classes: ui.views.aR 
+ (See C:/Users/James/Documents/Xlink_projects/lab9_projects/lab9_experiment3\planAhead_pid7176.debug)
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Tue Apr 17 06:57:59 2018...
+INFO: [Common 17-83] Releasing license: PlanAhead

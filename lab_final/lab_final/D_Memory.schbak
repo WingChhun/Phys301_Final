@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drawing version="7">
+    <attr value="spartan3e" name="DeviceFamilyName">
+        <trait delete="all:0" />
+        <trait editname="all:0" />
+        <trait edittrait="all:0" />
+    </attr>
+    <netlist>
+        <signal name="XLXN_34" />
+        <signal name="XLXN_35" />
+        <signal name="clrData" />
+        <signal name="DebugMode" />
+        <signal name="EnableDataMode" />
+        <signal name="XLXN_14" />
+        <signal name="Address(4:0)" />
+        <signal name="dataRegister(7:0)" />
+        <signal name="XLXN_42(7:0)" />
+        <signal name="btn_writeData" />
+        <signal name="dataOutput(7:0)" />
+        <port polarity="Input" name="clrData" />
+        <port polarity="Input" name="DebugMode" />
+        <port polarity="Input" name="EnableDataMode" />
+        <port polarity="Input" name="Address(4:0)" />
+        <port polarity="Input" name="dataRegister(7:0)" />
+        <port polarity="Input" name="btn_writeData" />
+        <port polarity="Output" name="dataOutput(7:0)" />
+        <blockdef name="sRAM32x8_ex_pgm_data">
+            <timestamp>2018-4-26T17:40:9</timestamp>
+            <rect width="256" x="64" y="-320" height="320" />
+            <line x2="0" y1="-288" y2="-288" x1="64" />
+            <line x2="0" y1="-224" y2="-224" x1="64" />
+            <line x2="0" y1="-160" y2="-160" x1="64" />
+            <rect width="64" x="0" y="-108" height="24" />
+            <line x2="0" y1="-96" y2="-96" x1="64" />
+            <rect width="64" x="0" y="-44" height="24" />
+            <line x2="0" y1="-32" y2="-32" x1="64" />
+            <rect width="64" x="320" y="-300" height="24" />
+            <line x2="384" y1="-288" y2="-288" x1="320" />
+        </blockdef>
+        <blockdef name="and2">
+            <timestamp>2000-1-1T10:10:10</timestamp>
+            <line x2="64" y1="-64" y2="-64" x1="0" />
+            <line x2="64" y1="-128" y2="-128" x1="0" />
+            <line x2="192" y1="-96" y2="-96" x1="256" />
+            <arc ex="144" ey="-144" sx="144" sy="-48" r="48" cx="144" cy="-96" />
+            <line x2="64" y1="-48" y2="-48" x1="144" />
+            <line x2="144" y1="-144" y2="-144" x1="64" />
+            <line x2="64" y1="-48" y2="-144" x1="64" />
+        </blockdef>
+        <block symbolname="and2" name="XLXI_2">
+            <blockpin signalname="EnableDataMode" name="I0" />
+            <blockpin signalname="DebugMode" name="I1" />
+            <blockpin signalname="XLXN_14" name="O" />
+        </block>
+        <block symbolname="sRAM32x8_ex_pgm_data" name="XLXI_1">
+            <blockpin signalname="clrData" name="nCS" />
+            <blockpin signalname="XLXN_14" name="nWE" />
+            <blockpin signalname="btn_writeData" name="WCLK" />
+            <blockpin signalname="Address(4:0)" name="A(4:0)" />
+            <blockpin signalname="dataRegister(7:0)" name="D(7:0)" />
+            <blockpin signalname="dataOutput(7:0)" name="Q(7:0)" />
+        </block>
+    </netlist>
+    <sheet sheetnum="1" width="3520" height="2720">
+        <branch name="clrData">
+            <wire x2="608" y1="80" y2="80" x1="384" />
+            <wire x2="608" y1="80" y2="160" x1="608" />
+            <wire x2="624" y1="160" y2="160" x1="608" />
+        </branch>
+        <branch name="DebugMode">
+            <wire x2="336" y1="192" y2="192" x1="304" />
+        </branch>
+        <branch name="EnableDataMode">
+            <wire x2="336" y1="256" y2="256" x1="304" />
+        </branch>
+        <instance x="336" y="320" name="XLXI_2" orien="R0" />
+        <branch name="XLXN_14">
+            <wire x2="624" y1="224" y2="224" x1="592" />
+        </branch>
+        <branch name="Address(4:0)">
+            <wire x2="432" y1="464" y2="464" x1="272" />
+            <wire x2="432" y1="352" y2="464" x1="432" />
+            <wire x2="608" y1="352" y2="352" x1="432" />
+            <wire x2="624" y1="352" y2="352" x1="608" />
+        </branch>
+        <branch name="dataRegister(7:0)">
+            <wire x2="608" y1="528" y2="528" x1="272" />
+            <wire x2="624" y1="416" y2="416" x1="608" />
+            <wire x2="608" y1="416" y2="528" x1="608" />
+        </branch>
+        <branch name="btn_writeData">
+            <wire x2="416" y1="352" y2="352" x1="224" />
+            <wire x2="416" y1="288" y2="352" x1="416" />
+            <wire x2="608" y1="288" y2="288" x1="416" />
+            <wire x2="624" y1="288" y2="288" x1="608" />
+        </branch>
+        <instance x="624" y="448" name="XLXI_1" orien="R0">
+        </instance>
+        <iomarker fontsize="28" x="384" y="80" name="clrData" orien="R180" />
+        <iomarker fontsize="28" x="304" y="192" name="DebugMode" orien="R180" />
+        <iomarker fontsize="28" x="304" y="256" name="EnableDataMode" orien="R180" />
+        <iomarker fontsize="28" x="272" y="464" name="Address(4:0)" orien="R180" />
+        <iomarker fontsize="28" x="224" y="352" name="btn_writeData" orien="R180" />
+        <iomarker fontsize="28" x="272" y="528" name="dataRegister(7:0)" orien="R180" />
+        <branch name="dataOutput(7:0)">
+            <wire x2="1216" y1="160" y2="160" x1="1008" />
+        </branch>
+        <iomarker fontsize="28" x="1216" y="160" name="dataOutput(7:0)" orien="R0" />
+    </sheet>
+</drawing>

@@ -1,0 +1,14 @@
+#Data input
+NET "CLR" LOC ="G12";
+
+NET "Q0" LOC ="M5";
+NET "Q1" LOC ="M11";
+NET "Q2" LOC ="P7";
+NET "Q3" LOC ="P6";
+#Clock
+
+NET "Clock" LOC ="B8"; #System clock for BCD to Binary module
+
+
+
+

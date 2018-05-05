@@ -1,0 +1,3 @@
+sch2hdl,-intstyle,ise,-family,spartan3e,-flat,-suppress,-vhdl,C:/Users/James/Documents/Xlink_projects/lab9_projects/lab9_experiment4/stateCount.vhf,-w,C:/Users/James/Documents/Xlink_projects/lab9_projects/lab9_experiment4/stateCount.sch
+sch2hdl,-intstyle,ise,-family,spartan3e,-flat,-suppress,-vhdl,C:/Users/James/Documents/Xlink_projects/lab9_projects/lab9_experiment4/lab9_experiment4.vhf,-w,C:/Users/James/Documents/Xlink_projects/lab9_projects/lab9_experiment4/lab9_experiment4.sch
+sch2hdl,-intstyle,ise,-family,spartan3e,-flat,-suppress,-vhdl,C:/Users/James/Documents/Xlink_projects/lab9_projects/lab9_experiment4/lab9_experiment3.vhf,-w,C:/Users/James/Documents/Xlink_projects/lab9_projects/lab9_experiment4/lab9_experiment3.sch

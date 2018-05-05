@@ -1,0 +1,24 @@
+V3 19
+FL C:/Users/James/Documents/Xlink_projects/lab8_projects/lab8_experiment2/lab8_experiment2.vhf 2018/03/27.09:45:07 P.20131013
+EN work/FJKC_MXILINX_lab8_experiment2 1522169113 \
+      FL C:/Users/James/Documents/Xlink_projects/lab8_projects/lab8_experiment2/lab8_experiment2.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/FJKC_MXILINX_lab8_experiment2/BEHAVIORAL 1522169114 \
+      FL C:/Users/James/Documents/Xlink_projects/lab8_projects/lab8_experiment2/lab8_experiment2.vhf \
+      EN work/FJKC_MXILINX_lab8_experiment2 1522169113 CP FDC CP AND3B2 CP AND3B1 \
+      CP OR3 CP AND2B1
+EN work/lab8_experiment2 1522169115 \
+      FL C:/Users/James/Documents/Xlink_projects/lab8_projects/lab8_experiment2/lab8_experiment2.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/lab8_experiment2/BEHAVIORAL 1522169116 \
+      FL C:/Users/James/Documents/Xlink_projects/lab8_projects/lab8_experiment2/lab8_experiment2.vhf \
+      EN work/lab8_experiment2 1522169115 CP DCM_50M \
+      CP FJKC_MXILINX_lab8_experiment2 CP PULLDOWN CP PULLUP CP GND
+FL C:/Users/James/Documents/Xlink_projects/swag/DCM_50M.vhd 2016/09/28.15:03:58 P.20131013
+EN work/DCM_50M 1522169111 \
+      FL C:/Users/James/Documents/Xlink_projects/swag/DCM_50M.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/DCM_50M/Behavioral 1522169112 \
+      FL C:/Users/James/Documents/Xlink_projects/swag/DCM_50M.vhd EN work/DCM_50M 1522169111

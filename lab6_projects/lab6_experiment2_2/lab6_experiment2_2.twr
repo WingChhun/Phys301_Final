@@ -1,0 +1,138 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 4
+-n 3 -fastpaths -xml lab6_experiment2_2.twx lab6_experiment2_2.ncd -o
+lab6_experiment2_2.twr lab6_experiment2_2.pcf -ucf lab6_experiment2_2.ucf
+
+Design file:              lab6_experiment2_2.ncd
+Physical constraint file: lab6_experiment2_2.pcf
+Device,package,speed:     xc3s100e,cp132,-4 (PRODUCTION 1.27 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+hexA<0>        |sseg<0>        |    8.127|
+hexA<0>        |sseg<1>        |    8.352|
+hexA<0>        |sseg<2>        |    9.113|
+hexA<0>        |sseg<3>        |    8.904|
+hexA<0>        |sseg<4>        |    8.073|
+hexA<0>        |sseg<5>        |    9.243|
+hexA<0>        |sseg<6>        |    8.159|
+hexA<1>        |sseg<0>        |   10.025|
+hexA<1>        |sseg<1>        |   10.310|
+hexA<1>        |sseg<2>        |   10.040|
+hexA<1>        |sseg<3>        |   10.013|
+hexA<1>        |sseg<4>        |   10.360|
+hexA<1>        |sseg<5>        |    9.574|
+hexA<1>        |sseg<6>        |   10.057|
+hexA<2>        |sseg<0>        |    8.820|
+hexA<2>        |sseg<1>        |    9.110|
+hexA<2>        |sseg<2>        |    8.622|
+hexA<2>        |sseg<3>        |    8.540|
+hexA<2>        |sseg<4>        |    9.160|
+hexA<2>        |sseg<5>        |    9.180|
+hexA<2>        |sseg<6>        |    8.852|
+hexA<3>        |sseg<0>        |    9.765|
+hexA<3>        |sseg<1>        |   10.015|
+hexA<3>        |sseg<2>        |    9.562|
+hexA<3>        |sseg<3>        |    9.306|
+hexA<3>        |sseg<4>        |   10.329|
+hexA<3>        |sseg<5>        |    9.891|
+hexA<3>        |sseg<6>        |    9.797|
+hexB<0>        |sseg<0>        |    9.182|
+hexB<0>        |sseg<1>        |    9.407|
+hexB<0>        |sseg<2>        |   10.168|
+hexB<0>        |sseg<3>        |    9.959|
+hexB<0>        |sseg<4>        |    9.128|
+hexB<0>        |sseg<5>        |   10.298|
+hexB<0>        |sseg<6>        |    9.214|
+hexB<1>        |sseg<0>        |    9.073|
+hexB<1>        |sseg<1>        |    9.358|
+hexB<1>        |sseg<2>        |    9.088|
+hexB<1>        |sseg<3>        |    9.061|
+hexB<1>        |sseg<4>        |    9.408|
+hexB<1>        |sseg<5>        |    8.622|
+hexB<1>        |sseg<6>        |    9.105|
+hexB<2>        |sseg<0>        |    9.335|
+hexB<2>        |sseg<1>        |    9.625|
+hexB<2>        |sseg<2>        |    9.137|
+hexB<2>        |sseg<3>        |    9.055|
+hexB<2>        |sseg<4>        |    9.675|
+hexB<2>        |sseg<5>        |    9.695|
+hexB<2>        |sseg<6>        |    9.367|
+hexB<3>        |sseg<0>        |    9.268|
+hexB<3>        |sseg<1>        |    9.518|
+hexB<3>        |sseg<2>        |    9.065|
+hexB<3>        |sseg<3>        |    8.809|
+hexB<3>        |sseg<4>        |    9.832|
+hexB<3>        |sseg<5>        |    9.394|
+hexB<3>        |sseg<6>        |    9.300|
+sel<0>         |anO<0>         |    7.905|
+sel<0>         |anO<1>         |    8.632|
+sel<0>         |anO<2>         |    9.461|
+sel<0>         |anO<3>         |    9.085|
+sel<0>         |sseg<0>        |    9.872|
+sel<0>         |sseg<1>        |   10.097|
+sel<0>         |sseg<2>        |   10.858|
+sel<0>         |sseg<3>        |   10.649|
+sel<0>         |sseg<4>        |   10.354|
+sel<0>         |sseg<5>        |   10.988|
+sel<0>         |sseg<6>        |    9.904|
+sel<1>         |anO<0>         |    6.512|
+sel<1>         |anO<1>         |    7.304|
+sel<1>         |anO<2>         |    6.820|
+sel<1>         |anO<3>         |    6.417|
+sel<1>         |sseg<0>        |    9.762|
+sel<1>         |sseg<1>        |   10.012|
+sel<1>         |sseg<2>        |    9.833|
+sel<1>         |sseg<3>        |    9.703|
+sel<1>         |sseg<4>        |   10.326|
+sel<1>         |sseg<5>        |    9.963|
+sel<1>         |sseg<6>        |    9.794|
+---------------+---------------+---------+
+
+
+Analysis completed Tue Feb 27 11:14:53 2018 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 195 MB
+
+
+

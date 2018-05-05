@@ -1,0 +1,18 @@
+sch2sym -intstyle ise -family spartan3e -w -refsym I_Memory C:/Users/James/Documents/Xlink_projects/lab_final/lab_final/I_Memory.sch C:/Users/James/Documents/Xlink_projects/lab_final/lab_final/I_Memory.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym I_Memory C:/Users/James/Documents/Xlink_projects/lab_final/lab_final/I_Memory.sch C:/Users/James/Documents/Xlink_projects/lab_final/lab_final/I_Memory.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym I_Memory C:/Users/James/Documents/Xlink_projects/lab_final/lab_final/I_Memory.sch C:/Users/James/Documents/Xlink_projects/lab_final/lab_final/I_Memory.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym I_Memory C:/Users/James/Documents/Xlink_projects/lab_final/lab_final/I_Memory.sch C:/Users/James/Documents/Xlink_projects/lab_final/lab_final/I_Memory.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym I_Memory C:/Users/James/Documents/Xlink_projects/lab_final/lab_final/I_Memory.sch C:/Users/James/Documents/Xlink_projects/lab_final/lab_final/I_Memory.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym I_Memory C:/Users/James/Documents/Xlink_projects/lab_final/lab_final/I_Memory.sch C:/Users/James/Documents/Xlink_projects/lab_final/lab_final/I_Memory.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym I_Memory C:/Users/James/Documents/Xlink_projects/lab_final/lab_final/I_Memory.sch C:/Users/James/Documents/Xlink_projects/lab_final/lab_final/I_Memory.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym I_Memory C:/Users/James/Documents/Xlink_projects/lab_final/lab_final/I_Memory.sch C:/Users/James/Documents/Xlink_projects/lab_final/lab_final/I_Memory.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym I_Memory C:/Users/James/Documents/Xlink_projects/lab_final/lab_final/I_Memory.sch C:/Users/James/Documents/Xlink_projects/lab_final/lab_final/I_Memory.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym I_Memory C:/Users/James/Documents/Xlink_projects/lab_final/lab_final/I_Memory.sch C:/Users/James/Documents/Xlink_projects/lab_final/lab_final/I_Memory.sym 
+sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl I_Memory_drc.vhf -w C:/Users/James/Documents/Xlink_projects/lab_final/lab_final/I_Memory.sch 
+sch2sym -intstyle ise -family spartan3e -w -refsym I_Memory C:/Users/James/Documents/Xlink_projects/lab_final/lab_final/I_Memory.sch C:/Users/James/Documents/Xlink_projects/lab_final/lab_final/I_Memory.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym I_Memory C:/Users/James/Documents/Xlink_projects/lab_final/lab_final/I_Memory.sch C:/Users/James/Documents/Xlink_projects/lab_final/lab_final/I_Memory.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym I_Memory C:/Users/James/Documents/Xlink_projects/lab_final/lab_final/I_Memory.sch C:/Users/James/Documents/Xlink_projects/lab_final/lab_final/I_Memory.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym I_Memory C:/Users/James/Documents/Xlink_projects/lab_final/lab_final/I_Memory.sch C:/Users/James/Documents/Xlink_projects/lab_final/lab_final/I_Memory.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym I_Memory C:/Users/James/Documents/Xlink_projects/lab_final/lab_final/I_Memory.sch C:/Users/James/Documents/Xlink_projects/lab_final/lab_final/I_Memory.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym I_Memory C:/Users/James/Documents/Xlink_projects/lab_final/lab_final/I_Memory.sch C:/Users/James/Documents/Xlink_projects/lab_final/lab_final/I_Memory.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym I_Memory C:/Users/James/Documents/Xlink_projects/lab_final/lab_final/I_Memory.sch C:/Users/James/Documents/Xlink_projects/lab_final/lab_final/I_Memory.sym 

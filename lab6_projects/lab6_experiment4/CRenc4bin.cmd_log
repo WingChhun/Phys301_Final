@@ -1,0 +1,2 @@
+vhdtdtfi -lib work CRenc4bin.vhd -prj lab6_experiment4 -o CRenc4bin.spl -module CRenc4bin -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e CRenc4bin.spl C:/Users/James/Documents/Xlink_projects/lab6_projects/lab6_experiment4/CRenc4bin.sym 

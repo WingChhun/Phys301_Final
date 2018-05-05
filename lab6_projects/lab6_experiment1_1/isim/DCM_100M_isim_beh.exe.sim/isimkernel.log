@@ -1,0 +1,29 @@
+Command line:
+   DCM_100M_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  4665
+
+Sun Feb 25 20:00:40 2018
+
+
+ Elaboration Time: 0.046875 sec
+
+ Current Memory Usage: 881.377 Meg
+
+ Total Signals          : 7
+ Total Nets             : 7
+ Total Signal Drivers   : 5
+ Total Blocks           : 3
+ Total Primitive Blocks : 3
+ Total Processes        : 5
+ Total Traceable Variables  : 23
+ Total Scalar Nets and Variables : 500
+Total Line Count : 50
+
+ Total Simulation Time: 0.046875 sec
+
+ Current Memory Usage: 566.804 Meg
+
+Sun Feb 25 20:25:28 2018
+

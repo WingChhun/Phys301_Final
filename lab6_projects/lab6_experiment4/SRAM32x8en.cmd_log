@@ -1,0 +1,2 @@
+vhdtdtfi -lib work ../../lab_final/modules/SRAM32x8en.vhd -prj lab6_experiment4 -o SRAM32x8en.spl -module SRAM32x8en -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e SRAM32x8en.spl C:/Users/James/Documents/Xlink_projects/lab6_projects/lab6_experiment4/SRAM32x8en.sym 

@@ -1,0 +1,3 @@
+MODULE lab6_experiment2
+	SUBMODULE SSD_1dig
+		INSTANCE XLXI_1

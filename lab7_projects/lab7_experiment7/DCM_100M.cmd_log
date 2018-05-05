@@ -1,0 +1,2 @@
+vhdtdtfi -lib work ../../lab6_projects/swag/DCM_100M.vhd -prj lab7_experiment7 -o DCM_100M.spl -module DCM_100M -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e DCM_100M.spl C:/Users/James/Documents/Xlink_projects/lab7_projects/lab7_experiment7/DCM_100M.sym 

@@ -1,0 +1,42 @@
+
+# PlanAhead Generated physical constraints 
+#Columns
+NET "colO[0]" LOC = B2;
+NET "colO[1]" LOC = A3;
+NET "colO[2]" LOC = J3;
+NET "colO[3]" LOC = B5;
+
+#Rows
+NET "row[0]" LOC = C6;
+NET "row[1]" LOC = B6;
+NET "row[2]" LOC = C5;
+NET "row[3]" LOC = B7;
+
+
+
+
+#Select strobe (pushdown button)
+
+NET "En" LOC = G12;
+NET "CLKIn" LOC =B8 ; #CLOCK
+
+#Anodes 0 -3
+
+NET "anO[3]" LOC = K14;
+NET "anO[2]" LOC = M13;
+NET "anO[1]" LOC = J12; #First anode 
+NET "anO[0]" LOC = F12; #SEcond anode on board
+
+
+
+#Plan ahead Cathode output
+
+
+NET "sseg[7]" LOC = N13; # decimal point dont need 
+NET "sseg[0]" LOC = M12; #CG
+NET "sseg[1]" LOC = L13; #CF
+NET "sseg[2]" LOC = P12; #CE
+NET "sseg[3]" LOC = N11; #CD
+NET "sseg[4]" LOC = N14; #CC
+NET "sseg[5]" LOC = H12; #CB
+NET "sseg[6]" LOC = L14; #CA

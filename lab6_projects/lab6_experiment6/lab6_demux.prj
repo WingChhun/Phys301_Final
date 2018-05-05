@@ -1,0 +1,8 @@
+vhdl work "../swag/SSD_1dig.vhd"
+vhdl work "../swag/sel_strobeB.vhd"
+vhdl work "../swag/mux4SSD.vhd"
+vhdl work "../swag/DCM_50M.vhd"
+vhdl work "../swag/bin2BCD3en.vhd"
+vhdl work "lab6_experimen3.vhf"
+vhdl work "DEMUX_1_4.vhf"
+vhdl work "lab6_demux.vhf"

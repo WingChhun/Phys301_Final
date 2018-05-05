@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="lab6_experiment6.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="DEMUX_1_4.sym" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VHDL" xil_pn:name="DEMUX_1_4.vhf"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/bitgen.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/map.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/par.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/trce.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="bin2BCD3en.spl"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="bin2BCD3en.sym" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="lab6_demux.bgn" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BIT" xil_pn:name="lab6_demux.bit" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="lab6_demux.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="lab6_demux.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_DRC" xil_pn:name="lab6_demux.drc" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:fileType="FILE_JHD" xil_pn:name="lab6_demux.jhd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="lab6_demux.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="lab6_demux.ncd" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="lab6_demux.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="lab6_demux.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="lab6_demux.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="lab6_demux.par" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="lab6_demux.pcf" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="lab6_demux.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="lab6_demux.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="lab6_demux.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="lab6_demux.twr" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="lab6_demux.twx" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="lab6_demux.unroutes" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="lab6_demux.ut" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VHDL" xil_pn:name="lab6_demux.vhf"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="lab6_demux.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="lab6_demux_envsettings.html"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="lab6_demux_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="lab6_demux_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="lab6_demux_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="lab6_demux_map.ncd" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="lab6_demux_map.ngm" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="lab6_demux_pad.csv" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="lab6_demux_pad.txt" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="lab6_demux_summary.html"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="lab6_demux_vhdl.prj"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="lab6_demux_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="lab6_experimen3.sym" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VHDL" xil_pn:name="lab6_experimen3.vhf"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="lab6_experiment5_4_MUX.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="lab6_experiment5_4_MUX.cmd_log"/>
+    <file xil_pn:fileType="FILE_JHD" xil_pn:name="lab6_experiment5_4_MUX.jhd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="lab6_experiment5_4_MUX.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="lab6_experiment5_4_MUX.ncd" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="lab6_experiment5_4_MUX.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="lab6_experiment5_4_MUX.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="lab6_experiment5_4_MUX.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="lab6_experiment5_4_MUX.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="lab6_experiment5_4_MUX.par" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="lab6_experiment5_4_MUX.pcf" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="lab6_experiment5_4_MUX.prj"/>
+    <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="lab6_experiment5_4_MUX.ptwx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="lab6_experiment5_4_MUX.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="lab6_experiment5_4_MUX.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="lab6_experiment5_4_MUX.unroutes" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VHDL" xil_pn:name="lab6_experiment5_4_MUX.vhf"/>
+    <file xil_pn:fileType="FILE_XPI" xil_pn:name="lab6_experiment5_4_MUX.xpi"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="lab6_experiment5_4_MUX.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="lab6_experiment5_4_MUX_envsettings.html"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="lab6_experiment5_4_MUX_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="lab6_experiment5_4_MUX_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="lab6_experiment5_4_MUX_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="lab6_experiment5_4_MUX_map.ncd" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="lab6_experiment5_4_MUX_map.ngm" xil_pn:subbranch="Map"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="lab6_experiment5_4_MUX_map.xrpt"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="lab6_experiment5_4_MUX_ngdbuild.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="lab6_experiment5_4_MUX_pad.csv" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="lab6_experiment5_4_MUX_pad.txt" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="lab6_experiment5_4_MUX_par.xrpt"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="lab6_experiment5_4_MUX_summary.html"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="lab6_experiment5_4_MUX_summary.xml"/>
+    <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="lab6_experiment5_4_MUX_usage.xml"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="lab6_experiment5_4_MUX_vhdl.prj"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="lab6_experiment5_4_MUX_xst.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="lab6_experiment7_graycode.bgn" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BIT" xil_pn:name="lab6_experiment7_graycode.bit" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="lab6_experiment7_graycode.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="lab6_experiment7_graycode.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_DRC" xil_pn:name="lab6_experiment7_graycode.drc" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:fileType="FILE_JHD" xil_pn:name="lab6_experiment7_graycode.jhd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="lab6_experiment7_graycode.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="lab6_experiment7_graycode.ncd" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="lab6_experiment7_graycode.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="lab6_experiment7_graycode.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="lab6_experiment7_graycode.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="lab6_experiment7_graycode.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="lab6_experiment7_graycode.par" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="lab6_experiment7_graycode.pcf" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="lab6_experiment7_graycode.prj"/>
+    <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="lab6_experiment7_graycode.ptwx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="lab6_experiment7_graycode.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="lab6_experiment7_graycode.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="lab6_experiment7_graycode.twr" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="lab6_experiment7_graycode.twx" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="lab6_experiment7_graycode.unroutes" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="lab6_experiment7_graycode.ut" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VHDL" xil_pn:name="lab6_experiment7_graycode.vhf"/>
+    <file xil_pn:fileType="FILE_XPI" xil_pn:name="lab6_experiment7_graycode.xpi"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="lab6_experiment7_graycode.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="lab6_experiment7_graycode_envsettings.html"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="lab6_experiment7_graycode_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="lab6_experiment7_graycode_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="lab6_experiment7_graycode_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="lab6_experiment7_graycode_map.ncd" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="lab6_experiment7_graycode_map.ngm" xil_pn:subbranch="Map"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="lab6_experiment7_graycode_map.xrpt"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="lab6_experiment7_graycode_ngdbuild.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="lab6_experiment7_graycode_pad.csv" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="lab6_experiment7_graycode_pad.txt" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="lab6_experiment7_graycode_par.xrpt"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="lab6_experiment7_graycode_summary.html"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="lab6_experiment7_graycode_summary.xml"/>
+    <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="lab6_experiment7_graycode_usage.xml"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="lab6_experiment7_graycode_vhdl.prj"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="lab6_experiment7_graycode_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="lab7_A0.sym" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VHDL" xil_pn:name="lab7_A0.vhf"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="lab7_A1.sym" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VHDL" xil_pn:name="lab7_A1.vhf"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="lab7_A2.sym" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VHDL" xil_pn:name="lab7_A2.vhf"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="lab7_A3.sym" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VHDL" xil_pn:name="lab7_A3.vhf"/>
+    <file xil_pn:fileType="FILE_VHDL" xil_pn:name="lab7_A3_drc.vhf"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="planAhead_run_1"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="planAhead_run_2"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="planAhead_run_3"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="usage_statistics_webtalk.html"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="webtalk.log"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1520224351" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1520224351">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1520224353" xil_pn:in_ck="269644891488604474" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="4893057435903113169" xil_pn:start_ts="1520224351">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <outfile xil_pn:name="lab6_demux.vhf"/>
+      <outfile xil_pn:name="lab6_experimen3.vhf"/>
+      <outfile xil_pn:name="lab6_experiment5_4_MUX.vhf"/>
+      <outfile xil_pn:name="lab6_experiment7_graycode.vhf"/>
+      <outfile xil_pn:name="lab7_A0.vhf"/>
+      <outfile xil_pn:name="lab7_A1.vhf"/>
+      <outfile xil_pn:name="lab7_A2.vhf"/>
+      <outfile xil_pn:name="lab7_A3.vhf"/>
+    </transform>
+    <transform xil_pn:end_ts="1520224353" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="7485820218124954465" xil_pn:start_ts="1520224353">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1520224353" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1520224353">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1520224353" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="1674749865617509263" xil_pn:start_ts="1520224353">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1520224353" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="2988080280822507185" xil_pn:start_ts="1520224353">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+    </transform>
+    <transform xil_pn:end_ts="1520224353" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-2464290570067930645" xil_pn:start_ts="1520224353">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+    </transform>
+    <transform xil_pn:end_ts="1520224364" xil_pn:in_ck="1127598463187334627" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="-3274617601328570313" xil_pn:start_ts="1520224353">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="lab6_experiment7_graycode.jhd"/>
+      <outfile xil_pn:name="lab6_experiment7_graycode.lso"/>
+      <outfile xil_pn:name="lab6_experiment7_graycode.ngc"/>
+      <outfile xil_pn:name="lab6_experiment7_graycode.ngr"/>
+      <outfile xil_pn:name="lab6_experiment7_graycode.prj"/>
+      <outfile xil_pn:name="lab6_experiment7_graycode.stx"/>
+      <outfile xil_pn:name="lab6_experiment7_graycode.syr"/>
+      <outfile xil_pn:name="lab6_experiment7_graycode.xst"/>
+      <outfile xil_pn:name="lab6_experiment7_graycode_vhdl.prj"/>
+      <outfile xil_pn:name="lab6_experiment7_graycode_xst.xrpt"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1520224364" xil_pn:in_ck="7223546653964008456" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="8450659746009420427" xil_pn:start_ts="1520224364">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+    </transform>
+    <transform xil_pn:end_ts="1520224371" xil_pn:in_ck="-5995447700236076368" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="3670103735221574574" xil_pn:start_ts="1520224364">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+      <outfile xil_pn:name="lab6_experiment7_graycode.bld"/>
+      <outfile xil_pn:name="lab6_experiment7_graycode.ngd"/>
+      <outfile xil_pn:name="lab6_experiment7_graycode_ngdbuild.xrpt"/>
+    </transform>
+    <transform xil_pn:end_ts="1520224376" xil_pn:in_ck="8795267037077209555" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="-1303429204059397298" xil_pn:start_ts="1520224371">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
+      <outfile xil_pn:name="lab6_experiment7_graycode.pcf"/>
+      <outfile xil_pn:name="lab6_experiment7_graycode_map.map"/>
+      <outfile xil_pn:name="lab6_experiment7_graycode_map.mrp"/>
+      <outfile xil_pn:name="lab6_experiment7_graycode_map.ncd"/>
+      <outfile xil_pn:name="lab6_experiment7_graycode_map.ngm"/>
+      <outfile xil_pn:name="lab6_experiment7_graycode_map.xrpt"/>
+      <outfile xil_pn:name="lab6_experiment7_graycode_summary.xml"/>
+      <outfile xil_pn:name="lab6_experiment7_graycode_usage.xml"/>
+    </transform>
+    <transform xil_pn:end_ts="1520224395" xil_pn:in_ck="-3541576368652280770" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="-4078461964484670437" xil_pn:start_ts="1520224376">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
+      <outfile xil_pn:name="lab6_experiment7_graycode.ncd"/>
+      <outfile xil_pn:name="lab6_experiment7_graycode.pad"/>
+      <outfile xil_pn:name="lab6_experiment7_graycode.par"/>
+      <outfile xil_pn:name="lab6_experiment7_graycode.ptwx"/>
+      <outfile xil_pn:name="lab6_experiment7_graycode.unroutes"/>
+      <outfile xil_pn:name="lab6_experiment7_graycode.xpi"/>
+      <outfile xil_pn:name="lab6_experiment7_graycode_pad.csv"/>
+      <outfile xil_pn:name="lab6_experiment7_graycode_pad.txt"/>
+      <outfile xil_pn:name="lab6_experiment7_graycode_par.xrpt"/>
+    </transform>
+    <transform xil_pn:end_ts="1520224403" xil_pn:in_ck="1598756322213502783" xil_pn:name="TRANEXT_bitFile_spartan3e" xil_pn:prop_ck="-7817169320884990698" xil_pn:start_ts="1520224395">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
+      <outfile xil_pn:name="lab6_experiment7_graycode.bgn"/>
+      <outfile xil_pn:name="lab6_experiment7_graycode.bit"/>
+      <outfile xil_pn:name="lab6_experiment7_graycode.drc"/>
+      <outfile xil_pn:name="lab6_experiment7_graycode.ut"/>
+      <outfile xil_pn:name="usage_statistics_webtalk.html"/>
+      <outfile xil_pn:name="webtalk.log"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+    </transform>
+    <transform xil_pn:end_ts="1520224405" xil_pn:in_ck="-2224588749529729110" xil_pn:name="TRAN_configureTargetDevice" xil_pn:prop_ck="2182533642587968765" xil_pn:start_ts="1520224403">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+    </transform>
+    <transform xil_pn:end_ts="1520223356" xil_pn:in_ck="-6670950548773612601" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416186" xil_pn:start_ts="1520223353">
+      <status xil_pn:value="AbortedRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="InputAdded"/>
+      <status xil_pn:value="InputRemoved"/>
+    </transform>
+  </transforms>
+
+</generated_project>

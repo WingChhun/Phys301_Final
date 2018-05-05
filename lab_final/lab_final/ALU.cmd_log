@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan3e -w -refsym ALU C:/Users/James/Documents/Xlink_projects/lab_final/lab_final/ALU.sch C:/Users/James/Documents/Xlink_projects/lab_final/lab_final/ALU.sym 

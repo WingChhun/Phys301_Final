@@ -1,0 +1,3 @@
+vhdl work "SSD_1dig.vhd"
+vhdl work "mux4SSD.vhd"
+vhdl work "lab6_experiment2_2.vhf"

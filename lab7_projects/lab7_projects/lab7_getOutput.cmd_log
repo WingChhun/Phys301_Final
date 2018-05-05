@@ -1,0 +1,3 @@
+sch2sym -intstyle ise -family spartan3e -w -refsym lab7_getOutput C:/Users/James/Documents/Xlink_projects/lab7_projects/lab7_projects/lab7_getOutput.sch C:/Users/James/Documents/Xlink_projects/lab7_projects/lab7_projects/lab7_getOutput.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym lab7_getOutput C:/Users/James/Documents/Xlink_projects/lab7_projects/lab7_projects/lab7_getOutput.sch C:/Users/James/Documents/Xlink_projects/lab7_projects/lab7_projects/lab7_getOutput.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym lab7_getOutput C:/Users/James/Documents/Xlink_projects/lab7_projects/lab7_projects/lab7_getOutput.sch C:/Users/James/Documents/Xlink_projects/lab7_projects/lab7_projects/lab7_getOutput.sym 

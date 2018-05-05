@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/James/Documents/Xlink_projects/lab_final/lab_testingModules/lab_final_KEYPAD/lab_final_KEYPAD.vhf</arg>&quot; line <arg fmt="%d" index="2">181</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">CLK1M</arg>&apos; of component &apos;<arg fmt="%s" index="4">DCM_50M</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/James/Documents/Xlink_projects/lab_final/lab_testingModules/lab_final_KEYPAD/lab_final_KEYPAD.vhf</arg>&quot; line <arg fmt="%d" index="2">181</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">CLK1</arg>&apos; of component &apos;<arg fmt="%s" index="4">DCM_50M</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/James/Documents/Xlink_projects/lab_final/lab_testingModules/lab_final_KEYPAD/lab_final_KEYPAD.vhf</arg>&quot; line <arg fmt="%d" index="2">283</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">anO</arg>&apos; of component &apos;<arg fmt="%s" index="4">sseg_mux4D</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/James/Documents/Xlink_projects/lab_final/lab_testingModules/lab_final_KEYPAD/lab_final_KEYPAD.vhf</arg>&quot; line <arg fmt="%d" index="2">283</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">ssegO</arg>&apos; of component &apos;<arg fmt="%s" index="4">sseg_mux4D</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/James/Documents/Xlink_projects/lab_final/lab_testingModules/lab_final_KEYPAD/lab_final_KEYPAD.vhf</arg>&quot; line <arg fmt="%d" index="2">294</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">dpO</arg>&apos; of component &apos;<arg fmt="%s" index="4">mux4SSD</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/James/Documents/Xlink_projects/lab_final/lab_testingModules/lab_final_KEYPAD/lab_final_KEYPAD.vhf</arg>&quot; line <arg fmt="%d" index="2">294</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">anO</arg>&apos; of component &apos;<arg fmt="%s" index="4">mux4SSD</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/James/Documents/Xlink_projects/lab_final/lab_testingModules/lab_final_KEYPAD/lab_final_KEYPAD.vhf</arg>&quot; line <arg fmt="%d" index="2">294</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">hexO</arg>&apos; of component &apos;<arg fmt="%s" index="4">mux4SSD</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">clk</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="2110" delta="old" >Clock of register &lt;<arg fmt="%s" index="1">lobster</arg>&gt; seems to be also used in the data or control logic of that element.
+</msg>
+
+<msg type="warning" file="Xst" num="2110" delta="old" >Clock of register &lt;<arg fmt="%s" index="1">lobster</arg>&gt; seems to be also used in the data or control logic of that element.
+</msg>
+
+<msg type="warning" file="Xst" num="2110" delta="old" >Clock of register &lt;<arg fmt="%s" index="1">keyL</arg>&gt; seems to be also used in the data or control logic of that element.
+</msg>
+
+<msg type="warning" file="Xst" num="2110" delta="old" >Clock of register &lt;<arg fmt="%s" index="1">keyL</arg>&gt; seems to be also used in the data or control logic of that element.
+</msg>
+
+<msg type="warning" file="Xst" num="2110" delta="old" >Clock of register &lt;<arg fmt="%s" index="1">lastcol</arg>&gt; seems to be also used in the data or control logic of that element.
+</msg>
+
+<msg type="warning" file="Xst" num="2110" delta="old" >Clock of register &lt;<arg fmt="%s" index="1">lastcol</arg>&gt; seems to be also used in the data or control logic of that element.
+</msg>
+
+<msg type="warning" file="Xst" num="2110" delta="old" >Clock of register &lt;<arg fmt="%s" index="1">lastrow</arg>&gt; seems to be also used in the data or control logic of that element.
+</msg>
+
+<msg type="warning" file="Xst" num="2110" delta="old" >Clock of register &lt;<arg fmt="%s" index="1">lastrow</arg>&gt; seems to be also used in the data or control logic of that element.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">XLXI_26_sel_openSignal</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">00</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">XLXI_26_rb_in_openSignal</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">XLXI_26_hexD_openSignal</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0000</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">XLXI_26_hexC_openSignal</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0000</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">XLXI_26_hexB_openSignal</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0000</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">XLXI_26_hexA_openSignal</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0000</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">XLXI_26_dp_in_openSignal</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0000</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">XLXI_25_hexD_openSignal</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0000</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">XLXI_25_hexC_openSignal</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0000</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">XLXI_25_hexB_openSignal</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0000</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">XLXI_25_hexA_openSignal</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0000</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">XLXI_25</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">lab_final_KEYPAD</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">XLXI_26</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">lab_final_KEYPAD</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">lobster</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">XLXI_4</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;keyL&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="3034" delta="old" >In order to maximize performance and save block RAM resources, the small ROM &lt;<arg fmt="%s" index="1">Mrom_sel_mux0001</arg>&gt; will be implemented on LUT. If you want to force its implementation on block, use option/constraint rom_style.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">selx_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">sseg_mux4D</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">sel_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">sseg_mux4D</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">lobster</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">key_detect</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;keyL&gt; </arg>
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">XLXI_1/cnt1_31</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lab_final_KEYPAD</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">XLXI_1/cnt1_30</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lab_final_KEYPAD</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">XLXI_1/cnt1_29</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lab_final_KEYPAD</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">XLXI_1/cnt1_28</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lab_final_KEYPAD</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">XLXI_1/cnt1_27</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lab_final_KEYPAD</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">XLXI_1/cnt1_26</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lab_final_KEYPAD</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">XLXI_1/cnt1_25</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lab_final_KEYPAD</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">XLXI_1/cnt1_24</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lab_final_KEYPAD</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">XLXI_1/cnt1_23</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lab_final_KEYPAD</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">XLXI_1/cnt1_22</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lab_final_KEYPAD</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">XLXI_1/cnt1_21</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lab_final_KEYPAD</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">XLXI_1/cnt1_20</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lab_final_KEYPAD</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">XLXI_1/cnt1_19</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lab_final_KEYPAD</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">XLXI_1/cnt1_18</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lab_final_KEYPAD</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">XLXI_1/cnt1_17</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lab_final_KEYPAD</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">XLXI_1/cnt1_16</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lab_final_KEYPAD</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">XLXI_1/cnt1_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lab_final_KEYPAD</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">XLXI_1/cnt1_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lab_final_KEYPAD</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">XLXI_1/cnt1_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lab_final_KEYPAD</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">XLXI_1/cnt1_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lab_final_KEYPAD</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">XLXI_1/cnt1_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lab_final_KEYPAD</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">XLXI_1/cnt1_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lab_final_KEYPAD</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">XLXI_1/cnt1_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lab_final_KEYPAD</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">XLXI_1/cnt1_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lab_final_KEYPAD</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">XLXI_1/cnt1_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lab_final_KEYPAD</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">XLXI_1/cnt1_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lab_final_KEYPAD</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">XLXI_1/cnt1_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lab_final_KEYPAD</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">XLXI_1/cnt1_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lab_final_KEYPAD</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">XLXI_1/cnt1_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lab_final_KEYPAD</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">XLXI_1/cnt1_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lab_final_KEYPAD</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">XLXI_1/cnt1_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lab_final_KEYPAD</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">XLXI_1/cnt1_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lab_final_KEYPAD</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">XLXI_1/cnt1M_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lab_final_KEYPAD</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">XLXI_1/cnt1M_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lab_final_KEYPAD</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">XLXI_1/cnt1M_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lab_final_KEYPAD</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">XLXI_1/cnt1M_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lab_final_KEYPAD</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">XLXI_1/cnt1M_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lab_final_KEYPAD</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">XLXI_1/clk_1_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lab_final_KEYPAD</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">XLXI_1/clk_1m</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lab_final_KEYPAD</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">XLXI_25/sel_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lab_final_KEYPAD</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">XLXI_25/sel_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lab_final_KEYPAD</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">XLXI_25/sel_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lab_final_KEYPAD</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">XLXI_25/selx_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lab_final_KEYPAD</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">XLXI_25/selx_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lab_final_KEYPAD</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">XLXI_25/selx_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lab_final_KEYPAD</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="2169" delta="old" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+</msg>
+
+</messages>
+

@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\James\Documents\Xlink_projects\lab8_projects\lab8_experiment5\lab8_experiment5.ncd
+OUTFILE=C:\Users\James\Documents\Xlink_projects\lab8_projects\lab8_experiment5\lab8_experiment5.bit
+FAMILY=Spartan3E
+PART=xc3s100e-4cp132
+WORKINGDIR=C:\Users\James\Documents\Xlink_projects\lab8_projects\lab8_experiment5
+LICENSE=WebPack
+USER_INFO=174218040_0_0_110

@@ -1,0 +1,22 @@
+xst -intstyle ise -ifn "C:/Users/James/Documents/Xlink_projects/lab_final/lab_final/lab_final.xst" -ofn "C:/Users/James/Documents/Xlink_projects/lab_final/lab_final/lab_final.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab_final.ucf -p xc3s100e-cp132-4 lab_final.ngc lab_final.ngd  
+xst -intstyle ise -ifn "C:/Users/James/Documents/Xlink_projects/lab_final/lab_final/lab_final.xst" -ofn "C:/Users/James/Documents/Xlink_projects/lab_final/lab_final/lab_final.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab_final.ucf -p xc3s100e-cp132-4 lab_final.ngc lab_final.ngd  
+xst -intstyle ise -ifn "C:/Users/James/Documents/Xlink_projects/lab_final/lab_final/lab_final.xst" -ofn "C:/Users/James/Documents/Xlink_projects/lab_final/lab_final/lab_final.syr" 
+xst -intstyle ise -ifn "C:/Users/James/Documents/Xlink_projects/lab_final/lab_final/lab_final.xst" -ofn "C:/Users/James/Documents/Xlink_projects/lab_final/lab_final/lab_final.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab_final.ucf -p xc3s100e-cp132-4 lab_final.ngc lab_final.ngd  
+xst -intstyle ise -ifn "C:/Users/James/Documents/Xlink_projects/lab_final/lab_final/lab_final.xst" -ofn "C:/Users/James/Documents/Xlink_projects/lab_final/lab_final/lab_final.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab_final.ucf -p xc3s100e-cp132-4 lab_final.ngc lab_final.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o lab_final_map.ncd lab_final.ngd lab_final.pcf 
+par -w -intstyle ise -ol high -t 1 lab_final_map.ncd lab_final.ncd lab_final.pcf 
+xst -intstyle ise -ifn "C:/Users/James/Documents/Xlink_projects/lab_final/lab_final/lab_final.xst" -ofn "C:/Users/James/Documents/Xlink_projects/lab_final/lab_final/lab_final.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab_final.ucf -p xc3s100e-cp132-4 lab_final.ngc lab_final.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o lab_final_map.ncd lab_final.ngd lab_final.pcf 
+par -w -intstyle ise -ol high -t 1 lab_final_map.ncd lab_final.ncd lab_final.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml lab_final.twx lab_final.ncd -o lab_final.twr lab_final.pcf -ucf lab_final.ucf 
+bitgen -intstyle ise -f lab_final.ut lab_final.ncd 
+xst -intstyle ise -ifn "C:/Users/James/Documents/Xlink_projects/lab_final/lab_final/lab_final.xst" -ofn "C:/Users/James/Documents/Xlink_projects/lab_final/lab_final/lab_final.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab_final.ucf -p xc3s100e-cp132-4 lab_final.ngc lab_final.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o lab_final_map.ncd lab_final.ngd lab_final.pcf 
+par -w -intstyle ise -ol high -t 1 lab_final_map.ncd lab_final.ncd lab_final.pcf 
+bitgen -intstyle ise -f lab_final.ut lab_final.ncd 

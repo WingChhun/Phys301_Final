@@ -1,0 +1,14 @@
+
+#Inputs
+NET  "Din" LOC = P11;
+NET  "CLKin" LOC =L3 ;
+
+#Observable Clock outputs
+
+NET  "X1" LOC = P6;
+NET  "X2" LOC = N5;
+NET  "X3" LOC = N4;
+
+#MAIN OUTPUTS
+NET  "Q" LOC = M11;
+NET  "notQ" LOC = M5;

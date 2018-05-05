@@ -1,0 +1,16 @@
+V3 11
+FL C:/Users/James/Documents/Xlink_projects/lab6_projects/swag/DCM_50M.vhd 2016/09/28.15:03:58 P.20131013
+EN work/DCM_50M 1521219579 \
+      FL C:/Users/James/Documents/Xlink_projects/lab6_projects/swag/DCM_50M.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/DCM_50M/Behavioral 1521219580 \
+      FL C:/Users/James/Documents/Xlink_projects/lab6_projects/swag/DCM_50M.vhd \
+      EN work/DCM_50M 1521219579
+FL C:/Users/James/Documents/Xlink_projects/lab7_projects/lab7_experiment9/lab7_experiment9.vhf 2018/03/16.09:59:35 P.20131013
+EN work/lab7_experiment9 1521219581 \
+      FL C:/Users/James/Documents/Xlink_projects/lab7_projects/lab7_experiment9/lab7_experiment9.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/lab7_experiment9/BEHAVIORAL 1521219582 \
+      FL C:/Users/James/Documents/Xlink_projects/lab7_projects/lab7_experiment9/lab7_experiment9.vhf \
+      EN work/lab7_experiment9 1521219581 CP FDRS CP DCM_50M CP GND CP INV

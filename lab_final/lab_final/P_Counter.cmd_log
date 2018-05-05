@@ -1,0 +1,2 @@
+sch2sym -intstyle ise -family spartan3e -w -refsym P_Counter C:/Users/James/Documents/Xlink_projects/lab_final/lab_final/P_Counter.sch C:/Users/James/Documents/Xlink_projects/lab_final/lab_final/P_Counter.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym P_Counter C:/Users/James/Documents/Xlink_projects/lab_final/lab_final/P_Counter.sch C:/Users/James/Documents/Xlink_projects/lab_final/lab_final/P_Counter.sym 

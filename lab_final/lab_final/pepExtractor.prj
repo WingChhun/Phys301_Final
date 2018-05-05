@@ -1,0 +1,2 @@
+work	"../../swag/debounce.vhd"
+work	"../modules/debounce.vhd"

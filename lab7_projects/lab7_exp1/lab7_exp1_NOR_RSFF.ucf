@@ -1,0 +1,10 @@
+#Input
+
+NET "R" LOC =P11; #Reset
+NET "S" LOC =L3; #Set
+
+#Outputs
+
+NET "Q1" LOC =M5; # Output of Reset or Q1
+NET "Q2" LOC =M11; # Output of Set or Q2
+

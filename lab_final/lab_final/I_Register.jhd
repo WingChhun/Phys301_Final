@@ -1,0 +1,3 @@
+MODULE I_Register
+	SUBMODULE hexShifter8
+		INSTANCE XLXI_60

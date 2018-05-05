@@ -1,0 +1,3 @@
+MODULE D_Memory
+	SUBMODULE sRAM32x8_ex_pgm_data
+		INSTANCE XLXI_6

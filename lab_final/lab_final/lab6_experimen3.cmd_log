@@ -1,0 +1,2 @@
+sch2sym -intstyle ise -family spartan3e -w -refsym lab6_experimen3 C:/Users/James/Documents/Xlink_projects/lab6_projects/lab_experiment3/lab6_experimen3.sch C:/Users/James/Documents/Xlink_projects/lab_final/lab_final/lab6_experimen3.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym lab6_experimen3 C:/Users/James/Documents/Xlink_projects/lab6_projects/lab_experiment3/lab6_experimen3.sch C:/Users/James/Documents/Xlink_projects/lab_final/lab_final/lab6_experimen3.sym 

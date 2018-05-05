@@ -1,0 +1,51 @@
+Release 14.7 - ngc2edif P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design lab_final.ngc ...
+WARNING:NetListWriters:298 - No output is written to lab_final.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   XLXI_10/XLXI_3/Mcompar_cnt1k_cmp_gt0000_lut<13 : 0> on block lab_final is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   XLXI_8/XLXI_28/Mcompar_cnt1k_cmp_ge0000_lut<11 : 1> on block lab_final is not
+   reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file lab_final.edif ...
+ngc2edif: Total memory usage is 117232 kilobytes
+
+Release 14.7 - ngc2edif P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design lab_final.ngc ...
+WARNING:NetListWriters:298 - No output is written to lab_final.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   XLXI_10/XLXI_3/Mcompar_cnt1k_cmp_gt0000_lut<13 : 0> on block lab_final is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   XLXI_8/XLXI_28/Mcompar_cnt1k_cmp_ge0000_lut<11 : 1> on block lab_final is not
+   reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file lab_final.edif ...
+ngc2edif: Total memory usage is 116464 kilobytes
+
+Release 14.7 - ngc2edif P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design lab_final.ngc ...
+WARNING:NetListWriters:298 - No output is written to lab_final.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   XLXI_10/XLXI_3/Mcompar_cnt1k_cmp_gt0000_lut<13 : 0> on block lab_final is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   XLXI_8/XLXI_28/Mcompar_cnt1k_cmp_ge0000_lut<11 : 1> on block lab_final is not
+   reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file lab_final.edif ...
+ngc2edif: Total memory usage is 116168 kilobytes
+

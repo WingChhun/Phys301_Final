@@ -1,0 +1,61 @@
+V3 41
+FL C:/Users/James/Documents/Xlink_projects/lab8_projects/lab8_experiment3/lab6_experimen3.vhf 2018/03/27.10:00:49 P.20131013
+EN work/lab6_experimen3 1522171529 \
+      FL C:/Users/James/Documents/Xlink_projects/lab8_projects/lab8_experiment3/lab6_experimen3.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/lab6_experimen3/BEHAVIORAL 1522171530 \
+      FL C:/Users/James/Documents/Xlink_projects/lab8_projects/lab8_experiment3/lab6_experimen3.vhf \
+      EN work/lab6_experimen3 1522171529 CP DCM_50M CP sel_strobeB CP GND CP VCC \
+      CP bin2BCD3en CP mux4SSD CP SSD_1dig
+FL C:/Users/James/Documents/Xlink_projects/lab8_projects/lab8_experiment3/lab8_experiment3.vhf 2018/03/27.11:26:31 P.20131013
+EN work/FJKC_MXILINX_lab8_experiment3 1522175197 \
+      FL C:/Users/James/Documents/Xlink_projects/lab8_projects/lab8_experiment3/lab8_experiment3.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/FJKC_MXILINX_lab8_experiment3/BEHAVIORAL 1522175198 \
+      FL C:/Users/James/Documents/Xlink_projects/lab8_projects/lab8_experiment3/lab8_experiment3.vhf \
+      EN work/FJKC_MXILINX_lab8_experiment3 1522175197 CP FDC CP AND3B2 CP AND3B1 \
+      CP OR3 CP AND2B1
+EN work/lab8_experiment3 1522175199 \
+      FL C:/Users/James/Documents/Xlink_projects/lab8_projects/lab8_experiment3/lab8_experiment3.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/lab8_experiment3/BEHAVIORAL 1522175200 \
+      FL C:/Users/James/Documents/Xlink_projects/lab8_projects/lab8_experiment3/lab8_experiment3.vhf \
+      EN work/lab8_experiment3 1522175199 CP DCM_50M \
+      CP FJKC_MXILINX_lab8_experiment3 CP PULLDOWN CP PULLUP CP AND2 CP INV
+FL C:/Users/James/Documents/Xlink_projects/swag/DCM_50M.vhd 2016/09/28.15:03:58 P.20131013
+EN work/DCM_50M 1522175195 \
+      FL C:/Users/James/Documents/Xlink_projects/swag/DCM_50M.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/DCM_50M/Behavioral 1522175196 \
+      FL C:/Users/James/Documents/Xlink_projects/swag/DCM_50M.vhd EN work/DCM_50M 1522175195
+FL E:/Spring2018/Phys301/Phys-lab/Modules/bin2BCD3en.vhd 2016/09/28.14:04:02 P.20131013
+EN work/bin2BCD3en 1522171523 \
+      FL E:/Spring2018/Phys301/Phys-lab/Modules/bin2BCD3en.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179 LB UNISIM PH unisim/VCOMPONENTS 1381692182
+AR work/bin2BCD3en/Behavioral 1522171524 \
+      FL E:/Spring2018/Phys301/Phys-lab/Modules/bin2BCD3en.vhd EN work/bin2BCD3en 1522171523
+FL E:/Spring2018/Phys301/Phys-lab/Modules/mux4SSD.vhd 2016/09/28.14:04:24 P.20131013
+EN work/mux4SSD 1522171525 FL E:/Spring2018/Phys301/Phys-lab/Modules/mux4SSD.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/mux4SSD/Behavioral 1522171526 \
+      FL E:/Spring2018/Phys301/Phys-lab/Modules/mux4SSD.vhd EN work/mux4SSD 1522171525
+FL E:/Spring2018/Phys301/Phys-lab/Modules/sel_strobeB.vhd 2016/09/28.14:04:28 P.20131013
+EN work/sel_strobeB 1522171521 \
+      FL E:/Spring2018/Phys301/Phys-lab/Modules/sel_strobeB.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/sel_strobeB/Behavioral 1522171522 \
+      FL E:/Spring2018/Phys301/Phys-lab/Modules/sel_strobeB.vhd \
+      EN work/sel_strobeB 1522171521
+FL E:/Spring2018/Phys301/Phys-lab/Modules/SSD_1dig.vhd 2016/09/28.14:04:34 P.20131013
+EN work/SSD_1dig 1522171527 \
+      FL E:/Spring2018/Phys301/Phys-lab/Modules/SSD_1dig.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/SSD_1dig/Behavioral 1522171528 \
+      FL E:/Spring2018/Phys301/Phys-lab/Modules/SSD_1dig.vhd EN work/SSD_1dig 1522171527

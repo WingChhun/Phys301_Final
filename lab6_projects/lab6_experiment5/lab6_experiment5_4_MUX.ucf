@@ -1,0 +1,56 @@
+
+
+# User Constrains
+
+#4 - bit Binary Input - A
+#LHS
+
+NET "Bin[3]" LOC = N3;
+NET "Bin[2]" LOC = E2;
+NET "Bin[1]" LOC = F3;
+NET "Bin[0]" LOC = G3;
+
+
+
+#RHS
+NET "Ain[3]" LOC =  B4;
+NET "Ain[2]" LOC = K3;
+NET "Ain[1]" LOC =  L3;
+NET "Ain[0]" LOC = P11;
+
+#Anodes 0 -3
+
+NET "anO[3]" LOC = K14;
+NET "anO[2]" LOC = M13;
+NET "anO[1]" LOC = J12; #First anode 
+NET "anO[0]" LOC = F12; #SEcond anode on board
+
+
+#Hex -binary output
+
+#Plan ahead Cathode output
+
+
+NET "sseg[0]" LOC = M12; #CG
+NET "sseg[1]" LOC = L13; #CF
+NET "sseg[2]" LOC = P12; #CE
+NET "sseg[3]" LOC = N11; #CD
+NET "sseg[4]" LOC = N14; #CC
+NET "sseg[5]" LOC = H12; #CB
+NET "sseg[6]" LOC = L14; #CA
+NET "sseg[7]" LOC = N13; # decimal point dont need 
+
+#Select strobe (pushdown button)
+
+NET "En" LOC = G12; ##Enabler changes BCD output to Hexadecimal
+#NET "sel[0]" LOC = C11; 
+#NET "sel[1]" LOC = G12;
+
+
+
+
+#Selector Input
+NET "Sin" LOC = C11; #Selector input will control the multiplexer
+#Test
+NET "Clock" LOC =B8 ; #CLOCK
+# B8 and M6

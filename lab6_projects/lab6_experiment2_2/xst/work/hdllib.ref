@@ -1,0 +1,6 @@
+EN ssd_1dig NULL C:/Users/James/Documents/Xlink_projects/lab6_projects/lab6_experiment2_2/SSD_1dig.vhd sub00/vhpl00 1519758870
+EN lab6_experiment2_2 NULL C:/Users/James/Documents/Xlink_projects/lab6_projects/lab6_experiment2_2/lab6_experiment2_2.vhf sub00/vhpl04 1519758874
+AR mux4ssd behavioral C:/Users/James/Documents/Xlink_projects/lab6_projects/lab6_experiment2_2/mux4SSD.vhd sub00/vhpl03 1519758873
+AR ssd_1dig behavioral C:/Users/James/Documents/Xlink_projects/lab6_projects/lab6_experiment2_2/SSD_1dig.vhd sub00/vhpl01 1519758871
+EN mux4ssd NULL C:/Users/James/Documents/Xlink_projects/lab6_projects/lab6_experiment2_2/mux4SSD.vhd sub00/vhpl02 1519758872
+AR lab6_experiment2_2 behavioral C:/Users/James/Documents/Xlink_projects/lab6_projects/lab6_experiment2_2/lab6_experiment2_2.vhf sub00/vhpl05 1519758875

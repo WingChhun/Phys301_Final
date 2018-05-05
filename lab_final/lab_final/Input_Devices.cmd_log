@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan3e -w -refsym Input_Devices C:/Users/James/Documents/Xlink_projects/lab_final/lab_final/Input_Devices.sch C:/Users/James/Documents/Xlink_projects/lab_final/lab_final/Input_Devices.sym 

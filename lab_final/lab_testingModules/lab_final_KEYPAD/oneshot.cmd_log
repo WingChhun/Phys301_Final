@@ -1,0 +1,2 @@
+vhdtdtfi -lib work ../../modules/oneshot.vhd -prj lab_final_KEYPAD -o oneshot.spl -module oneshot -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e oneshot.spl C:/Users/James/Documents/Xlink_projects/lab_final/lab_testingModules/lab_final_KEYPAD/oneshot.sym 

@@ -1,0 +1,3 @@
+MODULE lab6_experiment1_decimalDecoder
+	SUBMODULE d4_16en
+		INSTANCE XLXI_1

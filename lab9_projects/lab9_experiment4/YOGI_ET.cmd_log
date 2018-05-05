@@ -1,0 +1,2 @@
+sch2sym -intstyle ise -family spartan3e -w -refsym YOGI_ET C:/Users/James/Documents/Xlink_projects/lab9_projects/lab9_experiment3/YOGI_ET.sch C:/Users/James/Documents/Xlink_projects/lab9_projects/lab9_experiment3/YOGI_ET.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym YOGI_ET C:/Users/James/Documents/Xlink_projects/lab9_projects/lab9_experiment3/YOGI_ET.sch C:/Users/James/Documents/Xlink_projects/lab9_projects/lab9_experiment3/YOGI_ET.sym 

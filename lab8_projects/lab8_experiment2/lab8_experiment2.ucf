@@ -1,0 +1,9 @@
+
+//CLOCK
+NET "CLKInput" LOC  =B8 ;
+NET "DCLK" LOC  =G1; //CLOCK OUTPUT
+
+//Q outputs 
+NET "Q1" LOC  =M5;
+NET "Q2" LOC  =M11;
+NET "Q3" LOC  =P7;

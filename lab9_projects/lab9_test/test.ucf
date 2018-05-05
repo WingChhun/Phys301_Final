@@ -1,0 +1,16 @@
+
+#Input
+NET "D1" LOC =P11  CLOCK_DEDICATED_ROUTE = FALSE;
+NET "D2" LOC =L3  CLOCK_DEDICATED_ROUTE = FALSE;
+
+
+#Output
+NET "Q1" LOC =M5;
+NET "Q2" LOC =M11;
+
+
+
+
+
+
+

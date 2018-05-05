@@ -1,0 +1,2 @@
+vhdtdtfi -lib work ../../modules/decoder16keyEn.vhd -prj lab_final_KEYPAD -o decoder16keyEn.spl -module decoder16keyEn -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e decoder16keyEn.spl C:/Users/James/Documents/Xlink_projects/lab_final/lab_testingModules/lab_final_KEYPAD/decoder16keyEn.sym 

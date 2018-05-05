@@ -1,0 +1,25 @@
+V3 14
+FL C:/Users/James/Documents/Xlink_projects/lab6_projects/lab6_experiment2_2/lab6_experiment2_2.vhf 2018/02/27.11:14:12 P.20131013
+EN work/lab6_experiment2_2 1519758874 \
+      FL C:/Users/James/Documents/Xlink_projects/lab6_projects/lab6_experiment2_2/lab6_experiment2_2.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/lab6_experiment2_2/BEHAVIORAL 1519758875 \
+      FL C:/Users/James/Documents/Xlink_projects/lab6_projects/lab6_experiment2_2/lab6_experiment2_2.vhf \
+      EN work/lab6_experiment2_2 1519758874 CP SSD_1dig CP mux4SSD CP VCC CP GND
+FL C:/Users/James/Documents/Xlink_projects/lab6_projects/lab6_experiment2_2/mux4SSD.vhd 2016/09/28.14:04:24 P.20131013
+EN work/mux4SSD 1519758872 \
+      FL C:/Users/James/Documents/Xlink_projects/lab6_projects/lab6_experiment2_2/mux4SSD.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/mux4SSD/Behavioral 1519758873 \
+      FL C:/Users/James/Documents/Xlink_projects/lab6_projects/lab6_experiment2_2/mux4SSD.vhd \
+      EN work/mux4SSD 1519758872
+FL C:/Users/James/Documents/Xlink_projects/lab6_projects/lab6_experiment2_2/SSD_1dig.vhd 2016/09/28.14:04:34 P.20131013
+EN work/SSD_1dig 1519758870 \
+      FL C:/Users/James/Documents/Xlink_projects/lab6_projects/lab6_experiment2_2/SSD_1dig.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/SSD_1dig/Behavioral 1519758871 \
+      FL C:/Users/James/Documents/Xlink_projects/lab6_projects/lab6_experiment2_2/SSD_1dig.vhd \
+      EN work/SSD_1dig 1519758870

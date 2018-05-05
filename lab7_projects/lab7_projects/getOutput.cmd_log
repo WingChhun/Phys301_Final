@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan3e -w -refsym getOutput C:/Users/James/Documents/Xlink_projects/lab7_projects/lab7_projects/getOutput.sch C:/Users/James/Documents/Xlink_projects/lab7_projects/lab7_projects/getOutput.sym 

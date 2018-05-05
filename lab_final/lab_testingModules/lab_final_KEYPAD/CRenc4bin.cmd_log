@@ -1,0 +1,4 @@
+vhdtdtfi -lib work ../../modules/CRenc4bin.vhd -prj lab_final_KEYPAD -o CRenc4bin.spl -module CRenc4bin -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e CRenc4bin.spl C:/Users/James/Documents/Xlink_projects/lab_final/lab_testingModules/lab_final_KEYPAD/CRenc4bin.sym 
+vhdtdtfi -lib work ../../modules/CRenc4bin.vhd -prj lab_final_KEYPAD -o CRenc4bin.spl -module CRenc4bin -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e CRenc4bin.spl C:/Users/James/Documents/Xlink_projects/lab_final/lab_testingModules/lab_final_KEYPAD/CRenc4bin.sym 

@@ -1,0 +1,4 @@
+AR d4_16en behavioral C:/Users/James/Documents/Xlink_projects/lab6_projects/d4_16en.vhd sub00/vhpl01 1519752753
+EN d4_16en NULL C:/Users/James/Documents/Xlink_projects/lab6_projects/d4_16en.vhd sub00/vhpl00 1519752752
+EN lab6_experiment1_decimaldecoder NULL C:/Users/James/Documents/Xlink_projects/lab6_projects/lab6_experiment1/lab6_experiment1_decimalDecoder.vhf sub00/vhpl02 1519752754
+AR lab6_experiment1_decimaldecoder behavioral C:/Users/James/Documents/Xlink_projects/lab6_projects/lab6_experiment1/lab6_experiment1_decimalDecoder.vhf sub00/vhpl03 1519752755

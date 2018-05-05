@@ -1,0 +1,117 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!--This is an ISE project configuration file.-->
+<!--It holds project specific layout data for the projectmgr plugin.-->
+<!--Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.-->
+<Project version="2" owner="projectmgr" name="lab_final" >
+   <!--This is an ISE project configuration file.-->
+   <ItemView engineview="SynthesisOnly" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/key4_dbnc - Behavioral C:|Users|James|Documents|Xlink_projects|swag|key4_dbnc.vhd</ClosedNode>
+         <ClosedNode>/keypad_shift C:|Users|James|Documents|Xlink_projects|lab_final|keypad_shift.sch</ClosedNode>
+         <ClosedNode>/lab6_experimen3 C:|Users|James|Documents|Xlink_projects|lab6_projects|lab_experiment3|lab6_experimen3.sch</ClosedNode>
+         <ClosedNode>/lab_KEYPAD_FINAL C:|Users|James|Documents|Xlink_projects|lab6_projects|lab6_experiment4|lab_KEYPAD_FINAL.sch/XLXI_69 - keypad_shift</ClosedNode>
+         <ClosedNode>/lab_final C:|Users|James|Documents|Xlink_projects|lab_final|lab_final|lab_final.sch/XLXI_41 - Memory/XLXI_22 - D_Memory</ClosedNode>
+         <ClosedNode>/lab_final C:|Users|James|Documents|Xlink_projects|lab_final|lab_final|lab_final.sch/XLXI_41 - Memory/XLXI_23 - I_Memory</ClosedNode>
+         <ClosedNode>/lab_final C:|Users|James|Documents|Xlink_projects|lab_final|lab_final|lab_final.sch/XLXI_41 - Memory/XLXI_39 - Output_DebugMode</ClosedNode>
+         <ClosedNode>/lab_final C:|Users|James|Documents|Xlink_projects|lab_final|lab_final|lab_final.sch/XLXI_41 - Memory/XLXI_65 - KEYPAD_noShift</ClosedNode>
+         <ClosedNode>/lab_final C:|Users|James|Documents|Xlink_projects|lab_final|lab_final|lab_final.sch/XLXI_42 - Memory/XLXI_108 - I_Memory</ClosedNode>
+         <ClosedNode>/lab_final C:|Users|James|Documents|Xlink_projects|lab_final|lab_final|lab_final.sch/XLXI_42 - Memory/XLXI_111 - D_Memory</ClosedNode>
+         <ClosedNode>/lab_final C:|Users|James|Documents|Xlink_projects|lab_final|lab_final|lab_final.sch/XLXI_42 - Memory/XLXI_39 - Output_DebugMode</ClosedNode>
+         <ClosedNode>/test_Memory C:|Users|James|Documents|Xlink_projects|lab_final|lab_final|test_Memory.sch/XLXI_10 - lab9_BCDBus</ClosedNode>
+         <ClosedNode>/test_shiftReg C:|Users|James|Documents|Xlink_projects|lab7_projects|lab7_experiment7|test_shiftReg.sch</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>XLXI_50 - ProgramGround (C:/Users/James/Documents/Xlink_projects/lab_final/lab_final/ProgramGround.sch)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >48</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000211000000020000000000000000000000000200000064ffffffff000000810000000300000002000002110000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
+      <CurrentItem>XLXI_50 - ProgramGround (C:/Users/James/Documents/Xlink_projects/lab_final/lab_final/ProgramGround.sch)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities/Compile HDL Simulation Libraries</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Update All Schematic Files</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000147000000010000000100000000000000000000000064ffffffff000000810000000000000001000001470000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Update All Schematic Files</CurrentItem>
+   </ItemView>
+   <ItemView guiview="File" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000136000000040101000100000000000000000000000064ffffffff0000008100000000000000040000004200000001000000000000002400000001000000000000006600000001000000000000006a0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>hex8bits.sch</CurrentItem>
+   </ItemView>
+   <ItemView guiview="Library" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>work</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000109000000010001000100000000000000000000000064ffffffff000000810000000000000001000001090000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>work</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_SCHEMATIC" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Configure Target Device</ClosedNode>
+         <ClosedNode>Design Utilities/Compile HDL Simulation Libraries</ClosedNode>
+         <ClosedNode>Implement Design</ClosedNode>
+         <ClosedNode>Synthesize - XST</ClosedNode>
+         <ClosedNode>User Constraints</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000147000000010000000100000000000000000000000064ffffffff000000810000000000000001000001470000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
+   <SourceProcessView>000000ff00000000000000020000011b0000011b01000000050100000002</SourceProcessView>
+   <CurrentView>Implementation</CurrentView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000147000000010000000100000000000000000000000064ffffffff000000810000000000000001000001470000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_UCF" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>User Constraints</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000147000000010000000100000000000000000000000064ffffffff000000810000000000000001000001470000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+</Project>

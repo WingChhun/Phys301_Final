@@ -1,0 +1,2 @@
+vhdtdtfi -lib work ../../lab6_projects/lab6_experiment4/sel_strobeB.vhd -lib work ../../lab6_projects/swag/sel_strobeB.vhd -prj lab7_projects -o sel_strobeB.spl -module sel_strobeB -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w sel_strobeB.spl C:/Users/James/Documents/Xlink_projects/lab7_projects/lab7_projects/sel_strobeB.sym 

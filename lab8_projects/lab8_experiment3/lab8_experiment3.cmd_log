@@ -1,0 +1,87 @@
+xst -intstyle ise -ifn "C:/Users/James/Documents/Xlink_projects/lab8_projects/lab8_experiment3/lab8_experiment3.xst" -ofn "C:/Users/James/Documents/Xlink_projects/lab8_projects/lab8_experiment3/lab8_experiment3.syr" 
+xst -intstyle ise -ifn "C:/Users/James/Documents/Xlink_projects/lab8_projects/lab8_experiment3/lab8_experiment3.xst" -ofn "C:/Users/James/Documents/Xlink_projects/lab8_projects/lab8_experiment3/lab8_experiment3.syr" 
+xst -intstyle ise -ifn "C:/Users/James/Documents/Xlink_projects/lab8_projects/lab8_experiment3/lab8_experiment3.xst" -ofn "C:/Users/James/Documents/Xlink_projects/lab8_projects/lab8_experiment3/lab8_experiment3.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab8_experiment3.ucf -p xc3s100e-cp132-4 lab8_experiment3.ngc lab8_experiment3.ngd  
+xst -intstyle ise -ifn "C:/Users/James/Documents/Xlink_projects/lab8_projects/lab8_experiment3/lab8_experiment3.xst" -ofn "C:/Users/James/Documents/Xlink_projects/lab8_projects/lab8_experiment3/lab8_experiment3.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab8_experiment3.ucf -p xc3s100e-cp132-4 lab8_experiment3.ngc lab8_experiment3.ngd  
+xst -intstyle ise -ifn "C:/Users/James/Documents/Xlink_projects/lab8_projects/lab8_experiment3/lab8_experiment3.xst" -ofn "C:/Users/James/Documents/Xlink_projects/lab8_projects/lab8_experiment3/lab8_experiment3.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab8_experiment3.ucf -p xc3s100e-cp132-4 lab8_experiment3.ngc lab8_experiment3.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o lab8_experiment3_map.ncd lab8_experiment3.ngd lab8_experiment3.pcf 
+par -w -intstyle ise -ol high -t 1 lab8_experiment3_map.ncd lab8_experiment3.ncd lab8_experiment3.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml lab8_experiment3.twx lab8_experiment3.ncd -o lab8_experiment3.twr lab8_experiment3.pcf -ucf lab8_experiment3.ucf 
+bitgen -intstyle ise -f lab8_experiment3.ut lab8_experiment3.ncd 
+xst -intstyle ise -ifn "C:/Users/James/Documents/Xlink_projects/lab8_projects/lab8_experiment3/lab8_experiment3.xst" -ofn "C:/Users/James/Documents/Xlink_projects/lab8_projects/lab8_experiment3/lab8_experiment3.syr" 
+xst -intstyle ise -ifn "C:/Users/James/Documents/Xlink_projects/lab8_projects/lab8_experiment3/lab8_experiment3.xst" -ofn "C:/Users/James/Documents/Xlink_projects/lab8_projects/lab8_experiment3/lab8_experiment3.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab8_experiment3.ucf -p xc3s100e-cp132-4 lab8_experiment3.ngc lab8_experiment3.ngd  
+xst -intstyle ise -ifn "C:/Users/James/Documents/Xlink_projects/lab8_projects/lab8_experiment3/lab8_experiment3.xst" -ofn "C:/Users/James/Documents/Xlink_projects/lab8_projects/lab8_experiment3/lab8_experiment3.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab8_experiment3.ucf -p xc3s100e-cp132-4 lab8_experiment3.ngc lab8_experiment3.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o lab8_experiment3_map.ncd lab8_experiment3.ngd lab8_experiment3.pcf 
+par -w -intstyle ise -ol high -t 1 lab8_experiment3_map.ncd lab8_experiment3.ncd lab8_experiment3.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml lab8_experiment3.twx lab8_experiment3.ncd -o lab8_experiment3.twr lab8_experiment3.pcf -ucf lab8_experiment3.ucf 
+bitgen -intstyle ise -f lab8_experiment3.ut lab8_experiment3.ncd 
+xst -intstyle ise -ifn "C:/Users/James/Documents/Xlink_projects/lab8_projects/lab8_experiment3/lab8_experiment3.xst" -ofn "C:/Users/James/Documents/Xlink_projects/lab8_projects/lab8_experiment3/lab8_experiment3.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab8_experiment3.ucf -p xc3s100e-cp132-4 lab8_experiment3.ngc lab8_experiment3.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o lab8_experiment3_map.ncd lab8_experiment3.ngd lab8_experiment3.pcf 
+par -w -intstyle ise -ol high -t 1 lab8_experiment3_map.ncd lab8_experiment3.ncd lab8_experiment3.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml lab8_experiment3.twx lab8_experiment3.ncd -o lab8_experiment3.twr lab8_experiment3.pcf -ucf lab8_experiment3.ucf 
+bitgen -intstyle ise -f lab8_experiment3.ut lab8_experiment3.ncd 
+xst -intstyle ise -ifn "C:/Users/James/Documents/Xlink_projects/lab8_projects/lab8_experiment3/lab8_experiment3.xst" -ofn "C:/Users/James/Documents/Xlink_projects/lab8_projects/lab8_experiment3/lab8_experiment3.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab8_experiment3.ucf -p xc3s100e-cp132-4 lab8_experiment3.ngc lab8_experiment3.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o lab8_experiment3_map.ncd lab8_experiment3.ngd lab8_experiment3.pcf 
+par -w -intstyle ise -ol high -t 1 lab8_experiment3_map.ncd lab8_experiment3.ncd lab8_experiment3.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml lab8_experiment3.twx lab8_experiment3.ncd -o lab8_experiment3.twr lab8_experiment3.pcf -ucf lab8_experiment3.ucf 
+bitgen -intstyle ise -f lab8_experiment3.ut lab8_experiment3.ncd 
+xst -intstyle ise -ifn "C:/Users/James/Documents/Xlink_projects/lab8_projects/lab8_experiment3/lab8_experiment3.xst" -ofn "C:/Users/James/Documents/Xlink_projects/lab8_projects/lab8_experiment3/lab8_experiment3.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab8_experiment3.ucf -p xc3s100e-cp132-4 lab8_experiment3.ngc lab8_experiment3.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o lab8_experiment3_map.ncd lab8_experiment3.ngd lab8_experiment3.pcf 
+par -w -intstyle ise -ol high -t 1 lab8_experiment3_map.ncd lab8_experiment3.ncd lab8_experiment3.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml lab8_experiment3.twx lab8_experiment3.ncd -o lab8_experiment3.twr lab8_experiment3.pcf -ucf lab8_experiment3.ucf 
+bitgen -intstyle ise -f lab8_experiment3.ut lab8_experiment3.ncd 
+xst -intstyle ise -ifn "C:/Users/James/Documents/Xlink_projects/lab8_projects/lab8_experiment3/lab8_experiment3.xst" -ofn "C:/Users/James/Documents/Xlink_projects/lab8_projects/lab8_experiment3/lab8_experiment3.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab8_experiment3.ucf -p xc3s100e-cp132-4 lab8_experiment3.ngc lab8_experiment3.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o lab8_experiment3_map.ncd lab8_experiment3.ngd lab8_experiment3.pcf 
+par -w -intstyle ise -ol high -t 1 lab8_experiment3_map.ncd lab8_experiment3.ncd lab8_experiment3.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml lab8_experiment3.twx lab8_experiment3.ncd -o lab8_experiment3.twr lab8_experiment3.pcf -ucf lab8_experiment3.ucf 
+bitgen -intstyle ise -f lab8_experiment3.ut lab8_experiment3.ncd 
+xst -intstyle ise -ifn "C:/Users/James/Documents/Xlink_projects/lab8_projects/lab8_experiment3/lab8_experiment3.xst" -ofn "C:/Users/James/Documents/Xlink_projects/lab8_projects/lab8_experiment3/lab8_experiment3.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab8_experiment3.ucf -p xc3s100e-cp132-4 lab8_experiment3.ngc lab8_experiment3.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o lab8_experiment3_map.ncd lab8_experiment3.ngd lab8_experiment3.pcf 
+par -w -intstyle ise -ol high -t 1 lab8_experiment3_map.ncd lab8_experiment3.ncd lab8_experiment3.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml lab8_experiment3.twx lab8_experiment3.ncd -o lab8_experiment3.twr lab8_experiment3.pcf -ucf lab8_experiment3.ucf 
+bitgen -intstyle ise -f lab8_experiment3.ut lab8_experiment3.ncd 
+xst -intstyle ise -ifn "C:/Users/James/Documents/Xlink_projects/lab8_projects/lab8_experiment3/lab8_experiment3.xst" -ofn "C:/Users/James/Documents/Xlink_projects/lab8_projects/lab8_experiment3/lab8_experiment3.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab8_experiment3.ucf -p xc3s100e-cp132-4 lab8_experiment3.ngc lab8_experiment3.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o lab8_experiment3_map.ncd lab8_experiment3.ngd lab8_experiment3.pcf 
+par -w -intstyle ise -ol high -t 1 lab8_experiment3_map.ncd lab8_experiment3.ncd lab8_experiment3.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml lab8_experiment3.twx lab8_experiment3.ncd -o lab8_experiment3.twr lab8_experiment3.pcf -ucf lab8_experiment3.ucf 
+bitgen -intstyle ise -f lab8_experiment3.ut lab8_experiment3.ncd 
+xst -intstyle ise -ifn "C:/Users/James/Documents/Xlink_projects/lab8_projects/lab8_experiment3/lab8_experiment3.xst" -ofn "C:/Users/James/Documents/Xlink_projects/lab8_projects/lab8_experiment3/lab8_experiment3.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab8_experiment3.ucf -p xc3s100e-cp132-4 lab8_experiment3.ngc lab8_experiment3.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o lab8_experiment3_map.ncd lab8_experiment3.ngd lab8_experiment3.pcf 
+par -w -intstyle ise -ol high -t 1 lab8_experiment3_map.ncd lab8_experiment3.ncd lab8_experiment3.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml lab8_experiment3.twx lab8_experiment3.ncd -o lab8_experiment3.twr lab8_experiment3.pcf -ucf lab8_experiment3.ucf 
+bitgen -intstyle ise -f lab8_experiment3.ut lab8_experiment3.ncd 
+xst -intstyle ise -ifn "C:/Users/James/Documents/Xlink_projects/lab8_projects/lab8_experiment3/lab8_experiment3.xst" -ofn "C:/Users/James/Documents/Xlink_projects/lab8_projects/lab8_experiment3/lab8_experiment3.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab8_experiment3.ucf -p xc3s100e-cp132-4 lab8_experiment3.ngc lab8_experiment3.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o lab8_experiment3_map.ncd lab8_experiment3.ngd lab8_experiment3.pcf 
+par -w -intstyle ise -ol high -t 1 lab8_experiment3_map.ncd lab8_experiment3.ncd lab8_experiment3.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml lab8_experiment3.twx lab8_experiment3.ncd -o lab8_experiment3.twr lab8_experiment3.pcf -ucf lab8_experiment3.ucf 
+bitgen -intstyle ise -f lab8_experiment3.ut lab8_experiment3.ncd 
+xst -intstyle ise -ifn "C:/Users/James/Documents/Xlink_projects/lab8_projects/lab8_experiment3/lab8_experiment3.xst" -ofn "C:/Users/James/Documents/Xlink_projects/lab8_projects/lab8_experiment3/lab8_experiment3.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab8_experiment3.ucf -p xc3s100e-cp132-4 lab8_experiment3.ngc lab8_experiment3.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o lab8_experiment3_map.ncd lab8_experiment3.ngd lab8_experiment3.pcf 
+par -w -intstyle ise -ol high -t 1 lab8_experiment3_map.ncd lab8_experiment3.ncd lab8_experiment3.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml lab8_experiment3.twx lab8_experiment3.ncd -o lab8_experiment3.twr lab8_experiment3.pcf -ucf lab8_experiment3.ucf 
+bitgen -intstyle ise -f lab8_experiment3.ut lab8_experiment3.ncd 
+xst -intstyle ise -ifn "C:/Users/James/Documents/Xlink_projects/lab8_projects/lab8_experiment3/lab8_experiment3.xst" -ofn "C:/Users/James/Documents/Xlink_projects/lab8_projects/lab8_experiment3/lab8_experiment3.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab8_experiment3.ucf -p xc3s100e-cp132-4 lab8_experiment3.ngc lab8_experiment3.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o lab8_experiment3_map.ncd lab8_experiment3.ngd lab8_experiment3.pcf 
+par -w -intstyle ise -ol high -t 1 lab8_experiment3_map.ncd lab8_experiment3.ncd lab8_experiment3.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml lab8_experiment3.twx lab8_experiment3.ncd -o lab8_experiment3.twr lab8_experiment3.pcf -ucf lab8_experiment3.ucf 
+bitgen -intstyle ise -f lab8_experiment3.ut lab8_experiment3.ncd 
+xst -intstyle ise -ifn "C:/Users/James/Documents/Xlink_projects/lab8_projects/lab8_experiment3/lab8_experiment3.xst" -ofn "C:/Users/James/Documents/Xlink_projects/lab8_projects/lab8_experiment3/lab8_experiment3.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab8_experiment3.ucf -p xc3s100e-cp132-4 lab8_experiment3.ngc lab8_experiment3.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o lab8_experiment3_map.ncd lab8_experiment3.ngd lab8_experiment3.pcf 
+par -w -intstyle ise -ol high -t 1 lab8_experiment3_map.ncd lab8_experiment3.ncd lab8_experiment3.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml lab8_experiment3.twx lab8_experiment3.ncd -o lab8_experiment3.twr lab8_experiment3.pcf -ucf lab8_experiment3.ucf 
+bitgen -intstyle ise -f lab8_experiment3.ut lab8_experiment3.ncd 

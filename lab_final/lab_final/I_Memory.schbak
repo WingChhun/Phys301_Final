@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drawing version="7">
+    <attr value="spartan3e" name="DeviceFamilyName">
+        <trait delete="all:0" />
+        <trait editname="all:0" />
+        <trait edittrait="all:0" />
+    </attr>
+    <netlist>
+        <signal name="instructionOutput(7:0)" />
+        <signal name="clrInstruction" />
+        <signal name="btn_writeInstruction" />
+        <signal name="XLXN_18" />
+        <signal name="DebugMode" />
+        <signal name="EnableInstructionMode" />
+        <signal name="Address(4:0)" />
+        <signal name="InstructionRegister(7:0)" />
+        <port polarity="Output" name="instructionOutput(7:0)" />
+        <port polarity="Input" name="clrInstruction" />
+        <port polarity="Input" name="btn_writeInstruction" />
+        <port polarity="Input" name="DebugMode" />
+        <port polarity="Input" name="EnableInstructionMode" />
+        <port polarity="Input" name="Address(4:0)" />
+        <port polarity="Input" name="InstructionRegister(7:0)" />
+        <blockdef name="sRAM32x8_ex_pgm_instr">
+            <timestamp>2018-4-26T17:40:14</timestamp>
+            <rect width="256" x="64" y="-320" height="320" />
+            <line x2="0" y1="-288" y2="-288" x1="64" />
+            <line x2="0" y1="-224" y2="-224" x1="64" />
+            <line x2="0" y1="-160" y2="-160" x1="64" />
+            <rect width="64" x="0" y="-108" height="24" />
+            <line x2="0" y1="-96" y2="-96" x1="64" />
+            <rect width="64" x="0" y="-44" height="24" />
+            <line x2="0" y1="-32" y2="-32" x1="64" />
+            <rect width="64" x="320" y="-300" height="24" />
+            <line x2="384" y1="-288" y2="-288" x1="320" />
+        </blockdef>
+        <blockdef name="and2">
+            <timestamp>2000-1-1T10:10:10</timestamp>
+            <line x2="64" y1="-64" y2="-64" x1="0" />
+            <line x2="64" y1="-128" y2="-128" x1="0" />
+            <line x2="192" y1="-96" y2="-96" x1="256" />
+            <arc ex="144" ey="-144" sx="144" sy="-48" r="48" cx="144" cy="-96" />
+            <line x2="64" y1="-48" y2="-48" x1="144" />
+            <line x2="144" y1="-144" y2="-144" x1="64" />
+            <line x2="64" y1="-48" y2="-144" x1="64" />
+        </blockdef>
+        <blockdef name="cb8cled">
+            <timestamp>2000-1-1T10:10:10</timestamp>
+            <rect width="64" x="0" y="-460" height="24" />
+            <line x2="64" y1="-128" y2="-144" x1="80" />
+            <line x2="80" y1="-112" y2="-128" x1="64" />
+            <line x2="64" y1="-32" y2="-32" x1="192" />
+            <line x2="192" y1="-64" y2="-32" x1="192" />
+            <rect width="64" x="320" y="-460" height="24" />
+            <rect width="256" x="64" y="-512" height="448" />
+            <line x2="320" y1="-192" y2="-192" x1="384" />
+            <line x2="64" y1="-448" y2="-448" x1="0" />
+            <line x2="320" y1="-448" y2="-448" x1="384" />
+            <line x2="64" y1="-256" y2="-256" x1="0" />
+            <line x2="64" y1="-32" y2="-32" x1="0" />
+            <line x2="64" y1="-128" y2="-128" x1="0" />
+            <line x2="64" y1="-192" y2="-192" x1="0" />
+            <line x2="64" y1="-320" y2="-320" x1="0" />
+            <line x2="320" y1="-128" y2="-128" x1="384" />
+        </blockdef>
+        <block symbolname="and2" name="XLXI_3">
+            <blockpin signalname="EnableInstructionMode" name="I0" />
+            <blockpin signalname="DebugMode" name="I1" />
+            <blockpin signalname="XLXN_18" name="O" />
+        </block>
+        <block symbolname="sRAM32x8_ex_pgm_instr" name="XLXI_1">
+            <blockpin signalname="clrInstruction" name="nCS" />
+            <blockpin signalname="XLXN_18" name="nWE" />
+            <blockpin signalname="btn_writeInstruction" name="WCLK" />
+            <blockpin signalname="Address(4:0)" name="A(4:0)" />
+            <blockpin signalname="InstructionRegister(7:0)" name="D(7:0)" />
+            <blockpin signalname="instructionOutput(7:0)" name="Q(7:0)" />
+        </block>
+        <block symbolname="cb8cled" name="XLXI_4">
+            <blockpin name="C" />
+            <blockpin name="CE" />
+            <blockpin name="CLR" />
+            <blockpin name="D(7:0)" />
+            <blockpin name="L" />
+            <blockpin name="UP" />
+            <blockpin name="CEO" />
+            <blockpin name="Q(7:0)" />
+            <blockpin name="TC" />
+        </block>
+    </netlist>
+    <sheet sheetnum="1" width="3520" height="2720">
+        <branch name="instructionOutput(7:0)">
+            <wire x2="1664" y1="112" y2="112" x1="1344" />
+        </branch>
+        <branch name="clrInstruction">
+            <wire x2="944" y1="112" y2="112" x1="672" />
+            <wire x2="960" y1="112" y2="112" x1="944" />
+        </branch>
+        <branch name="btn_writeInstruction">
+            <wire x2="960" y1="240" y2="240" x1="928" />
+        </branch>
+        <instance x="320" y="288" name="XLXI_3" orien="R0" />
+        <branch name="XLXN_18">
+            <wire x2="768" y1="192" y2="192" x1="576" />
+            <wire x2="768" y1="176" y2="192" x1="768" />
+            <wire x2="960" y1="176" y2="176" x1="768" />
+        </branch>
+        <branch name="DebugMode">
+            <wire x2="320" y1="160" y2="160" x1="288" />
+        </branch>
+        <branch name="EnableInstructionMode">
+            <wire x2="320" y1="224" y2="224" x1="288" />
+        </branch>
+        <branch name="Address(4:0)">
+            <wire x2="800" y1="480" y2="480" x1="528" />
+            <wire x2="816" y1="480" y2="480" x1="800" />
+            <wire x2="960" y1="304" y2="304" x1="816" />
+            <wire x2="816" y1="304" y2="480" x1="816" />
+        </branch>
+        <branch name="InstructionRegister(7:0)">
+            <wire x2="800" y1="544" y2="544" x1="656" />
+            <wire x2="816" y1="544" y2="544" x1="800" />
+            <wire x2="880" y1="544" y2="544" x1="816" />
+            <wire x2="880" y1="368" y2="544" x1="880" />
+            <wire x2="960" y1="368" y2="368" x1="880" />
+        </branch>
+        <instance x="960" y="400" name="XLXI_1" orien="R0">
+        </instance>
+        <iomarker fontsize="28" x="928" y="240" name="btn_writeInstruction" orien="R180" />
+        <iomarker fontsize="28" x="672" y="112" name="clrInstruction" orien="R180" />
+        <iomarker fontsize="28" x="1664" y="112" name="instructionOutput(7:0)" orien="R0" />
+        <iomarker fontsize="28" x="528" y="480" name="Address(4:0)" orien="R180" />
+        <iomarker fontsize="28" x="656" y="544" name="InstructionRegister(7:0)" orien="R180" />
+        <iomarker fontsize="28" x="288" y="224" name="EnableInstructionMode" orien="R180" />
+        <iomarker fontsize="28" x="288" y="160" name="DebugMode" orien="R180" />
+        <instance x="1392" y="784" name="XLXI_4" orien="R0" />
+    </sheet>
+</drawing>

@@ -1,0 +1,88 @@
+V3 54
+FL C:/Users/James/Documents/Xlink_projects/lab8_projects/lab8_experiment6/lab6_experimen3.vhf 2018/04/03.09:51:22 P.20131013
+EN work/lab6_experimen3 1522774322 \
+      FL C:/Users/James/Documents/Xlink_projects/lab8_projects/lab8_experiment6/lab6_experimen3.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/lab6_experimen3/BEHAVIORAL 1522774323 \
+      FL C:/Users/James/Documents/Xlink_projects/lab8_projects/lab8_experiment6/lab6_experimen3.vhf \
+      EN work/lab6_experimen3 1522774322 CP DCM_50M CP sel_strobeB CP GND CP VCC \
+      CP bin2BCD3en CP mux4SSD CP SSD_1dig
+FL C:/Users/James/Documents/Xlink_projects/lab8_projects/lab8_experiment6/lab8_experiment6.vhf 2018/04/03.09:51:48 P.20131013
+EN work/M2_1B1_MXILINX_lab8_experiment6 1522774324 \
+      FL C:/Users/James/Documents/Xlink_projects/lab8_projects/lab8_experiment6/lab8_experiment6.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/M2_1B1_MXILINX_lab8_experiment6/BEHAVIORAL 1522774325 \
+      FL C:/Users/James/Documents/Xlink_projects/lab8_projects/lab8_experiment6/lab8_experiment6.vhf \
+      EN work/M2_1B1_MXILINX_lab8_experiment6 1522774324 CP AND2B2 CP OR2 CP AND2
+EN work/M2_1_MXILINX_lab8_experiment6 1522774326 \
+      FL C:/Users/James/Documents/Xlink_projects/lab8_projects/lab8_experiment6/lab8_experiment6.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/M2_1_MXILINX_lab8_experiment6/BEHAVIORAL 1522774327 \
+      FL C:/Users/James/Documents/Xlink_projects/lab8_projects/lab8_experiment6/lab8_experiment6.vhf \
+      EN work/M2_1_MXILINX_lab8_experiment6 1522774326 CP AND2B1 CP OR2 CP AND2
+EN work/FTCLEX_MXILINX_lab8_experiment6 1522774328 \
+      FL C:/Users/James/Documents/Xlink_projects/lab8_projects/lab8_experiment6/lab8_experiment6.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/FTCLEX_MXILINX_lab8_experiment6/BEHAVIORAL 1522774329 \
+      FL C:/Users/James/Documents/Xlink_projects/lab8_projects/lab8_experiment6/lab8_experiment6.vhf \
+      EN work/FTCLEX_MXILINX_lab8_experiment6 1522774328 \
+      CP M2_1_MXILINX_lab8_experiment6 CP XOR2 CP FDCE
+EN work/CB4CLED_MXILINX_lab8_experiment6 1522774330 \
+      FL C:/Users/James/Documents/Xlink_projects/lab8_projects/lab8_experiment6/lab8_experiment6.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/CB4CLED_MXILINX_lab8_experiment6/BEHAVIORAL 1522774331 \
+      FL C:/Users/James/Documents/Xlink_projects/lab8_projects/lab8_experiment6/lab8_experiment6.vhf \
+      EN work/CB4CLED_MXILINX_lab8_experiment6 1522774330 \
+      CP FTCLEX_MXILINX_lab8_experiment6 CP M2_1_MXILINX_lab8_experiment6 \
+      CP M2_1B1_MXILINX_lab8_experiment6 CP VCC CP AND2B2 CP AND4 CP AND4B4 CP AND3 \
+      CP AND3B3 CP AND2 CP OR2
+EN work/lab8_experiment6 1522774332 \
+      FL C:/Users/James/Documents/Xlink_projects/lab8_projects/lab8_experiment6/lab8_experiment6.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/lab8_experiment6/BEHAVIORAL 1522774333 \
+      FL C:/Users/James/Documents/Xlink_projects/lab8_projects/lab8_experiment6/lab8_experiment6.vhf \
+      EN work/lab8_experiment6 1522774332 CP CB4CLED_MXILINX_lab8_experiment6 \
+      CP DCM_50M CP PULLDOWN CP PULLUP CP AND2B2 CP lab6_experimen3
+FL C:/Users/James/Documents/Xlink_projects/swag/bin2BCD3en.vhd 2016/09/28.15:04:02 P.20131013
+EN work/bin2BCD3en 1522774316 \
+      FL C:/Users/James/Documents/Xlink_projects/swag/bin2BCD3en.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179 LB UNISIM PH unisim/VCOMPONENTS 1381692182
+AR work/bin2BCD3en/Behavioral 1522774317 \
+      FL C:/Users/James/Documents/Xlink_projects/swag/bin2BCD3en.vhd \
+      EN work/bin2BCD3en 1522774316
+FL C:/Users/James/Documents/Xlink_projects/swag/DCM_50M.vhd 2016/09/28.15:03:58 P.20131013
+EN work/DCM_50M 1522774312 \
+      FL C:/Users/James/Documents/Xlink_projects/swag/DCM_50M.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/DCM_50M/Behavioral 1522774313 \
+      FL C:/Users/James/Documents/Xlink_projects/swag/DCM_50M.vhd EN work/DCM_50M 1522774312
+FL C:/Users/James/Documents/Xlink_projects/swag/mux4SSD.vhd 2016/09/28.15:04:24 P.20131013
+EN work/mux4SSD 1522774318 \
+      FL C:/Users/James/Documents/Xlink_projects/swag/mux4SSD.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/mux4SSD/Behavioral 1522774319 \
+      FL C:/Users/James/Documents/Xlink_projects/swag/mux4SSD.vhd EN work/mux4SSD 1522774318
+FL C:/Users/James/Documents/Xlink_projects/swag/sel_strobeB.vhd 2016/09/28.15:04:28 P.20131013
+EN work/sel_strobeB 1522774314 \
+      FL C:/Users/James/Documents/Xlink_projects/swag/sel_strobeB.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/sel_strobeB/Behavioral 1522774315 \
+      FL C:/Users/James/Documents/Xlink_projects/swag/sel_strobeB.vhd \
+      EN work/sel_strobeB 1522774314
+FL C:/Users/James/Documents/Xlink_projects/swag/SSD_1dig.vhd 2016/09/28.15:04:34 P.20131013
+EN work/SSD_1dig 1522774320 \
+      FL C:/Users/James/Documents/Xlink_projects/swag/SSD_1dig.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/SSD_1dig/Behavioral 1522774321 \
+      FL C:/Users/James/Documents/Xlink_projects/swag/SSD_1dig.vhd \
+      EN work/SSD_1dig 1522774320

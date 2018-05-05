@@ -1,0 +1,10 @@
+#Input
+
+NET "R" LOC =L3;
+NET "S" LOC =P11;
+
+#Outputs
+
+NET "Q1" LOC =M11; # R
+NET "Q2" LOC =M5; # S
+

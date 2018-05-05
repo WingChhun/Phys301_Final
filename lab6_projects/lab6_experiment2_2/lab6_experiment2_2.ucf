@@ -1,0 +1,54 @@
+
+
+# User Constrains
+
+#4 - bit Binary Input - A
+
+NET "hexA[3]" LOC =  B4;
+NET "hexA[2]" LOC = K3;
+NET "hexA[1]" LOC =  L3;
+NET "hexA[0]" LOC = P11;
+
+# 4 - bit B - Binary input
+
+NET "hexB[3]" LOC = N3;
+NET "hexB[2]" LOC = E2;
+NET "hexB[1]" LOC = F3;
+NET "hexB[0]" LOC = G3;
+
+
+#Select strobe (pushdown button)
+
+
+NET "sel[0]" LOC = C11;
+NET "sel[1]" LOC = G12;
+
+
+#Anodes 0 -3
+
+NET "anO[3]" LOC = F12;
+NET "anO[2]" LOC = J12;
+NET "anO[1]" LOC = M13;
+NET "anO[0]" LOC = K14;
+
+#Hex -binary output
+
+#Plan ahead Cathode output
+
+
+NET "sseg[7]" LOC = N13; # decimal point dont need 
+
+NET "sseg[0]" LOC = M12; #CG
+NET "sseg[1]" LOC = L13; #CF
+NET "sseg[2]" LOC = P12; #CE
+NET "sseg[3]" LOC = N11; #CD
+NET "sseg[4]" LOC = N14; #CC
+NET "sseg[5]" LOC = H12; #CB
+NET "sseg[6]" LOC = L14; #CA
+
+
+
+
+#Test
+
+

@@ -1,0 +1,16 @@
+EN dcm_50m NULL C:/Users/James/Documents/Xlink_projects/swag/DCM_50M.vhd sub00/vhpl00 1522175195
+AR lab8_experiment3 behavioral C:/Users/James/Documents/Xlink_projects/lab8_projects/lab8_experiment3/lab8_experiment3.vhf sub00/vhpl07 1522175200
+EN sel_strobeb NULL E:/Spring2018/Phys301/Phys-lab/Modules/sel_strobeB.vhd sub00/vhpl08 1522171521
+EN ssd_1dig NULL E:/Spring2018/Phys301/Phys-lab/Modules/SSD_1dig.vhd sub00/vhpl14 1522171527
+EN lab8_experiment3 NULL C:/Users/James/Documents/Xlink_projects/lab8_projects/lab8_experiment3/lab8_experiment3.vhf sub00/vhpl06 1522175199
+EN fjkc_mxilinx_lab8_experiment3 NULL C:/Users/James/Documents/Xlink_projects/lab8_projects/lab8_experiment3/lab8_experiment3.vhf sub00/vhpl04 1522175197
+AR mux4ssd behavioral E:/Spring2018/Phys301/Phys-lab/Modules/mux4SSD.vhd sub00/vhpl13 1522171526
+EN lab6_experimen3 NULL C:/Users/James/Documents/Xlink_projects/lab8_projects/lab8_experiment3/lab6_experimen3.vhf sub00/vhpl02 1522171529
+EN bin2bcd3en NULL E:/Spring2018/Phys301/Phys-lab/Modules/bin2BCD3en.vhd sub00/vhpl10 1522171523
+AR sel_strobeb behavioral E:/Spring2018/Phys301/Phys-lab/Modules/sel_strobeB.vhd sub00/vhpl09 1522171522
+AR ssd_1dig behavioral E:/Spring2018/Phys301/Phys-lab/Modules/SSD_1dig.vhd sub00/vhpl15 1522171528
+EN mux4ssd NULL E:/Spring2018/Phys301/Phys-lab/Modules/mux4SSD.vhd sub00/vhpl12 1522171525
+AR fjkc_mxilinx_lab8_experiment3 behavioral C:/Users/James/Documents/Xlink_projects/lab8_projects/lab8_experiment3/lab8_experiment3.vhf sub00/vhpl05 1522175198
+AR lab6_experimen3 behavioral C:/Users/James/Documents/Xlink_projects/lab8_projects/lab8_experiment3/lab6_experimen3.vhf sub00/vhpl03 1522171530
+AR bin2bcd3en behavioral E:/Spring2018/Phys301/Phys-lab/Modules/bin2BCD3en.vhd sub00/vhpl11 1522171524
+AR dcm_50m behavioral C:/Users/James/Documents/Xlink_projects/swag/DCM_50M.vhd sub00/vhpl01 1522175196

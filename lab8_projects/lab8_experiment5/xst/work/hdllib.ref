@@ -1,0 +1,16 @@
+EN dcm_50m NULL C:/Users/James/Documents/Xlink_projects/swag/DCM_50M.vhd sub00/vhpl00 1522348810
+AR lab8_experiment5 behavioral C:/Users/James/Documents/Xlink_projects/lab8_projects/lab8_experiment5/lab8_experiment5.vhf sub00/vhpl05 1522348825
+EN sel_strobeb NULL C:/Users/James/Documents/Xlink_projects/swag/sel_strobeB.vhd sub00/vhpl08 1522348812
+EN ssd_1dig NULL C:/Users/James/Documents/Xlink_projects/swag/SSD_1dig.vhd sub00/vhpl14 1522348818
+EN lab8_experiment5 NULL C:/Users/James/Documents/Xlink_projects/lab8_projects/lab8_experiment5/lab8_experiment5.vhf sub00/vhpl04 1522348824
+EN fjkc_mxilinx_lab8_experiment5 NULL C:/Users/James/Documents/Xlink_projects/lab8_projects/lab8_experiment5/lab8_experiment5.vhf sub00/vhpl02 1522348822
+AR mux4ssd behavioral C:/Users/James/Documents/Xlink_projects/swag/mux4SSD.vhd sub00/vhpl13 1522348817
+EN lab6_experimen3 NULL C:/Users/James/Documents/Xlink_projects/lab8_projects/lab8_experiment5/lab6_experimen3.vhf sub00/vhpl06 1522348820
+EN bin2bcd3en NULL C:/Users/James/Documents/Xlink_projects/swag/bin2BCD3en.vhd sub00/vhpl10 1522348814
+AR sel_strobeb behavioral C:/Users/James/Documents/Xlink_projects/swag/sel_strobeB.vhd sub00/vhpl09 1522348813
+AR ssd_1dig behavioral C:/Users/James/Documents/Xlink_projects/swag/SSD_1dig.vhd sub00/vhpl15 1522348819
+EN mux4ssd NULL C:/Users/James/Documents/Xlink_projects/swag/mux4SSD.vhd sub00/vhpl12 1522348816
+AR fjkc_mxilinx_lab8_experiment5 behavioral C:/Users/James/Documents/Xlink_projects/lab8_projects/lab8_experiment5/lab8_experiment5.vhf sub00/vhpl03 1522348823
+AR lab6_experimen3 behavioral C:/Users/James/Documents/Xlink_projects/lab8_projects/lab8_experiment5/lab6_experimen3.vhf sub00/vhpl07 1522348821
+AR bin2bcd3en behavioral C:/Users/James/Documents/Xlink_projects/swag/bin2BCD3en.vhd sub00/vhpl11 1522348815
+AR dcm_50m behavioral C:/Users/James/Documents/Xlink_projects/swag/DCM_50M.vhd sub00/vhpl01 1522348811

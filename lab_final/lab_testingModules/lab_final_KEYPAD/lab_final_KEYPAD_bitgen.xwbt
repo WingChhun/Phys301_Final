@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\James\Documents\Xlink_projects\lab_final\lab_testingModules\lab_final_KEYPAD\lab_final_KEYPAD.ncd
+OUTFILE=C:\Users\James\Documents\Xlink_projects\lab_final\lab_testingModules\lab_final_KEYPAD\lab_final_KEYPAD.bit
+FAMILY=Spartan3E
+PART=xc3s100e-4cp132
+WORKINGDIR=C:\Users\James\Documents\Xlink_projects\lab_final\lab_testingModules\lab_final_KEYPAD
+LICENSE=WebPack
+USER_INFO=174218040_0_0_110

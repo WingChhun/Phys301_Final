@@ -1,0 +1,2 @@
+vhdtdtfi -lib work ../../modules/sseg_mux4D.vhd -prj lab_final_KEYPAD -o sseg_mux4D.spl -module sseg_mux4D -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e sseg_mux4D.spl C:/Users/James/Documents/Xlink_projects/lab_final/lab_testingModules/lab_final_KEYPAD/sseg_mux4D.sym 

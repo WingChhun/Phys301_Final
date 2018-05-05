@@ -1,0 +1,12 @@
+EN dcm_50m NULL C:/Users/James/Documents/Xlink_projects/lab6_projects/swag/DCM_50M.vhd sub00/vhpl00 1519924693
+EN sel_strobeb NULL C:/Users/James/Documents/Xlink_projects/lab6_projects/swag/sel_strobeB.vhd sub00/vhpl02 1519924695
+EN ssd_1dig NULL C:/Users/James/Documents/Xlink_projects/lab6_projects/swag/SSD_1dig.vhd sub00/vhpl08 1519924701
+AR mux4ssd behavioral C:/Users/James/Documents/Xlink_projects/lab6_projects/swag/mux4SSD.vhd sub00/vhpl07 1519924700
+EN lab6_experimen3 NULL C:/Users/James/Documents/Xlink_projects/lab6_projects/lab_experiment3/lab6_experimen3.vhf sub00/vhpl10 1519924703
+EN bin2bcd3en NULL C:/Users/James/Documents/Xlink_projects/lab6_projects/swag/bin2BCD3en.vhd sub00/vhpl04 1519924697
+AR sel_strobeb behavioral C:/Users/James/Documents/Xlink_projects/lab6_projects/swag/sel_strobeB.vhd sub00/vhpl03 1519924696
+AR ssd_1dig behavioral C:/Users/James/Documents/Xlink_projects/lab6_projects/swag/SSD_1dig.vhd sub00/vhpl09 1519924702
+EN mux4ssd NULL C:/Users/James/Documents/Xlink_projects/lab6_projects/swag/mux4SSD.vhd sub00/vhpl06 1519924699
+AR lab6_experimen3 behavioral C:/Users/James/Documents/Xlink_projects/lab6_projects/lab_experiment3/lab6_experimen3.vhf sub00/vhpl11 1519924704
+AR bin2bcd3en behavioral C:/Users/James/Documents/Xlink_projects/lab6_projects/swag/bin2BCD3en.vhd sub00/vhpl05 1519924698
+AR dcm_50m behavioral C:/Users/James/Documents/Xlink_projects/lab6_projects/swag/DCM_50M.vhd sub00/vhpl01 1519924694

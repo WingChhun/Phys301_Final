@@ -1,0 +1,8 @@
+
+
+#INPUTS
+NET "B" LOC =L3;
+NET "E" LOC =P11;
+#OUTPUTS
+NET "L" LOC = M11;
+NET "I" LOC = M5;

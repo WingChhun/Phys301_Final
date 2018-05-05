@@ -1,0 +1,9 @@
+V3 5
+FL C:/Users/James/Documents/Xlink_projects/lab7_projects/lab7_exp1/lab7_exp1_NOR_RSFF.vhf 2018/03/06.14:43:11 P.20131013
+EN work/lab7_exp1_NOR_RSFF 1520376406 \
+      FL C:/Users/James/Documents/Xlink_projects/lab7_projects/lab7_exp1/lab7_exp1_NOR_RSFF.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/lab7_exp1_NOR_RSFF/BEHAVIORAL 1520376407 \
+      FL C:/Users/James/Documents/Xlink_projects/lab7_projects/lab7_exp1/lab7_exp1_NOR_RSFF.vhf \
+      EN work/lab7_exp1_NOR_RSFF 1520376406 CP NOR2

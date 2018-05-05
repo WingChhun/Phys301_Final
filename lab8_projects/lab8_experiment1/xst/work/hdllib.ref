@@ -1,0 +1,4 @@
+EN dcm_50m NULL C:/Users/James/Documents/Xlink_projects/swag/DCM_50M.vhd sub00/vhpl00 1522167844
+EN lab8_experiment1 NULL C:/Users/James/Documents/Xlink_projects/lab8_projects/lab8_experiment1/lab8_experiment1.vhf sub00/vhpl02 1522167846
+AR lab8_experiment1 behavioral C:/Users/James/Documents/Xlink_projects/lab8_projects/lab8_experiment1/lab8_experiment1.vhf sub00/vhpl03 1522167847
+AR dcm_50m behavioral C:/Users/James/Documents/Xlink_projects/swag/DCM_50M.vhd sub00/vhpl01 1522167845

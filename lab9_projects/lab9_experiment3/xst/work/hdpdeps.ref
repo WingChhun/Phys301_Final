@@ -1,0 +1,285 @@
+V3 135
+FL C:/Users/James/Documents/Xlink_projects/lab9_projects/lab9_experiment3/BOOBOO_EN.vhf 2018/04/18.20:32:37 P.20131013
+EN work/BOOBOO_EN 1524160884 \
+      FL C:/Users/James/Documents/Xlink_projects/lab9_projects/lab9_experiment3/BOOBOO_EN.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/BOOBOO_EN/BEHAVIORAL 1524160885 \
+      FL C:/Users/James/Documents/Xlink_projects/lab9_projects/lab9_experiment3/BOOBOO_EN.vhf \
+      EN work/BOOBOO_EN 1524160884 CP OR2 CP AND2 CP AND2B1
+FL C:/Users/James/Documents/Xlink_projects/lab9_projects/lab9_experiment3/lab6_experimen3.vhf 2018/04/17.06:51:20 P.20131013
+EN work/lab6_experimen3 1524158258 \
+      FL C:/Users/James/Documents/Xlink_projects/lab9_projects/lab9_experiment3/lab6_experimen3.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/lab6_experimen3/BEHAVIORAL 1524158259 \
+      FL C:/Users/James/Documents/Xlink_projects/lab9_projects/lab9_experiment3/lab6_experimen3.vhf \
+      EN work/lab6_experimen3 1524158258 CP DCM_50M CP sel_strobeB CP GND CP VCC \
+      CP bin2BCD3en CP mux4SSD CP SSD_1dig
+FL C:/Users/James/Documents/Xlink_projects/lab9_projects/lab9_experiment3/lab9_BCDBus.vhf 2018/04/19.10:44:33 P.20131013
+EN work/lab9_BCDBus 1524160886 \
+      FL C:/Users/James/Documents/Xlink_projects/lab9_projects/lab9_experiment3/lab9_BCDBus.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/lab9_BCDBus/BEHAVIORAL 1524160887 \
+      FL C:/Users/James/Documents/Xlink_projects/lab9_projects/lab9_experiment3/lab9_BCDBus.vhf \
+      EN work/lab9_BCDBus 1524160886 CP DCM_50M CP sel_strobeB CP GND CP VCC \
+      CP bin2BCD3en CP mux4SSD CP SSD_1dig
+FL C:/Users/James/Documents/Xlink_projects/lab9_projects/lab9_experiment3/lab9_exp3_YOGI.vhf 2018/04/17.14:43:44 P.20131013
+EN work/FJKCE_MXILINX_lab9_exp3_YOGI 1524001428 \
+      FL C:/Users/James/Documents/Xlink_projects/lab9_projects/lab9_experiment3/lab9_exp3_YOGI.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/FJKCE_MXILINX_lab9_exp3_YOGI/BEHAVIORAL 1524001429 \
+      FL C:/Users/James/Documents/Xlink_projects/lab9_projects/lab9_experiment3/lab9_exp3_YOGI.vhf \
+      EN work/FJKCE_MXILINX_lab9_exp3_YOGI 1524001428 CP FDCE CP AND3B2 CP AND3B1 \
+      CP OR3 CP AND2B1
+EN work/lab9_exp3_YOGI 1524001430 \
+      FL C:/Users/James/Documents/Xlink_projects/lab9_projects/lab9_experiment3/lab9_exp3_YOGI.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/lab9_exp3_YOGI/BEHAVIORAL 1524001431 \
+      FL C:/Users/James/Documents/Xlink_projects/lab9_projects/lab9_experiment3/lab9_exp3_YOGI.vhf \
+      EN work/lab9_exp3_YOGI 1524001430 CP FJKCE_MXILINX_lab9_exp3_YOGI CP OR2 \
+      CP AND2B1 CP AND2 CP AND4B2 CP PULLUP
+FL C:/Users/James/Documents/Xlink_projects/lab9_projects/lab9_experiment3/lab9_experiment2.vhf 2018/04/17.06:51:20 P.20131013
+EN work/FJKC_MXILINX_lab9_experiment2 1523975652 \
+      FL C:/Users/James/Documents/Xlink_projects/lab9_projects/lab9_experiment3/lab9_experiment2.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/FJKC_MXILINX_lab9_experiment2/BEHAVIORAL 1523975653 \
+      FL C:/Users/James/Documents/Xlink_projects/lab9_projects/lab9_experiment3/lab9_experiment2.vhf \
+      EN work/FJKC_MXILINX_lab9_experiment2 1523975652 CP FDC CP AND3B2 CP AND3B1 \
+      CP OR3 CP AND2B1
+EN work/M2_1B1_MXILINX_lab9_experiment2 1523975654 \
+      FL C:/Users/James/Documents/Xlink_projects/lab9_projects/lab9_experiment3/lab9_experiment2.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/M2_1B1_MXILINX_lab9_experiment2/BEHAVIORAL 1523975655 \
+      FL C:/Users/James/Documents/Xlink_projects/lab9_projects/lab9_experiment3/lab9_experiment2.vhf \
+      EN work/M2_1B1_MXILINX_lab9_experiment2 1523975654 CP AND2B2 CP OR2 CP AND2
+EN work/M2_1_MXILINX_lab9_experiment2 1523975656 \
+      FL C:/Users/James/Documents/Xlink_projects/lab9_projects/lab9_experiment3/lab9_experiment2.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/M2_1_MXILINX_lab9_experiment2/BEHAVIORAL 1523975657 \
+      FL C:/Users/James/Documents/Xlink_projects/lab9_projects/lab9_experiment3/lab9_experiment2.vhf \
+      EN work/M2_1_MXILINX_lab9_experiment2 1523975656 CP AND2B1 CP OR2 CP AND2
+EN work/FTCLEX_MXILINX_lab9_experiment2 1523975658 \
+      FL C:/Users/James/Documents/Xlink_projects/lab9_projects/lab9_experiment3/lab9_experiment2.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/FTCLEX_MXILINX_lab9_experiment2/BEHAVIORAL 1523975659 \
+      FL C:/Users/James/Documents/Xlink_projects/lab9_projects/lab9_experiment3/lab9_experiment2.vhf \
+      EN work/FTCLEX_MXILINX_lab9_experiment2 1523975658 \
+      CP M2_1_MXILINX_lab9_experiment2 CP XOR2 CP FDCE
+EN work/CB4CLED_MXILINX_lab9_experiment2 1523975660 \
+      FL C:/Users/James/Documents/Xlink_projects/lab9_projects/lab9_experiment3/lab9_experiment2.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/CB4CLED_MXILINX_lab9_experiment2/BEHAVIORAL 1523975661 \
+      FL C:/Users/James/Documents/Xlink_projects/lab9_projects/lab9_experiment3/lab9_experiment2.vhf \
+      EN work/CB4CLED_MXILINX_lab9_experiment2 1523975660 \
+      CP FTCLEX_MXILINX_lab9_experiment2 CP M2_1_MXILINX_lab9_experiment2 \
+      CP M2_1B1_MXILINX_lab9_experiment2 CP VCC CP AND2B2 CP AND4 CP AND4B4 CP AND3 \
+      CP AND3B3 CP AND2 CP OR2
+EN work/lab9_experiment2 1523975662 \
+      FL C:/Users/James/Documents/Xlink_projects/lab9_projects/lab9_experiment3/lab9_experiment2.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/lab9_experiment2/BEHAVIORAL 1523975663 \
+      FL C:/Users/James/Documents/Xlink_projects/lab9_projects/lab9_experiment3/lab9_experiment2.vhf \
+      EN work/lab9_experiment2 1523975662 CP CB4CLED_MXILINX_lab9_experiment2 \
+      CP DCM_50M CP PULLDOWN CP PULLUP CP AND2 CP FJKC_MXILINX_lab9_experiment2 \
+      CP lab6_experimen3 CP XOR2 CP INV CP OR2
+FL C:/Users/James/Documents/Xlink_projects/lab9_projects/lab9_experiment3/lab9_experiment3.vhf 2018/04/19.11:00:44 P.20131013
+EN work/stateCount_MUSER_lab9_experiment3 1524160858 \
+      FL C:/Users/James/Documents/Xlink_projects/lab9_projects/lab9_experiment3/lab9_experiment3.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/stateCount_MUSER_lab9_experiment3/BEHAVIORAL 1524160859 \
+      FL C:/Users/James/Documents/Xlink_projects/lab9_projects/lab9_experiment3/lab9_experiment3.vhf \
+      EN work/stateCount_MUSER_lab9_experiment3 1524160858 CP AND4B3 CP AND4B2 \
+      CP AND4B1
+EN work/lab9_BCDBus_MUSER_lab9_experiment3 1524160860 \
+      FL C:/Users/James/Documents/Xlink_projects/lab9_projects/lab9_experiment3/lab9_experiment3.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/lab9_BCDBus_MUSER_lab9_experiment3/BEHAVIORAL 1524160861 \
+      FL C:/Users/James/Documents/Xlink_projects/lab9_projects/lab9_experiment3/lab9_experiment3.vhf \
+      EN work/lab9_BCDBus_MUSER_lab9_experiment3 1524160860 CP DCM_50M \
+      CP sel_strobeB CP GND CP VCC CP bin2BCD3en CP mux4SSD CP SSD_1dig
+EN work/RANGER_EN_MUSER_lab9_experiment3 1524160862 \
+      FL C:/Users/James/Documents/Xlink_projects/lab9_projects/lab9_experiment3/lab9_experiment3.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/RANGER_EN_MUSER_lab9_experiment3/BEHAVIORAL 1524160863 \
+      FL C:/Users/James/Documents/Xlink_projects/lab9_projects/lab9_experiment3/lab9_experiment3.vhf \
+      EN work/RANGER_EN_MUSER_lab9_experiment3 1524160862 CP AND2 CP XOR2 CP AND2B2
+EN work/SNAGGLE_RX_MUSER_lab9_experiment3 1524160864 \
+      FL C:/Users/James/Documents/Xlink_projects/lab9_projects/lab9_experiment3/lab9_experiment3.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/SNAGGLE_RX_MUSER_lab9_experiment3/BEHAVIORAL 1524160865 \
+      FL C:/Users/James/Documents/Xlink_projects/lab9_projects/lab9_experiment3/lab9_experiment3.vhf \
+      EN work/SNAGGLE_RX_MUSER_lab9_experiment3 1524160864 CP OR2 CP AND2 CP AND3B2
+EN work/FJKCE_MXILINX_lab9_experiment3 1524160866 \
+      FL C:/Users/James/Documents/Xlink_projects/lab9_projects/lab9_experiment3/lab9_experiment3.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/FJKCE_MXILINX_lab9_experiment3/BEHAVIORAL 1524160867 \
+      FL C:/Users/James/Documents/Xlink_projects/lab9_projects/lab9_experiment3/lab9_experiment3.vhf \
+      EN work/FJKCE_MXILINX_lab9_experiment3 1524160866 CP FDCE CP AND3B2 CP AND3B1 \
+      CP OR3 CP AND2B1
+EN work/YOGI_E_MUSER_lab9_experiment3 1524160868 \
+      FL C:/Users/James/Documents/Xlink_projects/lab9_projects/lab9_experiment3/lab9_experiment3.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/YOGI_E_MUSER_lab9_experiment3/BEHAVIORAL 1524160869 \
+      FL C:/Users/James/Documents/Xlink_projects/lab9_projects/lab9_experiment3/lab9_experiment3.vhf \
+      EN work/YOGI_E_MUSER_lab9_experiment3 1524160868 CP OR2 CP AND2B1 CP AND2
+EN work/YOGI_S_MUSER_lab9_experiment3 1524160870 \
+      FL C:/Users/James/Documents/Xlink_projects/lab9_projects/lab9_experiment3/lab9_experiment3.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/YOGI_S_MUSER_lab9_experiment3/BEHAVIORAL 1524160871 \
+      FL C:/Users/James/Documents/Xlink_projects/lab9_projects/lab9_experiment3/lab9_experiment3.vhf \
+      EN work/YOGI_S_MUSER_lab9_experiment3 1524160870 CP OR2 CP AND2B1
+EN work/BOOBOO_EN_MUSER_lab9_experiment3 1524160872 \
+      FL C:/Users/James/Documents/Xlink_projects/lab9_projects/lab9_experiment3/lab9_experiment3.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/BOOBOO_EN_MUSER_lab9_experiment3/BEHAVIORAL 1524160873 \
+      FL C:/Users/James/Documents/Xlink_projects/lab9_projects/lab9_experiment3/lab9_experiment3.vhf \
+      EN work/BOOBOO_EN_MUSER_lab9_experiment3 1524160872 CP OR2 CP AND2 CP AND2B1
+EN work/M2_1B1_MXILINX_lab9_experiment3 1524160874 \
+      FL C:/Users/James/Documents/Xlink_projects/lab9_projects/lab9_experiment3/lab9_experiment3.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/M2_1B1_MXILINX_lab9_experiment3/BEHAVIORAL 1524160875 \
+      FL C:/Users/James/Documents/Xlink_projects/lab9_projects/lab9_experiment3/lab9_experiment3.vhf \
+      EN work/M2_1B1_MXILINX_lab9_experiment3 1524160874 CP AND2B2 CP OR2 CP AND2
+EN work/M2_1_MXILINX_lab9_experiment3 1524160876 \
+      FL C:/Users/James/Documents/Xlink_projects/lab9_projects/lab9_experiment3/lab9_experiment3.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/M2_1_MXILINX_lab9_experiment3/BEHAVIORAL 1524160877 \
+      FL C:/Users/James/Documents/Xlink_projects/lab9_projects/lab9_experiment3/lab9_experiment3.vhf \
+      EN work/M2_1_MXILINX_lab9_experiment3 1524160876 CP AND2B1 CP OR2 CP AND2
+EN work/FTCLEX_MXILINX_lab9_experiment3 1524160878 \
+      FL C:/Users/James/Documents/Xlink_projects/lab9_projects/lab9_experiment3/lab9_experiment3.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/FTCLEX_MXILINX_lab9_experiment3/BEHAVIORAL 1524160879 \
+      FL C:/Users/James/Documents/Xlink_projects/lab9_projects/lab9_experiment3/lab9_experiment3.vhf \
+      EN work/FTCLEX_MXILINX_lab9_experiment3 1524160878 \
+      CP M2_1_MXILINX_lab9_experiment3 CP XOR2 CP FDCE
+EN work/CB4CLED_MXILINX_lab9_experiment3 1524160880 \
+      FL C:/Users/James/Documents/Xlink_projects/lab9_projects/lab9_experiment3/lab9_experiment3.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/CB4CLED_MXILINX_lab9_experiment3/BEHAVIORAL 1524160881 \
+      FL C:/Users/James/Documents/Xlink_projects/lab9_projects/lab9_experiment3/lab9_experiment3.vhf \
+      EN work/CB4CLED_MXILINX_lab9_experiment3 1524160880 \
+      CP FTCLEX_MXILINX_lab9_experiment3 CP M2_1_MXILINX_lab9_experiment3 \
+      CP M2_1B1_MXILINX_lab9_experiment3 CP VCC CP AND2B2 CP AND4 CP AND4B4 CP AND3 \
+      CP AND3B3 CP AND2 CP OR2
+EN work/lab9_experiment3 1524160882 \
+      FL C:/Users/James/Documents/Xlink_projects/lab9_projects/lab9_experiment3/lab9_experiment3.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/lab9_experiment3/BEHAVIORAL 1524160883 \
+      FL C:/Users/James/Documents/Xlink_projects/lab9_projects/lab9_experiment3/lab9_experiment3.vhf \
+      EN work/lab9_experiment3 1524160882 CP CB4CLED_MXILINX_lab9_experiment3 \
+      CP DCM_50M CP PULLDOWN CP PULLUP CP FJKCE_MXILINX_lab9_experiment3 \
+      CP BOOBOO_EN_MUSER_lab9_experiment3 CP YOGI_S_MUSER_lab9_experiment3 \
+      CP YOGI_E_MUSER_lab9_experiment3 CP OR2 CP AND2 \
+      CP SNAGGLE_RX_MUSER_lab9_experiment3 CP XOR2 \
+      CP RANGER_EN_MUSER_lab9_experiment3 CP lab9_BCDBus_MUSER_lab9_experiment3 \
+      CP stateCount_MUSER_lab9_experiment3
+FL C:/Users/James/Documents/Xlink_projects/lab9_projects/lab9_experiment3/RANGER_EN.vhf 2018/04/19.10:55:36 P.20131013
+EN work/RANGER_EN 1524160888 \
+      FL C:/Users/James/Documents/Xlink_projects/lab9_projects/lab9_experiment3/RANGER_EN.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/RANGER_EN/BEHAVIORAL 1524160889 \
+      FL C:/Users/James/Documents/Xlink_projects/lab9_projects/lab9_experiment3/RANGER_EN.vhf \
+      EN work/RANGER_EN 1524160888 CP AND2 CP XOR2 CP AND2B2
+FL C:/Users/James/Documents/Xlink_projects/lab9_projects/lab9_experiment3/SNAGGLE_RX.vhf 2018/04/18.23:48:45 P.20131013
+EN work/SNAGGLE_RX 1524160890 \
+      FL C:/Users/James/Documents/Xlink_projects/lab9_projects/lab9_experiment3/SNAGGLE_RX.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/SNAGGLE_RX/BEHAVIORAL 1524160891 \
+      FL C:/Users/James/Documents/Xlink_projects/lab9_projects/lab9_experiment3/SNAGGLE_RX.vhf \
+      EN work/SNAGGLE_RX 1524160890 CP OR2 CP AND2 CP AND3B2
+FL C:/Users/James/Documents/Xlink_projects/lab9_projects/lab9_experiment3/stateCount.vhf 2018/04/19.10:44:32 P.20131013
+EN work/stateCount 1524160892 \
+      FL C:/Users/James/Documents/Xlink_projects/lab9_projects/lab9_experiment3/stateCount.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/stateCount/BEHAVIORAL 1524160893 \
+      FL C:/Users/James/Documents/Xlink_projects/lab9_projects/lab9_experiment3/stateCount.vhf \
+      EN work/stateCount 1524160892 CP AND4B3 CP AND4B2 CP AND4B1
+FL C:/Users/James/Documents/Xlink_projects/lab9_projects/lab9_experiment3/YOGI_E.vhf 2018/04/17.15:28:41 P.20131013
+EN work/YOGI_E 1524160894 \
+      FL C:/Users/James/Documents/Xlink_projects/lab9_projects/lab9_experiment3/YOGI_E.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/YOGI_E/BEHAVIORAL 1524160895 \
+      FL C:/Users/James/Documents/Xlink_projects/lab9_projects/lab9_experiment3/YOGI_E.vhf \
+      EN work/YOGI_E 1524160894 CP OR2 CP AND2B1 CP AND2
+FL C:/Users/James/Documents/Xlink_projects/lab9_projects/lab9_experiment3/YOGI_ET.vhf 2018/04/17.14:55:39 P.20131013
+EN work/YOGI_ET 1524003514 \
+      FL C:/Users/James/Documents/Xlink_projects/lab9_projects/lab9_experiment3/YOGI_ET.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/YOGI_ET/BEHAVIORAL 1524003515 \
+      FL C:/Users/James/Documents/Xlink_projects/lab9_projects/lab9_experiment3/YOGI_ET.vhf \
+      EN work/YOGI_ET 1524003514 CP OR2 CP AND2B1 CP AND2
+FL C:/Users/James/Documents/Xlink_projects/lab9_projects/lab9_experiment3/YOGI_S.vhf 2018/04/17.15:17:58 P.20131013
+EN work/YOGI_S 1524160896 \
+      FL C:/Users/James/Documents/Xlink_projects/lab9_projects/lab9_experiment3/YOGI_S.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/YOGI_S/BEHAVIORAL 1524160897 \
+      FL C:/Users/James/Documents/Xlink_projects/lab9_projects/lab9_experiment3/YOGI_S.vhf \
+      EN work/YOGI_S 1524160896 CP OR2 CP AND2B1
+FL C:/Users/James/Documents/Xlink_projects/lab9_projects/lab9_experiment3/YOGI_STATE.vhf 2018/04/17.15:07:39 P.20131013
+FL C:/Users/James/Documents/Xlink_projects/swag/bin2BCD3en.vhd 2016/09/28.15:04:02 P.20131013
+EN work/bin2BCD3en 1524160852 \
+      FL C:/Users/James/Documents/Xlink_projects/swag/bin2BCD3en.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179 LB UNISIM PH unisim/VCOMPONENTS 1381692182
+AR work/bin2BCD3en/Behavioral 1524160853 \
+      FL C:/Users/James/Documents/Xlink_projects/swag/bin2BCD3en.vhd \
+      EN work/bin2BCD3en 1524160852
+FL C:/Users/James/Documents/Xlink_projects/swag/DCM_50M.vhd 2016/09/28.15:03:58 P.20131013
+EN work/DCM_50M 1524160848 \
+      FL C:/Users/James/Documents/Xlink_projects/swag/DCM_50M.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/DCM_50M/Behavioral 1524160849 \
+      FL C:/Users/James/Documents/Xlink_projects/swag/DCM_50M.vhd EN work/DCM_50M 1524160848
+FL C:/Users/James/Documents/Xlink_projects/swag/mux4SSD.vhd 2016/09/28.15:04:24 P.20131013
+EN work/mux4SSD 1524160854 \
+      FL C:/Users/James/Documents/Xlink_projects/swag/mux4SSD.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/mux4SSD/Behavioral 1524160855 \
+      FL C:/Users/James/Documents/Xlink_projects/swag/mux4SSD.vhd EN work/mux4SSD 1524160854
+FL C:/Users/James/Documents/Xlink_projects/swag/sel_strobeB.vhd 2016/09/28.15:04:28 P.20131013
+EN work/sel_strobeB 1524160850 \
+      FL C:/Users/James/Documents/Xlink_projects/swag/sel_strobeB.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/sel_strobeB/Behavioral 1524160851 \
+      FL C:/Users/James/Documents/Xlink_projects/swag/sel_strobeB.vhd \
+      EN work/sel_strobeB 1524160850
+FL C:/Users/James/Documents/Xlink_projects/swag/SSD_1dig.vhd 2016/09/28.15:04:34 P.20131013
+EN work/SSD_1dig 1524160856 \
+      FL C:/Users/James/Documents/Xlink_projects/swag/SSD_1dig.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/SSD_1dig/Behavioral 1524160857 \
+      FL C:/Users/James/Documents/Xlink_projects/swag/SSD_1dig.vhd \
+      EN work/SSD_1dig 1524160856

@@ -1,0 +1,3 @@
+sch2sym -intstyle ise -family spartan3e -w -refsym keypad_shift C:/Users/James/Documents/Xlink_projects/lab_final/lab_final/keypad_shift.sch C:/Users/James/Documents/Xlink_projects/lab_final/lab_final/keypad_shift.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym keypad_shift C:/Users/James/Documents/Xlink_projects/lab_final/lab_final/keypad_shift.sch C:/Users/James/Documents/Xlink_projects/lab_final/lab_final/keypad_shift.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym keypad_shift C:/Users/James/Documents/Xlink_projects/lab_final/lab_final/keypad_shift.sch C:/Users/James/Documents/Xlink_projects/lab_final/lab_final/keypad_shift.sym 

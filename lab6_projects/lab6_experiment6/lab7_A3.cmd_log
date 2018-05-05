@@ -1,0 +1,6 @@
+sch2sym -intstyle ise -family spartan3e -refsym lab7_A3 C:/Users/James/Documents/Xlink_projects/lab6_projects/lab6_experiment6/lab7_A3.sch C:/Users/James/Documents/Xlink_projects/lab6_projects/lab6_experiment6/lab7_A3.sym 
+sch2sym -intstyle ise -family spartan3e -refsym lab7_A3 C:/Users/James/Documents/Xlink_projects/lab6_projects/lab6_experiment6/lab7_A3.sch C:/Users/James/Documents/Xlink_projects/lab6_projects/lab6_experiment6/lab7_A3.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym lab7_A3 C:/Users/James/Documents/Xlink_projects/lab6_projects/lab6_experiment6/lab7_A3.sch C:/Users/James/Documents/Xlink_projects/lab6_projects/lab6_experiment6/lab7_A3.sym 
+sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl lab7_A3_drc.vhf -w C:/Users/James/Documents/Xlink_projects/lab6_projects/lab6_experiment6/lab7_A3.sch 
+sch2sym -intstyle ise -family spartan3e -w -refsym lab7_A3 C:/Users/James/Documents/Xlink_projects/lab6_projects/lab6_experiment6/lab7_A3.sch C:/Users/James/Documents/Xlink_projects/lab6_projects/lab6_experiment6/lab7_A3.sym 
+sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl lab7_A3_drc.vhf -w C:/Users/James/Documents/Xlink_projects/lab6_projects/lab6_experiment6/lab7_A3.sch 

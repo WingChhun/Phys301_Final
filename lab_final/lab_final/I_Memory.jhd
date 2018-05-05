@@ -1,0 +1,3 @@
+MODULE I_Memory
+	SUBMODULE sRAM32x8_ex_pgm_instr
+		INSTANCE XLXI_1

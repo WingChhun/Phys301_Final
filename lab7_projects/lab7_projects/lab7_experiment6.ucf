@@ -1,0 +1,18 @@
+
+#Inputs
+NET  "Jin" LOC = L3;
+NET  "Kin" LOC = P11;
+
+#Clock
+NET  "CLKin" LOC =B8;
+#NET  "CLKin" LOC =P6 ;
+NET "ClockLED" LOC = G1;
+
+#MAIN OUTPUTS
+NET  "Q" LOC = M11;
+
+#Enable
+NET  "Enable" LOC = N3;
+
+#Clear
+NET  "CLR" LOC = G12;

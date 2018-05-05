@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan3e -w -refsym hex_shifter_cust C:/Users/James/Documents/Xlink_projects/lab_final/lab_final/hex_shifter_cust.sch C:/Users/James/Documents/Xlink_projects/lab_final/lab_final/hex_shifter_cust.sym 

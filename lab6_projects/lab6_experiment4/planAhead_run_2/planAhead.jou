@@ -1,0 +1,38 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7
+# Build 321239 by xbuild on Fri Sep 27 19:31:35 MDT 2013
+# Start of session at: Thu Mar 01 10:34:46 2018
+# Process ID: 9124
+# Log file: C:/Users/James/Documents/Xlink_projects/lab6_projects/lab6_experiment4/planAhead_run_2/planAhead.log
+# Journal file: C:/Users/James/Documents/Xlink_projects/lab6_projects/lab6_experiment4/planAhead_run_2/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source C:/Users/James/Documents/Xlink_projects/lab6_projects/lab6_experiment4/pa.fromHdl.tcl
+update_compile_order -fileset sim_1
+set_property package_pin "" [get_ports [list  {colO[3]}]]
+set_property package_pin "" [get_ports [list  {colO[2]}]]
+startgroup
+set_property package_pin B2 [get_ports {colO[0]}]
+endgroup
+startgroup
+set_property package_pin A3 [get_ports {colO[1]}]
+endgroup
+startgroup
+set_property package_pin J3 [get_ports {colO[2]}]
+endgroup
+startgroup
+set_property package_pin B5 [get_ports {colO[3]}]
+endgroup
+startgroup
+set_property package_pin C6 [get_ports {row[0]}]
+endgroup
+startgroup
+set_property package_pin B6 [get_ports {row[1]}]
+endgroup
+startgroup
+set_property package_pin C5 [get_ports {row[2]}]
+endgroup
+startgroup
+set_property package_pin B7 [get_ports {row[3]}]
+endgroup
+save_constraints

@@ -1,0 +1,3 @@
+sch2sym -intstyle ise -family spartan3e -w -refsym MUX8Bit C:/Users/James/Documents/Xlink_projects/lab_final/lab_final/MUX8Bit.sch C:/Users/James/Documents/Xlink_projects/lab_final/lab_final/MUX8Bit.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym MUX8Bit C:/Users/James/Documents/Xlink_projects/lab_final/lab_final/MUX8Bit.sch C:/Users/James/Documents/Xlink_projects/lab_final/lab_final/MUX8Bit.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym MUX8Bit C:/Users/James/Documents/Xlink_projects/lab_final/lab_final/MUX8Bit.sch C:/Users/James/Documents/Xlink_projects/lab_final/lab_final/MUX8Bit.sym 

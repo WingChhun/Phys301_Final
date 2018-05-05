@@ -1,0 +1,2 @@
+vhdtdtfi -lib work ../../lab_final/modules/debounce.vhd -prj lab6_experiment4 -o switch_debounce.spl -module switch_debounce -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e switch_debounce.spl C:/Users/James/Documents/Xlink_projects/lab6_projects/lab6_experiment4/switch_debounce.sym 

@@ -1,0 +1,6 @@
+select figure at 2046 1868 8 -branches -sn=1
+select all in 2009 1838 2046 1868 -branches -enclosed -sn=1
+select figure at 1641 1690 8 -branches -sn=1
+select all in 1641 1380 1839 1690 -branches -enclosed -sn=1
+select figure at 1713 1560 8 -branches -sn=1
+select figure at 1694 1428 8 -branches -extend -sn=1

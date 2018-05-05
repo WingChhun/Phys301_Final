@@ -1,0 +1,1313 @@
+Release 14.7 Map P.20131013 (nt64)
+Xilinx Mapping Report File for Design 'lab_final_KEYPAD'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off
+-c 100 -o lab_final_KEYPAD_map.ncd lab_final_KEYPAD.ngd lab_final_KEYPAD.pcf 
+Target Device  : xc3s100e
+Target Package : cp132
+Target Speed   : -4
+Mapper Version : spartan3e -- $Revision: 1.55 $
+Mapped Date    : Thu Apr 26 09:33:12 2018
+
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:    1
+Logic Utilization:
+  Number of Slice Flip Flops:           239 out of   1,920   12%
+  Number of 4 input LUTs:               445 out of   1,920   23%
+Logic Distribution:
+  Number of occupied Slices:            285 out of     960   29%
+    Number of Slices containing only related logic:     285 out of     285 100%
+    Number of Slices containing unrelated logic:          0 out of     285   0%
+      *See NOTES below for an explanation of the effects of unrelated logic.
+  Total Number of 4 input LUTs:         549 out of   1,920   28%
+    Number used as logic:               445
+    Number used as a route-thru:        104
+
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+  Number of bonded IOBs:                 17 out of      83   20%
+  Number of BUFGMUXs:                     2 out of      24    8%
+
+Average Fanout of Non-Clock Nets:                1.94
+
+Peak Memory Usage:  329 MB
+Total REAL time to MAP completion:  2 secs 
+Total CPU time to MAP completion:   2 secs 
+
+NOTES:
+
+   Related logic is defined as being logic that shares connectivity - e.g. two
+   LUTs are "related" if they share common inputs.  When assembling slices,
+   Map gives priority to combine logic that is related.  Doing so results in
+   the best timing performance.
+
+   Unrelated logic shares no connectivity.  Map will only begin packing
+   unrelated logic into a slice once 99% of the slices are occupied through
+   related logic packing.
+
+   Note that once logic distribution reaches the 99% level through related
+   logic packing, this does not mean the device is completely utilized.
+   Unrelated logic packing will then begin, continuing until all usable LUTs
+   and FFs are occupied.  Depending on your timing budget, increased levels of
+   unrelated logic packing may adversely affect the overall timing performance
+   of your design.
+
+Table of Contents
+-----------------
+Section 1 - Errors
+Section 2 - Warnings
+Section 3 - Informational
+Section 4 - Removed Logic Summary
+Section 5 - Removed Logic
+Section 6 - IOB Properties
+Section 7 - RPMs
+Section 8 - Guide Report
+Section 9 - Area Group and Partition Summary
+Section 10 - Timing Report
+Section 11 - Configuration String Information
+Section 12 - Control Set Information
+Section 13 - Utilization by Hierarchy
+
+Section 1 - Errors
+------------------
+
+Section 2 - Warnings
+--------------------
+WARNING:MapLib:701 - Signal En connected to top level port En has been removed.
+
+Section 3 - Informational
+-------------------------
+INFO:MapLib:562 - No environment variables are currently set.
+INFO:LIT:244 - All of the single ended outputs in this design are using slew
+   rate limited output drivers. The delay on speed critical single ended outputs
+   can be dramatically reduced by designating them as fast outputs.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+ 388 block(s) removed
+ 106 block(s) optimized away
+ 408 signal(s) removed
+
+Section 5 - Removed Logic
+-------------------------
+
+The trimmed logic reported below is either:
+   1. part of a cycle
+   2. part of disabled logic
+   3. a side-effect of other trimmed logic
+
+The signal "En" is unused and has been removed.
+ Unused block "En" (PAD) removed.
+The signal "En_IBUF" is unused and has been removed.
+ Unused block "En_IBUF" (BUF) removed.
+The signal "N40" is unused and has been removed.
+The signal "N56" is unused and has been removed.
+The signal "N57" is unused and has been removed.
+The signal "N58" is unused and has been removed.
+ Unused block "XLXI_2/DB4/lockout_or00001/LUT3_D_BUF" (BUF) removed.
+The signal "N59" is unused and has been removed.
+ Unused block "XLXI_2/DB3/lockout_or00001/LUT3_D_BUF" (BUF) removed.
+The signal "N60" is unused and has been removed.
+ Unused block "XLXI_2/DB2/lockout_or00001/LUT3_D_BUF" (BUF) removed.
+The signal "N61" is unused and has been removed.
+ Unused block "XLXI_2/DB1/lockout_or00001/LUT3_D_BUF" (BUF) removed.
+The signal "XLXI_1/RST_inv" is unused and has been removed.
+The signal "XLXI_2/DB1/lockout" is unused and has been removed.
+ Unused block "XLXI_2/DB1/lockout" (FF) removed.
+  The signal "XLXI_2/DB1/lockout_not0001" is unused and has been removed.
+   Unused block "XLXI_2/DB1/lockout_not00011" (ROM) removed.
+    The signal "XLXI_2/DB1/lockout_cmp_eq0000" is unused and has been removed.
+     Unused block "XLXI_2/DB1/lockout_cmp_eq0000_wg_cy<7>" (MUX) removed.
+      The signal "XLXI_2/DB1/lockout_cmp_eq0000_wg_cy<6>" is unused and has been
+removed.
+       Unused block "XLXI_2/DB1/lockout_cmp_eq0000_wg_cy<6>" (MUX) removed.
+        The signal "XLXI_2/DB1/lockout_cmp_eq0000_wg_cy<5>" is unused and has been
+removed.
+         Unused block "XLXI_2/DB1/lockout_cmp_eq0000_wg_cy<5>" (MUX) removed.
+          The signal "XLXI_2/DB1/lockout_cmp_eq0000_wg_cy<4>" is unused and has been
+removed.
+           Unused block "XLXI_2/DB1/lockout_cmp_eq0000_wg_cy<4>" (MUX) removed.
+            The signal "XLXI_2/DB1/lockout_cmp_eq0000_wg_cy<3>" is unused and has been
+removed.
+             Unused block "XLXI_2/DB1/lockout_cmp_eq0000_wg_cy<3>" (MUX) removed.
+              The signal "XLXI_2/DB1/lockout_cmp_eq0000_wg_cy<2>" is unused and has been
+removed.
+               Unused block "XLXI_2/DB1/lockout_cmp_eq0000_wg_cy<2>" (MUX) removed.
+                The signal "XLXI_2/DB1/lockout_cmp_eq0000_wg_cy<1>" is unused and has been
+removed.
+                 Unused block "XLXI_2/DB1/lockout_cmp_eq0000_wg_cy<1>" (MUX) removed.
+                  The signal "XLXI_2/DB1/lockout_cmp_eq0000_wg_cy<0>" is unused and has been
+removed.
+                   Unused block "XLXI_2/DB1/lockout_cmp_eq0000_wg_cy<0>" (MUX) removed.
+                    The signal "XLXI_2/DB1/lockout_cmp_eq0000_wg_lut<0>" is unused and has been
+removed.
+                     Unused block "XLXI_2/DB1/lockout_cmp_eq0000_wg_lut<0>" (ROM) removed.
+                  The signal "XLXI_2/DB1/lockout_cmp_eq0000_wg_lut<1>" is unused and has been
+removed.
+                   Unused block "XLXI_2/DB1/lockout_cmp_eq0000_wg_lut<1>" (ROM) removed.
+                The signal "XLXI_2/DB1/lockout_cmp_eq0000_wg_lut<2>" is unused and has been
+removed.
+                 Unused block "XLXI_2/DB1/lockout_cmp_eq0000_wg_lut<2>" (ROM) removed.
+              The signal "XLXI_2/DB1/lockout_cmp_eq0000_wg_lut<3>" is unused and has been
+removed.
+               Unused block "XLXI_2/DB1/lockout_cmp_eq0000_wg_lut<3>" (ROM) removed.
+            The signal "XLXI_2/DB1/lockout_cmp_eq0000_wg_lut<4>" is unused and has been
+removed.
+             Unused block "XLXI_2/DB1/lockout_cmp_eq0000_wg_lut<4>" (ROM) removed.
+          The signal "XLXI_2/DB1/lockout_cmp_eq0000_wg_lut<5>" is unused and has been
+removed.
+           Unused block "XLXI_2/DB1/lockout_cmp_eq0000_wg_lut<5>" (ROM) removed.
+        The signal "XLXI_2/DB1/lockout_cmp_eq0000_wg_lut<6>" is unused and has been
+removed.
+         Unused block "XLXI_2/DB1/lockout_cmp_eq0000_wg_lut<6>" (ROM) removed.
+      The signal "XLXI_2/DB1/lockout_cmp_eq0000_wg_lut<7>" is unused and has been
+removed.
+       Unused block "XLXI_2/DB1/lockout_cmp_eq0000_wg_lut<7>" (ROM) removed.
+  The signal "XLXI_2/DB1/lockout_mux0000" is unused and has been removed.
+   Unused block "XLXI_2/DB1/lockout_mux00001" (ROM) removed.
+The signal "XLXI_2/DB1/sw_s_and0000_inv" is unused and has been removed.
+ Unused block "XLXI_2/DB1/sw_s_and0000_inv1" (ROM) removed.
+  The signal "XLXI_2/DB1/sw_s_cmp_eq0000" is unused and has been removed.
+   Unused block "XLXI_2/DB1/sw_s_cmp_eq0000_wg_cy<7>" (MUX) removed.
+    The signal "XLXI_2/DB1/sw_s_cmp_eq0000_wg_cy<6>" is unused and has been removed.
+     Unused block "XLXI_2/DB1/sw_s_cmp_eq0000_wg_cy<6>" (MUX) removed.
+      The signal "XLXI_2/DB1/sw_s_cmp_eq0000_wg_cy<5>" is unused and has been removed.
+       Unused block "XLXI_2/DB1/sw_s_cmp_eq0000_wg_cy<5>" (MUX) removed.
+        The signal "XLXI_2/DB1/sw_s_cmp_eq0000_wg_cy<4>" is unused and has been removed.
+         Unused block "XLXI_2/DB1/sw_s_cmp_eq0000_wg_cy<4>" (MUX) removed.
+          The signal "XLXI_2/DB1/sw_s_cmp_eq0000_wg_cy<3>" is unused and has been removed.
+           Unused block "XLXI_2/DB1/sw_s_cmp_eq0000_wg_cy<3>" (MUX) removed.
+            The signal "XLXI_2/DB1/sw_s_cmp_eq0000_wg_cy<2>" is unused and has been removed.
+             Unused block "XLXI_2/DB1/sw_s_cmp_eq0000_wg_cy<2>" (MUX) removed.
+              The signal "XLXI_2/DB1/sw_s_cmp_eq0000_wg_cy<1>" is unused and has been removed.
+               Unused block "XLXI_2/DB1/sw_s_cmp_eq0000_wg_cy<1>" (MUX) removed.
+                The signal "XLXI_2/DB1/sw_s_cmp_eq0000_wg_cy<0>" is unused and has been removed.
+                 Unused block "XLXI_2/DB1/sw_s_cmp_eq0000_wg_cy<0>" (MUX) removed.
+                  The signal "XLXI_2/DB1/sw_s_cmp_eq0000_wg_lut<0>" is unused and has been
+removed.
+                   Unused block "XLXI_2/DB1/sw_s_cmp_eq0000_wg_lut<0>" (ROM) removed.
+                The signal "XLXI_2/DB1/sw_s_cmp_eq0000_wg_lut<1>" is unused and has been
+removed.
+                 Unused block "XLXI_2/DB1/sw_s_cmp_eq0000_wg_lut<1>" (ROM) removed.
+              The signal "XLXI_2/DB1/sw_s_cmp_eq0000_wg_lut<2>" is unused and has been
+removed.
+               Unused block "XLXI_2/DB1/sw_s_cmp_eq0000_wg_lut<2>" (ROM) removed.
+            The signal "XLXI_2/DB1/sw_s_cmp_eq0000_wg_lut<3>" is unused and has been
+removed.
+             Unused block "XLXI_2/DB1/sw_s_cmp_eq0000_wg_lut<3>" (ROM) removed.
+          The signal "XLXI_2/DB1/sw_s_cmp_eq0000_wg_lut<4>" is unused and has been
+removed.
+           Unused block "XLXI_2/DB1/sw_s_cmp_eq0000_wg_lut<4>" (ROM) removed.
+        The signal "XLXI_2/DB1/sw_s_cmp_eq0000_wg_lut<5>" is unused and has been
+removed.
+         Unused block "XLXI_2/DB1/sw_s_cmp_eq0000_wg_lut<5>" (ROM) removed.
+      The signal "XLXI_2/DB1/sw_s_cmp_eq0000_wg_lut<6>" is unused and has been
+removed.
+       Unused block "XLXI_2/DB1/sw_s_cmp_eq0000_wg_lut<6>" (ROM) removed.
+    The signal "XLXI_2/DB1/sw_s_cmp_eq0000_wg_lut<7>" is unused and has been
+removed.
+     Unused block "XLXI_2/DB1/sw_s_cmp_eq0000_wg_lut<7>" (ROM) removed.
+The signal "XLXI_2/DB1/sw_s_mux0000" is unused and has been removed.
+The signal "XLXI_2/DB2/lockout" is unused and has been removed.
+ Unused block "XLXI_2/DB2/lockout" (FF) removed.
+  The signal "XLXI_2/DB2/lockout_not0001" is unused and has been removed.
+   Unused block "XLXI_2/DB2/lockout_not00011" (ROM) removed.
+    The signal "XLXI_2/DB2/lockout_cmp_eq0000" is unused and has been removed.
+     Unused block "XLXI_2/DB2/lockout_cmp_eq0000_wg_cy<7>" (MUX) removed.
+      The signal "XLXI_2/DB2/lockout_cmp_eq0000_wg_cy<6>" is unused and has been
+removed.
+       Unused block "XLXI_2/DB2/lockout_cmp_eq0000_wg_cy<6>" (MUX) removed.
+        The signal "XLXI_2/DB2/lockout_cmp_eq0000_wg_cy<5>" is unused and has been
+removed.
+         Unused block "XLXI_2/DB2/lockout_cmp_eq0000_wg_cy<5>" (MUX) removed.
+          The signal "XLXI_2/DB2/lockout_cmp_eq0000_wg_cy<4>" is unused and has been
+removed.
+           Unused block "XLXI_2/DB2/lockout_cmp_eq0000_wg_cy<4>" (MUX) removed.
+            The signal "XLXI_2/DB2/lockout_cmp_eq0000_wg_cy<3>" is unused and has been
+removed.
+             Unused block "XLXI_2/DB2/lockout_cmp_eq0000_wg_cy<3>" (MUX) removed.
+              The signal "XLXI_2/DB2/lockout_cmp_eq0000_wg_cy<2>" is unused and has been
+removed.
+               Unused block "XLXI_2/DB2/lockout_cmp_eq0000_wg_cy<2>" (MUX) removed.
+                The signal "XLXI_2/DB2/lockout_cmp_eq0000_wg_cy<1>" is unused and has been
+removed.
+                 Unused block "XLXI_2/DB2/lockout_cmp_eq0000_wg_cy<1>" (MUX) removed.
+                  The signal "XLXI_2/DB2/lockout_cmp_eq0000_wg_cy<0>" is unused and has been
+removed.
+                   Unused block "XLXI_2/DB2/lockout_cmp_eq0000_wg_cy<0>" (MUX) removed.
+                    The signal "XLXI_2/DB2/lockout_cmp_eq0000_wg_lut<0>" is unused and has been
+removed.
+                     Unused block "XLXI_2/DB2/lockout_cmp_eq0000_wg_lut<0>" (ROM) removed.
+                  The signal "XLXI_2/DB2/lockout_cmp_eq0000_wg_lut<1>" is unused and has been
+removed.
+                   Unused block "XLXI_2/DB2/lockout_cmp_eq0000_wg_lut<1>" (ROM) removed.
+                The signal "XLXI_2/DB2/lockout_cmp_eq0000_wg_lut<2>" is unused and has been
+removed.
+                 Unused block "XLXI_2/DB2/lockout_cmp_eq0000_wg_lut<2>" (ROM) removed.
+              The signal "XLXI_2/DB2/lockout_cmp_eq0000_wg_lut<3>" is unused and has been
+removed.
+               Unused block "XLXI_2/DB2/lockout_cmp_eq0000_wg_lut<3>" (ROM) removed.
+            The signal "XLXI_2/DB2/lockout_cmp_eq0000_wg_lut<4>" is unused and has been
+removed.
+             Unused block "XLXI_2/DB2/lockout_cmp_eq0000_wg_lut<4>" (ROM) removed.
+          The signal "XLXI_2/DB2/lockout_cmp_eq0000_wg_lut<5>" is unused and has been
+removed.
+           Unused block "XLXI_2/DB2/lockout_cmp_eq0000_wg_lut<5>" (ROM) removed.
+        The signal "XLXI_2/DB2/lockout_cmp_eq0000_wg_lut<6>" is unused and has been
+removed.
+         Unused block "XLXI_2/DB2/lockout_cmp_eq0000_wg_lut<6>" (ROM) removed.
+      The signal "XLXI_2/DB2/lockout_cmp_eq0000_wg_lut<7>" is unused and has been
+removed.
+       Unused block "XLXI_2/DB2/lockout_cmp_eq0000_wg_lut<7>" (ROM) removed.
+  The signal "XLXI_2/DB2/lockout_mux0000" is unused and has been removed.
+   Unused block "XLXI_2/DB2/lockout_mux00001" (ROM) removed.
+The signal "XLXI_2/DB2/sw_s_and0000_inv" is unused and has been removed.
+ Unused block "XLXI_2/DB2/sw_s_and0000_inv1" (ROM) removed.
+  The signal "XLXI_2/DB2/sw_s_cmp_eq0000" is unused and has been removed.
+   Unused block "XLXI_2/DB2/sw_s_cmp_eq0000_wg_cy<7>" (MUX) removed.
+    The signal "XLXI_2/DB2/sw_s_cmp_eq0000_wg_cy<6>" is unused and has been removed.
+     Unused block "XLXI_2/DB2/sw_s_cmp_eq0000_wg_cy<6>" (MUX) removed.
+      The signal "XLXI_2/DB2/sw_s_cmp_eq0000_wg_cy<5>" is unused and has been removed.
+       Unused block "XLXI_2/DB2/sw_s_cmp_eq0000_wg_cy<5>" (MUX) removed.
+        The signal "XLXI_2/DB2/sw_s_cmp_eq0000_wg_cy<4>" is unused and has been removed.
+         Unused block "XLXI_2/DB2/sw_s_cmp_eq0000_wg_cy<4>" (MUX) removed.
+          The signal "XLXI_2/DB2/sw_s_cmp_eq0000_wg_cy<3>" is unused and has been removed.
+           Unused block "XLXI_2/DB2/sw_s_cmp_eq0000_wg_cy<3>" (MUX) removed.
+            The signal "XLXI_2/DB2/sw_s_cmp_eq0000_wg_cy<2>" is unused and has been removed.
+             Unused block "XLXI_2/DB2/sw_s_cmp_eq0000_wg_cy<2>" (MUX) removed.
+              The signal "XLXI_2/DB2/sw_s_cmp_eq0000_wg_cy<1>" is unused and has been removed.
+               Unused block "XLXI_2/DB2/sw_s_cmp_eq0000_wg_cy<1>" (MUX) removed.
+                The signal "XLXI_2/DB2/sw_s_cmp_eq0000_wg_cy<0>" is unused and has been removed.
+                 Unused block "XLXI_2/DB2/sw_s_cmp_eq0000_wg_cy<0>" (MUX) removed.
+                  The signal "XLXI_2/DB2/sw_s_cmp_eq0000_wg_lut<0>" is unused and has been
+removed.
+                   Unused block "XLXI_2/DB2/sw_s_cmp_eq0000_wg_lut<0>" (ROM) removed.
+                The signal "XLXI_2/DB2/sw_s_cmp_eq0000_wg_lut<1>" is unused and has been
+removed.
+                 Unused block "XLXI_2/DB2/sw_s_cmp_eq0000_wg_lut<1>" (ROM) removed.
+              The signal "XLXI_2/DB2/sw_s_cmp_eq0000_wg_lut<2>" is unused and has been
+removed.
+               Unused block "XLXI_2/DB2/sw_s_cmp_eq0000_wg_lut<2>" (ROM) removed.
+            The signal "XLXI_2/DB2/sw_s_cmp_eq0000_wg_lut<3>" is unused and has been
+removed.
+             Unused block "XLXI_2/DB2/sw_s_cmp_eq0000_wg_lut<3>" (ROM) removed.
+          The signal "XLXI_2/DB2/sw_s_cmp_eq0000_wg_lut<4>" is unused and has been
+removed.
+           Unused block "XLXI_2/DB2/sw_s_cmp_eq0000_wg_lut<4>" (ROM) removed.
+        The signal "XLXI_2/DB2/sw_s_cmp_eq0000_wg_lut<5>" is unused and has been
+removed.
+         Unused block "XLXI_2/DB2/sw_s_cmp_eq0000_wg_lut<5>" (ROM) removed.
+      The signal "XLXI_2/DB2/sw_s_cmp_eq0000_wg_lut<6>" is unused and has been
+removed.
+       Unused block "XLXI_2/DB2/sw_s_cmp_eq0000_wg_lut<6>" (ROM) removed.
+    The signal "XLXI_2/DB2/sw_s_cmp_eq0000_wg_lut<7>" is unused and has been
+removed.
+     Unused block "XLXI_2/DB2/sw_s_cmp_eq0000_wg_lut<7>" (ROM) removed.
+The signal "XLXI_2/DB2/sw_s_mux0000" is unused and has been removed.
+The signal "XLXI_2/DB3/lockout" is unused and has been removed.
+ Unused block "XLXI_2/DB3/lockout" (FF) removed.
+  The signal "XLXI_2/DB3/lockout_not0001" is unused and has been removed.
+   Unused block "XLXI_2/DB3/lockout_not00011" (ROM) removed.
+    The signal "XLXI_2/DB3/lockout_cmp_eq0000" is unused and has been removed.
+     Unused block "XLXI_2/DB3/lockout_cmp_eq0000_wg_cy<7>" (MUX) removed.
+      The signal "XLXI_2/DB3/lockout_cmp_eq0000_wg_cy<6>" is unused and has been
+removed.
+       Unused block "XLXI_2/DB3/lockout_cmp_eq0000_wg_cy<6>" (MUX) removed.
+        The signal "XLXI_2/DB3/lockout_cmp_eq0000_wg_cy<5>" is unused and has been
+removed.
+         Unused block "XLXI_2/DB3/lockout_cmp_eq0000_wg_cy<5>" (MUX) removed.
+          The signal "XLXI_2/DB3/lockout_cmp_eq0000_wg_cy<4>" is unused and has been
+removed.
+           Unused block "XLXI_2/DB3/lockout_cmp_eq0000_wg_cy<4>" (MUX) removed.
+            The signal "XLXI_2/DB3/lockout_cmp_eq0000_wg_cy<3>" is unused and has been
+removed.
+             Unused block "XLXI_2/DB3/lockout_cmp_eq0000_wg_cy<3>" (MUX) removed.
+              The signal "XLXI_2/DB3/lockout_cmp_eq0000_wg_cy<2>" is unused and has been
+removed.
+               Unused block "XLXI_2/DB3/lockout_cmp_eq0000_wg_cy<2>" (MUX) removed.
+                The signal "XLXI_2/DB3/lockout_cmp_eq0000_wg_cy<1>" is unused and has been
+removed.
+                 Unused block "XLXI_2/DB3/lockout_cmp_eq0000_wg_cy<1>" (MUX) removed.
+                  The signal "XLXI_2/DB3/lockout_cmp_eq0000_wg_cy<0>" is unused and has been
+removed.
+                   Unused block "XLXI_2/DB3/lockout_cmp_eq0000_wg_cy<0>" (MUX) removed.
+                    The signal "XLXI_2/DB3/lockout_cmp_eq0000_wg_lut<0>" is unused and has been
+removed.
+                     Unused block "XLXI_2/DB3/lockout_cmp_eq0000_wg_lut<0>" (ROM) removed.
+                  The signal "XLXI_2/DB3/lockout_cmp_eq0000_wg_lut<1>" is unused and has been
+removed.
+                   Unused block "XLXI_2/DB3/lockout_cmp_eq0000_wg_lut<1>" (ROM) removed.
+                The signal "XLXI_2/DB3/lockout_cmp_eq0000_wg_lut<2>" is unused and has been
+removed.
+                 Unused block "XLXI_2/DB3/lockout_cmp_eq0000_wg_lut<2>" (ROM) removed.
+              The signal "XLXI_2/DB3/lockout_cmp_eq0000_wg_lut<3>" is unused and has been
+removed.
+               Unused block "XLXI_2/DB3/lockout_cmp_eq0000_wg_lut<3>" (ROM) removed.
+            The signal "XLXI_2/DB3/lockout_cmp_eq0000_wg_lut<4>" is unused and has been
+removed.
+             Unused block "XLXI_2/DB3/lockout_cmp_eq0000_wg_lut<4>" (ROM) removed.
+          The signal "XLXI_2/DB3/lockout_cmp_eq0000_wg_lut<5>" is unused and has been
+removed.
+           Unused block "XLXI_2/DB3/lockout_cmp_eq0000_wg_lut<5>" (ROM) removed.
+        The signal "XLXI_2/DB3/lockout_cmp_eq0000_wg_lut<6>" is unused and has been
+removed.
+         Unused block "XLXI_2/DB3/lockout_cmp_eq0000_wg_lut<6>" (ROM) removed.
+      The signal "XLXI_2/DB3/lockout_cmp_eq0000_wg_lut<7>" is unused and has been
+removed.
+       Unused block "XLXI_2/DB3/lockout_cmp_eq0000_wg_lut<7>" (ROM) removed.
+  The signal "XLXI_2/DB3/lockout_mux0000" is unused and has been removed.
+   Unused block "XLXI_2/DB3/lockout_mux00001" (ROM) removed.
+The signal "XLXI_2/DB3/sw_s_and0000_inv" is unused and has been removed.
+ Unused block "XLXI_2/DB3/sw_s_and0000_inv1" (ROM) removed.
+  The signal "XLXI_2/DB3/sw_s_cmp_eq0000" is unused and has been removed.
+   Unused block "XLXI_2/DB3/sw_s_cmp_eq0000_wg_cy<7>" (MUX) removed.
+    The signal "XLXI_2/DB3/sw_s_cmp_eq0000_wg_cy<6>" is unused and has been removed.
+     Unused block "XLXI_2/DB3/sw_s_cmp_eq0000_wg_cy<6>" (MUX) removed.
+      The signal "XLXI_2/DB3/sw_s_cmp_eq0000_wg_cy<5>" is unused and has been removed.
+       Unused block "XLXI_2/DB3/sw_s_cmp_eq0000_wg_cy<5>" (MUX) removed.
+        The signal "XLXI_2/DB3/sw_s_cmp_eq0000_wg_cy<4>" is unused and has been removed.
+         Unused block "XLXI_2/DB3/sw_s_cmp_eq0000_wg_cy<4>" (MUX) removed.
+          The signal "XLXI_2/DB3/sw_s_cmp_eq0000_wg_cy<3>" is unused and has been removed.
+           Unused block "XLXI_2/DB3/sw_s_cmp_eq0000_wg_cy<3>" (MUX) removed.
+            The signal "XLXI_2/DB3/sw_s_cmp_eq0000_wg_cy<2>" is unused and has been removed.
+             Unused block "XLXI_2/DB3/sw_s_cmp_eq0000_wg_cy<2>" (MUX) removed.
+              The signal "XLXI_2/DB3/sw_s_cmp_eq0000_wg_cy<1>" is unused and has been removed.
+               Unused block "XLXI_2/DB3/sw_s_cmp_eq0000_wg_cy<1>" (MUX) removed.
+                The signal "XLXI_2/DB3/sw_s_cmp_eq0000_wg_cy<0>" is unused and has been removed.
+                 Unused block "XLXI_2/DB3/sw_s_cmp_eq0000_wg_cy<0>" (MUX) removed.
+                  The signal "XLXI_2/DB3/sw_s_cmp_eq0000_wg_lut<0>" is unused and has been
+removed.
+                   Unused block "XLXI_2/DB3/sw_s_cmp_eq0000_wg_lut<0>" (ROM) removed.
+                The signal "XLXI_2/DB3/sw_s_cmp_eq0000_wg_lut<1>" is unused and has been
+removed.
+                 Unused block "XLXI_2/DB3/sw_s_cmp_eq0000_wg_lut<1>" (ROM) removed.
+              The signal "XLXI_2/DB3/sw_s_cmp_eq0000_wg_lut<2>" is unused and has been
+removed.
+               Unused block "XLXI_2/DB3/sw_s_cmp_eq0000_wg_lut<2>" (ROM) removed.
+            The signal "XLXI_2/DB3/sw_s_cmp_eq0000_wg_lut<3>" is unused and has been
+removed.
+             Unused block "XLXI_2/DB3/sw_s_cmp_eq0000_wg_lut<3>" (ROM) removed.
+          The signal "XLXI_2/DB3/sw_s_cmp_eq0000_wg_lut<4>" is unused and has been
+removed.
+           Unused block "XLXI_2/DB3/sw_s_cmp_eq0000_wg_lut<4>" (ROM) removed.
+        The signal "XLXI_2/DB3/sw_s_cmp_eq0000_wg_lut<5>" is unused and has been
+removed.
+         Unused block "XLXI_2/DB3/sw_s_cmp_eq0000_wg_lut<5>" (ROM) removed.
+      The signal "XLXI_2/DB3/sw_s_cmp_eq0000_wg_lut<6>" is unused and has been
+removed.
+       Unused block "XLXI_2/DB3/sw_s_cmp_eq0000_wg_lut<6>" (ROM) removed.
+    The signal "XLXI_2/DB3/sw_s_cmp_eq0000_wg_lut<7>" is unused and has been
+removed.
+     Unused block "XLXI_2/DB3/sw_s_cmp_eq0000_wg_lut<7>" (ROM) removed.
+The signal "XLXI_2/DB3/sw_s_mux0000" is unused and has been removed.
+The signal "XLXI_2/DB4/lockout" is unused and has been removed.
+ Unused block "XLXI_2/DB4/lockout" (FF) removed.
+  The signal "XLXI_2/DB4/lockout_not0001" is unused and has been removed.
+   Unused block "XLXI_2/DB4/lockout_not00011" (ROM) removed.
+    The signal "XLXI_2/DB4/lockout_cmp_eq0000" is unused and has been removed.
+     Unused block "XLXI_2/DB4/lockout_cmp_eq0000_wg_cy<7>" (MUX) removed.
+      The signal "XLXI_2/DB4/lockout_cmp_eq0000_wg_cy<6>" is unused and has been
+removed.
+       Unused block "XLXI_2/DB4/lockout_cmp_eq0000_wg_cy<6>" (MUX) removed.
+        The signal "XLXI_2/DB4/lockout_cmp_eq0000_wg_cy<5>" is unused and has been
+removed.
+         Unused block "XLXI_2/DB4/lockout_cmp_eq0000_wg_cy<5>" (MUX) removed.
+          The signal "XLXI_2/DB4/lockout_cmp_eq0000_wg_cy<4>" is unused and has been
+removed.
+           Unused block "XLXI_2/DB4/lockout_cmp_eq0000_wg_cy<4>" (MUX) removed.
+            The signal "XLXI_2/DB4/lockout_cmp_eq0000_wg_cy<3>" is unused and has been
+removed.
+             Unused block "XLXI_2/DB4/lockout_cmp_eq0000_wg_cy<3>" (MUX) removed.
+              The signal "XLXI_2/DB4/lockout_cmp_eq0000_wg_cy<2>" is unused and has been
+removed.
+               Unused block "XLXI_2/DB4/lockout_cmp_eq0000_wg_cy<2>" (MUX) removed.
+                The signal "XLXI_2/DB4/lockout_cmp_eq0000_wg_cy<1>" is unused and has been
+removed.
+                 Unused block "XLXI_2/DB4/lockout_cmp_eq0000_wg_cy<1>" (MUX) removed.
+                  The signal "XLXI_2/DB4/lockout_cmp_eq0000_wg_cy<0>" is unused and has been
+removed.
+                   Unused block "XLXI_2/DB4/lockout_cmp_eq0000_wg_cy<0>" (MUX) removed.
+                    The signal "XLXI_2/DB4/lockout_cmp_eq0000_wg_lut<0>" is unused and has been
+removed.
+                     Unused block "XLXI_2/DB4/lockout_cmp_eq0000_wg_lut<0>" (ROM) removed.
+                  The signal "XLXI_2/DB4/lockout_cmp_eq0000_wg_lut<1>" is unused and has been
+removed.
+                   Unused block "XLXI_2/DB4/lockout_cmp_eq0000_wg_lut<1>" (ROM) removed.
+                The signal "XLXI_2/DB4/lockout_cmp_eq0000_wg_lut<2>" is unused and has been
+removed.
+                 Unused block "XLXI_2/DB4/lockout_cmp_eq0000_wg_lut<2>" (ROM) removed.
+              The signal "XLXI_2/DB4/lockout_cmp_eq0000_wg_lut<3>" is unused and has been
+removed.
+               Unused block "XLXI_2/DB4/lockout_cmp_eq0000_wg_lut<3>" (ROM) removed.
+            The signal "XLXI_2/DB4/lockout_cmp_eq0000_wg_lut<4>" is unused and has been
+removed.
+             Unused block "XLXI_2/DB4/lockout_cmp_eq0000_wg_lut<4>" (ROM) removed.
+          The signal "XLXI_2/DB4/lockout_cmp_eq0000_wg_lut<5>" is unused and has been
+removed.
+           Unused block "XLXI_2/DB4/lockout_cmp_eq0000_wg_lut<5>" (ROM) removed.
+        The signal "XLXI_2/DB4/lockout_cmp_eq0000_wg_lut<6>" is unused and has been
+removed.
+         Unused block "XLXI_2/DB4/lockout_cmp_eq0000_wg_lut<6>" (ROM) removed.
+      The signal "XLXI_2/DB4/lockout_cmp_eq0000_wg_lut<7>" is unused and has been
+removed.
+       Unused block "XLXI_2/DB4/lockout_cmp_eq0000_wg_lut<7>" (ROM) removed.
+  The signal "XLXI_2/DB4/lockout_mux0000" is unused and has been removed.
+   Unused block "XLXI_2/DB4/lockout_mux00001" (ROM) removed.
+The signal "XLXI_2/DB4/sw_s_and0000_inv" is unused and has been removed.
+ Unused block "XLXI_2/DB4/sw_s_and0000_inv1" (ROM) removed.
+  The signal "XLXI_2/DB4/sw_s_cmp_eq0000" is unused and has been removed.
+   Unused block "XLXI_2/DB4/sw_s_cmp_eq0000_wg_cy<7>" (MUX) removed.
+    The signal "XLXI_2/DB4/sw_s_cmp_eq0000_wg_cy<6>" is unused and has been removed.
+     Unused block "XLXI_2/DB4/sw_s_cmp_eq0000_wg_cy<6>" (MUX) removed.
+      The signal "XLXI_2/DB4/sw_s_cmp_eq0000_wg_cy<5>" is unused and has been removed.
+       Unused block "XLXI_2/DB4/sw_s_cmp_eq0000_wg_cy<5>" (MUX) removed.
+        The signal "XLXI_2/DB4/sw_s_cmp_eq0000_wg_cy<4>" is unused and has been removed.
+         Unused block "XLXI_2/DB4/sw_s_cmp_eq0000_wg_cy<4>" (MUX) removed.
+          The signal "XLXI_2/DB4/sw_s_cmp_eq0000_wg_cy<3>" is unused and has been removed.
+           Unused block "XLXI_2/DB4/sw_s_cmp_eq0000_wg_cy<3>" (MUX) removed.
+            The signal "XLXI_2/DB4/sw_s_cmp_eq0000_wg_cy<2>" is unused and has been removed.
+             Unused block "XLXI_2/DB4/sw_s_cmp_eq0000_wg_cy<2>" (MUX) removed.
+              The signal "XLXI_2/DB4/sw_s_cmp_eq0000_wg_cy<1>" is unused and has been removed.
+               Unused block "XLXI_2/DB4/sw_s_cmp_eq0000_wg_cy<1>" (MUX) removed.
+                The signal "XLXI_2/DB4/sw_s_cmp_eq0000_wg_cy<0>" is unused and has been removed.
+                 Unused block "XLXI_2/DB4/sw_s_cmp_eq0000_wg_cy<0>" (MUX) removed.
+                  The signal "XLXI_2/DB4/sw_s_cmp_eq0000_wg_lut<0>" is unused and has been
+removed.
+                   Unused block "XLXI_2/DB4/sw_s_cmp_eq0000_wg_lut<0>" (ROM) removed.
+                The signal "XLXI_2/DB4/sw_s_cmp_eq0000_wg_lut<1>" is unused and has been
+removed.
+                 Unused block "XLXI_2/DB4/sw_s_cmp_eq0000_wg_lut<1>" (ROM) removed.
+              The signal "XLXI_2/DB4/sw_s_cmp_eq0000_wg_lut<2>" is unused and has been
+removed.
+               Unused block "XLXI_2/DB4/sw_s_cmp_eq0000_wg_lut<2>" (ROM) removed.
+            The signal "XLXI_2/DB4/sw_s_cmp_eq0000_wg_lut<3>" is unused and has been
+removed.
+             Unused block "XLXI_2/DB4/sw_s_cmp_eq0000_wg_lut<3>" (ROM) removed.
+          The signal "XLXI_2/DB4/sw_s_cmp_eq0000_wg_lut<4>" is unused and has been
+removed.
+           Unused block "XLXI_2/DB4/sw_s_cmp_eq0000_wg_lut<4>" (ROM) removed.
+        The signal "XLXI_2/DB4/sw_s_cmp_eq0000_wg_lut<5>" is unused and has been
+removed.
+         Unused block "XLXI_2/DB4/sw_s_cmp_eq0000_wg_lut<5>" (ROM) removed.
+      The signal "XLXI_2/DB4/sw_s_cmp_eq0000_wg_lut<6>" is unused and has been
+removed.
+       Unused block "XLXI_2/DB4/sw_s_cmp_eq0000_wg_lut<6>" (ROM) removed.
+    The signal "XLXI_2/DB4/sw_s_cmp_eq0000_wg_lut<7>" is unused and has been
+removed.
+     Unused block "XLXI_2/DB4/sw_s_cmp_eq0000_wg_lut<7>" (ROM) removed.
+The signal "XLXI_2/DB4/sw_s_mux0000" is unused and has been removed.
+The signal "XLXI_4/lobster_and0000" is unused and has been removed.
+The signal "XLXI_4/lobster_and000041" is unused and has been removed.
+The signal "XLXI_4/lobster_and0000411" is unused and has been removed.
+ Unused block "XLXI_4/lobster_and0000411" (ROM) removed.
+The signal "XLXI_4/lobster_and000072" is unused and has been removed.
+ Unused block "XLXI_4/lobster_and000072" (ROM) removed.
+The signal "XLXI_4/lobster_not0001_inv" is unused and has been removed.
+The signal "XLXI_4/rowON" is unused and has been removed.
+The signal "XLXI_5/Madd_cnt_addsub0000_cy<0>" is unused and has been removed.
+ Unused block "XLXI_5/Madd_cnt_addsub0000_cy<0>" (MUX) removed.
+  The signal "XLXI_5/Madd_cnt_addsub0000_lut<0>" is unused and has been removed.
+   Unused block "XLXI_5/Madd_cnt_addsub0000_lut<0>_INV_0" (BUF) removed.
+    The signal "XLXI_5/cnt<0>" is unused and has been removed.
+     Unused block "XLXI_5/cnt_0" (FF) removed.
+      The signal "XLXI_5/arm" is unused and has been removed.
+       Unused block "XLXI_5/arm" (FF) removed.
+        The signal "XLXI_5/arm_inv" is unused and has been removed.
+         Unused block "XLXI_5/arm_inv1_INV_0" (BUF) removed.
+        The signal "XLXI_5/arm_cmp_gt0000" is unused and has been removed.
+         Unused block "XLXI_5/Mcompar_arm_cmp_gt0000_cy<11>_inv_INV_0" (BUF) removed.
+          The signal "XLXI_5/Mcompar_arm_cmp_gt0000_cy<11>" is unused and has been
+removed.
+           Unused block "XLXI_5/Mcompar_arm_cmp_gt0000_cy<11>" (MUX) removed.
+            The signal "XLXI_5/Mcompar_arm_cmp_gt0000_cy<10>" is unused and has been
+removed.
+             Unused block "XLXI_5/Mcompar_arm_cmp_gt0000_cy<10>" (MUX) removed.
+              The signal "XLXI_5/Mcompar_arm_cmp_gt0000_cy<9>" is unused and has been removed.
+               Unused block "XLXI_5/Mcompar_arm_cmp_gt0000_cy<9>" (MUX) removed.
+                The signal "XLXI_5/Mcompar_arm_cmp_gt0000_cy<8>" is unused and has been removed.
+                 Unused block "XLXI_5/Mcompar_arm_cmp_gt0000_cy<8>" (MUX) removed.
+                  The signal "XLXI_5/Mcompar_arm_cmp_gt0000_cy<7>" is unused and has been removed.
+                   Unused block "XLXI_5/Mcompar_arm_cmp_gt0000_cy<7>" (MUX) removed.
+                    The signal "XLXI_5/Mcompar_arm_cmp_gt0000_cy<6>" is unused and has been removed.
+                     Unused block "XLXI_5/Mcompar_arm_cmp_gt0000_cy<6>" (MUX) removed.
+                      The signal "XLXI_5/Mcompar_arm_cmp_gt0000_cy<5>" is unused and has been removed.
+                       Unused block "XLXI_5/Mcompar_arm_cmp_gt0000_cy<5>" (MUX) removed.
+                        The signal "XLXI_5/Mcompar_arm_cmp_gt0000_cy<4>" is unused and has been removed.
+                         Unused block "XLXI_5/Mcompar_arm_cmp_gt0000_cy<4>" (MUX) removed.
+                          The signal "XLXI_5/Mcompar_arm_cmp_gt0000_cy<3>" is unused and has been removed.
+                           Unused block "XLXI_5/Mcompar_arm_cmp_gt0000_cy<3>" (MUX) removed.
+                            The signal "XLXI_5/Mcompar_arm_cmp_gt0000_cy<2>" is unused and has been removed.
+                             Unused block "XLXI_5/Mcompar_arm_cmp_gt0000_cy<2>" (MUX) removed.
+                              The signal "XLXI_5/Mcompar_arm_cmp_gt0000_cy<1>" is unused and has been removed.
+                               Unused block "XLXI_5/Mcompar_arm_cmp_gt0000_cy<1>" (MUX) removed.
+                                The signal "XLXI_5/Mcompar_arm_cmp_gt0000_cy<0>" is unused and has been removed.
+                                 Unused block "XLXI_5/Mcompar_arm_cmp_gt0000_cy<0>" (MUX) removed.
+                                  The signal "XLXI_5/Mcompar_arm_cmp_gt0000_lut<0>" is unused and has been
+removed.
+                                   Unused block "XLXI_5/Mcompar_arm_cmp_gt0000_lut<0>" (ROM) removed.
+                                    The signal "XLXI_5/cnt<1>" is unused and has been removed.
+                                     Unused block "XLXI_5/cnt_1" (FF) removed.
+                                      The signal "XLXI_5/cnt_addsub0000<1>" is unused and has been removed.
+                                       Unused block "XLXI_5/Madd_cnt_addsub0000_xor<1>" (XOR) removed.
+                                        The signal "XLXI_5/Madd_cnt_addsub0000_cy<1>_rt" is unused and has been removed.
+                                         Unused block "XLXI_5/Madd_cnt_addsub0000_cy<1>_rt" (ROM) removed.
+                                    The signal "XLXI_5/cnt<2>" is unused and has been removed.
+                                     Unused block "XLXI_5/cnt_2" (FF) removed.
+                                      The signal "XLXI_5/cnt_addsub0000<2>" is unused and has been removed.
+                                       Unused block "XLXI_5/Madd_cnt_addsub0000_xor<2>" (XOR) removed.
+                                        The signal "XLXI_5/Madd_cnt_addsub0000_cy<1>" is unused and has been removed.
+                                         Unused block "XLXI_5/Madd_cnt_addsub0000_cy<1>" (MUX) removed.
+                                        The signal "XLXI_5/Madd_cnt_addsub0000_cy<2>_rt" is unused and has been removed.
+                                         Unused block "XLXI_5/Madd_cnt_addsub0000_cy<2>_rt" (ROM) removed.
+                                    The signal "XLXI_5/cnt<3>" is unused and has been removed.
+                                     Unused block "XLXI_5/cnt_3" (FF) removed.
+                                      The signal "XLXI_5/cnt_addsub0000<3>" is unused and has been removed.
+                                       Unused block "XLXI_5/Madd_cnt_addsub0000_xor<3>" (XOR) removed.
+                                        The signal "XLXI_5/Madd_cnt_addsub0000_cy<2>" is unused and has been removed.
+                                         Unused block "XLXI_5/Madd_cnt_addsub0000_cy<2>" (MUX) removed.
+                                        The signal "XLXI_5/Madd_cnt_addsub0000_cy<3>_rt" is unused and has been removed.
+                                         Unused block "XLXI_5/Madd_cnt_addsub0000_cy<3>_rt" (ROM) removed.
+                                The signal "XLXI_5/Mcompar_arm_cmp_gt0000_lut<1>" is unused and has been
+removed.
+                                 Unused block "XLXI_5/Mcompar_arm_cmp_gt0000_lut<1>" (ROM) removed.
+                                  The signal "XLXI_5/cnt<4>" is unused and has been removed.
+                                   Unused block "XLXI_5/cnt_4" (FF) removed.
+                                    The signal "XLXI_5/cnt_addsub0000<4>" is unused and has been removed.
+                                     Unused block "XLXI_5/Madd_cnt_addsub0000_xor<4>" (XOR) removed.
+                                      The signal "XLXI_5/Madd_cnt_addsub0000_cy<3>" is unused and has been removed.
+                                       Unused block "XLXI_5/Madd_cnt_addsub0000_cy<3>" (MUX) removed.
+                                      The signal "XLXI_5/Madd_cnt_addsub0000_cy<4>_rt" is unused and has been removed.
+                                       Unused block "XLXI_5/Madd_cnt_addsub0000_cy<4>_rt" (ROM) removed.
+                                  The signal "XLXI_5/cnt<5>" is unused and has been removed.
+                                   Unused block "XLXI_5/cnt_5" (FF) removed.
+                                    The signal "XLXI_5/cnt_addsub0000<5>" is unused and has been removed.
+                                     Unused block "XLXI_5/Madd_cnt_addsub0000_xor<5>" (XOR) removed.
+                                      The signal "XLXI_5/Madd_cnt_addsub0000_cy<4>" is unused and has been removed.
+                                       Unused block "XLXI_5/Madd_cnt_addsub0000_cy<4>" (MUX) removed.
+                                      The signal "XLXI_5/Madd_cnt_addsub0000_cy<5>_rt" is unused and has been removed.
+                                       Unused block "XLXI_5/Madd_cnt_addsub0000_cy<5>_rt" (ROM) removed.
+                                  The signal "XLXI_5/cnt<6>" is unused and has been removed.
+                                   Unused block "XLXI_5/cnt_6" (FF) removed.
+                                    The signal "XLXI_5/cnt_addsub0000<6>" is unused and has been removed.
+                                     Unused block "XLXI_5/Madd_cnt_addsub0000_xor<6>" (XOR) removed.
+                                      The signal "XLXI_5/Madd_cnt_addsub0000_cy<5>" is unused and has been removed.
+                                       Unused block "XLXI_5/Madd_cnt_addsub0000_cy<5>" (MUX) removed.
+                                      The signal "XLXI_5/Madd_cnt_addsub0000_cy<6>_rt" is unused and has been removed.
+                                       Unused block "XLXI_5/Madd_cnt_addsub0000_cy<6>_rt" (ROM) removed.
+                              The signal "XLXI_5/Mcompar_arm_cmp_gt0000_lut<2>" is unused and has been
+removed.
+                               Unused block "XLXI_5/Mcompar_arm_cmp_gt0000_lut<2>_INV_0" (BUF) removed.
+                                The signal "XLXI_5/cnt<7>" is unused and has been removed.
+                                 Unused block "XLXI_5/cnt_7" (FF) removed.
+                                  The signal "XLXI_5/cnt_addsub0000<7>" is unused and has been removed.
+                                   Unused block "XLXI_5/Madd_cnt_addsub0000_xor<7>" (XOR) removed.
+                                    The signal "XLXI_5/Madd_cnt_addsub0000_cy<6>" is unused and has been removed.
+                                     Unused block "XLXI_5/Madd_cnt_addsub0000_cy<6>" (MUX) removed.
+                                    The signal "XLXI_5/Madd_cnt_addsub0000_cy<7>_rt" is unused and has been removed.
+                                     Unused block "XLXI_5/Madd_cnt_addsub0000_cy<7>_rt" (ROM) removed.
+                            The signal "XLXI_5/Mcompar_arm_cmp_gt0000_lut<3>" is unused and has been
+removed.
+                             Unused block "XLXI_5/Mcompar_arm_cmp_gt0000_lut<3>" (ROM) removed.
+                              The signal "XLXI_5/cnt<8>" is unused and has been removed.
+                               Unused block "XLXI_5/cnt_8" (FF) removed.
+                                The signal "XLXI_5/cnt_addsub0000<8>" is unused and has been removed.
+                                 Unused block "XLXI_5/Madd_cnt_addsub0000_xor<8>" (XOR) removed.
+                                  The signal "XLXI_5/Madd_cnt_addsub0000_cy<7>" is unused and has been removed.
+                                   Unused block "XLXI_5/Madd_cnt_addsub0000_cy<7>" (MUX) removed.
+                                  The signal "XLXI_5/Madd_cnt_addsub0000_cy<8>_rt" is unused and has been removed.
+                                   Unused block "XLXI_5/Madd_cnt_addsub0000_cy<8>_rt" (ROM) removed.
+                              The signal "XLXI_5/cnt<9>" is unused and has been removed.
+                               Unused block "XLXI_5/cnt_9" (FF) removed.
+                                The signal "XLXI_5/cnt_addsub0000<9>" is unused and has been removed.
+                                 Unused block "XLXI_5/Madd_cnt_addsub0000_xor<9>" (XOR) removed.
+                                  The signal "XLXI_5/Madd_cnt_addsub0000_cy<8>" is unused and has been removed.
+                                   Unused block "XLXI_5/Madd_cnt_addsub0000_cy<8>" (MUX) removed.
+                                  The signal "XLXI_5/Madd_cnt_addsub0000_cy<9>_rt" is unused and has been removed.
+                                   Unused block "XLXI_5/Madd_cnt_addsub0000_cy<9>_rt" (ROM) removed.
+                              The signal "XLXI_5/cnt<10>" is unused and has been removed.
+                               Unused block "XLXI_5/cnt_10" (FF) removed.
+                                The signal "XLXI_5/cnt_addsub0000<10>" is unused and has been removed.
+                                 Unused block "XLXI_5/Madd_cnt_addsub0000_xor<10>" (XOR) removed.
+                                  The signal "XLXI_5/Madd_cnt_addsub0000_cy<9>" is unused and has been removed.
+                                   Unused block "XLXI_5/Madd_cnt_addsub0000_cy<9>" (MUX) removed.
+                                  The signal "XLXI_5/Madd_cnt_addsub0000_cy<10>_rt" is unused and has been
+removed.
+                                   Unused block "XLXI_5/Madd_cnt_addsub0000_cy<10>_rt" (ROM) removed.
+                          The signal "XLXI_5/Mcompar_arm_cmp_gt0000_lut<4>" is unused and has been
+removed.
+                           Unused block "XLXI_5/Mcompar_arm_cmp_gt0000_lut<4>_INV_0" (BUF) removed.
+                            The signal "XLXI_5/cnt<11>" is unused and has been removed.
+                             Unused block "XLXI_5/cnt_11" (FF) removed.
+                              The signal "XLXI_5/cnt_addsub0000<11>" is unused and has been removed.
+                               Unused block "XLXI_5/Madd_cnt_addsub0000_xor<11>" (XOR) removed.
+                                The signal "XLXI_5/Madd_cnt_addsub0000_cy<10>" is unused and has been removed.
+                                 Unused block "XLXI_5/Madd_cnt_addsub0000_cy<10>" (MUX) removed.
+                                The signal "XLXI_5/Madd_cnt_addsub0000_cy<11>_rt" is unused and has been
+removed.
+                                 Unused block "XLXI_5/Madd_cnt_addsub0000_cy<11>_rt" (ROM) removed.
+                        The signal "XLXI_5/Mcompar_arm_cmp_gt0000_cy<5>_rt" is unused and has been
+removed.
+                         Unused block "XLXI_5/Mcompar_arm_cmp_gt0000_cy<5>_rt" (ROM) removed.
+                          The signal "XLXI_5/cnt<12>" is unused and has been removed.
+                           Unused block "XLXI_5/cnt_12" (FF) removed.
+                            The signal "XLXI_5/cnt_addsub0000<12>" is unused and has been removed.
+                             Unused block "XLXI_5/Madd_cnt_addsub0000_xor<12>" (XOR) removed.
+                              The signal "XLXI_5/Madd_cnt_addsub0000_cy<11>" is unused and has been removed.
+                               Unused block "XLXI_5/Madd_cnt_addsub0000_cy<11>" (MUX) removed.
+                              The signal "XLXI_5/Madd_cnt_addsub0000_cy<12>_rt" is unused and has been
+removed.
+                               Unused block "XLXI_5/Madd_cnt_addsub0000_cy<12>_rt" (ROM) removed.
+                      The signal "XLXI_5/Mcompar_arm_cmp_gt0000_lut<6>" is unused and has been
+removed.
+                       Unused block "XLXI_5/Mcompar_arm_cmp_gt0000_lut<6>" (ROM) removed.
+                        The signal "XLXI_5/cnt<13>" is unused and has been removed.
+                         Unused block "XLXI_5/cnt_13" (FF) removed.
+                          The signal "XLXI_5/cnt_addsub0000<13>" is unused and has been removed.
+                           Unused block "XLXI_5/Madd_cnt_addsub0000_xor<13>" (XOR) removed.
+                            The signal "XLXI_5/Madd_cnt_addsub0000_cy<12>" is unused and has been removed.
+                             Unused block "XLXI_5/Madd_cnt_addsub0000_cy<12>" (MUX) removed.
+                            The signal "XLXI_5/Madd_cnt_addsub0000_cy<13>_rt" is unused and has been
+removed.
+                             Unused block "XLXI_5/Madd_cnt_addsub0000_cy<13>_rt" (ROM) removed.
+                        The signal "XLXI_5/cnt<14>" is unused and has been removed.
+                         Unused block "XLXI_5/cnt_14" (FF) removed.
+                          The signal "XLXI_5/cnt_addsub0000<14>" is unused and has been removed.
+                           Unused block "XLXI_5/Madd_cnt_addsub0000_xor<14>" (XOR) removed.
+                            The signal "XLXI_5/Madd_cnt_addsub0000_cy<13>" is unused and has been removed.
+                             Unused block "XLXI_5/Madd_cnt_addsub0000_cy<13>" (MUX) removed.
+                            The signal "XLXI_5/Madd_cnt_addsub0000_cy<14>_rt" is unused and has been
+removed.
+                             Unused block "XLXI_5/Madd_cnt_addsub0000_cy<14>_rt" (ROM) removed.
+                        The signal "XLXI_5/cnt<15>" is unused and has been removed.
+                         Unused block "XLXI_5/cnt_15" (FF) removed.
+                          The signal "XLXI_5/cnt_addsub0000<15>" is unused and has been removed.
+                           Unused block "XLXI_5/Madd_cnt_addsub0000_xor<15>" (XOR) removed.
+                            The signal "XLXI_5/Madd_cnt_addsub0000_cy<14>" is unused and has been removed.
+                             Unused block "XLXI_5/Madd_cnt_addsub0000_cy<14>" (MUX) removed.
+                            The signal "XLXI_5/Madd_cnt_addsub0000_cy<15>_rt" is unused and has been
+removed.
+                             Unused block "XLXI_5/Madd_cnt_addsub0000_cy<15>_rt" (ROM) removed.
+                        The signal "XLXI_5/cnt<16>" is unused and has been removed.
+                         Unused block "XLXI_5/cnt_16" (FF) removed.
+                          The signal "XLXI_5/cnt_addsub0000<16>" is unused and has been removed.
+                           Unused block "XLXI_5/Madd_cnt_addsub0000_xor<16>" (XOR) removed.
+                            The signal "XLXI_5/Madd_cnt_addsub0000_cy<15>" is unused and has been removed.
+                             Unused block "XLXI_5/Madd_cnt_addsub0000_cy<15>" (MUX) removed.
+                            The signal "XLXI_5/Madd_cnt_addsub0000_cy<16>_rt" is unused and has been
+removed.
+                             Unused block "XLXI_5/Madd_cnt_addsub0000_cy<16>_rt" (ROM) removed.
+                    The signal "XLXI_5/Mcompar_arm_cmp_gt0000_lut<7>" is unused and has been
+removed.
+                     Unused block "XLXI_5/Mcompar_arm_cmp_gt0000_lut<7>" (ROM) removed.
+                      The signal "XLXI_5/cnt<17>" is unused and has been removed.
+                       Unused block "XLXI_5/cnt_17" (FF) removed.
+                        The signal "XLXI_5/cnt_addsub0000<17>" is unused and has been removed.
+                         Unused block "XLXI_5/Madd_cnt_addsub0000_xor<17>" (XOR) removed.
+                          The signal "XLXI_5/Madd_cnt_addsub0000_cy<16>" is unused and has been removed.
+                           Unused block "XLXI_5/Madd_cnt_addsub0000_cy<16>" (MUX) removed.
+                          The signal "XLXI_5/Madd_cnt_addsub0000_cy<17>_rt" is unused and has been
+removed.
+                           Unused block "XLXI_5/Madd_cnt_addsub0000_cy<17>_rt" (ROM) removed.
+                      The signal "XLXI_5/cnt<18>" is unused and has been removed.
+                       Unused block "XLXI_5/cnt_18" (FF) removed.
+                        The signal "XLXI_5/cnt_addsub0000<18>" is unused and has been removed.
+                         Unused block "XLXI_5/Madd_cnt_addsub0000_xor<18>" (XOR) removed.
+                          The signal "XLXI_5/Madd_cnt_addsub0000_cy<17>" is unused and has been removed.
+                           Unused block "XLXI_5/Madd_cnt_addsub0000_cy<17>" (MUX) removed.
+                          The signal "XLXI_5/Madd_cnt_addsub0000_cy<18>_rt" is unused and has been
+removed.
+                           Unused block "XLXI_5/Madd_cnt_addsub0000_cy<18>_rt" (ROM) removed.
+                      The signal "XLXI_5/cnt<19>" is unused and has been removed.
+                       Unused block "XLXI_5/cnt_19" (FF) removed.
+                        The signal "XLXI_5/cnt_addsub0000<19>" is unused and has been removed.
+                         Unused block "XLXI_5/Madd_cnt_addsub0000_xor<19>" (XOR) removed.
+                          The signal "XLXI_5/Madd_cnt_addsub0000_cy<18>" is unused and has been removed.
+                           Unused block "XLXI_5/Madd_cnt_addsub0000_cy<18>" (MUX) removed.
+                          The signal "XLXI_5/Madd_cnt_addsub0000_cy<19>_rt" is unused and has been
+removed.
+                           Unused block "XLXI_5/Madd_cnt_addsub0000_cy<19>_rt" (ROM) removed.
+                      The signal "XLXI_5/cnt<20>" is unused and has been removed.
+                       Unused block "XLXI_5/cnt_20" (FF) removed.
+                        The signal "XLXI_5/cnt_addsub0000<20>" is unused and has been removed.
+                         Unused block "XLXI_5/Madd_cnt_addsub0000_xor<20>" (XOR) removed.
+                          The signal "XLXI_5/Madd_cnt_addsub0000_cy<19>" is unused and has been removed.
+                           Unused block "XLXI_5/Madd_cnt_addsub0000_cy<19>" (MUX) removed.
+                          The signal "XLXI_5/Madd_cnt_addsub0000_cy<20>_rt" is unused and has been
+removed.
+                           Unused block "XLXI_5/Madd_cnt_addsub0000_cy<20>_rt" (ROM) removed.
+                  The signal "XLXI_5/Mcompar_arm_cmp_gt0000_lut<8>" is unused and has been
+removed.
+                   Unused block "XLXI_5/Mcompar_arm_cmp_gt0000_lut<8>" (ROM) removed.
+                    The signal "XLXI_5/cnt<21>" is unused and has been removed.
+                     Unused block "XLXI_5/cnt_21" (FF) removed.
+                      The signal "XLXI_5/cnt_addsub0000<21>" is unused and has been removed.
+                       Unused block "XLXI_5/Madd_cnt_addsub0000_xor<21>" (XOR) removed.
+                        The signal "XLXI_5/Madd_cnt_addsub0000_cy<20>" is unused and has been removed.
+                         Unused block "XLXI_5/Madd_cnt_addsub0000_cy<20>" (MUX) removed.
+                        The signal "XLXI_5/Madd_cnt_addsub0000_cy<21>_rt" is unused and has been
+removed.
+                         Unused block "XLXI_5/Madd_cnt_addsub0000_cy<21>_rt" (ROM) removed.
+                    The signal "XLXI_5/cnt<22>" is unused and has been removed.
+                     Unused block "XLXI_5/cnt_22" (FF) removed.
+                      The signal "XLXI_5/cnt_addsub0000<22>" is unused and has been removed.
+                       Unused block "XLXI_5/Madd_cnt_addsub0000_xor<22>" (XOR) removed.
+                        The signal "XLXI_5/Madd_cnt_addsub0000_cy<21>" is unused and has been removed.
+                         Unused block "XLXI_5/Madd_cnt_addsub0000_cy<21>" (MUX) removed.
+                        The signal "XLXI_5/Madd_cnt_addsub0000_cy<22>_rt" is unused and has been
+removed.
+                         Unused block "XLXI_5/Madd_cnt_addsub0000_cy<22>_rt" (ROM) removed.
+                    The signal "XLXI_5/cnt<23>" is unused and has been removed.
+                     Unused block "XLXI_5/cnt_23" (FF) removed.
+                      The signal "XLXI_5/cnt_addsub0000<23>" is unused and has been removed.
+                       Unused block "XLXI_5/Madd_cnt_addsub0000_xor<23>" (XOR) removed.
+                        The signal "XLXI_5/Madd_cnt_addsub0000_cy<22>" is unused and has been removed.
+                         Unused block "XLXI_5/Madd_cnt_addsub0000_cy<22>" (MUX) removed.
+                        The signal "XLXI_5/Madd_cnt_addsub0000_cy<23>_rt" is unused and has been
+removed.
+                         Unused block "XLXI_5/Madd_cnt_addsub0000_cy<23>_rt" (ROM) removed.
+                    The signal "XLXI_5/cnt<24>" is unused and has been removed.
+                     Unused block "XLXI_5/cnt_24" (FF) removed.
+                      The signal "XLXI_5/cnt_addsub0000<24>" is unused and has been removed.
+                       Unused block "XLXI_5/Madd_cnt_addsub0000_xor<24>" (XOR) removed.
+                        The signal "XLXI_5/Madd_cnt_addsub0000_cy<23>" is unused and has been removed.
+                         Unused block "XLXI_5/Madd_cnt_addsub0000_cy<23>" (MUX) removed.
+                        The signal "XLXI_5/Madd_cnt_addsub0000_cy<24>_rt" is unused and has been
+removed.
+                         Unused block "XLXI_5/Madd_cnt_addsub0000_cy<24>_rt" (ROM) removed.
+                The signal "XLXI_5/Mcompar_arm_cmp_gt0000_lut<9>" is unused and has been
+removed.
+                 Unused block "XLXI_5/Mcompar_arm_cmp_gt0000_lut<9>" (ROM) removed.
+                  The signal "XLXI_5/cnt<25>" is unused and has been removed.
+                   Unused block "XLXI_5/cnt_25" (FF) removed.
+                    The signal "XLXI_5/cnt_addsub0000<25>" is unused and has been removed.
+                     Unused block "XLXI_5/Madd_cnt_addsub0000_xor<25>" (XOR) removed.
+                      The signal "XLXI_5/Madd_cnt_addsub0000_cy<24>" is unused and has been removed.
+                       Unused block "XLXI_5/Madd_cnt_addsub0000_cy<24>" (MUX) removed.
+                      The signal "XLXI_5/Madd_cnt_addsub0000_cy<25>_rt" is unused and has been
+removed.
+                       Unused block "XLXI_5/Madd_cnt_addsub0000_cy<25>_rt" (ROM) removed.
+                  The signal "XLXI_5/cnt<26>" is unused and has been removed.
+                   Unused block "XLXI_5/cnt_26" (FF) removed.
+                    The signal "XLXI_5/cnt_addsub0000<26>" is unused and has been removed.
+                     Unused block "XLXI_5/Madd_cnt_addsub0000_xor<26>" (XOR) removed.
+                      The signal "XLXI_5/Madd_cnt_addsub0000_cy<25>" is unused and has been removed.
+                       Unused block "XLXI_5/Madd_cnt_addsub0000_cy<25>" (MUX) removed.
+                      The signal "XLXI_5/Madd_cnt_addsub0000_cy<26>_rt" is unused and has been
+removed.
+                       Unused block "XLXI_5/Madd_cnt_addsub0000_cy<26>_rt" (ROM) removed.
+                  The signal "XLXI_5/cnt<27>" is unused and has been removed.
+                   Unused block "XLXI_5/cnt_27" (FF) removed.
+                    The signal "XLXI_5/cnt_addsub0000<27>" is unused and has been removed.
+                     Unused block "XLXI_5/Madd_cnt_addsub0000_xor<27>" (XOR) removed.
+                      The signal "XLXI_5/Madd_cnt_addsub0000_cy<26>" is unused and has been removed.
+                       Unused block "XLXI_5/Madd_cnt_addsub0000_cy<26>" (MUX) removed.
+                      The signal "XLXI_5/Madd_cnt_addsub0000_cy<27>_rt" is unused and has been
+removed.
+                       Unused block "XLXI_5/Madd_cnt_addsub0000_cy<27>_rt" (ROM) removed.
+                  The signal "XLXI_5/cnt<28>" is unused and has been removed.
+                   Unused block "XLXI_5/cnt_28" (FF) removed.
+                    The signal "XLXI_5/cnt_addsub0000<28>" is unused and has been removed.
+                     Unused block "XLXI_5/Madd_cnt_addsub0000_xor<28>" (XOR) removed.
+                      The signal "XLXI_5/Madd_cnt_addsub0000_cy<27>" is unused and has been removed.
+                       Unused block "XLXI_5/Madd_cnt_addsub0000_cy<27>" (MUX) removed.
+                      The signal "XLXI_5/Madd_cnt_addsub0000_cy<28>_rt" is unused and has been
+removed.
+                       Unused block "XLXI_5/Madd_cnt_addsub0000_cy<28>_rt" (ROM) removed.
+              The signal "XLXI_5/Mcompar_arm_cmp_gt0000_lut<10>" is unused and has been
+removed.
+               Unused block "XLXI_5/Mcompar_arm_cmp_gt0000_lut<10>" (ROM) removed.
+                The signal "XLXI_5/cnt<29>" is unused and has been removed.
+                 Unused block "XLXI_5/cnt_29" (FF) removed.
+                  The signal "XLXI_5/cnt_addsub0000<29>" is unused and has been removed.
+                   Unused block "XLXI_5/Madd_cnt_addsub0000_xor<29>" (XOR) removed.
+                    The signal "XLXI_5/Madd_cnt_addsub0000_cy<28>" is unused and has been removed.
+                     Unused block "XLXI_5/Madd_cnt_addsub0000_cy<28>" (MUX) removed.
+                    The signal "XLXI_5/Madd_cnt_addsub0000_cy<29>_rt" is unused and has been
+removed.
+                     Unused block "XLXI_5/Madd_cnt_addsub0000_cy<29>_rt" (ROM) removed.
+                The signal "XLXI_5/cnt<30>" is unused and has been removed.
+                 Unused block "XLXI_5/cnt_30" (FF) removed.
+                  The signal "XLXI_5/cnt_addsub0000<30>" is unused and has been removed.
+                   Unused block "XLXI_5/Madd_cnt_addsub0000_xor<30>" (XOR) removed.
+                    The signal "XLXI_5/Madd_cnt_addsub0000_cy<29>" is unused and has been removed.
+                     Unused block "XLXI_5/Madd_cnt_addsub0000_cy<29>" (MUX) removed.
+                    The signal "XLXI_5/Madd_cnt_addsub0000_cy<30>_rt" is unused and has been
+removed.
+                     Unused block "XLXI_5/Madd_cnt_addsub0000_cy<30>_rt" (ROM) removed.
+            The signal "XLXI_5/cnt<31>" is unused and has been removed.
+             Unused block "XLXI_5/cnt_31" (FF) removed.
+              The signal "XLXI_5/cnt_addsub0000<31>" is unused and has been removed.
+               Unused block "XLXI_5/Madd_cnt_addsub0000_xor<31>" (XOR) removed.
+                The signal "XLXI_5/Madd_cnt_addsub0000_cy<30>" is unused and has been removed.
+                 Unused block "XLXI_5/Madd_cnt_addsub0000_cy<30>" (MUX) removed.
+                The signal "XLXI_5/Madd_cnt_addsub0000_xor<31>_rt" is unused and has been
+removed.
+                 Unused block "XLXI_5/Madd_cnt_addsub0000_xor<31>_rt" (ROM) removed.
+            The signal "XLXI_5/Mcompar_arm_cmp_gt0000_lut<11>" is unused and has been
+removed.
+             Unused block "XLXI_5/Mcompar_arm_cmp_gt0000_lut<11>1_INV_0" (BUF) removed.
+      The signal "XLXI_5/cnt_addsub0000<0>" is unused and has been removed.
+       Unused block "XLXI_5/Madd_cnt_addsub0000_xor<0>" (XOR) removed.
+The signal "XLXI_5/Mcompar_pls_cmp_gt0000_cy<0>" is unused and has been removed.
+ Unused block "XLXI_5/Mcompar_pls_cmp_gt0000_cy<0>" (MUX) removed.
+  The signal "XLXI_5/Mcompar_pls_cmp_gt0000_lut<0>" is unused and has been
+removed.
+   Unused block "XLXI_5/Mcompar_pls_cmp_gt0000_lut<0>" (ROM) removed.
+    The signal "XLXI_5/cnt_mux0000<1>" is unused and has been removed.
+     Unused block "XLXI_5/cnt_mux0000<1>1" (ROM) removed.
+    The signal "XLXI_5/cnt_mux0000<2>" is unused and has been removed.
+     Unused block "XLXI_5/cnt_mux0000<2>1" (ROM) removed.
+    The signal "XLXI_5/cnt_mux0000<3>" is unused and has been removed.
+     Unused block "XLXI_5/cnt_mux0000<3>1" (ROM) removed.
+The signal "XLXI_5/Mcompar_pls_cmp_gt0000_cy<1>" is unused and has been removed.
+ Unused block "XLXI_5/Mcompar_pls_cmp_gt0000_cy<1>" (MUX) removed.
+  The signal "XLXI_5/Mcompar_pls_cmp_gt0000_lut<1>" is unused and has been
+removed.
+   Unused block "XLXI_5/Mcompar_pls_cmp_gt0000_lut<1>" (ROM) removed.
+    The signal "XLXI_5/cnt_mux0000<4>" is unused and has been removed.
+     Unused block "XLXI_5/cnt_mux0000<4>1" (ROM) removed.
+The signal "XLXI_5/Mcompar_pls_cmp_gt0000_cy<2>" is unused and has been removed.
+ Unused block "XLXI_5/Mcompar_pls_cmp_gt0000_cy<2>" (MUX) removed.
+  The signal "XLXI_5/Mcompar_pls_cmp_gt0000_lut<2>" is unused and has been
+removed.
+   Unused block "XLXI_5/Mcompar_pls_cmp_gt0000_lut<2>" (ROM) removed.
+    The signal "XLXI_5/cnt_mux0000<6>" is unused and has been removed.
+     Unused block "XLXI_5/cnt_mux0000<6>1" (ROM) removed.
+    The signal "XLXI_5/cnt_mux0000<7>" is unused and has been removed.
+     Unused block "XLXI_5/cnt_mux0000<7>1" (ROM) removed.
+    The signal "XLXI_5/cnt_mux0000<8>" is unused and has been removed.
+     Unused block "XLXI_5/cnt_mux0000<8>1" (ROM) removed.
+    The signal "XLXI_5/cnt_mux0000<9>" is unused and has been removed.
+     Unused block "XLXI_5/cnt_mux0000<9>1" (ROM) removed.
+The signal "XLXI_5/Mcompar_pls_cmp_gt0000_cy<3>" is unused and has been removed.
+ Unused block "XLXI_5/Mcompar_pls_cmp_gt0000_cy<3>" (MUX) removed.
+  The signal "XLXI_5/Mcompar_pls_cmp_gt0000_lut<3>" is unused and has been
+removed.
+   Unused block "XLXI_5/Mcompar_pls_cmp_gt0000_lut<3>" (ROM) removed.
+    The signal "XLXI_5/cnt_mux0000<10>" is unused and has been removed.
+     Unused block "XLXI_5/cnt_mux0000<10>1" (ROM) removed.
+    The signal "XLXI_5/cnt_mux0000<11>" is unused and has been removed.
+     Unused block "XLXI_5/cnt_mux0000<11>1" (ROM) removed.
+    The signal "XLXI_5/cnt_mux0000<12>" is unused and has been removed.
+     Unused block "XLXI_5/cnt_mux0000<12>1" (ROM) removed.
+    The signal "XLXI_5/cnt_mux0000<13>" is unused and has been removed.
+     Unused block "XLXI_5/cnt_mux0000<13>1" (ROM) removed.
+The signal "XLXI_5/Mcompar_pls_cmp_gt0000_cy<4>" is unused and has been removed.
+ Unused block "XLXI_5/Mcompar_pls_cmp_gt0000_cy<4>" (MUX) removed.
+  The signal "XLXI_5/Mcompar_pls_cmp_gt0000_lut<4>" is unused and has been
+removed.
+   Unused block "XLXI_5/Mcompar_pls_cmp_gt0000_lut<4>" (ROM) removed.
+    The signal "XLXI_5/cnt_mux0000<14>" is unused and has been removed.
+     Unused block "XLXI_5/cnt_mux0000<14>1" (ROM) removed.
+    The signal "XLXI_5/cnt_mux0000<15>" is unused and has been removed.
+     Unused block "XLXI_5/cnt_mux0000<15>1" (ROM) removed.
+    The signal "XLXI_5/cnt_mux0000<16>" is unused and has been removed.
+     Unused block "XLXI_5/cnt_mux0000<16>1" (ROM) removed.
+    The signal "XLXI_5/cnt_mux0000<17>" is unused and has been removed.
+     Unused block "XLXI_5/cnt_mux0000<17>1" (ROM) removed.
+The signal "XLXI_5/Mcompar_pls_cmp_gt0000_cy<5>" is unused and has been removed.
+ Unused block "XLXI_5/Mcompar_pls_cmp_gt0000_cy<5>" (MUX) removed.
+  The signal "XLXI_5/Mcompar_pls_cmp_gt0000_lut<5>" is unused and has been
+removed.
+   Unused block "XLXI_5/Mcompar_pls_cmp_gt0000_lut<5>" (ROM) removed.
+    The signal "XLXI_5/cnt_mux0000<18>" is unused and has been removed.
+     Unused block "XLXI_5/cnt_mux0000<18>1" (ROM) removed.
+    The signal "XLXI_5/cnt_mux0000<19>" is unused and has been removed.
+     Unused block "XLXI_5/cnt_mux0000<19>1" (ROM) removed.
+    The signal "XLXI_5/cnt_mux0000<20>" is unused and has been removed.
+     Unused block "XLXI_5/cnt_mux0000<20>1" (ROM) removed.
+    The signal "XLXI_5/cnt_mux0000<21>" is unused and has been removed.
+     Unused block "XLXI_5/cnt_mux0000<21>1" (ROM) removed.
+The signal "XLXI_5/Mcompar_pls_cmp_gt0000_cy<6>" is unused and has been removed.
+ Unused block "XLXI_5/Mcompar_pls_cmp_gt0000_cy<6>" (MUX) removed.
+  The signal "XLXI_5/Mcompar_pls_cmp_gt0000_lut<6>" is unused and has been
+removed.
+   Unused block "XLXI_5/Mcompar_pls_cmp_gt0000_lut<6>" (ROM) removed.
+    The signal "XLXI_5/cnt_mux0000<22>" is unused and has been removed.
+     Unused block "XLXI_5/cnt_mux0000<22>1" (ROM) removed.
+    The signal "XLXI_5/cnt_mux0000<23>" is unused and has been removed.
+     Unused block "XLXI_5/cnt_mux0000<23>1" (ROM) removed.
+    The signal "XLXI_5/cnt_mux0000<24>" is unused and has been removed.
+     Unused block "XLXI_5/cnt_mux0000<24>1" (ROM) removed.
+    The signal "XLXI_5/cnt_mux0000<25>" is unused and has been removed.
+     Unused block "XLXI_5/cnt_mux0000<25>1" (ROM) removed.
+The signal "XLXI_5/Mcompar_pls_cmp_gt0000_cy<7>" is unused and has been removed.
+ Unused block "XLXI_5/Mcompar_pls_cmp_gt0000_cy<7>" (MUX) removed.
+  The signal "XLXI_5/Mcompar_pls_cmp_gt0000_lut<7>" is unused and has been
+removed.
+   Unused block "XLXI_5/Mcompar_pls_cmp_gt0000_lut<7>" (ROM) removed.
+    The signal "XLXI_5/cnt_mux0000<26>" is unused and has been removed.
+     Unused block "XLXI_5/cnt_mux0000<26>1" (ROM) removed.
+    The signal "XLXI_5/cnt_mux0000<27>" is unused and has been removed.
+     Unused block "XLXI_5/cnt_mux0000<27>1" (ROM) removed.
+    The signal "XLXI_5/cnt_mux0000<28>" is unused and has been removed.
+     Unused block "XLXI_5/cnt_mux0000<28>1" (ROM) removed.
+    The signal "XLXI_5/cnt_mux0000<29>" is unused and has been removed.
+     Unused block "XLXI_5/cnt_mux0000<29>1" (ROM) removed.
+The signal "XLXI_5/Mcompar_pls_cmp_gt0000_cy<8>" is unused and has been removed.
+ Unused block "XLXI_5/Mcompar_pls_cmp_gt0000_cy<8>" (MUX) removed.
+  The signal "XLXI_5/Mcompar_pls_cmp_gt0000_lut<8>" is unused and has been
+removed.
+   Unused block "XLXI_5/Mcompar_pls_cmp_gt0000_lut<8>" (ROM) removed.
+The signal "XLXI_5/Mcompar_pls_cmp_gt0000_cy<9>" is unused and has been removed.
+ Unused block "XLXI_5/Mcompar_pls_cmp_gt0000_cy<9>" (MUX) removed.
+  The signal "XLXI_5/cnt_mux0000<31>" is unused and has been removed.
+   Unused block "XLXI_5/cnt_mux0000<31>1" (ROM) removed.
+  The signal "XLXI_5/Mcompar_pls_cmp_gt0000_lut<9>" is unused and has been
+removed.
+   Unused block "XLXI_5/Mcompar_pls_cmp_gt0000_lut<9>1" (ROM) removed.
+The signal "XLXI_5/Mcompar_pls_cmp_lt0000_cy<0>" is unused and has been removed.
+ Unused block "XLXI_5/Mcompar_pls_cmp_lt0000_cy<0>" (MUX) removed.
+  The signal "XLXI_5/cnt_mux0000<0>" is unused and has been removed.
+   Unused block "XLXI_5/cnt_mux0000<0>1" (ROM) removed.
+The signal "XLXI_5/Mcompar_pls_cmp_lt0000_cy<10>" is unused and has been
+removed.
+ Unused block "XLXI_5/Mcompar_pls_cmp_lt0000_cy<10>" (MUX) removed.
+  The signal "XLXI_5/Mcompar_pls_cmp_lt0000_cy<9>" is unused and has been removed.
+   Unused block "XLXI_5/Mcompar_pls_cmp_lt0000_cy<9>" (MUX) removed.
+    The signal "XLXI_5/Mcompar_pls_cmp_lt0000_cy<8>" is unused and has been removed.
+     Unused block "XLXI_5/Mcompar_pls_cmp_lt0000_cy<8>" (MUX) removed.
+      The signal "XLXI_5/Mcompar_pls_cmp_lt0000_cy<7>" is unused and has been removed.
+       Unused block "XLXI_5/Mcompar_pls_cmp_lt0000_cy<7>" (MUX) removed.
+        The signal "XLXI_5/Mcompar_pls_cmp_lt0000_cy<6>" is unused and has been removed.
+         Unused block "XLXI_5/Mcompar_pls_cmp_lt0000_cy<6>" (MUX) removed.
+          The signal "XLXI_5/Mcompar_pls_cmp_lt0000_cy<5>" is unused and has been removed.
+           Unused block "XLXI_5/Mcompar_pls_cmp_lt0000_cy<5>" (MUX) removed.
+            The signal "XLXI_5/Mcompar_pls_cmp_lt0000_cy<4>" is unused and has been removed.
+             Unused block "XLXI_5/Mcompar_pls_cmp_lt0000_cy<4>" (MUX) removed.
+              The signal "XLXI_5/Mcompar_pls_cmp_lt0000_cy<3>" is unused and has been removed.
+               Unused block "XLXI_5/Mcompar_pls_cmp_lt0000_cy<3>" (MUX) removed.
+                The signal "XLXI_5/Mcompar_pls_cmp_lt0000_cy<2>" is unused and has been removed.
+                 Unused block "XLXI_5/Mcompar_pls_cmp_lt0000_cy<2>" (MUX) removed.
+                  The signal "XLXI_5/Mcompar_pls_cmp_lt0000_cy<1>" is unused and has been removed.
+                   Unused block "XLXI_5/Mcompar_pls_cmp_lt0000_cy<1>" (MUX) removed.
+                    The signal "XLXI_5/Mcompar_pls_cmp_lt0000_lut<1>" is unused and has been
+removed.
+                     Unused block "XLXI_5/Mcompar_pls_cmp_lt0000_lut<1>" (ROM) removed.
+                The signal "XLXI_5/Mcompar_pls_cmp_lt0000_lut<3>" is unused and has been
+removed.
+                 Unused block "XLXI_5/Mcompar_pls_cmp_lt0000_lut<3>" (ROM) removed.
+            The signal "XLXI_5/Mcompar_pls_cmp_lt0000_lut<5>" is unused and has been
+removed.
+             Unused block "XLXI_5/Mcompar_pls_cmp_lt0000_lut<5>" (ROM) removed.
+          The signal "XLXI_5/Mcompar_pls_cmp_lt0000_lut<6>" is unused and has been
+removed.
+           Unused block "XLXI_5/Mcompar_pls_cmp_lt0000_lut<6>" (ROM) removed.
+        The signal "XLXI_5/Mcompar_pls_cmp_lt0000_lut<7>" is unused and has been
+removed.
+         Unused block "XLXI_5/Mcompar_pls_cmp_lt0000_lut<7>" (ROM) removed.
+      The signal "XLXI_5/Mcompar_pls_cmp_lt0000_lut<8>" is unused and has been
+removed.
+       Unused block "XLXI_5/Mcompar_pls_cmp_lt0000_lut<8>" (ROM) removed.
+    The signal "XLXI_5/Mcompar_pls_cmp_lt0000_lut<9>" is unused and has been
+removed.
+     Unused block "XLXI_5/Mcompar_pls_cmp_lt0000_lut<9>" (ROM) removed.
+  The signal "XLXI_5/Mcompar_pls_cmp_lt0000_lut<10>" is unused and has been
+removed.
+   Unused block "XLXI_5/Mcompar_pls_cmp_lt0000_lut<10>" (ROM) removed.
+    The signal "XLXI_5/cnt_mux0000<30>" is unused and has been removed.
+     Unused block "XLXI_5/cnt_mux0000<30>1" (ROM) removed.
+The signal "XLXI_5/Mcompar_pls_cmp_lt0000_cy<11>" is unused and has been
+removed.
+ Unused block "XLXI_5/Mcompar_pls_cmp_lt0000_cy<11>" (MUX) removed.
+  The signal "XLXI_5/Mcompar_pls_cmp_lt0000_lut<11>" is unused and has been
+removed.
+   Unused block "XLXI_5/Mcompar_pls_cmp_lt0000_lut<11>1" (ROM) removed.
+The signal "XLXI_5/pls" is unused and has been removed.
+ Unused block "XLXI_5/pls_BUFG" (CKBUF) removed.
+  The signal "XLXI_5/pls1" is unused and has been removed.
+   Unused block "XLXI_5/pls" (SFF) removed.
+    The signal "XLXI_5/pls_not0001" is unused and has been removed.
+     Unused block "XLXI_5/pls_not00011" (ROM) removed.
+The signal "XLXI_6/binO<2>51" is unused and has been removed.
+The signal "XLXI_8/bSHFT<0>" is unused and has been removed.
+The signal "XLXI_8/bSHFT<1>" is unused and has been removed.
+The signal "XLXI_8/bSHFT<2>" is unused and has been removed.
+The signal "XLXI_8/bSHFT<3>" is unused and has been removed.
+The signal "XLXI_9/bSHFT<0>" is unused and has been removed.
+The signal "XLXI_9/bSHFT<1>" is unused and has been removed.
+The signal "XLXI_9/bSHFT<2>" is unused and has been removed.
+The signal "XLXI_9/bSHFT<3>" is unused and has been removed.
+The signal "XLXN_23<0>" is unused and has been removed.
+The signal "XLXN_23<1>" is unused and has been removed.
+The signal "XLXN_23<2>" is unused and has been removed.
+The signal "XLXN_23<3>" is unused and has been removed.
+The signal "XLXN_25" is unused and has been removed.
+The signal "XLXN_32" is unused and has been removed.
+ Unused block "XLXI_17" (BUF) removed.
+Unused block "XLXI_15_0" (PULLDOWN) removed.
+Unused block "XLXI_15_1" (PULLDOWN) removed.
+Unused block "XLXI_15_2" (PULLDOWN) removed.
+Unused block "XLXI_15_3" (PULLDOWN) removed.
+Unused block "XLXI_16" (PULLDOWN) removed.
+Unused block "XLXI_31" (PULLUP) removed.
+
+Optimized Block(s):
+TYPE 		BLOCK
+INV 		XLXI_1/RST_inv1_INV_0
+PULLDOWN 		XLXI_11
+PULLDOWN 		XLXI_13
+PULLDOWN 		XLXI_14
+LUT3_D 		XLXI_2/DB1/lockout_or00001
+   optimized to 1
+FD 		XLXI_2/DB1/sw_out
+   optimized to 0
+FDE 		XLXI_2/DB1/sw_s
+   optimized to 0
+LUT4 		XLXI_2/DB1/sw_s_mux00001
+   optimized to 0
+LUT3_D 		XLXI_2/DB2/lockout_or00001
+   optimized to 1
+FD 		XLXI_2/DB2/sw_out
+   optimized to 0
+FDE 		XLXI_2/DB2/sw_s
+   optimized to 0
+LUT4 		XLXI_2/DB2/sw_s_mux00001
+   optimized to 0
+LUT3_D 		XLXI_2/DB3/lockout_or00001
+   optimized to 1
+FD 		XLXI_2/DB3/sw_out
+   optimized to 0
+FDE 		XLXI_2/DB3/sw_s
+   optimized to 0
+LUT4 		XLXI_2/DB3/sw_s_mux00001
+   optimized to 0
+LUT3_D 		XLXI_2/DB4/lockout_or00001
+   optimized to 1
+FD 		XLXI_2/DB4/sw_out
+   optimized to 0
+FDE 		XLXI_2/DB4/sw_s
+   optimized to 0
+LUT4 		XLXI_2/DB4/sw_s_mux00001
+   optimized to 0
+LUT4 		XLXI_22/sseg_7_not0000_F
+   optimized to 1
+LUT4 		XLXI_22/sseg_7_not0000_G
+   optimized to 1
+PULLDOWN 		XLXI_24_0
+PULLDOWN 		XLXI_24_1
+PULLDOWN 		XLXI_24_2
+PULLDOWN 		XLXI_24_3
+LUT4 		XLXI_27/hexO<0>_F
+   optimized to 0
+LUT4 		XLXI_27/hexO<0>_G
+   optimized to 0
+LUT4 		XLXI_27/hexO<1>_F
+   optimized to 0
+LUT4 		XLXI_27/hexO<1>_G
+   optimized to 0
+LUT4 		XLXI_27/hexO<2>_F
+   optimized to 0
+LUT4 		XLXI_27/hexO<2>_G
+   optimized to 0
+LUT4 		XLXI_27/hexO<3>_F
+   optimized to 0
+LUT4 		XLXI_27/hexO<3>_G
+   optimized to 0
+PULLDOWN 		XLXI_28_0
+PULLDOWN 		XLXI_28_1
+PULLDOWN 		XLXI_28_2
+PULLDOWN 		XLXI_28_3
+PULLUP 		XLXI_29
+FDCE 		XLXI_4/lastcol_0
+   optimized to 0
+FDCE 		XLXI_4/lastcol_1
+   optimized to 0
+FDCE 		XLXI_4/lastcol_2
+   optimized to 0
+FDCE 		XLXI_4/lastcol_3
+   optimized to 0
+FDCE 		XLXI_4/lastrow_0
+   optimized to 0
+FDCE 		XLXI_4/lastrow_1
+   optimized to 0
+FDCE 		XLXI_4/lastrow_2
+   optimized to 0
+FDCE 		XLXI_4/lastrow_3
+   optimized to 0
+FDCE 		XLXI_4/lobster
+   optimized to 0
+MUXF5 		XLXI_4/lobster_and000041_f5
+LUT4 		XLXI_4/lobster_and000086
+   optimized to 0
+LUT3 		XLXI_4/lobster_and000086_SW0
+   optimized to 1
+INV 		XLXI_4/lobster_and00021_INV_0
+LUT4 		XLXI_4/rowON1
+   optimized to 0
+LUT4 		XLXI_6/binO<0>121
+   optimized to 0
+LUT3 		XLXI_6/binO<0>23
+   optimized to 0
+LUT4 		XLXI_6/binO<0>31
+   optimized to 0
+LUT4 		XLXI_6/binO<0>45
+   optimized to 0
+LUT4 		XLXI_6/binO<0>45_SW0
+   optimized to 0
+LUT3 		XLXI_6/binO<0>62
+   optimized to 0
+LUT4 		XLXI_6/binO<1>11
+   optimized to 0
+MUXF5 		XLXI_6/binO<1>12
+LUT4 		XLXI_6/binO<1>12_F
+   optimized to 0
+LUT4 		XLXI_6/binO<1>12_G
+   optimized to 0
+LUT3 		XLXI_6/binO<1>24
+   optimized to 0
+LUT4 		XLXI_6/binO<1>5
+   optimized to 0
+LUT4 		XLXI_6/binO<2>12
+   optimized to 0
+LUT4 		XLXI_6/binO<2>28
+   optimized to 0
+LUT4 		XLXI_6/binO<2>35
+   optimized to 0
+LUT4 		XLXI_6/binO<2>511
+   optimized to 0
+MUXF5 		XLXI_6/binO<2>51_f5
+LUT4 		XLXI_6/binO<3>11
+   optimized to 0
+LUT3 		XLXI_6/binO<3>21
+   optimized to 0
+LUT4 		XLXI_6/binO<3>6
+   optimized to 0
+LUT4 		XLXI_6/binO_cmp_eq00001
+   optimized to 0
+LUT4 		XLXI_6/binO_cmp_eq00011
+   optimized to 0
+LUT4 		XLXI_6/binO_cmp_eq00021
+   optimized to 0
+LUT4 		XLXI_6/binO_cmp_eq00031
+   optimized to 0
+LUT4 		XLXI_6/binO_cmp_eq00041
+   optimized to 0
+LUT4 		XLXI_6/binO_cmp_eq00061
+   optimized to 0
+LUT4 		XLXI_6/binO_cmp_eq00071
+   optimized to 0
+FDE 		XLXI_8/bOUT1_0
+   optimized to 0
+FDE 		XLXI_8/bOUT1_1
+   optimized to 0
+FDE 		XLXI_8/bOUT1_2
+   optimized to 0
+FDE 		XLXI_8/bOUT1_3
+   optimized to 0
+FDE 		XLXI_8/bOUT2_0
+   optimized to 0
+FDE 		XLXI_8/bOUT2_1
+   optimized to 0
+FDE 		XLXI_8/bOUT2_2
+   optimized to 0
+FDE 		XLXI_8/bOUT2_3
+   optimized to 0
+FDCE 		XLXI_8/bSHFT_0
+   optimized to 0
+FDCE 		XLXI_8/bSHFT_1
+   optimized to 0
+FDCE 		XLXI_8/bSHFT_2
+   optimized to 0
+FDCE 		XLXI_8/bSHFT_3
+   optimized to 0
+FDE 		XLXI_9/bOUT1_0
+   optimized to 0
+FDE 		XLXI_9/bOUT1_1
+   optimized to 0
+FDE 		XLXI_9/bOUT1_2
+   optimized to 0
+FDE 		XLXI_9/bOUT1_3
+   optimized to 0
+FDE 		XLXI_9/bOUT2_0
+   optimized to 0
+FDE 		XLXI_9/bOUT2_1
+   optimized to 0
+FDE 		XLXI_9/bOUT2_2
+   optimized to 0
+FDE 		XLXI_9/bOUT2_3
+   optimized to 0
+FDCE 		XLXI_9/bSHFT_0
+   optimized to 0
+FDCE 		XLXI_9/bSHFT_1
+   optimized to 0
+FDCE 		XLXI_9/bSHFT_2
+   optimized to 0
+FDCE 		XLXI_9/bSHFT_3
+   optimized to 0
+GND 		XST_GND
+VCC 		XST_VCC
+
+To enable printing of redundant blocks removed and signals merged, set the
+detailed map report option and rerun map.
+
+Section 6 - IOB Properties
+--------------------------
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| IOB Name                           | Type             | Direction | IO Standard          | Diff  | Drive    | Slew | Reg (s)      | Resistor | IOB      |
+|                                    |                  |           |                      | Term  | Strength | Rate |              |          | Delay    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| CLKIn                              | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| anO<0>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| anO<1>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| anO<2>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| anO<3>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| colO<0>                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| colO<1>                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| colO<2>                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| colO<3>                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| sseg<0>                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| sseg<1>                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| sseg<2>                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| sseg<3>                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| sseg<4>                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| sseg<5>                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| sseg<6>                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| sseg<7>                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Section 7 - RPMs
+----------------
+
+Section 8 - Guide Report
+------------------------
+Guide not run on this design.
+
+Section 9 - Area Group and Partition Summary
+--------------------------------------------
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Area Group Information
+----------------------
+
+  No area groups were found in this design.
+
+----------------------
+
+Section 10 - Timing Report
+--------------------------
+This design was not run using timing mode.
+
+Section 11 - Configuration String Details
+-----------------------------------------
+Use the "-detail" map option to print out Configuration Strings
+
+Section 12 - Control Set Information
+------------------------------------
+No control set information for this architecture.
+
+Section 13 - Utilization by Hierarchy
+-------------------------------------
+Use the "-detail" map option to print out the Utilization by Hierarchy section.

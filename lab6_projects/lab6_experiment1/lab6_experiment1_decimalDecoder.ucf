@@ -1,0 +1,23 @@
+
+# PlanAhead Generated physical constraints 
+
+
+# 4 - Bit Input
+NET "Ain[0]" LOC = P11;
+NET "Ain[1]" LOC = L3;
+NET "Ain[2]" LOC = K3;
+NET "Ain[3]" LOC = B4;
+
+
+# Output, connected to the breakout ports
+NET "A" LOC = B2;
+NET "B" LOC = A3;
+NET "C" LOC = J3;
+NET "D" LOC = B5;
+
+# 2nd Breakout port
+
+NET "E" LOC = C6;
+
+# Button -Assert active low or active high
+NET "En" LOC = G12;
