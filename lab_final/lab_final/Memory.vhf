@@ -7,11 +7,11 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : Memory.vhf
--- /___/   /\     Timestamp : 05/04/2018 22:07:16
+-- /___/   /\     Timestamp : 05/07/2018 18:33:54
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
---Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl C:/Users/James/Documents/Xlink_projects/lab_final/lab_final/Memory.vhf -w C:/Users/James/Documents/Xlink_projects/lab_final/lab_final/Memory.sch
+--Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/Memory.vhf -w C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/Memory.sch
 --Design Name: Memory
 --Device: spartan3e
 --Purpose:
@@ -691,10 +691,10 @@ architecture BEHAVIORAL of D_Register_MUSER_Memory is
    end component;
    attribute BOX_TYPE of AND3 : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_41 : label is "XLXI_41_43";
-   attribute HU_SET of XLXI_46 : label is "XLXI_46_40";
-   attribute HU_SET of XLXI_47 : label is "XLXI_47_41";
-   attribute HU_SET of XLXI_59 : label is "XLXI_59_42";
+   attribute HU_SET of XLXI_41 : label is "XLXI_41_72";
+   attribute HU_SET of XLXI_46 : label is "XLXI_46_69";
+   attribute HU_SET of XLXI_47 : label is "XLXI_47_70";
+   attribute HU_SET of XLXI_59 : label is "XLXI_59_71";
 begin
    G(7 downto 0) <= G_DUMMY(7 downto 0);
    Q(7 downto 0) <= Q_DUMMY(7 downto 0);
@@ -841,10 +841,10 @@ architecture BEHAVIORAL of I_Register_MUSER_Memory is
    end component;
    attribute BOX_TYPE of AND3 : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_41 : label is "XLXI_41_47";
-   attribute HU_SET of XLXI_46 : label is "XLXI_46_44";
-   attribute HU_SET of XLXI_47 : label is "XLXI_47_45";
-   attribute HU_SET of XLXI_59 : label is "XLXI_59_46";
+   attribute HU_SET of XLXI_41 : label is "XLXI_41_76";
+   attribute HU_SET of XLXI_46 : label is "XLXI_46_73";
+   attribute HU_SET of XLXI_47 : label is "XLXI_47_74";
+   attribute HU_SET of XLXI_59 : label is "XLXI_59_75";
 begin
    G(7 downto 0) <= G_DUMMY(7 downto 0);
    Q(7 downto 0) <= Q_DUMMY(7 downto 0);
@@ -931,13 +931,15 @@ end Address_MUSER_Memory;
 architecture BEHAVIORAL of Address_MUSER_Memory is
    attribute HU_SET     : string ;
    attribute BOX_TYPE   : string ;
-   signal S                     : std_logic_vector (7 downto 0);
-   signal XLXN_313              : std_logic;
-   signal XLXN_314              : std_logic;
-   signal XLXN_343              : std_logic;
-   signal G_DUMMY               : std_logic_vector (7 downto 0);
-   signal Q_DUMMY               : std_logic_vector (7 downto 0);
-   signal XLXI_59_CI_openSignal : std_logic;
+   signal S                      : std_logic_vector (7 downto 0);
+   signal XLXN_343               : std_logic;
+   signal XLXN_351               : std_logic;
+   signal G_DUMMY                : std_logic_vector (7 downto 0);
+   signal Q_DUMMY                : std_logic_vector (7 downto 0);
+   signal XLXI_46_CLR_openSignal : std_logic;
+   signal XLXI_47_CLR_openSignal : std_logic;
+   signal XLXI_59_CI_openSignal  : std_logic;
+   signal XLXI_92_I0_openSignal  : std_logic;
    component FD8CE_MXILINX_Memory
       port ( C   : in    std_logic; 
              CE  : in    std_logic; 
@@ -975,13 +977,6 @@ architecture BEHAVIORAL of Address_MUSER_Memory is
              hexO : out   std_logic_vector (7 downto 0));
    end component;
    
-   component OR2
-      port ( I0 : in    std_logic; 
-             I1 : in    std_logic; 
-             O  : out   std_logic);
-   end component;
-   attribute BOX_TYPE of OR2 : component is "BLACK_BOX";
-   
    component AND2
       port ( I0 : in    std_logic; 
              I1 : in    std_logic; 
@@ -989,15 +984,31 @@ architecture BEHAVIORAL of Address_MUSER_Memory is
    end component;
    attribute BOX_TYPE of AND2 : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_41 : label is "XLXI_41_51";
-   attribute HU_SET of XLXI_46 : label is "XLXI_46_48";
-   attribute HU_SET of XLXI_47 : label is "XLXI_47_49";
-   attribute HU_SET of XLXI_59 : label is "XLXI_59_50";
+   component AND4
+      port ( I0 : in    std_logic; 
+             I1 : in    std_logic; 
+             I2 : in    std_logic; 
+             I3 : in    std_logic; 
+             O  : out   std_logic);
+   end component;
+   attribute BOX_TYPE of AND4 : component is "BLACK_BOX";
+   
+   component OR2
+      port ( I0 : in    std_logic; 
+             I1 : in    std_logic; 
+             O  : out   std_logic);
+   end component;
+   attribute BOX_TYPE of OR2 : component is "BLACK_BOX";
+   
+   attribute HU_SET of XLXI_41 : label is "XLXI_41_80";
+   attribute HU_SET of XLXI_46 : label is "XLXI_46_77";
+   attribute HU_SET of XLXI_47 : label is "XLXI_47_78";
+   attribute HU_SET of XLXI_59 : label is "XLXI_59_79";
 begin
    G(7 downto 0) <= G_DUMMY(7 downto 0);
    Q(7 downto 0) <= Q_DUMMY(7 downto 0);
    XLXI_41 : FD8CE_MXILINX_Memory
-      port map (C=>btn_writeData,
+      port map (C=>XLXN_351,
                 CE=>XLXN_343,
                 CLR=>CLR,
                 D(7 downto 0)=>S(7 downto 0),
@@ -1006,7 +1017,7 @@ begin
    XLXI_46 : FD4CE_MXILINX_Memory
       port map (C=>btn_writeData,
                 CE=>XLXN_343,
-                CLR=>XLXN_313,
+                CLR=>XLXI_46_CLR_openSignal,
                 D0=>D(0),
                 D1=>D(1),
                 D2=>D(2),
@@ -1019,7 +1030,7 @@ begin
    XLXI_47 : FD4CE_MXILINX_Memory
       port map (C=>WCLK_shiftReg,
                 CE=>XLXN_343,
-                CLR=>XLXN_314,
+                CLR=>XLXI_47_CLR_openSignal,
                 D0=>Q_DUMMY(0),
                 D1=>Q_DUMMY(1),
                 D2=>Q_DUMMY(2),
@@ -1042,15 +1053,22 @@ begin
                 I(3 downto 0)=>Q_DUMMY(3 downto 0),
                 hexO(7 downto 0)=>AddresshexO(7 downto 0));
    
-   XLXI_63 : OR2
-      port map (I0=>XLXN_314,
-                I1=>CLR,
-                O=>XLXN_313);
-   
    XLXI_90 : AND2
       port map (I0=>DebugMode,
                 I1=>AddressMode,
                 O=>XLXN_343);
+   
+   XLXI_91 : AND4
+      port map (I0=>G_DUMMY(0),
+                I1=>G_DUMMY(1),
+                I2=>G_DUMMY(2),
+                I3=>G_DUMMY(3),
+                O=>open);
+   
+   XLXI_92 : OR2
+      port map (I0=>XLXI_92_I0_openSignal,
+                I1=>btn_writeData,
+                O=>XLXN_351);
    
 end BEHAVIORAL;
 
@@ -1074,6 +1092,7 @@ entity Registers_MUSER_Memory is
           WCLK_shiftReg : in    std_logic; 
           AddressO      : out   std_logic_vector (7 downto 0); 
           A_hexO        : out   std_logic_vector (7 downto 0); 
+          A_shiftO      : out   std_logic_vector (7 downto 0); 
           D_hexO        : out   std_logic_vector (7 downto 0); 
           D_RegisterO   : out   std_logic_vector (7 downto 0); 
           I_hexO        : out   std_logic_vector (7 downto 0); 
@@ -1132,7 +1151,7 @@ begin
                 WCLK_shiftReg=>WCLK_shiftReg,
                 AddresshexO(7 downto 0)=>A_hexO(7 downto 0),
                 AddressO(7 downto 0)=>AddressO(7 downto 0),
-                G=>open,
+                G(7 downto 0)=>A_shiftO(7 downto 0),
                 Q=>open);
    
    XLXI_130 : I_Register_MUSER_Memory
@@ -1177,7 +1196,6 @@ entity Output_DebugMode_MUSER_Memory is
           DataInput : in    std_logic_vector (7 downto 0); 
           DebugMode : in    std_logic; 
           EN_hex    : in    std_logic; 
-          keyO      : in    std_logic; 
           anO       : out   std_logic_vector (3 downto 0); 
           sseg      : out   std_logic_vector (7 downto 0));
 end Output_DebugMode_MUSER_Memory;
@@ -1196,7 +1214,7 @@ architecture BEHAVIORAL of Output_DebugMode_MUSER_Memory is
    signal XLXN_16                 : std_logic;
    signal XLXN_69                 : std_logic;
    signal XLXN_84                 : std_logic;
-   signal XLXN_85                 : std_logic;
+   signal XLXN_86                 : std_logic;
    component GND
       port ( G : out   std_logic);
    end component;
@@ -1294,7 +1312,7 @@ begin
                 hexB(3 downto 0)=>DataOut1(3 downto 0),
                 hexC(3 downto 0)=>Address0(3 downto 0),
                 hexD(3 downto 0)=>Address1(3 downto 0),
-                rb_in=>keyO,
+                rb_in=>XLXN_86,
                 sel(0 to 1)=>XLXN_15(0 to 1),
                 anO(3 downto 0)=>anO(3 downto 0),
                 dpO=>XLXN_84,
@@ -1306,12 +1324,12 @@ begin
                 sseg(7 downto 0)=>sseg(7 downto 0));
    
    XLXI_39 : PULLUP
-      port map (O=>XLXN_85);
+      port map (O=>XLXN_86);
    
    XLXI_40 : bin2BCD3en
       port map (CLK=>XLXN_69,
                 Din(7 downto 0)=>AddressIn(7 downto 0),
-                En=>XLXN_85,
+                En=>EN_hex,
                 Dout0(3 downto 0)=>Address0(3 downto 0),
                 Dout1(3 downto 0)=>Address1(3 downto 0),
                 Dout2=>open,
@@ -1453,188 +1471,6 @@ use ieee.numeric_std.ALL;
 library UNISIM;
 use UNISIM.Vcomponents.ALL;
 
-entity test_hexShifter_MUSER_Memory is
-   port ( AorD    : in    std_logic; 
-          bIN     : in    std_logic_vector (3 downto 0); 
-          CLK     : in    std_logic; 
-          Address : out   std_logic_vector (7 downto 0); 
-          Data    : out   std_logic_vector (7 downto 0));
-end test_hexShifter_MUSER_Memory;
-
-architecture BEHAVIORAL of test_hexShifter_MUSER_Memory is
-   attribute BOX_TYPE   : string ;
-   signal XLXN_13       : std_logic;
-   signal XLXN_15       : std_logic;
-   signal Address_DUMMY : std_logic_vector (7 downto 0);
-   signal Data_DUMMY    : std_logic_vector (7 downto 0);
-   component INV
-      port ( I : in    std_logic; 
-             O : out   std_logic);
-   end component;
-   attribute BOX_TYPE of INV : component is "BLACK_BOX";
-   
-   component PULLDOWN
-      port ( O : out   std_logic);
-   end component;
-   attribute BOX_TYPE of PULLDOWN : component is "BLACK_BOX";
-   
-   component shiftreg_hex2D
-      port ( CLK   : in    std_logic; 
-             bIN   : in    std_logic_vector (3 downto 0); 
-             RST   : in    std_logic; 
-             CE    : in    std_logic; 
-             bOUT1 : inout std_logic_vector (3 downto 0); 
-             bOUT2 : out   std_logic_vector (3 downto 0));
-   end component;
-   
-begin
-   Address(7 downto 0) <= Address_DUMMY(7 downto 0);
-   Data(7 downto 0) <= Data_DUMMY(7 downto 0);
-   XLXI_4 : INV
-      port map (I=>AorD,
-                O=>XLXN_13);
-   
-   XLXI_5 : PULLDOWN
-      port map (O=>XLXN_15);
-   
-   XLXI_6 : shiftreg_hex2D
-      port map (bIN(3 downto 0)=>bIN(3 downto 0),
-                CE=>XLXN_13,
-                CLK=>CLK,
-                RST=>XLXN_15,
-                bOUT2(3 downto 0)=>Address_DUMMY(7 downto 4),
-                bOUT1(3 downto 0)=>Address_DUMMY(3 downto 0));
-   
-   XLXI_7 : shiftreg_hex2D
-      port map (bIN(3 downto 0)=>bIN(3 downto 0),
-                CE=>AorD,
-                CLK=>CLK,
-                RST=>XLXN_15,
-                bOUT2(3 downto 0)=>Data_DUMMY(7 downto 4),
-                bOUT1(3 downto 0)=>Data_DUMMY(3 downto 0));
-   
-end BEHAVIORAL;
-
-
-
-library ieee;
-use ieee.std_logic_1164.ALL;
-use ieee.numeric_std.ALL;
-library UNISIM;
-use UNISIM.Vcomponents.ALL;
-
-entity KEYPAD_noShift_MUSER_Memory is
-   port ( AorD    : in    std_logic; 
-          Clock   : in    std_logic; 
-          row     : in    std_logic_vector (3 downto 0); 
-          Address : out   std_logic_vector (7 downto 0); 
-          binO    : out   std_logic_vector (3 downto 0); 
-          Data    : out   std_logic_vector (7 downto 0); 
-          keyO    : out   std_logic; 
-          colO    : inout std_logic_vector (3 downto 0));
-end KEYPAD_noShift_MUSER_Memory;
-
-architecture BEHAVIORAL of KEYPAD_noShift_MUSER_Memory is
-   attribute BOX_TYPE   : string ;
-   signal XLXN_43    : std_logic;
-   signal XLXN_44    : std_logic;
-   signal XLXN_57    : std_logic;
-   signal binO_DUMMY : std_logic_vector (3 downto 0);
-   signal keyO_DUMMY : std_logic;
-   signal row_DUMMY  : std_logic_vector (3 downto 0);
-   component CRenc4bin
-      port ( clk  : in    std_logic; 
-             CE   : in    std_logic; 
-             rowI : in    std_logic_vector (3 downto 0); 
-             keyO : out   std_logic; 
-             binO : out   std_logic_vector (3 downto 0); 
-             colO : inout std_logic_vector (3 downto 0));
-   end component;
-   
-   component PULLDOWN
-      port ( O : out   std_logic);
-   end component;
-   attribute BOX_TYPE of PULLDOWN : component is "BLACK_BOX";
-   
-   component PULLUP
-      port ( O : out   std_logic);
-   end component;
-   attribute BOX_TYPE of PULLUP : component is "BLACK_BOX";
-   
-   component DCM_100M
-      port ( CLK    : in    std_logic; 
-             RST    : in    std_logic; 
-             CLK1M  : out   std_logic; 
-             CLK10k : out   std_logic; 
-             CLK1k  : out   std_logic; 
-             CLK100 : out   std_logic; 
-             CLK1   : out   std_logic);
-   end component;
-   
-   component test_hexShifter_MUSER_Memory
-      port ( bIN     : in    std_logic_vector (3 downto 0); 
-             CLK     : in    std_logic; 
-             AorD    : in    std_logic; 
-             Address : out   std_logic_vector (7 downto 0); 
-             Data    : out   std_logic_vector (7 downto 0));
-   end component;
-   
-begin
-   binO(3 downto 0) <= binO_DUMMY(3 downto 0);
-   keyO <= keyO_DUMMY;
-   row_DUMMY(3 downto 0) <= row(3 downto 0);
-   XLXI_17 : CRenc4bin
-      port map (CE=>XLXN_44,
-                clk=>XLXN_57,
-                rowI(3 downto 0)=>row_DUMMY(3 downto 0),
-                binO(3 downto 0)=>binO_DUMMY(3 downto 0),
-                keyO=>keyO_DUMMY,
-                colO(3 downto 0)=>colO(3 downto 0));
-   
-   XLXI_24 : PULLDOWN
-      port map (O=>XLXN_43);
-   
-   XLXI_25 : PULLUP
-      port map (O=>XLXN_44);
-   
-   XLXI_28 : DCM_100M
-      port map (CLK=>Clock,
-                RST=>XLXN_43,
-                CLK1=>open,
-                CLK1k=>XLXN_57,
-                CLK1M=>open,
-                CLK10k=>open,
-                CLK100=>open);
-   
-   XLXI_34_0 : PULLDOWN
-      port map (O=>row_DUMMY(0));
-   
-   XLXI_34_1 : PULLDOWN
-      port map (O=>row_DUMMY(1));
-   
-   XLXI_34_2 : PULLDOWN
-      port map (O=>row_DUMMY(2));
-   
-   XLXI_34_3 : PULLDOWN
-      port map (O=>row_DUMMY(3));
-   
-   XLXI_35 : test_hexShifter_MUSER_Memory
-      port map (AorD=>AorD,
-                bIN(3 downto 0)=>binO_DUMMY(3 downto 0),
-                CLK=>keyO_DUMMY,
-                Address(7 downto 0)=>Address(7 downto 0),
-                Data(7 downto 0)=>Data(7 downto 0));
-   
-end BEHAVIORAL;
-
-
-
-library ieee;
-use ieee.std_logic_1164.ALL;
-use ieee.numeric_std.ALL;
-library UNISIM;
-use UNISIM.Vcomponents.ALL;
-
 entity Memory is
    port ( AorD                 : in    std_logic; 
           btn_writeAddress     : in    std_logic; 
@@ -1653,6 +1489,9 @@ entity Memory is
           RunMode              : in    std_logic; 
           WCLK_shiftReg        : in    std_logic; 
           anO                  : out   std_logic_vector (3 downto 0); 
+          A_shiftO             : out   std_logic_vector (7 downto 0); 
+          D_output             : out   std_logic_vector (7 downto 0); 
+          I_output             : out   std_logic_vector (7 downto 0); 
           sseg                 : out   std_logic_vector (7 downto 0); 
           colO                 : inout std_logic_vector (3 downto 0));
 end Memory;
@@ -1675,9 +1514,9 @@ architecture BEHAVIORAL of Memory is
    signal n_WE_I                          : std_logic;
    signal XLXN_250                        : std_logic;
    signal XLXN_358                        : std_logic;
-   signal XLXN_402                        : std_logic_vector (7 downto 0);
-   signal XLXN_403                        : std_logic_vector (7 downto 0);
    signal XLXN_404                        : std_logic_vector (7 downto 0);
+   signal D_output_DUMMY                  : std_logic_vector (7 downto 0);
+   signal I_output_DUMMY                  : std_logic_vector (7 downto 0);
    signal XLXI_111_EN_D_Memory_openSignal : std_logic;
    component AND2B2
       port ( I0 : in    std_logic; 
@@ -1685,17 +1524,6 @@ architecture BEHAVIORAL of Memory is
              O  : out   std_logic);
    end component;
    attribute BOX_TYPE of AND2B2 : component is "BLACK_BOX";
-   
-   component KEYPAD_noShift_MUSER_Memory
-      port ( Clock   : in    std_logic; 
-             row     : in    std_logic_vector (3 downto 0); 
-             colO    : inout std_logic_vector (3 downto 0); 
-             keyO    : out   std_logic; 
-             binO    : out   std_logic_vector (3 downto 0); 
-             AorD    : in    std_logic; 
-             Address : out   std_logic_vector (7 downto 0); 
-             Data    : out   std_logic_vector (7 downto 0));
-   end component;
    
    component INV
       port ( I : in    std_logic; 
@@ -1715,21 +1543,22 @@ architecture BEHAVIORAL of Memory is
    end component;
    
    component Registers_MUSER_Memory
-      port ( CLR           : in    std_logic; 
+      port ( binI          : in    std_logic_vector (3 downto 0); 
+             CLR           : in    std_logic; 
              DebugMode     : in    std_logic; 
              AddressMode   : in    std_logic; 
              EN_IReg       : in    std_logic; 
              btn_writeData : in    std_logic; 
+             WCLK_shiftReg : in    std_logic; 
              Datamode      : in    std_logic; 
              EN_DReg       : in    std_logic; 
-             binI          : in    std_logic_vector (3 downto 0); 
-             WCLK_shiftReg : in    std_logic; 
              AddressO      : out   std_logic_vector (7 downto 0); 
              I_RegisterO   : out   std_logic_vector (7 downto 0); 
              D_RegisterO   : out   std_logic_vector (7 downto 0); 
              A_hexO        : out   std_logic_vector (7 downto 0); 
              I_hexO        : out   std_logic_vector (7 downto 0); 
-             D_hexO        : out   std_logic_vector (7 downto 0));
+             D_hexO        : out   std_logic_vector (7 downto 0); 
+             A_shiftO      : out   std_logic_vector (7 downto 0));
    end component;
    
    component I_Memory_MUSER_Memory
@@ -1745,7 +1574,6 @@ architecture BEHAVIORAL of Memory is
    
    component Output_DebugMode_MUSER_Memory
       port ( DataInput : in    std_logic_vector (7 downto 0); 
-             keyO      : in    std_logic; 
              AddressIn : in    std_logic_vector (7 downto 0); 
              Clock     : in    std_logic; 
              EN_hex    : in    std_logic; 
@@ -1760,21 +1588,21 @@ architecture BEHAVIORAL of Memory is
              DOut : out   std_logic_vector (7 downto 0));
    end component;
    
+   component lab_KEYPAD_FINAL
+      port ( Clock : in    std_logic; 
+             row   : in    std_logic_vector (3 downto 0); 
+             colO  : inout std_logic_vector (3 downto 0); 
+             keyO  : out   std_logic; 
+             binO  : out   std_logic_vector (3 downto 0));
+   end component;
+   
 begin
+   D_output(7 downto 0) <= D_output_DUMMY(7 downto 0);
+   I_output(7 downto 0) <= I_output_DUMMY(7 downto 0);
    XLXI_4 : AND2B2
       port map (I0=>EN_I_Memory,
                 I1=>DebugMode,
                 O=>nWE_I);
-   
-   XLXI_65 : KEYPAD_noShift_MUSER_Memory
-      port map (AorD=>AorD,
-                Clock=>Clock,
-                row(3 downto 0)=>row(3 downto 0),
-                Address=>open,
-                binO(3 downto 0)=>binO(3 downto 0),
-                Data=>open,
-                keyO=>keyO,
-                colO(3 downto 0)=>colO(3 downto 0));
    
    XLXI_95 : INV
       port map (I=>DataMode,
@@ -1793,7 +1621,7 @@ begin
                 nCS=>XLXN_250,
                 nWE=>n_WE_D,
                 WCLK_writeData=>btn_writeData,
-                D_Output(7 downto 0)=>XLXN_403(7 downto 0));
+                D_Output(7 downto 0)=>D_output_DUMMY(7 downto 0));
    
    XLXI_118 : INV
       port map (I=>EN_DReg,
@@ -1811,6 +1639,7 @@ begin
                 WCLK_shiftReg=>WCLK_shiftReg,
                 AddressO(7 downto 0)=>AddressI(7 downto 0),
                 A_hexO(7 downto 0)=>A_hexO(7 downto 0),
+                A_shiftO(7 downto 0)=>A_shiftO(7 downto 0),
                 D_hexO(7 downto 0)=>D_hexO(7 downto 0),
                 D_RegisterO(7 downto 0)=>D_Register(7 downto 0),
                 I_hexO(7 downto 0)=>I_hexO(7 downto 0),
@@ -1824,7 +1653,7 @@ begin
                 nCS=>XLXN_358,
                 nWE=>n_WE_I,
                 WCLK_writeData=>btn_writeData,
-                I_Output(7 downto 0)=>XLXN_402(7 downto 0));
+                I_Output(7 downto 0)=>I_output_DUMMY(7 downto 0));
    
    XLXI_133 : Output_DebugMode_MUSER_Memory
       port map (AddressIn(7 downto 0)=>AddressI(7 downto 0),
@@ -1832,14 +1661,20 @@ begin
                 DataInput(7 downto 0)=>XLXN_404(7 downto 0),
                 DebugMode=>DebugMode,
                 EN_hex=>EN_hex,
-                keyO=>keyO,
                 anO(3 downto 0)=>anO(3 downto 0),
                 sseg(7 downto 0)=>sseg(7 downto 0));
    
    XLXI_141 : MUX8Bit_MUSER_Memory
-      port map (D_In(7 downto 0)=>XLXN_403(7 downto 0),
-                I_In(7 downto 0)=>XLXN_402(7 downto 0),
+      port map (D_In(7 downto 0)=>D_output_DUMMY(7 downto 0),
+                I_In(7 downto 0)=>I_output_DUMMY(7 downto 0),
                 DOut(7 downto 0)=>XLXN_404(7 downto 0));
+   
+   XLXI_142 : lab_KEYPAD_FINAL
+      port map (Clock=>Clock,
+                row(3 downto 0)=>row(3 downto 0),
+                binO(3 downto 0)=>binO(3 downto 0),
+                keyO=>keyO,
+                colO(3 downto 0)=>colO(3 downto 0));
    
 end BEHAVIORAL;
 

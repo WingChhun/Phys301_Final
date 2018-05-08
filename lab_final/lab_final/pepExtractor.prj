@@ -1,2 +1,1 @@
-work	"../../swag/debounce.vhd"
-work	"../modules/debounce.vhd"
+work	"../modules/decoder16keyEn.vhd"

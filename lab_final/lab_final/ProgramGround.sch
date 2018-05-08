@@ -11,8 +11,9 @@
         <port polarity="Input" name="I_In(7:0)" />
         <port polarity="Input" name="D_In(7:0)" />
         <blockdef name="InstructionSymbols">
-            <timestamp>2018-5-5T22:37:44</timestamp>
-            <rect width="256" x="64" y="-896" height="896" />
+            <timestamp>2018-5-7T19:58:17</timestamp>
+            <rect width="64" x="0" y="20" height="24" />
+            <line x2="0" y1="32" y2="32" x1="64" />
             <rect width="64" x="0" y="-876" height="24" />
             <line x2="0" y1="-864" y2="-864" x1="64" />
             <line x2="384" y1="-864" y2="-864" x1="320" />
@@ -29,6 +30,7 @@
             <line x2="384" y1="-160" y2="-160" x1="320" />
             <line x2="384" y1="-96" y2="-96" x1="320" />
             <line x2="384" y1="-32" y2="-32" x1="320" />
+            <rect width="256" x="64" y="-896" height="960" />
         </blockdef>
         <block symbolname="InstructionSymbols" name="XLXI_1">
             <blockpin signalname="I_In(7:0)" name="Din(7:0)" />
@@ -46,6 +48,7 @@
             <blockpin name="STA" />
             <blockpin name="NOP" />
             <blockpin name="LDA" />
+            <blockpin name="Dout(7:0)" />
         </block>
     </netlist>
     <sheet sheetnum="1" width="3520" height="2720">

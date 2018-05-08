@@ -6,7 +6,6 @@
         <trait edittrait="all:0" />
     </attr>
     <netlist>
-        <signal name="XLXN_2(7:0)" />
         <signal name="XLXN_3" />
         <signal name="XLXN_4" />
         <signal name="RunMode" />
@@ -17,21 +16,13 @@
         <signal name="Q(3)" />
         <signal name="Q(4)" />
         <signal name="count_32" />
-        <signal name="XLXN_14" />
         <signal name="CLK_Speed" />
         <signal name="XLXN_17" />
         <signal name="XLXN_19" />
         <signal name="XLXN_20" />
         <signal name="XLXN_21" />
         <signal name="CLR_4ticks" />
-        <signal name="XLXN_23" />
-        <signal name="XLXN_24" />
         <signal name="Q(7:0)" />
-        <signal name="XLXN_26" />
-        <signal name="XLXN_27" />
-        <signal name="XLXN_28" />
-        <signal name="XLXN_29" />
-        <signal name="XLXN_30" />
         <signal name="Step" />
         <port polarity="Input" name="RunMode" />
         <port polarity="Input" name="CLK_Speed" />
@@ -141,7 +132,7 @@
             <blockpin signalname="XLXN_4" name="L" />
             <blockpin signalname="XLXN_3" name="UP" />
             <blockpin name="CEO" />
-            <blockpin signalname="XLXN_2(7:0)" name="Q(7:0)" />
+            <blockpin signalname="Q(7:0)" name="Q(7:0)" />
             <blockpin name="TC" />
         </block>
         <block symbolname="pullup" name="XLXI_2">
@@ -189,7 +180,7 @@
     </netlist>
     <sheet sheetnum="1" width="3520" height="2720">
         <instance x="592" y="1152" name="XLXI_1" orien="R0" />
-        <branch name="XLXN_2(7:0)">
+        <branch name="Q(7:0)">
             <wire x2="1152" y1="704" y2="704" x1="976" />
             <wire x2="1152" y1="704" y2="720" x1="1152" />
             <wire x2="1152" y1="720" y2="768" x1="1152" />
@@ -197,6 +188,9 @@
             <wire x2="1152" y1="832" y2="880" x1="1152" />
             <wire x2="1152" y1="880" y2="928" x1="1152" />
             <wire x2="1152" y1="928" y2="960" x1="1152" />
+            <wire x2="1024" y1="960" y2="1232" x1="1024" />
+            <wire x2="1104" y1="1232" y2="1232" x1="1024" />
+            <wire x2="1152" y1="960" y2="960" x1="1024" />
         </branch>
         <branch name="XLXN_3">
             <wire x2="592" y1="832" y2="832" x1="400" />
@@ -309,39 +303,22 @@
             <wire x2="2784" y1="720" y2="720" x1="2768" />
         </branch>
         <branch name="CLR_4ticks">
-            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="2684" y="1280" type="branch" />
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="2684" y="1280" type="branch" />
             <wire x2="480" y1="1024" y2="1616" x1="480" />
             <wire x2="2288" y1="1616" y2="1616" x1="480" />
             <wire x2="592" y1="1024" y2="1024" x1="480" />
             <wire x2="2288" y1="1200" y2="1280" x1="2288" />
-            <wire x2="2684" y1="1280" y2="1280" x1="2288" />
-            <wire x2="3120" y1="1280" y2="1280" x1="2684" />
+            <wire x2="2688" y1="1280" y2="1280" x1="2288" />
+            <wire x2="3120" y1="1280" y2="1280" x1="2688" />
             <wire x2="2288" y1="1280" y2="1616" x1="2288" />
             <wire x2="3120" y1="656" y2="656" x1="3040" />
             <wire x2="3120" y1="656" y2="1280" x1="3120" />
         </branch>
-        <branch name="Q(7:0)">
-            <wire x2="992" y1="1184" y2="1184" x1="976" />
-            <wire x2="1040" y1="1184" y2="1184" x1="992" />
-            <wire x2="1072" y1="1184" y2="1184" x1="1040" />
-            <wire x2="1104" y1="1184" y2="1184" x1="1072" />
-            <wire x2="1152" y1="1184" y2="1184" x1="1104" />
-            <wire x2="1200" y1="1184" y2="1184" x1="1152" />
-            <wire x2="1232" y1="1184" y2="1184" x1="1200" />
-            <wire x2="1248" y1="1184" y2="1184" x1="1232" />
-            <wire x2="1280" y1="1184" y2="1184" x1="1248" />
-            <wire x2="1296" y1="1184" y2="1184" x1="1280" />
-        </branch>
-        <iomarker fontsize="28" x="1296" y="1184" name="Q(7:0)" orien="R0" />
-        <bustap x2="1104" y1="1184" y2="1088" x1="1104" />
-        <bustap x2="992" y1="1184" y2="1088" x1="992" />
-        <bustap x2="1040" y1="1184" y2="1088" x1="1040" />
-        <bustap x2="1152" y1="1184" y2="1088" x1="1152" />
-        <bustap x2="1232" y1="1184" y2="1088" x1="1232" />
         <iomarker fontsize="28" x="544" y="960" name="RunMode" orien="R180" />
         <branch name="Step">
             <wire x2="480" y1="272" y2="272" x1="272" />
         </branch>
         <iomarker fontsize="28" x="272" y="272" name="Step" orien="R180" />
+        <iomarker fontsize="28" x="1104" y="1232" name="Q(7:0)" orien="R0" />
     </sheet>
 </drawing>

@@ -7,11 +7,11 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : Output_DebugMode.vhf
--- /___/   /\     Timestamp : 05/04/2018 21:52:22
+-- /___/   /\     Timestamp : 05/07/2018 18:33:49
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
---Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl C:/Users/James/Documents/Xlink_projects/lab_final/lab_final/Output_DebugMode.vhf -w C:/Users/James/Documents/Xlink_projects/lab_final/lab_final/Output_DebugMode.sch
+--Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/Output_DebugMode.vhf -w C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/Output_DebugMode.sch
 --Design Name: Output_DebugMode
 --Device: spartan3e
 --Purpose:
@@ -31,7 +31,6 @@ entity Output_DebugMode is
           DataInput : in    std_logic_vector (7 downto 0); 
           DebugMode : in    std_logic; 
           EN_hex    : in    std_logic; 
-          keyO      : in    std_logic; 
           anO       : out   std_logic_vector (3 downto 0); 
           sseg      : out   std_logic_vector (7 downto 0));
 end Output_DebugMode;
@@ -50,7 +49,7 @@ architecture BEHAVIORAL of Output_DebugMode is
    signal XLXN_16                 : std_logic;
    signal XLXN_69                 : std_logic;
    signal XLXN_84                 : std_logic;
-   signal XLXN_85                 : std_logic;
+   signal XLXN_86                 : std_logic;
    component GND
       port ( G : out   std_logic);
    end component;
@@ -148,7 +147,7 @@ begin
                 hexB(3 downto 0)=>DataOut1(3 downto 0),
                 hexC(3 downto 0)=>Address0(3 downto 0),
                 hexD(3 downto 0)=>Address1(3 downto 0),
-                rb_in=>keyO,
+                rb_in=>XLXN_86,
                 sel(0 to 1)=>XLXN_15(0 to 1),
                 anO(3 downto 0)=>anO(3 downto 0),
                 dpO=>XLXN_84,
@@ -160,12 +159,12 @@ begin
                 sseg(7 downto 0)=>sseg(7 downto 0));
    
    XLXI_39 : PULLUP
-      port map (O=>XLXN_85);
+      port map (O=>XLXN_86);
    
    XLXI_40 : bin2BCD3en
       port map (CLK=>XLXN_69,
                 Din(7 downto 0)=>AddressIn(7 downto 0),
-                En=>XLXN_85,
+                En=>EN_hex,
                 Dout0(3 downto 0)=>Address0(3 downto 0),
                 Dout1(3 downto 0)=>Address1(3 downto 0),
                 Dout2=>open,

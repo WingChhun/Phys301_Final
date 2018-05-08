@@ -7,11 +7,11 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : ALU.vhf
--- /___/   /\     Timestamp : 05/04/2018 21:52:21
+-- /___/   /\     Timestamp : 05/07/2018 18:33:52
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
---Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl C:/Users/James/Documents/Xlink_projects/lab_final/lab_final/ALU.vhf -w C:/Users/James/Documents/Xlink_projects/lab_final/lab_final/ALU.sch
+--Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/ALU.vhf -w C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/ALU.sch
 --Design Name: ALU
 --Device: spartan3e
 --Purpose:
@@ -406,7 +406,7 @@ architecture BEHAVIORAL of ALU is
              S   : out   std_logic_vector (7 downto 0));
    end component;
    
-   attribute HU_SET of XLXI_1 : label is "XLXI_1_37";
+   attribute HU_SET of XLXI_1 : label is "XLXI_1_56";
 begin
    XLXI_1 : ADSU8_MXILINX_ALU
       port map (A(7 downto 0)=>registerA(7 downto 0),

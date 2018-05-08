@@ -7,11 +7,11 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : Registers.vhf
--- /___/   /\     Timestamp : 05/04/2018 22:07:15
+-- /___/   /\     Timestamp : 05/07/2018 18:33:52
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
---Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl C:/Users/James/Documents/Xlink_projects/lab_final/lab_final/Registers.vhf -w C:/Users/James/Documents/Xlink_projects/lab_final/lab_final/Registers.sch
+--Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/Registers.vhf -w C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/Registers.sch
 --Design Name: Registers
 --Device: spartan3e
 --Purpose:
@@ -624,10 +624,10 @@ architecture BEHAVIORAL of D_Register_MUSER_Registers is
    end component;
    attribute BOX_TYPE of AND3 : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_41 : label is "XLXI_41_31";
-   attribute HU_SET of XLXI_46 : label is "XLXI_46_28";
-   attribute HU_SET of XLXI_47 : label is "XLXI_47_29";
-   attribute HU_SET of XLXI_59 : label is "XLXI_59_30";
+   attribute HU_SET of XLXI_41 : label is "XLXI_41_60";
+   attribute HU_SET of XLXI_46 : label is "XLXI_46_57";
+   attribute HU_SET of XLXI_47 : label is "XLXI_47_58";
+   attribute HU_SET of XLXI_59 : label is "XLXI_59_59";
 begin
    G(7 downto 0) <= G_DUMMY(7 downto 0);
    Q(7 downto 0) <= Q_DUMMY(7 downto 0);
@@ -774,10 +774,10 @@ architecture BEHAVIORAL of I_Register_MUSER_Registers is
    end component;
    attribute BOX_TYPE of AND3 : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_41 : label is "XLXI_41_35";
-   attribute HU_SET of XLXI_46 : label is "XLXI_46_32";
-   attribute HU_SET of XLXI_47 : label is "XLXI_47_33";
-   attribute HU_SET of XLXI_59 : label is "XLXI_59_34";
+   attribute HU_SET of XLXI_41 : label is "XLXI_41_64";
+   attribute HU_SET of XLXI_46 : label is "XLXI_46_61";
+   attribute HU_SET of XLXI_47 : label is "XLXI_47_62";
+   attribute HU_SET of XLXI_59 : label is "XLXI_59_63";
 begin
    G(7 downto 0) <= G_DUMMY(7 downto 0);
    Q(7 downto 0) <= Q_DUMMY(7 downto 0);
@@ -864,13 +864,15 @@ end Address_MUSER_Registers;
 architecture BEHAVIORAL of Address_MUSER_Registers is
    attribute HU_SET     : string ;
    attribute BOX_TYPE   : string ;
-   signal S                     : std_logic_vector (7 downto 0);
-   signal XLXN_313              : std_logic;
-   signal XLXN_314              : std_logic;
-   signal XLXN_343              : std_logic;
-   signal G_DUMMY               : std_logic_vector (7 downto 0);
-   signal Q_DUMMY               : std_logic_vector (7 downto 0);
-   signal XLXI_59_CI_openSignal : std_logic;
+   signal S                      : std_logic_vector (7 downto 0);
+   signal XLXN_343               : std_logic;
+   signal XLXN_351               : std_logic;
+   signal G_DUMMY                : std_logic_vector (7 downto 0);
+   signal Q_DUMMY                : std_logic_vector (7 downto 0);
+   signal XLXI_46_CLR_openSignal : std_logic;
+   signal XLXI_47_CLR_openSignal : std_logic;
+   signal XLXI_59_CI_openSignal  : std_logic;
+   signal XLXI_92_I0_openSignal  : std_logic;
    component FD8CE_MXILINX_Registers
       port ( C   : in    std_logic; 
              CE  : in    std_logic; 
@@ -908,13 +910,6 @@ architecture BEHAVIORAL of Address_MUSER_Registers is
              hexO : out   std_logic_vector (7 downto 0));
    end component;
    
-   component OR2
-      port ( I0 : in    std_logic; 
-             I1 : in    std_logic; 
-             O  : out   std_logic);
-   end component;
-   attribute BOX_TYPE of OR2 : component is "BLACK_BOX";
-   
    component AND2
       port ( I0 : in    std_logic; 
              I1 : in    std_logic; 
@@ -922,15 +917,31 @@ architecture BEHAVIORAL of Address_MUSER_Registers is
    end component;
    attribute BOX_TYPE of AND2 : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_41 : label is "XLXI_41_39";
-   attribute HU_SET of XLXI_46 : label is "XLXI_46_36";
-   attribute HU_SET of XLXI_47 : label is "XLXI_47_37";
-   attribute HU_SET of XLXI_59 : label is "XLXI_59_38";
+   component AND4
+      port ( I0 : in    std_logic; 
+             I1 : in    std_logic; 
+             I2 : in    std_logic; 
+             I3 : in    std_logic; 
+             O  : out   std_logic);
+   end component;
+   attribute BOX_TYPE of AND4 : component is "BLACK_BOX";
+   
+   component OR2
+      port ( I0 : in    std_logic; 
+             I1 : in    std_logic; 
+             O  : out   std_logic);
+   end component;
+   attribute BOX_TYPE of OR2 : component is "BLACK_BOX";
+   
+   attribute HU_SET of XLXI_41 : label is "XLXI_41_68";
+   attribute HU_SET of XLXI_46 : label is "XLXI_46_65";
+   attribute HU_SET of XLXI_47 : label is "XLXI_47_66";
+   attribute HU_SET of XLXI_59 : label is "XLXI_59_67";
 begin
    G(7 downto 0) <= G_DUMMY(7 downto 0);
    Q(7 downto 0) <= Q_DUMMY(7 downto 0);
    XLXI_41 : FD8CE_MXILINX_Registers
-      port map (C=>btn_writeData,
+      port map (C=>XLXN_351,
                 CE=>XLXN_343,
                 CLR=>CLR,
                 D(7 downto 0)=>S(7 downto 0),
@@ -939,7 +950,7 @@ begin
    XLXI_46 : FD4CE_MXILINX_Registers
       port map (C=>btn_writeData,
                 CE=>XLXN_343,
-                CLR=>XLXN_313,
+                CLR=>XLXI_46_CLR_openSignal,
                 D0=>D(0),
                 D1=>D(1),
                 D2=>D(2),
@@ -952,7 +963,7 @@ begin
    XLXI_47 : FD4CE_MXILINX_Registers
       port map (C=>WCLK_shiftReg,
                 CE=>XLXN_343,
-                CLR=>XLXN_314,
+                CLR=>XLXI_47_CLR_openSignal,
                 D0=>Q_DUMMY(0),
                 D1=>Q_DUMMY(1),
                 D2=>Q_DUMMY(2),
@@ -975,15 +986,22 @@ begin
                 I(3 downto 0)=>Q_DUMMY(3 downto 0),
                 hexO(7 downto 0)=>AddresshexO(7 downto 0));
    
-   XLXI_63 : OR2
-      port map (I0=>XLXN_314,
-                I1=>CLR,
-                O=>XLXN_313);
-   
    XLXI_90 : AND2
       port map (I0=>DebugMode,
                 I1=>AddressMode,
                 O=>XLXN_343);
+   
+   XLXI_91 : AND4
+      port map (I0=>G_DUMMY(0),
+                I1=>G_DUMMY(1),
+                I2=>G_DUMMY(2),
+                I3=>G_DUMMY(3),
+                O=>open);
+   
+   XLXI_92 : OR2
+      port map (I0=>XLXI_92_I0_openSignal,
+                I1=>btn_writeData,
+                O=>XLXN_351);
    
 end BEHAVIORAL;
 
@@ -1007,6 +1025,7 @@ entity Registers is
           WCLK_shiftReg : in    std_logic; 
           AddressO      : out   std_logic_vector (7 downto 0); 
           A_hexO        : out   std_logic_vector (7 downto 0); 
+          A_shiftO      : out   std_logic_vector (7 downto 0); 
           D_hexO        : out   std_logic_vector (7 downto 0); 
           D_RegisterO   : out   std_logic_vector (7 downto 0); 
           I_hexO        : out   std_logic_vector (7 downto 0); 
@@ -1065,7 +1084,7 @@ begin
                 WCLK_shiftReg=>WCLK_shiftReg,
                 AddresshexO(7 downto 0)=>A_hexO(7 downto 0),
                 AddressO(7 downto 0)=>AddressO(7 downto 0),
-                G=>open,
+                G(7 downto 0)=>A_shiftO(7 downto 0),
                 Q=>open);
    
    XLXI_130 : I_Register_MUSER_Registers

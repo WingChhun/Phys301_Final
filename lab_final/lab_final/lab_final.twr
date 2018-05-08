@@ -45,23 +45,43 @@ Setup/Hold to clock WCLK_shiftReg
             |Max Setup to|Max Hold to |                   | Clock  |
 Source      | clk (edge) | clk (edge) |Internal Clock(s)  | Phase  |
 ------------+------------+------------+-------------------+--------+
-RunMode     |    0.718(R)|    1.465(R)|WCLK_shiftReg_BUFGP|   0.000|
+RunMode     |    1.689(R)|    0.708(R)|WCLK_shiftReg_BUFGP|   0.000|
 ------------+------------+------------+-------------------+--------+
 
 Setup/Hold to clock btn_writeData
-------------+------------+------------+------------------+--------+
-            |Max Setup to|Max Hold to |                  | Clock  |
-Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
-------------+------------+------------+------------------+--------+
-RunMode     |    1.827(R)|    0.149(R)|btn_writeData_IBUF|   0.000|
-------------+------------+------------+------------------+--------+
+------------+------------+------------+-------------------+--------+
+            |Max Setup to|Max Hold to |                   | Clock  |
+Source      | clk (edge) | clk (edge) |Internal Clock(s)  | Phase  |
+------------+------------+------------+-------------------+--------+
+RunMode     |    1.969(R)|    0.269(R)|btn_writeData_IBUF |   0.000|
+            |    1.342(R)|    0.662(R)|btn_writeData_IBUF1|   0.000|
+------------+------------+------------+-------------------+--------+
+
+Clock Clock to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+CLK_1       |    9.223(R)|Clock_BUFGP       |   0.000|
+------------+------------+------------------+--------+
+
+Clock WCLK_shiftReg to Pad
+------------+------------+-------------------+--------+
+            | clk (edge) |                   | Clock  |
+Destination |   to PAD   |Internal Clock(s)  | Phase  |
+------------+------------+-------------------+--------+
+A_shiftO<0> |    7.712(R)|WCLK_shiftReg_BUFGP|   0.000|
+A_shiftO<1> |    8.226(R)|WCLK_shiftReg_BUFGP|   0.000|
+A_shiftO<2> |    8.683(R)|WCLK_shiftReg_BUFGP|   0.000|
+A_shiftO<3> |    7.744(R)|WCLK_shiftReg_BUFGP|   0.000|
+------------+------------+-------------------+--------+
 
 Clock to Setup on destination clock Clock
 ---------------+---------+---------+---------+---------+
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-Clock          |   12.008|         |         |         |
+Clock          |   12.415|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock EN_I_Memory
@@ -69,7 +89,7 @@ Clock to Setup on destination clock EN_I_Memory
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-btn_writeData  |    8.603|         |         |         |
+btn_writeData  |    7.840|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock WCLK_shiftReg
@@ -77,7 +97,7 @@ Clock to Setup on destination clock WCLK_shiftReg
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-btn_writeData  |    1.746|         |         |         |
+btn_writeData  |    2.284|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock btn_writeData
@@ -85,8 +105,8 @@ Clock to Setup on destination clock btn_writeData
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-WCLK_shiftReg  |    4.600|         |         |         |
-btn_writeData  |    8.603|         |         |         |
+WCLK_shiftReg  |    3.959|         |         |         |
+btn_writeData  |    7.840|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Pad to Pad
@@ -94,19 +114,20 @@ Pad to Pad
 Source Pad     |Destination Pad     |  Delay  |
 ---------------+--------------------+---------+
 EN_D_Memory    |EnableDataLED       |    6.143|
-EN_I_Memory    |EnableInstructionLED|    6.264|
-RunMode        |RunModeLED          |    7.109|
+EN_I_Memory    |EnableInstructionLED|    6.584|
+RunMode        |RunModeLED          |    7.208|
+SWITCH_SPeed   |CLK_1               |    7.624|
 ---------------+--------------------+---------+
 
 
-Analysis completed Fri May 04 22:04:23 2018 
+Analysis completed Mon May 07 18:35:04 2018 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 212 MB
+Peak Memory Usage: 228 MB
 
 
 

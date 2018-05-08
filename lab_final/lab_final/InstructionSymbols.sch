@@ -8,14 +8,13 @@
     <netlist>
         <signal name="Din(7:0)" />
         <signal name="Din(0)" />
-        <signal name="Din(1)" />
-        <signal name="Din(2)" />
+        <signal name="Dout(1)" />
+        <signal name="Dout(2)" />
         <signal name="Din(3)" />
         <signal name="Din(4)" />
         <signal name="Din(5)" />
         <signal name="Din(6)" />
         <signal name="Din(7)" />
-        <signal name="D_inv(7:0)" />
         <signal name="LCA" />
         <signal name="CLR" />
         <signal name="ADDU" />
@@ -30,6 +29,16 @@
         <signal name="STA" />
         <signal name="NOP" />
         <signal name="LDA" />
+        <signal name="Dout(0)" />
+        <signal name="Dout(3)" />
+        <signal name="Dout(4)" />
+        <signal name="Dout(5)" />
+        <signal name="Dout(6)" />
+        <signal name="Dout(7)" />
+        <signal name="Dout(7:0)" />
+        <signal name="Din(1)" />
+        <signal name="Din(2)" />
+        <signal name="D_Inv(7:0)" />
         <port polarity="Input" name="Din(7:0)" />
         <port polarity="Output" name="LCA" />
         <port polarity="Output" name="CLR" />
@@ -45,6 +54,8 @@
         <port polarity="Output" name="STA" />
         <port polarity="Output" name="NOP" />
         <port polarity="Output" name="LDA" />
+        <port polarity="Input" name="Dout(7:0)" />
+        <port polarity="Output" name="D_Inv(7:0)" />
         <blockdef name="buf">
             <timestamp>2000-1-1T10:10:10</timestamp>
             <line x2="64" y1="-32" y2="-32" x1="0" />
@@ -52,15 +63,6 @@
             <line x2="128" y1="0" y2="-32" x1="64" />
             <line x2="64" y1="-32" y2="-64" x1="128" />
             <line x2="64" y1="-64" y2="0" x1="64" />
-        </blockdef>
-        <blockdef name="inv">
-            <timestamp>2000-1-1T10:10:10</timestamp>
-            <line x2="64" y1="-32" y2="-32" x1="0" />
-            <line x2="160" y1="-32" y2="-32" x1="224" />
-            <line x2="128" y1="-64" y2="-32" x1="64" />
-            <line x2="64" y1="-32" y2="0" x1="128" />
-            <line x2="64" y1="0" y2="-64" x1="64" />
-            <circle r="16" cx="144" cy="-32" />
         </blockdef>
         <blockdef name="and8">
             <timestamp>2000-1-1T10:10:10</timestamp>
@@ -78,41 +80,48 @@
             <arc ex="144" ey="-336" sx="144" sy="-240" r="48" cx="144" cy="-288" />
             <line x2="192" y1="-288" y2="-288" x1="256" />
         </blockdef>
+        <blockdef name="inv8">
+            <timestamp>2000-1-1T10:10:10</timestamp>
+            <circle r="16" cx="144" cy="-32" />
+            <line x2="64" y1="-32" y2="-32" x1="0" />
+            <rect width="64" x="160" y="-44" height="24" />
+            <rect width="64" x="0" y="-44" height="24" />
+            <line x2="128" y1="-64" y2="-32" x1="64" />
+            <line x2="64" y1="-32" y2="0" x1="128" />
+            <line x2="64" y1="0" y2="-64" x1="64" />
+            <line x2="160" y1="-32" y2="-32" x1="224" />
+        </blockdef>
         <block symbolname="buf" name="XLXI_1">
             <blockpin signalname="Din(0)" name="I" />
-            <blockpin signalname="Din(0)" name="O" />
+            <blockpin signalname="Dout(0)" name="O" />
         </block>
         <block symbolname="buf" name="XLXI_2">
             <blockpin signalname="Din(1)" name="I" />
-            <blockpin signalname="Din(1)" name="O" />
+            <blockpin signalname="Dout(1)" name="O" />
         </block>
         <block symbolname="buf" name="XLXI_3">
             <blockpin signalname="Din(2)" name="I" />
-            <blockpin signalname="Din(2)" name="O" />
+            <blockpin signalname="Dout(2)" name="O" />
         </block>
         <block symbolname="buf" name="XLXI_4">
             <blockpin signalname="Din(3)" name="I" />
-            <blockpin signalname="Din(3)" name="O" />
+            <blockpin signalname="Dout(3)" name="O" />
         </block>
         <block symbolname="buf" name="XLXI_6">
             <blockpin signalname="Din(4)" name="I" />
-            <blockpin signalname="Din(4)" name="O" />
+            <blockpin signalname="Dout(4)" name="O" />
         </block>
         <block symbolname="buf" name="XLXI_7">
             <blockpin signalname="Din(5)" name="I" />
-            <blockpin signalname="Din(5)" name="O" />
+            <blockpin signalname="Dout(5)" name="O" />
         </block>
         <block symbolname="buf" name="XLXI_8">
             <blockpin signalname="Din(6)" name="I" />
-            <blockpin signalname="Din(6)" name="O" />
+            <blockpin signalname="Dout(6)" name="O" />
         </block>
         <block symbolname="buf" name="XLXI_9">
             <blockpin signalname="Din(7)" name="I" />
-            <blockpin signalname="Din(7)" name="O" />
-        </block>
-        <block symbolname="inv" name="XLXI_10">
-            <blockpin signalname="Din(7:0)" name="I" />
-            <blockpin signalname="D_inv(7:0)" name="O" />
+            <blockpin signalname="Dout(7)" name="O" />
         </block>
         <block symbolname="and8" name="XLXI_12">
             <blockpin name="I0" />
@@ -268,6 +277,10 @@
             <blockpin name="I7" />
             <blockpin signalname="LDA" name="O" />
         </block>
+        <block symbolname="inv8" name="XLXI_25">
+            <blockpin signalname="Din(7:0)" name="I(7:0)" />
+            <blockpin signalname="D_Inv(7:0)" name="O(7:0)" />
+        </block>
     </netlist>
     <sheet sheetnum="1" width="3520" height="2720">
         <branch name="Din(7:0)">
@@ -291,110 +304,103 @@
             <wire x2="720" y1="2176" y2="2176" x1="576" />
             <wire x2="720" y1="1328" y2="2176" x1="720" />
             <wire x2="880" y1="1328" y2="1328" x1="720" />
+            <wire x2="880" y1="1328" y2="1680" x1="880" />
+            <wire x2="896" y1="1680" y2="1680" x1="880" />
         </branch>
         <iomarker fontsize="28" x="384" y="336" name="Din(7:0)" orien="R180" />
         <bustap x2="688" y1="464" y2="464" x1="592" />
         <instance x="848" y="496" name="XLXI_1" orien="R0" />
         <branch name="Din(0)">
-            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="719" y="464" type="branch" />
-            <wire x2="719" y1="464" y2="464" x1="688" />
-            <wire x2="848" y1="464" y2="464" x1="719" />
-        </branch>
-        <branch name="Din(0)">
-            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="1141" y="464" type="branch" />
-            <wire x2="1141" y1="464" y2="464" x1="1072" />
-            <wire x2="1184" y1="464" y2="464" x1="1141" />
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="719" y="464" type="branch" />
+            <wire x2="720" y1="464" y2="464" x1="688" />
+            <wire x2="848" y1="464" y2="464" x1="720" />
         </branch>
         <instance x="848" y="576" name="XLXI_2" orien="R0" />
         <branch name="Din(1)">
-            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="719" y="544" type="branch" />
-            <wire x2="719" y1="544" y2="544" x1="688" />
-            <wire x2="848" y1="544" y2="544" x1="719" />
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="719" y="544" type="branch" />
+            <wire x2="720" y1="544" y2="544" x1="688" />
+            <wire x2="848" y1="544" y2="544" x1="720" />
         </branch>
-        <branch name="Din(1)">
-            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="1141" y="544" type="branch" />
-            <wire x2="1141" y1="544" y2="544" x1="1072" />
-            <wire x2="1184" y1="544" y2="544" x1="1141" />
+        <branch name="Dout(1)">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="1141" y="544" type="branch" />
+            <wire x2="1136" y1="544" y2="544" x1="1072" />
+            <wire x2="1184" y1="544" y2="544" x1="1136" />
         </branch>
         <bustap x2="688" y1="544" y2="544" x1="592" />
         <instance x="848" y="672" name="XLXI_3" orien="R0" />
         <branch name="Din(2)">
-            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="719" y="640" type="branch" />
-            <wire x2="719" y1="640" y2="640" x1="688" />
-            <wire x2="848" y1="640" y2="640" x1="719" />
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="719" y="640" type="branch" />
+            <wire x2="720" y1="640" y2="640" x1="688" />
+            <wire x2="848" y1="640" y2="640" x1="720" />
         </branch>
-        <branch name="Din(2)">
-            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="1141" y="640" type="branch" />
-            <wire x2="1141" y1="640" y2="640" x1="1072" />
-            <wire x2="1184" y1="640" y2="640" x1="1141" />
+        <branch name="Dout(2)">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="1141" y="640" type="branch" />
+            <wire x2="1136" y1="640" y2="640" x1="1072" />
+            <wire x2="1184" y1="640" y2="640" x1="1136" />
         </branch>
         <bustap x2="688" y1="640" y2="640" x1="592" />
         <instance x="848" y="768" name="XLXI_4" orien="R0" />
         <branch name="Din(3)">
-            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="719" y="736" type="branch" />
-            <wire x2="719" y1="736" y2="736" x1="688" />
-            <wire x2="848" y1="736" y2="736" x1="719" />
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="827" y="736" type="branch" />
+            <wire x2="720" y1="736" y2="736" x1="688" />
+            <wire x2="832" y1="736" y2="736" x1="720" />
+            <wire x2="848" y1="736" y2="736" x1="832" />
         </branch>
-        <branch name="Din(3)">
-            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="1141" y="736" type="branch" />
-            <wire x2="1141" y1="736" y2="736" x1="1072" />
-            <wire x2="1184" y1="736" y2="736" x1="1141" />
+        <branch name="Dout(3)">
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="1168" y="736" type="branch" />
+            <wire x2="1136" y1="736" y2="736" x1="1072" />
+            <wire x2="1168" y1="736" y2="736" x1="1136" />
+            <wire x2="1184" y1="736" y2="736" x1="1168" />
         </branch>
         <bustap x2="688" y1="736" y2="736" x1="592" />
         <instance x="848" y="864" name="XLXI_6" orien="R0" />
         <branch name="Din(4)">
-            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="719" y="832" type="branch" />
-            <wire x2="719" y1="832" y2="832" x1="688" />
-            <wire x2="848" y1="832" y2="832" x1="719" />
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="719" y="832" type="branch" />
+            <wire x2="720" y1="832" y2="832" x1="688" />
+            <wire x2="848" y1="832" y2="832" x1="720" />
         </branch>
-        <branch name="Din(4)">
-            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="1141" y="832" type="branch" />
-            <wire x2="1141" y1="832" y2="832" x1="1072" />
-            <wire x2="1184" y1="832" y2="832" x1="1141" />
+        <branch name="Dout(4)">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="1141" y="832" type="branch" />
+            <wire x2="1136" y1="832" y2="832" x1="1072" />
+            <wire x2="1184" y1="832" y2="832" x1="1136" />
         </branch>
         <bustap x2="688" y1="832" y2="832" x1="592" />
         <instance x="848" y="960" name="XLXI_7" orien="R0" />
         <branch name="Din(5)">
-            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="719" y="928" type="branch" />
-            <wire x2="719" y1="928" y2="928" x1="688" />
-            <wire x2="848" y1="928" y2="928" x1="719" />
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="719" y="928" type="branch" />
+            <wire x2="720" y1="928" y2="928" x1="688" />
+            <wire x2="848" y1="928" y2="928" x1="720" />
         </branch>
-        <branch name="Din(5)">
-            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="1141" y="928" type="branch" />
-            <wire x2="1141" y1="928" y2="928" x1="1072" />
-            <wire x2="1184" y1="928" y2="928" x1="1141" />
+        <branch name="Dout(5)">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="1141" y="928" type="branch" />
+            <wire x2="1136" y1="928" y2="928" x1="1072" />
+            <wire x2="1184" y1="928" y2="928" x1="1136" />
         </branch>
         <bustap x2="688" y1="928" y2="928" x1="592" />
         <instance x="848" y="1040" name="XLXI_8" orien="R0" />
         <branch name="Din(6)">
-            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="719" y="1008" type="branch" />
-            <wire x2="719" y1="1008" y2="1008" x1="688" />
-            <wire x2="848" y1="1008" y2="1008" x1="719" />
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="719" y="1008" type="branch" />
+            <wire x2="720" y1="1008" y2="1008" x1="688" />
+            <wire x2="848" y1="1008" y2="1008" x1="720" />
         </branch>
-        <branch name="Din(6)">
-            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="1141" y="1008" type="branch" />
-            <wire x2="1141" y1="1008" y2="1008" x1="1072" />
-            <wire x2="1184" y1="1008" y2="1008" x1="1141" />
+        <branch name="Dout(6)">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="1141" y="1008" type="branch" />
+            <wire x2="1136" y1="1008" y2="1008" x1="1072" />
+            <wire x2="1184" y1="1008" y2="1008" x1="1136" />
         </branch>
         <bustap x2="688" y1="1008" y2="1008" x1="592" />
         <instance x="848" y="1120" name="XLXI_9" orien="R0" />
         <branch name="Din(7)">
-            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="719" y="1088" type="branch" />
-            <wire x2="719" y1="1088" y2="1088" x1="688" />
-            <wire x2="848" y1="1088" y2="1088" x1="719" />
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="719" y="1088" type="branch" />
+            <wire x2="720" y1="1088" y2="1088" x1="688" />
+            <wire x2="848" y1="1088" y2="1088" x1="720" />
         </branch>
-        <branch name="Din(7)">
-            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="1141" y="1088" type="branch" />
-            <wire x2="1141" y1="1088" y2="1088" x1="1072" />
-            <wire x2="1184" y1="1088" y2="1088" x1="1141" />
+        <branch name="Dout(7)">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="1141" y="1088" type="branch" />
+            <wire x2="1136" y1="1088" y2="1088" x1="1072" />
+            <wire x2="1184" y1="1088" y2="1088" x1="1136" />
         </branch>
         <bustap x2="688" y1="1088" y2="1088" x1="592" />
-        <instance x="880" y="1360" name="XLXI_10" orien="R0" />
-        <branch name="D_inv(7:0)">
-            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="1150" y="1328" type="branch" />
-            <wire x2="1150" y1="1328" y2="1328" x1="1104" />
-            <wire x2="1200" y1="1328" y2="1328" x1="1150" />
-        </branch>
         <instance x="1520" y="1312" name="XLXI_12" orien="R0" />
         <instance x="2448" y="752" name="XLXI_14" orien="R0" />
         <instance x="2960" y="736" name="XLXI_15" orien="R0" />
@@ -465,5 +471,23 @@
         </branch>
         <instance x="1952" y="752" name="XLXI_13" orien="R0" />
         <iomarker fontsize="28" x="2240" y="464" name="LDA" orien="R0" />
+        <branch name="Dout(0)">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="1132" y="464" type="branch" />
+            <wire x2="1136" y1="464" y2="464" x1="1072" />
+            <wire x2="1200" y1="464" y2="464" x1="1136" />
+        </branch>
+        <branch name="Dout(7:0)">
+            <wire x2="1072" y1="176" y2="176" x1="784" />
+        </branch>
+        <iomarker fontsize="28" x="784" y="176" name="Dout(7:0)" orien="R180" />
+        <instance x="896" y="1712" name="XLXI_25" orien="R0" />
+        <branch name="D_Inv(7:0)">
+            <wire x2="1136" y1="1360" y2="1360" x1="1072" />
+            <wire x2="1072" y1="1360" y2="1456" x1="1072" />
+            <wire x2="1136" y1="1456" y2="1456" x1="1072" />
+            <wire x2="1136" y1="1456" y2="1680" x1="1136" />
+            <wire x2="1136" y1="1680" y2="1680" x1="1120" />
+        </branch>
+        <iomarker fontsize="28" x="1136" y="1360" name="D_Inv(7:0)" orien="R0" />
     </sheet>
 </drawing>

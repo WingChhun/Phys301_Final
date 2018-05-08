@@ -1,1 +1,2 @@
 sch2sym -intstyle ise -family spartan3e -w -refsym InstructionSymbols C:/Users/James/Documents/Xlink_projects/lab_final/lab_final/InstructionSymbols.sch C:/Users/James/Documents/Xlink_projects/lab_final/lab_final/InstructionSymbols.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym InstructionSymbols C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/InstructionSymbols.sch C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/InstructionSymbols.sym 

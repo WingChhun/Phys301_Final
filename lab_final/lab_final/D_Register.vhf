@@ -7,11 +7,11 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : D_Register.vhf
--- /___/   /\     Timestamp : 05/04/2018 21:52:23
+-- /___/   /\     Timestamp : 05/07/2018 18:33:56
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
---Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl C:/Users/James/Documents/Xlink_projects/lab_final/lab_final/D_Register.vhf -w C:/Users/James/Documents/Xlink_projects/lab_final/lab_final/D_Register.sch
+--Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/D_Register.vhf -w C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/D_Register.sch
 --Design Name: D_Register
 --Device: spartan3e
 --Purpose:
@@ -624,10 +624,10 @@ architecture BEHAVIORAL of D_Register is
    end component;
    attribute BOX_TYPE of AND3 : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_41 : label is "XLXI_41_41";
-   attribute HU_SET of XLXI_46 : label is "XLXI_46_38";
-   attribute HU_SET of XLXI_47 : label is "XLXI_47_39";
-   attribute HU_SET of XLXI_59 : label is "XLXI_59_40";
+   attribute HU_SET of XLXI_41 : label is "XLXI_41_99";
+   attribute HU_SET of XLXI_46 : label is "XLXI_46_96";
+   attribute HU_SET of XLXI_47 : label is "XLXI_47_97";
+   attribute HU_SET of XLXI_59 : label is "XLXI_59_98";
 begin
    G(7 downto 0) <= G_DUMMY(7 downto 0);
    Q(7 downto 0) <= Q_DUMMY(7 downto 0);

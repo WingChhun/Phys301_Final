@@ -21,6 +21,7 @@
         <signal name="A_hexO(7:0)" />
         <signal name="I_hexO(7:0)" />
         <signal name="D_hexO(7:0)" />
+        <signal name="A_shiftO(7:0)" />
         <port polarity="Input" name="binI(3:0)" />
         <port polarity="Input" name="CLR" />
         <port polarity="Input" name="DebugMode" />
@@ -36,6 +37,7 @@
         <port polarity="Output" name="A_hexO(7:0)" />
         <port polarity="Output" name="I_hexO(7:0)" />
         <port polarity="Output" name="D_hexO(7:0)" />
+        <port polarity="Output" name="A_shiftO(7:0)" />
         <blockdef name="Address">
             <timestamp>2018-5-5T5:6:11</timestamp>
             <rect width="64" x="400" y="20" height="24" />
@@ -103,7 +105,7 @@
             <blockpin signalname="btn_writeData" name="btn_writeData" />
             <blockpin signalname="WCLK_shiftReg" name="WCLK_shiftReg" />
             <blockpin name="Q(7:0)" />
-            <blockpin name="G(7:0)" />
+            <blockpin signalname="A_shiftO(7:0)" name="G(7:0)" />
             <blockpin signalname="AddressO(7:0)" name="AddressO(7:0)" />
             <blockpin signalname="A_hexO(7:0)" name="AddresshexO(7:0)" />
         </block>
@@ -271,5 +273,9 @@
             <wire x2="1424" y1="1584" y2="1584" x1="1392" />
         </branch>
         <iomarker fontsize="28" x="1424" y="1584" name="D_hexO(7:0)" orien="R0" />
+        <branch name="A_shiftO(7:0)">
+            <wire x2="1392" y1="160" y2="160" x1="1360" />
+        </branch>
+        <iomarker fontsize="28" x="1392" y="160" name="A_shiftO(7:0)" orien="R0" />
     </sheet>
 </drawing>

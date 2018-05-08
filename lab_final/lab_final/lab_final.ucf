@@ -8,7 +8,7 @@ NET "RunMode" LOC = N3; #Turn on for Run Mode, Off by default is Debug mode
 NET "RunModeLED" LOC = G1; #LED to display Run Mode, 1 for Run, 0 for Debug(default)
 
 NET "btn_writeData" LOC = M4; #BTN - Powers writeDataEnable
-
+NET "btn_writeData" CLOCK_DEDICATED_ROUTE = FALSE;
 NET "btn_CLR" LOC = G12; #CLEAR - current address in memory
 
 #NET "CLR_Data" LOC = P11; #CLEAR - current address in memory
@@ -22,7 +22,7 @@ NET "EN_hex" LOC = G3;
 NET "EnableDataLED" LOC = N4; #DEBUG - LED for Data Enable
 NET "EnableInstructionLED" LOC = P4; #DEBUG - Enable LED for Enable Instruction
 
-NET "WCLK_shiftReg" LOC = K3; #BTN - Powers writeAddress
+NET "WCLK_shiftReg" LOC = A7; #BTN - Powers writeAddress
 NET "WCLK_shiftReg" CLOCK_DEDICATED_ROUTE = FALSE;
 NET "AorD" LOC = P11; #Address or Data for programming purposes
 NET "IRorDR" LOC = L3; #DEBUG- load between Instruction register and data register
@@ -31,10 +31,10 @@ NET "SWITCH_SPeed" LOC = B4;
 #
 #Binary LED Output INstruction
 #
-#NET "I_Output[0]" LOC = M5;
-#NET "I_Output[1]" LOC = M11;
-#NET "I_Output[2]" LOC = P7;
-#NET "I_Output[3]" LOC = P6;
+NET "A_shiftO[0]" LOC = M5;
+NET "A_shiftO[1]" LOC = M11;
+NET "A_shiftO[2]" LOC = P7;
+NET "A_shiftO[3]" LOC = P6;
 
 #NET "D_Output[0]" LOC = M5;
 #NET "D_Output[1]" LOC = M11;

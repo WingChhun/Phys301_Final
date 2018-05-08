@@ -7,11 +7,11 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : hexShifter8.vhf
--- /___/   /\     Timestamp : 05/04/2018 21:52:24
+-- /___/   /\     Timestamp : 05/07/2018 18:33:57
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
---Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl C:/Users/James/Documents/Xlink_projects/lab_final/lab_final/hexShifter8.vhf -w C:/Users/James/Documents/Xlink_projects/lab_final/lab_final/hexShifter8.sch
+--Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/hexShifter8.vhf -w C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/hexShifter8.sch
 --Design Name: hexShifter8
 --Device: spartan3e
 --Purpose:

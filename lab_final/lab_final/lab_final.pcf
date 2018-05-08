@@ -1,9 +1,14 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Fri May 04 22:12:57 2018
+// Written by: Map P.20131013 on Mon May 07 18:34:34 2018
 //! **************************************************************************
 
 SCHEMATIC START;
-COMP "WCLK_shiftReg" LOCATE = SITE "K3" LEVEL 1;
+COMP "A_shiftO<0>" LOCATE = SITE "M5" LEVEL 1;
+COMP "A_shiftO<1>" LOCATE = SITE "M11" LEVEL 1;
+COMP "A_shiftO<2>" LOCATE = SITE "P7" LEVEL 1;
+COMP "A_shiftO<3>" LOCATE = SITE "P6" LEVEL 1;
+COMP "AorD" LOCATE = SITE "P11" LEVEL 1;
+COMP "WCLK_shiftReg" LOCATE = SITE "A7" LEVEL 1;
 PIN WCLK_shiftReg_pin<0> = BEL "WCLK_shiftReg" PINNAME PAD;
 PIN "WCLK_shiftReg_pin<0>" CLOCK_DEDICATED_ROUTE = FALSE;
 COMP "RunMode" LOCATE = SITE "N3" LEVEL 1;
@@ -20,7 +25,6 @@ COMP "sseg<3>" LOCATE = SITE "N11" LEVEL 1;
 COMP "sseg<4>" LOCATE = SITE "N14" LEVEL 1;
 COMP "sseg<5>" LOCATE = SITE "H12" LEVEL 1;
 COMP "sseg<6>" LOCATE = SITE "L14" LEVEL 1;
-COMP "sseg<7>" LOCATE = SITE "N13" LEVEL 1;
 COMP "EN_hex" LOCATE = SITE "G3" LEVEL 1;
 COMP "EN_D_Memory" LOCATE = SITE "F3" LEVEL 1;
 COMP "anO<0>" LOCATE = SITE "F12" LEVEL 1;
@@ -29,12 +33,15 @@ COMP "anO<2>" LOCATE = SITE "M13" LEVEL 1;
 COMP "anO<3>" LOCATE = SITE "K14" LEVEL 1;
 COMP "EN_I_Memory" LOCATE = SITE "E2" LEVEL 1;
 COMP "EnableInstructionLED" LOCATE = SITE "P4" LEVEL 1;
+COMP "SWITCH_SPeed" LOCATE = SITE "B4" LEVEL 1;
 COMP "row<0>" LOCATE = SITE "C6" LEVEL 1;
 COMP "row<1>" LOCATE = SITE "B6" LEVEL 1;
 COMP "row<2>" LOCATE = SITE "C5" LEVEL 1;
 COMP "row<3>" LOCATE = SITE "B7" LEVEL 1;
 COMP "RunModeLED" LOCATE = SITE "G1" LEVEL 1;
 COMP "btn_writeData" LOCATE = SITE "M4" LEVEL 1;
+PIN btn_writeData_pin<0> = BEL "btn_writeData" PINNAME PAD;
+PIN "btn_writeData_pin<0>" CLOCK_DEDICATED_ROUTE = FALSE;
 COMP "EnableDataLED" LOCATE = SITE "N4" LEVEL 1;
 NET "WCLK_shiftReg_BUFGP/IBUFG" BEL "WCLK_shiftReg_BUFGP/BUFG.GCLKMUX"
         USELOCALCONNECT;
