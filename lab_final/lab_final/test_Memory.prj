@@ -1,0 +1,8 @@
+vhdl work "../modules/SSD_1dig.vhd"
+vhdl work "../modules/sel_strobeB.vhd"
+vhdl work "../modules/mux4SSD.vhd"
+vhdl work "../modules/DCM_50M.vhd"
+vhdl work "../modules/bin2BCD3en.vhd"
+vhdl work "../modules/sRAM32x8_ex_pgm_instr.vhd"
+vhdl work "lab9_BCDBus.vhf"
+vhdl work "test_Memory.vhf"

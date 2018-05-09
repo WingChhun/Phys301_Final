@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : Address.vhf
--- /___/   /\     Timestamp : 05/07/2018 18:33:57
+-- /___/   /\     Timestamp : 05/08/2018 14:11:54
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -554,6 +554,8 @@ entity Address is
           CLR           : in    std_logic; 
           D             : in    std_logic_vector (3 downto 0); 
           DebugMode     : in    std_logic; 
+          EN_D_Memory   : in    std_logic; 
+          EN_I_Memory   : in    std_logic; 
           WCLK_shiftReg : in    std_logic; 
           AddresshexO   : out   std_logic_vector (7 downto 0); 
           AddressO      : out   std_logic_vector (7 downto 0); 
@@ -567,6 +569,7 @@ architecture BEHAVIORAL of Address is
    signal S                      : std_logic_vector (7 downto 0);
    signal XLXN_343               : std_logic;
    signal XLXN_351               : std_logic;
+   signal XLXN_358               : std_logic;
    signal G_DUMMY                : std_logic_vector (7 downto 0);
    signal Q_DUMMY                : std_logic_vector (7 downto 0);
    signal XLXI_46_CLR_openSignal : std_logic;
@@ -610,13 +613,6 @@ architecture BEHAVIORAL of Address is
              hexO : out   std_logic_vector (7 downto 0));
    end component;
    
-   component AND2
-      port ( I0 : in    std_logic; 
-             I1 : in    std_logic; 
-             O  : out   std_logic);
-   end component;
-   attribute BOX_TYPE of AND2 : component is "BLACK_BOX";
-   
    component AND4
       port ( I0 : in    std_logic; 
              I1 : in    std_logic; 
@@ -633,10 +629,29 @@ architecture BEHAVIORAL of Address is
    end component;
    attribute BOX_TYPE of OR2 : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_41 : label is "XLXI_41_130";
-   attribute HU_SET of XLXI_46 : label is "XLXI_46_127";
-   attribute HU_SET of XLXI_47 : label is "XLXI_47_128";
-   attribute HU_SET of XLXI_59 : label is "XLXI_59_129";
+   component AND4B2
+      port ( I0 : in    std_logic; 
+             I1 : in    std_logic; 
+             I2 : in    std_logic; 
+             I3 : in    std_logic; 
+             O  : out   std_logic);
+   end component;
+   attribute BOX_TYPE of AND4B2 : component is "BLACK_BOX";
+   
+   component AND5B2
+      port ( I0 : in    std_logic; 
+             I1 : in    std_logic; 
+             I2 : in    std_logic; 
+             I3 : in    std_logic; 
+             I4 : in    std_logic; 
+             O  : out   std_logic);
+   end component;
+   attribute BOX_TYPE of AND5B2 : component is "BLACK_BOX";
+   
+   attribute HU_SET of XLXI_41 : label is "XLXI_41_3";
+   attribute HU_SET of XLXI_46 : label is "XLXI_46_0";
+   attribute HU_SET of XLXI_47 : label is "XLXI_47_1";
+   attribute HU_SET of XLXI_59 : label is "XLXI_59_2";
 begin
    G(7 downto 0) <= G_DUMMY(7 downto 0);
    Q(7 downto 0) <= Q_DUMMY(7 downto 0);
@@ -648,7 +663,7 @@ begin
                 Q(7 downto 0)=>AddressO(7 downto 0));
    
    XLXI_46 : FD4CE_MXILINX_Address
-      port map (C=>btn_writeData,
+      port map (C=>XLXN_358,
                 CE=>XLXN_343,
                 CLR=>XLXI_46_CLR_openSignal,
                 D0=>D(0),
@@ -686,11 +701,6 @@ begin
                 I(3 downto 0)=>Q_DUMMY(3 downto 0),
                 hexO(7 downto 0)=>AddresshexO(7 downto 0));
    
-   XLXI_90 : AND2
-      port map (I0=>DebugMode,
-                I1=>AddressMode,
-                O=>XLXN_343);
-   
    XLXI_91 : AND4
       port map (I0=>G_DUMMY(0),
                 I1=>G_DUMMY(1),
@@ -700,8 +710,23 @@ begin
    
    XLXI_92 : OR2
       port map (I0=>XLXI_92_I0_openSignal,
-                I1=>btn_writeData,
+                I1=>XLXN_358,
                 O=>XLXN_351);
+   
+   XLXI_95 : AND4B2
+      port map (I0=>EN_D_Memory,
+                I1=>EN_I_Memory,
+                I2=>DebugMode,
+                I3=>AddressMode,
+                O=>XLXN_343);
+   
+   XLXI_96 : AND5B2
+      port map (I0=>EN_D_Memory,
+                I1=>EN_I_Memory,
+                I2=>DebugMode,
+                I3=>AddressMode,
+                I4=>btn_writeData,
+                O=>XLXN_358);
    
 end BEHAVIORAL;
 

@@ -1,2 +1,4 @@
 sch2sym -intstyle ise -family spartan3e -w -refsym ProgramGround C:/Users/James/Documents/Xlink_projects/lab_final/lab_final/ProgramGround.sch C:/Users/James/Documents/Xlink_projects/lab_final/lab_final/ProgramGround.sym 
 sch2sym -intstyle ise -family spartan3e -w -refsym ProgramGround C:/Users/James/Documents/Xlink_projects/lab_final/lab_final/ProgramGround.sch C:/Users/James/Documents/Xlink_projects/lab_final/lab_final/ProgramGround.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym ProgramGround C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/ProgramGround.sch C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/ProgramGround.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym ProgramGround C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/ProgramGround.sch C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/ProgramGround.sym 

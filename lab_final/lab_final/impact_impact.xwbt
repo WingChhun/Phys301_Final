@@ -1,8 +1,8 @@
 INTSTYLE=impact
-INFILE=C:\Users\James\Documents\Xlink_projects\lab_final\lab_final\impact.xsl
-OUTFILE=C:\Users\James\Documents\Xlink_projects\lab_final\lab_final\impact.xsl
+INFILE=C:\Users\James\Desktop\Github\School\Phys301\lab_final\lab_final\impact.xsl
+OUTFILE=C:\Users\James\Desktop\Github\School\Phys301\lab_final\lab_final\impact.xsl
 FAMILY=Multiple
 PART=Multiple
-WORKINGDIR=C:\Users\James\Documents\Xlink_projects\lab_final\lab_final
+WORKINGDIR=C:\Users\James\Desktop\Github\School\Phys301\lab_final\lab_final
 LICENSE=iMPACT
 USER_INFO=iMPACT

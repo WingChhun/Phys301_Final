@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : Output_DebugMode.vhf
--- /___/   /\     Timestamp : 05/07/2018 18:33:49
+-- /___/   /\     Timestamp : 05/08/2018 10:59:04
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -26,13 +26,14 @@ library UNISIM;
 use UNISIM.Vcomponents.ALL;
 
 entity Output_DebugMode is
-   port ( AddressIn : in    std_logic_vector (7 downto 0); 
-          Clock     : in    std_logic; 
-          DataInput : in    std_logic_vector (7 downto 0); 
-          DebugMode : in    std_logic; 
-          EN_hex    : in    std_logic; 
-          anO       : out   std_logic_vector (3 downto 0); 
-          sseg      : out   std_logic_vector (7 downto 0));
+   port ( AddressIn   : in    std_logic_vector (7 downto 0); 
+          Clock       : in    std_logic; 
+          DataInput   : in    std_logic_vector (7 downto 0); 
+          DebugMode   : in    std_logic; 
+          EN_hex      : in    std_logic; 
+          hex_Address : in    std_logic_vector (7 downto 0); 
+          anO         : out   std_logic_vector (3 downto 0); 
+          sseg        : out   std_logic_vector (7 downto 0));
 end Output_DebugMode;
 
 architecture BEHAVIORAL of Output_DebugMode is
@@ -163,7 +164,7 @@ begin
    
    XLXI_40 : bin2BCD3en
       port map (CLK=>XLXN_69,
-                Din(7 downto 0)=>AddressIn(7 downto 0),
+                Din(7 downto 0)=>hex_Address(7 downto 0),
                 En=>EN_hex,
                 Dout0(3 downto 0)=>Address0(3 downto 0),
                 Dout1(3 downto 0)=>Address1(3 downto 0),

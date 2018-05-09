@@ -1,0 +1,5 @@
+MODULE lab5_experiment3
+	SUBMODULE lab5_experiment2_addr_subtr
+		INSTANCE XLXI_5
+	SUBMODULE lab5_experiment2_addr_subtr
+		INSTANCE XLXI_6

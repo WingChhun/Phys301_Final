@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Mon May 07 18:34:34 2018
+// Written by: Map P.20131013 on Tue May 08 15:18:53 2018
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -26,6 +26,7 @@ COMP "sseg<4>" LOCATE = SITE "N14" LEVEL 1;
 COMP "sseg<5>" LOCATE = SITE "H12" LEVEL 1;
 COMP "sseg<6>" LOCATE = SITE "L14" LEVEL 1;
 COMP "EN_hex" LOCATE = SITE "G3" LEVEL 1;
+COMP "IRorDR" LOCATE = SITE "L3" LEVEL 1;
 COMP "EN_D_Memory" LOCATE = SITE "F3" LEVEL 1;
 COMP "anO<0>" LOCATE = SITE "F12" LEVEL 1;
 COMP "anO<1>" LOCATE = SITE "J12" LEVEL 1;

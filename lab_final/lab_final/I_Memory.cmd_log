@@ -16,3 +16,6 @@ sch2sym -intstyle ise -family spartan3e -w -refsym I_Memory C:/Users/James/Docum
 sch2sym -intstyle ise -family spartan3e -w -refsym I_Memory C:/Users/James/Documents/Xlink_projects/lab_final/lab_final/I_Memory.sch C:/Users/James/Documents/Xlink_projects/lab_final/lab_final/I_Memory.sym 
 sch2sym -intstyle ise -family spartan3e -w -refsym I_Memory C:/Users/James/Documents/Xlink_projects/lab_final/lab_final/I_Memory.sch C:/Users/James/Documents/Xlink_projects/lab_final/lab_final/I_Memory.sym 
 sch2sym -intstyle ise -family spartan3e -w -refsym I_Memory C:/Users/James/Documents/Xlink_projects/lab_final/lab_final/I_Memory.sch C:/Users/James/Documents/Xlink_projects/lab_final/lab_final/I_Memory.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym I_Memory C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/I_Memory.sch C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/I_Memory.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym I_Memory C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/I_Memory.sch C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/I_Memory.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym I_Memory C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/I_Memory.sch C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/I_Memory.sym 

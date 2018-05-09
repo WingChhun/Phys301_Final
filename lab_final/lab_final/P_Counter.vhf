@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : P_Counter.vhf
--- /___/   /\     Timestamp : 05/07/2018 18:33:56
+-- /___/   /\     Timestamp : 05/08/2018 10:45:36
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -183,7 +183,7 @@ architecture BEHAVIORAL of FTCLEX_MXILINX_P_Counter is
    end component;
    attribute BOX_TYPE of FDCE : component is "BLACK_BOX";
    
-   attribute HU_SET of I_36_30 : label is "I_36_30_100";
+   attribute HU_SET of I_36_30 : label is "I_36_30_93";
    attribute RLOC of I_36_35 : label is "X0Y0";
 begin
    Q <= Q_DUMMY;
@@ -338,14 +338,14 @@ architecture BEHAVIORAL of CB4CLED_MXILINX_P_Counter is
    end component;
    attribute BOX_TYPE of OR2 : component is "BLACK_BOX";
    
-   attribute HU_SET of I_Q0 : label is "I_Q0_104";
-   attribute HU_SET of I_Q1 : label is "I_Q1_103";
-   attribute HU_SET of I_Q2 : label is "I_Q2_102";
-   attribute HU_SET of I_Q3 : label is "I_Q3_101";
-   attribute HU_SET of I_TC : label is "I_TC_107";
-   attribute HU_SET of I_T1 : label is "I_T1_108";
-   attribute HU_SET of I_T2 : label is "I_T2_105";
-   attribute HU_SET of I_T3 : label is "I_T3_106";
+   attribute HU_SET of I_Q0 : label is "I_Q0_97";
+   attribute HU_SET of I_Q1 : label is "I_Q1_96";
+   attribute HU_SET of I_Q2 : label is "I_Q2_95";
+   attribute HU_SET of I_Q3 : label is "I_Q3_94";
+   attribute HU_SET of I_TC : label is "I_TC_100";
+   attribute HU_SET of I_T1 : label is "I_T1_101";
+   attribute HU_SET of I_T2 : label is "I_T2_98";
+   attribute HU_SET of I_T3 : label is "I_T3_99";
 begin
    Q0 <= Q0_DUMMY;
    Q1 <= Q1_DUMMY;
@@ -640,22 +640,22 @@ architecture BEHAVIORAL of CB8CLED_MXILINX_P_Counter is
    end component;
    attribute BOX_TYPE of OR2 : component is "BLACK_BOX";
    
-   attribute HU_SET of I_Q0 : label is "I_Q0_116";
-   attribute HU_SET of I_Q1 : label is "I_Q1_115";
-   attribute HU_SET of I_Q2 : label is "I_Q2_114";
-   attribute HU_SET of I_Q3 : label is "I_Q3_113";
-   attribute HU_SET of I_Q4 : label is "I_Q4_112";
-   attribute HU_SET of I_Q5 : label is "I_Q5_111";
-   attribute HU_SET of I_Q6 : label is "I_Q6_110";
-   attribute HU_SET of I_Q7 : label is "I_Q7_109";
-   attribute HU_SET of I_TC : label is "I_TC_121";
-   attribute HU_SET of I_T1 : label is "I_T1_124";
-   attribute HU_SET of I_T2 : label is "I_T2_117";
-   attribute HU_SET of I_T3 : label is "I_T3_118";
-   attribute HU_SET of I_T4 : label is "I_T4_123";
-   attribute HU_SET of I_T5 : label is "I_T5_122";
-   attribute HU_SET of I_T6 : label is "I_T6_119";
-   attribute HU_SET of I_T7 : label is "I_T7_120";
+   attribute HU_SET of I_Q0 : label is "I_Q0_109";
+   attribute HU_SET of I_Q1 : label is "I_Q1_108";
+   attribute HU_SET of I_Q2 : label is "I_Q2_107";
+   attribute HU_SET of I_Q3 : label is "I_Q3_106";
+   attribute HU_SET of I_Q4 : label is "I_Q4_105";
+   attribute HU_SET of I_Q5 : label is "I_Q5_104";
+   attribute HU_SET of I_Q6 : label is "I_Q6_103";
+   attribute HU_SET of I_Q7 : label is "I_Q7_102";
+   attribute HU_SET of I_TC : label is "I_TC_114";
+   attribute HU_SET of I_T1 : label is "I_T1_117";
+   attribute HU_SET of I_T2 : label is "I_T2_110";
+   attribute HU_SET of I_T3 : label is "I_T3_111";
+   attribute HU_SET of I_T4 : label is "I_T4_116";
+   attribute HU_SET of I_T5 : label is "I_T5_115";
+   attribute HU_SET of I_T6 : label is "I_T6_112";
+   attribute HU_SET of I_T7 : label is "I_T7_113";
 begin
    Q(7 downto 0) <= Q_DUMMY(7 downto 0);
    TC <= TC_DUMMY;
@@ -977,8 +977,8 @@ architecture BEHAVIORAL of P_Counter is
    end component;
    attribute BOX_TYPE of AND3B2 : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_1 : label is "XLXI_1_125";
-   attribute HU_SET of XLXI_6 : label is "XLXI_6_126";
+   attribute HU_SET of XLXI_1 : label is "XLXI_1_118";
+   attribute HU_SET of XLXI_6 : label is "XLXI_6_119";
 begin
    Q(7 downto 0) <= Q_DUMMY(7 downto 0);
    XLXI_1 : CB8CLED_MXILINX_P_Counter

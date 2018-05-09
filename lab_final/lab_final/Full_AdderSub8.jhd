@@ -1,0 +1,5 @@
+MODULE Full_AdderSub8
+	SUBMODULE addersub8
+		INSTANCE XLXI_2
+	SUBMODULE addersub8
+		INSTANCE XLXI_3

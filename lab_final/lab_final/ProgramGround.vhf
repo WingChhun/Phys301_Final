@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : ProgramGround.vhf
--- /___/   /\     Timestamp : 05/07/2018 18:33:55
+-- /___/   /\     Timestamp : 05/08/2018 10:45:37
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -339,21 +339,21 @@ architecture BEHAVIORAL of InstructionSymbols_MUSER_ProgramGround is
              O : out   std_logic_vector (7 downto 0));
    end component;
    
-   attribute HU_SET of XLXI_11 : label is "XLXI_11_93";
-   attribute HU_SET of XLXI_12 : label is "XLXI_12_81";
-   attribute HU_SET of XLXI_13 : label is "XLXI_13_94";
-   attribute HU_SET of XLXI_14 : label is "XLXI_14_82";
-   attribute HU_SET of XLXI_15 : label is "XLXI_15_83";
-   attribute HU_SET of XLXI_16 : label is "XLXI_16_84";
-   attribute HU_SET of XLXI_17 : label is "XLXI_17_85";
-   attribute HU_SET of XLXI_18 : label is "XLXI_18_86";
-   attribute HU_SET of XLXI_19 : label is "XLXI_19_87";
-   attribute HU_SET of XLXI_20 : label is "XLXI_20_88";
-   attribute HU_SET of XLXI_21 : label is "XLXI_21_89";
-   attribute HU_SET of XLXI_22 : label is "XLXI_22_90";
-   attribute HU_SET of XLXI_23 : label is "XLXI_23_91";
-   attribute HU_SET of XLXI_24 : label is "XLXI_24_92";
-   attribute HU_SET of XLXI_25 : label is "XLXI_25_95";
+   attribute HU_SET of XLXI_11 : label is "XLXI_11_132";
+   attribute HU_SET of XLXI_12 : label is "XLXI_12_120";
+   attribute HU_SET of XLXI_13 : label is "XLXI_13_133";
+   attribute HU_SET of XLXI_14 : label is "XLXI_14_121";
+   attribute HU_SET of XLXI_15 : label is "XLXI_15_122";
+   attribute HU_SET of XLXI_16 : label is "XLXI_16_123";
+   attribute HU_SET of XLXI_17 : label is "XLXI_17_124";
+   attribute HU_SET of XLXI_18 : label is "XLXI_18_125";
+   attribute HU_SET of XLXI_19 : label is "XLXI_19_126";
+   attribute HU_SET of XLXI_20 : label is "XLXI_20_127";
+   attribute HU_SET of XLXI_21 : label is "XLXI_21_128";
+   attribute HU_SET of XLXI_22 : label is "XLXI_22_129";
+   attribute HU_SET of XLXI_23 : label is "XLXI_23_130";
+   attribute HU_SET of XLXI_24 : label is "XLXI_24_131";
+   attribute HU_SET of XLXI_25 : label is "XLXI_25_134";
 begin
    Dout_DUMMY(7 downto 0) <= Dout(7 downto 0);
    XLXI_1 : BUF

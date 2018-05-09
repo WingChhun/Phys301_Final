@@ -1,0 +1,3 @@
+sch2sym -intstyle ise -family spartan3e -w -refsym FA C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/FA.sch C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/FA.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym FA C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/FA.sch C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/FA.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym FA C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/FA.sch C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/FA.sym 

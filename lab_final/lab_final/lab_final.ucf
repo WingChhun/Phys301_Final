@@ -10,6 +10,7 @@ NET "RunModeLED" LOC = G1; #LED to display Run Mode, 1 for Run, 0 for Debug(defa
 NET "btn_writeData" LOC = M4; #BTN - Powers writeDataEnable
 NET "btn_writeData" CLOCK_DEDICATED_ROUTE = FALSE;
 NET "btn_CLR" LOC = G12; #CLEAR - current address in memory
+NET "btn_Memory" LOC = C11; #Button to write to memory
 
 #NET "CLR_Data" LOC = P11; #CLEAR - current address in memory
 #NET "CLR_Address" LOC = L3; #CLEAR - current address in memory
@@ -35,6 +36,19 @@ NET "A_shiftO[0]" LOC = M5;
 NET "A_shiftO[1]" LOC = M11;
 NET "A_shiftO[2]" LOC = P7;
 NET "A_shiftO[3]" LOC = P6;
+
+
+
+#Flag switch for subtraction or addition, 
+# 0 = Addition
+# 1 = Subtraction
+
+#NET "Flag" LOC = G12;
+
+#NET "A_shiftO[0]" LOC = M5;
+#NET "A_shiftO[1]" LOC = M11;
+#NET "A_shiftO[2]" LOC = P7;
+#NET "A_shiftO[3]" LOC = P6;
 
 #NET "D_Output[0]" LOC = M5;
 #NET "D_Output[1]" LOC = M11;

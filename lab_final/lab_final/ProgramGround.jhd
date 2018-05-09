@@ -1,3 +1,5 @@
 MODULE ProgramGround
-	SUBMODULE InstructionSymbols
+	SUBMODULE Full_AdderSub8
+		INSTANCE XLXI_2
+	SUBMODULE ISA
 		INSTANCE XLXI_1

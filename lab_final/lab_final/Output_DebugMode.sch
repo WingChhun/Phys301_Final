@@ -18,7 +18,6 @@
         <signal name="dp_in(1)" />
         <signal name="dp_in(2)" />
         <signal name="dp_in(3)" />
-        <signal name="AddressIn(7:0)" />
         <signal name="Address0(3:0)" />
         <signal name="Address1(3:0)" />
         <signal name="XLXN_69" />
@@ -31,15 +30,15 @@
         <signal name="Test_thenChangetoPullup" />
         <signal name="XLXN_86" />
         <signal name="hex_Address(7:0)" />
-        <signal name="XLXN_88(7:0)" />
+        <signal name="AddressIn(7:0)" />
         <port polarity="Output" name="sseg(7:0)" />
         <port polarity="Input" name="DataInput(7:0)" />
         <port polarity="Output" name="anO(3:0)" />
-        <port polarity="Input" name="AddressIn(7:0)" />
         <port polarity="Input" name="Clock" />
         <port polarity="Input" name="EN_hex" />
         <port polarity="Input" name="DebugMode" />
         <port polarity="Input" name="hex_Address(7:0)" />
+        <port polarity="Input" name="AddressIn(7:0)" />
         <blockdef name="SSD_1dig">
             <timestamp>2018-4-26T17:39:11</timestamp>
             <rect width="256" x="64" y="-128" height="128" />
@@ -337,13 +336,9 @@
         </branch>
         <iomarker fontsize="28" x="224" y="64" name="EN_hex" orien="R180" />
         <iomarker fontsize="28" x="224" y="144" name="DebugMode" orien="R180" />
-        <branch name="AddressIn(7:0)">
-            <wire x2="368" y1="432" y2="432" x1="208" />
-        </branch>
         <branch name="DataInput(7:0)">
             <wire x2="368" y1="480" y2="480" x1="208" />
         </branch>
-        <iomarker fontsize="28" x="208" y="432" name="AddressIn(7:0)" orien="R180" />
         <iomarker fontsize="28" x="208" y="480" name="DataInput(7:0)" orien="R180" />
         <branch name="XLXN_84">
             <wire x2="2592" y1="560" y2="560" x1="2384" />
@@ -375,5 +370,9 @@
             <wire x2="512" y1="448" y2="544" x1="512" />
         </branch>
         <iomarker fontsize="28" x="352" y="544" name="hex_Address(7:0)" orien="R180" />
+        <branch name="AddressIn(7:0)">
+            <wire x2="368" y1="432" y2="432" x1="208" />
+        </branch>
+        <iomarker fontsize="28" x="208" y="432" name="AddressIn(7:0)" orien="R180" />
     </sheet>
 </drawing>

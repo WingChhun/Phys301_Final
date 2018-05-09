@@ -18,16 +18,33 @@
         <signal name="count_32" />
         <signal name="CLK_Speed" />
         <signal name="XLXN_17" />
-        <signal name="XLXN_19" />
-        <signal name="XLXN_20" />
-        <signal name="XLXN_21" />
-        <signal name="CLR_4ticks" />
+        <signal name="Q2" />
+        <signal name="Q1" />
         <signal name="Q(7:0)" />
         <signal name="Step" />
+        <signal name="XLXN_22" />
+        <signal name="on4ticks" />
+        <signal name="CLK_Step" />
+        <signal name="XLXN_26" />
+        <signal name="XLXN_27" />
+        <signal name="XLXN_28" />
+        <signal name="XLXN_29" />
+        <signal name="XLXN_31" />
+        <signal name="XLXN_34" />
+        <signal name="tick1" />
+        <signal name="Q3" />
+        <signal name="XLXN_41" />
+        <signal name="XLXN_51" />
+        <signal name="tick2" />
+        <signal name="tick3" />
+        <signal name="Q0" />
         <port polarity="Input" name="RunMode" />
         <port polarity="Input" name="CLK_Speed" />
         <port polarity="Output" name="Q(7:0)" />
         <port polarity="Input" name="Step" />
+        <port polarity="Output" name="tick1" />
+        <port polarity="Output" name="tick2" />
+        <port polarity="Output" name="tick3" />
         <blockdef name="cb8cled">
             <timestamp>2000-1-1T10:10:10</timestamp>
             <rect width="64" x="0" y="-460" height="24" />
@@ -124,8 +141,20 @@
             <line x2="64" y1="-80" y2="-80" x1="144" />
             <line x2="144" y1="-176" y2="-176" x1="64" />
         </blockdef>
+        <blockdef name="and3b1">
+            <timestamp>2000-1-1T10:10:10</timestamp>
+            <line x2="40" y1="-64" y2="-64" x1="0" />
+            <circle r="12" cx="52" cy="-64" />
+            <line x2="64" y1="-128" y2="-128" x1="0" />
+            <line x2="64" y1="-192" y2="-192" x1="0" />
+            <line x2="192" y1="-128" y2="-128" x1="256" />
+            <line x2="64" y1="-64" y2="-192" x1="64" />
+            <arc ex="144" ey="-176" sx="144" sy="-80" r="48" cx="144" cy="-128" />
+            <line x2="64" y1="-80" y2="-80" x1="144" />
+            <line x2="144" y1="-176" y2="-176" x1="64" />
+        </blockdef>
         <block symbolname="cb8cled" name="XLXI_1">
-            <blockpin signalname="CLR_4ticks" name="C" />
+            <blockpin signalname="CLK_Step" name="C" />
             <blockpin signalname="RunMode" name="CE" />
             <blockpin signalname="XLXN_7" name="CLR" />
             <blockpin name="D(7:0)" />
@@ -154,7 +183,7 @@
         <block symbolname="cb4cled" name="XLXI_6">
             <blockpin signalname="CLK_Speed" name="C" />
             <blockpin signalname="RunMode" name="CE" />
-            <blockpin signalname="CLR_4ticks" name="CLR" />
+            <blockpin signalname="on4ticks" name="CLR" />
             <blockpin name="D0" />
             <blockpin name="D1" />
             <blockpin name="D2" />
@@ -162,9 +191,9 @@
             <blockpin name="L" />
             <blockpin signalname="XLXN_17" name="UP" />
             <blockpin name="CEO" />
-            <blockpin signalname="XLXN_20" name="Q0" />
-            <blockpin signalname="XLXN_21" name="Q1" />
-            <blockpin signalname="XLXN_19" name="Q2" />
+            <blockpin signalname="Q0" name="Q0" />
+            <blockpin signalname="Q1" name="Q1" />
+            <blockpin signalname="Q2" name="Q2" />
             <blockpin name="Q3" />
             <blockpin name="TC" />
         </block>
@@ -172,10 +201,33 @@
             <blockpin signalname="XLXN_17" name="O" />
         </block>
         <block symbolname="and3b2" name="XLXI_9">
-            <blockpin signalname="XLXN_21" name="I0" />
-            <blockpin signalname="XLXN_20" name="I1" />
-            <blockpin signalname="XLXN_19" name="I2" />
-            <blockpin signalname="CLR_4ticks" name="O" />
+            <blockpin signalname="Q1" name="I0" />
+            <blockpin signalname="Q0" name="I1" />
+            <blockpin signalname="Q2" name="I2" />
+            <blockpin signalname="on4ticks" name="O" />
+        </block>
+        <block symbolname="or2" name="XLXI_10">
+            <blockpin signalname="on4ticks" name="I0" />
+            <blockpin signalname="Step" name="I1" />
+            <blockpin signalname="CLK_Step" name="O" />
+        </block>
+        <block symbolname="and3b2" name="XLXI_11">
+            <blockpin signalname="Q3" name="I0" />
+            <blockpin signalname="Q2" name="I1" />
+            <blockpin signalname="Q1" name="I2" />
+            <blockpin signalname="tick2" name="O" />
+        </block>
+        <block symbolname="and3b2" name="XLXI_13">
+            <blockpin signalname="Q3" name="I0" />
+            <blockpin signalname="Q2" name="I1" />
+            <blockpin signalname="Q0" name="I2" />
+            <blockpin signalname="tick1" name="O" />
+        </block>
+        <block symbolname="and3b1" name="XLXI_12">
+            <blockpin signalname="Q2" name="I0" />
+            <blockpin signalname="Q1" name="I1" />
+            <blockpin signalname="Q0" name="I2" />
+            <blockpin signalname="tick3" name="O" />
         </block>
     </netlist>
     <sheet sheetnum="1" width="3520" height="2720">
@@ -285,40 +337,121 @@
             <wire x2="2288" y1="1040" y2="1040" x1="2192" />
         </branch>
         <instance x="2784" y="784" name="XLXI_9" orien="R0" />
-        <branch name="XLXN_19">
+        <branch name="Q2">
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="2749" y="592" type="branch" />
             <wire x2="2720" y1="720" y2="720" x1="2672" />
             <wire x2="2720" y1="592" y2="720" x1="2720" />
-            <wire x2="2784" y1="592" y2="592" x1="2720" />
+            <wire x2="2749" y1="592" y2="592" x1="2720" />
+            <wire x2="2784" y1="592" y2="592" x1="2749" />
         </branch>
-        <branch name="XLXN_20">
+        <branch name="Q0">
             <wire x2="2704" y1="592" y2="592" x1="2672" />
             <wire x2="2704" y1="592" y2="656" x1="2704" />
             <wire x2="2784" y1="656" y2="656" x1="2704" />
         </branch>
-        <branch name="XLXN_21">
+        <branch name="Q1">
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="2752" y="704" type="branch" />
             <wire x2="2688" y1="656" y2="656" x1="2672" />
             <wire x2="2688" y1="656" y2="704" x1="2688" />
-            <wire x2="2768" y1="704" y2="704" x1="2688" />
+            <wire x2="2752" y1="704" y2="704" x1="2688" />
+            <wire x2="2768" y1="704" y2="704" x1="2752" />
             <wire x2="2768" y1="704" y2="720" x1="2768" />
             <wire x2="2784" y1="720" y2="720" x1="2768" />
         </branch>
-        <branch name="CLR_4ticks">
-            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="2684" y="1280" type="branch" />
-            <wire x2="480" y1="1024" y2="1616" x1="480" />
-            <wire x2="2288" y1="1616" y2="1616" x1="480" />
-            <wire x2="592" y1="1024" y2="1024" x1="480" />
-            <wire x2="2288" y1="1200" y2="1280" x1="2288" />
-            <wire x2="2688" y1="1280" y2="1280" x1="2288" />
-            <wire x2="3120" y1="1280" y2="1280" x1="2688" />
-            <wire x2="2288" y1="1280" y2="1616" x1="2288" />
-            <wire x2="3120" y1="656" y2="656" x1="3040" />
-            <wire x2="3120" y1="656" y2="1280" x1="3120" />
-        </branch>
         <iomarker fontsize="28" x="544" y="960" name="RunMode" orien="R180" />
         <branch name="Step">
-            <wire x2="480" y1="272" y2="272" x1="272" />
+            <wire x2="256" y1="1344" y2="1344" x1="176" />
+            <wire x2="256" y1="1344" y2="1600" x1="256" />
+            <wire x2="336" y1="1600" y2="1600" x1="256" />
+            <wire x2="336" y1="1584" y2="1600" x1="336" />
         </branch>
-        <iomarker fontsize="28" x="272" y="272" name="Step" orien="R180" />
         <iomarker fontsize="28" x="1104" y="1232" name="Q(7:0)" orien="R0" />
+        <instance x="464" y="1584" name="XLXI_10" orien="R270" />
+        <branch name="on4ticks">
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="1002" y="1664" type="branch" />
+            <wire x2="400" y1="1584" y2="1664" x1="400" />
+            <wire x2="1002" y1="1664" y2="1664" x1="400" />
+            <wire x2="2320" y1="1664" y2="1664" x1="1002" />
+            <wire x2="3120" y1="1664" y2="1664" x1="2320" />
+            <wire x2="2288" y1="1200" y2="1424" x1="2288" />
+            <wire x2="2320" y1="1424" y2="1424" x1="2288" />
+            <wire x2="2320" y1="1424" y2="1664" x1="2320" />
+            <wire x2="3120" y1="656" y2="656" x1="3040" />
+            <wire x2="3120" y1="656" y2="1664" x1="3120" />
+        </branch>
+        <branch name="CLK_Step">
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="368" y="1024" type="branch" />
+            <wire x2="592" y1="1024" y2="1024" x1="368" />
+            <wire x2="368" y1="1024" y2="1328" x1="368" />
+        </branch>
+        <iomarker fontsize="28" x="176" y="1344" name="Step" orien="R180" />
+        <instance x="2432" y="320" name="XLXI_11" orien="R0" />
+        <instance x="2032" y="304" name="XLXI_13" orien="R0" />
+        <branch name="tick1">
+            <wire x2="2192" y1="272" y2="368" x1="2192" />
+            <wire x2="2256" y1="368" y2="368" x1="2192" />
+            <wire x2="2304" y1="272" y2="272" x1="2192" />
+            <wire x2="2304" y1="176" y2="176" x1="2288" />
+            <wire x2="2304" y1="176" y2="272" x1="2304" />
+        </branch>
+        <branch name="Q0">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1968" y="112" type="branch" />
+            <wire x2="2032" y1="112" y2="112" x1="1968" />
+        </branch>
+        <branch name="Q3">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1968" y="240" type="branch" />
+            <wire x2="2016" y1="240" y2="240" x1="1968" />
+            <wire x2="2032" y1="240" y2="240" x1="2016" />
+        </branch>
+        <branch name="Q2">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1968" y="176" type="branch" />
+            <wire x2="2032" y1="176" y2="176" x1="1968" />
+        </branch>
+        <iomarker fontsize="28" x="2256" y="368" name="tick1" orien="R0" />
+        <branch name="Q1">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2368" y="128" type="branch" />
+            <wire x2="2432" y1="128" y2="128" x1="2368" />
+        </branch>
+        <branch name="Q2">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2368" y="192" type="branch" />
+            <wire x2="2432" y1="192" y2="192" x1="2368" />
+        </branch>
+        <branch name="Q3">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2368" y="256" type="branch" />
+            <wire x2="2416" y1="256" y2="256" x1="2368" />
+            <wire x2="2432" y1="256" y2="256" x1="2416" />
+        </branch>
+        <branch name="tick2">
+            <wire x2="2640" y1="272" y2="272" x1="2624" />
+            <wire x2="2640" y1="272" y2="400" x1="2640" />
+            <wire x2="2624" y1="272" y2="336" x1="2624" />
+            <wire x2="2736" y1="336" y2="336" x1="2624" />
+            <wire x2="2672" y1="384" y2="384" x1="2624" />
+            <wire x2="2624" y1="384" y2="400" x1="2624" />
+            <wire x2="2640" y1="400" y2="400" x1="2624" />
+            <wire x2="2736" y1="192" y2="192" x1="2688" />
+            <wire x2="2736" y1="192" y2="336" x1="2736" />
+        </branch>
+        <iomarker fontsize="28" x="2672" y="384" name="tick2" orien="R0" />
+        <branch name="tick3">
+            <wire x2="1984" y1="528" y2="528" x1="1888" />
+        </branch>
+        <instance x="1632" y="656" name="XLXI_12" orien="R0" />
+        <iomarker fontsize="28" x="1984" y="528" name="tick3" orien="R0" />
+        <branch name="Q0">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1568" y="464" type="branch" />
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="1598" y="464" type="branch" />
+            <wire x2="1598" y1="464" y2="464" x1="1568" />
+            <wire x2="1632" y1="464" y2="464" x1="1598" />
+        </branch>
+        <branch name="Q1">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1568" y="528" type="branch" />
+            <wire x2="1632" y1="528" y2="528" x1="1568" />
+        </branch>
+        <branch name="Q2">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1568" y="592" type="branch" />
+            <wire x2="1616" y1="592" y2="592" x1="1568" />
+            <wire x2="1632" y1="592" y2="592" x1="1616" />
+        </branch>
     </sheet>
 </drawing>

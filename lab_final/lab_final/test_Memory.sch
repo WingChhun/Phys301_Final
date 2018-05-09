@@ -15,12 +15,16 @@
         <signal name="CLK" />
         <signal name="XLXN_30" />
         <signal name="A(3:0)" />
+        <signal name="sseg(7:0)" />
+        <signal name="anO(3:0)" />
         <port polarity="Input" name="D(7:0)" />
         <port polarity="Input" name="nCS" />
         <port polarity="Input" name="nWE" />
         <port polarity="Input" name="WCLK" />
         <port polarity="Input" name="A(4:0)" />
         <port polarity="Input" name="CLK" />
+        <port polarity="Output" name="sseg(7:0)" />
+        <port polarity="Output" name="anO(3:0)" />
         <blockdef name="sRAM32x8_ex_pgm_instr">
             <timestamp>2018-4-26T17:40:14</timestamp>
             <rect width="256" x="64" y="-320" height="320" />
@@ -80,8 +84,8 @@
             <blockpin signalname="XLXN_30" name="En" />
             <blockpin signalname="XLXN_1(7:0)" name="Din(7:0)" />
             <blockpin signalname="CLK" name="Clock" />
-            <blockpin name="sseg(7:0)" />
-            <blockpin name="anO(3:0)" />
+            <blockpin signalname="sseg(7:0)" name="sseg(7:0)" />
+            <blockpin signalname="anO(3:0)" name="anO(3:0)" />
             <blockpin signalname="A(3:0)" name="A(3:0)" />
         </block>
     </netlist>
@@ -147,5 +151,13 @@
             <wire x2="1120" y1="752" y2="752" x1="1104" />
             <wire x2="1216" y1="752" y2="752" x1="1120" />
         </branch>
+        <branch name="sseg(7:0)">
+            <wire x2="1632" y1="496" y2="496" x1="1600" />
+        </branch>
+        <iomarker fontsize="28" x="1632" y="496" name="sseg(7:0)" orien="R0" />
+        <branch name="anO(3:0)">
+            <wire x2="1632" y1="688" y2="688" x1="1600" />
+        </branch>
+        <iomarker fontsize="28" x="1632" y="688" name="anO(3:0)" orien="R0" />
     </sheet>
 </drawing>

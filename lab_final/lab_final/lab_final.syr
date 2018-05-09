@@ -3,14 +3,14 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.15 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.26 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.15 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.26 secs
  
 --> Reading design: lab_final.prj
 
@@ -105,354 +105,326 @@ Slice Utilization Ratio Delta      : 5
 *                          HDL Compilation                              *
 =========================================================================
 Compiling vhdl file "C:/Users/James/Desktop/Github/School/Phys301/lab_final/modules/debounce.vhd" in Library work.
-Entity <switch_debounce> compiled.
-Entity <switch_debounce> (Architecture <Behavioral>) compiled.
+Architecture behavioral of Entity switch_debounce is up to date.
 Compiling vhdl file "C:/Users/James/Desktop/Github/School/Phys301/lab_final/modules/CRenc4bin.vhd" in Library work.
-Entity <CRenc4bin> compiled.
-Entity <CRenc4bin> (Architecture <Behavioral>) compiled.
+Architecture behavioral of Entity crenc4bin is up to date.
 Compiling vhdl file "C:/Users/James/Desktop/Github/School/Phys301/lab_final/modules/DCM_100M.vhd" in Library work.
-Entity <DCM_100M> compiled.
-Entity <DCM_100M> (Architecture <Behavioral>) compiled.
+Architecture behavioral of Entity dcm_100m is up to date.
 Compiling vhdl file "C:/Users/James/Desktop/Github/School/Phys301/lab_final/modules/key_detect.vhd" in Library work.
-Entity <key_detect> compiled.
-Entity <key_detect> (Architecture <Behavioral>) compiled.
+Architecture behavioral of Entity key_detect is up to date.
 Compiling vhdl file "C:/Users/James/Documents/Xlink_projects/lab_final/modules/col_strobe.vhd" in Library work.
-Entity <col_strobe> compiled.
-Entity <col_strobe> (Architecture <Behavioral>) compiled.
+Architecture behavioral of Entity col_strobe is up to date.
 Compiling vhdl file "C:/Users/James/Desktop/Github/School/Phys301/lab_final/modules/oneshot.vhd" in Library work.
-Entity <oneshot> compiled.
-Entity <oneshot> (Architecture <Behavioral>) compiled.
+Architecture behavioral of Entity oneshot is up to date.
 Compiling vhdl file "C:/Users/James/Desktop/Github/School/Phys301/lab_final/modules/decoder16keyEn.vhd" in Library work.
-Entity <decoder16keyEn> compiled.
-Entity <decoder16keyEn> (Architecture <Doric>) compiled.
+Architecture doric of Entity decoder16keyen is up to date.
 Compiling vhdl file "C:/Users/James/Desktop/Github/School/Phys301/lab_final/modules/key4_dbnc.vhd" in Library work.
-Entity <key4_dbnc> compiled.
-Entity <key4_dbnc> (Architecture <Behavioral>) compiled.
+Architecture behavioral of Entity key4_dbnc is up to date.
 Compiling vhdl file "C:/Users/James/Desktop/Github/School/Phys301/lab_final/modules/sel_strobeB.vhd" in Library work.
-Entity <sel_strobeB> compiled.
-Entity <sel_strobeB> (Architecture <Behavioral>) compiled.
+Architecture behavioral of Entity sel_strobeb is up to date.
 Compiling vhdl file "C:/Users/James/Desktop/Github/School/Phys301/lab_final/modules/bin2BCD3en.vhd" in Library work.
-Entity <bin2BCD3en> compiled.
-Entity <bin2BCD3en> (Architecture <Behavioral>) compiled.
+Architecture behavioral of Entity bin2bcd3en is up to date.
 Compiling vhdl file "C:/Users/James/Desktop/Github/School/Phys301/lab_final/modules/mux4SSD.vhd" in Library work.
-Entity <mux4SSD> compiled.
-Entity <mux4SSD> (Architecture <Behavioral>) compiled.
+Architecture behavioral of Entity mux4ssd is up to date.
 Compiling vhdl file "C:/Users/James/Desktop/Github/School/Phys301/lab_final/modules/SSD_1dig.vhd" in Library work.
-Entity <SSD_1dig> compiled.
-Entity <SSD_1dig> (Architecture <Behavioral>) compiled.
+Architecture behavioral of Entity ssd_1dig is up to date.
 Compiling vhdl file "C:/Users/James/Desktop/Github/School/Phys301/lab_final/modules/sRAM32x8_ex_pgm_instr.vhd" in Library work.
-Entity <sRAM32x8_ex_pgm_instr> compiled.
-Entity <sRAM32x8_ex_pgm_instr> (Architecture <Behavioral>) compiled.
+Architecture behavioral of Entity sram32x8_ex_pgm_instr is up to date.
 Compiling vhdl file "C:/Users/James/Desktop/Github/School/Phys301/lab_final/modules/sRAM32x8_ex_pgm_data.vhd" in Library work.
-Entity <sRAM32x8_ex_pgm_data> compiled.
-Entity <sRAM32x8_ex_pgm_data> (Architecture <Behavioral>) compiled.
+Architecture behavioral of Entity sram32x8_ex_pgm_data is up to date.
 Compiling vhdl file "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_KEYPAD_FINAL.vhf" in Library work.
-Entity <lab_KEYPAD_FINAL> compiled.
-Entity <lab_KEYPAD_FINAL> (Architecture <BEHAVIORAL>) compiled.
+Architecture behavioral of Entity lab_keypad_final is up to date.
 Compiling vhdl file "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" in Library work.
-Entity <INV8_MXILINX_lab_final> compiled.
-Entity <INV8_MXILINX_lab_final> (Architecture <BEHAVIORAL>) compiled.
-Entity <AND8_MXILINX_lab_final> compiled.
-Entity <AND8_MXILINX_lab_final> (Architecture <BEHAVIORAL>) compiled.
-Entity <InstructionSymbols_MUSER_lab_final> compiled.
-Entity <InstructionSymbols_MUSER_lab_final> (Architecture <BEHAVIORAL>) compiled.
-Entity <ProgramGround_MUSER_lab_final> compiled.
-Entity <ProgramGround_MUSER_lab_final> (Architecture <BEHAVIORAL>) compiled.
-Entity <MUX8Bit_MUSER_lab_final> compiled.
-Entity <MUX8Bit_MUSER_lab_final> (Architecture <BEHAVIORAL>) compiled.
-Entity <hexShifter8_MUSER_lab_final> compiled.
-Entity <hexShifter8_MUSER_lab_final> (Architecture <BEHAVIORAL>) compiled.
-Entity <FD8CE_MXILINX_lab_final> compiled.
-Entity <FD8CE_MXILINX_lab_final> (Architecture <BEHAVIORAL>) compiled.
-Entity <ADD8_MXILINX_lab_final> compiled.
-Entity <ADD8_MXILINX_lab_final> (Architecture <BEHAVIORAL>) compiled.
-Entity <FD4CE_MXILINX_lab_final> compiled.
-Entity <FD4CE_MXILINX_lab_final> (Architecture <BEHAVIORAL>) compiled.
-Entity <D_Register_MUSER_lab_final> compiled.
-Entity <D_Register_MUSER_lab_final> (Architecture <BEHAVIORAL>) compiled.
-Entity <I_Register_MUSER_lab_final> compiled.
-Entity <I_Register_MUSER_lab_final> (Architecture <BEHAVIORAL>) compiled.
-Entity <Address_MUSER_lab_final> compiled.
-Entity <Address_MUSER_lab_final> (Architecture <BEHAVIORAL>) compiled.
-Entity <Registers_MUSER_lab_final> compiled.
-Entity <Registers_MUSER_lab_final> (Architecture <BEHAVIORAL>) compiled.
-Entity <Output_DebugMode_MUSER_lab_final> compiled.
-Entity <Output_DebugMode_MUSER_lab_final> (Architecture <BEHAVIORAL>) compiled.
-Entity <I_Memory_MUSER_lab_final> compiled.
-Entity <I_Memory_MUSER_lab_final> (Architecture <BEHAVIORAL>) compiled.
-Entity <D_Memory_MUSER_lab_final> compiled.
-Entity <D_Memory_MUSER_lab_final> (Architecture <BEHAVIORAL>) compiled.
-Entity <Memory_MUSER_lab_final> compiled.
-Entity <Memory_MUSER_lab_final> (Architecture <BEHAVIORAL>) compiled.
-Entity <M2_1B1_MXILINX_lab_final> compiled.
-Entity <M2_1B1_MXILINX_lab_final> (Architecture <BEHAVIORAL>) compiled.
-Entity <M2_1_MXILINX_lab_final> compiled.
-Entity <M2_1_MXILINX_lab_final> (Architecture <BEHAVIORAL>) compiled.
-Entity <FTCLEX_MXILINX_lab_final> compiled.
-Entity <FTCLEX_MXILINX_lab_final> (Architecture <BEHAVIORAL>) compiled.
-Entity <CB4CLED_MXILINX_lab_final> compiled.
-Entity <CB4CLED_MXILINX_lab_final> (Architecture <BEHAVIORAL>) compiled.
-Entity <CB8CLED_MXILINX_lab_final> compiled.
-Entity <CB8CLED_MXILINX_lab_final> (Architecture <BEHAVIORAL>) compiled.
-Entity <P_Counter_MUSER_lab_final> compiled.
-Entity <P_Counter_MUSER_lab_final> (Architecture <BEHAVIORAL>) compiled.
-Entity <ADSU8_MXILINX_lab_final> compiled.
-Entity <ADSU8_MXILINX_lab_final> (Architecture <BEHAVIORAL>) compiled.
-Entity <ALU_MUSER_lab_final> compiled.
-Entity <ALU_MUSER_lab_final> (Architecture <BEHAVIORAL>) compiled.
+Entity <inv8_mxilinx_lab_final> compiled.
+Entity <inv8_mxilinx_lab_final> (Architecture <behavioral>) compiled.
+Entity <and8_mxilinx_lab_final> compiled.
+Entity <and8_mxilinx_lab_final> (Architecture <behavioral>) compiled.
+Entity <instructionsymbols_muser_lab_final> compiled.
+Entity <instructionsymbols_muser_lab_final> (Architecture <behavioral>) compiled.
+Entity <programground_muser_lab_final> compiled.
+Entity <programground_muser_lab_final> (Architecture <behavioral>) compiled.
+Entity <i_memory_muser_lab_final> compiled.
+Entity <i_memory_muser_lab_final> (Architecture <behavioral>) compiled.
+Entity <full_add_muser_lab_final> compiled.
+Entity <full_add_muser_lab_final> (Architecture <behavioral>) compiled.
+Entity <addersub8_muser_lab_final> compiled.
+Entity <addersub8_muser_lab_final> (Architecture <behavioral>) compiled.
+Entity <full_addersub8_muser_lab_final> compiled.
+Entity <full_addersub8_muser_lab_final> (Architecture <behavioral>) compiled.
+Entity <mux8bit_muser_lab_final> compiled.
+Entity <mux8bit_muser_lab_final> (Architecture <behavioral>) compiled.
+Entity <hexshifter8_muser_lab_final> compiled.
+Entity <hexshifter8_muser_lab_final> (Architecture <behavioral>) compiled.
+Entity <fd8ce_mxilinx_lab_final> compiled.
+Entity <fd8ce_mxilinx_lab_final> (Architecture <behavioral>) compiled.
+Entity <add8_mxilinx_lab_final> compiled.
+Entity <add8_mxilinx_lab_final> (Architecture <behavioral>) compiled.
+Entity <fd4ce_mxilinx_lab_final> compiled.
+Entity <fd4ce_mxilinx_lab_final> (Architecture <behavioral>) compiled.
+Entity <address_muser_lab_final> compiled.
+Entity <address_muser_lab_final> (Architecture <behavioral>) compiled.
+Entity <d_register_muser_lab_final> compiled.
+Entity <d_register_muser_lab_final> (Architecture <behavioral>) compiled.
+Entity <i_register_muser_lab_final> compiled.
+Entity <i_register_muser_lab_final> (Architecture <behavioral>) compiled.
+Entity <registers_muser_lab_final> compiled.
+Entity <registers_muser_lab_final> (Architecture <behavioral>) compiled.
+Entity <output_debugmode_muser_lab_final> compiled.
+Entity <output_debugmode_muser_lab_final> (Architecture <behavioral>) compiled.
+Entity <d_memory_muser_lab_final> compiled.
+Entity <d_memory_muser_lab_final> (Architecture <behavioral>) compiled.
+Entity <memory_muser_lab_final> compiled.
+Entity <memory_muser_lab_final> (Architecture <behavioral>) compiled.
+Entity <m2_1b1_mxilinx_lab_final> compiled.
+Entity <m2_1b1_mxilinx_lab_final> (Architecture <behavioral>) compiled.
+Entity <m2_1_mxilinx_lab_final> compiled.
+Entity <m2_1_mxilinx_lab_final> (Architecture <behavioral>) compiled.
+Entity <ftclex_mxilinx_lab_final> compiled.
+Entity <ftclex_mxilinx_lab_final> (Architecture <behavioral>) compiled.
+Entity <cb4cled_mxilinx_lab_final> compiled.
+Entity <cb4cled_mxilinx_lab_final> (Architecture <behavioral>) compiled.
+Entity <cb8cled_mxilinx_lab_final> compiled.
+Entity <cb8cled_mxilinx_lab_final> (Architecture <behavioral>) compiled.
+Entity <p_counter_muser_lab_final> compiled.
+Entity <p_counter_muser_lab_final> (Architecture <behavioral>) compiled.
+Entity <adsu8_mxilinx_lab_final> compiled.
+Entity <adsu8_mxilinx_lab_final> (Architecture <behavioral>) compiled.
+Entity <alu_muser_lab_final> compiled.
+Entity <alu_muser_lab_final> (Architecture <behavioral>) compiled.
 Entity <lab_final> compiled.
-Entity <lab_final> (Architecture <BEHAVIORAL>) compiled.
+Entity <lab_final> (Architecture <behavioral>) compiled.
 Compiling vhdl file "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/ALU.vhf" in Library work.
-Entity <ADSU8_MXILINX_ALU> compiled.
-Entity <ADSU8_MXILINX_ALU> (Architecture <BEHAVIORAL>) compiled.
-Entity <ALU> compiled.
-Entity <ALU> (Architecture <BEHAVIORAL>) compiled.
+Architecture behavioral of Entity adsu8_mxilinx_alu is up to date.
+Architecture behavioral of Entity alu is up to date.
 Compiling vhdl file "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/Memory.vhf" in Library work.
-Entity <MUX8Bit_MUSER_Memory> compiled.
-Entity <MUX8Bit_MUSER_Memory> (Architecture <BEHAVIORAL>) compiled.
-Entity <hexShifter8_MUSER_Memory> compiled.
-Entity <hexShifter8_MUSER_Memory> (Architecture <BEHAVIORAL>) compiled.
-Entity <FD8CE_MXILINX_Memory> compiled.
-Entity <FD8CE_MXILINX_Memory> (Architecture <BEHAVIORAL>) compiled.
-Entity <ADD8_MXILINX_Memory> compiled.
-Entity <ADD8_MXILINX_Memory> (Architecture <BEHAVIORAL>) compiled.
-Entity <FD4CE_MXILINX_Memory> compiled.
-Entity <FD4CE_MXILINX_Memory> (Architecture <BEHAVIORAL>) compiled.
-Entity <D_Register_MUSER_Memory> compiled.
-Entity <D_Register_MUSER_Memory> (Architecture <BEHAVIORAL>) compiled.
-Entity <I_Register_MUSER_Memory> compiled.
-Entity <I_Register_MUSER_Memory> (Architecture <BEHAVIORAL>) compiled.
-Entity <Address_MUSER_Memory> compiled.
-Entity <Address_MUSER_Memory> (Architecture <BEHAVIORAL>) compiled.
-Entity <Registers_MUSER_Memory> compiled.
-Entity <Registers_MUSER_Memory> (Architecture <BEHAVIORAL>) compiled.
-Entity <Output_DebugMode_MUSER_Memory> compiled.
-Entity <Output_DebugMode_MUSER_Memory> (Architecture <BEHAVIORAL>) compiled.
-Entity <I_Memory_MUSER_Memory> compiled.
-Entity <I_Memory_MUSER_Memory> (Architecture <BEHAVIORAL>) compiled.
-Entity <D_Memory_MUSER_Memory> compiled.
-Entity <D_Memory_MUSER_Memory> (Architecture <BEHAVIORAL>) compiled.
-Entity <Memory> compiled.
-Entity <Memory> (Architecture <BEHAVIORAL>) compiled.
+Entity <i_memory_muser_memory> compiled.
+Entity <i_memory_muser_memory> (Architecture <behavioral>) compiled.
+Entity <full_add_muser_memory> compiled.
+Entity <full_add_muser_memory> (Architecture <behavioral>) compiled.
+Entity <addersub8_muser_memory> compiled.
+Entity <addersub8_muser_memory> (Architecture <behavioral>) compiled.
+Entity <full_addersub8_muser_memory> compiled.
+Entity <full_addersub8_muser_memory> (Architecture <behavioral>) compiled.
+Entity <mux8bit_muser_memory> compiled.
+Entity <mux8bit_muser_memory> (Architecture <behavioral>) compiled.
+Entity <hexshifter8_muser_memory> compiled.
+Entity <hexshifter8_muser_memory> (Architecture <behavioral>) compiled.
+Entity <fd8ce_mxilinx_memory> compiled.
+Entity <fd8ce_mxilinx_memory> (Architecture <behavioral>) compiled.
+Entity <add8_mxilinx_memory> compiled.
+Entity <add8_mxilinx_memory> (Architecture <behavioral>) compiled.
+Entity <fd4ce_mxilinx_memory> compiled.
+Entity <fd4ce_mxilinx_memory> (Architecture <behavioral>) compiled.
+Entity <address_muser_memory> compiled.
+Entity <address_muser_memory> (Architecture <behavioral>) compiled.
+Entity <d_register_muser_memory> compiled.
+Entity <d_register_muser_memory> (Architecture <behavioral>) compiled.
+Entity <i_register_muser_memory> compiled.
+Entity <i_register_muser_memory> (Architecture <behavioral>) compiled.
+Entity <registers_muser_memory> compiled.
+Entity <registers_muser_memory> (Architecture <behavioral>) compiled.
+Entity <output_debugmode_muser_memory> compiled.
+Entity <output_debugmode_muser_memory> (Architecture <behavioral>) compiled.
+Entity <d_memory_muser_memory> compiled.
+Entity <d_memory_muser_memory> (Architecture <behavioral>) compiled.
+Entity <memory> compiled.
+Entity <memory> (Architecture <behavioral>) compiled.
 Compiling vhdl file "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/ProgramGround.vhf" in Library work.
-Entity <INV8_MXILINX_ProgramGround> compiled.
-Entity <INV8_MXILINX_ProgramGround> (Architecture <BEHAVIORAL>) compiled.
-Entity <AND8_MXILINX_ProgramGround> compiled.
-Entity <AND8_MXILINX_ProgramGround> (Architecture <BEHAVIORAL>) compiled.
-Entity <InstructionSymbols_MUSER_ProgramGround> compiled.
-Entity <InstructionSymbols_MUSER_ProgramGround> (Architecture <BEHAVIORAL>) compiled.
-Entity <ProgramGround> compiled.
-Entity <ProgramGround> (Architecture <BEHAVIORAL>) compiled.
+Architecture behavioral of Entity inv8_mxilinx_programground is up to date.
+Architecture behavioral of Entity and8_mxilinx_programground is up to date.
+Architecture behavioral of Entity instructionsymbols_muser_programground is up to date.
+Architecture behavioral of Entity programground is up to date.
 Compiling vhdl file "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/P_Counter.vhf" in Library work.
-Entity <M2_1B1_MXILINX_P_Counter> compiled.
-Entity <M2_1B1_MXILINX_P_Counter> (Architecture <BEHAVIORAL>) compiled.
-Entity <M2_1_MXILINX_P_Counter> compiled.
-Entity <M2_1_MXILINX_P_Counter> (Architecture <BEHAVIORAL>) compiled.
-Entity <FTCLEX_MXILINX_P_Counter> compiled.
-Entity <FTCLEX_MXILINX_P_Counter> (Architecture <BEHAVIORAL>) compiled.
-Entity <CB4CLED_MXILINX_P_Counter> compiled.
-Entity <CB4CLED_MXILINX_P_Counter> (Architecture <BEHAVIORAL>) compiled.
-Entity <CB8CLED_MXILINX_P_Counter> compiled.
-Entity <CB8CLED_MXILINX_P_Counter> (Architecture <BEHAVIORAL>) compiled.
-Entity <P_Counter> compiled.
-Entity <P_Counter> (Architecture <BEHAVIORAL>) compiled.
+Architecture behavioral of Entity m2_1b1_mxilinx_p_counter is up to date.
+Architecture behavioral of Entity m2_1_mxilinx_p_counter is up to date.
+Architecture behavioral of Entity ftclex_mxilinx_p_counter is up to date.
+Architecture behavioral of Entity cb4cled_mxilinx_p_counter is up to date.
+Architecture behavioral of Entity cb8cled_mxilinx_p_counter is up to date.
+Architecture behavioral of Entity p_counter is up to date.
 Compiling vhdl file "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/D_Memory.vhf" in Library work.
-Entity <D_Memory> compiled.
-Entity <D_Memory> (Architecture <BEHAVIORAL>) compiled.
+Architecture behavioral of Entity d_memory is up to date.
+Compiling vhdl file "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/Full_AdderSub8.vhf" in Library work.
+Architecture behavioral of Entity full_add_muser_full_addersub8 is up to date.
+Architecture behavioral of Entity addersub8_muser_full_addersub8 is up to date.
+Architecture behavioral of Entity full_addersub8 is up to date.
 Compiling vhdl file "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/InstructionSymbols.vhf" in Library work.
-Entity <INV8_MXILINX_InstructionSymbols> compiled.
-Entity <INV8_MXILINX_InstructionSymbols> (Architecture <BEHAVIORAL>) compiled.
-Entity <AND8_MXILINX_InstructionSymbols> compiled.
-Entity <AND8_MXILINX_InstructionSymbols> (Architecture <BEHAVIORAL>) compiled.
-Entity <InstructionSymbols> compiled.
-Entity <InstructionSymbols> (Architecture <BEHAVIORAL>) compiled.
+Architecture behavioral of Entity inv8_mxilinx_instructionsymbols is up to date.
+Architecture behavioral of Entity and8_mxilinx_instructionsymbols is up to date.
+Architecture behavioral of Entity instructionsymbols is up to date.
 Compiling vhdl file "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/I_Memory.vhf" in Library work.
-Entity <I_Memory> compiled.
-Entity <I_Memory> (Architecture <BEHAVIORAL>) compiled.
+Architecture behavioral of Entity i_memory is up to date.
 Compiling vhdl file "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/MUX8Bit.vhf" in Library work.
-Entity <MUX8Bit> compiled.
-Entity <MUX8Bit> (Architecture <BEHAVIORAL>) compiled.
+Architecture behavioral of Entity mux8bit is up to date.
 Compiling vhdl file "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/Output_DebugMode.vhf" in Library work.
-Entity <Output_DebugMode> compiled.
-Entity <Output_DebugMode> (Architecture <BEHAVIORAL>) compiled.
+Architecture behavioral of Entity output_debugmode is up to date.
 Compiling vhdl file "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/Registers.vhf" in Library work.
-Entity <hexShifter8_MUSER_Registers> compiled.
-Entity <hexShifter8_MUSER_Registers> (Architecture <BEHAVIORAL>) compiled.
-Entity <FD8CE_MXILINX_Registers> compiled.
-Entity <FD8CE_MXILINX_Registers> (Architecture <BEHAVIORAL>) compiled.
-Entity <ADD8_MXILINX_Registers> compiled.
-Entity <ADD8_MXILINX_Registers> (Architecture <BEHAVIORAL>) compiled.
-Entity <FD4CE_MXILINX_Registers> compiled.
-Entity <FD4CE_MXILINX_Registers> (Architecture <BEHAVIORAL>) compiled.
-Entity <D_Register_MUSER_Registers> compiled.
-Entity <D_Register_MUSER_Registers> (Architecture <BEHAVIORAL>) compiled.
-Entity <I_Register_MUSER_Registers> compiled.
-Entity <I_Register_MUSER_Registers> (Architecture <BEHAVIORAL>) compiled.
-Entity <Address_MUSER_Registers> compiled.
-Entity <Address_MUSER_Registers> (Architecture <BEHAVIORAL>) compiled.
-Entity <Registers> compiled.
-Entity <Registers> (Architecture <BEHAVIORAL>) compiled.
+Architecture behavioral of Entity hexshifter8_muser_registers is up to date.
+Architecture behavioral of Entity fd8ce_mxilinx_registers is up to date.
+Architecture behavioral of Entity add8_mxilinx_registers is up to date.
+Architecture behavioral of Entity fd4ce_mxilinx_registers is up to date.
+Architecture behavioral of Entity address_muser_registers is up to date.
+Architecture behavioral of Entity d_register_muser_registers is up to date.
+Architecture behavioral of Entity i_register_muser_registers is up to date.
+Architecture behavioral of Entity registers is up to date.
+Compiling vhdl file "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/addersub8.vhf" in Library work.
+Architecture behavioral of Entity full_add_muser_addersub8 is up to date.
+Architecture behavioral of Entity addersub8 is up to date.
 Compiling vhdl file "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/Address.vhf" in Library work.
-Entity <hexShifter8_MUSER_Address> compiled.
-Entity <hexShifter8_MUSER_Address> (Architecture <BEHAVIORAL>) compiled.
-Entity <FD8CE_MXILINX_Address> compiled.
-Entity <FD8CE_MXILINX_Address> (Architecture <BEHAVIORAL>) compiled.
-Entity <ADD8_MXILINX_Address> compiled.
-Entity <ADD8_MXILINX_Address> (Architecture <BEHAVIORAL>) compiled.
-Entity <FD4CE_MXILINX_Address> compiled.
-Entity <FD4CE_MXILINX_Address> (Architecture <BEHAVIORAL>) compiled.
-Entity <Address> compiled.
-Entity <Address> (Architecture <BEHAVIORAL>) compiled.
+Architecture behavioral of Entity hexshifter8_muser_address is up to date.
+Architecture behavioral of Entity fd8ce_mxilinx_address is up to date.
+Architecture behavioral of Entity add8_mxilinx_address is up to date.
+Architecture behavioral of Entity fd4ce_mxilinx_address is up to date.
+Architecture behavioral of Entity address is up to date.
 Compiling vhdl file "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/D_Register.vhf" in Library work.
-Entity <hexShifter8_MUSER_D_Register> compiled.
-Entity <hexShifter8_MUSER_D_Register> (Architecture <BEHAVIORAL>) compiled.
-Entity <FD8CE_MXILINX_D_Register> compiled.
-Entity <FD8CE_MXILINX_D_Register> (Architecture <BEHAVIORAL>) compiled.
-Entity <ADD8_MXILINX_D_Register> compiled.
-Entity <ADD8_MXILINX_D_Register> (Architecture <BEHAVIORAL>) compiled.
-Entity <FD4CE_MXILINX_D_Register> compiled.
-Entity <FD4CE_MXILINX_D_Register> (Architecture <BEHAVIORAL>) compiled.
-Entity <D_Register> compiled.
-Entity <D_Register> (Architecture <BEHAVIORAL>) compiled.
+Architecture behavioral of Entity hexshifter8_muser_d_register is up to date.
+Architecture behavioral of Entity fd8ce_mxilinx_d_register is up to date.
+Architecture behavioral of Entity add8_mxilinx_d_register is up to date.
+Architecture behavioral of Entity fd4ce_mxilinx_d_register is up to date.
+Architecture behavioral of Entity d_register is up to date.
 Compiling vhdl file "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/I_Register.vhf" in Library work.
-Entity <hexShifter8_MUSER_I_Register> compiled.
-Entity <hexShifter8_MUSER_I_Register> (Architecture <BEHAVIORAL>) compiled.
-Entity <FD8CE_MXILINX_I_Register> compiled.
-Entity <FD8CE_MXILINX_I_Register> (Architecture <BEHAVIORAL>) compiled.
-Entity <ADD8_MXILINX_I_Register> compiled.
-Entity <ADD8_MXILINX_I_Register> (Architecture <BEHAVIORAL>) compiled.
-Entity <FD4CE_MXILINX_I_Register> compiled.
-Entity <FD4CE_MXILINX_I_Register> (Architecture <BEHAVIORAL>) compiled.
-Entity <I_Register> compiled.
-Entity <I_Register> (Architecture <BEHAVIORAL>) compiled.
+Architecture behavioral of Entity hexshifter8_muser_i_register is up to date.
+Architecture behavioral of Entity fd8ce_mxilinx_i_register is up to date.
+Architecture behavioral of Entity add8_mxilinx_i_register is up to date.
+Architecture behavioral of Entity fd4ce_mxilinx_i_register is up to date.
+Architecture behavioral of Entity i_register is up to date.
+Compiling vhdl file "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/Full_Add.vhf" in Library work.
+Architecture behavioral of Entity full_add is up to date.
 Compiling vhdl file "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/hexShifter8.vhf" in Library work.
-Entity <hexShifter8> compiled.
-Entity <hexShifter8> (Architecture <BEHAVIORAL>) compiled.
+Architecture behavioral of Entity hexshifter8 is up to date.
 
 =========================================================================
 *                     Design Hierarchy Analysis                         *
 =========================================================================
-Analyzing hierarchy for entity <lab_final> in library <work> (architecture <BEHAVIORAL>).
+Analyzing hierarchy for entity <lab_final> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <ALU_MUSER_lab_final> in library <work> (architecture <BEHAVIORAL>).
+Analyzing hierarchy for entity <ALU_MUSER_lab_final> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <DCM_100M> in library <work> (architecture <Behavioral>) with generics.
+Analyzing hierarchy for entity <DCM_100M> in library <work> (architecture <behavioral>) with generics.
 	DIV100 = 25
 	DIV100k = 25000
 	DIV100m = 25000000
 	DIV10k = 2500
 	DIV1m = 250000
 
-Analyzing hierarchy for entity <M2_1_MXILINX_lab_final> in library <work> (architecture <BEHAVIORAL>).
+Analyzing hierarchy for entity <M2_1_MXILINX_lab_final> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <P_Counter_MUSER_lab_final> in library <work> (architecture <BEHAVIORAL>).
+Analyzing hierarchy for entity <P_Counter_MUSER_lab_final> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <Memory_MUSER_lab_final> in library <work> (architecture <BEHAVIORAL>).
+Analyzing hierarchy for entity <Memory_MUSER_lab_final> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <ProgramGround_MUSER_lab_final> in library <work> (architecture <BEHAVIORAL>).
+Analyzing hierarchy for entity <ProgramGround_MUSER_lab_final> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <ADSU8_MXILINX_lab_final> in library <work> (architecture <BEHAVIORAL>).
+Analyzing hierarchy for entity <ADSU8_MXILINX_lab_final> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <CB8CLED_MXILINX_lab_final> in library <work> (architecture <BEHAVIORAL>).
+Analyzing hierarchy for entity <CB8CLED_MXILINX_lab_final> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <CB4CLED_MXILINX_lab_final> in library <work> (architecture <BEHAVIORAL>).
+Analyzing hierarchy for entity <CB4CLED_MXILINX_lab_final> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <D_Memory_MUSER_lab_final> in library <work> (architecture <BEHAVIORAL>).
+Analyzing hierarchy for entity <D_Memory_MUSER_lab_final> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <Registers_MUSER_lab_final> in library <work> (architecture <BEHAVIORAL>).
+Analyzing hierarchy for entity <Registers_MUSER_lab_final> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <I_Memory_MUSER_lab_final> in library <work> (architecture <BEHAVIORAL>).
+Analyzing hierarchy for entity <I_Memory_MUSER_lab_final> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <Output_DebugMode_MUSER_lab_final> in library <work> (architecture <BEHAVIORAL>).
+Analyzing hierarchy for entity <Output_DebugMode_MUSER_lab_final> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <MUX8Bit_MUSER_lab_final> in library <work> (architecture <BEHAVIORAL>).
+Analyzing hierarchy for entity <MUX8Bit_MUSER_lab_final> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <lab_KEYPAD_FINAL> in library <work> (architecture <BEHAVIORAL>).
+Analyzing hierarchy for entity <lab_KEYPAD_FINAL> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <InstructionSymbols_MUSER_lab_final> in library <work> (architecture <BEHAVIORAL>).
+Analyzing hierarchy for entity <Full_AdderSub8_MUSER_lab_final> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <FTCLEX_MXILINX_lab_final> in library <work> (architecture <BEHAVIORAL>) with generics.
+Analyzing hierarchy for entity <DCM_100M> in library <work> (architecture <behavioral>) with generics.
+	DIV100 = 25
+	DIV100k = 25000
+	DIV100m = 25000000
+	DIV10k = 2500
+	DIV1m = 250000
+
+Analyzing hierarchy for entity <InstructionSymbols_MUSER_lab_final> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <FTCLEX_MXILINX_lab_final> in library <work> (architecture <behavioral>) with generics.
 	INIT = '0'
 
-Analyzing hierarchy for entity <M2_1_MXILINX_lab_final> in library <work> (architecture <BEHAVIORAL>).
+Analyzing hierarchy for entity <M2_1_MXILINX_lab_final> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <M2_1B1_MXILINX_lab_final> in library <work> (architecture <BEHAVIORAL>).
+Analyzing hierarchy for entity <M2_1B1_MXILINX_lab_final> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <sRAM32x8_ex_pgm_data> in library <work> (architecture <Behavioral>).
+Analyzing hierarchy for entity <sRAM32x8_ex_pgm_data> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <Address_MUSER_lab_final> in library <work> (architecture <BEHAVIORAL>).
+Analyzing hierarchy for entity <Address_MUSER_lab_final> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <I_Register_MUSER_lab_final> in library <work> (architecture <BEHAVIORAL>).
+Analyzing hierarchy for entity <I_Register_MUSER_lab_final> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <D_Register_MUSER_lab_final> in library <work> (architecture <BEHAVIORAL>).
+Analyzing hierarchy for entity <D_Register_MUSER_lab_final> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <sRAM32x8_ex_pgm_instr> in library <work> (architecture <Behavioral>).
+Analyzing hierarchy for entity <sRAM32x8_ex_pgm_instr> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <sel_strobeB> in library <work> (architecture <Behavioral>).
+Analyzing hierarchy for entity <sel_strobeB> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <bin2BCD3en> in library <work> (architecture <Behavioral>).
+Analyzing hierarchy for entity <bin2BCD3en> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <mux4SSD> in library <work> (architecture <Behavioral>).
+Analyzing hierarchy for entity <mux4SSD> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <SSD_1dig> in library <work> (architecture <Behavioral>).
+Analyzing hierarchy for entity <SSD_1dig> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <DCM_100M> in library <work> (architecture <Behavioral>) with generics.
-	DIV100 = 25
-	DIV100k = 25000
-	DIV100m = 25000000
-	DIV10k = 2500
-	DIV1m = 250000
+Analyzing hierarchy for entity <CRenc4bin> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <CRenc4bin> in library <work> (architecture <Behavioral>).
+Analyzing hierarchy for entity <key_detect> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <key_detect> in library <work> (architecture <Behavioral>).
+Analyzing hierarchy for entity <col_strobe> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <col_strobe> in library <work> (architecture <Behavioral>).
-
-Analyzing hierarchy for entity <oneshot> in library <work> (architecture <Behavioral>) with generics.
+Analyzing hierarchy for entity <oneshot> in library <work> (architecture <behavioral>) with generics.
 	Plock = 6000
 	Pstart = 50
 	Pwid = 80
 
-Analyzing hierarchy for entity <decoder16keyEn> in library <work> (architecture <Doric>).
+Analyzing hierarchy for entity <decoder16keyEn> in library <work> (architecture <doric>).
 
-Analyzing hierarchy for entity <key4_dbnc> in library <work> (architecture <Behavioral>) with generics.
+Analyzing hierarchy for entity <key4_dbnc> in library <work> (architecture <behavioral>) with generics.
 	lockperiod = 1000
 
-Analyzing hierarchy for entity <AND8_MXILINX_lab_final> in library <work> (architecture <BEHAVIORAL>).
+Analyzing hierarchy for entity <addersub8_MUSER_lab_final> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <INV8_MXILINX_lab_final> in library <work> (architecture <BEHAVIORAL>).
+Analyzing hierarchy for entity <AND8_MXILINX_lab_final> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <FD8CE_MXILINX_lab_final> in library <work> (architecture <BEHAVIORAL>).
+Analyzing hierarchy for entity <INV8_MXILINX_lab_final> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <FD4CE_MXILINX_lab_final> in library <work> (architecture <BEHAVIORAL>).
+Analyzing hierarchy for entity <FD8CE_MXILINX_lab_final> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <ADD8_MXILINX_lab_final> in library <work> (architecture <BEHAVIORAL>).
+Analyzing hierarchy for entity <FD4CE_MXILINX_lab_final> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <hexShifter8_MUSER_lab_final> in library <work> (architecture <BEHAVIORAL>).
+Analyzing hierarchy for entity <ADD8_MXILINX_lab_final> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <switch_debounce> in library <work> (architecture <Behavioral>).
+Analyzing hierarchy for entity <hexShifter8_MUSER_lab_final> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <switch_debounce> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Full_Add_MUSER_lab_final> in library <work> (architecture <behavioral>).
 
 
 =========================================================================
 *                            HDL Analysis                               *
 =========================================================================
-Analyzing Entity <lab_final> in library <work> (Architecture <BEHAVIORAL>).
-WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 3828: Unconnected output port 'Output' of component 'ALU_MUSER_lab_final'.
-WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 3828: Unconnected output port 'Overflow' of component 'ALU_MUSER_lab_final'.
-WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 3828: Unconnected output port 'XLXN_5' of component 'ALU_MUSER_lab_final'.
-WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 3839: Unconnected output port 'CLK10k' of component 'DCM_100M'.
-WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 3839: Unconnected output port 'CLK1k' of component 'DCM_100M'.
-WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 3839: Unconnected output port 'CLK100' of component 'DCM_100M'.
-    Set user-defined property "HU_SET =  XLXI_44_55" for instance <XLXI_44> in unit <lab_final>.
-WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 3854: Unconnected output port 'Q' of component 'P_Counter_MUSER_lab_final'.
+Analyzing Entity <lab_final> in library <work> (Architecture <behavioral>).
+WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 4295: Unconnected output port 'Output' of component 'ALU_MUSER_lab_final'.
+WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 4295: Unconnected output port 'Overflow' of component 'ALU_MUSER_lab_final'.
+WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 4295: Unconnected output port 'XLXN_5' of component 'ALU_MUSER_lab_final'.
+WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 4306: Unconnected output port 'CLK10k' of component 'DCM_100M'.
+WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 4306: Unconnected output port 'CLK1k' of component 'DCM_100M'.
+WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 4306: Unconnected output port 'CLK100' of component 'DCM_100M'.
+    Set user-defined property "HU_SET =  XLXI_44_123" for instance <XLXI_44> in unit <lab_final>.
+WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 4321: Unconnected output port 'Q' of component 'P_Counter_MUSER_lab_final'.
+WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 4327: Unconnected output port 'D_output' of component 'Memory_MUSER_lab_final'.
+WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 4327: Unconnected output port 'A_shiftO' of component 'Memory_MUSER_lab_final'.
+WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 4327: Unconnected output port 'I_output' of component 'Memory_MUSER_lab_final'.
 Entity <lab_final> analyzed. Unit <lab_final> generated.
 
-Analyzing Entity <ALU_MUSER_lab_final> in library <work> (Architecture <BEHAVIORAL>).
-    Set user-defined property "HU_SET =  XLXI_1_54" for instance <XLXI_1> in unit <ALU_MUSER_lab_final>.
+Analyzing Entity <ALU_MUSER_lab_final> in library <work> (Architecture <behavioral>).
+    Set user-defined property "HU_SET =  XLXI_1_122" for instance <XLXI_1> in unit <ALU_MUSER_lab_final>.
 Entity <ALU_MUSER_lab_final> analyzed. Unit <ALU_MUSER_lab_final> generated.
 
-Analyzing Entity <ADSU8_MXILINX_lab_final> in library <work> (Architecture <BEHAVIORAL>).
+Analyzing Entity <ADSU8_MXILINX_lab_final> in library <work> (Architecture <behavioral>).
     Set user-defined property "RLOC =  X1Y0" for instance <I_36_16> in unit <ADSU8_MXILINX_lab_final>.
     Set user-defined property "RLOC =  X1Y0" for instance <I_36_17> in unit <ADSU8_MXILINX_lab_final>.
     Set user-defined property "RLOC =  X1Y1" for instance <I_36_18> in unit <ADSU8_MXILINX_lab_final>.
@@ -471,7 +443,7 @@ Analyzing Entity <ADSU8_MXILINX_lab_final> in library <work> (Architecture <BEHA
     Set user-defined property "RLOC =  X1Y0" for instance <I_36_111> in unit <ADSU8_MXILINX_lab_final>.
 Entity <ADSU8_MXILINX_lab_final> analyzed. Unit <ADSU8_MXILINX_lab_final> generated.
 
-Analyzing generic Entity <DCM_100M> in library <work> (Architecture <Behavioral>).
+Analyzing generic Entity <DCM_100M> in library <work> (Architecture <behavioral>).
 	DIV100 = 25
 	DIV100k = 25000
 	DIV100m = 25000000
@@ -479,86 +451,96 @@ Analyzing generic Entity <DCM_100M> in library <work> (Architecture <Behavioral>
 	DIV1m = 250000
 Entity <DCM_100M> analyzed. Unit <DCM_100M> generated.
 
-Analyzing Entity <M2_1_MXILINX_lab_final> in library <work> (Architecture <BEHAVIORAL>).
+Analyzing Entity <M2_1_MXILINX_lab_final> in library <work> (Architecture <behavioral>).
 Entity <M2_1_MXILINX_lab_final> analyzed. Unit <M2_1_MXILINX_lab_final> generated.
 
-Analyzing Entity <P_Counter_MUSER_lab_final> in library <work> (Architecture <BEHAVIORAL>).
-WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 3231: Unconnected output port 'CEO' of component 'CB8CLED_MXILINX_lab_final'.
-WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 3231: Unconnected output port 'TC' of component 'CB8CLED_MXILINX_lab_final'.
-    Set user-defined property "HU_SET =  XLXI_1_52" for instance <XLXI_1> in unit <P_Counter_MUSER_lab_final>.
-WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 3258: Unconnected output port 'CEO' of component 'CB4CLED_MXILINX_lab_final'.
-WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 3258: Unconnected output port 'Q3' of component 'CB4CLED_MXILINX_lab_final'.
-WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 3258: Unconnected output port 'TC' of component 'CB4CLED_MXILINX_lab_final'.
-    Set user-defined property "HU_SET =  XLXI_6_53" for instance <XLXI_6> in unit <P_Counter_MUSER_lab_final>.
+Analyzing Entity <P_Counter_MUSER_lab_final> in library <work> (Architecture <behavioral>).
+WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 3697: Unconnected output port 'CEO' of component 'CB8CLED_MXILINX_lab_final'.
+WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 3697: Unconnected output port 'TC' of component 'CB8CLED_MXILINX_lab_final'.
+    Set user-defined property "HU_SET =  XLXI_1_120" for instance <XLXI_1> in unit <P_Counter_MUSER_lab_final>.
+WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 3724: Unconnected output port 'CEO' of component 'CB4CLED_MXILINX_lab_final'.
+WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 3724: Unconnected output port 'Q3' of component 'CB4CLED_MXILINX_lab_final'.
+WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 3724: Unconnected output port 'TC' of component 'CB4CLED_MXILINX_lab_final'.
+    Set user-defined property "HU_SET =  XLXI_6_121" for instance <XLXI_6> in unit <P_Counter_MUSER_lab_final>.
 Entity <P_Counter_MUSER_lab_final> analyzed. Unit <P_Counter_MUSER_lab_final> generated.
 
-Analyzing Entity <CB8CLED_MXILINX_lab_final> in library <work> (Architecture <BEHAVIORAL>).
-    Set user-defined property "HU_SET =  I_Q0_43" for instance <I_Q0> in unit <CB8CLED_MXILINX_lab_final>.
-    Set user-defined property "HU_SET =  I_Q1_42" for instance <I_Q1> in unit <CB8CLED_MXILINX_lab_final>.
-    Set user-defined property "HU_SET =  I_Q2_41" for instance <I_Q2> in unit <CB8CLED_MXILINX_lab_final>.
-    Set user-defined property "HU_SET =  I_Q3_40" for instance <I_Q3> in unit <CB8CLED_MXILINX_lab_final>.
-    Set user-defined property "HU_SET =  I_Q4_39" for instance <I_Q4> in unit <CB8CLED_MXILINX_lab_final>.
-    Set user-defined property "HU_SET =  I_Q5_38" for instance <I_Q5> in unit <CB8CLED_MXILINX_lab_final>.
-    Set user-defined property "HU_SET =  I_Q6_37" for instance <I_Q6> in unit <CB8CLED_MXILINX_lab_final>.
-    Set user-defined property "HU_SET =  I_Q7_36" for instance <I_Q7> in unit <CB8CLED_MXILINX_lab_final>.
-    Set user-defined property "HU_SET =  I_TC_48" for instance <I_TC> in unit <CB8CLED_MXILINX_lab_final>.
-    Set user-defined property "HU_SET =  I_T1_51" for instance <I_T1> in unit <CB8CLED_MXILINX_lab_final>.
-    Set user-defined property "HU_SET =  I_T2_44" for instance <I_T2> in unit <CB8CLED_MXILINX_lab_final>.
-    Set user-defined property "HU_SET =  I_T3_45" for instance <I_T3> in unit <CB8CLED_MXILINX_lab_final>.
-    Set user-defined property "HU_SET =  I_T4_50" for instance <I_T4> in unit <CB8CLED_MXILINX_lab_final>.
-    Set user-defined property "HU_SET =  I_T5_49" for instance <I_T5> in unit <CB8CLED_MXILINX_lab_final>.
-    Set user-defined property "HU_SET =  I_T6_46" for instance <I_T6> in unit <CB8CLED_MXILINX_lab_final>.
-    Set user-defined property "HU_SET =  I_T7_47" for instance <I_T7> in unit <CB8CLED_MXILINX_lab_final>.
+Analyzing Entity <CB8CLED_MXILINX_lab_final> in library <work> (Architecture <behavioral>).
+    Set user-defined property "HU_SET =  I_Q0_111" for instance <I_Q0> in unit <CB8CLED_MXILINX_lab_final>.
+    Set user-defined property "HU_SET =  I_Q1_110" for instance <I_Q1> in unit <CB8CLED_MXILINX_lab_final>.
+    Set user-defined property "HU_SET =  I_Q2_109" for instance <I_Q2> in unit <CB8CLED_MXILINX_lab_final>.
+    Set user-defined property "HU_SET =  I_Q3_108" for instance <I_Q3> in unit <CB8CLED_MXILINX_lab_final>.
+    Set user-defined property "HU_SET =  I_Q4_107" for instance <I_Q4> in unit <CB8CLED_MXILINX_lab_final>.
+    Set user-defined property "HU_SET =  I_Q5_106" for instance <I_Q5> in unit <CB8CLED_MXILINX_lab_final>.
+    Set user-defined property "HU_SET =  I_Q6_105" for instance <I_Q6> in unit <CB8CLED_MXILINX_lab_final>.
+    Set user-defined property "HU_SET =  I_Q7_104" for instance <I_Q7> in unit <CB8CLED_MXILINX_lab_final>.
+    Set user-defined property "HU_SET =  I_TC_116" for instance <I_TC> in unit <CB8CLED_MXILINX_lab_final>.
+    Set user-defined property "HU_SET =  I_T1_119" for instance <I_T1> in unit <CB8CLED_MXILINX_lab_final>.
+    Set user-defined property "HU_SET =  I_T2_112" for instance <I_T2> in unit <CB8CLED_MXILINX_lab_final>.
+    Set user-defined property "HU_SET =  I_T3_113" for instance <I_T3> in unit <CB8CLED_MXILINX_lab_final>.
+    Set user-defined property "HU_SET =  I_T4_118" for instance <I_T4> in unit <CB8CLED_MXILINX_lab_final>.
+    Set user-defined property "HU_SET =  I_T5_117" for instance <I_T5> in unit <CB8CLED_MXILINX_lab_final>.
+    Set user-defined property "HU_SET =  I_T6_114" for instance <I_T6> in unit <CB8CLED_MXILINX_lab_final>.
+    Set user-defined property "HU_SET =  I_T7_115" for instance <I_T7> in unit <CB8CLED_MXILINX_lab_final>.
 Entity <CB8CLED_MXILINX_lab_final> analyzed. Unit <CB8CLED_MXILINX_lab_final> generated.
 
-Analyzing generic Entity <FTCLEX_MXILINX_lab_final> in library <work> (Architecture <BEHAVIORAL>).
+Analyzing generic Entity <FTCLEX_MXILINX_lab_final> in library <work> (Architecture <behavioral>).
 	INIT = '0'
-    Set user-defined property "HU_SET =  I_36_30_27" for instance <I_36_30> in unit <FTCLEX_MXILINX_lab_final>.
+    Set user-defined property "HU_SET =  I_36_30_95" for instance <I_36_30> in unit <FTCLEX_MXILINX_lab_final>.
     Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCLEX_MXILINX_lab_final>.
     Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCLEX_MXILINX_lab_final>.
 Entity <FTCLEX_MXILINX_lab_final> analyzed. Unit <FTCLEX_MXILINX_lab_final> generated.
 
-Analyzing Entity <M2_1B1_MXILINX_lab_final> in library <work> (Architecture <BEHAVIORAL>).
+Analyzing Entity <M2_1B1_MXILINX_lab_final> in library <work> (Architecture <behavioral>).
 Entity <M2_1B1_MXILINX_lab_final> analyzed. Unit <M2_1B1_MXILINX_lab_final> generated.
 
-Analyzing Entity <CB4CLED_MXILINX_lab_final> in library <work> (Architecture <BEHAVIORAL>).
-    Set user-defined property "HU_SET =  I_Q0_31" for instance <I_Q0> in unit <CB4CLED_MXILINX_lab_final>.
-    Set user-defined property "HU_SET =  I_Q1_30" for instance <I_Q1> in unit <CB4CLED_MXILINX_lab_final>.
-    Set user-defined property "HU_SET =  I_Q2_29" for instance <I_Q2> in unit <CB4CLED_MXILINX_lab_final>.
-    Set user-defined property "HU_SET =  I_Q3_28" for instance <I_Q3> in unit <CB4CLED_MXILINX_lab_final>.
-    Set user-defined property "HU_SET =  I_TC_34" for instance <I_TC> in unit <CB4CLED_MXILINX_lab_final>.
-    Set user-defined property "HU_SET =  I_T1_35" for instance <I_T1> in unit <CB4CLED_MXILINX_lab_final>.
-    Set user-defined property "HU_SET =  I_T2_32" for instance <I_T2> in unit <CB4CLED_MXILINX_lab_final>.
-    Set user-defined property "HU_SET =  I_T3_33" for instance <I_T3> in unit <CB4CLED_MXILINX_lab_final>.
+Analyzing Entity <CB4CLED_MXILINX_lab_final> in library <work> (Architecture <behavioral>).
+    Set user-defined property "HU_SET =  I_Q0_99" for instance <I_Q0> in unit <CB4CLED_MXILINX_lab_final>.
+    Set user-defined property "HU_SET =  I_Q1_98" for instance <I_Q1> in unit <CB4CLED_MXILINX_lab_final>.
+    Set user-defined property "HU_SET =  I_Q2_97" for instance <I_Q2> in unit <CB4CLED_MXILINX_lab_final>.
+    Set user-defined property "HU_SET =  I_Q3_96" for instance <I_Q3> in unit <CB4CLED_MXILINX_lab_final>.
+    Set user-defined property "HU_SET =  I_TC_102" for instance <I_TC> in unit <CB4CLED_MXILINX_lab_final>.
+    Set user-defined property "HU_SET =  I_T1_103" for instance <I_T1> in unit <CB4CLED_MXILINX_lab_final>.
+    Set user-defined property "HU_SET =  I_T2_100" for instance <I_T2> in unit <CB4CLED_MXILINX_lab_final>.
+    Set user-defined property "HU_SET =  I_T3_101" for instance <I_T3> in unit <CB4CLED_MXILINX_lab_final>.
 Entity <CB4CLED_MXILINX_lab_final> analyzed. Unit <CB4CLED_MXILINX_lab_final> generated.
 
-Analyzing Entity <Memory_MUSER_lab_final> in library <work> (Architecture <BEHAVIORAL>).
+Analyzing Entity <Memory_MUSER_lab_final> in library <work> (Architecture <behavioral>).
+WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 2684: Unconnected output port 'DOut' of component 'MUX8Bit_MUSER_lab_final'.
+WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 2700: Unconnected output port 'Cout' of component 'Full_AdderSub8_MUSER_lab_final'.
+WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 2700: Unconnected output port 'Sum' of component 'Full_AdderSub8_MUSER_lab_final'.
+WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 2700: Unconnected output port 'Negative' of component 'Full_AdderSub8_MUSER_lab_final'.
+WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 2700: Unconnected output port 'OFL' of component 'Full_AdderSub8_MUSER_lab_final'.
+WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 2709: Unconnected output port 'CLK1M' of component 'DCM_100M'.
+WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 2709: Unconnected output port 'CLK10k' of component 'DCM_100M'.
+WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 2709: Unconnected output port 'CLK1k' of component 'DCM_100M'.
+WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 2709: Unconnected output port 'CLK100' of component 'DCM_100M'.
 Entity <Memory_MUSER_lab_final> analyzed. Unit <Memory_MUSER_lab_final> generated.
 
-Analyzing Entity <D_Memory_MUSER_lab_final> in library <work> (Architecture <BEHAVIORAL>).
+Analyzing Entity <D_Memory_MUSER_lab_final> in library <work> (Architecture <behavioral>).
 Entity <D_Memory_MUSER_lab_final> analyzed. Unit <D_Memory_MUSER_lab_final> generated.
 
-Analyzing Entity <sRAM32x8_ex_pgm_data> in library <work> (Architecture <Behavioral>).
+Analyzing Entity <sRAM32x8_ex_pgm_data> in library <work> (Architecture <behavioral>).
 Entity <sRAM32x8_ex_pgm_data> analyzed. Unit <sRAM32x8_ex_pgm_data> generated.
 
-Analyzing Entity <Registers_MUSER_lab_final> in library <work> (Architecture <BEHAVIORAL>).
-WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 1731: Unconnected output port 'Q' of component 'Address_MUSER_lab_final'.
-WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 1743: Unconnected output port 'Q' of component 'I_Register_MUSER_lab_final'.
-WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 1743: Unconnected output port 'G' of component 'I_Register_MUSER_lab_final'.
-WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 1756: Unconnected output port 'Q' of component 'D_Register_MUSER_lab_final'.
-WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 1756: Unconnected output port 'G' of component 'D_Register_MUSER_lab_final'.
+Analyzing Entity <Registers_MUSER_lab_final> in library <work> (Architecture <behavioral>).
+WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 2169: Unconnected output port 'Q' of component 'Address_MUSER_lab_final'.
+WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 2169: Unconnected output port 'G' of component 'Address_MUSER_lab_final'.
+WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 2183: Unconnected output port 'Q' of component 'I_Register_MUSER_lab_final'.
+WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 2183: Unconnected output port 'G' of component 'I_Register_MUSER_lab_final'.
+WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 2196: Unconnected output port 'Q' of component 'D_Register_MUSER_lab_final'.
+WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 2196: Unconnected output port 'G' of component 'D_Register_MUSER_lab_final'.
 Entity <Registers_MUSER_lab_final> analyzed. Unit <Registers_MUSER_lab_final> generated.
 
-Analyzing Entity <Address_MUSER_lab_final> in library <work> (Architecture <BEHAVIORAL>).
-    Set user-defined property "HU_SET =  XLXI_41_26" for instance <XLXI_41> in unit <Address_MUSER_lab_final>.
-    Set user-defined property "HU_SET =  XLXI_46_23" for instance <XLXI_46> in unit <Address_MUSER_lab_final>.
-    Set user-defined property "HU_SET =  XLXI_47_24" for instance <XLXI_47> in unit <Address_MUSER_lab_final>.
-WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 1629: Unconnected output port 'CO' of component 'ADD8_MXILINX_lab_final'.
-WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 1629: Unconnected output port 'OFL' of component 'ADD8_MXILINX_lab_final'.
-    Set user-defined property "HU_SET =  XLXI_59_25" for instance <XLXI_59> in unit <Address_MUSER_lab_final>.
+Analyzing Entity <Address_MUSER_lab_final> in library <work> (Architecture <behavioral>).
+    Set user-defined property "HU_SET =  XLXI_41_86" for instance <XLXI_41> in unit <Address_MUSER_lab_final>.
+    Set user-defined property "HU_SET =  XLXI_46_83" for instance <XLXI_46> in unit <Address_MUSER_lab_final>.
+    Set user-defined property "HU_SET =  XLXI_47_84" for instance <XLXI_47> in unit <Address_MUSER_lab_final>.
+WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 1720: Unconnected output port 'CO' of component 'ADD8_MXILINX_lab_final'.
+WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 1720: Unconnected output port 'OFL' of component 'ADD8_MXILINX_lab_final'.
+    Set user-defined property "HU_SET =  XLXI_59_85" for instance <XLXI_59> in unit <Address_MUSER_lab_final>.
 Entity <Address_MUSER_lab_final> analyzed. Unit <Address_MUSER_lab_final> generated.
 
-Analyzing Entity <FD8CE_MXILINX_lab_final> in library <work> (Architecture <BEHAVIORAL>).
+Analyzing Entity <FD8CE_MXILINX_lab_final> in library <work> (Architecture <behavioral>).
     Set user-defined property "INIT =  0" for instance <I_Q0> in unit <FD8CE_MXILINX_lab_final>.
     Set user-defined property "INIT =  0" for instance <I_Q1> in unit <FD8CE_MXILINX_lab_final>.
     Set user-defined property "INIT =  0" for instance <I_Q2> in unit <FD8CE_MXILINX_lab_final>.
@@ -569,14 +551,14 @@ Analyzing Entity <FD8CE_MXILINX_lab_final> in library <work> (Architecture <BEHA
     Set user-defined property "INIT =  0" for instance <I_Q7> in unit <FD8CE_MXILINX_lab_final>.
 Entity <FD8CE_MXILINX_lab_final> analyzed. Unit <FD8CE_MXILINX_lab_final> generated.
 
-Analyzing Entity <FD4CE_MXILINX_lab_final> in library <work> (Architecture <BEHAVIORAL>).
+Analyzing Entity <FD4CE_MXILINX_lab_final> in library <work> (Architecture <behavioral>).
     Set user-defined property "INIT =  0" for instance <I_Q0> in unit <FD4CE_MXILINX_lab_final>.
     Set user-defined property "INIT =  0" for instance <I_Q1> in unit <FD4CE_MXILINX_lab_final>.
     Set user-defined property "INIT =  0" for instance <I_Q2> in unit <FD4CE_MXILINX_lab_final>.
     Set user-defined property "INIT =  0" for instance <I_Q3> in unit <FD4CE_MXILINX_lab_final>.
 Entity <FD4CE_MXILINX_lab_final> analyzed. Unit <FD4CE_MXILINX_lab_final> generated.
 
-Analyzing Entity <ADD8_MXILINX_lab_final> in library <work> (Architecture <BEHAVIORAL>).
+Analyzing Entity <ADD8_MXILINX_lab_final> in library <work> (Architecture <behavioral>).
     Set user-defined property "RLOC =  X0Y0" for instance <I_36_16> in unit <ADD8_MXILINX_lab_final>.
     Set user-defined property "RLOC =  X0Y0" for instance <I_36_17> in unit <ADD8_MXILINX_lab_final>.
     Set user-defined property "RLOC =  X0Y1" for instance <I_36_18> in unit <ADD8_MXILINX_lab_final>.
@@ -595,65 +577,65 @@ Analyzing Entity <ADD8_MXILINX_lab_final> in library <work> (Architecture <BEHAV
     Set user-defined property "RLOC =  X0Y0" for instance <I_36_111> in unit <ADD8_MXILINX_lab_final>.
 Entity <ADD8_MXILINX_lab_final> analyzed. Unit <ADD8_MXILINX_lab_final> generated.
 
-Analyzing Entity <hexShifter8_MUSER_lab_final> in library <work> (Architecture <BEHAVIORAL>).
+Analyzing Entity <hexShifter8_MUSER_lab_final> in library <work> (Architecture <behavioral>).
 Entity <hexShifter8_MUSER_lab_final> analyzed. Unit <hexShifter8_MUSER_lab_final> generated.
 
-Analyzing Entity <I_Register_MUSER_lab_final> in library <work> (Architecture <BEHAVIORAL>).
-    Set user-defined property "HU_SET =  XLXI_41_22" for instance <XLXI_41> in unit <I_Register_MUSER_lab_final>.
-    Set user-defined property "HU_SET =  XLXI_46_19" for instance <XLXI_46> in unit <I_Register_MUSER_lab_final>.
-    Set user-defined property "HU_SET =  XLXI_47_20" for instance <XLXI_47> in unit <I_Register_MUSER_lab_final>.
-WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 1470: Unconnected output port 'CO' of component 'ADD8_MXILINX_lab_final'.
-WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 1470: Unconnected output port 'OFL' of component 'ADD8_MXILINX_lab_final'.
-    Set user-defined property "HU_SET =  XLXI_59_21" for instance <XLXI_59> in unit <I_Register_MUSER_lab_final>.
+Analyzing Entity <I_Register_MUSER_lab_final> in library <work> (Architecture <behavioral>).
+    Set user-defined property "HU_SET =  XLXI_41_94" for instance <XLXI_41> in unit <I_Register_MUSER_lab_final>.
+    Set user-defined property "HU_SET =  XLXI_46_91" for instance <XLXI_46> in unit <I_Register_MUSER_lab_final>.
+    Set user-defined property "HU_SET =  XLXI_47_92" for instance <XLXI_47> in unit <I_Register_MUSER_lab_final>.
+WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 2062: Unconnected output port 'CO' of component 'ADD8_MXILINX_lab_final'.
+WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 2062: Unconnected output port 'OFL' of component 'ADD8_MXILINX_lab_final'.
+    Set user-defined property "HU_SET =  XLXI_59_93" for instance <XLXI_59> in unit <I_Register_MUSER_lab_final>.
 Entity <I_Register_MUSER_lab_final> analyzed. Unit <I_Register_MUSER_lab_final> generated.
 
-Analyzing Entity <D_Register_MUSER_lab_final> in library <work> (Architecture <BEHAVIORAL>).
-    Set user-defined property "HU_SET =  XLXI_41_18" for instance <XLXI_41> in unit <D_Register_MUSER_lab_final>.
-    Set user-defined property "HU_SET =  XLXI_46_15" for instance <XLXI_46> in unit <D_Register_MUSER_lab_final>.
-    Set user-defined property "HU_SET =  XLXI_47_16" for instance <XLXI_47> in unit <D_Register_MUSER_lab_final>.
-WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 1320: Unconnected output port 'CO' of component 'ADD8_MXILINX_lab_final'.
-WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 1320: Unconnected output port 'OFL' of component 'ADD8_MXILINX_lab_final'.
-    Set user-defined property "HU_SET =  XLXI_59_17" for instance <XLXI_59> in unit <D_Register_MUSER_lab_final>.
+Analyzing Entity <D_Register_MUSER_lab_final> in library <work> (Architecture <behavioral>).
+    Set user-defined property "HU_SET =  XLXI_41_90" for instance <XLXI_41> in unit <D_Register_MUSER_lab_final>.
+    Set user-defined property "HU_SET =  XLXI_46_87" for instance <XLXI_46> in unit <D_Register_MUSER_lab_final>.
+    Set user-defined property "HU_SET =  XLXI_47_88" for instance <XLXI_47> in unit <D_Register_MUSER_lab_final>.
+WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 1896: Unconnected output port 'CO' of component 'ADD8_MXILINX_lab_final'.
+WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 1896: Unconnected output port 'OFL' of component 'ADD8_MXILINX_lab_final'.
+    Set user-defined property "HU_SET =  XLXI_59_89" for instance <XLXI_59> in unit <D_Register_MUSER_lab_final>.
 Entity <D_Register_MUSER_lab_final> analyzed. Unit <D_Register_MUSER_lab_final> generated.
 
-Analyzing Entity <I_Memory_MUSER_lab_final> in library <work> (Architecture <BEHAVIORAL>).
+Analyzing Entity <I_Memory_MUSER_lab_final> in library <work> (Architecture <behavioral>).
 Entity <I_Memory_MUSER_lab_final> analyzed. Unit <I_Memory_MUSER_lab_final> generated.
 
-Analyzing Entity <sRAM32x8_ex_pgm_instr> in library <work> (Architecture <Behavioral>).
+Analyzing Entity <sRAM32x8_ex_pgm_instr> in library <work> (Architecture <behavioral>).
 Entity <sRAM32x8_ex_pgm_instr> analyzed. Unit <sRAM32x8_ex_pgm_instr> generated.
 
-Analyzing Entity <Output_DebugMode_MUSER_lab_final> in library <work> (Architecture <BEHAVIORAL>).
-WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 1885: Unconnected output port 'Dout3' of component 'bin2BCD3en'.
-WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 1885: Unconnected output port 'Dout2' of component 'bin2BCD3en'.
-WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 1885: Unconnected output port 'RBout' of component 'bin2BCD3en'.
-WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 1915: Unconnected output port 'Dout3' of component 'bin2BCD3en'.
-WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 1915: Unconnected output port 'Dout2' of component 'bin2BCD3en'.
-WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 1915: Unconnected output port 'RBout' of component 'bin2BCD3en'.
-WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 1925: Unconnected output port 'CLK1M' of component 'DCM_100M'.
-WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 1925: Unconnected output port 'CLK1k' of component 'DCM_100M'.
-WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 1925: Unconnected output port 'CLK100' of component 'DCM_100M'.
-WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 1925: Unconnected output port 'CLK1' of component 'DCM_100M'.
+Analyzing Entity <Output_DebugMode_MUSER_lab_final> in library <work> (Architecture <behavioral>).
+WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 2326: Unconnected output port 'Dout3' of component 'bin2BCD3en'.
+WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 2326: Unconnected output port 'Dout2' of component 'bin2BCD3en'.
+WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 2326: Unconnected output port 'RBout' of component 'bin2BCD3en'.
+WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 2356: Unconnected output port 'Dout3' of component 'bin2BCD3en'.
+WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 2356: Unconnected output port 'Dout2' of component 'bin2BCD3en'.
+WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 2356: Unconnected output port 'RBout' of component 'bin2BCD3en'.
+WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 2366: Unconnected output port 'CLK1M' of component 'DCM_100M'.
+WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 2366: Unconnected output port 'CLK1k' of component 'DCM_100M'.
+WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 2366: Unconnected output port 'CLK100' of component 'DCM_100M'.
+WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 2366: Unconnected output port 'CLK1' of component 'DCM_100M'.
 Entity <Output_DebugMode_MUSER_lab_final> analyzed. Unit <Output_DebugMode_MUSER_lab_final> generated.
 
-Analyzing Entity <sel_strobeB> in library <work> (Architecture <Behavioral>).
+Analyzing Entity <sel_strobeB> in library <work> (Architecture <behavioral>).
 Entity <sel_strobeB> analyzed. Unit <sel_strobeB> generated.
 
-Analyzing Entity <bin2BCD3en> in library <work> (Architecture <Behavioral>).
+Analyzing Entity <bin2BCD3en> in library <work> (Architecture <behavioral>).
 INFO:Xst:1561 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/modules/bin2BCD3en.vhd" line 62: Mux is complete : default of case is discarded
 INFO:Xst:1561 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/modules/bin2BCD3en.vhd" line 62: Mux is complete : default of case is discarded
 INFO:Xst:2679 - Register <Dout3> in unit <bin2BCD3en> has a constant value of 0000 during circuit operation. The register is replaced by logic.
 Entity <bin2BCD3en> analyzed. Unit <bin2BCD3en> generated.
 
-Analyzing Entity <mux4SSD> in library <work> (Architecture <Behavioral>).
+Analyzing Entity <mux4SSD> in library <work> (Architecture <behavioral>).
 Entity <mux4SSD> analyzed. Unit <mux4SSD> generated.
 
-Analyzing Entity <SSD_1dig> in library <work> (Architecture <Behavioral>).
+Analyzing Entity <SSD_1dig> in library <work> (Architecture <behavioral>).
 Entity <SSD_1dig> analyzed. Unit <SSD_1dig> generated.
 
-Analyzing Entity <MUX8Bit_MUSER_lab_final> in library <work> (Architecture <BEHAVIORAL>).
+Analyzing Entity <MUX8Bit_MUSER_lab_final> in library <work> (Architecture <behavioral>).
 Entity <MUX8Bit_MUSER_lab_final> analyzed. Unit <MUX8Bit_MUSER_lab_final> generated.
 
-Analyzing Entity <lab_KEYPAD_FINAL> in library <work> (Architecture <BEHAVIORAL>).
+Analyzing Entity <lab_KEYPAD_FINAL> in library <work> (Architecture <behavioral>).
 WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_KEYPAD_FINAL.vhf" line 113: Unconnected output port 'binO' of component 'CRenc4bin'.
 WARNING:Xst:754 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_KEYPAD_FINAL.vhf" line 113: Unconnected inout port 'colO' of component 'CRenc4bin'.
 WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_KEYPAD_FINAL.vhf" line 127: Unconnected output port 'CLK1M' of component 'DCM_100M'.
@@ -661,32 +643,41 @@ WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_fi
 WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_KEYPAD_FINAL.vhf" line 160: Unconnected output port 'P' of component 'oneshot'.
 Entity <lab_KEYPAD_FINAL> analyzed. Unit <lab_KEYPAD_FINAL> generated.
 
-Analyzing Entity <CRenc4bin> in library <work> (Architecture <Behavioral>).
+Analyzing Entity <CRenc4bin> in library <work> (Architecture <behavioral>).
 Entity <CRenc4bin> analyzed. Unit <CRenc4bin> generated.
 
-Analyzing Entity <key_detect> in library <work> (Architecture <Behavioral>).
+Analyzing Entity <key_detect> in library <work> (Architecture <behavioral>).
 Entity <key_detect> analyzed. Unit <key_detect> generated.
 
-Analyzing Entity <col_strobe> in library <work> (Architecture <Behavioral>).
+Analyzing Entity <col_strobe> in library <work> (Architecture <behavioral>).
 Entity <col_strobe> analyzed. Unit <col_strobe> generated.
 
-Analyzing generic Entity <oneshot> in library <work> (Architecture <Behavioral>).
+Analyzing generic Entity <oneshot> in library <work> (Architecture <behavioral>).
 	Plock = 6000
 	Pstart = 50
 	Pwid = 80
 Entity <oneshot> analyzed. Unit <oneshot> generated.
 
-Analyzing Entity <decoder16keyEn> in library <work> (Architecture <Doric>).
+Analyzing Entity <decoder16keyEn> in library <work> (Architecture <doric>).
 Entity <decoder16keyEn> analyzed. Unit <decoder16keyEn> generated.
 
-Analyzing generic Entity <key4_dbnc> in library <work> (Architecture <Behavioral>).
+Analyzing generic Entity <key4_dbnc> in library <work> (Architecture <behavioral>).
 	lockperiod = 1000
 Entity <key4_dbnc> analyzed. Unit <key4_dbnc> generated.
 
-Analyzing Entity <switch_debounce> in library <work> (Architecture <Behavioral>).
+Analyzing Entity <switch_debounce> in library <work> (Architecture <behavioral>).
 Entity <switch_debounce> analyzed. Unit <switch_debounce> generated.
 
-Analyzing Entity <ProgramGround_MUSER_lab_final> in library <work> (Architecture <BEHAVIORAL>).
+Analyzing Entity <Full_AdderSub8_MUSER_lab_final> in library <work> (Architecture <behavioral>).
+Entity <Full_AdderSub8_MUSER_lab_final> analyzed. Unit <Full_AdderSub8_MUSER_lab_final> generated.
+
+Analyzing Entity <addersub8_MUSER_lab_final> in library <work> (Architecture <behavioral>).
+Entity <addersub8_MUSER_lab_final> analyzed. Unit <addersub8_MUSER_lab_final> generated.
+
+Analyzing Entity <Full_Add_MUSER_lab_final> in library <work> (Architecture <behavioral>).
+Entity <Full_Add_MUSER_lab_final> analyzed. Unit <Full_Add_MUSER_lab_final> generated.
+
+Analyzing Entity <ProgramGround_MUSER_lab_final> in library <work> (Architecture <behavioral>).
 WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 586: Unconnected output port 'LCA' of component 'InstructionSymbols_MUSER_lab_final'.
 WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 586: Unconnected output port 'CLR' of component 'InstructionSymbols_MUSER_lab_final'.
 WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 586: Unconnected output port 'ADDU' of component 'InstructionSymbols_MUSER_lab_final'.
@@ -704,31 +695,31 @@ WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_fi
 WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 586: Unconnected output port 'D_Inv' of component 'InstructionSymbols_MUSER_lab_final'.
 Entity <ProgramGround_MUSER_lab_final> analyzed. Unit <ProgramGround_MUSER_lab_final> generated.
 
-Analyzing Entity <InstructionSymbols_MUSER_lab_final> in library <work> (Architecture <BEHAVIORAL>).
-    Set user-defined property "HU_SET =  XLXI_11_12" for instance <XLXI_11> in unit <InstructionSymbols_MUSER_lab_final>.
-    Set user-defined property "HU_SET =  XLXI_12_0" for instance <XLXI_12> in unit <InstructionSymbols_MUSER_lab_final>.
-    Set user-defined property "HU_SET =  XLXI_13_13" for instance <XLXI_13> in unit <InstructionSymbols_MUSER_lab_final>.
-    Set user-defined property "HU_SET =  XLXI_14_1" for instance <XLXI_14> in unit <InstructionSymbols_MUSER_lab_final>.
-    Set user-defined property "HU_SET =  XLXI_15_2" for instance <XLXI_15> in unit <InstructionSymbols_MUSER_lab_final>.
-    Set user-defined property "HU_SET =  XLXI_16_3" for instance <XLXI_16> in unit <InstructionSymbols_MUSER_lab_final>.
-    Set user-defined property "HU_SET =  XLXI_17_4" for instance <XLXI_17> in unit <InstructionSymbols_MUSER_lab_final>.
-    Set user-defined property "HU_SET =  XLXI_18_5" for instance <XLXI_18> in unit <InstructionSymbols_MUSER_lab_final>.
-    Set user-defined property "HU_SET =  XLXI_19_6" for instance <XLXI_19> in unit <InstructionSymbols_MUSER_lab_final>.
-    Set user-defined property "HU_SET =  XLXI_20_7" for instance <XLXI_20> in unit <InstructionSymbols_MUSER_lab_final>.
-    Set user-defined property "HU_SET =  XLXI_21_8" for instance <XLXI_21> in unit <InstructionSymbols_MUSER_lab_final>.
-    Set user-defined property "HU_SET =  XLXI_22_9" for instance <XLXI_22> in unit <InstructionSymbols_MUSER_lab_final>.
-    Set user-defined property "HU_SET =  XLXI_23_10" for instance <XLXI_23> in unit <InstructionSymbols_MUSER_lab_final>.
-    Set user-defined property "HU_SET =  XLXI_24_11" for instance <XLXI_24> in unit <InstructionSymbols_MUSER_lab_final>.
-    Set user-defined property "HU_SET =  XLXI_25_14" for instance <XLXI_25> in unit <InstructionSymbols_MUSER_lab_final>.
+Analyzing Entity <InstructionSymbols_MUSER_lab_final> in library <work> (Architecture <behavioral>).
+    Set user-defined property "HU_SET =  XLXI_11_80" for instance <XLXI_11> in unit <InstructionSymbols_MUSER_lab_final>.
+    Set user-defined property "HU_SET =  XLXI_12_68" for instance <XLXI_12> in unit <InstructionSymbols_MUSER_lab_final>.
+    Set user-defined property "HU_SET =  XLXI_13_81" for instance <XLXI_13> in unit <InstructionSymbols_MUSER_lab_final>.
+    Set user-defined property "HU_SET =  XLXI_14_69" for instance <XLXI_14> in unit <InstructionSymbols_MUSER_lab_final>.
+    Set user-defined property "HU_SET =  XLXI_15_70" for instance <XLXI_15> in unit <InstructionSymbols_MUSER_lab_final>.
+    Set user-defined property "HU_SET =  XLXI_16_71" for instance <XLXI_16> in unit <InstructionSymbols_MUSER_lab_final>.
+    Set user-defined property "HU_SET =  XLXI_17_72" for instance <XLXI_17> in unit <InstructionSymbols_MUSER_lab_final>.
+    Set user-defined property "HU_SET =  XLXI_18_73" for instance <XLXI_18> in unit <InstructionSymbols_MUSER_lab_final>.
+    Set user-defined property "HU_SET =  XLXI_19_74" for instance <XLXI_19> in unit <InstructionSymbols_MUSER_lab_final>.
+    Set user-defined property "HU_SET =  XLXI_20_75" for instance <XLXI_20> in unit <InstructionSymbols_MUSER_lab_final>.
+    Set user-defined property "HU_SET =  XLXI_21_76" for instance <XLXI_21> in unit <InstructionSymbols_MUSER_lab_final>.
+    Set user-defined property "HU_SET =  XLXI_22_77" for instance <XLXI_22> in unit <InstructionSymbols_MUSER_lab_final>.
+    Set user-defined property "HU_SET =  XLXI_23_78" for instance <XLXI_23> in unit <InstructionSymbols_MUSER_lab_final>.
+    Set user-defined property "HU_SET =  XLXI_24_79" for instance <XLXI_24> in unit <InstructionSymbols_MUSER_lab_final>.
+    Set user-defined property "HU_SET =  XLXI_25_82" for instance <XLXI_25> in unit <InstructionSymbols_MUSER_lab_final>.
 Entity <InstructionSymbols_MUSER_lab_final> analyzed. Unit <InstructionSymbols_MUSER_lab_final> generated.
 
-Analyzing Entity <AND8_MXILINX_lab_final> in library <work> (Architecture <BEHAVIORAL>).
+Analyzing Entity <AND8_MXILINX_lab_final> in library <work> (Architecture <behavioral>).
     Set user-defined property "RLOC =  X0Y0" for instance <I_36_29> in unit <AND8_MXILINX_lab_final>.
     Set user-defined property "RLOC =  X0Y0" for instance <I_36_138> in unit <AND8_MXILINX_lab_final>.
     Set user-defined property "RLOC =  X0Y1" for instance <I_36_152> in unit <AND8_MXILINX_lab_final>.
 Entity <AND8_MXILINX_lab_final> analyzed. Unit <AND8_MXILINX_lab_final> generated.
 
-Analyzing Entity <INV8_MXILINX_lab_final> in library <work> (Architecture <BEHAVIORAL>).
+Analyzing Entity <INV8_MXILINX_lab_final> in library <work> (Architecture <behavioral>).
 Entity <INV8_MXILINX_lab_final> analyzed. Unit <INV8_MXILINX_lab_final> generated.
 
 
@@ -943,11 +934,14 @@ Unit <D_Memory_MUSER_lab_final> synthesized.
 
 Synthesizing Unit <I_Memory_MUSER_lab_final>.
     Related source file is "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf".
+WARNING:Xst:647 - Input <CLK_Speed> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:653 - Signal <XLXI_8_I0_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
 Unit <I_Memory_MUSER_lab_final> synthesized.
 
 
 Synthesizing Unit <Output_DebugMode_MUSER_lab_final>.
     Related source file is "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf".
+WARNING:Xst:647 - Input <AddressIn> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:1780 - Signal <Test_thenChangetoPullup> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <RunMode> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 Unit <Output_DebugMode_MUSER_lab_final> synthesized.
@@ -994,6 +988,11 @@ Synthesizing Unit <key4_dbnc>.
 Unit <key4_dbnc> synthesized.
 
 
+Synthesizing Unit <Full_Add_MUSER_lab_final>.
+    Related source file is "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf".
+Unit <Full_Add_MUSER_lab_final> synthesized.
+
+
 Synthesizing Unit <AND8_MXILINX_lab_final>.
     Related source file is "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf".
 WARNING:Xst:653 - Signal <dummy> is used but never assigned. This sourceless signal will be automatically connected to value 0.
@@ -1035,7 +1034,6 @@ Unit <Address_MUSER_lab_final> synthesized.
 
 Synthesizing Unit <I_Register_MUSER_lab_final>.
     Related source file is "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf".
-WARNING:Xst:653 - Signal <XLXN_314> is used but never assigned. This sourceless signal will be automatically connected to value 0.
 WARNING:Xst:653 - Signal <XLXI_59_CI_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
 WARNING:Xst:653 - Signal <Q_DUMMY<7:4>> is used but never assigned. This sourceless signal will be automatically connected to value 0000.
 WARNING:Xst:653 - Signal <G_DUMMY<7:4>> is used but never assigned. This sourceless signal will be automatically connected to value 0000.
@@ -1044,11 +1042,17 @@ Unit <I_Register_MUSER_lab_final> synthesized.
 
 Synthesizing Unit <D_Register_MUSER_lab_final>.
     Related source file is "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf".
-WARNING:Xst:653 - Signal <XLXN_314> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <XLXI_63_I0_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
 WARNING:Xst:653 - Signal <XLXI_59_CI_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
 WARNING:Xst:653 - Signal <Q_DUMMY<7:4>> is used but never assigned. This sourceless signal will be automatically connected to value 0000.
 WARNING:Xst:653 - Signal <G_DUMMY<7:4>> is used but never assigned. This sourceless signal will be automatically connected to value 0000.
 Unit <D_Register_MUSER_lab_final> synthesized.
+
+
+Synthesizing Unit <addersub8_MUSER_lab_final>.
+    Related source file is "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf".
+WARNING:Xst:1780 - Signal <XLXN_129> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+Unit <addersub8_MUSER_lab_final> synthesized.
 
 
 Synthesizing Unit <InstructionSymbols_MUSER_lab_final>.
@@ -1188,7 +1192,15 @@ Unit <CB4CLED_MXILINX_lab_final> synthesized.
 
 Synthesizing Unit <Registers_MUSER_lab_final>.
     Related source file is "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf".
+WARNING:Xst:1305 - Output <A_shiftO> is never assigned. Tied to value 00000000.
 Unit <Registers_MUSER_lab_final> synthesized.
+
+
+Synthesizing Unit <Full_AdderSub8_MUSER_lab_final>.
+    Related source file is "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf".
+WARNING:Xst:653 - Signal <XLXI_3_nAdd_SUB_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <XLXI_3_Ain_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 00000000.
+Unit <Full_AdderSub8_MUSER_lab_final> synthesized.
 
 
 Synthesizing Unit <P_Counter_MUSER_lab_final>.
@@ -1219,24 +1231,31 @@ WARNING:Xst:646 - Signal <nWE_D> is assigned but never used. This unconnected si
 WARNING:Xst:646 - Signal <keyO> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:653 - Signal <XLXN_358> is used but never assigned. This sourceless signal will be automatically connected to value 0.
 WARNING:Xst:653 - Signal <XLXN_250> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <XLXI_145_nADD_SUB_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <XLXI_145_Bin_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 00000000.
+WARNING:Xst:653 - Signal <XLXI_145_Ain_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 00000000.
+WARNING:Xst:653 - Signal <XLXI_141_I_In_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 00000000.
+WARNING:Xst:653 - Signal <XLXI_133_AddressIn_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 00000000.
 WARNING:Xst:653 - Signal <XLXI_111_EN_D_Memory_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
 WARNING:Xst:646 - Signal <I_hexO> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <D_hexO> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:646 - Signal <A_hexO> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <AddressI<7:5>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 Unit <Memory_MUSER_lab_final> synthesized.
 
 
 Synthesizing Unit <lab_final>.
     Related source file is "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf".
+WARNING:Xst:653 - Signal <XLXN_94> is used but never assigned. This sourceless signal will be automatically connected to value 00000000.
+WARNING:Xst:653 - Signal <XLXN_93> is used but never assigned. This sourceless signal will be automatically connected to value 00000000.
 WARNING:Xst:653 - Signal <XLXN_23> is used but never assigned. This sourceless signal will be automatically connected to value 0.
 WARNING:Xst:653 - Signal <XLXN_12> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <XLXI_51_AorD_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
 WARNING:Xst:653 - Signal <XLXI_45_Step_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
 WARNING:Xst:653 - Signal <XLXI_45_RunMode_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
 WARNING:Xst:653 - Signal <XLXI_45_CLK_Speed_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
 WARNING:Xst:653 - Signal <XLXI_43_RST_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
 WARNING:Xst:653 - Signal <XLXI_38_registerB_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 00000000.
 WARNING:Xst:653 - Signal <XLXI_38_registerA_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 00000000.
-WARNING:Xst:653 - Signal <DataMode> is used but never assigned. This sourceless signal will be automatically connected to value 0.
 Unit <lab_final> synthesized.
 
 WARNING:Xst:524 - All outputs of the instance <XLXI_79> of the block <oneshot> are unconnected in block <lab_KEYPAD_FINAL>.
@@ -1251,19 +1270,19 @@ Macro Statistics
  16x7-bit ROM                                          : 1
  4x2-bit ROM                                           : 1
  8x4-bit ROM                                           : 2
-# Adders/Subtractors                                   : 19
- 32-bit adder                                          : 15
+# Adders/Subtractors                                   : 24
+ 32-bit adder                                          : 20
  32-bit subtractor                                     : 4
-# Counters                                             : 15
- 32-bit up counter                                     : 15
-# Registers                                            : 127
- 1-bit register                                        : 46
+# Counters                                             : 20
+ 32-bit up counter                                     : 20
+# Registers                                            : 132
+ 1-bit register                                        : 51
  2-bit register                                        : 2
  32-bit register                                       : 4
  4-bit register                                        : 11
  8-bit register                                        : 64
-# Comparators                                          : 24
- 32-bit comparator greatequal                          : 15
+# Comparators                                          : 29
+ 32-bit comparator greatequal                          : 20
  32-bit comparator greater                             : 4
  32-bit comparator lessequal                           : 4
  4-bit comparator equal                                : 1
@@ -1283,6 +1302,8 @@ Macro Statistics
 
 WARNING:Xst:1290 - Hierarchical block <XLXI_17> is unconnected in block <XLXI_142>.
    It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <XLXI_147> is unconnected in block <XLXI_51>.
+   It will be removed from the design.
 WARNING:Xst:2404 -  FFs/Latches <Dout2<3:2>> (without init value) have a constant value of 0 in block <bin2BCD3en>.
 
 Synthesizing (advanced) Unit <sel_strobeB>.
@@ -1298,15 +1319,15 @@ Macro Statistics
  16x7-bit ROM                                          : 1
  4x2-bit ROM                                           : 1
  8x4-bit ROM                                           : 2
-# Adders/Subtractors                                   : 19
- 32-bit adder                                          : 15
+# Adders/Subtractors                                   : 24
+ 32-bit adder                                          : 20
  32-bit subtractor                                     : 4
-# Counters                                             : 15
- 32-bit up counter                                     : 15
-# Registers                                            : 790
- Flip-Flops                                            : 790
-# Comparators                                          : 24
- 32-bit comparator greatequal                          : 15
+# Counters                                             : 20
+ 32-bit up counter                                     : 20
+# Registers                                            : 795
+ Flip-Flops                                            : 795
+# Comparators                                          : 29
+ 32-bit comparator greatequal                          : 20
  32-bit comparator greater                             : 4
  32-bit comparator lessequal                           : 4
  4-bit comparator equal                                : 1
@@ -1325,6 +1346,8 @@ INFO:Xst:2261 - The FF/Latch <lobster> in Unit <key_detect> is equivalent to the
 INFO:Xst:2261 - The FF/Latch <RBout_1> in Unit <bin2BCD3en> is equivalent to the following FF/Latch, which will be removed : <RBout_0> 
 WARNING:Xst:1710 - FF/Latch <RBout_3> (without init value) has a constant value of 1 in block <bin2BCD3en>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RBout_1> (without init value) has a constant value of 0 in block <bin2BCD3en>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:524 - All outputs of the instance <XLXI_147> of the block <DCM_100M> are unconnected in block <Memory_MUSER_lab_final>.
+   This instance will be removed from the design along with all underlying logic
 
 Optimizing unit <lab_final> ...
 
@@ -1367,6 +1390,12 @@ Optimizing unit <bin2BCD3en> ...
 Optimizing unit <FTCLEX_MXILINX_lab_final> ...
 
 Optimizing unit <Address_MUSER_lab_final> ...
+
+Optimizing unit <I_Register_MUSER_lab_final> ...
+
+Optimizing unit <D_Register_MUSER_lab_final> ...
+
+Optimizing unit <addersub8_MUSER_lab_final> ...
 
 Optimizing unit <InstructionSymbols_MUSER_lab_final> ...
 
@@ -1800,20 +1829,22 @@ Design Statistics
 # IOs                              : 43
 
 Cell Usage :
-# BELS                             : 2697
-#      AND2                        : 48
+# BELS                             : 2749
+#      AND2                        : 47
 #      AND2B1                      : 24
-#      AND2B2                      : 6
+#      AND2B2                      : 4
 #      AND3                        : 5
 #      AND3B1                      : 2
 #      AND3B2                      : 2
 #      AND3B3                      : 2
-#      AND4                        : 32
+#      AND4                        : 34
+#      AND4B2                      : 1
 #      AND4B3                      : 1
 #      AND4B4                      : 2
 #      AND5                        : 2
+#      AND5B2                      : 2
 #      AND5B4                      : 1
-#      BUF                         : 8
+#      BUF                         : 9
 #      GND                         : 19
 #      INV                         : 41
 #      LUT1                        : 133
@@ -1832,7 +1863,7 @@ Cell Usage :
 #      MUXF8                       : 16
 #      OR2                         : 31
 #      VCC                         : 3
-#      XOR2                        : 72
+#      XOR2                        : 121
 #      XOR3                        : 8
 #      XORCY                       : 406
 # FlipFlops/Latches                : 881
@@ -1841,12 +1872,15 @@ Cell Usage :
 #      FDCP                        : 16
 #      FDE                         : 652
 #      FDR                         : 5
-# Clock Buffers                    : 7
-#      BUFG                        : 5
+# Clock Buffers                    : 6
+#      BUFG                        : 4
 #      BUFGP                       : 2
-# IO Buffers                       : 39
-#      IBUF                        : 12
+# IO Buffers                       : 40
+#      IBUF                        : 13
 #      OBUF                        : 27
+# Logical                          : 53
+#      NAND2                       : 50
+#      NOR2                        : 3
 # Others                           : 84
 #      FMAP                        : 74
 #      PULLDOWN                    : 6
@@ -1858,12 +1892,12 @@ Device utilization summary:
 
 Selected Device : 3s100ecp132-4 
 
- Number of Slices:                      950  out of    960    98%  
+ Number of Slices:                      951  out of    960    99%  
  Number of Slice Flip Flops:            881  out of   1920    45%  
  Number of 4 input LUTs:               1224  out of   1920    63%  
  Number of IOs:                          43
- Number of bonded IOBs:                  41  out of     83    49%  
- Number of GCLKs:                         7  out of     24    29%  
+ Number of bonded IOBs:                  42  out of     83    50%  
+ Number of GCLKs:                         6  out of     24    25%  
 
 ---------------------------
 Partition Resource Summary:
@@ -1883,22 +1917,24 @@ NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
 
 Clock Information:
 ------------------
------------------------------------------------------------------------+------------------------------------------------+-------+
-Clock Signal                                                           | Clock buffer(FF name)                          | Load  |
------------------------------------------------------------------------+------------------------------------------------+-------+
-Clock                                                                  | BUFGP                                          | 132   |
-XLXI_51/XLXI_111/XLXN_281(XLXI_51/XLXI_111/XLXI_7:O)                   | BUFG(*)(XLXI_51/XLXI_111/XLXI_6/mem_3_7)       | 256   |
-XLXI_51/XLXI_132/XLXN_221(XLXI_51/XLXI_132/XLXI_7:O)                   | BUFG(*)(XLXI_51/XLXI_132/XLXI_1/mem_3_7)       | 256   |
-XLXI_51/XLXI_142/XLXI_77/rowON(XLXI_51/XLXI_142/XLXI_77/rowON1:O)      | NONE(*)(XLXI_51/XLXI_142/XLXI_77/lastrow_3)    | 9     |
-XLXI_51/XLXI_142/XLXI_28/clk_10k_01                                    | BUFG                                           | 148   |
-btn_writeData                                                          | IBUF+BUFG                                      | 28    |
-WCLK_shiftReg                                                          | BUFGP                                          | 12    |
-XLXI_51/XLXI_121/XLXI_129/XLXN_351(XLXI_51/XLXI_121/XLXI_129/XLXI_92:O)| NONE(*)(XLXI_51/XLXI_121/XLXI_129/XLXI_41/I_Q0)| 8     |
-XLXI_51/XLXI_133/XLXI_41/clk_10k_01                                    | BUFG                                           | 20    |
-XLXI_45/CLR_4ticks(XLXI_45/XLXI_9:O)                                   | NONE(*)(XLXI_45/XLXI_1/I_Q7/I_36_35)           | 8     |
-DataMode                                                               | NONE(XLXI_45/XLXI_6/I_Q3/I_36_35)              | 4     |
------------------------------------------------------------------------+------------------------------------------------+-------+
-(*) These 5 clock signal(s) are generated by combinatorial logic,
+------------------------------------------------------------------------+------------------------------------------------+-------+
+Clock Signal                                                            | Clock buffer(FF name)                          | Load  |
+------------------------------------------------------------------------+------------------------------------------------+-------+
+Clock                                                                   | BUFGP                                          | 132   |
+XLXI_51/XLXI_111/XLXN_281(XLXI_51/XLXI_111/XLXI_7:O)                    | BUFG(*)(XLXI_51/XLXI_111/XLXI_6/mem_3_7)       | 256   |
+XLXI_51/XLXI_132/XLXN_261(XLXI_51/XLXI_132/XLXI_8:O)                    | BUFG(*)(XLXI_51/XLXI_132/XLXI_1/mem_3_7)       | 256   |
+XLXI_51/XLXI_142/XLXI_77/rowON(XLXI_51/XLXI_142/XLXI_77/rowON1:O)       | NONE(*)(XLXI_51/XLXI_142/XLXI_77/lastrow_3)    | 9     |
+XLXI_51/XLXI_142/XLXI_28/clk_10k_01                                     | BUFG                                           | 148   |
+XLXI_51/XLXI_121/XLXI_129/XLXN_358(XLXI_51/XLXI_121/XLXI_129/XLXI_96:O) | NONE(*)(XLXI_51/XLXI_121/XLXI_129/XLXI_46/I_Q0)| 4     |
+WCLK_shiftReg                                                           | BUFGP                                          | 12    |
+XLXI_51/XLXI_121/XLXI_129/XLXN_351(XLXI_51/XLXI_121/XLXI_129/XLXI_92:O) | NONE(*)(XLXI_51/XLXI_121/XLXI_129/XLXI_41/I_Q0)| 8     |
+XLXI_51/XLXI_121/XLXI_130/XLXN_348(XLXI_51/XLXI_121/XLXI_130/XLXI_120:O)| NONE(*)(XLXI_51/XLXI_121/XLXI_130/XLXI_46/I_Q0)| 12    |
+XLXI_51/XLXI_121/XLXI_132/XLXN_345(XLXI_51/XLXI_121/XLXI_132/XLXI_120:O)| NONE(*)(XLXI_51/XLXI_121/XLXI_132/XLXI_46/I_Q0)| 12    |
+XLXI_51/XLXI_133/XLXI_41/clk_10k_01                                     | BUFG                                           | 20    |
+XLXI_45/CLR_4ticks(XLXI_45/XLXI_9:O)                                    | NONE(*)(XLXI_45/XLXI_1/I_Q7/I_36_35)           | 8     |
+N0                                                                      | NONE(XLXI_45/XLXI_6/I_Q3/I_36_35)              | 4     |
+------------------------------------------------------------------------+------------------------------------------------+-------+
+(*) These 8 clock signal(s) are generated by combinatorial logic,
 and XST is not able to identify which are the primary clock signals.
 Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
 INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
@@ -1908,9 +1944,9 @@ Asynchronous Control Signals Information:
 --------------------------------------------------------------------------------------+---------------------------------------------+-------+
 Control Signal                                                                        | Buffer(FF name)                             | Load  |
 --------------------------------------------------------------------------------------+---------------------------------------------+-------+
-btn_CLR                                                                               | IBUF                                        | 24    |
-DataMode(XST_GND:G)                                                                   | NONE(XLXI_51/XLXI_121/XLXI_129/XLXI_46/I_Q0)| 16    |
+btn_CLR                                                                               | IBUF                                        | 32    |
 XLXI_51/XLXI_142/XLXI_77/lobster_and0000(XLXI_51/XLXI_142/XLXI_77/lobster_and000086:O)| NONE(XLXI_51/XLXI_142/XLXI_77/lastcol_0)    | 9     |
+N0(XST_GND:G)                                                                         | NONE(XLXI_51/XLXI_121/XLXI_129/XLXI_46/I_Q0)| 8     |
 XLXI_45/XLXN_7(XLXI_45/XLXI_3:O)                                                      | NONE(XLXI_45/XLXI_1/I_Q0/I_36_35)           | 8     |
 XLXI_45/CLR_4ticks(XLXI_45/XLXI_9:O)                                                  | NONE(XLXI_45/XLXI_6/I_Q0/I_36_35)           | 4     |
 XLXI_51/XLXI_121/XLXI_130/XLXN_313(XLXI_51/XLXI_121/XLXI_130/XLXI_63:O)               | NONE(XLXI_51/XLXI_121/XLXI_130/XLXI_46/I_Q0)| 4     |
@@ -2107,15 +2143,49 @@ Delay:               11.941ns (Levels of Logic = 15)
                                        (57.5% logic, 42.5% route)
 
 =========================================================================
-Timing constraint: Default period analysis for Clock 'btn_writeData'
+Timing constraint: Default period analysis for Clock 'XLXI_51/XLXI_121/XLXI_130/XLXN_348'
   Clock period: 4.156ns (frequency: 240.616MHz)
-  Total number of paths / destination ports: 96 / 16
+  Total number of paths / destination ports: 48 / 8
+-------------------------------------------------------------------------
+Delay:               4.156ns (Levels of Logic = 11)
+  Source:            XLXI_51/XLXI_121/XLXI_130/XLXI_46/I_Q0 (FF)
+  Destination:       XLXI_51/XLXI_121/XLXI_130/XLXI_41/I_Q7 (FF)
+  Source Clock:      XLXI_51/XLXI_121/XLXI_130/XLXN_348 rising
+  Destination Clock: XLXI_51/XLXI_121/XLXI_130/XLXN_348 rising
+
+  Data Path: XLXI_51/XLXI_121/XLXI_130/XLXI_46/I_Q0 to XLXI_51/XLXI_121/XLXI_130/XLXI_41/I_Q7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             3   0.591   0.531  I_Q0 (Q0)
+     end scope: 'XLXI_51/XLXI_121/XLXI_130/XLXI_46'
+     begin scope: 'XLXI_51/XLXI_121/XLXI_130/XLXI_59'
+     XOR2:I0->O            1   0.704   0.000  I_36_228 (I0)
+     MUXCY_L:S->LO         1   0.464   0.000  I_36_111 (C0)
+     MUXCY_L:CI->LO        1   0.059   0.000  I_36_55 (C1)
+     MUXCY_L:CI->LO        1   0.059   0.000  I_36_62 (C2)
+     MUXCY_L:CI->LO        1   0.059   0.000  I_36_58 (C3)
+     MUXCY_L:CI->LO        1   0.059   0.000  I_36_63 (C4)
+     MUXCY_L:CI->LO        1   0.059   0.000  I_36_110 (C5)
+     MUXCY_D:CI->LO        1   0.459   0.000  I_36_107 (C6)
+     XORCY:CI->O           1   0.804   0.000  I_36_80 (S<7>)
+     end scope: 'XLXI_51/XLXI_121/XLXI_130/XLXI_59'
+     begin scope: 'XLXI_51/XLXI_121/XLXI_130/XLXI_41'
+     FDCE:D                    0.308          I_Q7
+    ----------------------------------------
+    Total                      4.156ns (3.625ns logic, 0.531ns route)
+                                       (87.2% logic, 12.8% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_51/XLXI_121/XLXI_132/XLXN_345'
+  Clock period: 4.156ns (frequency: 240.616MHz)
+  Total number of paths / destination ports: 48 / 8
 -------------------------------------------------------------------------
 Delay:               4.156ns (Levels of Logic = 11)
   Source:            XLXI_51/XLXI_121/XLXI_132/XLXI_46/I_Q0 (FF)
   Destination:       XLXI_51/XLXI_121/XLXI_132/XLXI_41/I_Q7 (FF)
-  Source Clock:      btn_writeData rising
-  Destination Clock: btn_writeData rising
+  Source Clock:      XLXI_51/XLXI_121/XLXI_132/XLXN_345 rising
+  Destination Clock: XLXI_51/XLXI_121/XLXI_132/XLXN_345 rising
 
   Data Path: XLXI_51/XLXI_121/XLXI_132/XLXI_46/I_Q0 to XLXI_51/XLXI_121/XLXI_132/XLXI_41/I_Q7
                                 Gate     Net
@@ -2201,15 +2271,15 @@ Delay:               12.297ns (Levels of Logic = 13)
                                        (58.8% logic, 41.2% route)
 
 =========================================================================
-Timing constraint: Default period analysis for Clock 'DataMode'
+Timing constraint: Default period analysis for Clock 'N0'
   Clock period: 8.525ns (frequency: 117.302MHz)
   Total number of paths / destination ports: 16 / 4
 -------------------------------------------------------------------------
 Delay:               8.525ns (Levels of Logic = 9)
   Source:            XLXI_45/XLXI_6/I_Q0/I_36_35 (FF)
   Destination:       XLXI_45/XLXI_6/I_Q3/I_36_35 (FF)
-  Source Clock:      DataMode rising
-  Destination Clock: DataMode rising
+  Source Clock:      N0 rising
+  Destination Clock: N0 rising
 
   Data Path: XLXI_45/XLXI_6/I_Q0/I_36_35 to XLXI_45/XLXI_6/I_Q3/I_36_35
                                 Gate     Net
@@ -2268,54 +2338,54 @@ Offset:              12.664ns (Levels of Logic = 16)
                                        (59.2% logic, 40.8% route)
 
 =========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'btn_writeData'
-  Total number of paths / destination ports: 52 / 28
+Timing constraint: Default OFFSET IN BEFORE for Clock 'XLXI_51/XLXI_121/XLXI_129/XLXN_358'
+  Total number of paths / destination ports: 16 / 4
 -------------------------------------------------------------------------
-Offset:              5.415ns (Levels of Logic = 4)
+Offset:              5.628ns (Levels of Logic = 4)
   Source:            RunMode (PAD)
-  Destination:       XLXI_51/XLXI_121/XLXI_132/XLXI_41/I_Q0 (FF)
-  Destination Clock: btn_writeData rising
+  Destination:       XLXI_51/XLXI_121/XLXI_129/XLXI_46/I_Q0 (FF)
+  Destination Clock: XLXI_51/XLXI_121/XLXI_129/XLXN_358 rising
 
-  Data Path: RunMode to XLXI_51/XLXI_121/XLXI_132/XLXI_41/I_Q0
+  Data Path: RunMode to XLXI_51/XLXI_121/XLXI_129/XLXI_46/I_Q0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      IBUF:I->O             3   1.218   0.531  RunMode_IBUF (RunMode_IBUF)
-     INV:I->O              6   0.704   0.669  XLXI_40 (DebugMode)
-     AND3:I2->O           16   0.704   1.034  XLXI_51/XLXI_121/XLXI_132/XLXI_119 (XLXI_51/XLXI_121/XLXI_132/XLXN_343)
-     begin scope: 'XLXI_51/XLXI_121/XLXI_132/XLXI_41'
+     INV:I->O             10   0.704   0.882  XLXI_40 (DebugMode)
+     AND4B2:I2->O         16   0.704   1.034  XLXI_51/XLXI_121/XLXI_129/XLXI_95 (XLXI_51/XLXI_121/XLXI_129/XLXN_343)
+     begin scope: 'XLXI_51/XLXI_121/XLXI_129/XLXI_46'
      FDCE:CE                   0.555          I_Q0
     ----------------------------------------
-    Total                      5.415ns (3.181ns logic, 2.234ns route)
-                                       (58.7% logic, 41.3% route)
+    Total                      5.628ns (3.181ns logic, 2.447ns route)
+                                       (56.5% logic, 43.5% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'WCLK_shiftReg'
-  Total number of paths / destination ports: 20 / 12
+  Total number of paths / destination ports: 40 / 12
 -------------------------------------------------------------------------
-Offset:              5.415ns (Levels of Logic = 4)
+Offset:              5.628ns (Levels of Logic = 4)
   Source:            RunMode (PAD)
-  Destination:       XLXI_51/XLXI_121/XLXI_132/XLXI_47/I_Q0 (FF)
+  Destination:       XLXI_51/XLXI_121/XLXI_129/XLXI_47/I_Q0 (FF)
   Destination Clock: WCLK_shiftReg rising
 
-  Data Path: RunMode to XLXI_51/XLXI_121/XLXI_132/XLXI_47/I_Q0
+  Data Path: RunMode to XLXI_51/XLXI_121/XLXI_129/XLXI_47/I_Q0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      IBUF:I->O             3   1.218   0.531  RunMode_IBUF (RunMode_IBUF)
-     INV:I->O              6   0.704   0.669  XLXI_40 (DebugMode)
-     AND3:I2->O           16   0.704   1.034  XLXI_51/XLXI_121/XLXI_132/XLXI_119 (XLXI_51/XLXI_121/XLXI_132/XLXN_343)
-     begin scope: 'XLXI_51/XLXI_121/XLXI_132/XLXI_47'
+     INV:I->O             10   0.704   0.882  XLXI_40 (DebugMode)
+     AND4B2:I2->O         16   0.704   1.034  XLXI_51/XLXI_121/XLXI_129/XLXI_95 (XLXI_51/XLXI_121/XLXI_129/XLXN_343)
+     begin scope: 'XLXI_51/XLXI_121/XLXI_129/XLXI_47'
      FDCE:CE                   0.555          I_Q0
     ----------------------------------------
-    Total                      5.415ns (3.181ns logic, 2.234ns route)
-                                       (58.7% logic, 41.3% route)
+    Total                      5.628ns (3.181ns logic, 2.447ns route)
+                                       (56.5% logic, 43.5% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'XLXI_51/XLXI_121/XLXI_129/XLXN_351'
-  Total number of paths / destination ports: 8 / 8
+  Total number of paths / destination ports: 32 / 8
 -------------------------------------------------------------------------
-Offset:              5.415ns (Levels of Logic = 4)
+Offset:              5.628ns (Levels of Logic = 4)
   Source:            RunMode (PAD)
   Destination:       XLXI_51/XLXI_121/XLXI_129/XLXI_41/I_Q0 (FF)
   Destination Clock: XLXI_51/XLXI_121/XLXI_129/XLXN_351 rising
@@ -2325,13 +2395,57 @@ Offset:              5.415ns (Levels of Logic = 4)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      IBUF:I->O             3   1.218   0.531  RunMode_IBUF (RunMode_IBUF)
-     INV:I->O              6   0.704   0.669  XLXI_40 (DebugMode)
-     AND2:I0->O           16   0.704   1.034  XLXI_51/XLXI_121/XLXI_129/XLXI_90 (XLXI_51/XLXI_121/XLXI_129/XLXN_343)
+     INV:I->O             10   0.704   0.882  XLXI_40 (DebugMode)
+     AND4B2:I2->O         16   0.704   1.034  XLXI_51/XLXI_121/XLXI_129/XLXI_95 (XLXI_51/XLXI_121/XLXI_129/XLXN_343)
      begin scope: 'XLXI_51/XLXI_121/XLXI_129/XLXI_41'
      FDCE:CE                   0.555          I_Q0
     ----------------------------------------
-    Total                      5.415ns (3.181ns logic, 2.234ns route)
-                                       (58.7% logic, 41.3% route)
+    Total                      5.628ns (3.181ns logic, 2.447ns route)
+                                       (56.5% logic, 43.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'XLXI_51/XLXI_121/XLXI_130/XLXN_348'
+  Total number of paths / destination ports: 36 / 12
+-------------------------------------------------------------------------
+Offset:              5.628ns (Levels of Logic = 4)
+  Source:            RunMode (PAD)
+  Destination:       XLXI_51/XLXI_121/XLXI_130/XLXI_46/I_Q0 (FF)
+  Destination Clock: XLXI_51/XLXI_121/XLXI_130/XLXN_348 rising
+
+  Data Path: RunMode to XLXI_51/XLXI_121/XLXI_130/XLXI_46/I_Q0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             3   1.218   0.531  RunMode_IBUF (RunMode_IBUF)
+     INV:I->O             10   0.704   0.882  XLXI_40 (DebugMode)
+     AND3:I2->O           16   0.704   1.034  XLXI_51/XLXI_121/XLXI_130/XLXI_119 (XLXI_51/XLXI_121/XLXI_130/XLXN_343)
+     begin scope: 'XLXI_51/XLXI_121/XLXI_130/XLXI_41'
+     FDCE:CE                   0.555          I_Q0
+    ----------------------------------------
+    Total                      5.628ns (3.181ns logic, 2.447ns route)
+                                       (56.5% logic, 43.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'XLXI_51/XLXI_121/XLXI_132/XLXN_345'
+  Total number of paths / destination ports: 36 / 12
+-------------------------------------------------------------------------
+Offset:              5.628ns (Levels of Logic = 4)
+  Source:            RunMode (PAD)
+  Destination:       XLXI_51/XLXI_121/XLXI_132/XLXI_46/I_Q0 (FF)
+  Destination Clock: XLXI_51/XLXI_121/XLXI_132/XLXN_345 rising
+
+  Data Path: RunMode to XLXI_51/XLXI_121/XLXI_132/XLXI_46/I_Q0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             3   1.218   0.531  RunMode_IBUF (RunMode_IBUF)
+     INV:I->O             10   0.704   0.882  XLXI_40 (DebugMode)
+     AND3:I2->O           16   0.704   1.034  XLXI_51/XLXI_121/XLXI_132/XLXI_119 (XLXI_51/XLXI_121/XLXI_132/XLXN_343)
+     begin scope: 'XLXI_51/XLXI_121/XLXI_132/XLXI_41'
+     FDCE:CE                   0.555          I_Q0
+    ----------------------------------------
+    Total                      5.628ns (3.181ns logic, 2.447ns route)
+                                       (56.5% logic, 43.5% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'Clock'
@@ -2376,24 +2490,24 @@ Offset:              4.496ns (Levels of Logic = 1)
                                        (85.9% logic, 14.1% route)
 
 =========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'WCLK_shiftReg'
-  Total number of paths / destination ports: 4 / 4
+Timing constraint: Default OFFSET OUT AFTER for Clock 'XLXI_51/XLXI_121/XLXI_130/XLXN_348'
+  Total number of paths / destination ports: 8 / 8
 -------------------------------------------------------------------------
-Offset:              4.450ns (Levels of Logic = 2)
-  Source:            XLXI_51/XLXI_121/XLXI_129/XLXI_47/I_Q3 (FF)
-  Destination:       A_shiftO<3> (PAD)
-  Source Clock:      WCLK_shiftReg rising
+Offset:              5.126ns (Levels of Logic = 2)
+  Source:            XLXI_51/XLXI_121/XLXI_130/XLXI_41/I_Q7 (FF)
+  Destination:       A_shiftO<7> (PAD)
+  Source Clock:      XLXI_51/XLXI_121/XLXI_130/XLXN_348 rising
 
-  Data Path: XLXI_51/XLXI_121/XLXI_129/XLXI_47/I_Q3 to A_shiftO<3>
+  Data Path: XLXI_51/XLXI_121/XLXI_130/XLXI_41/I_Q7 to A_shiftO<7>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDCE:C->Q             4   0.591   0.587  I_Q3 (Q3)
-     end scope: 'XLXI_51/XLXI_121/XLXI_129/XLXI_47'
-     OBUF:I->O                 3.272          A_shiftO_3_OBUF (A_shiftO<3>)
+     FDCE:C->Q            33   0.591   1.263  I_Q7 (Q<7>)
+     end scope: 'XLXI_51/XLXI_121/XLXI_130/XLXI_41'
+     OBUF:I->O                 3.272          A_shiftO_7_OBUF (A_shiftO<7>)
     ----------------------------------------
-    Total                      4.450ns (3.863ns logic, 0.587ns route)
-                                       (86.8% logic, 13.2% route)
+    Total                      5.126ns (3.863ns logic, 1.263ns route)
+                                       (75.4% logic, 24.6% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'XLXI_51/XLXI_133/XLXI_41/clk_10k_01'
@@ -2442,14 +2556,14 @@ Delay:               7.185ns (Levels of Logic = 5)
 =========================================================================
 
 
-Total REAL time to Xst completion: 21.00 secs
-Total CPU time to Xst completion: 20.93 secs
+Total REAL time to Xst completion: 20.00 secs
+Total CPU time to Xst completion: 20.43 secs
  
 --> 
 
-Total memory usage is 409992 kilobytes
+Total memory usage is 411004 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  629 (   0 filtered)
+Number of warnings :  657 (   0 filtered)
 Number of infos    :    9 (   0 filtered)
 

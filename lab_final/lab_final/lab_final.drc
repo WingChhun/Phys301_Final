@@ -1,15 +1,21 @@
 Release 14.7 Drc P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Mon May 07 18:35:07 2018
+Tue May 08 15:19:24 2018
 
 drc -z lab_final.ncd lab_final.pcf
 
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   XLXI_51/XLXI_121/XLXI_129/XLXN_358 is sourced by a combinatorial pin. This is
+   not good design practice. Use the CE pin to control the loading of data into
+   the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   XLXI_51/XLXI_121/XLXI_130/XLXN_348 is sourced by a combinatorial pin. This is
+   not good design practice. Use the CE pin to control the loading of data into
+   the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
    XLXI_51/XLXI_142/XLXI_77/rowON is sourced by a combinatorial pin. This is not
    good design practice. Use the CE pin to control the loading of data into the
    flip-flop.
-WARNING:PhysDesignRules:367 - The signal <AorD_IBUF> is incomplete. The signal
-   does not drive any load pins in the design.
-DRC detected 0 errors and 2 warnings.  Please see the previously displayed
+DRC detected 0 errors and 3 warnings.  Please see the previously displayed
 individual error or warning messages for more details.

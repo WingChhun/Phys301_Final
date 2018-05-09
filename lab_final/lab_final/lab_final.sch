@@ -26,14 +26,20 @@
         <signal name="colO(3:0)" />
         <signal name="XLXN_12" />
         <signal name="row(3:0)" />
-        <signal name="DataMode" />
         <signal name="EN_hex" />
-        <signal name="AorD" />
         <signal name="XLXN_23" />
         <signal name="WCLK_shiftReg" />
         <signal name="XLXN_93(7:0)" />
         <signal name="XLXN_94(7:0)" />
+        <signal name="AorD" />
         <signal name="A_shiftO(7:0)" />
+        <signal name="btn_Memory" />
+        <signal name="XLXN_97" />
+        <signal name="XLXN_98" />
+        <signal name="XLXN_99" />
+        <signal name="XLXN_100" />
+        <signal name="Count(7:0)" />
+        <signal name="Count(4:0)" />
         <port polarity="Input" name="RunMode" />
         <port polarity="Input" name="btn_writeData" />
         <port polarity="Input" name="btn_CLR" />
@@ -51,9 +57,10 @@
         <port polarity="BiDirectional" name="colO(3:0)" />
         <port polarity="Input" name="row(3:0)" />
         <port polarity="Input" name="EN_hex" />
-        <port polarity="Input" name="AorD" />
         <port polarity="Input" name="WCLK_shiftReg" />
+        <port polarity="Input" name="AorD" />
         <port polarity="Output" name="A_shiftO(7:0)" />
+        <port polarity="Input" name="btn_Memory" />
         <blockdef name="inv">
             <timestamp>2000-1-1T10:10:10</timestamp>
             <line x2="64" y1="-32" y2="-32" x1="0" />
@@ -110,22 +117,20 @@
             <line x2="96" y1="-160" y2="-160" x1="0" />
         </blockdef>
         <blockdef name="P_Counter">
-            <timestamp>2018-5-5T5:43:23</timestamp>
+            <timestamp>2018-5-9T1:0:32</timestamp>
+            <line x2="384" y1="160" y2="160" x1="320" />
+            <line x2="384" y1="224" y2="224" x1="320" />
+            <line x2="384" y1="288" y2="288" x1="320" />
             <line x2="0" y1="32" y2="32" x1="64" />
             <line x2="0" y1="96" y2="96" x1="64" />
             <line x2="0" y1="-32" y2="-32" x1="64" />
             <rect width="64" x="320" y="-44" height="24" />
             <line x2="384" y1="-32" y2="-32" x1="320" />
-            <rect width="256" x="64" y="-64" height="192" />
+            <rect width="256" x="64" y="-64" height="384" />
         </blockdef>
         <blockdef name="Memory">
-            <timestamp>2018-5-8T0:9:30</timestamp>
-            <rect width="64" x="528" y="676" height="24" />
-            <line x2="592" y1="688" y2="688" x1="528" />
-            <rect width="64" x="528" y="548" height="24" />
-            <line x2="592" y1="560" y2="560" x1="528" />
-            <rect width="64" x="528" y="612" height="24" />
-            <line x2="592" y1="624" y2="624" x1="528" />
+            <timestamp>2018-5-9T0:26:30</timestamp>
+            <line x2="0" y1="640" y2="640" x1="64" />
             <line x2="0" y1="-416" y2="-416" x1="64" />
             <line x2="0" y1="-352" y2="-352" x1="64" />
             <rect width="64" x="528" y="-284" height="24" />
@@ -140,7 +145,6 @@
             <line x2="0" y1="-64" y2="-64" x1="64" />
             <line x2="0" y1="0" y2="0" x1="64" />
             <line x2="0" y1="48" y2="48" x1="64" />
-            <line x2="0" y1="96" y2="96" x1="64" />
             <line x2="0" y1="160" y2="160" x1="64" />
             <line x2="0" y1="224" y2="224" x1="64" />
             <line x2="0" y1="-112" y2="-112" x1="64" />
@@ -149,7 +153,12 @@
             <line x2="0" y1="368" y2="368" x1="64" />
             <line x2="0" y1="432" y2="432" x1="64" />
             <line x2="0" y1="496" y2="496" x1="64" />
-            <rect width="464" x="64" y="-576" height="1344" />
+            <line x2="0" y1="576" y2="576" x1="64" />
+            <rect width="64" x="528" y="276" height="24" />
+            <line x2="592" y1="288" y2="288" x1="528" />
+            <rect width="64" x="528" y="212" height="24" />
+            <line x2="592" y1="224" y2="224" x1="528" />
+            <rect width="464" x="64" y="-576" height="1256" />
         </blockdef>
         <blockdef name="ProgramGround">
             <timestamp>2018-5-5T22:40:4</timestamp>
@@ -200,12 +209,6 @@
             <blockpin signalname="SWITCH_SPeed" name="S0" />
             <blockpin signalname="CLK_1" name="O" />
         </block>
-        <block symbolname="P_Counter" name="XLXI_45">
-            <blockpin name="CLK_Speed" />
-            <blockpin name="Q(7:0)" />
-            <blockpin name="RunMode" />
-            <blockpin name="Step" />
-        </block>
         <block symbolname="Memory" name="XLXI_51">
             <blockpin signalname="btn_writeData" name="btn_writeData" />
             <blockpin signalname="DebugMode" name="DebugMode" />
@@ -214,25 +217,34 @@
             <blockpin signalname="RunMode" name="RunMode" />
             <blockpin signalname="btn_CLR" name="CLR_MEMORY" />
             <blockpin signalname="EN_I_Memory" name="EN_I_Memory" />
-            <blockpin signalname="DataMode" name="DataMode" />
+            <blockpin signalname="AorD" name="DataMode" />
             <blockpin signalname="EN_D_Memory" name="EN_D_Memory" />
-            <blockpin signalname="row(3:0)" name="row(3:0)" />
             <blockpin signalname="XLXN_12" name="btn_writeInstruction" />
-            <blockpin signalname="AorD" name="AorD" />
-            <blockpin signalname="IRorDR" name="EN_DReg" />
+            <blockpin name="AorD" />
             <blockpin signalname="XLXN_23" name="btn_writeAddress" />
             <blockpin signalname="EN_hex" name="EN_hex" />
             <blockpin signalname="WCLK_shiftReg" name="WCLK_shiftReg" />
+            <blockpin signalname="row(3:0)" name="row(3:0)" />
+            <blockpin signalname="IRorDR" name="IrorDR" />
             <blockpin signalname="colO(3:0)" name="colO(3:0)" />
             <blockpin signalname="sseg(7:0)" name="sseg(7:0)" />
             <blockpin signalname="anO(3:0)" name="anO(3:0)" />
-            <blockpin signalname="XLXN_93(7:0)" name="I_output(7:0)" />
-            <blockpin signalname="XLXN_94(7:0)" name="D_output(7:0)" />
-            <blockpin signalname="A_shiftO(7:0)" name="A_shiftO(7:0)" />
+            <blockpin signalname="A_shiftO(7:0)" name="I_Register(7:0)" />
+            <blockpin name="A_shiftO(7:0)" />
+            <blockpin signalname="btn_Memory" name="btn_Memory" />
         </block>
         <block symbolname="ProgramGround" name="XLXI_52">
             <blockpin signalname="XLXN_93(7:0)" name="I_In(7:0)" />
             <blockpin signalname="XLXN_94(7:0)" name="D_In(7:0)" />
+        </block>
+        <block symbolname="P_Counter" name="XLXI_53">
+            <blockpin signalname="RunMode" name="RunMode" />
+            <blockpin signalname="CLK_1" name="CLK_Speed" />
+            <blockpin signalname="XLXN_97" name="Step" />
+            <blockpin signalname="Count(7:0)" name="Q(7:0)" />
+            <blockpin signalname="XLXN_98" name="tick1" />
+            <blockpin signalname="XLXN_99" name="tick2" />
+            <blockpin signalname="XLXN_100" name="tick3" />
         </block>
     </netlist>
     <sheet sheetnum="1" width="3520" height="2720">
@@ -327,8 +339,6 @@
         </branch>
         <instance x="1744" y="1344" name="XLXI_38" orien="R0">
         </instance>
-        <instance x="288" y="1136" name="XLXI_45" orien="R0">
-        </instance>
         <branch name="sseg(7:0)">
             <wire x2="1200" y1="1744" y2="1744" x1="1168" />
         </branch>
@@ -360,10 +370,6 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="480" y="1904" type="branch" />
             <wire x2="576" y1="1904" y2="1904" x1="480" />
         </branch>
-        <branch name="DataMode">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="480" y="1952" type="branch" />
-            <wire x2="576" y1="1952" y2="1952" x1="480" />
-        </branch>
         <branch name="EN_D_Memory">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="480" y="2016" type="branch" />
             <wire x2="576" y1="2016" y2="2016" x1="480" />
@@ -372,15 +378,8 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="480" y="2064" type="branch" />
             <wire x2="576" y1="2064" y2="2064" x1="480" />
         </branch>
-        <branch name="IRorDR">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="480" y="2112" type="branch" />
-            <wire x2="576" y1="2112" y2="2112" x1="480" />
-        </branch>
         <branch name="EN_hex">
             <wire x2="576" y1="2176" y2="2176" x1="480" />
-        </branch>
-        <branch name="AorD">
-            <wire x2="576" y1="2240" y2="2240" x1="480" />
         </branch>
         <branch name="XLXN_23">
             <wire x2="576" y1="2336" y2="2336" x1="480" />
@@ -402,7 +401,6 @@
         <iomarker fontsize="28" x="480" y="1744" name="row(3:0)" orien="R180" />
         <iomarker fontsize="28" x="480" y="2384" name="WCLK_shiftReg" orien="R180" />
         <iomarker fontsize="28" x="480" y="2176" name="EN_hex" orien="R180" />
-        <iomarker fontsize="28" x="480" y="2240" name="AorD" orien="R180" />
         <branch name="XLXN_93(7:0)">
             <wire x2="1456" y1="2576" y2="2576" x1="1168" />
             <wire x2="1552" y1="1792" y2="1792" x1="1456" />
@@ -417,9 +415,56 @@
         </instance>
         <instance x="1552" y="1760" name="XLXI_52" orien="R0">
         </instance>
-        <branch name="A_shiftO(7:0)">
-            <wire x2="1200" y1="2704" y2="2704" x1="1168" />
+        <branch name="IRorDR">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="480" y="2592" type="branch" />
+            <wire x2="576" y1="2592" y2="2592" x1="480" />
         </branch>
-        <iomarker fontsize="28" x="1200" y="2704" name="A_shiftO(7:0)" orien="R0" />
+        <branch name="AorD">
+            <wire x2="576" y1="1952" y2="1952" x1="480" />
+        </branch>
+        <iomarker fontsize="28" x="480" y="1952" name="AorD" orien="R180" />
+        <branch name="A_shiftO(7:0)">
+            <wire x2="1712" y1="2304" y2="2304" x1="1168" />
+            <wire x2="1712" y1="2304" y2="2528" x1="1712" />
+            <wire x2="1744" y1="2528" y2="2528" x1="1712" />
+        </branch>
+        <iomarker fontsize="28" x="1744" y="2528" name="A_shiftO(7:0)" orien="R0" />
+        <branch name="btn_Memory">
+            <wire x2="576" y1="2656" y2="2656" x1="544" />
+        </branch>
+        <iomarker fontsize="28" x="544" y="2656" name="btn_Memory" orien="R180" />
+        <branch name="CLK_1">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="176" y="928" type="branch" />
+            <wire x2="272" y1="928" y2="928" x1="176" />
+        </branch>
+        <branch name="RunMode">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="176" y="992" type="branch" />
+            <wire x2="272" y1="992" y2="992" x1="176" />
+        </branch>
+        <branch name="XLXN_97">
+            <wire x2="272" y1="1056" y2="1056" x1="192" />
+        </branch>
+        <branch name="XLXN_98">
+            <wire x2="720" y1="1120" y2="1120" x1="656" />
+        </branch>
+        <branch name="XLXN_99">
+            <wire x2="720" y1="1184" y2="1184" x1="656" />
+        </branch>
+        <branch name="XLXN_100">
+            <wire x2="720" y1="1248" y2="1248" x1="656" />
+        </branch>
+        <branch name="Count(7:0)">
+            <wire x2="736" y1="928" y2="928" x1="656" />
+            <wire x2="736" y1="928" y2="944" x1="736" />
+            <wire x2="736" y1="944" y2="1024" x1="736" />
+        </branch>
+        <bustap x2="832" y1="944" y2="944" x1="736" />
+        <branch name="Count(4:0)">
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="860" y="944" type="branch" />
+            <wire x2="860" y1="944" y2="944" x1="832" />
+            <wire x2="896" y1="944" y2="944" x1="860" />
+        </branch>
+        <instance x="272" y="960" name="XLXI_53" orien="R0">
+        </instance>
     </sheet>
 </drawing>
