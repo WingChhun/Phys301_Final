@@ -1,8 +1,0 @@
-xst -intstyle ise -ifn "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/test_Memory.xst" -ofn "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/test_Memory.syr" 
-ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc test_Memory.ucf -p xc3s100e-cp132-4 test_Memory.ngc test_Memory.ngd  
-xst -intstyle ise -ifn "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/test_Memory.xst" -ofn "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/test_Memory.syr" 
-ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc test_Memory.ucf -p xc3s100e-cp132-4 test_Memory.ngc test_Memory.ngd  
-map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o test_Memory_map.ncd test_Memory.ngd test_Memory.pcf 
-par -w -intstyle ise -ol high -t 1 test_Memory_map.ncd test_Memory.ncd test_Memory.pcf 
-trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml test_Memory.twx test_Memory.ncd -o test_Memory.twr test_Memory.pcf -ucf test_Memory.ucf 
-bitgen -intstyle ise -f test_Memory.ut test_Memory.ncd 

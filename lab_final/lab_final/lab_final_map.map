@@ -9,7 +9,7 @@ Target Device  : xc3s100e
 Target Package : cp132
 Target Speed   : -4
 Mapper Version : spartan3e -- $Revision: 1.55 $
-Mapped Date    : Tue May 08 15:18:50 2018
+Mapped Date    : Wed May 09 21:43:02 2018
 
 Mapping design into LUTs...
 Running directed packing...
@@ -33,46 +33,62 @@ Running delay-based LUT packing...
 Running related packing...
 Updating timing models...
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   XLXI_51/XLXI_121/XLXI_129/XLXN_358 is sourced by a combinatorial pin. This is
+   XLXI_51/XLXI_121/XLXI_129/XLXN_376 is sourced by a combinatorial pin. This is
    not good design practice. Use the CE pin to control the loading of data into
    the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   XLXI_51/XLXI_121/XLXI_130/XLXN_348 is sourced by a combinatorial pin. This is
+   XLXI_51/XLXI_121/XLXI_130/XLXN_355 is sourced by a combinatorial pin. This is
+   not good design practice. Use the CE pin to control the loading of data into
+   the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   XLXI_51/XLXI_121/XLXI_132/XLXN_355 is sourced by a combinatorial pin. This is
+   not good design practice. Use the CE pin to control the loading of data into
+   the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   XLXI_51/XLXI_121/XLXI_129/XLXN_369 is sourced by a combinatorial pin. This is
    not good design practice. Use the CE pin to control the loading of data into
    the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
    XLXI_51/XLXI_142/XLXI_77/rowON is sourced by a combinatorial pin. This is not
    good design practice. Use the CE pin to control the loading of data into the
    flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   XLXI_51/XLXI_121/XLXI_132/XLXN_352 is sourced by a combinatorial pin. This is
+   not good design practice. Use the CE pin to control the loading of data into
+   the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   XLXI_51/XLXI_121/XLXI_130/XLXN_351 is sourced by a combinatorial pin. This is
+   not good design practice. Use the CE pin to control the loading of data into
+   the flip-flop.
 
 Design Summary
 --------------
 
 Design Summary:
 Number of errors:      0
-Number of warnings:    7
+Number of warnings:   11
 Logic Utilization:
-  Number of Slice Flip Flops:           594 out of   1,920   30%
-  Number of 4 input LUTs:               952 out of   1,920   49%
+  Number of Slice Flip Flops:           802 out of   1,920   41%
+  Number of 4 input LUTs:             1,147 out of   1,920   59%
 Logic Distribution:
-  Number of occupied Slices:            710 out of     960   73%
-    Number of Slices containing only related logic:     710 out of     710 100%
-    Number of Slices containing unrelated logic:          0 out of     710   0%
+  Number of occupied Slices:            939 out of     960   97%
+    Number of Slices containing only related logic:     939 out of     939 100%
+    Number of Slices containing unrelated logic:          0 out of     939   0%
       *See NOTES below for an explanation of the effects of unrelated logic.
-  Total Number of 4 input LUTs:       1,085 out of   1,920   56%
-    Number used as logic:               952
+  Total Number of 4 input LUTs:       1,280 out of   1,920   66%
+    Number used as logic:             1,147
     Number used as a route-thru:        133
 
   The Slice Logic Distribution report is not meaningful if the design is
   over-mapped for a non-slice resource or if Placement fails.
 
-  Number of bonded IOBs:                 42 out of      83   50%
-  Number of BUFGMUXs:                     5 out of      24   20%
+  Number of bonded IOBs:                 52 out of      83   62%
+  Number of BUFGMUXs:                     6 out of      24   25%
 
-  Number of RPM macros:            2
-Average Fanout of Non-Clock Nets:                2.77
+  Number of RPM macros:            3
+Average Fanout of Non-Clock Nets:                2.80
 
-Peak Memory Usage:  329 MB
+Peak Memory Usage:  341 MB
 Total REAL time to MAP completion:  3 secs 
 Total CPU time to MAP completion:   3 secs 
 

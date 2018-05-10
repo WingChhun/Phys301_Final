@@ -15,12 +15,12 @@ Annotating constraints to design from ucf file "lab_final.ucf" ...
 Resolving constraint associations...
 Checking Constraint Associations...
 WARNING:ConstraintSystem:119 - Constraint <NET "sseg[7]" LOC = N13;>
-   [lab_final.ucf(87)]: This constraint cannot be distributed from the design
+   [lab_final.ucf(94)]: This constraint cannot be distributed from the design
    objects matching 'NET "sseg[7]"' because those design objects do not contain
    or drive any instances of the correct type.
 
 WARNING:ConstraintSystem - A target design object for the Locate constraint
-   '<NET "sseg[7]" LOC = N13;> [lab_final.ucf(87)]' could not be found and so
+   '<NET "sseg[7]" LOC = N13;> [lab_final.ucf(94)]' could not be found and so
    the Locate constraint will be removed.
 
 Done...
@@ -38,7 +38,7 @@ NGDBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings:   2
 
-Total memory usage is 227864 kilobytes
+Total memory usage is 223856 kilobytes
 
 Writing NGD file "lab_final.ngd" ...
 Total REAL time to NGDBUILD completion:  4 sec

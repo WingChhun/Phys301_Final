@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : ALU.vhf
--- /___/   /\     Timestamp : 05/08/2018 10:45:35
+-- /___/   /\     Timestamp : 05/09/2018 20:39:29
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -406,7 +406,7 @@ architecture BEHAVIORAL of ALU is
              S   : out   std_logic_vector (7 downto 0));
    end component;
    
-   attribute HU_SET of XLXI_1 : label is "XLXI_1_92";
+   attribute HU_SET of XLXI_1 : label is "XLXI_1_96";
 begin
    XLXI_1 : ADSU8_MXILINX_ALU
       port map (A(7 downto 0)=>registerA(7 downto 0),

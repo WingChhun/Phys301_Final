@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<symbol version="7" name="copy_of_m2_1">
+    <symboltype>BLOCK</symboltype>
+    <timestamp>2018-5-10T3:28:13</timestamp>
+    <attr value="M2_1_MXILINX" name="VeriModel" />
+    <attr value="Copy Of Symbol With Level: MXILINX" name="Level" />
+    <attr value="M2_1_MXILINX" name="VhdlModel" />
+    <attr value="2.0.0" name="Libver" />
+    <pin polarity="Input" x="0" y="-32" name="S0" />
+    <pin polarity="Output" x="320" y="-128" name="O" />
+    <pin polarity="Input" x="0" y="-96" name="D0" />
+    <pin polarity="Input" x="0" y="-160" name="D1" />
+    <graph>
+        <line x2="96" y1="-64" y2="-192" x1="96" />
+        <line x2="96" y1="-96" y2="-64" x1="256" />
+        <line x2="256" y1="-160" y2="-96" x1="256" />
+        <line x2="256" y1="-192" y2="-160" x1="96" />
+        <line x2="96" y1="-32" y2="-32" x1="176" />
+        <line x2="176" y1="-80" y2="-32" x1="176" />
+        <line x2="96" y1="-32" y2="-32" x1="0" />
+        <line x2="256" y1="-128" y2="-128" x1="320" />
+        <text style="alignment:CENTER;fontsize:56;fontname:Arial" x="196" y="-220">M2_1</text>
+        <text style="alignment:RIGHT;fontsize:24;fontname:Arial" x="304" y="-144">O</text>
+        <text style="fontsize:24;fontname:Arial" x="20" y="-44">S0</text>
+        <text style="fontsize:24;fontname:Arial" x="20" y="-108">D0</text>
+        <line x2="96" y1="-96" y2="-96" x1="0" />
+        <line x2="96" y1="-160" y2="-160" x1="0" />
+        <text style="fontsize:24;fontname:Arial" x="20" y="-172">D1</text>
+    </graph>
+</symbol>

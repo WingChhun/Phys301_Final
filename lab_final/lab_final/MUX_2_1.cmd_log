@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan3e -w -refsym MUX_2_1 C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/MUX_2_1.sch C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/MUX_2_1.sym 

@@ -8,3 +8,5 @@ sch2sym -intstyle ise -family spartan3e -w -refsym Address C:/Users/James/Deskto
 sch2sym -intstyle ise -family spartan3e -w -refsym Address C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/Address.sch C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/Address.sym 
 sch2sym -intstyle ise -family spartan3e -w -refsym Address C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/Address.sch C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/Address.sym 
 sch2sym -intstyle ise -family spartan3e -w -refsym Address C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/Address.sch C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/Address.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym Address C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/Address.sch C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/Address.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym Address C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/Address.sch C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/Address.sym 

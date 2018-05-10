@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : D_Register.vhf
--- /___/   /\     Timestamp : 05/08/2018 13:47:45
+-- /___/   /\     Timestamp : 05/09/2018 21:20:34
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -551,6 +551,7 @@ use UNISIM.Vcomponents.ALL;
 entity D_Register is
    port ( btn_writeData : in    std_logic; 
           CLR           : in    std_logic; 
+          C_write       : in    std_logic; 
           D             : in    std_logic_vector (3 downto 0); 
           DataMode      : in    std_logic; 
           DebugMode     : in    std_logic; 
@@ -567,8 +568,9 @@ architecture BEHAVIORAL of D_Register is
    attribute BOX_TYPE   : string ;
    signal S                     : std_logic_vector (7 downto 0);
    signal XLXN_313              : std_logic;
-   signal XLXN_343              : std_logic;
-   signal XLXN_345              : std_logic;
+   signal XLXN_352              : std_logic;
+   signal XLXN_355              : std_logic;
+   signal XLXN_356              : std_logic;
    signal G_DUMMY               : std_logic_vector (7 downto 0);
    signal Q_DUMMY               : std_logic_vector (7 downto 0);
    signal XLXI_59_CI_openSignal : std_logic;
@@ -617,6 +619,13 @@ architecture BEHAVIORAL of D_Register is
    end component;
    attribute BOX_TYPE of OR2 : component is "BLACK_BOX";
    
+   component AND2
+      port ( I0 : in    std_logic; 
+             I1 : in    std_logic; 
+             O  : out   std_logic);
+   end component;
+   attribute BOX_TYPE of AND2 : component is "BLACK_BOX";
+   
    component AND3
       port ( I0 : in    std_logic; 
              I1 : in    std_logic; 
@@ -634,23 +643,23 @@ architecture BEHAVIORAL of D_Register is
    end component;
    attribute BOX_TYPE of AND4 : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_41 : label is "XLXI_41_3";
-   attribute HU_SET of XLXI_46 : label is "XLXI_46_0";
-   attribute HU_SET of XLXI_47 : label is "XLXI_47_1";
-   attribute HU_SET of XLXI_59 : label is "XLXI_59_2";
+   attribute HU_SET of XLXI_41 : label is "XLXI_41_28";
+   attribute HU_SET of XLXI_46 : label is "XLXI_46_25";
+   attribute HU_SET of XLXI_47 : label is "XLXI_47_26";
+   attribute HU_SET of XLXI_59 : label is "XLXI_59_27";
 begin
    G(7 downto 0) <= G_DUMMY(7 downto 0);
    Q(7 downto 0) <= Q_DUMMY(7 downto 0);
    XLXI_41 : FD8CE_MXILINX_D_Register
-      port map (C=>XLXN_345,
-                CE=>XLXN_343,
+      port map (C=>XLXN_355,
+                CE=>XLXN_356,
                 CLR=>CLR,
                 D(7 downto 0)=>S(7 downto 0),
                 Q(7 downto 0)=>D_RegisterO(7 downto 0));
    
    XLXI_46 : FD4CE_MXILINX_D_Register
-      port map (C=>XLXN_345,
-                CE=>XLXN_343,
+      port map (C=>XLXN_352,
+                CE=>XLXN_356,
                 CLR=>XLXN_313,
                 D0=>D(0),
                 D1=>D(1),
@@ -663,7 +672,7 @@ begin
    
    XLXI_47 : FD4CE_MXILINX_D_Register
       port map (C=>WCLK_shiftReg,
-                CE=>XLXN_343,
+                CE=>XLXN_356,
                 CLR=>CLR,
                 D0=>Q_DUMMY(0),
                 D1=>Q_DUMMY(1),
@@ -692,18 +701,23 @@ begin
                 I1=>CLR,
                 O=>XLXN_313);
    
+   XLXI_98 : AND2
+      port map (I0=>XLXN_356,
+                I1=>C_write,
+                O=>XLXN_355);
+   
    XLXI_119 : AND3
       port map (I0=>DataMode,
                 I1=>EN_DReg,
                 I2=>DebugMode,
-                O=>XLXN_343);
+                O=>XLXN_356);
    
    XLXI_120 : AND4
       port map (I0=>DataMode,
                 I1=>EN_DReg,
                 I2=>DebugMode,
                 I3=>btn_writeData,
-                O=>XLXN_345);
+                O=>XLXN_352);
    
 end BEHAVIORAL;
 

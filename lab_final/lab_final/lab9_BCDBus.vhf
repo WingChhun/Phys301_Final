@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : lab9_BCDBus.vhf
--- /___/   /\     Timestamp : 05/08/2018 15:29:42
+-- /___/   /\     Timestamp : 05/09/2018 21:52:26
 -- \   \  /  \ 
 --  \___\/\___\ 
 --

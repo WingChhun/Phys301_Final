@@ -30,7 +30,6 @@
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="DCM_100M.sym" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="DCM_50M.sym" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="D_Memory.sym" xil_pn:origination="imported"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VHDL" xil_pn:name="D_Memory.vhf"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="D_Register.sym" xil_pn:origination="imported"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VHDL" xil_pn:name="D_Register.vhf"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="FA.sym" xil_pn:origination="imported"/>
@@ -39,12 +38,10 @@
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="Full_AdderSub8.sym" xil_pn:origination="imported"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VHDL" xil_pn:name="Full_AdderSub8.vhf"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="ISA.sym" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VHDL" xil_pn:name="ISA.vhf"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="I_Memory.sym" xil_pn:origination="imported"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VHDL" xil_pn:name="I_Memory.vhf"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="I_Register.sym" xil_pn:origination="imported"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VHDL" xil_pn:name="I_Register.vhf"/>
-    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="InstructionSymbols.sym" xil_pn:origination="imported"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VHDL" xil_pn:name="InstructionSymbols.vhf"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="KEYPAD_noShift.sym" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="MUX8Bit.sym" xil_pn:origination="imported"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VHDL" xil_pn:name="MUX8Bit.vhf"/>
@@ -95,9 +92,11 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="lab_final.ngc"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="lab_final.ngd"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="lab_final.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="lab_final.pad"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="lab_final.par" xil_pn:subbranch="Par"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="lab_final.pcf" xil_pn:subbranch="Map"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="lab_final.prj"/>
+    <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="lab_final.ptwx"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="lab_final.stx"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="lab_final.sym" xil_pn:origination="imported"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="lab_final.syr"/>
@@ -106,6 +105,7 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="lab_final.unroutes" xil_pn:subbranch="Par"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="lab_final.ut" xil_pn:subbranch="FPGAConfiguration"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VHDL" xil_pn:name="lab_final.vhf"/>
+    <file xil_pn:fileType="FILE_XPI" xil_pn:name="lab_final.xpi"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="lab_final.xst"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="lab_final_envsettings.html"/>
     <file xil_pn:fileType="FILE_NCD" xil_pn:name="lab_final_guide.ncd" xil_pn:origination="imported"/>
@@ -115,6 +115,7 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="lab_final_map.ngm" xil_pn:subbranch="Map"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="lab_final_pad.csv" xil_pn:subbranch="Par"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="lab_final_pad.txt" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="lab_final_par.xrpt"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="lab_final_summary.html"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="lab_final_vhdl.prj"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="lab_final_xst.xrpt"/>
@@ -128,46 +129,49 @@
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="shiftreg_hex2D.sym" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="sseg_mux4D.sym" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="switch_debounce.sym" xil_pn:origination="imported"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="test_Memory.bld"/>
-    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="test_Memory.cmd_log"/>
-    <file xil_pn:fileType="FILE_JHD" xil_pn:name="test_Memory.jhd"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="test_Memory.lso"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="test_Memory.ncd" xil_pn:subbranch="Par"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="test_Memory.ngc"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="test_Memory.ngd"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="test_Memory.ngr"/>
-    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="test_Memory.pad"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="test_Memory.par" xil_pn:subbranch="Par"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="test_Memory.pcf" xil_pn:subbranch="Map"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="test_Memory.prj"/>
-    <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="test_Memory.ptwx"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="test_Memory.stx"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="test_Memory.syr"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="test_Memory.twr" xil_pn:subbranch="Par"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="test_Memory.twx" xil_pn:subbranch="Par"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="test_Memory.unroutes" xil_pn:subbranch="Par"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="test_Memory.ut" xil_pn:subbranch="FPGAConfiguration"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VHDL" xil_pn:name="test_Memory.vhf"/>
-    <file xil_pn:fileType="FILE_XPI" xil_pn:name="test_Memory.xpi"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="test_Memory.xst"/>
     <file xil_pn:fileType="FILE_NCD" xil_pn:name="test_Memory_guide.ncd" xil_pn:origination="imported"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="test_Memory_map.map" xil_pn:subbranch="Map"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="test_Memory_map.mrp" xil_pn:subbranch="Map"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="test_Memory_map.ncd" xil_pn:subbranch="Map"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="test_Memory_map.ngm" xil_pn:subbranch="Map"/>
-    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="test_Memory_map.xrpt"/>
-    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="test_Memory_ngdbuild.xrpt"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="test_Memory_pad.csv" xil_pn:subbranch="Par"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="test_Memory_pad.txt" xil_pn:subbranch="Par"/>
-    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="test_Memory_par.xrpt"/>
-    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="test_Memory_summary.xml"/>
-    <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="test_Memory_usage.xml"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="test_Memory_vhdl.prj"/>
-    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="test_Memory_xst.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="test_ProgramCounter.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="test_ProgramCounter.cmd_log"/>
+    <file xil_pn:fileType="FILE_JHD" xil_pn:name="test_ProgramCounter.jhd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="test_ProgramCounter.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="test_ProgramCounter.ncd" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="test_ProgramCounter.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="test_ProgramCounter.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="test_ProgramCounter.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="test_ProgramCounter.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="test_ProgramCounter.par" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="test_ProgramCounter.pcf" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="test_ProgramCounter.prj"/>
+    <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="test_ProgramCounter.ptwx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="test_ProgramCounter.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="test_ProgramCounter.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="test_ProgramCounter.twr" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="test_ProgramCounter.twx" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="test_ProgramCounter.unroutes" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="test_ProgramCounter.ut" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VHDL" xil_pn:name="test_ProgramCounter.vhf"/>
+    <file xil_pn:fileType="FILE_XPI" xil_pn:name="test_ProgramCounter.xpi"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="test_ProgramCounter.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="test_ProgramCounter_envsettings.html"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="test_ProgramCounter_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="test_ProgramCounter_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="test_ProgramCounter_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="test_ProgramCounter_map.ncd" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="test_ProgramCounter_map.ngm" xil_pn:subbranch="Map"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="test_ProgramCounter_map.xrpt"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="test_ProgramCounter_ngdbuild.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="test_ProgramCounter_pad.csv" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="test_ProgramCounter_pad.txt" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="test_ProgramCounter_par.xrpt"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="test_ProgramCounter_summary.html"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="test_ProgramCounter_summary.xml"/>
+    <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="test_ProgramCounter_usage.xml"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="test_ProgramCounter_vhdl.prj"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="test_ProgramCounter_xst.xrpt"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="test_hexShifter.sym" xil_pn:origination="imported"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="test_memory.bgn" xil_pn:subbranch="FPGAConfiguration"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BIT" xil_pn:name="test_memory.bit" xil_pn:subbranch="FPGAConfiguration"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_DRC" xil_pn:name="test_memory.drc" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="test_programcounter.bgn" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BIT" xil_pn:name="test_programcounter.bit" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_DRC" xil_pn:name="test_programcounter.drc" xil_pn:subbranch="FPGAConfiguration"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="usage_statistics_webtalk.html"/>
     <file xil_pn:fileType="FILE_LOG" xil_pn:name="webtalk.log"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
@@ -176,157 +180,15 @@
   </files>
 
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
-    <transform xil_pn:end_ts="1525818636" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1525818636">
+    <transform xil_pn:end_ts="1525929435" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1525929435">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1525818638" xil_pn:in_ck="-343939624496332679" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-4983151641637755232" xil_pn:start_ts="1525818636">
+    <transform xil_pn:end_ts="1525929455" xil_pn:in_ck="3020809575571125507" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="453881105736113529" xil_pn:start_ts="1525929455">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="InputChanged"/>
-      <outfile xil_pn:name="ALU.vhf"/>
-      <outfile xil_pn:name="Address.vhf"/>
-      <outfile xil_pn:name="D_Memory.vhf"/>
-      <outfile xil_pn:name="D_Register.vhf"/>
-      <outfile xil_pn:name="Full_Add.vhf"/>
-      <outfile xil_pn:name="Full_AdderSub8.vhf"/>
-      <outfile xil_pn:name="I_Memory.vhf"/>
-      <outfile xil_pn:name="I_Register.vhf"/>
-      <outfile xil_pn:name="InstructionSymbols.vhf"/>
-      <outfile xil_pn:name="MUX8Bit.vhf"/>
-      <outfile xil_pn:name="Memory.vhf"/>
-      <outfile xil_pn:name="Output_DebugMode.vhf"/>
-      <outfile xil_pn:name="P_Counter.vhf"/>
-      <outfile xil_pn:name="ProgramGround.vhf"/>
-      <outfile xil_pn:name="Registers.vhf"/>
-      <outfile xil_pn:name="addersub8.vhf"/>
-      <outfile xil_pn:name="hexShifter8.vhf"/>
-      <outfile xil_pn:name="lab9_BCDBus.vhf"/>
-      <outfile xil_pn:name="lab_KEYPAD_FINAL.vhf"/>
-      <outfile xil_pn:name="lab_final.vhf"/>
-      <outfile xil_pn:name="test_Memory.vhf"/>
-    </transform>
-    <transform xil_pn:end_ts="1525818638" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="3111219058335169808" xil_pn:start_ts="1525818638">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-    </transform>
-    <transform xil_pn:end_ts="1525818638" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1525818638">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-    </transform>
-    <transform xil_pn:end_ts="1525818638" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="1154093305326544350" xil_pn:start_ts="1525818638">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-    </transform>
-    <transform xil_pn:end_ts="1525818638" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="2988080280822507185" xil_pn:start_ts="1525818638">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
-    </transform>
-    <transform xil_pn:end_ts="1525818638" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="5054437173411994138" xil_pn:start_ts="1525818638">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-    </transform>
-    <transform xil_pn:end_ts="1525818652" xil_pn:in_ck="2017779456134480180" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="7143633288870530374" xil_pn:start_ts="1525818638">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="WarningsGenerated"/>
-      <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
-      <outfile xil_pn:name="test_Memory.jhd"/>
-      <outfile xil_pn:name="test_Memory.lso"/>
-      <outfile xil_pn:name="test_Memory.ngc"/>
-      <outfile xil_pn:name="test_Memory.ngr"/>
-      <outfile xil_pn:name="test_Memory.prj"/>
-      <outfile xil_pn:name="test_Memory.stx"/>
-      <outfile xil_pn:name="test_Memory.syr"/>
-      <outfile xil_pn:name="test_Memory.xst"/>
-      <outfile xil_pn:name="test_Memory_vhdl.prj"/>
-      <outfile xil_pn:name="test_Memory_xst.xrpt"/>
-      <outfile xil_pn:name="webtalk_pn.xml"/>
-      <outfile xil_pn:name="xst"/>
-    </transform>
-    <transform xil_pn:end_ts="1525818652" xil_pn:in_ck="-3209516677301479448" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-5804685729459782982" xil_pn:start_ts="1525818652">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="InputChanged"/>
-    </transform>
-    <transform xil_pn:end_ts="1525818659" xil_pn:in_ck="-6982245305636894012" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="4931479039465577597" xil_pn:start_ts="1525818652">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="InputChanged"/>
-      <outfile xil_pn:name="_ngo"/>
-      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
-      <outfile xil_pn:name="test_Memory.bld"/>
-      <outfile xil_pn:name="test_Memory.ngd"/>
-      <outfile xil_pn:name="test_Memory_ngdbuild.xrpt"/>
-    </transform>
-    <transform xil_pn:end_ts="1525818665" xil_pn:in_ck="735073647187563014" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="-1303429204059397298" xil_pn:start_ts="1525818659">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
-      <outfile xil_pn:name="test_Memory.pcf"/>
-      <outfile xil_pn:name="test_Memory_map.map"/>
-      <outfile xil_pn:name="test_Memory_map.mrp"/>
-      <outfile xil_pn:name="test_Memory_map.ncd"/>
-      <outfile xil_pn:name="test_Memory_map.ngm"/>
-      <outfile xil_pn:name="test_Memory_map.xrpt"/>
-      <outfile xil_pn:name="test_Memory_summary.xml"/>
-      <outfile xil_pn:name="test_Memory_usage.xml"/>
-    </transform>
-    <transform xil_pn:end_ts="1525818678" xil_pn:in_ck="-3006585879722069896" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="-4078461964484670437" xil_pn:start_ts="1525818665">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="WarningsGenerated"/>
-      <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="InputChanged"/>
-      <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
-      <outfile xil_pn:name="test_Memory.ncd"/>
-      <outfile xil_pn:name="test_Memory.pad"/>
-      <outfile xil_pn:name="test_Memory.par"/>
-      <outfile xil_pn:name="test_Memory.ptwx"/>
-      <outfile xil_pn:name="test_Memory.unroutes"/>
-      <outfile xil_pn:name="test_Memory.xpi"/>
-      <outfile xil_pn:name="test_Memory_pad.csv"/>
-      <outfile xil_pn:name="test_Memory_pad.txt"/>
-      <outfile xil_pn:name="test_Memory_par.xrpt"/>
-    </transform>
-    <transform xil_pn:end_ts="1525818687" xil_pn:in_ck="2496526086422888310" xil_pn:name="TRANEXT_bitFile_spartan3e" xil_pn:prop_ck="-7817169320884990698" xil_pn:start_ts="1525818678">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
-      <outfile xil_pn:name="test_Memory.ut"/>
-      <outfile xil_pn:name="test_memory.bgn"/>
-      <outfile xil_pn:name="test_memory.bit"/>
-      <outfile xil_pn:name="test_memory.drc"/>
-      <outfile xil_pn:name="usage_statistics_webtalk.html"/>
-      <outfile xil_pn:name="webtalk.log"/>
-      <outfile xil_pn:name="webtalk_pn.xml"/>
-    </transform>
-    <transform xil_pn:end_ts="1525818678" xil_pn:in_ck="-3380104071615425538" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416186" xil_pn:start_ts="1525818674">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="InputChanged"/>
-      <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
-      <outfile xil_pn:name="test_Memory.twr"/>
-      <outfile xil_pn:name="test_Memory.twx"/>
     </transform>
   </transforms>
 

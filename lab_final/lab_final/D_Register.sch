@@ -35,13 +35,11 @@
         <signal name="EN_DReg" />
         <signal name="DebugMode" />
         <signal name="DataMode" />
-        <signal name="XLXN_344" />
-        <signal name="XLXN_345" />
         <signal name="btn_writeData" />
-        <signal name="XLXN_348" />
-        <signal name="XLXN_349" />
-        <signal name="XLXN_350" />
-        <signal name="XLXN_351" />
+        <signal name="XLXN_352" />
+        <signal name="C_write" />
+        <signal name="XLXN_355" />
+        <signal name="XLXN_356" />
         <port polarity="Output" name="Q(7:0)" />
         <port polarity="Input" name="D(3:0)" />
         <port polarity="Output" name="G(7:0)" />
@@ -53,6 +51,7 @@
         <port polarity="Input" name="DebugMode" />
         <port polarity="Input" name="DataMode" />
         <port polarity="Input" name="btn_writeData" />
+        <port polarity="Input" name="C_write" />
         <blockdef name="fd4ce">
             <timestamp>2000-1-1T10:10:10</timestamp>
             <line x2="320" y1="-448" y2="-448" x1="384" />
@@ -157,9 +156,19 @@
             <line x2="64" y1="-128" y2="-128" x1="0" />
             <line x2="64" y1="-64" y2="-64" x1="0" />
         </blockdef>
+        <blockdef name="and2">
+            <timestamp>2000-1-1T10:10:10</timestamp>
+            <line x2="64" y1="-64" y2="-64" x1="0" />
+            <line x2="64" y1="-128" y2="-128" x1="0" />
+            <line x2="192" y1="-96" y2="-96" x1="256" />
+            <arc ex="144" ey="-144" sx="144" sy="-48" r="48" cx="144" cy="-96" />
+            <line x2="64" y1="-48" y2="-48" x1="144" />
+            <line x2="144" y1="-144" y2="-144" x1="64" />
+            <line x2="64" y1="-48" y2="-144" x1="64" />
+        </blockdef>
         <block symbolname="fd4ce" name="XLXI_46">
-            <blockpin signalname="XLXN_345" name="C" />
-            <blockpin signalname="XLXN_343" name="CE" />
+            <blockpin signalname="XLXN_352" name="C" />
+            <blockpin signalname="XLXN_356" name="CE" />
             <blockpin signalname="XLXN_313" name="CLR" />
             <blockpin signalname="D(0)" name="D0" />
             <blockpin signalname="D(1)" name="D1" />
@@ -172,7 +181,7 @@
         </block>
         <block symbolname="fd4ce" name="XLXI_47">
             <blockpin signalname="WCLK_shiftReg" name="C" />
-            <blockpin signalname="XLXN_343" name="CE" />
+            <blockpin signalname="XLXN_356" name="CE" />
             <blockpin signalname="CLR" name="CLR" />
             <blockpin signalname="Q(0)" name="D0" />
             <blockpin signalname="Q(1)" name="D1" />
@@ -197,8 +206,8 @@
             <blockpin signalname="XLXN_313" name="O" />
         </block>
         <block symbolname="fd8ce" name="XLXI_41">
-            <blockpin signalname="XLXN_345" name="C" />
-            <blockpin signalname="XLXN_343" name="CE" />
+            <blockpin signalname="XLXN_355" name="C" />
+            <blockpin signalname="XLXN_356" name="CE" />
             <blockpin signalname="CLR" name="CLR" />
             <blockpin signalname="S(7:0)" name="D(7:0)" />
             <blockpin signalname="D_RegisterO(7:0)" name="Q(7:0)" />
@@ -212,14 +221,19 @@
             <blockpin signalname="DataMode" name="I0" />
             <blockpin signalname="EN_DReg" name="I1" />
             <blockpin signalname="DebugMode" name="I2" />
-            <blockpin signalname="XLXN_343" name="O" />
+            <blockpin signalname="XLXN_356" name="O" />
         </block>
         <block symbolname="and4" name="XLXI_120">
             <blockpin signalname="DataMode" name="I0" />
             <blockpin signalname="EN_DReg" name="I1" />
             <blockpin signalname="DebugMode" name="I2" />
             <blockpin signalname="btn_writeData" name="I3" />
-            <blockpin signalname="XLXN_345" name="O" />
+            <blockpin signalname="XLXN_352" name="O" />
+        </block>
+        <block symbolname="and2" name="XLXI_98">
+            <blockpin signalname="XLXN_356" name="I0" />
+            <blockpin signalname="C_write" name="I1" />
+            <blockpin signalname="XLXN_355" name="O" />
         </block>
     </netlist>
     <sheet sheetnum="1" width="3520" height="2720">
@@ -416,22 +430,6 @@
         </branch>
         <instance x="416" y="2064" name="XLXI_60" orien="R0">
         </instance>
-        <branch name="XLXN_343">
-            <wire x2="1312" y1="1200" y2="1200" x1="592" />
-            <wire x2="1312" y1="1200" y2="1296" x1="1312" />
-            <wire x2="1600" y1="1296" y2="1296" x1="1312" />
-            <wire x2="1600" y1="1296" y2="1344" x1="1600" />
-            <wire x2="1760" y1="1344" y2="1344" x1="1600" />
-            <wire x2="592" y1="1200" y2="1472" x1="592" />
-            <wire x2="672" y1="1472" y2="1472" x1="592" />
-            <wire x2="1104" y1="784" y2="784" x1="752" />
-            <wire x2="1104" y1="784" y2="832" x1="1104" />
-            <wire x2="1200" y1="832" y2="832" x1="1104" />
-            <wire x2="1328" y1="832" y2="832" x1="1200" />
-            <wire x2="1200" y1="832" y2="960" x1="1200" />
-            <wire x2="1312" y1="960" y2="960" x1="1200" />
-            <wire x2="1312" y1="960" y2="1200" x1="1312" />
-        </branch>
         <instance x="496" y="912" name="XLXI_119" orien="R0" />
         <branch name="EN_DReg">
             <wire x2="432" y1="784" y2="784" x1="240" />
@@ -467,17 +465,6 @@
         <iomarker fontsize="28" x="1136" y="1408" name="D_RegisterO(7:0)" orien="R0" />
         <iomarker fontsize="28" x="1648" y="1408" name="WCLK_shiftReg" orien="R180" />
         <iomarker fontsize="28" x="944" y="1968" name="DREG_hexO(7:0)" orien="R0" />
-        <branch name="XLXN_345">
-            <wire x2="864" y1="1168" y2="1168" x1="512" />
-            <wire x2="512" y1="1168" y2="1184" x1="512" />
-            <wire x2="512" y1="1184" y2="1536" x1="512" />
-            <wire x2="672" y1="1536" y2="1536" x1="512" />
-            <wire x2="624" y1="1184" y2="1184" x1="512" />
-            <wire x2="624" y1="1040" y2="1040" x1="544" />
-            <wire x2="624" y1="1040" y2="1184" x1="624" />
-            <wire x2="864" y1="896" y2="1168" x1="864" />
-            <wire x2="1328" y1="896" y2="896" x1="864" />
-        </branch>
         <branch name="btn_writeData">
             <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="160" y="944" type="branch" />
             <wire x2="144" y1="1072" y2="1072" x1="128" />
@@ -504,5 +491,46 @@
             <wire x2="1760" y1="1504" y2="1728" x1="1760" />
         </branch>
         <iomarker fontsize="28" x="128" y="1072" name="btn_writeData" orien="R180" />
+        <branch name="XLXN_352">
+            <wire x2="928" y1="1040" y2="1040" x1="544" />
+            <wire x2="928" y1="896" y2="1040" x1="928" />
+            <wire x2="1328" y1="896" y2="896" x1="928" />
+        </branch>
+        <branch name="C_write">
+            <wire x2="192" y1="1568" y2="1568" x1="176" />
+            <wire x2="192" y1="1568" y2="1600" x1="192" />
+            <wire x2="240" y1="1600" y2="1600" x1="192" />
+        </branch>
+        <instance x="240" y="1728" name="XLXI_98" orien="R0" />
+        <iomarker fontsize="28" x="176" y="1568" name="C_write" orien="R180" />
+        <branch name="XLXN_355">
+            <wire x2="576" y1="1632" y2="1632" x1="496" />
+            <wire x2="576" y1="1536" y2="1632" x1="576" />
+            <wire x2="672" y1="1536" y2="1536" x1="576" />
+        </branch>
+        <branch name="XLXN_356">
+            <wire x2="224" y1="1520" y2="1664" x1="224" />
+            <wire x2="240" y1="1664" y2="1664" x1="224" />
+            <wire x2="240" y1="1520" y2="1520" x1="224" />
+            <wire x2="240" y1="1280" y2="1520" x1="240" />
+            <wire x2="896" y1="1280" y2="1280" x1="240" />
+            <wire x2="592" y1="1200" y2="1472" x1="592" />
+            <wire x2="672" y1="1472" y2="1472" x1="592" />
+            <wire x2="896" y1="1200" y2="1200" x1="592" />
+            <wire x2="1312" y1="1200" y2="1200" x1="896" />
+            <wire x2="1312" y1="1200" y2="1296" x1="1312" />
+            <wire x2="1600" y1="1296" y2="1296" x1="1312" />
+            <wire x2="1600" y1="1296" y2="1344" x1="1600" />
+            <wire x2="1760" y1="1344" y2="1344" x1="1600" />
+            <wire x2="896" y1="784" y2="784" x1="752" />
+            <wire x2="1104" y1="784" y2="784" x1="896" />
+            <wire x2="1104" y1="784" y2="832" x1="1104" />
+            <wire x2="1200" y1="832" y2="832" x1="1104" />
+            <wire x2="1328" y1="832" y2="832" x1="1200" />
+            <wire x2="1200" y1="832" y2="960" x1="1200" />
+            <wire x2="1312" y1="960" y2="960" x1="1200" />
+            <wire x2="1312" y1="960" y2="1200" x1="1312" />
+            <wire x2="896" y1="784" y2="1280" x1="896" />
+        </branch>
     </sheet>
 </drawing>

@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\James\Desktop\Github\School\Phys301\lab_final\lab_final\test_ProgramCounter.ncd
+OUTFILE=C:\Users\James\Desktop\Github\School\Phys301\lab_final\lab_final\test_ProgramCounter.bit
+FAMILY=Spartan3E
+PART=xc3s100e-4cp132
+WORKINGDIR=C:\Users\James\Desktop\Github\School\Phys301\lab_final\lab_final
+LICENSE=WebPack
+USER_INFO=174218040_0_0_110

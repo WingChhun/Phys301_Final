@@ -16,28 +16,34 @@ NET "btn_Memory" LOC = C11; #Button to write to memory
 #NET "CLR_Address" LOC = L3; #CLEAR - current address in memory
 #NET "CLR_MEMORY" LOC = C11;
 
+NET "Toggle_Output" LOC = K3; #DEBUG - Switch between INS-Mem output, and D-mem output
 NET "En_D_Memory" LOC = F3; #DEBUG - Enable write to Data memory
 NET "En_I_Memory" LOC = E2; #DEBUG - Enable write to Instruction Memory
 
-NET "EN_hex" LOC = G3;
+#NET "EN_hex" LOC = G3;
 NET "EnableDataLED" LOC = N4; #DEBUG - LED for Data Enable
 NET "EnableInstructionLED" LOC = P4; #DEBUG - Enable LED for Enable Instruction
 
+NET "C_Write" CLOCK_DEDICATED_ROUTE = FALSE;
+NET "C_Write" LOC = B4; #Debug - Toggle switch to write address, using adder,
+								#If wanting to use shiftreg, Load, SHift, Load, then toggle this switch to write correctly
 NET "WCLK_shiftReg" LOC = A7; #BTN - Powers writeAddress
 NET "WCLK_shiftReg" CLOCK_DEDICATED_ROUTE = FALSE;
 NET "AorD" LOC = P11; #Address or Data for programming purposes
 NET "IRorDR" LOC = L3; #DEBUG- load between Instruction register and data register
 #NET "Pulse" LOC = P6;
-NET "SWITCH_SPeed" LOC = B4;
+NET "SWITCH_SPeed" LOC = G3;
 #
 #Binary LED Output INstruction
 #
+#Test LEDs for IReg
 NET "A_shiftO[0]" LOC = M5;
 NET "A_shiftO[1]" LOC = M11;
-NET "A_shiftO[2]" LOC = P7;
-NET "A_shiftO[3]" LOC = P6;
-
-
+#NET "A_shiftO[2]" LOC = P7;
+#NET "A_shiftO[3]" LOC = P6;
+#LEDS for DReg
+NET "D_RegisterO[0]" LOC= P7;
+NET "D_RegisterO[1]" LOC= P6;
 
 #Flag switch for subtraction or addition, 
 # 0 = Addition
