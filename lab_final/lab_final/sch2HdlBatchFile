@@ -1,3 +1,1 @@
-sch2hdl,-intstyle,ise,-family,spartan3e,-flat,-suppress,-vhdl,C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/P_Counter.vhf,-w,C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/P_Counter.sch
-sch2hdl,-intstyle,ise,-family,spartan3e,-flat,-suppress,-vhdl,C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/test_ProgramCounter.vhf,-w,C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/test_ProgramCounter.sch
-sch2hdl,-intstyle,ise,-family,spartan3e,-flat,-suppress,-vhdl,C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/test_ProgramCounter.vhf,-w,C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/test_ProgramCounter.sch
+sch2hdl,-intstyle,ise,-family,spartan3e,-flat,-suppress,-vhdl,C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/test_FullAdder.vhf,-w,C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/test_FullAdder.sch
