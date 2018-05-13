@@ -246,6 +246,10 @@
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="334"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="334"/>
     </file>
+    <file xil_pn:name="ALU_Final.sch" xil_pn:type="FILE_SCHEMATIC">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="336"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="336"/>
+    </file>
   </files>
 
   <properties>
