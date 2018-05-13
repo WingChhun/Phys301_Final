@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan3e -w -refsym MUX8_Accumulator C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/MUX8_Accumulator.sch C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/MUX8_Accumulator.sym 

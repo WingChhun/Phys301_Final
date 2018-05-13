@@ -25,13 +25,7 @@
         <signal name="I_In(4)" />
         <signal name="I_In(6)" />
         <signal name="IMem_DMem" />
-        <signal name="XLXN_33" />
-        <signal name="XLXN_34" />
-        <signal name="XLXN_35" />
-        <signal name="XLXN_36" />
-        <signal name="XLXN_37" />
         <signal name="DOut(0)" />
-        <signal name="XLXN_56" />
         <signal name="DOut(1)" />
         <signal name="DOut(2)" />
         <signal name="DOut(3)" />
@@ -40,11 +34,6 @@
         <signal name="DOut(6)" />
         <signal name="DOut(7)" />
         <signal name="DOut(7:0)" />
-        <signal name="XLXN_67" />
-        <signal name="XLXN_68" />
-        <signal name="XLXN_72" />
-        <signal name="XLXN_73" />
-        <signal name="XLXN_74" />
         <port polarity="Input" name="D_In(7:0)" />
         <port polarity="Input" name="I_In(7:0)" />
         <port polarity="Input" name="IMem_DMem" />
@@ -71,7 +60,7 @@
         <block symbolname="m2_1" name="XLXI_28">
             <blockpin signalname="I_In(0)" name="D0" />
             <blockpin signalname="D_In(0)" name="D1" />
-            <blockpin name="S0" />
+            <blockpin signalname="IMem_DMem" name="S0" />
             <blockpin signalname="DOut(0)" name="O" />
         </block>
         <block symbolname="m2_1" name="XLXI_33">
@@ -336,68 +325,68 @@
         <bustap x2="2896" y1="880" y2="880" x1="2992" />
         <bustap x2="2896" y1="960" y2="960" x1="2992" />
         <branch name="DOut(1)">
-            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="2803" y="496" type="branch" />
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="2803" y="496" type="branch" />
             <wire x2="2592" y1="608" y2="608" x1="2320" />
             <wire x2="2592" y1="608" y2="624" x1="2592" />
             <wire x2="2704" y1="624" y2="624" x1="2592" />
             <wire x2="2704" y1="496" y2="624" x1="2704" />
-            <wire x2="2803" y1="496" y2="496" x1="2704" />
-            <wire x2="2896" y1="496" y2="496" x1="2803" />
+            <wire x2="2800" y1="496" y2="496" x1="2704" />
+            <wire x2="2896" y1="496" y2="496" x1="2800" />
         </branch>
         <branch name="DOut(2)">
-            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="2836" y="576" type="branch" />
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="2836" y="576" type="branch" />
             <wire x2="2592" y1="880" y2="880" x1="2336" />
             <wire x2="2720" y1="832" y2="832" x1="2592" />
             <wire x2="2592" y1="832" y2="880" x1="2592" />
             <wire x2="2720" y1="576" y2="832" x1="2720" />
-            <wire x2="2836" y1="576" y2="576" x1="2720" />
-            <wire x2="2896" y1="576" y2="576" x1="2836" />
+            <wire x2="2832" y1="576" y2="576" x1="2720" />
+            <wire x2="2896" y1="576" y2="576" x1="2832" />
         </branch>
         <branch name="DOut(3)">
-            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="2843" y="640" type="branch" />
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="2843" y="640" type="branch" />
             <wire x2="2576" y1="1120" y2="1120" x1="2288" />
             <wire x2="2736" y1="1024" y2="1024" x1="2576" />
             <wire x2="2576" y1="1024" y2="1120" x1="2576" />
             <wire x2="2736" y1="640" y2="1024" x1="2736" />
-            <wire x2="2843" y1="640" y2="640" x1="2736" />
-            <wire x2="2896" y1="640" y2="640" x1="2843" />
+            <wire x2="2848" y1="640" y2="640" x1="2736" />
+            <wire x2="2896" y1="640" y2="640" x1="2848" />
         </branch>
         <branch name="DOut(4)">
-            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="2872" y="736" type="branch" />
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="2872" y="736" type="branch" />
             <wire x2="2432" y1="1408" y2="1408" x1="2288" />
             <wire x2="2432" y1="1200" y2="1408" x1="2432" />
             <wire x2="2592" y1="1200" y2="1200" x1="2432" />
             <wire x2="2752" y1="1200" y2="1200" x1="2592" />
             <wire x2="2752" y1="736" y2="1200" x1="2752" />
-            <wire x2="2872" y1="736" y2="736" x1="2752" />
-            <wire x2="2896" y1="736" y2="736" x1="2872" />
+            <wire x2="2880" y1="736" y2="736" x1="2752" />
+            <wire x2="2896" y1="736" y2="736" x1="2880" />
         </branch>
         <branch name="DOut(5)">
-            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="2855" y="816" type="branch" />
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="2855" y="816" type="branch" />
             <wire x2="2592" y1="1680" y2="1680" x1="2288" />
             <wire x2="2768" y1="1360" y2="1360" x1="2592" />
             <wire x2="2592" y1="1360" y2="1680" x1="2592" />
             <wire x2="2768" y1="816" y2="1360" x1="2768" />
-            <wire x2="2855" y1="816" y2="816" x1="2768" />
-            <wire x2="2896" y1="816" y2="816" x1="2855" />
+            <wire x2="2848" y1="816" y2="816" x1="2768" />
+            <wire x2="2896" y1="816" y2="816" x1="2848" />
         </branch>
         <branch name="DOut(6)">
-            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="2851" y="880" type="branch" />
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="2851" y="880" type="branch" />
             <wire x2="2576" y1="1936" y2="1936" x1="2272" />
             <wire x2="2784" y1="1520" y2="1520" x1="2576" />
             <wire x2="2576" y1="1520" y2="1936" x1="2576" />
             <wire x2="2784" y1="880" y2="1520" x1="2784" />
-            <wire x2="2851" y1="880" y2="880" x1="2784" />
-            <wire x2="2896" y1="880" y2="880" x1="2851" />
+            <wire x2="2848" y1="880" y2="880" x1="2784" />
+            <wire x2="2896" y1="880" y2="880" x1="2848" />
         </branch>
         <branch name="DOut(7)">
-            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="2872" y="960" type="branch" />
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="2872" y="960" type="branch" />
             <wire x2="2592" y1="2192" y2="2192" x1="2304" />
             <wire x2="2800" y1="1696" y2="1696" x1="2592" />
             <wire x2="2592" y1="1696" y2="2192" x1="2592" />
             <wire x2="2800" y1="960" y2="1696" x1="2800" />
-            <wire x2="2872" y1="960" y2="960" x1="2800" />
-            <wire x2="2896" y1="960" y2="960" x1="2872" />
+            <wire x2="2880" y1="960" y2="960" x1="2800" />
+            <wire x2="2896" y1="960" y2="960" x1="2880" />
         </branch>
         <branch name="DOut(7:0)">
             <wire x2="3120" y1="352" y2="352" x1="2992" />
@@ -435,10 +424,12 @@
             <wire x2="976" y1="976" y2="1168" x1="976" />
             <wire x2="1008" y1="1168" y2="1168" x1="976" />
             <wire x2="976" y1="1168" y2="1344" x1="976" />
-            <wire x2="1232" y1="256" y2="256" x1="960" />
+            <wire x2="1024" y1="256" y2="256" x1="960" />
+            <wire x2="1232" y1="256" y2="256" x1="1024" />
             <wire x2="2080" y1="256" y2="256" x1="1232" />
             <wire x2="2080" y1="256" y2="480" x1="2080" />
             <wire x2="2080" y1="480" y2="512" x1="2080" />
+            <wire x2="1024" y1="256" y2="304" x1="1024" />
             <wire x2="1232" y1="144" y2="144" x1="1088" />
             <wire x2="1232" y1="144" y2="256" x1="1232" />
             <wire x2="1968" y1="944" y2="944" x1="1872" />

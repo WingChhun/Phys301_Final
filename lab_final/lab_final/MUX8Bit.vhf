@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : MUX8Bit.vhf
--- /___/   /\     Timestamp : 05/13/2018 01:21:47
+-- /___/   /\     Timestamp : 05/13/2018 11:26:46
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -95,7 +95,6 @@ architecture BEHAVIORAL of MUX8Bit is
    signal XLXI_27_D0_openSignal : std_logic;
    signal XLXI_27_D1_openSignal : std_logic;
    signal XLXI_27_S0_openSignal : std_logic;
-   signal XLXI_28_S0_openSignal : std_logic;
    component M2_1_MXILINX_MUX8Bit
       port ( D0 : in    std_logic; 
              D1 : in    std_logic; 
@@ -103,15 +102,15 @@ architecture BEHAVIORAL of MUX8Bit is
              O  : out   std_logic);
    end component;
    
-   attribute HU_SET of XLXI_27 : label is "XLXI_27_73";
-   attribute HU_SET of XLXI_28 : label is "XLXI_28_74";
-   attribute HU_SET of XLXI_32 : label is "XLXI_32_80";
-   attribute HU_SET of XLXI_33 : label is "XLXI_33_75";
-   attribute HU_SET of XLXI_34 : label is "XLXI_34_76";
-   attribute HU_SET of XLXI_35 : label is "XLXI_35_77";
-   attribute HU_SET of XLXI_36 : label is "XLXI_36_78";
-   attribute HU_SET of XLXI_37 : label is "XLXI_37_79";
-   attribute HU_SET of XLXI_44 : label is "XLXI_44_81";
+   attribute HU_SET of XLXI_27 : label is "XLXI_27_90";
+   attribute HU_SET of XLXI_28 : label is "XLXI_28_91";
+   attribute HU_SET of XLXI_32 : label is "XLXI_32_97";
+   attribute HU_SET of XLXI_33 : label is "XLXI_33_92";
+   attribute HU_SET of XLXI_34 : label is "XLXI_34_93";
+   attribute HU_SET of XLXI_35 : label is "XLXI_35_94";
+   attribute HU_SET of XLXI_36 : label is "XLXI_36_95";
+   attribute HU_SET of XLXI_37 : label is "XLXI_37_96";
+   attribute HU_SET of XLXI_44 : label is "XLXI_44_98";
 begin
    XLXI_27 : M2_1_MXILINX_MUX8Bit
       port map (D0=>XLXI_27_D0_openSignal,
@@ -122,7 +121,7 @@ begin
    XLXI_28 : M2_1_MXILINX_MUX8Bit
       port map (D0=>I_In(0),
                 D1=>D_In(0),
-                S0=>XLXI_28_S0_openSignal,
+                S0=>IMem_DMem,
                 O=>DOut(0));
    
    XLXI_32 : M2_1_MXILINX_MUX8Bit

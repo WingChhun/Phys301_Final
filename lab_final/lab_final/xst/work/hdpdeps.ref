@@ -1,630 +1,692 @@
-V3 289
-FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/addersub8.vhd 2018/05/12.21:48:39 P.20131013
-EN work/addersub8 1526201642 \
+V3 313
+FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/addersub8.vhd 2018/05/13.03:01:20 P.20131013
+EN work/addersub8 1526237523 \
       FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/addersub8.vhd \
       PB ieee/std_logic_1164 1381692176
-AR work/addersub8/Behavioral 1526201643 \
+AR work/addersub8/Behavioral 1526237524 \
       FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/addersub8.vhd \
-      EN work/addersub8 1526201642
-FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/Address.vhf 2018/05/13.01:38:46 P.20131013
-EN work/FD8CE_MXILINX_Address 1526201025 \
-      FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/Address.vhf \
-      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
-      PH unisim/VCOMPONENTS 1381692182
-AR work/FD8CE_MXILINX_Address/BEHAVIORAL 1526201026 \
-      FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/Address.vhf \
-      EN work/FD8CE_MXILINX_Address 1526201025 CP FDCE
-EN work/FD4CE_MXILINX_Address 1526201027 \
-      FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/Address.vhf \
-      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
-      PH unisim/VCOMPONENTS 1381692182
-AR work/FD4CE_MXILINX_Address/BEHAVIORAL 1526201028 \
-      FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/Address.vhf \
-      EN work/FD4CE_MXILINX_Address 1526201027 CP FDCE
-EN work/Eight_Register_Shift_MUSER_Address 1526201029 \
-      FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/Address.vhf \
-      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
-      PH unisim/VCOMPONENTS 1381692182
-AR work/Eight_Register_Shift_MUSER_Address/BEHAVIORAL 1526201030 \
-      FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/Address.vhf \
-      EN work/Eight_Register_Shift_MUSER_Address 1526201029 \
-      CP FD4CE_MXILINX_Address CP FD8CE_MXILINX_Address
-EN work/Address 1526201031 \
-      FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/Address.vhf \
-      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
-      PH unisim/VCOMPONENTS 1381692182
-AR work/Address/BEHAVIORAL 1526201032 \
-      FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/Address.vhf \
-      EN work/Address 1526201031 CP FD8CE_MXILINX_Address CP FD4CE_MXILINX_Address \
-      CP AND4 CP OR2 CP AND4B2 CP AND5B2 CP AND2 \
-      CP Eight_Register_Shift_MUSER_Address
-FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/ALU.vhf 2018/05/13.01:21:46 P.20131013
-EN work/ADSU8_MXILINX_ALU 1526201574 \
+      EN work/addersub8 1526237523
+FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/ALU.vhf 2018/05/13.11:26:41 P.20131013
+EN work/ADSU8_MXILINX_ALU 1526236116 \
       FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/ALU.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/ADSU8_MXILINX_ALU/BEHAVIORAL 1526201575 \
+AR work/ADSU8_MXILINX_ALU/BEHAVIORAL 1526236117 \
       FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/ALU.vhf \
-      EN work/ADSU8_MXILINX_ALU 1526201574 CP FMAP CP XOR3 CP MUXCY_L CP MUXCY \
+      EN work/ADSU8_MXILINX_ALU 1526236116 CP FMAP CP XOR3 CP MUXCY_L CP MUXCY \
       CP XORCY CP MUXCY_D CP INV CP XOR2
-EN work/ALU 1526201576 \
+EN work/ALU 1526236118 \
       FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/ALU.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/ALU/BEHAVIORAL 1526201577 \
+AR work/ALU/BEHAVIORAL 1526236119 \
       FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/ALU.vhf \
-      EN work/ALU 1526201576 CP ADSU8_MXILINX_ALU
-FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/Eight_Register_Shift.vhf 2018/05/13.01:21:51 P.20131013
-EN work/FD8CE_MXILINX_Eight_Register_Shift 1526201644 \
+      EN work/ALU 1526236118 CP ADSU8_MXILINX_ALU
+FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/ALU_Final.vhf 2018/05/13.11:26:49 P.20131013
+EN work/Full_Add_MUSER_ALU_Final 1526237479 \
+      FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/ALU_Final.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/Full_Add_MUSER_ALU_Final/BEHAVIORAL 1526237480 \
+      FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/ALU_Final.vhf \
+      EN work/Full_Add_MUSER_ALU_Final 1526237479 CP NAND2 CP XOR2
+EN work/addersub8_MUSER_ALU_Final 1526237481 \
+      FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/ALU_Final.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/addersub8_MUSER_ALU_Final/BEHAVIORAL 1526237482 \
+      FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/ALU_Final.vhf \
+      EN work/addersub8_MUSER_ALU_Final 1526237481 CP XOR2 \
+      CP Full_Add_MUSER_ALU_Final
+EN work/Full_AdderSub8_MUSER_ALU_Final 1526237483 \
+      FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/ALU_Final.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/Full_AdderSub8_MUSER_ALU_Final/BEHAVIORAL 1526237484 \
+      FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/ALU_Final.vhf \
+      EN work/Full_AdderSub8_MUSER_ALU_Final 1526237483 \
+      CP addersub8_MUSER_ALU_Final CP NOR2
+EN work/ALU_Final 1526237485 \
+      FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/ALU_Final.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/ALU_Final/BEHAVIORAL 1526237486 \
+      FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/ALU_Final.vhf \
+      EN work/ALU_Final 1526237485 CP Full_AdderSub8_MUSER_ALU_Final CP BUF CP AND2 \
+      CP AND3B1 CP OR2
+FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/Eight_Register_Shift.vhf 2018/05/13.11:26:47 P.20131013
+EN work/FD8CE_MXILINX_Eight_Register_Shift 1526237511 \
       FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/Eight_Register_Shift.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/FD8CE_MXILINX_Eight_Register_Shift/BEHAVIORAL 1526201645 \
+AR work/FD8CE_MXILINX_Eight_Register_Shift/BEHAVIORAL 1526237512 \
       FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/Eight_Register_Shift.vhf \
-      EN work/FD8CE_MXILINX_Eight_Register_Shift 1526201644 CP FDCE
-EN work/FD4CE_MXILINX_Eight_Register_Shift 1526201646 \
-      FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/Eight_Register_Shift.vhf \
-      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
-      PH unisim/VCOMPONENTS 1381692182
-AR work/FD4CE_MXILINX_Eight_Register_Shift/BEHAVIORAL 1526201647 \
-      FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/Eight_Register_Shift.vhf \
-      EN work/FD4CE_MXILINX_Eight_Register_Shift 1526201646 CP FDCE
-EN work/Eight_Register_Shift 1526201648 \
+      EN work/FD8CE_MXILINX_Eight_Register_Shift 1526237511 CP FDCE
+EN work/FD4CE_MXILINX_Eight_Register_Shift 1526237513 \
       FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/Eight_Register_Shift.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/Eight_Register_Shift/BEHAVIORAL 1526201649 \
+AR work/FD4CE_MXILINX_Eight_Register_Shift/BEHAVIORAL 1526237514 \
       FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/Eight_Register_Shift.vhf \
-      EN work/Eight_Register_Shift 1526201648 \
+      EN work/FD4CE_MXILINX_Eight_Register_Shift 1526237513 CP FDCE
+EN work/Eight_Register_Shift 1526237515 \
+      FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/Eight_Register_Shift.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/Eight_Register_Shift/BEHAVIORAL 1526237516 \
+      FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/Eight_Register_Shift.vhf \
+      EN work/Eight_Register_Shift 1526237515 \
       CP FD4CE_MXILINX_Eight_Register_Shift CP FD8CE_MXILINX_Eight_Register_Shift
-FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/Full_AdderSub8.vhf 2018/05/13.01:21:49 P.20131013
-EN work/Full_Add_MUSER_Full_AdderSub8 1526201618 \
+FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/Full_AdderSub8.vhf 2018/05/13.11:26:44 P.20131013
+EN work/Full_Add_MUSER_Full_AdderSub8 1526237517 \
       FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/Full_AdderSub8.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/Full_Add_MUSER_Full_AdderSub8/BEHAVIORAL 1526201619 \
+AR work/Full_Add_MUSER_Full_AdderSub8/BEHAVIORAL 1526237518 \
       FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/Full_AdderSub8.vhf \
-      EN work/Full_Add_MUSER_Full_AdderSub8 1526201618 CP NAND2 CP XOR2
-EN work/addersub8_MUSER_Full_AdderSub8 1526201620 \
+      EN work/Full_Add_MUSER_Full_AdderSub8 1526237517 CP NAND2 CP XOR2
+EN work/addersub8_MUSER_Full_AdderSub8 1526237519 \
       FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/Full_AdderSub8.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/addersub8_MUSER_Full_AdderSub8/BEHAVIORAL 1526201621 \
+AR work/addersub8_MUSER_Full_AdderSub8/BEHAVIORAL 1526237520 \
       FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/Full_AdderSub8.vhf \
-      EN work/addersub8_MUSER_Full_AdderSub8 1526201620 CP XOR2 \
+      EN work/addersub8_MUSER_Full_AdderSub8 1526237519 CP XOR2 \
       CP Full_Add_MUSER_Full_AdderSub8
-EN work/Full_AdderSub8 1526201622 \
+EN work/Full_AdderSub8 1526237521 \
       FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/Full_AdderSub8.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/Full_AdderSub8/BEHAVIORAL 1526201623 \
+AR work/Full_AdderSub8/BEHAVIORAL 1526237522 \
       FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/Full_AdderSub8.vhf \
-      EN work/Full_AdderSub8 1526201622 CP addersub8_MUSER_Full_AdderSub8 CP NOR2
-FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/ISA.vhf 2018/05/13.01:21:48 P.20131013
-EN work/ISA 1526201524 \
+      EN work/Full_AdderSub8 1526237521 CP addersub8_MUSER_Full_AdderSub8 CP NOR2
+FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/ISA.vhf 2018/05/13.11:26:45 P.20131013
+EN work/ISA 1526237379 \
       FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/ISA.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/ISA/BEHAVIORAL 1526201525 \
+AR work/ISA/BEHAVIORAL 1526237380 \
       FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/ISA.vhf \
-      EN work/ISA 1526201524 CP AND4B4 CP AND4B3 CP AND4 CP AND4B2 CP AND4B1 CP AND2
-FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf 2018/05/13.01:51:35 P.20131013
-EN work/FD8CE_MXILINX_lab_final 1526201532 \
+      EN work/ISA 1526237379 CP AND4B4 CP AND4B3 CP AND4 CP AND4B2 CP AND4B1 CP AND2
+FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf 2018/05/13.11:49:11 P.20131013
+EN work/M2_1_MXILINX_lab_final 1526237387 \
       FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/FD8CE_MXILINX_lab_final/BEHAVIORAL 1526201533 \
+AR work/M2_1_MXILINX_lab_final/BEHAVIORAL 1526237388 \
       FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf \
-      EN work/FD8CE_MXILINX_lab_final 1526201532 CP FDCE
-EN work/FD4CE_MXILINX_lab_final 1526201534 \
-      FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf \
-      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
-      PH unisim/VCOMPONENTS 1381692182
-AR work/FD4CE_MXILINX_lab_final/BEHAVIORAL 1526201535 \
-      FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf \
-      EN work/FD4CE_MXILINX_lab_final 1526201534 CP FDCE
-EN work/Eight_Register_Shift_MUSER_lab_final 1526201536 \
+      EN work/M2_1_MXILINX_lab_final 1526237387 CP AND2B1 CP OR2 CP AND2
+EN work/MUX8_generic_MUSER_lab_final 1526237389 \
       FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/Eight_Register_Shift_MUSER_lab_final/BEHAVIORAL 1526201537 \
+AR work/MUX8_generic_MUSER_lab_final/BEHAVIORAL 1526237390 \
       FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf \
-      EN work/Eight_Register_Shift_MUSER_lab_final 1526201536 \
-      CP FD4CE_MXILINX_lab_final CP FD8CE_MXILINX_lab_final
-EN work/Registers_MUSER_lab_final 1526201538 \
-      FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf \
-      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
-      PH unisim/VCOMPONENTS 1381692182
-AR work/Registers_MUSER_lab_final/BEHAVIORAL 1526201539 \
-      FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf \
-      EN work/Registers_MUSER_lab_final 1526201538 CP AND3 \
-      CP Eight_Register_Shift_MUSER_lab_final CP AND4B2
-EN work/M2_1_MXILINX_lab_final 1526201540 \
+      EN work/MUX8_generic_MUSER_lab_final 1526237389 CP M2_1_MXILINX_lab_final
+EN work/Full_Add_MUSER_lab_final 1526237391 \
       FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/M2_1_MXILINX_lab_final/BEHAVIORAL 1526201541 \
+AR work/Full_Add_MUSER_lab_final/BEHAVIORAL 1526237392 \
       FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf \
-      EN work/M2_1_MXILINX_lab_final 1526201540 CP AND2B1 CP OR2 CP AND2
-EN work/MUX8Bit_MUSER_lab_final 1526201542 \
-      FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf \
-      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
-      PH unisim/VCOMPONENTS 1381692182
-AR work/MUX8Bit_MUSER_lab_final/BEHAVIORAL 1526201543 \
-      FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf \
-      EN work/MUX8Bit_MUSER_lab_final 1526201542 CP M2_1_MXILINX_lab_final
-EN work/Output_DebugMode_MUSER_lab_final 1526201544 \
+      EN work/Full_Add_MUSER_lab_final 1526237391 CP NAND2 CP XOR2
+EN work/addersub8_MUSER_lab_final 1526237393 \
       FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/Output_DebugMode_MUSER_lab_final/BEHAVIORAL 1526201545 \
+AR work/addersub8_MUSER_lab_final/BEHAVIORAL 1526237394 \
       FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf \
-      EN work/Output_DebugMode_MUSER_lab_final 1526201544 CP GND CP sel_strobeB \
+      EN work/addersub8_MUSER_lab_final 1526237393 CP XOR2 \
+      CP Full_Add_MUSER_lab_final
+EN work/Full_AdderSub8_MUSER_lab_final 1526237395 \
+      FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/Full_AdderSub8_MUSER_lab_final/BEHAVIORAL 1526237396 \
+      FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf \
+      EN work/Full_AdderSub8_MUSER_lab_final 1526237395 \
+      CP addersub8_MUSER_lab_final CP NOR2
+EN work/ALU_Final_MUSER_lab_final 1526237397 \
+      FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/ALU_Final_MUSER_lab_final/BEHAVIORAL 1526237398 \
+      FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf \
+      EN work/ALU_Final_MUSER_lab_final 1526237397 \
+      CP Full_AdderSub8_MUSER_lab_final CP BUF CP AND2 CP AND3B1 CP OR2
+EN work/FD8CE_MXILINX_lab_final 1526237399 \
+      FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/FD8CE_MXILINX_lab_final/BEHAVIORAL 1526237400 \
+      FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf \
+      EN work/FD8CE_MXILINX_lab_final 1526237399 CP FDCE
+EN work/Register_8bit_MUSER_lab_final 1526237401 \
+      FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/Register_8bit_MUSER_lab_final/BEHAVIORAL 1526237402 \
+      FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf \
+      EN work/Register_8bit_MUSER_lab_final 1526237401 CP FD8CE_MXILINX_lab_final
+EN work/MUX_DR_MUSER_lab_final 1526237403 \
+      FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/MUX_DR_MUSER_lab_final/BEHAVIORAL 1526237404 \
+      FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf \
+      EN work/MUX_DR_MUSER_lab_final 1526237403 CP AND4B3 CP AND4B2 CP AND4B4
+EN work/ProgramGround_MUSER_lab_final 1526237405 \
+      FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/ProgramGround_MUSER_lab_final/BEHAVIORAL 1526237406 \
+      FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf \
+      EN work/ProgramGround_MUSER_lab_final 1526237405 CP ISA CP OR3 \
+      CP Register_8bit_MUSER_lab_final CP NOR3 CP OR4 CP XOR2 \
+      CP MUX_DR_MUSER_lab_final CP OR2 CP AND2 CP ALU_Final_MUSER_lab_final CP OR3B1 \
+      CP MUX8_generic_MUSER_lab_final
+EN work/Output_DebugMode_MUSER_lab_final 1526237407 \
+      FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/Output_DebugMode_MUSER_lab_final/BEHAVIORAL 1526237408 \
+      FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf \
+      EN work/Output_DebugMode_MUSER_lab_final 1526237407 CP GND CP sel_strobeB \
       CP bin2BCD3en CP mux4SSD CP SSD_1dig CP PULLUP CP DCM_100M CP INV
-EN work/MemoryV2_MUSER_lab_final 1526201546 \
+EN work/FD4CE_MXILINX_lab_final 1526237409 \
       FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/MemoryV2_MUSER_lab_final/BEHAVIORAL 1526201547 \
+AR work/FD4CE_MXILINX_lab_final/BEHAVIORAL 1526237410 \
       FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf \
-      EN work/MemoryV2_MUSER_lab_final 1526201546 CP INV \
+      EN work/FD4CE_MXILINX_lab_final 1526237409 CP FDCE
+EN work/Eight_Register_Shift_MUSER_lab_final 1526237411 \
+      FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/Eight_Register_Shift_MUSER_lab_final/BEHAVIORAL 1526237412 \
+      FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf \
+      EN work/Eight_Register_Shift_MUSER_lab_final 1526237411 \
+      CP FD4CE_MXILINX_lab_final CP FD8CE_MXILINX_lab_final
+EN work/Registers_MUSER_lab_final 1526237413 \
+      FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/Registers_MUSER_lab_final/BEHAVIORAL 1526237414 \
+      FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf \
+      EN work/Registers_MUSER_lab_final 1526237413 CP AND3 \
+      CP Eight_Register_Shift_MUSER_lab_final CP AND4B2
+EN work/MUX8Bit_MUSER_lab_final 1526237415 \
+      FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/MUX8Bit_MUSER_lab_final/BEHAVIORAL 1526237416 \
+      FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf \
+      EN work/MUX8Bit_MUSER_lab_final 1526237415 CP M2_1_MXILINX_lab_final
+EN work/MemoryV2_MUSER_lab_final 1526237417 \
+      FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/MemoryV2_MUSER_lab_final/BEHAVIORAL 1526237418 \
+      FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf \
+      EN work/MemoryV2_MUSER_lab_final 1526237417 CP INV \
       CP Output_DebugMode_MUSER_lab_final CP MUX8Bit_MUSER_lab_final \
       CP lab_KEYPAD_FINAL CP BUF CP NAND2 CP sRAM32x8_ex_pgm_instr \
       CP sRAM32x8_ex_pgm_data CP AND2 CP Registers_MUSER_lab_final
-EN work/M2_1B1_MXILINX_lab_final 1526201548 \
+EN work/M2_1B1_MXILINX_lab_final 1526237419 \
       FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/M2_1B1_MXILINX_lab_final/BEHAVIORAL 1526201549 \
+AR work/M2_1B1_MXILINX_lab_final/BEHAVIORAL 1526237420 \
       FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf \
-      EN work/M2_1B1_MXILINX_lab_final 1526201548 CP AND2B2 CP OR2 CP AND2
-EN work/FTCLEX_MXILINX_lab_final 1526201550 \
+      EN work/M2_1B1_MXILINX_lab_final 1526237419 CP AND2B2 CP OR2 CP AND2
+EN work/FTCLEX_MXILINX_lab_final 1526237421 \
       FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/FTCLEX_MXILINX_lab_final/BEHAVIORAL 1526201551 \
+AR work/FTCLEX_MXILINX_lab_final/BEHAVIORAL 1526237422 \
       FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf \
-      EN work/FTCLEX_MXILINX_lab_final 1526201550 CP M2_1_MXILINX_lab_final \
+      EN work/FTCLEX_MXILINX_lab_final 1526237421 CP M2_1_MXILINX_lab_final \
       CP XOR2 CP FDCE
-EN work/CB4CLED_MXILINX_lab_final 1526201552 \
+EN work/CB4CLED_MXILINX_lab_final 1526237423 \
       FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/CB4CLED_MXILINX_lab_final/BEHAVIORAL 1526201553 \
+AR work/CB4CLED_MXILINX_lab_final/BEHAVIORAL 1526237424 \
       FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf \
-      EN work/CB4CLED_MXILINX_lab_final 1526201552 CP FTCLEX_MXILINX_lab_final \
+      EN work/CB4CLED_MXILINX_lab_final 1526237423 CP FTCLEX_MXILINX_lab_final \
       CP M2_1_MXILINX_lab_final CP M2_1B1_MXILINX_lab_final CP VCC CP AND2B2 CP AND4 \
       CP AND4B4 CP AND3 CP AND3B3 CP AND2 CP OR2
-EN work/CB8CLED_MXILINX_lab_final 1526201554 \
+EN work/CB8CLED_MXILINX_lab_final 1526237425 \
       FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/CB8CLED_MXILINX_lab_final/BEHAVIORAL 1526201555 \
+AR work/CB8CLED_MXILINX_lab_final/BEHAVIORAL 1526237426 \
       FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf \
-      EN work/CB8CLED_MXILINX_lab_final 1526201554 CP FTCLEX_MXILINX_lab_final \
+      EN work/CB8CLED_MXILINX_lab_final 1526237425 CP FTCLEX_MXILINX_lab_final \
       CP M2_1_MXILINX_lab_final CP M2_1B1_MXILINX_lab_final CP AND5 CP AND4 \
       CP AND4B3 CP AND2B2 CP VCC CP AND2B1 CP AND3 CP AND3B2 CP AND3B3 CP AND4B4 CP AND2 \
       CP AND5B4 CP OR2
-EN work/P_Counter_MUSER_lab_final 1526201556 \
+EN work/P_Counter_MUSER_lab_final 1526237427 \
       FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/P_Counter_MUSER_lab_final/BEHAVIORAL 1526201557 \
+AR work/P_Counter_MUSER_lab_final/BEHAVIORAL 1526237428 \
       FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf \
-      EN work/P_Counter_MUSER_lab_final 1526201556 CP CB8CLED_MXILINX_lab_final \
+      EN work/P_Counter_MUSER_lab_final 1526237427 CP CB8CLED_MXILINX_lab_final \
       CP PULLUP CP OR2 CP CB4CLED_MXILINX_lab_final CP AND3B2 CP AND3B1 CP OR3 \
       CP AND2B1
-EN work/Full_Add_MUSER_lab_final 1526201558 \
+EN work/lab_final 1526237429 \
       FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/Full_Add_MUSER_lab_final/BEHAVIORAL 1526201559 \
+AR work/lab_final/BEHAVIORAL 1526237430 \
       FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf \
-      EN work/Full_Add_MUSER_lab_final 1526201558 CP NAND2 CP XOR2
-EN work/addersub8_MUSER_lab_final 1526201560 \
-      FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf \
-      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
-      PH unisim/VCOMPONENTS 1381692182
-AR work/addersub8_MUSER_lab_final/BEHAVIORAL 1526201561 \
-      FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf \
-      EN work/addersub8_MUSER_lab_final 1526201560 CP XOR2 \
-      CP Full_Add_MUSER_lab_final
-EN work/Full_AdderSub8_MUSER_lab_final 1526201562 \
-      FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf \
-      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
-      PH unisim/VCOMPONENTS 1381692182
-AR work/Full_AdderSub8_MUSER_lab_final/BEHAVIORAL 1526201563 \
-      FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf \
-      EN work/Full_AdderSub8_MUSER_lab_final 1526201562 \
-      CP addersub8_MUSER_lab_final CP NOR2
-EN work/Register_8bit_MUSER_lab_final 1526201564 \
-      FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf \
-      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
-      PH unisim/VCOMPONENTS 1381692182
-AR work/Register_8bit_MUSER_lab_final/BEHAVIORAL 1526201565 \
-      FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf \
-      EN work/Register_8bit_MUSER_lab_final 1526201564 CP FD8CE_MXILINX_lab_final
-EN work/ProgramGround_MUSER_lab_final 1526201566 \
-      FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf \
-      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
-      PH unisim/VCOMPONENTS 1381692182
-AR work/ProgramGround_MUSER_lab_final/BEHAVIORAL 1526201567 \
-      FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf \
-      EN work/ProgramGround_MUSER_lab_final 1526201566 CP ISA \
-      CP Full_AdderSub8_MUSER_lab_final CP OR3 CP OR4 CP OR2 \
-      CP Register_8bit_MUSER_lab_final CP NOR3
-EN work/ADSU8_MXILINX_lab_final 1526201568 \
-      FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf \
-      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
-      PH unisim/VCOMPONENTS 1381692182
-AR work/ADSU8_MXILINX_lab_final/BEHAVIORAL 1526201569 \
-      FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf \
-      EN work/ADSU8_MXILINX_lab_final 1526201568 CP FMAP CP XOR3 CP MUXCY_L CP MUXCY \
-      CP XORCY CP MUXCY_D CP INV CP XOR2
-EN work/ALU_MUSER_lab_final 1526201570 \
-      FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf \
-      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
-      PH unisim/VCOMPONENTS 1381692182
-AR work/ALU_MUSER_lab_final/BEHAVIORAL 1526201571 \
-      FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf \
-      EN work/ALU_MUSER_lab_final 1526201570 CP ADSU8_MXILINX_lab_final
-EN work/lab_final 1526201572 \
-      FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf \
-      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
-      PH unisim/VCOMPONENTS 1381692182
-AR work/lab_final/BEHAVIORAL 1526201573 \
-      FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf \
-      EN work/lab_final 1526201572 CP AND2 CP ALU_MUSER_lab_final CP INV CP DCM_100M \
-      CP M2_1_MXILINX_lab_final CP ProgramGround_MUSER_lab_final \
-      CP P_Counter_MUSER_lab_final CP GND CP OR3 CP MemoryV2_MUSER_lab_final
-FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_KEYPAD_FINAL.vhf 2018/05/13.01:21:42 P.20131013
-EN work/lab_KEYPAD_FINAL 1526201526 \
+      EN work/lab_final 1526237429 CP AND2 CP INV CP DCM_100M \
+      CP M2_1_MXILINX_lab_final CP P_Counter_MUSER_lab_final CP GND CP OR3 \
+      CP MemoryV2_MUSER_lab_final CP ProgramGround_MUSER_lab_final
+FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_KEYPAD_FINAL.vhf 2018/05/13.11:26:37 P.20131013
+EN work/lab_KEYPAD_FINAL 1526237381 \
       FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_KEYPAD_FINAL.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/lab_KEYPAD_FINAL/BEHAVIORAL 1526201527 \
+AR work/lab_KEYPAD_FINAL/BEHAVIORAL 1526237382 \
       FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_KEYPAD_FINAL.vhf \
-      EN work/lab_KEYPAD_FINAL 1526201526 CP CRenc4bin CP PULLDOWN CP PULLUP \
+      EN work/lab_KEYPAD_FINAL 1526237381 CP CRenc4bin CP PULLDOWN CP PULLUP \
       CP DCM_100M CP key_detect CP col_strobe CP oneshot CP decoder16keyEn \
       CP key4_dbnc
-FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/MemoryV2.vhf 2018/05/13.01:51:36 P.20131013
-EN work/FD8CE_MXILINX_MemoryV2 1526201578 \
+FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/MemoryV2.vhf 2018/05/13.11:41:43 P.20131013
+EN work/Output_DebugMode_MUSER_MemoryV2 1526237431 \
       FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/MemoryV2.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/FD8CE_MXILINX_MemoryV2/BEHAVIORAL 1526201579 \
+AR work/Output_DebugMode_MUSER_MemoryV2/BEHAVIORAL 1526237432 \
       FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/MemoryV2.vhf \
-      EN work/FD8CE_MXILINX_MemoryV2 1526201578 CP FDCE
-EN work/FD4CE_MXILINX_MemoryV2 1526201580 \
-      FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/MemoryV2.vhf \
-      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
-      PH unisim/VCOMPONENTS 1381692182
-AR work/FD4CE_MXILINX_MemoryV2/BEHAVIORAL 1526201581 \
-      FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/MemoryV2.vhf \
-      EN work/FD4CE_MXILINX_MemoryV2 1526201580 CP FDCE
-EN work/Eight_Register_Shift_MUSER_MemoryV2 1526201582 \
-      FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/MemoryV2.vhf \
-      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
-      PH unisim/VCOMPONENTS 1381692182
-AR work/Eight_Register_Shift_MUSER_MemoryV2/BEHAVIORAL 1526201583 \
-      FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/MemoryV2.vhf \
-      EN work/Eight_Register_Shift_MUSER_MemoryV2 1526201582 \
-      CP FD4CE_MXILINX_MemoryV2 CP FD8CE_MXILINX_MemoryV2
-EN work/Registers_MUSER_MemoryV2 1526201584 \
-      FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/MemoryV2.vhf \
-      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
-      PH unisim/VCOMPONENTS 1381692182
-AR work/Registers_MUSER_MemoryV2/BEHAVIORAL 1526201585 \
-      FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/MemoryV2.vhf \
-      EN work/Registers_MUSER_MemoryV2 1526201584 CP AND3 \
-      CP Eight_Register_Shift_MUSER_MemoryV2 CP AND4B2
-EN work/M2_1_MXILINX_MemoryV2 1526201586 \
-      FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/MemoryV2.vhf \
-      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
-      PH unisim/VCOMPONENTS 1381692182
-AR work/M2_1_MXILINX_MemoryV2/BEHAVIORAL 1526201587 \
-      FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/MemoryV2.vhf \
-      EN work/M2_1_MXILINX_MemoryV2 1526201586 CP AND2B1 CP OR2 CP AND2
-EN work/MUX8Bit_MUSER_MemoryV2 1526201588 \
-      FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/MemoryV2.vhf \
-      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
-      PH unisim/VCOMPONENTS 1381692182
-AR work/MUX8Bit_MUSER_MemoryV2/BEHAVIORAL 1526201589 \
-      FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/MemoryV2.vhf \
-      EN work/MUX8Bit_MUSER_MemoryV2 1526201588 CP M2_1_MXILINX_MemoryV2
-EN work/Output_DebugMode_MUSER_MemoryV2 1526201590 \
-      FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/MemoryV2.vhf \
-      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
-      PH unisim/VCOMPONENTS 1381692182
-AR work/Output_DebugMode_MUSER_MemoryV2/BEHAVIORAL 1526201591 \
-      FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/MemoryV2.vhf \
-      EN work/Output_DebugMode_MUSER_MemoryV2 1526201590 CP GND CP sel_strobeB \
+      EN work/Output_DebugMode_MUSER_MemoryV2 1526237431 CP GND CP sel_strobeB \
       CP bin2BCD3en CP mux4SSD CP SSD_1dig CP PULLUP CP DCM_100M CP INV
-EN work/MemoryV2 1526201592 \
+EN work/FD8CE_MXILINX_MemoryV2 1526237433 \
       FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/MemoryV2.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/MemoryV2/BEHAVIORAL 1526201593 \
+AR work/FD8CE_MXILINX_MemoryV2/BEHAVIORAL 1526237434 \
       FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/MemoryV2.vhf \
-      EN work/MemoryV2 1526201592 CP INV CP Output_DebugMode_MUSER_MemoryV2 \
+      EN work/FD8CE_MXILINX_MemoryV2 1526237433 CP FDCE
+EN work/FD4CE_MXILINX_MemoryV2 1526237435 \
+      FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/MemoryV2.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/FD4CE_MXILINX_MemoryV2/BEHAVIORAL 1526237436 \
+      FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/MemoryV2.vhf \
+      EN work/FD4CE_MXILINX_MemoryV2 1526237435 CP FDCE
+EN work/Eight_Register_Shift_MUSER_MemoryV2 1526237437 \
+      FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/MemoryV2.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/Eight_Register_Shift_MUSER_MemoryV2/BEHAVIORAL 1526237438 \
+      FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/MemoryV2.vhf \
+      EN work/Eight_Register_Shift_MUSER_MemoryV2 1526237437 \
+      CP FD4CE_MXILINX_MemoryV2 CP FD8CE_MXILINX_MemoryV2
+EN work/Registers_MUSER_MemoryV2 1526237439 \
+      FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/MemoryV2.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/Registers_MUSER_MemoryV2/BEHAVIORAL 1526237440 \
+      FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/MemoryV2.vhf \
+      EN work/Registers_MUSER_MemoryV2 1526237439 CP AND3 \
+      CP Eight_Register_Shift_MUSER_MemoryV2 CP AND4B2
+EN work/M2_1_MXILINX_MemoryV2 1526237441 \
+      FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/MemoryV2.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/M2_1_MXILINX_MemoryV2/BEHAVIORAL 1526237442 \
+      FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/MemoryV2.vhf \
+      EN work/M2_1_MXILINX_MemoryV2 1526237441 CP AND2B1 CP OR2 CP AND2
+EN work/MUX8Bit_MUSER_MemoryV2 1526237443 \
+      FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/MemoryV2.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/MUX8Bit_MUSER_MemoryV2/BEHAVIORAL 1526237444 \
+      FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/MemoryV2.vhf \
+      EN work/MUX8Bit_MUSER_MemoryV2 1526237443 CP M2_1_MXILINX_MemoryV2
+EN work/MemoryV2 1526237445 \
+      FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/MemoryV2.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/MemoryV2/BEHAVIORAL 1526237446 \
+      FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/MemoryV2.vhf \
+      EN work/MemoryV2 1526237445 CP INV CP Output_DebugMode_MUSER_MemoryV2 \
       CP MUX8Bit_MUSER_MemoryV2 CP lab_KEYPAD_FINAL CP BUF CP NAND2 \
       CP sRAM32x8_ex_pgm_instr CP sRAM32x8_ex_pgm_data CP AND2 \
       CP Registers_MUSER_MemoryV2
-FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/MUX8Bit.vhf 2018/05/13.01:21:48 P.20131013
-EN work/M2_1_MXILINX_MUX8Bit 1526201624 \
+FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/MUX8Bit.vhf 2018/05/13.11:26:46 P.20131013
+EN work/M2_1_MXILINX_MUX8Bit 1526237487 \
       FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/MUX8Bit.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/M2_1_MXILINX_MUX8Bit/BEHAVIORAL 1526201625 \
+AR work/M2_1_MXILINX_MUX8Bit/BEHAVIORAL 1526237488 \
       FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/MUX8Bit.vhf \
-      EN work/M2_1_MXILINX_MUX8Bit 1526201624 CP AND2B1 CP OR2 CP AND2
-EN work/MUX8Bit 1526201626 \
+      EN work/M2_1_MXILINX_MUX8Bit 1526237487 CP AND2B1 CP OR2 CP AND2
+EN work/MUX8Bit 1526237489 \
       FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/MUX8Bit.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/MUX8Bit/BEHAVIORAL 1526201627 \
+AR work/MUX8Bit/BEHAVIORAL 1526237490 \
       FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/MUX8Bit.vhf \
-      EN work/MUX8Bit 1526201626 CP M2_1_MXILINX_MUX8Bit
-FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/Output_DebugMode.vhf 2018/05/13.01:21:48 P.20131013
-EN work/Output_DebugMode 1526201628 \
+      EN work/MUX8Bit 1526237489 CP M2_1_MXILINX_MUX8Bit
+FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/MUX8_generic.vhf 2018/05/13.11:26:47 P.20131013
+EN work/M2_1_MXILINX_MUX8_generic 1526237491 \
+      FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/MUX8_generic.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/M2_1_MXILINX_MUX8_generic/BEHAVIORAL 1526237492 \
+      FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/MUX8_generic.vhf \
+      EN work/M2_1_MXILINX_MUX8_generic 1526237491 CP AND2B1 CP OR2 CP AND2
+EN work/MUX8_generic 1526237493 \
+      FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/MUX8_generic.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/MUX8_generic/BEHAVIORAL 1526237494 \
+      FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/MUX8_generic.vhf \
+      EN work/MUX8_generic 1526237493 CP M2_1_MXILINX_MUX8_generic
+FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/MUX_DR.vhf 2018/05/13.11:26:46 P.20131013
+EN work/MUX_DR 1526237495 \
+      FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/MUX_DR.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/MUX_DR/BEHAVIORAL 1526237496 \
+      FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/MUX_DR.vhf \
+      EN work/MUX_DR 1526237495 CP AND4B3 CP AND4B2 CP AND4B4
+FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/Output_DebugMode.vhf 2018/05/13.11:26:41 P.20131013
+EN work/Output_DebugMode 1526237497 \
       FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/Output_DebugMode.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/Output_DebugMode/BEHAVIORAL 1526201629 \
+AR work/Output_DebugMode/BEHAVIORAL 1526237498 \
       FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/Output_DebugMode.vhf \
-      EN work/Output_DebugMode 1526201628 CP GND CP sel_strobeB CP bin2BCD3en \
+      EN work/Output_DebugMode 1526237497 CP GND CP sel_strobeB CP bin2BCD3en \
       CP mux4SSD CP SSD_1dig CP PULLUP CP DCM_100M CP INV
-FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/ProgramGround.vhf 2018/05/13.01:49:31 P.20131013
-EN work/Full_Add_MUSER_ProgramGround 1526201594 \
+FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/ProgramGround.vhf 2018/05/13.11:29:57 P.20131013
+EN work/M2_1_MXILINX_ProgramGround 1526237447 \
       FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/ProgramGround.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/Full_Add_MUSER_ProgramGround/BEHAVIORAL 1526201595 \
+AR work/M2_1_MXILINX_ProgramGround/BEHAVIORAL 1526237448 \
       FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/ProgramGround.vhf \
-      EN work/Full_Add_MUSER_ProgramGround 1526201594 CP NAND2 CP XOR2
-EN work/addersub8_MUSER_ProgramGround 1526201596 \
+      EN work/M2_1_MXILINX_ProgramGround 1526237447 CP AND2B1 CP OR2 CP AND2
+EN work/MUX8_generic_MUSER_ProgramGround 1526237449 \
       FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/ProgramGround.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/addersub8_MUSER_ProgramGround/BEHAVIORAL 1526201597 \
+AR work/MUX8_generic_MUSER_ProgramGround/BEHAVIORAL 1526237450 \
       FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/ProgramGround.vhf \
-      EN work/addersub8_MUSER_ProgramGround 1526201596 CP XOR2 \
+      EN work/MUX8_generic_MUSER_ProgramGround 1526237449 \
+      CP M2_1_MXILINX_ProgramGround
+EN work/Full_Add_MUSER_ProgramGround 1526237451 \
+      FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/ProgramGround.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/Full_Add_MUSER_ProgramGround/BEHAVIORAL 1526237452 \
+      FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/ProgramGround.vhf \
+      EN work/Full_Add_MUSER_ProgramGround 1526237451 CP NAND2 CP XOR2
+EN work/addersub8_MUSER_ProgramGround 1526237453 \
+      FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/ProgramGround.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/addersub8_MUSER_ProgramGround/BEHAVIORAL 1526237454 \
+      FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/ProgramGround.vhf \
+      EN work/addersub8_MUSER_ProgramGround 1526237453 CP XOR2 \
       CP Full_Add_MUSER_ProgramGround
-EN work/Full_AdderSub8_MUSER_ProgramGround 1526201598 \
+EN work/Full_AdderSub8_MUSER_ProgramGround 1526237455 \
       FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/ProgramGround.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/Full_AdderSub8_MUSER_ProgramGround/BEHAVIORAL 1526201599 \
+AR work/Full_AdderSub8_MUSER_ProgramGround/BEHAVIORAL 1526237456 \
       FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/ProgramGround.vhf \
-      EN work/Full_AdderSub8_MUSER_ProgramGround 1526201598 \
+      EN work/Full_AdderSub8_MUSER_ProgramGround 1526237455 \
       CP addersub8_MUSER_ProgramGround CP NOR2
-EN work/FD8CE_MXILINX_ProgramGround 1526201600 \
+EN work/ALU_Final_MUSER_ProgramGround 1526237457 \
       FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/ProgramGround.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/FD8CE_MXILINX_ProgramGround/BEHAVIORAL 1526201601 \
+AR work/ALU_Final_MUSER_ProgramGround/BEHAVIORAL 1526237458 \
       FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/ProgramGround.vhf \
-      EN work/FD8CE_MXILINX_ProgramGround 1526201600 CP FDCE
-EN work/Register_8bit_MUSER_ProgramGround 1526201602 \
+      EN work/ALU_Final_MUSER_ProgramGround 1526237457 \
+      CP Full_AdderSub8_MUSER_ProgramGround CP BUF CP AND2 CP AND3B1 CP OR2
+EN work/FD8CE_MXILINX_ProgramGround 1526237459 \
       FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/ProgramGround.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/Register_8bit_MUSER_ProgramGround/BEHAVIORAL 1526201603 \
+AR work/FD8CE_MXILINX_ProgramGround/BEHAVIORAL 1526237460 \
       FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/ProgramGround.vhf \
-      EN work/Register_8bit_MUSER_ProgramGround 1526201602 \
+      EN work/FD8CE_MXILINX_ProgramGround 1526237459 CP FDCE
+EN work/Register_8bit_MUSER_ProgramGround 1526237461 \
+      FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/ProgramGround.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/Register_8bit_MUSER_ProgramGround/BEHAVIORAL 1526237462 \
+      FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/ProgramGround.vhf \
+      EN work/Register_8bit_MUSER_ProgramGround 1526237461 \
       CP FD8CE_MXILINX_ProgramGround
-EN work/ProgramGround 1526201604 \
+EN work/MUX_DR_MUSER_ProgramGround 1526237463 \
       FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/ProgramGround.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/ProgramGround/BEHAVIORAL 1526201605 \
+AR work/MUX_DR_MUSER_ProgramGround/BEHAVIORAL 1526237464 \
       FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/ProgramGround.vhf \
-      EN work/ProgramGround 1526201604 CP ISA \
-      CP Full_AdderSub8_MUSER_ProgramGround CP OR3 CP OR4 CP OR2 \
-      CP Register_8bit_MUSER_ProgramGround CP NOR3
-FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/P_Counter.vhf 2018/05/13.01:21:47 P.20131013
-EN work/M2_1B1_MXILINX_P_Counter 1526201606 \
+      EN work/MUX_DR_MUSER_ProgramGround 1526237463 CP AND4B3 CP AND4B2 CP AND4B4
+EN work/ProgramGround 1526237465 \
+      FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/ProgramGround.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/ProgramGround/BEHAVIORAL 1526237466 \
+      FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/ProgramGround.vhf \
+      EN work/ProgramGround 1526237465 CP ISA CP OR3 \
+      CP Register_8bit_MUSER_ProgramGround CP NOR3 CP OR4 CP XOR2 \
+      CP MUX_DR_MUSER_ProgramGround CP OR2 CP AND2 CP ALU_Final_MUSER_ProgramGround \
+      CP OR3B1 CP MUX8_generic_MUSER_ProgramGround
+FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/P_Counter.vhf 2018/05/13.11:47:35 P.20131013
+EN work/M2_1B1_MXILINX_P_Counter 1526237467 \
       FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/P_Counter.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/M2_1B1_MXILINX_P_Counter/BEHAVIORAL 1526201607 \
+AR work/M2_1B1_MXILINX_P_Counter/BEHAVIORAL 1526237468 \
       FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/P_Counter.vhf \
-      EN work/M2_1B1_MXILINX_P_Counter 1526201606 CP AND2B2 CP OR2 CP AND2
-EN work/M2_1_MXILINX_P_Counter 1526201608 \
-      FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/P_Counter.vhf \
-      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
-      PH unisim/VCOMPONENTS 1381692182
-AR work/M2_1_MXILINX_P_Counter/BEHAVIORAL 1526201609 \
-      FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/P_Counter.vhf \
-      EN work/M2_1_MXILINX_P_Counter 1526201608 CP AND2B1 CP OR2 CP AND2
-EN work/FTCLEX_MXILINX_P_Counter 1526201610 \
+      EN work/M2_1B1_MXILINX_P_Counter 1526237467 CP AND2B2 CP OR2 CP AND2
+EN work/M2_1_MXILINX_P_Counter 1526237469 \
       FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/P_Counter.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/FTCLEX_MXILINX_P_Counter/BEHAVIORAL 1526201611 \
+AR work/M2_1_MXILINX_P_Counter/BEHAVIORAL 1526237470 \
       FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/P_Counter.vhf \
-      EN work/FTCLEX_MXILINX_P_Counter 1526201610 CP M2_1_MXILINX_P_Counter \
+      EN work/M2_1_MXILINX_P_Counter 1526237469 CP AND2B1 CP OR2 CP AND2
+EN work/FTCLEX_MXILINX_P_Counter 1526237471 \
+      FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/P_Counter.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/FTCLEX_MXILINX_P_Counter/BEHAVIORAL 1526237472 \
+      FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/P_Counter.vhf \
+      EN work/FTCLEX_MXILINX_P_Counter 1526237471 CP M2_1_MXILINX_P_Counter \
       CP XOR2 CP FDCE
-EN work/CB4CLED_MXILINX_P_Counter 1526201612 \
+EN work/CB4CLED_MXILINX_P_Counter 1526237473 \
       FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/P_Counter.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/CB4CLED_MXILINX_P_Counter/BEHAVIORAL 1526201613 \
+AR work/CB4CLED_MXILINX_P_Counter/BEHAVIORAL 1526237474 \
       FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/P_Counter.vhf \
-      EN work/CB4CLED_MXILINX_P_Counter 1526201612 CP FTCLEX_MXILINX_P_Counter \
+      EN work/CB4CLED_MXILINX_P_Counter 1526237473 CP FTCLEX_MXILINX_P_Counter \
       CP M2_1_MXILINX_P_Counter CP M2_1B1_MXILINX_P_Counter CP VCC CP AND2B2 CP AND4 \
       CP AND4B4 CP AND3 CP AND3B3 CP AND2 CP OR2
-EN work/CB8CLED_MXILINX_P_Counter 1526201614 \
+EN work/CB8CLED_MXILINX_P_Counter 1526237475 \
       FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/P_Counter.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/CB8CLED_MXILINX_P_Counter/BEHAVIORAL 1526201615 \
+AR work/CB8CLED_MXILINX_P_Counter/BEHAVIORAL 1526237476 \
       FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/P_Counter.vhf \
-      EN work/CB8CLED_MXILINX_P_Counter 1526201614 CP FTCLEX_MXILINX_P_Counter \
+      EN work/CB8CLED_MXILINX_P_Counter 1526237475 CP FTCLEX_MXILINX_P_Counter \
       CP M2_1_MXILINX_P_Counter CP M2_1B1_MXILINX_P_Counter CP AND5 CP AND4 \
       CP AND4B3 CP AND2B2 CP VCC CP AND2B1 CP AND3 CP AND3B2 CP AND3B3 CP AND4B4 CP AND2 \
       CP AND5B4 CP OR2
-EN work/P_Counter 1526201616 \
+EN work/P_Counter 1526237477 \
       FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/P_Counter.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/P_Counter/BEHAVIORAL 1526201617 \
+AR work/P_Counter/BEHAVIORAL 1526237478 \
       FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/P_Counter.vhf \
-      EN work/P_Counter 1526201616 CP CB8CLED_MXILINX_P_Counter CP PULLUP CP OR2 \
+      EN work/P_Counter 1526237477 CP CB8CLED_MXILINX_P_Counter CP PULLUP CP OR2 \
       CP CB4CLED_MXILINX_P_Counter CP AND3B2 CP AND3B1 CP OR3 CP AND2B1
-FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/Registers.vhf 2018/05/13.01:51:31 P.20131013
-EN work/FD8CE_MXILINX_Registers 1526201630 \
+FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/Registers.vhf 2018/05/13.11:26:42 P.20131013
+EN work/FD8CE_MXILINX_Registers 1526237499 \
       FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/Registers.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/FD8CE_MXILINX_Registers/BEHAVIORAL 1526201631 \
+AR work/FD8CE_MXILINX_Registers/BEHAVIORAL 1526237500 \
       FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/Registers.vhf \
-      EN work/FD8CE_MXILINX_Registers 1526201630 CP FDCE
-EN work/FD4CE_MXILINX_Registers 1526201632 \
-      FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/Registers.vhf \
-      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
-      PH unisim/VCOMPONENTS 1381692182
-AR work/FD4CE_MXILINX_Registers/BEHAVIORAL 1526201633 \
-      FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/Registers.vhf \
-      EN work/FD4CE_MXILINX_Registers 1526201632 CP FDCE
-EN work/Eight_Register_Shift_MUSER_Registers 1526201634 \
+      EN work/FD8CE_MXILINX_Registers 1526237499 CP FDCE
+EN work/FD4CE_MXILINX_Registers 1526237501 \
       FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/Registers.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/Eight_Register_Shift_MUSER_Registers/BEHAVIORAL 1526201635 \
+AR work/FD4CE_MXILINX_Registers/BEHAVIORAL 1526237502 \
       FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/Registers.vhf \
-      EN work/Eight_Register_Shift_MUSER_Registers 1526201634 \
+      EN work/FD4CE_MXILINX_Registers 1526237501 CP FDCE
+EN work/Eight_Register_Shift_MUSER_Registers 1526237503 \
+      FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/Registers.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/Eight_Register_Shift_MUSER_Registers/BEHAVIORAL 1526237504 \
+      FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/Registers.vhf \
+      EN work/Eight_Register_Shift_MUSER_Registers 1526237503 \
       CP FD4CE_MXILINX_Registers CP FD8CE_MXILINX_Registers
-EN work/Registers 1526201636 \
+EN work/Registers 1526237505 \
       FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/Registers.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/Registers/BEHAVIORAL 1526201637 \
+AR work/Registers/BEHAVIORAL 1526237506 \
       FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/Registers.vhf \
-      EN work/Registers 1526201636 CP AND3 CP Eight_Register_Shift_MUSER_Registers \
+      EN work/Registers 1526237505 CP AND3 CP Eight_Register_Shift_MUSER_Registers \
       CP AND4B2
-FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/Register_8bit.vhf 2018/05/13.01:21:50 P.20131013
-EN work/FD8CE_MXILINX_Register_8bit 1526201638 \
+FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/Register_8bit.vhf 2018/05/13.11:26:46 P.20131013
+EN work/FD8CE_MXILINX_Register_8bit 1526237507 \
       FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/Register_8bit.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/FD8CE_MXILINX_Register_8bit/BEHAVIORAL 1526201639 \
+AR work/FD8CE_MXILINX_Register_8bit/BEHAVIORAL 1526237508 \
       FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/Register_8bit.vhf \
-      EN work/FD8CE_MXILINX_Register_8bit 1526201638 CP FDCE
-EN work/Register_8bit 1526201640 \
+      EN work/FD8CE_MXILINX_Register_8bit 1526237507 CP FDCE
+EN work/Register_8bit 1526237509 \
       FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/Register_8bit.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/Register_8bit/BEHAVIORAL 1526201641 \
+AR work/Register_8bit/BEHAVIORAL 1526237510 \
       FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/Register_8bit.vhf \
-      EN work/Register_8bit 1526201640 CP FD8CE_MXILINX_Register_8bit
+      EN work/Register_8bit 1526237509 CP FD8CE_MXILINX_Register_8bit
 FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/modules/bin2BCD3en.vhd 2016/09/28.15:04:02 P.20131013
-EN work/bin2BCD3en 1526201518 \
+EN work/bin2BCD3en 1526237373 \
       FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/modules/bin2BCD3en.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
       PB ieee/STD_LOGIC_UNSIGNED 1381692179 LB UNISIM PH unisim/VCOMPONENTS 1381692182
-AR work/bin2BCD3en/Behavioral 1526201519 \
+AR work/bin2BCD3en/Behavioral 1526237374 \
       FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/modules/bin2BCD3en.vhd \
-      EN work/bin2BCD3en 1526201518
+      EN work/bin2BCD3en 1526237373
 FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/modules/CRenc4bin.vhd 2016/09/28.15:04:10 P.20131013
-EN work/CRenc4bin 1526201502 \
+EN work/CRenc4bin 1526237357 \
       FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/modules/CRenc4bin.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
       PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/CRenc4bin/Behavioral 1526201503 \
+AR work/CRenc4bin/Behavioral 1526237358 \
       FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/modules/CRenc4bin.vhd \
-      EN work/CRenc4bin 1526201502
+      EN work/CRenc4bin 1526237357
 FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/modules/DCM_100M.vhd 2016/10/04.10:12:56 P.20131013
-EN work/DCM_100M 1526201504 \
+EN work/DCM_100M 1526237359 \
       FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/modules/DCM_100M.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
-AR work/DCM_100M/Behavioral 1526201505 \
+AR work/DCM_100M/Behavioral 1526237360 \
       FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/modules/DCM_100M.vhd \
-      EN work/DCM_100M 1526201504
+      EN work/DCM_100M 1526237359
 FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/modules/debounce.vhd 2017/10/17.14:25:30 P.20131013
-EN work/switch_debounce 1526201500 \
+EN work/switch_debounce 1526237355 \
       FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/modules/debounce.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
       PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/switch_debounce/Behavioral 1526201501 \
+AR work/switch_debounce/Behavioral 1526237356 \
       FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/modules/debounce.vhd \
-      EN work/switch_debounce 1526201500
+      EN work/switch_debounce 1526237355
 FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/modules/decoder16keyEn.vhd 2017/10/10.10:41:18 P.20131013
-EN work/decoder16keyEn 1526201512 \
+EN work/decoder16keyEn 1526237367 \
       FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/modules/decoder16keyEn.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
       PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/decoder16keyEn/Doric 1526201513 \
+AR work/decoder16keyEn/Doric 1526237368 \
       FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/modules/decoder16keyEn.vhd \
-      EN work/decoder16keyEn 1526201512
+      EN work/decoder16keyEn 1526237367
 FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/modules/key4_dbnc.vhd 2017/10/10.10:41:18 P.20131013
-EN work/key4_dbnc 1526201514 \
+EN work/key4_dbnc 1526237369 \
       FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/modules/key4_dbnc.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
-AR work/key4_dbnc/Behavioral 1526201515 \
+AR work/key4_dbnc/Behavioral 1526237370 \
       FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/modules/key4_dbnc.vhd \
-      EN work/key4_dbnc 1526201514 CP switch_debounce
+      EN work/key4_dbnc 1526237369 CP switch_debounce
 FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/modules/key_detect.vhd 2017/10/10.10:41:18 P.20131013
-EN work/key_detect 1526201506 \
+EN work/key_detect 1526237361 \
       FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/modules/key_detect.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
       PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/key_detect/Behavioral 1526201507 \
+AR work/key_detect/Behavioral 1526237362 \
       FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/modules/key_detect.vhd \
-      EN work/key_detect 1526201506
+      EN work/key_detect 1526237361
 FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/modules/mux4SSD.vhd 2016/09/28.15:04:24 P.20131013
-EN work/mux4SSD 1526201520 \
+EN work/mux4SSD 1526237375 \
       FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/modules/mux4SSD.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
       PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/mux4SSD/Behavioral 1526201521 \
+AR work/mux4SSD/Behavioral 1526237376 \
       FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/modules/mux4SSD.vhd \
-      EN work/mux4SSD 1526201520
+      EN work/mux4SSD 1526237375
 FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/modules/oneshot.vhd 2017/10/10.10:41:20 P.20131013
-EN work/oneshot 1526201510 \
+EN work/oneshot 1526237365 \
       FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/modules/oneshot.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 \
       PB ieee/std_logic_arith 1381692177
-AR work/oneshot/Behavioral 1526201511 \
+AR work/oneshot/Behavioral 1526237366 \
       FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/modules/oneshot.vhd \
-      EN work/oneshot 1526201510
+      EN work/oneshot 1526237365
 FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/modules/sel_strobeB.vhd 2016/09/28.15:04:28 P.20131013
-EN work/sel_strobeB 1526201516 \
+EN work/sel_strobeB 1526237371 \
       FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/modules/sel_strobeB.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
       PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/sel_strobeB/Behavioral 1526201517 \
+AR work/sel_strobeB/Behavioral 1526237372 \
       FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/modules/sel_strobeB.vhd \
-      EN work/sel_strobeB 1526201516
+      EN work/sel_strobeB 1526237371
 FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/modules/sRAM32x8_ex_pgm_data.vhd 2016/11/17.11:21:28 P.20131013
-EN work/sRAM32x8_ex_pgm_data 1526201530 \
+EN work/sRAM32x8_ex_pgm_data 1526237385 \
       FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/modules/sRAM32x8_ex_pgm_data.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 \
       PB ieee/STD_LOGIC_UNSIGNED 1381692179 LB UNISIM PH unisim/VCOMPONENTS 1381692182
-AR work/sRAM32x8_ex_pgm_data/Behavioral 1526201531 \
+AR work/sRAM32x8_ex_pgm_data/Behavioral 1526237386 \
       FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/modules/sRAM32x8_ex_pgm_data.vhd \
-      EN work/sRAM32x8_ex_pgm_data 1526201530
+      EN work/sRAM32x8_ex_pgm_data 1526237385
 FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/modules/sRAM32x8_ex_pgm_instr.vhd 2016/11/17.11:21:04 P.20131013
-EN work/sRAM32x8_ex_pgm_instr 1526201528 \
+EN work/sRAM32x8_ex_pgm_instr 1526237383 \
       FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/modules/sRAM32x8_ex_pgm_instr.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 \
       PB ieee/STD_LOGIC_UNSIGNED 1381692179 LB UNISIM PH unisim/VCOMPONENTS 1381692182
-AR work/sRAM32x8_ex_pgm_instr/Behavioral 1526201529 \
+AR work/sRAM32x8_ex_pgm_instr/Behavioral 1526237384 \
       FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/modules/sRAM32x8_ex_pgm_instr.vhd \
-      EN work/sRAM32x8_ex_pgm_instr 1526201528
+      EN work/sRAM32x8_ex_pgm_instr 1526237383
 FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/modules/SSD_1dig.vhd 2016/09/28.15:04:34 P.20131013
-EN work/SSD_1dig 1526201522 \
+EN work/SSD_1dig 1526237377 \
       FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/modules/SSD_1dig.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
       PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/SSD_1dig/Behavioral 1526201523 \
+AR work/SSD_1dig/Behavioral 1526237378 \
       FL C:/Users/James/Desktop/Github/School/Phys301/lab_final/modules/SSD_1dig.vhd \
-      EN work/SSD_1dig 1526201522
+      EN work/SSD_1dig 1526237377
 FL C:/Users/James/Documents/Xlink_projects/lab_final/modules/col_strobe.vhd 2016/09/28.15:04:08 P.20131013
-EN work/col_strobe 1526201508 \
+EN work/col_strobe 1526237363 \
       FL C:/Users/James/Documents/Xlink_projects/lab_final/modules/col_strobe.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
       PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/col_strobe/Behavioral 1526201509 \
+AR work/col_strobe/Behavioral 1526237364 \
       FL C:/Users/James/Documents/Xlink_projects/lab_final/modules/col_strobe.vhd \
-      EN work/col_strobe 1526201508
+      EN work/col_strobe 1526237363

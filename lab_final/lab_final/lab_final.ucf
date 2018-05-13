@@ -37,7 +37,12 @@ NET "C_Shift" CLOCK_DEDICATED_ROUTE = FALSE;
 NET "AorD" LOC = P11; #Address or Data for programming purposes
 NET "IRorDR" LOC = L3; #DEBUG- load between Instruction register and data register
 #NET "Pulse" LOC = P6;
+#
+# Program counter 
+#
 NET "SWITCH_SPeed" LOC = G3;
+#NET "Step" LOC = C11; #Push and increment run counter by 1
+
 #
 #Binary LED Output INstruction
 #

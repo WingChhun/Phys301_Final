@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : MemoryV2.vhf
--- /___/   /\     Timestamp : 05/13/2018 01:51:35
+-- /___/   /\     Timestamp : 05/13/2018 11:41:41
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -18,6 +18,175 @@
 --    This vhdl netlist is translated from an ECS schematic. It can be 
 --    synthesized and simulated, but it should not be modified. 
 --
+
+library ieee;
+use ieee.std_logic_1164.ALL;
+use ieee.numeric_std.ALL;
+library UNISIM;
+use UNISIM.Vcomponents.ALL;
+
+entity Output_DebugMode_MUSER_MemoryV2 is
+   port ( AddressIn : in    std_logic_vector (7 downto 0); 
+          Clock     : in    std_logic; 
+          DataInput : in    std_logic_vector (7 downto 0); 
+          DebugMode : in    std_logic; 
+          EN_hex    : in    std_logic; 
+          anO       : out   std_logic_vector (3 downto 0); 
+          sseg      : out   std_logic_vector (7 downto 0));
+end Output_DebugMode_MUSER_MemoryV2;
+
+architecture BEHAVIORAL of Output_DebugMode_MUSER_MemoryV2 is
+   attribute BOX_TYPE   : string ;
+   signal Address0                : std_logic_vector (3 downto 0);
+   signal Address1                : std_logic_vector (3 downto 0);
+   signal DataOut1                : std_logic_vector (3 downto 0);
+   signal DataOut2                : std_logic_vector (3 downto 0);
+   signal dp_in                   : std_logic_vector (3 downto 0);
+   signal RunMode                 : std_logic;
+   signal Test_thenChangetoPullup : std_logic;
+   signal XLXN_13                 : std_logic_vector (3 downto 0);
+   signal XLXN_15                 : std_logic_vector (0 to 1);
+   signal XLXN_16                 : std_logic;
+   signal XLXN_69                 : std_logic;
+   signal XLXN_84                 : std_logic;
+   signal XLXN_86                 : std_logic;
+   component GND
+      port ( G : out   std_logic);
+   end component;
+   attribute BOX_TYPE of GND : component is "BLACK_BOX";
+   
+   component sel_strobeB
+      port ( clk : in    std_logic; 
+             sel : inout std_logic_vector (0 to 1));
+   end component;
+   
+   component bin2BCD3en
+      port ( CLK   : in    std_logic; 
+             En    : in    std_logic; 
+             Din   : in    std_logic_vector (7 downto 0); 
+             Dout3 : out   std_logic_vector (3 downto 0); 
+             Dout2 : out   std_logic_vector (3 downto 0); 
+             Dout1 : out   std_logic_vector (3 downto 0); 
+             Dout0 : out   std_logic_vector (3 downto 0); 
+             RBout : out   std_logic_vector (3 downto 0));
+   end component;
+   
+   component mux4SSD
+      port ( rb_in : in    std_logic; 
+             hexD  : in    std_logic_vector (3 downto 0); 
+             hexC  : in    std_logic_vector (3 downto 0); 
+             hexB  : in    std_logic_vector (3 downto 0); 
+             hexA  : in    std_logic_vector (3 downto 0); 
+             sel   : in    std_logic_vector (0 to 1); 
+             dp_in : in    std_logic_vector (3 downto 0); 
+             dpO   : out   std_logic; 
+             anO   : out   std_logic_vector (3 downto 0); 
+             hexO  : out   std_logic_vector (3 downto 0));
+   end component;
+   
+   component SSD_1dig
+      port ( dp_in : in    std_logic; 
+             hexD  : in    std_logic_vector (3 downto 0); 
+             sseg  : out   std_logic_vector (7 downto 0));
+   end component;
+   
+   component PULLUP
+      port ( O : out   std_logic);
+   end component;
+   attribute BOX_TYPE of PULLUP : component is "BLACK_BOX";
+   
+   component DCM_100M
+      port ( CLK    : in    std_logic; 
+             RST    : in    std_logic; 
+             CLK1M  : out   std_logic; 
+             CLK10k : out   std_logic; 
+             CLK1k  : out   std_logic; 
+             CLK100 : out   std_logic; 
+             CLK1   : out   std_logic);
+   end component;
+   
+   component INV
+      port ( I : in    std_logic; 
+             O : out   std_logic);
+   end component;
+   attribute BOX_TYPE of INV : component is "BLACK_BOX";
+   
+begin
+   XLXI_3 : GND
+      port map (G=>XLXN_16);
+   
+   XLXI_4 : sel_strobeB
+      port map (clk=>XLXN_69,
+                sel(0 to 1)=>XLXN_15(0 to 1));
+   
+   XLXI_5 : GND
+      port map (G=>dp_in(3));
+   
+   XLXI_6 : GND
+      port map (G=>dp_in(2));
+   
+   XLXI_7 : GND
+      port map (G=>dp_in(1));
+   
+   XLXI_12 : GND
+      port map (G=>dp_in(0));
+   
+   XLXI_14 : bin2BCD3en
+      port map (CLK=>XLXN_69,
+                Din(7 downto 0)=>DataInput(7 downto 0),
+                En=>EN_hex,
+                Dout0(3 downto 0)=>DataOut2(3 downto 0),
+                Dout1(3 downto 0)=>DataOut1(3 downto 0),
+                Dout2=>open,
+                Dout3=>open,
+                RBout=>open);
+   
+   XLXI_15 : mux4SSD
+      port map (dp_in(3 downto 0)=>dp_in(3 downto 0),
+                hexA(3 downto 0)=>DataOut2(3 downto 0),
+                hexB(3 downto 0)=>DataOut1(3 downto 0),
+                hexC(3 downto 0)=>Address0(3 downto 0),
+                hexD(3 downto 0)=>Address1(3 downto 0),
+                rb_in=>XLXN_86,
+                sel(0 to 1)=>XLXN_15(0 to 1),
+                anO(3 downto 0)=>anO(3 downto 0),
+                dpO=>XLXN_84,
+                hexO(3 downto 0)=>XLXN_13(3 downto 0));
+   
+   XLXI_16 : SSD_1dig
+      port map (dp_in=>XLXN_84,
+                hexD(3 downto 0)=>XLXN_13(3 downto 0),
+                sseg(7 downto 0)=>sseg(7 downto 0));
+   
+   XLXI_39 : PULLUP
+      port map (O=>XLXN_86);
+   
+   XLXI_40 : bin2BCD3en
+      port map (CLK=>XLXN_69,
+                Din(7 downto 0)=>AddressIn(7 downto 0),
+                En=>EN_hex,
+                Dout0(3 downto 0)=>Address0(3 downto 0),
+                Dout1(3 downto 0)=>Address1(3 downto 0),
+                Dout2=>open,
+                Dout3=>open,
+                RBout=>open);
+   
+   XLXI_41 : DCM_100M
+      port map (CLK=>Clock,
+                RST=>XLXN_16,
+                CLK1=>open,
+                CLK1k=>open,
+                CLK1M=>open,
+                CLK10k=>XLXN_69,
+                CLK100=>open);
+   
+   XLXI_42 : INV
+      port map (I=>DebugMode,
+                O=>RunMode);
+   
+end BEHAVIORAL;
+
+
 
 library ieee;
 use ieee.std_logic_1164.ALL;
@@ -212,9 +381,9 @@ architecture BEHAVIORAL of Eight_Register_Shift_MUSER_MemoryV2 is
              Q   : out   std_logic_vector (7 downto 0));
    end component;
    
-   attribute HU_SET of XLXI_149 : label is "XLXI_149_58";
-   attribute HU_SET of XLXI_150 : label is "XLXI_150_57";
-   attribute HU_SET of XLXI_159 : label is "XLXI_159_59";
+   attribute HU_SET of XLXI_149 : label is "XLXI_149_50";
+   attribute HU_SET of XLXI_150 : label is "XLXI_150_49";
+   attribute HU_SET of XLXI_159 : label is "XLXI_159_51";
 begin
    XLXI_149 : FD4CE_MXILINX_MemoryV2
       port map (C=>WCLK_R1,
@@ -436,7 +605,6 @@ architecture BEHAVIORAL of MUX8Bit_MUSER_MemoryV2 is
    signal XLXI_27_D0_openSignal : std_logic;
    signal XLXI_27_D1_openSignal : std_logic;
    signal XLXI_27_S0_openSignal : std_logic;
-   signal XLXI_28_S0_openSignal : std_logic;
    component M2_1_MXILINX_MemoryV2
       port ( D0 : in    std_logic; 
              D1 : in    std_logic; 
@@ -444,15 +612,15 @@ architecture BEHAVIORAL of MUX8Bit_MUSER_MemoryV2 is
              O  : out   std_logic);
    end component;
    
-   attribute HU_SET of XLXI_27 : label is "XLXI_27_60";
-   attribute HU_SET of XLXI_28 : label is "XLXI_28_61";
-   attribute HU_SET of XLXI_32 : label is "XLXI_32_67";
-   attribute HU_SET of XLXI_33 : label is "XLXI_33_62";
-   attribute HU_SET of XLXI_34 : label is "XLXI_34_63";
-   attribute HU_SET of XLXI_35 : label is "XLXI_35_64";
-   attribute HU_SET of XLXI_36 : label is "XLXI_36_65";
-   attribute HU_SET of XLXI_37 : label is "XLXI_37_66";
-   attribute HU_SET of XLXI_44 : label is "XLXI_44_68";
+   attribute HU_SET of XLXI_27 : label is "XLXI_27_52";
+   attribute HU_SET of XLXI_28 : label is "XLXI_28_53";
+   attribute HU_SET of XLXI_32 : label is "XLXI_32_59";
+   attribute HU_SET of XLXI_33 : label is "XLXI_33_54";
+   attribute HU_SET of XLXI_34 : label is "XLXI_34_55";
+   attribute HU_SET of XLXI_35 : label is "XLXI_35_56";
+   attribute HU_SET of XLXI_36 : label is "XLXI_36_57";
+   attribute HU_SET of XLXI_37 : label is "XLXI_37_58";
+   attribute HU_SET of XLXI_44 : label is "XLXI_44_60";
 begin
    XLXI_27 : M2_1_MXILINX_MemoryV2
       port map (D0=>XLXI_27_D0_openSignal,
@@ -463,7 +631,7 @@ begin
    XLXI_28 : M2_1_MXILINX_MemoryV2
       port map (D0=>I_In(0),
                 D1=>D_In(0),
-                S0=>XLXI_28_S0_openSignal,
+                S0=>IMem_DMem,
                 O=>DOut(0));
    
    XLXI_32 : M2_1_MXILINX_MemoryV2
@@ -518,181 +686,13 @@ use ieee.numeric_std.ALL;
 library UNISIM;
 use UNISIM.Vcomponents.ALL;
 
-entity Output_DebugMode_MUSER_MemoryV2 is
-   port ( AddressIn : in    std_logic_vector (7 downto 0); 
-          Clock     : in    std_logic; 
-          DataInput : in    std_logic_vector (7 downto 0); 
-          DebugMode : in    std_logic; 
-          EN_hex    : in    std_logic; 
-          anO       : out   std_logic_vector (3 downto 0); 
-          sseg      : out   std_logic_vector (7 downto 0));
-end Output_DebugMode_MUSER_MemoryV2;
-
-architecture BEHAVIORAL of Output_DebugMode_MUSER_MemoryV2 is
-   attribute BOX_TYPE   : string ;
-   signal Address0                : std_logic_vector (3 downto 0);
-   signal Address1                : std_logic_vector (3 downto 0);
-   signal DataOut1                : std_logic_vector (3 downto 0);
-   signal DataOut2                : std_logic_vector (3 downto 0);
-   signal dp_in                   : std_logic_vector (3 downto 0);
-   signal RunMode                 : std_logic;
-   signal Test_thenChangetoPullup : std_logic;
-   signal XLXN_13                 : std_logic_vector (3 downto 0);
-   signal XLXN_15                 : std_logic_vector (0 to 1);
-   signal XLXN_16                 : std_logic;
-   signal XLXN_69                 : std_logic;
-   signal XLXN_84                 : std_logic;
-   signal XLXN_86                 : std_logic;
-   component GND
-      port ( G : out   std_logic);
-   end component;
-   attribute BOX_TYPE of GND : component is "BLACK_BOX";
-   
-   component sel_strobeB
-      port ( clk : in    std_logic; 
-             sel : inout std_logic_vector (0 to 1));
-   end component;
-   
-   component bin2BCD3en
-      port ( CLK   : in    std_logic; 
-             En    : in    std_logic; 
-             Din   : in    std_logic_vector (7 downto 0); 
-             Dout3 : out   std_logic_vector (3 downto 0); 
-             Dout2 : out   std_logic_vector (3 downto 0); 
-             Dout1 : out   std_logic_vector (3 downto 0); 
-             Dout0 : out   std_logic_vector (3 downto 0); 
-             RBout : out   std_logic_vector (3 downto 0));
-   end component;
-   
-   component mux4SSD
-      port ( rb_in : in    std_logic; 
-             hexD  : in    std_logic_vector (3 downto 0); 
-             hexC  : in    std_logic_vector (3 downto 0); 
-             hexB  : in    std_logic_vector (3 downto 0); 
-             hexA  : in    std_logic_vector (3 downto 0); 
-             sel   : in    std_logic_vector (0 to 1); 
-             dp_in : in    std_logic_vector (3 downto 0); 
-             dpO   : out   std_logic; 
-             anO   : out   std_logic_vector (3 downto 0); 
-             hexO  : out   std_logic_vector (3 downto 0));
-   end component;
-   
-   component SSD_1dig
-      port ( dp_in : in    std_logic; 
-             hexD  : in    std_logic_vector (3 downto 0); 
-             sseg  : out   std_logic_vector (7 downto 0));
-   end component;
-   
-   component PULLUP
-      port ( O : out   std_logic);
-   end component;
-   attribute BOX_TYPE of PULLUP : component is "BLACK_BOX";
-   
-   component DCM_100M
-      port ( CLK    : in    std_logic; 
-             RST    : in    std_logic; 
-             CLK1M  : out   std_logic; 
-             CLK10k : out   std_logic; 
-             CLK1k  : out   std_logic; 
-             CLK100 : out   std_logic; 
-             CLK1   : out   std_logic);
-   end component;
-   
-   component INV
-      port ( I : in    std_logic; 
-             O : out   std_logic);
-   end component;
-   attribute BOX_TYPE of INV : component is "BLACK_BOX";
-   
-begin
-   XLXI_3 : GND
-      port map (G=>XLXN_16);
-   
-   XLXI_4 : sel_strobeB
-      port map (clk=>XLXN_69,
-                sel(0 to 1)=>XLXN_15(0 to 1));
-   
-   XLXI_5 : GND
-      port map (G=>dp_in(3));
-   
-   XLXI_6 : GND
-      port map (G=>dp_in(2));
-   
-   XLXI_7 : GND
-      port map (G=>dp_in(1));
-   
-   XLXI_12 : GND
-      port map (G=>dp_in(0));
-   
-   XLXI_14 : bin2BCD3en
-      port map (CLK=>XLXN_69,
-                Din(7 downto 0)=>DataInput(7 downto 0),
-                En=>EN_hex,
-                Dout0(3 downto 0)=>DataOut2(3 downto 0),
-                Dout1(3 downto 0)=>DataOut1(3 downto 0),
-                Dout2=>open,
-                Dout3=>open,
-                RBout=>open);
-   
-   XLXI_15 : mux4SSD
-      port map (dp_in(3 downto 0)=>dp_in(3 downto 0),
-                hexA(3 downto 0)=>DataOut2(3 downto 0),
-                hexB(3 downto 0)=>DataOut1(3 downto 0),
-                hexC(3 downto 0)=>Address0(3 downto 0),
-                hexD(3 downto 0)=>Address1(3 downto 0),
-                rb_in=>XLXN_86,
-                sel(0 to 1)=>XLXN_15(0 to 1),
-                anO(3 downto 0)=>anO(3 downto 0),
-                dpO=>XLXN_84,
-                hexO(3 downto 0)=>XLXN_13(3 downto 0));
-   
-   XLXI_16 : SSD_1dig
-      port map (dp_in=>XLXN_84,
-                hexD(3 downto 0)=>XLXN_13(3 downto 0),
-                sseg(7 downto 0)=>sseg(7 downto 0));
-   
-   XLXI_39 : PULLUP
-      port map (O=>XLXN_86);
-   
-   XLXI_40 : bin2BCD3en
-      port map (CLK=>XLXN_69,
-                Din(7 downto 0)=>AddressIn(7 downto 0),
-                En=>EN_hex,
-                Dout0(3 downto 0)=>Address0(3 downto 0),
-                Dout1(3 downto 0)=>Address1(3 downto 0),
-                Dout2=>open,
-                Dout3=>open,
-                RBout=>open);
-   
-   XLXI_41 : DCM_100M
-      port map (CLK=>Clock,
-                RST=>XLXN_16,
-                CLK1=>open,
-                CLK1k=>open,
-                CLK1M=>open,
-                CLK10k=>XLXN_69,
-                CLK100=>open);
-   
-   XLXI_42 : INV
-      port map (I=>DebugMode,
-                O=>RunMode);
-   
-end BEHAVIORAL;
-
-
-
-library ieee;
-use ieee.std_logic_1164.ALL;
-use ieee.numeric_std.ALL;
-library UNISIM;
-use UNISIM.Vcomponents.ALL;
-
 entity MemoryV2 is
    port ( AorD        : in    std_logic; 
           btn_Memory  : in    std_logic; 
           Clock       : in    std_logic; 
           CLR         : in    std_logic; 
           CLR_MEMORY  : in    std_logic; 
+          Count       : in    std_logic_vector (7 downto 0); 
           C_ShiftR    : in    std_logic; 
           C_WriteF    : in    std_logic; 
           C_WriteOnce : in    std_logic; 
@@ -703,6 +703,8 @@ entity MemoryV2 is
           EN_I_Memory : in    std_logic; 
           IOutorDout  : in    std_logic; 
           IrorDR      : in    std_logic; 
+          RegC        : in    std_logic_vector (7 downto 0); 
+          RegS        : in    std_logic_vector (7 downto 0); 
           row         : in    std_logic_vector (3 downto 0); 
           RunMode     : in    std_logic; 
           anO         : out   std_logic_vector (3 downto 0); 
@@ -829,7 +831,7 @@ begin
                 O=>EN_IR);
    
    XLXI_133 : Output_DebugMode_MUSER_MemoryV2
-      port map (AddressIn(7 downto 0)=>Address(7 downto 0),
+      port map (AddressIn(7 downto 0)=>Count(7 downto 0),
                 Clock=>Clock,
                 DataInput(7 downto 0)=>XLXN_468(7 downto 0),
                 DebugMode=>DebugMode,

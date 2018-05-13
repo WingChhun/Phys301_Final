@@ -28,6 +28,7 @@
         <signal name="Run" />
         <signal name="HLT" />
         <signal name="RunMode" />
+        <signal name="XLXN_27" />
         <port polarity="Input" name="CLK_Speed" />
         <port polarity="Output" name="Q(7:0)" />
         <port polarity="Input" name="Step" />
@@ -235,6 +236,11 @@
             <blockpin signalname="HLT" name="I0" />
             <blockpin signalname="RunMode" name="I1" />
             <blockpin signalname="Run" name="O" />
+        </block>
+        <block symbolname="or2" name="XLXI_18">
+            <blockpin signalname="XLXN_27" name="I0" />
+            <blockpin signalname="CLK_Speed" name="I1" />
+            <blockpin name="O" />
         </block>
     </netlist>
     <sheet sheetnum="1" width="3520" height="2720">
@@ -454,6 +460,14 @@
             <wire x2="496" y1="464" y2="464" x1="480" />
             <wire x2="720" y1="272" y2="272" x1="496" />
             <wire x2="496" y1="272" y2="464" x1="496" />
+        </branch>
+        <instance x="1632" y="1200" name="XLXI_18" orien="R0" />
+        <branch name="CLK_Speed">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1552" y="1072" type="branch" />
+            <wire x2="1632" y1="1072" y2="1072" x1="1552" />
+        </branch>
+        <branch name="XLXN_27">
+            <wire x2="1632" y1="1136" y2="1136" x1="1552" />
         </branch>
     </sheet>
 </drawing>
