@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.21 secs
+Total CPU time to Xst completion: 0.15 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.21 secs
+Total CPU time to Xst completion: 0.15 secs
  
 --> Reading design: lab_final.prj
 
@@ -104,8 +104,8 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
-WARNING:HDLParsers:3607 - Unit work/decoder16keyEn is now defined in a different file.  It was defined in "C:/Users/James/Documents/Xlink_projects/lab_final/modules/decoder16keyEn.vhd", and is now defined in "C:/Users/James/Desktop/Github/School/Phys301/lab_final/modules/decoder16keyEn.vhd".
-WARNING:HDLParsers:3607 - Unit work/decoder16keyEn/Doric is now defined in a different file.  It was defined in "C:/Users/James/Documents/Xlink_projects/lab_final/modules/decoder16keyEn.vhd", and is now defined in "C:/Users/James/Desktop/Github/School/Phys301/lab_final/modules/decoder16keyEn.vhd".
+WARNING:HDLParsers:3607 - Unit work/decoder16keyEn is now defined in a different file.  It was defined in "C:/Users/James/Desktop/Github/School/Phys301/lab_final/modules/decoder16keyEn.vhd", and is now defined in "C:/Users/James/Documents/Xlink_projects/lab_final/modules/decoder16keyEn.vhd".
+WARNING:HDLParsers:3607 - Unit work/decoder16keyEn/Doric is now defined in a different file.  It was defined in "C:/Users/James/Desktop/Github/School/Phys301/lab_final/modules/decoder16keyEn.vhd", and is now defined in "C:/Users/James/Documents/Xlink_projects/lab_final/modules/decoder16keyEn.vhd".
 Compiling vhdl file "C:/Users/James/Desktop/Github/School/Phys301/lab_final/modules/debounce.vhd" in Library work.
 Architecture behavioral of Entity switch_debounce is up to date.
 Compiling vhdl file "C:/Users/James/Desktop/Github/School/Phys301/lab_final/modules/sel_strobeB.vhd" in Library work.
@@ -126,7 +126,7 @@ Compiling vhdl file "C:/Users/James/Desktop/Github/School/Phys301/lab_final/modu
 Architecture behavioral of Entity key4_dbnc is up to date.
 Compiling vhdl file "C:/Users/James/Documents/Xlink_projects/lab_final/modules/col_strobe.vhd" in Library work.
 Architecture behavioral of Entity col_strobe is up to date.
-Compiling vhdl file "C:/Users/James/Desktop/Github/School/Phys301/lab_final/modules/decoder16keyEn.vhd" in Library work.
+Compiling vhdl file "C:/Users/James/Documents/Xlink_projects/lab_final/modules/decoder16keyEn.vhd" in Library work.
 Architecture doric of Entity decoder16keyen is up to date.
 Compiling vhdl file "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/ISA.vhf" in Library work.
 Architecture behavioral of Entity isa is up to date.
@@ -135,74 +135,128 @@ Architecture behavioral of Entity sram32x8_ex_pgm_instr is up to date.
 Compiling vhdl file "C:/Users/James/Desktop/Github/School/Phys301/lab_final/modules/sRAM32x8_ex_pgm_data.vhd" in Library work.
 Architecture behavioral of Entity sram32x8_ex_pgm_data is up to date.
 Compiling vhdl file "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" in Library work.
-Architecture behavioral of Entity m2_1_mxilinx_lab_final is up to date.
-Architecture behavioral of Entity mux8_generic_muser_lab_final is up to date.
-Architecture behavioral of Entity full_add_muser_lab_final is up to date.
-Architecture behavioral of Entity addersub8_muser_lab_final is up to date.
-Architecture behavioral of Entity full_addersub8_muser_lab_final is up to date.
-Architecture behavioral of Entity alu_final_muser_lab_final is up to date.
-Architecture behavioral of Entity fd8ce_mxilinx_lab_final is up to date.
-Architecture behavioral of Entity register_8bit_muser_lab_final is up to date.
-Architecture behavioral of Entity mux_dr_muser_lab_final is up to date.
-Architecture behavioral of Entity programground_muser_lab_final is up to date.
-Architecture behavioral of Entity keypad_final_muser_lab_final is up to date.
-Architecture behavioral of Entity output_debugmode_muser_lab_final is up to date.
-Architecture behavioral of Entity fd4ce_mxilinx_lab_final is up to date.
-Architecture behavioral of Entity eight_register_shift_muser_lab_final is up to date.
-Architecture behavioral of Entity registers_muser_lab_final is up to date.
-Architecture behavioral of Entity mux8bit_muser_lab_final is up to date.
-Architecture behavioral of Entity memoryv2_muser_lab_final is up to date.
-Architecture behavioral of Entity m2_1b1_mxilinx_lab_final is up to date.
-Architecture behavioral of Entity ftclex_mxilinx_lab_final is up to date.
-Architecture behavioral of Entity cb4cled_mxilinx_lab_final is up to date.
-Architecture behavioral of Entity cb8cled_mxilinx_lab_final is up to date.
-Architecture behavioral of Entity p_counter_muser_lab_final is up to date.
-Architecture behavioral of Entity lab_final is up to date.
+Entity <m2_1_mxilinx_lab_final> compiled.
+Entity <m2_1_mxilinx_lab_final> (Architecture <behavioral>) compiled.
+Entity <mux8_generic_muser_lab_final> compiled.
+Entity <mux8_generic_muser_lab_final> (Architecture <behavioral>) compiled.
+Entity <full_add_muser_lab_final> compiled.
+Entity <full_add_muser_lab_final> (Architecture <behavioral>) compiled.
+Entity <addersub8_muser_lab_final> compiled.
+Entity <addersub8_muser_lab_final> (Architecture <behavioral>) compiled.
+Entity <full_addersub8_muser_lab_final> compiled.
+Entity <full_addersub8_muser_lab_final> (Architecture <behavioral>) compiled.
+Entity <alu_final_muser_lab_final> compiled.
+Entity <alu_final_muser_lab_final> (Architecture <behavioral>) compiled.
+Entity <fd8ce_mxilinx_lab_final> compiled.
+Entity <fd8ce_mxilinx_lab_final> (Architecture <behavioral>) compiled.
+Entity <register_8bit_muser_lab_final> compiled.
+Entity <register_8bit_muser_lab_final> (Architecture <behavioral>) compiled.
+Entity <mux_dr_muser_lab_final> compiled.
+Entity <mux_dr_muser_lab_final> (Architecture <behavioral>) compiled.
+Entity <programground_muser_lab_final> compiled.
+Entity <programground_muser_lab_final> (Architecture <behavioral>) compiled.
+Entity <keypad_final_muser_lab_final> compiled.
+Entity <keypad_final_muser_lab_final> (Architecture <behavioral>) compiled.
+Entity <output_debugmode_muser_lab_final> compiled.
+Entity <output_debugmode_muser_lab_final> (Architecture <behavioral>) compiled.
+Entity <fd4ce_mxilinx_lab_final> compiled.
+Entity <fd4ce_mxilinx_lab_final> (Architecture <behavioral>) compiled.
+Entity <eight_register_shift_muser_lab_final> compiled.
+Entity <eight_register_shift_muser_lab_final> (Architecture <behavioral>) compiled.
+Entity <registers_muser_lab_final> compiled.
+Entity <registers_muser_lab_final> (Architecture <behavioral>) compiled.
+Entity <mux8bit_muser_lab_final> compiled.
+Entity <mux8bit_muser_lab_final> (Architecture <behavioral>) compiled.
+Entity <memoryv2_muser_lab_final> compiled.
+Entity <memoryv2_muser_lab_final> (Architecture <behavioral>) compiled.
+Entity <m2_1b1_mxilinx_lab_final> compiled.
+Entity <m2_1b1_mxilinx_lab_final> (Architecture <behavioral>) compiled.
+Entity <ftclex_mxilinx_lab_final> compiled.
+Entity <ftclex_mxilinx_lab_final> (Architecture <behavioral>) compiled.
+Entity <cb4cled_mxilinx_lab_final> compiled.
+Entity <cb4cled_mxilinx_lab_final> (Architecture <behavioral>) compiled.
+Entity <cb8cled_mxilinx_lab_final> compiled.
+Entity <cb8cled_mxilinx_lab_final> (Architecture <behavioral>) compiled.
+Entity <p_counter_muser_lab_final> compiled.
+Entity <p_counter_muser_lab_final> (Architecture <behavioral>) compiled.
+Entity <lab_final> compiled.
+Entity <lab_final> (Architecture <behavioral>) compiled.
 Compiling vhdl file "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/MemoryV2.vhf" in Library work.
-Architecture behavioral of Entity keypad_final_muser_memoryv2 is up to date.
-Architecture behavioral of Entity output_debugmode_muser_memoryv2 is up to date.
-Architecture behavioral of Entity fd8ce_mxilinx_memoryv2 is up to date.
-Architecture behavioral of Entity fd4ce_mxilinx_memoryv2 is up to date.
-Architecture behavioral of Entity eight_register_shift_muser_memoryv2 is up to date.
-Architecture behavioral of Entity registers_muser_memoryv2 is up to date.
-Architecture behavioral of Entity m2_1_mxilinx_memoryv2 is up to date.
-Architecture behavioral of Entity mux8bit_muser_memoryv2 is up to date.
-Architecture behavioral of Entity memoryv2 is up to date.
+Entity <keypad_final_muser_memoryv2> compiled.
+Entity <keypad_final_muser_memoryv2> (Architecture <behavioral>) compiled.
+Entity <output_debugmode_muser_memoryv2> compiled.
+Entity <output_debugmode_muser_memoryv2> (Architecture <behavioral>) compiled.
+Entity <fd8ce_mxilinx_memoryv2> compiled.
+Entity <fd8ce_mxilinx_memoryv2> (Architecture <behavioral>) compiled.
+Entity <fd4ce_mxilinx_memoryv2> compiled.
+Entity <fd4ce_mxilinx_memoryv2> (Architecture <behavioral>) compiled.
+Entity <eight_register_shift_muser_memoryv2> compiled.
+Entity <eight_register_shift_muser_memoryv2> (Architecture <behavioral>) compiled.
+Entity <registers_muser_memoryv2> compiled.
+Entity <registers_muser_memoryv2> (Architecture <behavioral>) compiled.
+Entity <m2_1_mxilinx_memoryv2> compiled.
+Entity <m2_1_mxilinx_memoryv2> (Architecture <behavioral>) compiled.
+Entity <mux8bit_muser_memoryv2> compiled.
+Entity <mux8bit_muser_memoryv2> (Architecture <behavioral>) compiled.
+Entity <memoryv2> compiled.
+Entity <memoryv2> (Architecture <behavioral>) compiled.
 Compiling vhdl file "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/ProgramGround.vhf" in Library work.
-Architecture behavioral of Entity m2_1_mxilinx_programground is up to date.
-Architecture behavioral of Entity mux8_generic_muser_programground is up to date.
-Architecture behavioral of Entity full_add_muser_programground is up to date.
-Architecture behavioral of Entity addersub8_muser_programground is up to date.
-Architecture behavioral of Entity full_addersub8_muser_programground is up to date.
-Architecture behavioral of Entity alu_final_muser_programground is up to date.
-Architecture behavioral of Entity fd8ce_mxilinx_programground is up to date.
-Architecture behavioral of Entity register_8bit_muser_programground is up to date.
-Architecture behavioral of Entity mux_dr_muser_programground is up to date.
-Architecture behavioral of Entity programground is up to date.
+Entity <m2_1_mxilinx_programground> compiled.
+Entity <m2_1_mxilinx_programground> (Architecture <behavioral>) compiled.
+Entity <mux8_generic_muser_programground> compiled.
+Entity <mux8_generic_muser_programground> (Architecture <behavioral>) compiled.
+Entity <full_add_muser_programground> compiled.
+Entity <full_add_muser_programground> (Architecture <behavioral>) compiled.
+Entity <addersub8_muser_programground> compiled.
+Entity <addersub8_muser_programground> (Architecture <behavioral>) compiled.
+Entity <full_addersub8_muser_programground> compiled.
+Entity <full_addersub8_muser_programground> (Architecture <behavioral>) compiled.
+Entity <alu_final_muser_programground> compiled.
+Entity <alu_final_muser_programground> (Architecture <behavioral>) compiled.
+Entity <fd8ce_mxilinx_programground> compiled.
+Entity <fd8ce_mxilinx_programground> (Architecture <behavioral>) compiled.
+Entity <register_8bit_muser_programground> compiled.
+Entity <register_8bit_muser_programground> (Architecture <behavioral>) compiled.
+Entity <mux_dr_muser_programground> compiled.
+Entity <mux_dr_muser_programground> (Architecture <behavioral>) compiled.
+Entity <programground> compiled.
+Entity <programground> (Architecture <behavioral>) compiled.
 Compiling vhdl file "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/P_Counter.vhf" in Library work.
-Architecture behavioral of Entity m2_1b1_mxilinx_p_counter is up to date.
-Architecture behavioral of Entity m2_1_mxilinx_p_counter is up to date.
-Architecture behavioral of Entity ftclex_mxilinx_p_counter is up to date.
-Architecture behavioral of Entity cb4cled_mxilinx_p_counter is up to date.
-Architecture behavioral of Entity cb8cled_mxilinx_p_counter is up to date.
-Architecture behavioral of Entity p_counter is up to date.
+Entity <m2_1b1_mxilinx_p_counter> compiled.
+Entity <m2_1b1_mxilinx_p_counter> (Architecture <behavioral>) compiled.
+Entity <m2_1_mxilinx_p_counter> compiled.
+Entity <m2_1_mxilinx_p_counter> (Architecture <behavioral>) compiled.
+Entity <ftclex_mxilinx_p_counter> compiled.
+Entity <ftclex_mxilinx_p_counter> (Architecture <behavioral>) compiled.
+Entity <cb4cled_mxilinx_p_counter> compiled.
+Entity <cb4cled_mxilinx_p_counter> (Architecture <behavioral>) compiled.
+Entity <cb8cled_mxilinx_p_counter> compiled.
+Entity <cb8cled_mxilinx_p_counter> (Architecture <behavioral>) compiled.
+Entity <p_counter> compiled.
+Entity <p_counter> (Architecture <behavioral>) compiled.
 Compiling vhdl file "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/ALU_Final.vhf" in Library work.
 Architecture behavioral of Entity full_add_muser_alu_final is up to date.
 Architecture behavioral of Entity addersub8_muser_alu_final is up to date.
 Architecture behavioral of Entity full_addersub8_muser_alu_final is up to date.
 Architecture behavioral of Entity alu_final is up to date.
 Compiling vhdl file "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/KEYPAD_Final.vhf" in Library work.
-Architecture behavioral of Entity keypad_final is up to date.
+Entity <keypad_final> compiled.
+Entity <keypad_final> (Architecture <behavioral>) compiled.
 Compiling vhdl file "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/MUX8Bit.vhf" in Library work.
-Architecture behavioral of Entity m2_1_mxilinx_mux8bit is up to date.
-Architecture behavioral of Entity mux8bit is up to date.
+Entity <m2_1_mxilinx_mux8bit> compiled.
+Entity <m2_1_mxilinx_mux8bit> (Architecture <behavioral>) compiled.
+Entity <mux8bit> compiled.
+Entity <mux8bit> (Architecture <behavioral>) compiled.
 Compiling vhdl file "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/MUX8_generic.vhf" in Library work.
-Architecture behavioral of Entity m2_1_mxilinx_mux8_generic is up to date.
-Architecture behavioral of Entity mux8_generic is up to date.
+Entity <m2_1_mxilinx_mux8_generic> compiled.
+Entity <m2_1_mxilinx_mux8_generic> (Architecture <behavioral>) compiled.
+Entity <mux8_generic> compiled.
+Entity <mux8_generic> (Architecture <behavioral>) compiled.
 Compiling vhdl file "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/MUX_DR.vhf" in Library work.
 Architecture behavioral of Entity mux_dr is up to date.
 Compiling vhdl file "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/Output_DebugMode.vhf" in Library work.
-Architecture behavioral of Entity output_debugmode is up to date.
+Entity <output_debugmode> compiled.
+Entity <output_debugmode> (Architecture <behavioral>) compiled.
 Compiling vhdl file "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/Registers.vhf" in Library work.
 Architecture behavioral of Entity fd8ce_mxilinx_registers is up to date.
 Architecture behavioral of Entity fd4ce_mxilinx_registers is up to date.
@@ -323,7 +377,7 @@ Analyzing Entity <lab_final> in library <work> (Architecture <behavioral>).
 WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 3237: Unconnected output port 'CLK10k' of component 'DCM_100M'.
 WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 3237: Unconnected output port 'CLK1k' of component 'DCM_100M'.
 WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 3237: Unconnected output port 'CLK100' of component 'DCM_100M'.
-    Set user-defined property "HU_SET =  XLXI_44_48" for instance <XLXI_44> in unit <lab_final>.
+    Set user-defined property "HU_SET =  XLXI_44_113" for instance <XLXI_44> in unit <lab_final>.
 Entity <lab_final> analyzed. Unit <lab_final> generated.
 
 Analyzing generic Entity <DCM_100M> in library <work> (Architecture <behavioral>).
@@ -340,35 +394,35 @@ Entity <M2_1_MXILINX_lab_final> analyzed. Unit <M2_1_MXILINX_lab_final> generate
 Analyzing Entity <P_Counter_MUSER_lab_final> in library <work> (Architecture <behavioral>).
 WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 2978: Unconnected output port 'CEO' of component 'CB8CLED_MXILINX_lab_final'.
 WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 2978: Unconnected output port 'TC' of component 'CB8CLED_MXILINX_lab_final'.
-    Set user-defined property "HU_SET =  XLXI_1_46" for instance <XLXI_1> in unit <P_Counter_MUSER_lab_final>.
+    Set user-defined property "HU_SET =  XLXI_1_111" for instance <XLXI_1> in unit <P_Counter_MUSER_lab_final>.
 WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 2997: Unconnected output port 'CEO' of component 'CB4CLED_MXILINX_lab_final'.
 WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 2997: Unconnected output port 'Q3' of component 'CB4CLED_MXILINX_lab_final'.
 WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 2997: Unconnected output port 'TC' of component 'CB4CLED_MXILINX_lab_final'.
-    Set user-defined property "HU_SET =  XLXI_6_47" for instance <XLXI_6> in unit <P_Counter_MUSER_lab_final>.
+    Set user-defined property "HU_SET =  XLXI_6_112" for instance <XLXI_6> in unit <P_Counter_MUSER_lab_final>.
 Entity <P_Counter_MUSER_lab_final> analyzed. Unit <P_Counter_MUSER_lab_final> generated.
 
 Analyzing Entity <CB8CLED_MXILINX_lab_final> in library <work> (Architecture <behavioral>).
-    Set user-defined property "HU_SET =  I_Q0_37" for instance <I_Q0> in unit <CB8CLED_MXILINX_lab_final>.
-    Set user-defined property "HU_SET =  I_Q1_36" for instance <I_Q1> in unit <CB8CLED_MXILINX_lab_final>.
-    Set user-defined property "HU_SET =  I_Q2_35" for instance <I_Q2> in unit <CB8CLED_MXILINX_lab_final>.
-    Set user-defined property "HU_SET =  I_Q3_34" for instance <I_Q3> in unit <CB8CLED_MXILINX_lab_final>.
-    Set user-defined property "HU_SET =  I_Q4_33" for instance <I_Q4> in unit <CB8CLED_MXILINX_lab_final>.
-    Set user-defined property "HU_SET =  I_Q5_32" for instance <I_Q5> in unit <CB8CLED_MXILINX_lab_final>.
-    Set user-defined property "HU_SET =  I_Q6_31" for instance <I_Q6> in unit <CB8CLED_MXILINX_lab_final>.
-    Set user-defined property "HU_SET =  I_Q7_30" for instance <I_Q7> in unit <CB8CLED_MXILINX_lab_final>.
-    Set user-defined property "HU_SET =  I_TC_42" for instance <I_TC> in unit <CB8CLED_MXILINX_lab_final>.
-    Set user-defined property "HU_SET =  I_T1_45" for instance <I_T1> in unit <CB8CLED_MXILINX_lab_final>.
-    Set user-defined property "HU_SET =  I_T2_38" for instance <I_T2> in unit <CB8CLED_MXILINX_lab_final>.
-    Set user-defined property "HU_SET =  I_T3_39" for instance <I_T3> in unit <CB8CLED_MXILINX_lab_final>.
-    Set user-defined property "HU_SET =  I_T4_44" for instance <I_T4> in unit <CB8CLED_MXILINX_lab_final>.
-    Set user-defined property "HU_SET =  I_T5_43" for instance <I_T5> in unit <CB8CLED_MXILINX_lab_final>.
-    Set user-defined property "HU_SET =  I_T6_40" for instance <I_T6> in unit <CB8CLED_MXILINX_lab_final>.
-    Set user-defined property "HU_SET =  I_T7_41" for instance <I_T7> in unit <CB8CLED_MXILINX_lab_final>.
+    Set user-defined property "HU_SET =  I_Q0_102" for instance <I_Q0> in unit <CB8CLED_MXILINX_lab_final>.
+    Set user-defined property "HU_SET =  I_Q1_101" for instance <I_Q1> in unit <CB8CLED_MXILINX_lab_final>.
+    Set user-defined property "HU_SET =  I_Q2_100" for instance <I_Q2> in unit <CB8CLED_MXILINX_lab_final>.
+    Set user-defined property "HU_SET =  I_Q3_99" for instance <I_Q3> in unit <CB8CLED_MXILINX_lab_final>.
+    Set user-defined property "HU_SET =  I_Q4_98" for instance <I_Q4> in unit <CB8CLED_MXILINX_lab_final>.
+    Set user-defined property "HU_SET =  I_Q5_97" for instance <I_Q5> in unit <CB8CLED_MXILINX_lab_final>.
+    Set user-defined property "HU_SET =  I_Q6_96" for instance <I_Q6> in unit <CB8CLED_MXILINX_lab_final>.
+    Set user-defined property "HU_SET =  I_Q7_95" for instance <I_Q7> in unit <CB8CLED_MXILINX_lab_final>.
+    Set user-defined property "HU_SET =  I_TC_107" for instance <I_TC> in unit <CB8CLED_MXILINX_lab_final>.
+    Set user-defined property "HU_SET =  I_T1_110" for instance <I_T1> in unit <CB8CLED_MXILINX_lab_final>.
+    Set user-defined property "HU_SET =  I_T2_103" for instance <I_T2> in unit <CB8CLED_MXILINX_lab_final>.
+    Set user-defined property "HU_SET =  I_T3_104" for instance <I_T3> in unit <CB8CLED_MXILINX_lab_final>.
+    Set user-defined property "HU_SET =  I_T4_109" for instance <I_T4> in unit <CB8CLED_MXILINX_lab_final>.
+    Set user-defined property "HU_SET =  I_T5_108" for instance <I_T5> in unit <CB8CLED_MXILINX_lab_final>.
+    Set user-defined property "HU_SET =  I_T6_105" for instance <I_T6> in unit <CB8CLED_MXILINX_lab_final>.
+    Set user-defined property "HU_SET =  I_T7_106" for instance <I_T7> in unit <CB8CLED_MXILINX_lab_final>.
 Entity <CB8CLED_MXILINX_lab_final> analyzed. Unit <CB8CLED_MXILINX_lab_final> generated.
 
 Analyzing generic Entity <FTCLEX_MXILINX_lab_final> in library <work> (Architecture <behavioral>).
 	INIT = '0'
-    Set user-defined property "HU_SET =  I_36_30_21" for instance <I_36_30> in unit <FTCLEX_MXILINX_lab_final>.
+    Set user-defined property "HU_SET =  I_36_30_86" for instance <I_36_30> in unit <FTCLEX_MXILINX_lab_final>.
     Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCLEX_MXILINX_lab_final>.
     Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCLEX_MXILINX_lab_final>.
 Entity <FTCLEX_MXILINX_lab_final> analyzed. Unit <FTCLEX_MXILINX_lab_final> generated.
@@ -377,14 +431,14 @@ Analyzing Entity <M2_1B1_MXILINX_lab_final> in library <work> (Architecture <beh
 Entity <M2_1B1_MXILINX_lab_final> analyzed. Unit <M2_1B1_MXILINX_lab_final> generated.
 
 Analyzing Entity <CB4CLED_MXILINX_lab_final> in library <work> (Architecture <behavioral>).
-    Set user-defined property "HU_SET =  I_Q0_25" for instance <I_Q0> in unit <CB4CLED_MXILINX_lab_final>.
-    Set user-defined property "HU_SET =  I_Q1_24" for instance <I_Q1> in unit <CB4CLED_MXILINX_lab_final>.
-    Set user-defined property "HU_SET =  I_Q2_23" for instance <I_Q2> in unit <CB4CLED_MXILINX_lab_final>.
-    Set user-defined property "HU_SET =  I_Q3_22" for instance <I_Q3> in unit <CB4CLED_MXILINX_lab_final>.
-    Set user-defined property "HU_SET =  I_TC_28" for instance <I_TC> in unit <CB4CLED_MXILINX_lab_final>.
-    Set user-defined property "HU_SET =  I_T1_29" for instance <I_T1> in unit <CB4CLED_MXILINX_lab_final>.
-    Set user-defined property "HU_SET =  I_T2_26" for instance <I_T2> in unit <CB4CLED_MXILINX_lab_final>.
-    Set user-defined property "HU_SET =  I_T3_27" for instance <I_T3> in unit <CB4CLED_MXILINX_lab_final>.
+    Set user-defined property "HU_SET =  I_Q0_90" for instance <I_Q0> in unit <CB4CLED_MXILINX_lab_final>.
+    Set user-defined property "HU_SET =  I_Q1_89" for instance <I_Q1> in unit <CB4CLED_MXILINX_lab_final>.
+    Set user-defined property "HU_SET =  I_Q2_88" for instance <I_Q2> in unit <CB4CLED_MXILINX_lab_final>.
+    Set user-defined property "HU_SET =  I_Q3_87" for instance <I_Q3> in unit <CB4CLED_MXILINX_lab_final>.
+    Set user-defined property "HU_SET =  I_TC_93" for instance <I_TC> in unit <CB4CLED_MXILINX_lab_final>.
+    Set user-defined property "HU_SET =  I_T1_94" for instance <I_T1> in unit <CB4CLED_MXILINX_lab_final>.
+    Set user-defined property "HU_SET =  I_T2_91" for instance <I_T2> in unit <CB4CLED_MXILINX_lab_final>.
+    Set user-defined property "HU_SET =  I_T3_92" for instance <I_T3> in unit <CB4CLED_MXILINX_lab_final>.
 Entity <CB4CLED_MXILINX_lab_final> analyzed. Unit <CB4CLED_MXILINX_lab_final> generated.
 
 Analyzing Entity <MemoryV2_MUSER_lab_final> in library <work> (Architecture <behavioral>).
@@ -421,15 +475,15 @@ Entity <SSD_1dig> analyzed. Unit <SSD_1dig> generated.
 
 Analyzing Entity <MUX8Bit_MUSER_lab_final> in library <work> (Architecture <behavioral>).
 WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 1750: Unconnected output port 'O' of component 'M2_1_MXILINX_lab_final'.
-    Set user-defined property "HU_SET =  XLXI_27_12" for instance <XLXI_27> in unit <MUX8Bit_MUSER_lab_final>.
-    Set user-defined property "HU_SET =  XLXI_28_13" for instance <XLXI_28> in unit <MUX8Bit_MUSER_lab_final>.
-    Set user-defined property "HU_SET =  XLXI_32_19" for instance <XLXI_32> in unit <MUX8Bit_MUSER_lab_final>.
-    Set user-defined property "HU_SET =  XLXI_33_14" for instance <XLXI_33> in unit <MUX8Bit_MUSER_lab_final>.
-    Set user-defined property "HU_SET =  XLXI_34_15" for instance <XLXI_34> in unit <MUX8Bit_MUSER_lab_final>.
-    Set user-defined property "HU_SET =  XLXI_35_16" for instance <XLXI_35> in unit <MUX8Bit_MUSER_lab_final>.
-    Set user-defined property "HU_SET =  XLXI_36_17" for instance <XLXI_36> in unit <MUX8Bit_MUSER_lab_final>.
-    Set user-defined property "HU_SET =  XLXI_37_18" for instance <XLXI_37> in unit <MUX8Bit_MUSER_lab_final>.
-    Set user-defined property "HU_SET =  XLXI_44_20" for instance <XLXI_44> in unit <MUX8Bit_MUSER_lab_final>.
+    Set user-defined property "HU_SET =  XLXI_27_77" for instance <XLXI_27> in unit <MUX8Bit_MUSER_lab_final>.
+    Set user-defined property "HU_SET =  XLXI_28_78" for instance <XLXI_28> in unit <MUX8Bit_MUSER_lab_final>.
+    Set user-defined property "HU_SET =  XLXI_32_84" for instance <XLXI_32> in unit <MUX8Bit_MUSER_lab_final>.
+    Set user-defined property "HU_SET =  XLXI_33_79" for instance <XLXI_33> in unit <MUX8Bit_MUSER_lab_final>.
+    Set user-defined property "HU_SET =  XLXI_34_80" for instance <XLXI_34> in unit <MUX8Bit_MUSER_lab_final>.
+    Set user-defined property "HU_SET =  XLXI_35_81" for instance <XLXI_35> in unit <MUX8Bit_MUSER_lab_final>.
+    Set user-defined property "HU_SET =  XLXI_36_82" for instance <XLXI_36> in unit <MUX8Bit_MUSER_lab_final>.
+    Set user-defined property "HU_SET =  XLXI_37_83" for instance <XLXI_37> in unit <MUX8Bit_MUSER_lab_final>.
+    Set user-defined property "HU_SET =  XLXI_44_85" for instance <XLXI_44> in unit <MUX8Bit_MUSER_lab_final>.
 Entity <MUX8Bit_MUSER_lab_final> analyzed. Unit <MUX8Bit_MUSER_lab_final> generated.
 
 Analyzing Entity <sRAM32x8_ex_pgm_instr> in library <work> (Architecture <behavioral>).
@@ -442,9 +496,9 @@ Analyzing Entity <Registers_MUSER_lab_final> in library <work> (Architecture <be
 Entity <Registers_MUSER_lab_final> analyzed. Unit <Registers_MUSER_lab_final> generated.
 
 Analyzing Entity <Eight_Register_Shift_MUSER_lab_final> in library <work> (Architecture <behavioral>).
-    Set user-defined property "HU_SET =  XLXI_149_10" for instance <XLXI_149> in unit <Eight_Register_Shift_MUSER_lab_final>.
-    Set user-defined property "HU_SET =  XLXI_150_9" for instance <XLXI_150> in unit <Eight_Register_Shift_MUSER_lab_final>.
-    Set user-defined property "HU_SET =  XLXI_159_11" for instance <XLXI_159> in unit <Eight_Register_Shift_MUSER_lab_final>.
+    Set user-defined property "HU_SET =  XLXI_149_75" for instance <XLXI_149> in unit <Eight_Register_Shift_MUSER_lab_final>.
+    Set user-defined property "HU_SET =  XLXI_150_74" for instance <XLXI_150> in unit <Eight_Register_Shift_MUSER_lab_final>.
+    Set user-defined property "HU_SET =  XLXI_159_76" for instance <XLXI_159> in unit <Eight_Register_Shift_MUSER_lab_final>.
 Entity <Eight_Register_Shift_MUSER_lab_final> analyzed. Unit <Eight_Register_Shift_MUSER_lab_final> generated.
 
 Analyzing Entity <FD4CE_MXILINX_lab_final> in library <work> (Architecture <behavioral>).
@@ -499,7 +553,7 @@ Analyzing Entity <ISA> in library <work> (Architecture <behavioral>).
 Entity <ISA> analyzed. Unit <ISA> generated.
 
 Analyzing Entity <Register_8bit_MUSER_lab_final> in library <work> (Architecture <behavioral>).
-    Set user-defined property "HU_SET =  XLXI_1_8" for instance <XLXI_1> in unit <Register_8bit_MUSER_lab_final>.
+    Set user-defined property "HU_SET =  XLXI_1_73" for instance <XLXI_1> in unit <Register_8bit_MUSER_lab_final>.
 Entity <Register_8bit_MUSER_lab_final> analyzed. Unit <Register_8bit_MUSER_lab_final> generated.
 
 Analyzing Entity <MUX_DR_MUSER_lab_final> in library <work> (Architecture <behavioral>).
@@ -522,14 +576,14 @@ Analyzing Entity <Full_Add_MUSER_lab_final> in library <work> (Architecture <beh
 Entity <Full_Add_MUSER_lab_final> analyzed. Unit <Full_Add_MUSER_lab_final> generated.
 
 Analyzing Entity <MUX8_generic_MUSER_lab_final> in library <work> (Architecture <behavioral>).
-    Set user-defined property "HU_SET =  XLXI_28_0" for instance <XLXI_28> in unit <MUX8_generic_MUSER_lab_final>.
-    Set user-defined property "HU_SET =  XLXI_32_6" for instance <XLXI_32> in unit <MUX8_generic_MUSER_lab_final>.
-    Set user-defined property "HU_SET =  XLXI_33_1" for instance <XLXI_33> in unit <MUX8_generic_MUSER_lab_final>.
-    Set user-defined property "HU_SET =  XLXI_34_2" for instance <XLXI_34> in unit <MUX8_generic_MUSER_lab_final>.
-    Set user-defined property "HU_SET =  XLXI_35_3" for instance <XLXI_35> in unit <MUX8_generic_MUSER_lab_final>.
-    Set user-defined property "HU_SET =  XLXI_36_4" for instance <XLXI_36> in unit <MUX8_generic_MUSER_lab_final>.
-    Set user-defined property "HU_SET =  XLXI_37_5" for instance <XLXI_37> in unit <MUX8_generic_MUSER_lab_final>.
-    Set user-defined property "HU_SET =  XLXI_44_7" for instance <XLXI_44> in unit <MUX8_generic_MUSER_lab_final>.
+    Set user-defined property "HU_SET =  XLXI_28_65" for instance <XLXI_28> in unit <MUX8_generic_MUSER_lab_final>.
+    Set user-defined property "HU_SET =  XLXI_32_71" for instance <XLXI_32> in unit <MUX8_generic_MUSER_lab_final>.
+    Set user-defined property "HU_SET =  XLXI_33_66" for instance <XLXI_33> in unit <MUX8_generic_MUSER_lab_final>.
+    Set user-defined property "HU_SET =  XLXI_34_67" for instance <XLXI_34> in unit <MUX8_generic_MUSER_lab_final>.
+    Set user-defined property "HU_SET =  XLXI_35_68" for instance <XLXI_35> in unit <MUX8_generic_MUSER_lab_final>.
+    Set user-defined property "HU_SET =  XLXI_36_69" for instance <XLXI_36> in unit <MUX8_generic_MUSER_lab_final>.
+    Set user-defined property "HU_SET =  XLXI_37_70" for instance <XLXI_37> in unit <MUX8_generic_MUSER_lab_final>.
+    Set user-defined property "HU_SET =  XLXI_44_72" for instance <XLXI_44> in unit <MUX8_generic_MUSER_lab_final>.
 Entity <MUX8_generic_MUSER_lab_final> analyzed. Unit <MUX8_generic_MUSER_lab_final> generated.
 
 
@@ -682,7 +736,7 @@ Unit <col_strobe> synthesized.
 
 
 Synthesizing Unit <decoder16keyEn>.
-    Related source file is "C:/Users/James/Desktop/Github/School/Phys301/lab_final/modules/decoder16keyEn.vhd".
+    Related source file is "C:/Users/James/Documents/Xlink_projects/lab_final/modules/decoder16keyEn.vhd".
 Unit <decoder16keyEn> synthesized.
 
 
@@ -2242,12 +2296,12 @@ Delay:               7.434ns (Levels of Logic = 5)
 =========================================================================
 
 
-Total REAL time to Xst completion: 20.00 secs
-Total CPU time to Xst completion: 19.80 secs
+Total REAL time to Xst completion: 21.00 secs
+Total CPU time to Xst completion: 21.45 secs
  
 --> 
 
-Total memory usage is 410012 kilobytes
+Total memory usage is 409996 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :  461 (   0 filtered)

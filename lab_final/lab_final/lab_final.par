@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-DESKTOP-E7CI90V::  Sun May 13 13:51:23 2018
+DESKTOP-E7CI90V::  Sun May 13 15:44:42 2018
 
 par -w -intstyle ise -ol high -t 1 lab_final_map.ncd lab_final.ncd
 lab_final.pcf 
@@ -135,24 +135,24 @@ Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 1
 
 Updating file: lab_final.ncd with current fully routed design.
 
-Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 12 secs 
+Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 11 secs 
 
-Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 33 secs 
+Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 34 secs 
 
-Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 36 secs 
+Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 37 secs 
 
-Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 36 secs 
+Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 37 secs 
 
-Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 36 secs 
+Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 37 secs 
 
-Phase 11  : 0 unrouted; (Par is working to improve performance)     REAL time: 36 secs 
+Phase 11  : 0 unrouted; (Par is working to improve performance)     REAL time: 37 secs 
 
-Phase 12  : 0 unrouted; (Par is working to improve performance)     REAL time: 36 secs 
+Phase 12  : 0 unrouted; (Par is working to improve performance)     REAL time: 37 secs 
 WARNING:Route:455 - CLK Net:XLXI_60/XLXI_162/XLXI_28/clk_100<0> may have excessive skew because 
       0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
 
-Total REAL time to Router completion: 36 secs 
-Total CPU time to Router completion: 36 secs 
+Total REAL time to Router completion: 37 secs 
+Total CPU time to Router completion: 37 secs 
 
 Partition Implementation Status
 -------------------------------
@@ -241,8 +241,8 @@ Generating Pad Report.
 
 All signals are completely routed.
 
-Total REAL time to PAR completion: 37 secs 
-Total CPU time to PAR completion: 37 secs 
+Total REAL time to PAR completion: 38 secs 
+Total CPU time to PAR completion: 38 secs 
 
 Peak Memory Usage:  363 MB
 

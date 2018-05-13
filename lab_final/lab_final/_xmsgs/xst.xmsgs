@@ -5,10 +5,10 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/decoder16keyEn</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/James/Documents/Xlink_projects/lab_final/modules/decoder16keyEn.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/James/Desktop/Github/School/Phys301/lab_final/modules/decoder16keyEn.vhd</arg>&quot;.
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/decoder16keyEn</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/James/Desktop/Github/School/Phys301/lab_final/modules/decoder16keyEn.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/James/Documents/Xlink_projects/lab_final/modules/decoder16keyEn.vhd</arg>&quot;.
 </msg>
 
-<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/decoder16keyEn/Doric</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/James/Documents/Xlink_projects/lab_final/modules/decoder16keyEn.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/James/Desktop/Github/School/Phys301/lab_final/modules/decoder16keyEn.vhd</arg>&quot;.
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/decoder16keyEn/Doric</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/James/Desktop/Github/School/Phys301/lab_final/modules/decoder16keyEn.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/James/Documents/Xlink_projects/lab_final/modules/decoder16keyEn.vhd</arg>&quot;.
 </msg>
 
 <msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf</arg>&quot; line <arg fmt="%d" index="2">3237</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">CLK10k</arg>&apos; of component &apos;<arg fmt="%s" index="4">DCM_100M</arg>&apos;.

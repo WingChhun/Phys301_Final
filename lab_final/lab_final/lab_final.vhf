@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : lab_final.vhf
--- /___/   /\     Timestamp : 05/13/2018 13:48:29
+-- /___/   /\     Timestamp : 05/13/2018 15:43:56
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -99,14 +99,14 @@ architecture BEHAVIORAL of MUX8_generic_MUSER_lab_final is
              O  : out   std_logic);
    end component;
    
-   attribute HU_SET of XLXI_28 : label is "XLXI_28_0";
-   attribute HU_SET of XLXI_32 : label is "XLXI_32_6";
-   attribute HU_SET of XLXI_33 : label is "XLXI_33_1";
-   attribute HU_SET of XLXI_34 : label is "XLXI_34_2";
-   attribute HU_SET of XLXI_35 : label is "XLXI_35_3";
-   attribute HU_SET of XLXI_36 : label is "XLXI_36_4";
-   attribute HU_SET of XLXI_37 : label is "XLXI_37_5";
-   attribute HU_SET of XLXI_44 : label is "XLXI_44_7";
+   attribute HU_SET of XLXI_28 : label is "XLXI_28_65";
+   attribute HU_SET of XLXI_32 : label is "XLXI_32_71";
+   attribute HU_SET of XLXI_33 : label is "XLXI_33_66";
+   attribute HU_SET of XLXI_34 : label is "XLXI_34_67";
+   attribute HU_SET of XLXI_35 : label is "XLXI_35_68";
+   attribute HU_SET of XLXI_36 : label is "XLXI_36_69";
+   attribute HU_SET of XLXI_37 : label is "XLXI_37_70";
+   attribute HU_SET of XLXI_44 : label is "XLXI_44_72";
 begin
    XLXI_28 : M2_1_MXILINX_lab_final
       port map (D0=>I_In(0),
@@ -663,7 +663,7 @@ architecture BEHAVIORAL of Register_8bit_MUSER_lab_final is
              Q   : out   std_logic_vector (7 downto 0));
    end component;
    
-   attribute HU_SET of XLXI_1 : label is "XLXI_1_8";
+   attribute HU_SET of XLXI_1 : label is "XLXI_1_73";
 begin
    XLXI_1 : FD8CE_MXILINX_lab_final
       port map (C=>R_WCLK,
@@ -1564,9 +1564,9 @@ architecture BEHAVIORAL of Eight_Register_Shift_MUSER_lab_final is
              Q   : out   std_logic_vector (7 downto 0));
    end component;
    
-   attribute HU_SET of XLXI_149 : label is "XLXI_149_10";
-   attribute HU_SET of XLXI_150 : label is "XLXI_150_9";
-   attribute HU_SET of XLXI_159 : label is "XLXI_159_11";
+   attribute HU_SET of XLXI_149 : label is "XLXI_149_75";
+   attribute HU_SET of XLXI_150 : label is "XLXI_150_74";
+   attribute HU_SET of XLXI_159 : label is "XLXI_159_76";
 begin
    XLXI_149 : FD4CE_MXILINX_lab_final
       port map (C=>WCLK_R1,
@@ -1737,15 +1737,15 @@ architecture BEHAVIORAL of MUX8Bit_MUSER_lab_final is
              O  : out   std_logic);
    end component;
    
-   attribute HU_SET of XLXI_27 : label is "XLXI_27_12";
-   attribute HU_SET of XLXI_28 : label is "XLXI_28_13";
-   attribute HU_SET of XLXI_32 : label is "XLXI_32_19";
-   attribute HU_SET of XLXI_33 : label is "XLXI_33_14";
-   attribute HU_SET of XLXI_34 : label is "XLXI_34_15";
-   attribute HU_SET of XLXI_35 : label is "XLXI_35_16";
-   attribute HU_SET of XLXI_36 : label is "XLXI_36_17";
-   attribute HU_SET of XLXI_37 : label is "XLXI_37_18";
-   attribute HU_SET of XLXI_44 : label is "XLXI_44_20";
+   attribute HU_SET of XLXI_27 : label is "XLXI_27_77";
+   attribute HU_SET of XLXI_28 : label is "XLXI_28_78";
+   attribute HU_SET of XLXI_32 : label is "XLXI_32_84";
+   attribute HU_SET of XLXI_33 : label is "XLXI_33_79";
+   attribute HU_SET of XLXI_34 : label is "XLXI_34_80";
+   attribute HU_SET of XLXI_35 : label is "XLXI_35_81";
+   attribute HU_SET of XLXI_36 : label is "XLXI_36_82";
+   attribute HU_SET of XLXI_37 : label is "XLXI_37_83";
+   attribute HU_SET of XLXI_44 : label is "XLXI_44_85";
 begin
    XLXI_27 : M2_1_MXILINX_lab_final
       port map (D0=>XLXI_27_D0_openSignal,
@@ -2156,7 +2156,7 @@ architecture BEHAVIORAL of FTCLEX_MXILINX_lab_final is
    end component;
    attribute BOX_TYPE of FDCE : component is "BLACK_BOX";
    
-   attribute HU_SET of I_36_30 : label is "I_36_30_21";
+   attribute HU_SET of I_36_30 : label is "I_36_30_86";
    attribute RLOC of I_36_35 : label is "X0Y0";
 begin
    Q <= Q_DUMMY;
@@ -2311,14 +2311,14 @@ architecture BEHAVIORAL of CB4CLED_MXILINX_lab_final is
    end component;
    attribute BOX_TYPE of OR2 : component is "BLACK_BOX";
    
-   attribute HU_SET of I_Q0 : label is "I_Q0_25";
-   attribute HU_SET of I_Q1 : label is "I_Q1_24";
-   attribute HU_SET of I_Q2 : label is "I_Q2_23";
-   attribute HU_SET of I_Q3 : label is "I_Q3_22";
-   attribute HU_SET of I_TC : label is "I_TC_28";
-   attribute HU_SET of I_T1 : label is "I_T1_29";
-   attribute HU_SET of I_T2 : label is "I_T2_26";
-   attribute HU_SET of I_T3 : label is "I_T3_27";
+   attribute HU_SET of I_Q0 : label is "I_Q0_90";
+   attribute HU_SET of I_Q1 : label is "I_Q1_89";
+   attribute HU_SET of I_Q2 : label is "I_Q2_88";
+   attribute HU_SET of I_Q3 : label is "I_Q3_87";
+   attribute HU_SET of I_TC : label is "I_TC_93";
+   attribute HU_SET of I_T1 : label is "I_T1_94";
+   attribute HU_SET of I_T2 : label is "I_T2_91";
+   attribute HU_SET of I_T3 : label is "I_T3_92";
 begin
    Q0 <= Q0_DUMMY;
    Q1 <= Q1_DUMMY;
@@ -2613,22 +2613,22 @@ architecture BEHAVIORAL of CB8CLED_MXILINX_lab_final is
    end component;
    attribute BOX_TYPE of OR2 : component is "BLACK_BOX";
    
-   attribute HU_SET of I_Q0 : label is "I_Q0_37";
-   attribute HU_SET of I_Q1 : label is "I_Q1_36";
-   attribute HU_SET of I_Q2 : label is "I_Q2_35";
-   attribute HU_SET of I_Q3 : label is "I_Q3_34";
-   attribute HU_SET of I_Q4 : label is "I_Q4_33";
-   attribute HU_SET of I_Q5 : label is "I_Q5_32";
-   attribute HU_SET of I_Q6 : label is "I_Q6_31";
-   attribute HU_SET of I_Q7 : label is "I_Q7_30";
-   attribute HU_SET of I_TC : label is "I_TC_42";
-   attribute HU_SET of I_T1 : label is "I_T1_45";
-   attribute HU_SET of I_T2 : label is "I_T2_38";
-   attribute HU_SET of I_T3 : label is "I_T3_39";
-   attribute HU_SET of I_T4 : label is "I_T4_44";
-   attribute HU_SET of I_T5 : label is "I_T5_43";
-   attribute HU_SET of I_T6 : label is "I_T6_40";
-   attribute HU_SET of I_T7 : label is "I_T7_41";
+   attribute HU_SET of I_Q0 : label is "I_Q0_102";
+   attribute HU_SET of I_Q1 : label is "I_Q1_101";
+   attribute HU_SET of I_Q2 : label is "I_Q2_100";
+   attribute HU_SET of I_Q3 : label is "I_Q3_99";
+   attribute HU_SET of I_Q4 : label is "I_Q4_98";
+   attribute HU_SET of I_Q5 : label is "I_Q5_97";
+   attribute HU_SET of I_Q6 : label is "I_Q6_96";
+   attribute HU_SET of I_Q7 : label is "I_Q7_95";
+   attribute HU_SET of I_TC : label is "I_TC_107";
+   attribute HU_SET of I_T1 : label is "I_T1_110";
+   attribute HU_SET of I_T2 : label is "I_T2_103";
+   attribute HU_SET of I_T3 : label is "I_T3_104";
+   attribute HU_SET of I_T4 : label is "I_T4_109";
+   attribute HU_SET of I_T5 : label is "I_T5_108";
+   attribute HU_SET of I_T6 : label is "I_T6_105";
+   attribute HU_SET of I_T7 : label is "I_T7_106";
 begin
    Q(7 downto 0) <= Q_DUMMY(7 downto 0);
    TC <= TC_DUMMY;
@@ -2971,8 +2971,8 @@ architecture BEHAVIORAL of P_Counter_MUSER_lab_final is
    end component;
    attribute BOX_TYPE of AND2B1 : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_1 : label is "XLXI_1_46";
-   attribute HU_SET of XLXI_6 : label is "XLXI_6_47";
+   attribute HU_SET of XLXI_1 : label is "XLXI_1_111";
+   attribute HU_SET of XLXI_6 : label is "XLXI_6_112";
 begin
    Q(7 downto 0) <= Q_DUMMY(7 downto 0);
    XLXI_1 : CB8CLED_MXILINX_lab_final
@@ -3212,7 +3212,7 @@ architecture BEHAVIORAL of lab_final is
              Neg  : out   std_logic);
    end component;
    
-   attribute HU_SET of XLXI_44 : label is "XLXI_44_48";
+   attribute HU_SET of XLXI_44 : label is "XLXI_44_113";
 begin
    CLK_1 <= CLK_1_DUMMY;
    XLXI_34 : AND2
