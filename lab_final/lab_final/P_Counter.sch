@@ -28,7 +28,9 @@
         <signal name="Run" />
         <signal name="HLT" />
         <signal name="RunMode" />
-        <signal name="XLXN_27" />
+        <signal name="XLXN_28" />
+        <signal name="C_Tick" />
+        <signal name="UP_Tick" />
         <port polarity="Input" name="CLK_Speed" />
         <port polarity="Output" name="Q(7:0)" />
         <port polarity="Input" name="Step" />
@@ -38,6 +40,7 @@
         <port polarity="Input" name="Reset" />
         <port polarity="Input" name="HLT" />
         <port polarity="Input" name="RunMode" />
+        <port polarity="Input" name="C_Tick" />
         <blockdef name="cb8cled">
             <timestamp>2000-1-1T10:10:10</timestamp>
             <rect width="64" x="0" y="-460" height="24" />
@@ -158,6 +161,16 @@
             <line x2="40" y1="-64" y2="-64" x1="0" />
             <circle r="12" cx="52" cy="-64" />
         </blockdef>
+        <blockdef name="and2">
+            <timestamp>2000-1-1T10:10:10</timestamp>
+            <line x2="64" y1="-64" y2="-64" x1="0" />
+            <line x2="64" y1="-128" y2="-128" x1="0" />
+            <line x2="192" y1="-96" y2="-96" x1="256" />
+            <arc ex="144" ey="-144" sx="144" sy="-48" r="48" cx="144" cy="-96" />
+            <line x2="64" y1="-48" y2="-48" x1="144" />
+            <line x2="144" y1="-144" y2="-144" x1="64" />
+            <line x2="64" y1="-48" y2="-144" x1="64" />
+        </blockdef>
         <block symbolname="cb8cled" name="XLXI_1">
             <blockpin signalname="XLXN_18" name="C" />
             <blockpin signalname="Run" name="CE" />
@@ -178,7 +191,7 @@
             <blockpin signalname="on32" name="O" />
         </block>
         <block symbolname="cb4cled" name="XLXI_6">
-            <blockpin signalname="CLK_Speed" name="C" />
+            <blockpin signalname="XLXN_28" name="C" />
             <blockpin signalname="Run" name="CE" />
             <blockpin signalname="XLXN_25" name="CLR" />
             <blockpin name="D0" />
@@ -238,9 +251,14 @@
             <blockpin signalname="Run" name="O" />
         </block>
         <block symbolname="or2" name="XLXI_18">
-            <blockpin signalname="XLXN_27" name="I0" />
+            <blockpin signalname="UP_Tick" name="I0" />
             <blockpin signalname="CLK_Speed" name="I1" />
-            <blockpin name="O" />
+            <blockpin signalname="XLXN_28" name="O" />
+        </block>
+        <block symbolname="and2" name="XLXI_20">
+            <blockpin signalname="RunMode" name="I0" />
+            <blockpin signalname="C_Tick" name="I1" />
+            <blockpin signalname="UP_Tick" name="O" />
         </block>
     </netlist>
     <sheet sheetnum="1" width="3520" height="2720">
@@ -282,10 +300,6 @@
         </branch>
         <instance x="2288" y="1232" name="XLXI_6" orien="R0" />
         <instance x="2096" y="976" name="XLXI_8" orien="R270" />
-        <branch name="CLK_Speed">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2192" y="1104" type="branch" />
-            <wire x2="2288" y1="1104" y2="1104" x1="2192" />
-        </branch>
         <branch name="XLXN_17">
             <wire x2="2288" y1="912" y2="912" x1="2096" />
         </branch>
@@ -466,7 +480,25 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1552" y="1072" type="branch" />
             <wire x2="1632" y1="1072" y2="1072" x1="1552" />
         </branch>
-        <branch name="XLXN_27">
+        <branch name="XLXN_28">
+            <wire x2="2288" y1="1104" y2="1104" x1="1888" />
+        </branch>
+        <branch name="C_Tick">
+            <wire x2="1408" y1="160" y2="160" x1="1328" />
+        </branch>
+        <iomarker fontsize="28" x="1328" y="160" name="C_Tick" orien="R180" />
+        <instance x="1408" y="288" name="XLXI_20" orien="R0" />
+        <branch name="RunMode">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1344" y="224" type="branch" />
+            <wire x2="1408" y1="224" y2="224" x1="1344" />
+        </branch>
+        <branch name="UP_Tick">
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="1711" y="192" type="branch" />
+            <wire x2="1711" y1="192" y2="192" x1="1664" />
+            <wire x2="1744" y1="192" y2="192" x1="1711" />
+        </branch>
+        <branch name="UP_Tick">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1552" y="1136" type="branch" />
             <wire x2="1632" y1="1136" y2="1136" x1="1552" />
         </branch>
     </sheet>

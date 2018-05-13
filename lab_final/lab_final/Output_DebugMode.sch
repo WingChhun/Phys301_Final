@@ -30,7 +30,6 @@
         <signal name="Test_thenChangetoPullup" />
         <signal name="XLXN_86" />
         <signal name="AddressIn(7:0)" />
-        <signal name="XLXN_87(7:0)" />
         <port polarity="Output" name="sseg(7:0)" />
         <port polarity="Input" name="DataInput(7:0)" />
         <port polarity="Output" name="anO(3:0)" />
@@ -341,14 +340,6 @@
             <wire x2="2672" y1="832" y2="832" x1="2592" />
         </branch>
         <instance x="752" y="288" name="XLXI_39" orien="R270" />
-        <branch name="EN_hex">
-            <attrtext style="alignment:SOFT-TCENTER;fontsize:28;fontname:Arial" attrname="Name" x="1136" y="752" type="branch" />
-            <wire x2="912" y1="320" y2="672" x1="912" />
-            <wire x2="1136" y1="672" y2="672" x1="912" />
-            <wire x2="1136" y1="672" y2="752" x1="1136" />
-            <wire x2="1200" y1="752" y2="752" x1="1136" />
-            <wire x2="1232" y1="320" y2="320" x1="912" />
-        </branch>
         <branch name="Test_thenChangetoPullup">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="2140" y="144" type="branch" />
             <wire x2="2256" y1="144" y2="144" x1="2128" />
@@ -365,5 +356,11 @@
             <wire x2="1216" y1="448" y2="464" x1="1216" />
         </branch>
         <iomarker fontsize="28" x="304" y="464" name="AddressIn(7:0)" orien="R180" />
+        <branch name="EN_hex">
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="1184" y="320" type="branch" />
+            <wire x2="1184" y1="320" y2="752" x1="1184" />
+            <wire x2="1200" y1="752" y2="752" x1="1184" />
+            <wire x2="1232" y1="320" y2="320" x1="1184" />
+        </branch>
     </sheet>
 </drawing>

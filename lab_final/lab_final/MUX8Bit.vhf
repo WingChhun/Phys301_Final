@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : MUX8Bit.vhf
--- /___/   /\     Timestamp : 05/13/2018 13:45:55
+-- /___/   /\     Timestamp : 05/13/2018 15:31:06
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -84,10 +84,10 @@ library UNISIM;
 use UNISIM.Vcomponents.ALL;
 
 entity MUX8Bit is
-   port ( D_In      : in    std_logic_vector (7 downto 0); 
-          IMem_DMem : in    std_logic; 
-          I_In      : in    std_logic_vector (7 downto 0); 
-          DOut      : out   std_logic_vector (7 downto 0));
+   port ( D_In    : in    std_logic_vector (7 downto 0); 
+          I_In    : in    std_logic_vector (7 downto 0); 
+          nIM_Din : in    std_logic; 
+          DOut    : out   std_logic_vector (7 downto 0));
 end MUX8Bit;
 
 architecture BEHAVIORAL of MUX8Bit is
@@ -102,15 +102,15 @@ architecture BEHAVIORAL of MUX8Bit is
              O  : out   std_logic);
    end component;
    
-   attribute HU_SET of XLXI_27 : label is "XLXI_27_33";
-   attribute HU_SET of XLXI_28 : label is "XLXI_28_34";
-   attribute HU_SET of XLXI_32 : label is "XLXI_32_40";
-   attribute HU_SET of XLXI_33 : label is "XLXI_33_35";
-   attribute HU_SET of XLXI_34 : label is "XLXI_34_36";
-   attribute HU_SET of XLXI_35 : label is "XLXI_35_37";
-   attribute HU_SET of XLXI_36 : label is "XLXI_36_38";
-   attribute HU_SET of XLXI_37 : label is "XLXI_37_39";
-   attribute HU_SET of XLXI_44 : label is "XLXI_44_41";
+   attribute HU_SET of XLXI_27 : label is "XLXI_27_0";
+   attribute HU_SET of XLXI_28 : label is "XLXI_28_1";
+   attribute HU_SET of XLXI_32 : label is "XLXI_32_7";
+   attribute HU_SET of XLXI_33 : label is "XLXI_33_2";
+   attribute HU_SET of XLXI_34 : label is "XLXI_34_3";
+   attribute HU_SET of XLXI_35 : label is "XLXI_35_4";
+   attribute HU_SET of XLXI_36 : label is "XLXI_36_5";
+   attribute HU_SET of XLXI_37 : label is "XLXI_37_6";
+   attribute HU_SET of XLXI_44 : label is "XLXI_44_8";
 begin
    XLXI_27 : M2_1_MXILINX_MUX8Bit
       port map (D0=>XLXI_27_D0_openSignal,
@@ -121,49 +121,49 @@ begin
    XLXI_28 : M2_1_MXILINX_MUX8Bit
       port map (D0=>I_In(0),
                 D1=>D_In(0),
-                S0=>IMem_DMem,
+                S0=>nIM_Din,
                 O=>DOut(0));
    
    XLXI_32 : M2_1_MXILINX_MUX8Bit
       port map (D0=>I_In(1),
                 D1=>D_In(1),
-                S0=>IMem_DMem,
+                S0=>nIM_Din,
                 O=>DOut(1));
    
    XLXI_33 : M2_1_MXILINX_MUX8Bit
       port map (D0=>I_In(2),
                 D1=>D_In(2),
-                S0=>IMem_DMem,
+                S0=>nIM_Din,
                 O=>DOut(2));
    
    XLXI_34 : M2_1_MXILINX_MUX8Bit
       port map (D0=>I_In(3),
                 D1=>D_In(3),
-                S0=>IMem_DMem,
+                S0=>nIM_Din,
                 O=>DOut(3));
    
    XLXI_35 : M2_1_MXILINX_MUX8Bit
       port map (D0=>I_In(4),
                 D1=>D_In(4),
-                S0=>IMem_DMem,
+                S0=>nIM_Din,
                 O=>DOut(4));
    
    XLXI_36 : M2_1_MXILINX_MUX8Bit
       port map (D0=>I_In(5),
                 D1=>D_In(5),
-                S0=>IMem_DMem,
+                S0=>nIM_Din,
                 O=>DOut(5));
    
    XLXI_37 : M2_1_MXILINX_MUX8Bit
       port map (D0=>I_In(6),
                 D1=>D_In(6),
-                S0=>IMem_DMem,
+                S0=>nIM_Din,
                 O=>DOut(6));
    
    XLXI_44 : M2_1_MXILINX_MUX8Bit
-      port map (D0=>IMem_DMem,
+      port map (D0=>I_In(7),
                 D1=>D_In(7),
-                S0=>IMem_DMem,
+                S0=>nIM_Din,
                 O=>DOut(7));
    
 end BEHAVIORAL;

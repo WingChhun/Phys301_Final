@@ -24,7 +24,6 @@
         <signal name="I_In(7)" />
         <signal name="I_In(4)" />
         <signal name="I_In(6)" />
-        <signal name="IMem_DMem" />
         <signal name="DOut(0)" />
         <signal name="DOut(1)" />
         <signal name="DOut(2)" />
@@ -34,10 +33,16 @@
         <signal name="DOut(6)" />
         <signal name="DOut(7)" />
         <signal name="DOut(7:0)" />
+        <signal name="nIM_Din" />
+        <signal name="XLXN_4" />
+        <signal name="XLXN_5" />
+        <signal name="XLXN_6" />
+        <signal name="XLXN_7" />
+        <signal name="XLXN_8" />
         <port polarity="Input" name="D_In(7:0)" />
         <port polarity="Input" name="I_In(7:0)" />
-        <port polarity="Input" name="IMem_DMem" />
         <port polarity="Output" name="DOut(7:0)" />
+        <port polarity="Input" name="nIM_Din" />
         <blockdef name="m2_1">
             <timestamp>2000-1-1T10:10:10</timestamp>
             <line x2="96" y1="-64" y2="-192" x1="96" />
@@ -60,49 +65,49 @@
         <block symbolname="m2_1" name="XLXI_28">
             <blockpin signalname="I_In(0)" name="D0" />
             <blockpin signalname="D_In(0)" name="D1" />
-            <blockpin signalname="IMem_DMem" name="S0" />
+            <blockpin signalname="nIM_Din" name="S0" />
             <blockpin signalname="DOut(0)" name="O" />
         </block>
         <block symbolname="m2_1" name="XLXI_33">
             <blockpin signalname="I_In(2)" name="D0" />
             <blockpin signalname="D_In(2)" name="D1" />
-            <blockpin signalname="IMem_DMem" name="S0" />
+            <blockpin signalname="nIM_Din" name="S0" />
             <blockpin signalname="DOut(2)" name="O" />
         </block>
         <block symbolname="m2_1" name="XLXI_34">
             <blockpin signalname="I_In(3)" name="D0" />
             <blockpin signalname="D_In(3)" name="D1" />
-            <blockpin signalname="IMem_DMem" name="S0" />
+            <blockpin signalname="nIM_Din" name="S0" />
             <blockpin signalname="DOut(3)" name="O" />
         </block>
         <block symbolname="m2_1" name="XLXI_35">
             <blockpin signalname="I_In(4)" name="D0" />
             <blockpin signalname="D_In(4)" name="D1" />
-            <blockpin signalname="IMem_DMem" name="S0" />
+            <blockpin signalname="nIM_Din" name="S0" />
             <blockpin signalname="DOut(4)" name="O" />
         </block>
         <block symbolname="m2_1" name="XLXI_36">
             <blockpin signalname="I_In(5)" name="D0" />
             <blockpin signalname="D_In(5)" name="D1" />
-            <blockpin signalname="IMem_DMem" name="S0" />
+            <blockpin signalname="nIM_Din" name="S0" />
             <blockpin signalname="DOut(5)" name="O" />
         </block>
         <block symbolname="m2_1" name="XLXI_37">
             <blockpin signalname="I_In(6)" name="D0" />
             <blockpin signalname="D_In(6)" name="D1" />
-            <blockpin signalname="IMem_DMem" name="S0" />
+            <blockpin signalname="nIM_Din" name="S0" />
             <blockpin signalname="DOut(6)" name="O" />
         </block>
         <block symbolname="m2_1" name="XLXI_32">
             <blockpin signalname="I_In(1)" name="D0" />
             <blockpin signalname="D_In(1)" name="D1" />
-            <blockpin signalname="IMem_DMem" name="S0" />
+            <blockpin signalname="nIM_Din" name="S0" />
             <blockpin signalname="DOut(1)" name="O" />
         </block>
         <block symbolname="m2_1" name="XLXI_44">
-            <blockpin signalname="IMem_DMem" name="D0" />
+            <blockpin signalname="I_In(7)" name="D0" />
             <blockpin signalname="D_In(7)" name="D1" />
-            <blockpin signalname="IMem_DMem" name="S0" />
+            <blockpin signalname="nIM_Din" name="S0" />
             <blockpin signalname="DOut(7)" name="O" />
         </block>
     </netlist>
@@ -277,9 +282,11 @@
             <wire x2="768" y1="1568" y2="1568" x1="496" />
             <wire x2="768" y1="1568" y2="1776" x1="768" />
             <wire x2="1024" y1="1776" y2="1776" x1="768" />
+            <wire x2="1024" y1="1776" y2="2224" x1="1024" />
+            <wire x2="1984" y1="2224" y2="2224" x1="1024" />
         </branch>
         <iomarker fontsize="28" x="400" y="144" name="I_In(7:0)" orien="R180" />
-        <iomarker fontsize="28" x="1088" y="144" name="IMem_DMem" orien="R180" />
+        <iomarker fontsize="28" x="1088" y="144" name="nIM_Din" orien="R180" />
         <instance x="592" y="96" name="XLXI_27" orien="M180" />
         <instance x="1024" y="272" name="XLXI_28" orien="M180" />
         <branch name="D_In(2)">
@@ -403,53 +410,34 @@
             <wire x2="2992" y1="960" y2="1856" x1="2992" />
         </branch>
         <iomarker fontsize="28" x="3120" y="352" name="DOut(7:0)" orien="R0" />
-        <branch name="IMem_DMem">
-            <wire x2="896" y1="1344" y2="1504" x1="896" />
-            <wire x2="1024" y1="1504" y2="1504" x1="896" />
-            <wire x2="896" y1="1504" y2="1664" x1="896" />
-            <wire x2="1008" y1="1664" y2="1664" x1="896" />
-            <wire x2="896" y1="1664" y2="1840" x1="896" />
-            <wire x2="1024" y1="1840" y2="1840" x1="896" />
-            <wire x2="1024" y1="1840" y2="2224" x1="1024" />
-            <wire x2="1984" y1="2224" y2="2224" x1="1024" />
-            <wire x2="976" y1="1344" y2="1344" x1="896" />
-            <wire x2="1024" y1="1344" y2="1344" x1="976" />
-            <wire x2="960" y1="256" y2="496" x1="960" />
-            <wire x2="1024" y1="496" y2="496" x1="960" />
-            <wire x2="960" y1="496" y2="768" x1="960" />
-            <wire x2="976" y1="768" y2="768" x1="960" />
-            <wire x2="1024" y1="768" y2="768" x1="976" />
-            <wire x2="976" y1="768" y2="976" x1="976" />
-            <wire x2="1024" y1="976" y2="976" x1="976" />
-            <wire x2="976" y1="976" y2="1168" x1="976" />
-            <wire x2="1008" y1="1168" y2="1168" x1="976" />
-            <wire x2="976" y1="1168" y2="1344" x1="976" />
-            <wire x2="1024" y1="256" y2="256" x1="960" />
-            <wire x2="1232" y1="256" y2="256" x1="1024" />
-            <wire x2="2080" y1="256" y2="256" x1="1232" />
-            <wire x2="2080" y1="256" y2="480" x1="2080" />
-            <wire x2="2080" y1="480" y2="512" x1="2080" />
-            <wire x2="1024" y1="256" y2="304" x1="1024" />
-            <wire x2="1232" y1="144" y2="144" x1="1088" />
-            <wire x2="1232" y1="144" y2="256" x1="1232" />
-            <wire x2="1968" y1="944" y2="944" x1="1872" />
-            <wire x2="1968" y1="944" y2="1024" x1="1968" />
-            <wire x2="1872" y1="944" y2="1072" x1="1872" />
-            <wire x2="1872" y1="1072" y2="1312" x1="1872" />
-            <wire x2="1968" y1="1312" y2="1312" x1="1872" />
-            <wire x2="1872" y1="1312" y2="1584" x1="1872" />
-            <wire x2="1968" y1="1584" y2="1584" x1="1872" />
-            <wire x2="1872" y1="1584" y2="1840" x1="1872" />
+        <branch name="nIM_Din">
+            <wire x2="1024" y1="240" y2="304" x1="1024" />
+            <wire x2="1168" y1="240" y2="240" x1="1024" />
+            <wire x2="2000" y1="240" y2="240" x1="1168" />
+            <wire x2="2000" y1="240" y2="496" x1="2000" />
+            <wire x2="2000" y1="496" y2="512" x1="2000" />
+            <wire x2="1168" y1="144" y2="144" x1="1088" />
+            <wire x2="1168" y1="144" y2="240" x1="1168" />
+            <wire x2="1952" y1="1248" y2="1248" x1="1872" />
+            <wire x2="1952" y1="1248" y2="1312" x1="1952" />
+            <wire x2="1968" y1="1312" y2="1312" x1="1952" />
+            <wire x2="1872" y1="1248" y2="1536" x1="1872" />
+            <wire x2="1968" y1="1536" y2="1536" x1="1872" />
+            <wire x2="1968" y1="1536" y2="1584" x1="1968" />
+            <wire x2="1872" y1="1536" y2="1840" x1="1872" />
             <wire x2="1952" y1="1840" y2="1840" x1="1872" />
             <wire x2="1872" y1="1840" y2="2096" x1="1872" />
-            <wire x2="1968" y1="2096" y2="2096" x1="1872" />
-            <wire x2="1984" y1="2096" y2="2096" x1="1968" />
-            <wire x2="1984" y1="784" y2="784" x1="1968" />
-            <wire x2="2016" y1="784" y2="784" x1="1984" />
-            <wire x2="1968" y1="784" y2="944" x1="1968" />
-            <wire x2="1984" y1="480" y2="784" x1="1984" />
-            <wire x2="2080" y1="480" y2="480" x1="1984" />
-            <wire x2="2080" y1="512" y2="512" x1="2000" />
+            <wire x2="1984" y1="2096" y2="2096" x1="1872" />
+            <wire x2="2000" y1="496" y2="496" x1="1936" />
+            <wire x2="1936" y1="496" y2="704" x1="1936" />
+            <wire x2="1936" y1="704" y2="736" x1="1936" />
+            <wire x2="1952" y1="736" y2="736" x1="1936" />
+            <wire x2="2016" y1="736" y2="736" x1="1952" />
+            <wire x2="2016" y1="736" y2="784" x1="2016" />
+            <wire x2="1952" y1="704" y2="704" x1="1936" />
+            <wire x2="1968" y1="704" y2="704" x1="1952" />
+            <wire x2="1968" y1="704" y2="1024" x1="1968" />
+            <wire x2="1952" y1="704" y2="1248" x1="1952" />
         </branch>
     </sheet>
 </drawing>

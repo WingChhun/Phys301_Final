@@ -236,15 +236,15 @@
             <arc ex="48" ey="-176" sx="48" sy="-80" r="56" cx="16" cy="-128" />
         </blockdef>
         <blockdef name="MUX8_generic">
-            <timestamp>2018-5-13T18:14:58</timestamp>
-            <rect width="256" x="64" y="-192" height="192" />
+            <timestamp>2018-5-13T22:29:20</timestamp>
+            <line x2="0" y1="32" y2="32" x1="64" />
             <rect width="64" x="0" y="-172" height="24" />
             <line x2="0" y1="-160" y2="-160" x1="64" />
             <rect width="64" x="0" y="-108" height="24" />
             <line x2="0" y1="-96" y2="-96" x1="64" />
-            <line x2="0" y1="-32" y2="-32" x1="64" />
             <rect width="64" x="320" y="-172" height="24" />
             <line x2="384" y1="-160" y2="-160" x1="320" />
+            <rect width="256" x="64" y="-192" height="256" />
         </blockdef>
         <block symbolname="Register_8bit" name="XLXI_43">
             <blockpin signalname="XLXN_347(7:0)" name="R_In(7:0)" />
@@ -435,8 +435,8 @@
         <block symbolname="MUX8_generic" name="XLXI_136">
             <blockpin signalname="Sum(7:0)" name="D_In(7:0)" />
             <blockpin signalname="DR(7:0)" name="I_In(7:0)" />
-            <blockpin signalname="nDR_SUM" name="nIn_Din" />
             <blockpin signalname="XLXN_347(7:0)" name="DOut(7:0)" />
+            <blockpin signalname="nDR_SUM" name="nIM_Din" />
         </block>
     </netlist>
     <sheet sheetnum="1" width="3520" height="2720">
@@ -1053,9 +1053,9 @@
             <wire x2="1440" y1="736" y2="736" x1="1360" />
         </branch>
         <branch name="nDR_SUM">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1360" y="864" type="branch" />
-            <wire x2="1376" y1="864" y2="864" x1="1360" />
-            <wire x2="1440" y1="864" y2="864" x1="1376" />
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1360" y="928" type="branch" />
+            <wire x2="1376" y1="928" y2="928" x1="1360" />
+            <wire x2="1440" y1="928" y2="928" x1="1376" />
         </branch>
     </sheet>
 </drawing>

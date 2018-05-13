@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <symbol version="7" name="Output_DebugMode">
     <symboltype>BLOCK</symboltype>
-    <timestamp>2018-5-13T7:24:55</timestamp>
+    <timestamp>2018-5-13T21:34:11</timestamp>
     <pin polarity="Input" x="0" y="-160" name="DataInput(7:0)" />
     <pin polarity="Input" x="0" y="-96" name="Clock" />
     <pin polarity="Input" x="0" y="96" name="EN_hex" />

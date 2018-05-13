@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : ProgramGround.vhf
--- /___/   /\     Timestamp : 05/13/2018 13:48:33
+-- /___/   /\     Timestamp : 05/13/2018 15:31:17
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -86,12 +86,15 @@ use UNISIM.Vcomponents.ALL;
 entity MUX8_generic_MUSER_ProgramGround is
    port ( D_In    : in    std_logic_vector (7 downto 0); 
           I_In    : in    std_logic_vector (7 downto 0); 
-          nIn_Din : in    std_logic; 
+          nIM_Din : in    std_logic; 
           DOut    : out   std_logic_vector (7 downto 0));
 end MUX8_generic_MUSER_ProgramGround;
 
 architecture BEHAVIORAL of MUX8_generic_MUSER_ProgramGround is
    attribute HU_SET     : string ;
+   signal XLXI_27_D0_openSignal : std_logic;
+   signal XLXI_27_D1_openSignal : std_logic;
+   signal XLXI_27_S0_openSignal : std_logic;
    component M2_1_MXILINX_ProgramGround
       port ( D0 : in    std_logic; 
              D1 : in    std_logic; 
@@ -99,61 +102,68 @@ architecture BEHAVIORAL of MUX8_generic_MUSER_ProgramGround is
              O  : out   std_logic);
    end component;
    
-   attribute HU_SET of XLXI_28 : label is "XLXI_28_49";
-   attribute HU_SET of XLXI_32 : label is "XLXI_32_55";
-   attribute HU_SET of XLXI_33 : label is "XLXI_33_50";
-   attribute HU_SET of XLXI_34 : label is "XLXI_34_51";
-   attribute HU_SET of XLXI_35 : label is "XLXI_35_52";
-   attribute HU_SET of XLXI_36 : label is "XLXI_36_53";
-   attribute HU_SET of XLXI_37 : label is "XLXI_37_54";
-   attribute HU_SET of XLXI_44 : label is "XLXI_44_56";
+   attribute HU_SET of XLXI_27 : label is "XLXI_27_99";
+   attribute HU_SET of XLXI_28 : label is "XLXI_28_100";
+   attribute HU_SET of XLXI_32 : label is "XLXI_32_106";
+   attribute HU_SET of XLXI_33 : label is "XLXI_33_101";
+   attribute HU_SET of XLXI_34 : label is "XLXI_34_102";
+   attribute HU_SET of XLXI_35 : label is "XLXI_35_103";
+   attribute HU_SET of XLXI_36 : label is "XLXI_36_104";
+   attribute HU_SET of XLXI_37 : label is "XLXI_37_105";
+   attribute HU_SET of XLXI_44 : label is "XLXI_44_107";
 begin
+   XLXI_27 : M2_1_MXILINX_ProgramGround
+      port map (D0=>XLXI_27_D0_openSignal,
+                D1=>XLXI_27_D1_openSignal,
+                S0=>XLXI_27_S0_openSignal,
+                O=>open);
+   
    XLXI_28 : M2_1_MXILINX_ProgramGround
       port map (D0=>I_In(0),
                 D1=>D_In(0),
-                S0=>nIn_Din,
+                S0=>nIM_Din,
                 O=>DOut(0));
    
    XLXI_32 : M2_1_MXILINX_ProgramGround
       port map (D0=>I_In(1),
                 D1=>D_In(1),
-                S0=>nIn_Din,
+                S0=>nIM_Din,
                 O=>DOut(1));
    
    XLXI_33 : M2_1_MXILINX_ProgramGround
       port map (D0=>I_In(2),
                 D1=>D_In(2),
-                S0=>nIn_Din,
+                S0=>nIM_Din,
                 O=>DOut(2));
    
    XLXI_34 : M2_1_MXILINX_ProgramGround
       port map (D0=>I_In(3),
                 D1=>D_In(3),
-                S0=>nIn_Din,
+                S0=>nIM_Din,
                 O=>DOut(3));
    
    XLXI_35 : M2_1_MXILINX_ProgramGround
       port map (D0=>I_In(4),
                 D1=>D_In(4),
-                S0=>nIn_Din,
+                S0=>nIM_Din,
                 O=>DOut(4));
    
    XLXI_36 : M2_1_MXILINX_ProgramGround
       port map (D0=>I_In(5),
                 D1=>D_In(5),
-                S0=>nIn_Din,
+                S0=>nIM_Din,
                 O=>DOut(5));
    
    XLXI_37 : M2_1_MXILINX_ProgramGround
       port map (D0=>I_In(6),
                 D1=>D_In(6),
-                S0=>nIn_Din,
+                S0=>nIM_Din,
                 O=>DOut(6));
    
    XLXI_44 : M2_1_MXILINX_ProgramGround
-      port map (D0=>nIn_Din,
+      port map (D0=>I_In(7),
                 D1=>D_In(7),
-                S0=>nIn_Din,
+                S0=>nIM_Din,
                 O=>DOut(7));
    
 end BEHAVIORAL;
@@ -663,7 +673,7 @@ architecture BEHAVIORAL of Register_8bit_MUSER_ProgramGround is
              Q   : out   std_logic_vector (7 downto 0));
    end component;
    
-   attribute HU_SET of XLXI_1 : label is "XLXI_1_57";
+   attribute HU_SET of XLXI_1 : label is "XLXI_1_108";
 begin
    XLXI_1 : FD8CE_MXILINX_ProgramGround
       port map (C=>R_WCLK,
@@ -935,8 +945,8 @@ architecture BEHAVIORAL of ProgramGround is
    component MUX8_generic_MUSER_ProgramGround
       port ( D_In    : in    std_logic_vector (7 downto 0); 
              I_In    : in    std_logic_vector (7 downto 0); 
-             nIn_Din : in    std_logic; 
-             DOut    : out   std_logic_vector (7 downto 0));
+             DOut    : out   std_logic_vector (7 downto 0); 
+             nIM_Din : in    std_logic);
    end component;
    
 begin
@@ -1132,7 +1142,7 @@ begin
    XLXI_136 : MUX8_generic_MUSER_ProgramGround
       port map (D_In(7 downto 0)=>Sum(7 downto 0),
                 I_In(7 downto 0)=>DR(7 downto 0),
-                nIn_Din=>nDR_SUM,
+                nIM_Din=>nDR_SUM,
                 DOut(7 downto 0)=>XLXN_347(7 downto 0));
    
 end BEHAVIORAL;
