@@ -7,14 +7,9 @@ NET "RunMode" LOC = N3; #Turn on for Run Mode, Off by default is Debug mode
 
 NET "RunModeLED" LOC = G1; #LED to display Run Mode, 1 for Run, 0 for Debug(default)
 
-NET "btn_writeData" LOC = M4; #BTN - Powers writeDataEnable
-NET "btn_writeData" CLOCK_DEDICATED_ROUTE = FALSE;
+
 NET "btn_CLR" LOC = G12; #CLEAR - current address in memory
 NET "btn_Memory" LOC = C11; #Button to write to memory
-
-#NET "CLR_Data" LOC = P11; #CLEAR - current address in memory
-#NET "CLR_Address" LOC = L3; #CLEAR - current address in memory
-#NET "CLR_MEMORY" LOC = C11;
 
 NET "Toggle_Output" LOC = K3; #DEBUG - Switch between INS-Mem output, and D-mem output
 NET "En_D_Memory" LOC = F3; #DEBUG - Enable write to Data memory
@@ -24,11 +19,21 @@ NET "En_I_Memory" LOC = E2; #DEBUG - Enable write to Instruction Memory
 NET "EnableDataLED" LOC = N4; #DEBUG - LED for Data Enable
 NET "EnableInstructionLED" LOC = P4; #DEBUG - Enable LED for Enable Instruction
 
+#
+#WCLK for Keypad Registers Input
+#
+NET "C_WriteOne" LOC = A7; #BTN - Powers writeDataEnable
+NET "C_WriteOne" CLOCK_DEDICATED_ROUTE = FALSE;
+
 NET "C_Write" CLOCK_DEDICATED_ROUTE = FALSE;
-NET "C_Write" LOC = B4; #Debug - Toggle switch to write address, using adder,
+NET "C_Write" LOC = M4; #Debug - Toggle switch to write address, using adder,
 								#If wanting to use shiftreg, Load, SHift, Load, then toggle this switch to write correctly
-NET "WCLK_shiftReg" LOC = A7; #BTN - Powers writeAddress
-NET "WCLK_shiftReg" CLOCK_DEDICATED_ROUTE = FALSE;
+NET "C_Shift" LOC = B4; #BTN - Powers writeAddress
+NET "C_Shift" CLOCK_DEDICATED_ROUTE = FALSE;
+
+#
+# Chose between IR/DR, AddressMode/DataMode and SwitchSpeed
+#
 NET "AorD" LOC = P11; #Address or Data for programming purposes
 NET "IRorDR" LOC = L3; #DEBUG- load between Instruction register and data register
 #NET "Pulse" LOC = P6;

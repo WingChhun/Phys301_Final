@@ -12,22 +12,27 @@ NET "Clock" LOC =B8 ; #CLssOCK
 
 #NET "Flag" LOC = G12;
 
-NET "R_1[0]" LOC = M5;
-NET "R_1[1]" LOC = M11;
-NET "R_1[2]" LOC = P7;
-NET "R_1[3]" LOC = P6;
+NET "Sum[0]" LOC = M5;
+NET "Sum[1]" LOC = M11;
+NET "Sum[2]" LOC = P7;
+NET "Sum[3]" LOC = P6;
 
-NET "EN_hex" LOC = E2; #Allow for Hex Enable on Output
+NET "Sum[4]" LOC = N5;
+NET "Sum[5]" LOC = N4;
+
+
+NET "EN_hex" LOC = F3; #Allow for Hex Enable on Output
 #Clock Enablers
-NET "Eight_CE" LOC =P11 ;
+#NET "Eight_CE" LOC =P11 ;
 NET "R1_CE" LOC =N3 ;
+NET "R2_CE" LOC =E2 ;
 #WCLK for registers
 NET "R1_C" LOC =A7 ;
 NET "R2_C" LOC =M4 ;
 NET "R3_C" LOC =C11 ; #Switch to write to 8 bit register
 NET "R3_C" CLOCK_DEDICATED_ROUTE = FALSE;
 #NET "btn_Memory" LOC = C11;
-NET "btn_Memory" CLOCK_DEDICATED_ROUTE = FALSE;
+#NET "btn_Memory" CLOCK_DEDICATED_ROUTE = FALSE;
 #Chose sub or add
 NET "nADD_SUB" LOC = L3;
 NET "CLR" LOC = G12;

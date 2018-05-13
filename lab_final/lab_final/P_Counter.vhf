@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : P_Counter.vhf
--- /___/   /\     Timestamp : 05/09/2018 22:17:16
+-- /___/   /\     Timestamp : 05/13/2018 01:21:46
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -183,7 +183,7 @@ architecture BEHAVIORAL of FTCLEX_MXILINX_P_Counter is
    end component;
    attribute BOX_TYPE of FDCE : component is "BLACK_BOX";
    
-   attribute HU_SET of I_36_30 : label is "I_36_30_0";
+   attribute HU_SET of I_36_30 : label is "I_36_30_46";
    attribute RLOC of I_36_35 : label is "X0Y0";
 begin
    Q <= Q_DUMMY;
@@ -338,14 +338,14 @@ architecture BEHAVIORAL of CB4CLED_MXILINX_P_Counter is
    end component;
    attribute BOX_TYPE of OR2 : component is "BLACK_BOX";
    
-   attribute HU_SET of I_Q0 : label is "I_Q0_4";
-   attribute HU_SET of I_Q1 : label is "I_Q1_3";
-   attribute HU_SET of I_Q2 : label is "I_Q2_2";
-   attribute HU_SET of I_Q3 : label is "I_Q3_1";
-   attribute HU_SET of I_TC : label is "I_TC_7";
-   attribute HU_SET of I_T1 : label is "I_T1_8";
-   attribute HU_SET of I_T2 : label is "I_T2_5";
-   attribute HU_SET of I_T3 : label is "I_T3_6";
+   attribute HU_SET of I_Q0 : label is "I_Q0_50";
+   attribute HU_SET of I_Q1 : label is "I_Q1_49";
+   attribute HU_SET of I_Q2 : label is "I_Q2_48";
+   attribute HU_SET of I_Q3 : label is "I_Q3_47";
+   attribute HU_SET of I_TC : label is "I_TC_53";
+   attribute HU_SET of I_T1 : label is "I_T1_54";
+   attribute HU_SET of I_T2 : label is "I_T2_51";
+   attribute HU_SET of I_T3 : label is "I_T3_52";
 begin
    Q0 <= Q0_DUMMY;
    Q1 <= Q1_DUMMY;
@@ -640,22 +640,22 @@ architecture BEHAVIORAL of CB8CLED_MXILINX_P_Counter is
    end component;
    attribute BOX_TYPE of OR2 : component is "BLACK_BOX";
    
-   attribute HU_SET of I_Q0 : label is "I_Q0_16";
-   attribute HU_SET of I_Q1 : label is "I_Q1_15";
-   attribute HU_SET of I_Q2 : label is "I_Q2_14";
-   attribute HU_SET of I_Q3 : label is "I_Q3_13";
-   attribute HU_SET of I_Q4 : label is "I_Q4_12";
-   attribute HU_SET of I_Q5 : label is "I_Q5_11";
-   attribute HU_SET of I_Q6 : label is "I_Q6_10";
-   attribute HU_SET of I_Q7 : label is "I_Q7_9";
-   attribute HU_SET of I_TC : label is "I_TC_21";
-   attribute HU_SET of I_T1 : label is "I_T1_24";
-   attribute HU_SET of I_T2 : label is "I_T2_17";
-   attribute HU_SET of I_T3 : label is "I_T3_18";
-   attribute HU_SET of I_T4 : label is "I_T4_23";
-   attribute HU_SET of I_T5 : label is "I_T5_22";
-   attribute HU_SET of I_T6 : label is "I_T6_19";
-   attribute HU_SET of I_T7 : label is "I_T7_20";
+   attribute HU_SET of I_Q0 : label is "I_Q0_62";
+   attribute HU_SET of I_Q1 : label is "I_Q1_61";
+   attribute HU_SET of I_Q2 : label is "I_Q2_60";
+   attribute HU_SET of I_Q3 : label is "I_Q3_59";
+   attribute HU_SET of I_Q4 : label is "I_Q4_58";
+   attribute HU_SET of I_Q5 : label is "I_Q5_57";
+   attribute HU_SET of I_Q6 : label is "I_Q6_56";
+   attribute HU_SET of I_Q7 : label is "I_Q7_55";
+   attribute HU_SET of I_TC : label is "I_TC_67";
+   attribute HU_SET of I_T1 : label is "I_T1_70";
+   attribute HU_SET of I_T2 : label is "I_T2_63";
+   attribute HU_SET of I_T3 : label is "I_T3_64";
+   attribute HU_SET of I_T4 : label is "I_T4_69";
+   attribute HU_SET of I_T5 : label is "I_T5_68";
+   attribute HU_SET of I_T6 : label is "I_T6_65";
+   attribute HU_SET of I_T7 : label is "I_T7_66";
 begin
    Q(7 downto 0) <= Q_DUMMY(7 downto 0);
    TC <= TC_DUMMY;
@@ -892,6 +892,8 @@ use UNISIM.Vcomponents.ALL;
 
 entity P_Counter is
    port ( CLK_Speed : in    std_logic; 
+          HLT       : in    std_logic; 
+          Reset     : in    std_logic; 
           RunMode   : in    std_logic; 
           Step      : in    std_logic; 
           Q         : out   std_logic_vector (7 downto 0); 
@@ -908,15 +910,15 @@ architecture BEHAVIORAL of P_Counter is
    signal Q1                   : std_logic;
    signal Q2                   : std_logic;
    signal Q3                   : std_logic;
+   signal Run                  : std_logic;
    signal XLXN_3               : std_logic;
    signal XLXN_4               : std_logic;
    signal XLXN_17              : std_logic;
    signal XLXN_18              : std_logic;
    signal XLXN_21              : std_logic;
-   signal XLXN_22              : std_logic;
+   signal XLXN_25              : std_logic;
    signal Q_DUMMY              : std_logic_vector (7 downto 0);
    signal XLXI_1_D_openSignal  : std_logic_vector (7 downto 0);
-   signal XLXI_3_I1_openSignal : std_logic;
    signal XLXI_6_D0_openSignal : std_logic;
    signal XLXI_6_D1_openSignal : std_logic;
    signal XLXI_6_D2_openSignal : std_logic;
@@ -980,13 +982,28 @@ architecture BEHAVIORAL of P_Counter is
    end component;
    attribute BOX_TYPE of AND3B1 : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_1 : label is "XLXI_1_25";
-   attribute HU_SET of XLXI_6 : label is "XLXI_6_26";
+   component OR3
+      port ( I0 : in    std_logic; 
+             I1 : in    std_logic; 
+             I2 : in    std_logic; 
+             O  : out   std_logic);
+   end component;
+   attribute BOX_TYPE of OR3 : component is "BLACK_BOX";
+   
+   component AND2B1
+      port ( I0 : in    std_logic; 
+             I1 : in    std_logic; 
+             O  : out   std_logic);
+   end component;
+   attribute BOX_TYPE of AND2B1 : component is "BLACK_BOX";
+   
+   attribute HU_SET of XLXI_1 : label is "XLXI_1_71";
+   attribute HU_SET of XLXI_6 : label is "XLXI_6_72";
 begin
    Q(7 downto 0) <= Q_DUMMY(7 downto 0);
    XLXI_1 : CB8CLED_MXILINX_P_Counter
       port map (C=>XLXN_18,
-                CE=>RunMode,
+                CE=>Run,
                 CLR=>on32,
                 D(7 downto 0)=>XLXI_1_D_openSignal(7 downto 0),
                 L=>XLXN_4,
@@ -1000,13 +1017,13 @@ begin
    
    XLXI_3 : OR2
       port map (I0=>Q_DUMMY(5),
-                I1=>XLXI_3_I1_openSignal,
+                I1=>Reset,
                 O=>on32);
    
    XLXI_6 : CB4CLED_MXILINX_P_Counter
       port map (C=>CLK_Speed,
-                CE=>RunMode,
-                CLR=>XLXN_22,
+                CE=>Run,
+                CLR=>XLXN_25,
                 D0=>XLXI_6_D0_openSignal,
                 D1=>XLXI_6_D1_openSignal,
                 D2=>XLXI_6_D2_openSignal,
@@ -1052,10 +1069,16 @@ begin
                 I2=>Q0,
                 O=>tick1);
    
-   XLXI_14 : OR2
-      port map (I0=>XLXN_21,
-                I1=>Step,
-                O=>XLXN_22);
+   XLXI_16 : OR3
+      port map (I0=>Reset,
+                I1=>XLXN_21,
+                I2=>Step,
+                O=>XLXN_25);
+   
+   XLXI_17 : AND2B1
+      port map (I0=>HLT,
+                I1=>RunMode,
+                O=>Run);
    
 end BEHAVIORAL;
 

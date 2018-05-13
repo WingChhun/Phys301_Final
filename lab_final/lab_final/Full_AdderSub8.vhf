@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : Full_AdderSub8.vhf
--- /___/   /\     Timestamp : 05/09/2018 20:39:32
+-- /___/   /\     Timestamp : 05/13/2018 01:21:48
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -248,11 +248,11 @@ end Full_AdderSub8;
 
 architecture BEHAVIORAL of Full_AdderSub8 is
    attribute BOX_TYPE   : string ;
-   signal XLXN_1                     : std_logic_vector (7 downto 0);
-   signal XLXN_10                    : std_logic;
-   signal XLXN_12                    : std_logic;
-   signal XLXI_3_Ain_openSignal      : std_logic_vector (7 downto 0);
-   signal XLXI_3_nAdd_SUB_openSignal : std_logic;
+   signal XLXN_1                : std_logic_vector (7 downto 0);
+   signal XLXN_10               : std_logic;
+   signal XLXN_12               : std_logic;
+   signal Negative_DUMMY        : std_logic;
+   signal XLXI_3_Ain_openSignal : std_logic_vector (7 downto 0);
    component addersub8_MUSER_Full_AdderSub8
       port ( Ain      : in    std_logic_vector (7 downto 0); 
              Bin      : in    std_logic_vector (7 downto 0); 
@@ -269,6 +269,7 @@ architecture BEHAVIORAL of Full_AdderSub8 is
    attribute BOX_TYPE of NOR2 : component is "BLACK_BOX";
    
 begin
+   Negative <= Negative_DUMMY;
    XLXI_2 : addersub8_MUSER_Full_AdderSub8
       port map (Ain(7 downto 0)=>Ain(7 downto 0),
                 Bin(7 downto 0)=>Bin(7 downto 0),
@@ -279,7 +280,7 @@ begin
    XLXI_3 : addersub8_MUSER_Full_AdderSub8
       port map (Ain(7 downto 0)=>XLXI_3_Ain_openSignal(7 downto 0),
                 Bin(7 downto 0)=>XLXN_1(7 downto 0),
-                nAdd_SUB=>XLXI_3_nAdd_SUB_openSignal,
+                nAdd_SUB=>Negative_DUMMY,
                 Cout=>Cout,
                 Sum(7 downto 0)=>Sum(7 downto 0));
    
@@ -296,7 +297,7 @@ begin
    XLXI_6 : NOR2
       port map (I0=>XLXN_12,
                 I1=>XLXN_10,
-                O=>Negative);
+                O=>Negative_DUMMY);
    
 end BEHAVIORAL;
 

@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : Registers.vhf
--- /___/   /\     Timestamp : 05/09/2018 21:40:03
+-- /___/   /\     Timestamp : 05/13/2018 01:51:30
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -18,81 +18,6 @@
 --    This vhdl netlist is translated from an ECS schematic. It can be 
 --    synthesized and simulated, but it should not be modified. 
 --
-
-library ieee;
-use ieee.std_logic_1164.ALL;
-use ieee.numeric_std.ALL;
-library UNISIM;
-use UNISIM.Vcomponents.ALL;
-
-entity hexShifter8_MUSER_Registers is
-   port ( G    : in    std_logic_vector (3 downto 0); 
-          I    : in    std_logic_vector (3 downto 0); 
-          hexO : out   std_logic_vector (7 downto 0));
-end hexShifter8_MUSER_Registers;
-
-architecture BEHAVIORAL of hexShifter8_MUSER_Registers is
-   attribute BOX_TYPE   : string ;
-   signal XLXN_22              : std_logic;
-   signal XLXI_1_I0_openSignal : std_logic;
-   signal XLXI_2_I0_openSignal : std_logic;
-   signal XLXI_3_I0_openSignal : std_logic;
-   signal XLXI_4_I0_openSignal : std_logic;
-   signal XLXI_5_I0_openSignal : std_logic;
-   signal XLXI_6_I0_openSignal : std_logic;
-   signal XLXI_7_I0_openSignal : std_logic;
-   signal XLXI_8_I0_openSignal : std_logic;
-   component XOR2
-      port ( I0 : in    std_logic; 
-             I1 : in    std_logic; 
-             O  : out   std_logic);
-   end component;
-   attribute BOX_TYPE of XOR2 : component is "BLACK_BOX";
-   
-begin
-   XLXI_1 : XOR2
-      port map (I0=>XLXI_1_I0_openSignal,
-                I1=>I(0),
-                O=>hexO(0));
-   
-   XLXI_2 : XOR2
-      port map (I0=>XLXI_2_I0_openSignal,
-                I1=>I(1),
-                O=>hexO(1));
-   
-   XLXI_3 : XOR2
-      port map (I0=>XLXI_3_I0_openSignal,
-                I1=>I(2),
-                O=>hexO(2));
-   
-   XLXI_4 : XOR2
-      port map (I0=>XLXI_4_I0_openSignal,
-                I1=>I(3),
-                O=>hexO(3));
-   
-   XLXI_5 : XOR2
-      port map (I0=>XLXI_5_I0_openSignal,
-                I1=>G(0),
-                O=>hexO(4));
-   
-   XLXI_6 : XOR2
-      port map (I0=>XLXI_6_I0_openSignal,
-                I1=>G(1),
-                O=>hexO(5));
-   
-   XLXI_7 : XOR2
-      port map (I0=>XLXI_7_I0_openSignal,
-                I1=>G(2),
-                O=>hexO(6));
-   
-   XLXI_8 : XOR2
-      port map (I0=>XLXI_8_I0_openSignal,
-                I1=>G(3),
-                O=>hexO(7));
-   
-end BEHAVIORAL;
-
-
 
 library ieee;
 use ieee.std_logic_1164.ALL;
@@ -187,302 +112,6 @@ use ieee.numeric_std.ALL;
 library UNISIM;
 use UNISIM.Vcomponents.ALL;
 
-entity ADD8_MXILINX_Registers is
-   port ( A   : in    std_logic_vector (7 downto 0); 
-          B   : in    std_logic_vector (7 downto 0); 
-          CI  : in    std_logic; 
-          CO  : out   std_logic; 
-          OFL : out   std_logic; 
-          S   : out   std_logic_vector (7 downto 0));
-end ADD8_MXILINX_Registers;
-
-architecture BEHAVIORAL of ADD8_MXILINX_Registers is
-   attribute BOX_TYPE   : string ;
-   attribute RLOC       : string ;
-   signal C0       : std_logic;
-   signal C1       : std_logic;
-   signal C2       : std_logic;
-   signal C3       : std_logic;
-   signal C4       : std_logic;
-   signal C5       : std_logic;
-   signal C6       : std_logic;
-   signal C6O      : std_logic;
-   signal dummy    : std_logic;
-   signal I0       : std_logic;
-   signal I1       : std_logic;
-   signal I2       : std_logic;
-   signal I3       : std_logic;
-   signal I4       : std_logic;
-   signal I5       : std_logic;
-   signal I6       : std_logic;
-   signal I7       : std_logic;
-   signal CO_DUMMY : std_logic;
-   component FMAP
-      port ( I1 : in    std_logic; 
-             I2 : in    std_logic; 
-             I3 : in    std_logic; 
-             I4 : in    std_logic; 
-             O  : in    std_logic);
-   end component;
-   attribute BOX_TYPE of FMAP : component is "BLACK_BOX";
-   
-   component MUXCY_L
-      port ( CI : in    std_logic; 
-             DI : in    std_logic; 
-             S  : in    std_logic; 
-             LO : out   std_logic);
-   end component;
-   attribute BOX_TYPE of MUXCY_L : component is "BLACK_BOX";
-   
-   component MUXCY
-      port ( CI : in    std_logic; 
-             DI : in    std_logic; 
-             S  : in    std_logic; 
-             O  : out   std_logic);
-   end component;
-   attribute BOX_TYPE of MUXCY : component is "BLACK_BOX";
-   
-   component XORCY
-      port ( CI : in    std_logic; 
-             LI : in    std_logic; 
-             O  : out   std_logic);
-   end component;
-   attribute BOX_TYPE of XORCY : component is "BLACK_BOX";
-   
-   component MUXCY_D
-      port ( CI : in    std_logic; 
-             DI : in    std_logic; 
-             S  : in    std_logic; 
-             LO : out   std_logic; 
-             O  : out   std_logic);
-   end component;
-   attribute BOX_TYPE of MUXCY_D : component is "BLACK_BOX";
-   
-   component XOR2
-      port ( I0 : in    std_logic; 
-             I1 : in    std_logic; 
-             O  : out   std_logic);
-   end component;
-   attribute BOX_TYPE of XOR2 : component is "BLACK_BOX";
-   
-   attribute RLOC of I_36_16 : label is "X0Y0";
-   attribute RLOC of I_36_17 : label is "X0Y0";
-   attribute RLOC of I_36_18 : label is "X0Y1";
-   attribute RLOC of I_36_19 : label is "X0Y1";
-   attribute RLOC of I_36_20 : label is "X0Y2";
-   attribute RLOC of I_36_21 : label is "X0Y2";
-   attribute RLOC of I_36_22 : label is "X0Y3";
-   attribute RLOC of I_36_23 : label is "X0Y3";
-   attribute RLOC of I_36_55 : label is "X0Y0";
-   attribute RLOC of I_36_58 : label is "X0Y1";
-   attribute RLOC of I_36_62 : label is "X0Y1";
-   attribute RLOC of I_36_63 : label is "X0Y2";
-   attribute RLOC of I_36_64 : label is "X0Y3";
-   attribute RLOC of I_36_107 : label is "X0Y3";
-   attribute RLOC of I_36_110 : label is "X0Y2";
-   attribute RLOC of I_36_111 : label is "X0Y0";
-begin
-   CO <= CO_DUMMY;
-   I_36_16 : FMAP
-      port map (I1=>A(0),
-                I2=>B(0),
-                I3=>dummy,
-                I4=>dummy,
-                O=>I0);
-   
-   I_36_17 : FMAP
-      port map (I1=>A(1),
-                I2=>B(1),
-                I3=>dummy,
-                I4=>dummy,
-                O=>I1);
-   
-   I_36_18 : FMAP
-      port map (I1=>A(2),
-                I2=>B(2),
-                I3=>dummy,
-                I4=>dummy,
-                O=>I2);
-   
-   I_36_19 : FMAP
-      port map (I1=>A(3),
-                I2=>B(3),
-                I3=>dummy,
-                I4=>dummy,
-                O=>I3);
-   
-   I_36_20 : FMAP
-      port map (I1=>A(4),
-                I2=>B(4),
-                I3=>dummy,
-                I4=>dummy,
-                O=>I4);
-   
-   I_36_21 : FMAP
-      port map (I1=>A(5),
-                I2=>B(5),
-                I3=>dummy,
-                I4=>dummy,
-                O=>I5);
-   
-   I_36_22 : FMAP
-      port map (I1=>A(6),
-                I2=>B(6),
-                I3=>dummy,
-                I4=>dummy,
-                O=>I6);
-   
-   I_36_23 : FMAP
-      port map (I1=>A(7),
-                I2=>B(7),
-                I3=>dummy,
-                I4=>dummy,
-                O=>I7);
-   
-   I_36_55 : MUXCY_L
-      port map (CI=>C0,
-                DI=>A(1),
-                S=>I1,
-                LO=>C1);
-   
-   I_36_58 : MUXCY_L
-      port map (CI=>C2,
-                DI=>A(3),
-                S=>I3,
-                LO=>C3);
-   
-   I_36_62 : MUXCY_L
-      port map (CI=>C1,
-                DI=>A(2),
-                S=>I2,
-                LO=>C2);
-   
-   I_36_63 : MUXCY_L
-      port map (CI=>C3,
-                DI=>A(4),
-                S=>I4,
-                LO=>C4);
-   
-   I_36_64 : MUXCY
-      port map (CI=>C6,
-                DI=>A(7),
-                S=>I7,
-                O=>CO_DUMMY);
-   
-   I_36_73 : XORCY
-      port map (CI=>CI,
-                LI=>I0,
-                O=>S(0));
-   
-   I_36_74 : XORCY
-      port map (CI=>C0,
-                LI=>I1,
-                O=>S(1));
-   
-   I_36_75 : XORCY
-      port map (CI=>C2,
-                LI=>I3,
-                O=>S(3));
-   
-   I_36_76 : XORCY
-      port map (CI=>C1,
-                LI=>I2,
-                O=>S(2));
-   
-   I_36_77 : XORCY
-      port map (CI=>C4,
-                LI=>I5,
-                O=>S(5));
-   
-   I_36_78 : XORCY
-      port map (CI=>C3,
-                LI=>I4,
-                O=>S(4));
-   
-   I_36_80 : XORCY
-      port map (CI=>C6,
-                LI=>I7,
-                O=>S(7));
-   
-   I_36_81 : XORCY
-      port map (CI=>C5,
-                LI=>I6,
-                O=>S(6));
-   
-   I_36_107 : MUXCY_D
-      port map (CI=>C5,
-                DI=>A(6),
-                S=>I6,
-                LO=>C6,
-                O=>C6O);
-   
-   I_36_110 : MUXCY_L
-      port map (CI=>C4,
-                DI=>A(5),
-                S=>I5,
-                LO=>C5);
-   
-   I_36_111 : MUXCY_L
-      port map (CI=>CI,
-                DI=>A(0),
-                S=>I0,
-                LO=>C0);
-   
-   I_36_221 : XOR2
-      port map (I0=>A(7),
-                I1=>B(7),
-                O=>I7);
-   
-   I_36_222 : XOR2
-      port map (I0=>A(6),
-                I1=>B(6),
-                O=>I6);
-   
-   I_36_223 : XOR2
-      port map (I0=>A(5),
-                I1=>B(5),
-                O=>I5);
-   
-   I_36_224 : XOR2
-      port map (I0=>A(4),
-                I1=>B(4),
-                O=>I4);
-   
-   I_36_225 : XOR2
-      port map (I0=>A(3),
-                I1=>B(3),
-                O=>I3);
-   
-   I_36_228 : XOR2
-      port map (I0=>A(0),
-                I1=>B(0),
-                O=>I0);
-   
-   I_36_229 : XOR2
-      port map (I0=>A(1),
-                I1=>B(1),
-                O=>I1);
-   
-   I_36_230 : XOR2
-      port map (I0=>A(2),
-                I1=>B(2),
-                O=>I2);
-   
-   I_36_239 : XOR2
-      port map (I0=>C6O,
-                I1=>CO_DUMMY,
-                O=>OFL);
-   
-end BEHAVIORAL;
-
-
-
-library ieee;
-use ieee.std_logic_1164.ALL;
-use ieee.numeric_std.ALL;
-library UNISIM;
-use UNISIM.Vcomponents.ALL;
-
 entity FD4CE_MXILINX_Registers is
    port ( C   : in    std_logic; 
           CE  : in    std_logic; 
@@ -548,44 +177,19 @@ use ieee.numeric_std.ALL;
 library UNISIM;
 use UNISIM.Vcomponents.ALL;
 
-entity Address_MUSER_Registers is
-   port ( AddressMode   : in    std_logic; 
-          btn_writeData : in    std_logic; 
-          CLR           : in    std_logic; 
-          C_write       : in    std_logic; 
-          D             : in    std_logic_vector (3 downto 0); 
-          DebugMode     : in    std_logic; 
-          EN_D_Memory   : in    std_logic; 
-          EN_I_Memory   : in    std_logic; 
-          WCLK_shiftReg : in    std_logic; 
-          AddresshexO   : out   std_logic_vector (7 downto 0); 
-          AddressO      : out   std_logic_vector (7 downto 0); 
-          G             : out   std_logic_vector (7 downto 0); 
-          Q             : out   std_logic_vector (7 downto 0));
-end Address_MUSER_Registers;
+entity Eight_Register_Shift_MUSER_Registers is
+   port ( binO       : in    std_logic_vector (3 downto 0); 
+          CLR        : in    std_logic; 
+          C_CE       : in    std_logic; 
+          WCLK_Final : in    std_logic; 
+          WCLK_R1    : in    std_logic; 
+          WCLK_Shift : in    std_logic; 
+          DOut       : out   std_logic_vector (7 downto 0));
+end Eight_Register_Shift_MUSER_Registers;
 
-architecture BEHAVIORAL of Address_MUSER_Registers is
+architecture BEHAVIORAL of Eight_Register_Shift_MUSER_Registers is
    attribute HU_SET     : string ;
-   attribute BOX_TYPE   : string ;
-   signal S                      : std_logic_vector (7 downto 0);
-   signal XLXN_351               : std_logic;
-   signal XLXN_369               : std_logic;
-   signal XLXN_374               : std_logic;
-   signal XLXN_376               : std_logic;
-   signal G_DUMMY                : std_logic_vector (7 downto 0);
-   signal Q_DUMMY                : std_logic_vector (7 downto 0);
-   signal XLXI_46_CLR_openSignal : std_logic;
-   signal XLXI_47_CLR_openSignal : std_logic;
-   signal XLXI_59_CI_openSignal  : std_logic;
-   signal XLXI_92_I1_openSignal  : std_logic;
-   component FD8CE_MXILINX_Registers
-      port ( C   : in    std_logic; 
-             CE  : in    std_logic; 
-             CLR : in    std_logic; 
-             D   : in    std_logic_vector (7 downto 0); 
-             Q   : out   std_logic_vector (7 downto 0));
-   end component;
-   
+   signal R1         : std_logic_vector (7 downto 0);
    component FD4CE_MXILINX_Registers
       port ( C   : in    std_logic; 
              CE  : in    std_logic; 
@@ -600,185 +204,6 @@ architecture BEHAVIORAL of Address_MUSER_Registers is
              Q3  : out   std_logic);
    end component;
    
-   component ADD8_MXILINX_Registers
-      port ( A   : in    std_logic_vector (7 downto 0); 
-             B   : in    std_logic_vector (7 downto 0); 
-             CI  : in    std_logic; 
-             CO  : out   std_logic; 
-             OFL : out   std_logic; 
-             S   : out   std_logic_vector (7 downto 0));
-   end component;
-   
-   component hexShifter8_MUSER_Registers
-      port ( I    : in    std_logic_vector (3 downto 0); 
-             G    : in    std_logic_vector (3 downto 0); 
-             hexO : out   std_logic_vector (7 downto 0));
-   end component;
-   
-   component AND4
-      port ( I0 : in    std_logic; 
-             I1 : in    std_logic; 
-             I2 : in    std_logic; 
-             I3 : in    std_logic; 
-             O  : out   std_logic);
-   end component;
-   attribute BOX_TYPE of AND4 : component is "BLACK_BOX";
-   
-   component OR2
-      port ( I0 : in    std_logic; 
-             I1 : in    std_logic; 
-             O  : out   std_logic);
-   end component;
-   attribute BOX_TYPE of OR2 : component is "BLACK_BOX";
-   
-   component AND4B2
-      port ( I0 : in    std_logic; 
-             I1 : in    std_logic; 
-             I2 : in    std_logic; 
-             I3 : in    std_logic; 
-             O  : out   std_logic);
-   end component;
-   attribute BOX_TYPE of AND4B2 : component is "BLACK_BOX";
-   
-   component AND5B2
-      port ( I0 : in    std_logic; 
-             I1 : in    std_logic; 
-             I2 : in    std_logic; 
-             I3 : in    std_logic; 
-             I4 : in    std_logic; 
-             O  : out   std_logic);
-   end component;
-   attribute BOX_TYPE of AND5B2 : component is "BLACK_BOX";
-   
-   component AND2
-      port ( I0 : in    std_logic; 
-             I1 : in    std_logic; 
-             O  : out   std_logic);
-   end component;
-   attribute BOX_TYPE of AND2 : component is "BLACK_BOX";
-   
-   attribute HU_SET of XLXI_41 : label is "XLXI_41_74";
-   attribute HU_SET of XLXI_46 : label is "XLXI_46_71";
-   attribute HU_SET of XLXI_47 : label is "XLXI_47_72";
-   attribute HU_SET of XLXI_59 : label is "XLXI_59_73";
-begin
-   G(7 downto 0) <= G_DUMMY(7 downto 0);
-   Q(7 downto 0) <= Q_DUMMY(7 downto 0);
-   XLXI_41 : FD8CE_MXILINX_Registers
-      port map (C=>XLXN_351,
-                CE=>XLXN_374,
-                CLR=>CLR,
-                D(7 downto 0)=>S(7 downto 0),
-                Q(7 downto 0)=>AddressO(7 downto 0));
-   
-   XLXI_46 : FD4CE_MXILINX_Registers
-      port map (C=>XLXN_369,
-                CE=>XLXN_374,
-                CLR=>XLXI_46_CLR_openSignal,
-                D0=>D(0),
-                D1=>D(1),
-                D2=>D(2),
-                D3=>D(3),
-                Q0=>Q_DUMMY(0),
-                Q1=>Q_DUMMY(1),
-                Q2=>Q_DUMMY(2),
-                Q3=>Q_DUMMY(3));
-   
-   XLXI_47 : FD4CE_MXILINX_Registers
-      port map (C=>WCLK_shiftReg,
-                CE=>XLXN_374,
-                CLR=>XLXI_47_CLR_openSignal,
-                D0=>Q_DUMMY(0),
-                D1=>Q_DUMMY(1),
-                D2=>Q_DUMMY(2),
-                D3=>Q_DUMMY(3),
-                Q0=>G_DUMMY(0),
-                Q1=>G_DUMMY(1),
-                Q2=>G_DUMMY(2),
-                Q3=>G_DUMMY(3));
-   
-   XLXI_59 : ADD8_MXILINX_Registers
-      port map (A(7 downto 0)=>Q_DUMMY(7 downto 0),
-                B(7 downto 0)=>G_DUMMY(7 downto 0),
-                CI=>XLXI_59_CI_openSignal,
-                CO=>open,
-                OFL=>open,
-                S(7 downto 0)=>S(7 downto 0));
-   
-   XLXI_60 : hexShifter8_MUSER_Registers
-      port map (G(3 downto 0)=>G_DUMMY(3 downto 0),
-                I(3 downto 0)=>Q_DUMMY(3 downto 0),
-                hexO(7 downto 0)=>AddresshexO(7 downto 0));
-   
-   XLXI_91 : AND4
-      port map (I0=>G_DUMMY(0),
-                I1=>G_DUMMY(1),
-                I2=>G_DUMMY(2),
-                I3=>G_DUMMY(3),
-                O=>open);
-   
-   XLXI_92 : OR2
-      port map (I0=>XLXN_376,
-                I1=>XLXI_92_I1_openSignal,
-                O=>XLXN_351);
-   
-   XLXI_95 : AND4B2
-      port map (I0=>EN_D_Memory,
-                I1=>EN_I_Memory,
-                I2=>DebugMode,
-                I3=>AddressMode,
-                O=>XLXN_374);
-   
-   XLXI_96 : AND5B2
-      port map (I0=>EN_D_Memory,
-                I1=>EN_I_Memory,
-                I2=>DebugMode,
-                I3=>AddressMode,
-                I4=>btn_writeData,
-                O=>XLXN_369);
-   
-   XLXI_98 : AND2
-      port map (I0=>XLXN_374,
-                I1=>C_write,
-                O=>XLXN_376);
-   
-end BEHAVIORAL;
-
-
-
-library ieee;
-use ieee.std_logic_1164.ALL;
-use ieee.numeric_std.ALL;
-library UNISIM;
-use UNISIM.Vcomponents.ALL;
-
-entity D_Register_MUSER_Registers is
-   port ( btn_writeData : in    std_logic; 
-          CLR           : in    std_logic; 
-          C_write       : in    std_logic; 
-          D             : in    std_logic_vector (3 downto 0); 
-          DataMode      : in    std_logic; 
-          DebugMode     : in    std_logic; 
-          EN_DReg       : in    std_logic; 
-          WCLK_shiftReg : in    std_logic; 
-          DREG_hexO     : out   std_logic_vector (7 downto 0); 
-          D_RegisterO   : out   std_logic_vector (7 downto 0); 
-          G             : out   std_logic_vector (7 downto 0); 
-          Q             : out   std_logic_vector (7 downto 0));
-end D_Register_MUSER_Registers;
-
-architecture BEHAVIORAL of D_Register_MUSER_Registers is
-   attribute HU_SET     : string ;
-   attribute BOX_TYPE   : string ;
-   signal S                     : std_logic_vector (7 downto 0);
-   signal XLXN_313              : std_logic;
-   signal XLXN_352              : std_logic;
-   signal XLXN_355              : std_logic;
-   signal XLXN_356              : std_logic;
-   signal G_DUMMY               : std_logic_vector (7 downto 0);
-   signal Q_DUMMY               : std_logic_vector (7 downto 0);
-   signal XLXI_59_CI_openSignal : std_logic;
-   signal XLXI_63_I0_openSignal : std_logic;
    component FD8CE_MXILINX_Registers
       port ( C   : in    std_logic; 
              CE  : in    std_logic; 
@@ -787,321 +212,42 @@ architecture BEHAVIORAL of D_Register_MUSER_Registers is
              Q   : out   std_logic_vector (7 downto 0));
    end component;
    
-   component FD4CE_MXILINX_Registers
-      port ( C   : in    std_logic; 
-             CE  : in    std_logic; 
-             CLR : in    std_logic; 
-             D0  : in    std_logic; 
-             D1  : in    std_logic; 
-             D2  : in    std_logic; 
-             D3  : in    std_logic; 
-             Q0  : out   std_logic; 
-             Q1  : out   std_logic; 
-             Q2  : out   std_logic; 
-             Q3  : out   std_logic);
-   end component;
-   
-   component ADD8_MXILINX_Registers
-      port ( A   : in    std_logic_vector (7 downto 0); 
-             B   : in    std_logic_vector (7 downto 0); 
-             CI  : in    std_logic; 
-             CO  : out   std_logic; 
-             OFL : out   std_logic; 
-             S   : out   std_logic_vector (7 downto 0));
-   end component;
-   
-   component hexShifter8_MUSER_Registers
-      port ( I    : in    std_logic_vector (3 downto 0); 
-             G    : in    std_logic_vector (3 downto 0); 
-             hexO : out   std_logic_vector (7 downto 0));
-   end component;
-   
-   component OR2
-      port ( I0 : in    std_logic; 
-             I1 : in    std_logic; 
-             O  : out   std_logic);
-   end component;
-   attribute BOX_TYPE of OR2 : component is "BLACK_BOX";
-   
-   component AND2
-      port ( I0 : in    std_logic; 
-             I1 : in    std_logic; 
-             O  : out   std_logic);
-   end component;
-   attribute BOX_TYPE of AND2 : component is "BLACK_BOX";
-   
-   component AND3
-      port ( I0 : in    std_logic; 
-             I1 : in    std_logic; 
-             I2 : in    std_logic; 
-             O  : out   std_logic);
-   end component;
-   attribute BOX_TYPE of AND3 : component is "BLACK_BOX";
-   
-   component AND4
-      port ( I0 : in    std_logic; 
-             I1 : in    std_logic; 
-             I2 : in    std_logic; 
-             I3 : in    std_logic; 
-             O  : out   std_logic);
-   end component;
-   attribute BOX_TYPE of AND4 : component is "BLACK_BOX";
-   
-   attribute HU_SET of XLXI_41 : label is "XLXI_41_78";
-   attribute HU_SET of XLXI_46 : label is "XLXI_46_75";
-   attribute HU_SET of XLXI_47 : label is "XLXI_47_76";
-   attribute HU_SET of XLXI_59 : label is "XLXI_59_77";
+   attribute HU_SET of XLXI_149 : label is "XLXI_149_1";
+   attribute HU_SET of XLXI_150 : label is "XLXI_150_0";
+   attribute HU_SET of XLXI_159 : label is "XLXI_159_2";
 begin
-   G(7 downto 0) <= G_DUMMY(7 downto 0);
-   Q(7 downto 0) <= Q_DUMMY(7 downto 0);
-   XLXI_41 : FD8CE_MXILINX_Registers
-      port map (C=>XLXN_355,
-                CE=>XLXN_356,
+   XLXI_149 : FD4CE_MXILINX_Registers
+      port map (C=>WCLK_R1,
+                CE=>C_CE,
                 CLR=>CLR,
-                D(7 downto 0)=>S(7 downto 0),
-                Q(7 downto 0)=>D_RegisterO(7 downto 0));
+                D0=>binO(0),
+                D1=>binO(1),
+                D2=>binO(2),
+                D3=>binO(3),
+                Q0=>R1(0),
+                Q1=>R1(1),
+                Q2=>R1(2),
+                Q3=>R1(3));
    
-   XLXI_46 : FD4CE_MXILINX_Registers
-      port map (C=>XLXN_352,
-                CE=>XLXN_356,
-                CLR=>XLXN_313,
-                D0=>D(0),
-                D1=>D(1),
-                D2=>D(2),
-                D3=>D(3),
-                Q0=>Q_DUMMY(0),
-                Q1=>Q_DUMMY(1),
-                Q2=>Q_DUMMY(2),
-                Q3=>Q_DUMMY(3));
-   
-   XLXI_47 : FD4CE_MXILINX_Registers
-      port map (C=>WCLK_shiftReg,
-                CE=>XLXN_356,
+   XLXI_150 : FD4CE_MXILINX_Registers
+      port map (C=>WCLK_Shift,
+                CE=>C_CE,
                 CLR=>CLR,
-                D0=>Q_DUMMY(0),
-                D1=>Q_DUMMY(1),
-                D2=>Q_DUMMY(2),
-                D3=>Q_DUMMY(3),
-                Q0=>G_DUMMY(0),
-                Q1=>G_DUMMY(1),
-                Q2=>G_DUMMY(2),
-                Q3=>G_DUMMY(3));
+                D0=>R1(0),
+                D1=>R1(1),
+                D2=>R1(2),
+                D3=>R1(3),
+                Q0=>R1(4),
+                Q1=>R1(5),
+                Q2=>R1(6),
+                Q3=>R1(7));
    
-   XLXI_59 : ADD8_MXILINX_Registers
-      port map (A(7 downto 0)=>Q_DUMMY(7 downto 0),
-                B(7 downto 0)=>G_DUMMY(7 downto 0),
-                CI=>XLXI_59_CI_openSignal,
-                CO=>open,
-                OFL=>open,
-                S(7 downto 0)=>S(7 downto 0));
-   
-   XLXI_60 : hexShifter8_MUSER_Registers
-      port map (G(3 downto 0)=>G_DUMMY(3 downto 0),
-                I(3 downto 0)=>Q_DUMMY(3 downto 0),
-                hexO(7 downto 0)=>DREG_hexO(7 downto 0));
-   
-   XLXI_63 : OR2
-      port map (I0=>XLXI_63_I0_openSignal,
-                I1=>CLR,
-                O=>XLXN_313);
-   
-   XLXI_98 : AND2
-      port map (I0=>XLXN_356,
-                I1=>C_write,
-                O=>XLXN_355);
-   
-   XLXI_119 : AND3
-      port map (I0=>DataMode,
-                I1=>EN_DReg,
-                I2=>DebugMode,
-                O=>XLXN_356);
-   
-   XLXI_120 : AND4
-      port map (I0=>DataMode,
-                I1=>EN_DReg,
-                I2=>DebugMode,
-                I3=>btn_writeData,
-                O=>XLXN_352);
-   
-end BEHAVIORAL;
-
-
-
-library ieee;
-use ieee.std_logic_1164.ALL;
-use ieee.numeric_std.ALL;
-library UNISIM;
-use UNISIM.Vcomponents.ALL;
-
-entity I_Register_MUSER_Registers is
-   port ( btn_writeData : in    std_logic; 
-          CLR           : in    std_logic; 
-          C_Write       : in    std_logic; 
-          D             : in    std_logic_vector (3 downto 0); 
-          DataMode      : in    std_logic; 
-          DebugMode     : in    std_logic; 
-          EN_IReg       : in    std_logic; 
-          WCLK_shiftReg : in    std_logic; 
-          G             : out   std_logic_vector (7 downto 0); 
-          IREG_hexO     : out   std_logic_vector (7 downto 0); 
-          I_RegisterO   : out   std_logic_vector (7 downto 0); 
-          Q             : out   std_logic_vector (7 downto 0));
-end I_Register_MUSER_Registers;
-
-architecture BEHAVIORAL of I_Register_MUSER_Registers is
-   attribute HU_SET     : string ;
-   attribute BOX_TYPE   : string ;
-   signal S                     : std_logic_vector (7 downto 0);
-   signal XLXN_313              : std_logic;
-   signal XLXN_351              : std_logic;
-   signal XLXN_354              : std_logic;
-   signal XLXN_355              : std_logic;
-   signal G_DUMMY               : std_logic_vector (7 downto 0);
-   signal Q_DUMMY               : std_logic_vector (7 downto 0);
-   signal XLXI_59_CI_openSignal : std_logic;
-   component FD8CE_MXILINX_Registers
-      port ( C   : in    std_logic; 
-             CE  : in    std_logic; 
-             CLR : in    std_logic; 
-             D   : in    std_logic_vector (7 downto 0); 
-             Q   : out   std_logic_vector (7 downto 0));
-   end component;
-   
-   component FD4CE_MXILINX_Registers
-      port ( C   : in    std_logic; 
-             CE  : in    std_logic; 
-             CLR : in    std_logic; 
-             D0  : in    std_logic; 
-             D1  : in    std_logic; 
-             D2  : in    std_logic; 
-             D3  : in    std_logic; 
-             Q0  : out   std_logic; 
-             Q1  : out   std_logic; 
-             Q2  : out   std_logic; 
-             Q3  : out   std_logic);
-   end component;
-   
-   component ADD8_MXILINX_Registers
-      port ( A   : in    std_logic_vector (7 downto 0); 
-             B   : in    std_logic_vector (7 downto 0); 
-             CI  : in    std_logic; 
-             CO  : out   std_logic; 
-             OFL : out   std_logic; 
-             S   : out   std_logic_vector (7 downto 0));
-   end component;
-   
-   component hexShifter8_MUSER_Registers
-      port ( I    : in    std_logic_vector (3 downto 0); 
-             G    : in    std_logic_vector (3 downto 0); 
-             hexO : out   std_logic_vector (7 downto 0));
-   end component;
-   
-   component OR2
-      port ( I0 : in    std_logic; 
-             I1 : in    std_logic; 
-             O  : out   std_logic);
-   end component;
-   attribute BOX_TYPE of OR2 : component is "BLACK_BOX";
-   
-   component AND3
-      port ( I0 : in    std_logic; 
-             I1 : in    std_logic; 
-             I2 : in    std_logic; 
-             O  : out   std_logic);
-   end component;
-   attribute BOX_TYPE of AND3 : component is "BLACK_BOX";
-   
-   component AND4
-      port ( I0 : in    std_logic; 
-             I1 : in    std_logic; 
-             I2 : in    std_logic; 
-             I3 : in    std_logic; 
-             O  : out   std_logic);
-   end component;
-   attribute BOX_TYPE of AND4 : component is "BLACK_BOX";
-   
-   component AND2
-      port ( I0 : in    std_logic; 
-             I1 : in    std_logic; 
-             O  : out   std_logic);
-   end component;
-   attribute BOX_TYPE of AND2 : component is "BLACK_BOX";
-   
-   attribute HU_SET of XLXI_41 : label is "XLXI_41_82";
-   attribute HU_SET of XLXI_46 : label is "XLXI_46_79";
-   attribute HU_SET of XLXI_47 : label is "XLXI_47_80";
-   attribute HU_SET of XLXI_59 : label is "XLXI_59_81";
-begin
-   G(7 downto 0) <= G_DUMMY(7 downto 0);
-   Q(7 downto 0) <= Q_DUMMY(7 downto 0);
-   XLXI_41 : FD8CE_MXILINX_Registers
-      port map (C=>XLXN_355,
-                CE=>XLXN_354,
+   XLXI_159 : FD8CE_MXILINX_Registers
+      port map (C=>WCLK_Final,
+                CE=>C_CE,
                 CLR=>CLR,
-                D(7 downto 0)=>S(7 downto 0),
-                Q(7 downto 0)=>I_RegisterO(7 downto 0));
-   
-   XLXI_46 : FD4CE_MXILINX_Registers
-      port map (C=>XLXN_351,
-                CE=>XLXN_354,
-                CLR=>XLXN_313,
-                D0=>D(0),
-                D1=>D(1),
-                D2=>D(2),
-                D3=>D(3),
-                Q0=>Q_DUMMY(0),
-                Q1=>Q_DUMMY(1),
-                Q2=>Q_DUMMY(2),
-                Q3=>Q_DUMMY(3));
-   
-   XLXI_47 : FD4CE_MXILINX_Registers
-      port map (C=>WCLK_shiftReg,
-                CE=>XLXN_354,
-                CLR=>CLR,
-                D0=>Q_DUMMY(0),
-                D1=>Q_DUMMY(1),
-                D2=>Q_DUMMY(2),
-                D3=>Q_DUMMY(3),
-                Q0=>G_DUMMY(0),
-                Q1=>G_DUMMY(1),
-                Q2=>G_DUMMY(2),
-                Q3=>G_DUMMY(3));
-   
-   XLXI_59 : ADD8_MXILINX_Registers
-      port map (A(7 downto 0)=>Q_DUMMY(7 downto 0),
-                B(7 downto 0)=>G_DUMMY(7 downto 0),
-                CI=>XLXI_59_CI_openSignal,
-                CO=>open,
-                OFL=>open,
-                S(7 downto 0)=>S(7 downto 0));
-   
-   XLXI_60 : hexShifter8_MUSER_Registers
-      port map (G(3 downto 0)=>G_DUMMY(3 downto 0),
-                I(3 downto 0)=>Q_DUMMY(3 downto 0),
-                hexO(7 downto 0)=>IREG_hexO(7 downto 0));
-   
-   XLXI_63 : OR2
-      port map (I0=>CLR,
-                I1=>CLR,
-                O=>XLXN_313);
-   
-   XLXI_119 : AND3
-      port map (I0=>DataMode,
-                I1=>EN_IReg,
-                I2=>DebugMode,
-                O=>XLXN_354);
-   
-   XLXI_120 : AND4
-      port map (I0=>DataMode,
-                I1=>btn_writeData,
-                I2=>EN_IReg,
-                I3=>DebugMode,
-                O=>XLXN_351);
-   
-   XLXI_121 : AND2
-      port map (I0=>XLXN_354,
-                I1=>C_Write,
-                O=>XLXN_355);
+                D(7 downto 0)=>R1(7 downto 0),
+                Q(7 downto 0)=>DOut(7 downto 0));
    
 end BEHAVIORAL;
 
@@ -1114,117 +260,101 @@ library UNISIM;
 use UNISIM.Vcomponents.ALL;
 
 entity Registers is
-   port ( AddressMode   : in    std_logic; 
-          binI          : in    std_logic_vector (3 downto 0); 
-          btn_writeData : in    std_logic; 
-          CLR           : in    std_logic; 
-          C_Write       : in    std_logic; 
-          Datamode      : in    std_logic; 
-          DebugMode     : in    std_logic; 
-          EN_DR         : in    std_logic; 
-          EN_D_Memory   : in    std_logic; 
-          EN_IR         : in    std_logic; 
-          EN_I_Memory   : in    std_logic; 
-          WCLK_shiftReg : in    std_logic; 
-          AddressO      : out   std_logic_vector (7 downto 0); 
-          A_hexO        : out   std_logic_vector (7 downto 0); 
-          A_shiftO      : out   std_logic_vector (7 downto 0); 
-          D_hexO        : out   std_logic_vector (7 downto 0); 
-          D_RegisterO   : out   std_logic_vector (7 downto 0); 
-          I_hexO        : out   std_logic_vector (7 downto 0); 
-          I_RegisterO   : out   std_logic_vector (7 downto 0));
+   port ( AddressMode  : in    std_logic; 
+          CLR          : in    std_logic; 
+          C_Shift      : in    std_logic; 
+          C_WriteFinal : in    std_logic; 
+          C_WriteOne   : in    std_logic; 
+          DataMode     : in    std_logic; 
+          DebugMode    : in    std_logic; 
+          Din          : in    std_logic_vector (3 downto 0); 
+          EN_DR        : in    std_logic; 
+          EN_D_Memory  : in    std_logic; 
+          EN_IR        : in    std_logic; 
+          EN_I_Memory  : in    std_logic; 
+          Address      : out   std_logic_vector (7 downto 0); 
+          Data         : out   std_logic_vector (7 downto 0); 
+          Instruction  : out   std_logic_vector (7 downto 0));
 end Registers;
 
 architecture BEHAVIORAL of Registers is
-   component Address_MUSER_Registers
-      port ( D             : in    std_logic_vector (3 downto 0); 
-             CLR           : in    std_logic; 
-             WCLK_shiftReg : in    std_logic; 
-             AddressMode   : in    std_logic; 
-             DebugMode     : in    std_logic; 
-             EN_D_Memory   : in    std_logic; 
-             EN_I_Memory   : in    std_logic; 
-             btn_writeData : in    std_logic; 
-             C_write       : in    std_logic; 
-             Q             : out   std_logic_vector (7 downto 0); 
-             G             : out   std_logic_vector (7 downto 0); 
-             AddressO      : out   std_logic_vector (7 downto 0); 
-             AddresshexO   : out   std_logic_vector (7 downto 0));
+   attribute BOX_TYPE   : string ;
+   signal XLXN_45      : std_logic;
+   signal XLXN_46      : std_logic;
+   signal XLXN_49      : std_logic;
+   component AND3
+      port ( I0 : in    std_logic; 
+             I1 : in    std_logic; 
+             I2 : in    std_logic; 
+             O  : out   std_logic);
+   end component;
+   attribute BOX_TYPE of AND3 : component is "BLACK_BOX";
+   
+   component Eight_Register_Shift_MUSER_Registers
+      port ( WCLK_Shift : in    std_logic; 
+             C_CE       : in    std_logic; 
+             WCLK_R1    : in    std_logic; 
+             CLR        : in    std_logic; 
+             WCLK_Final : in    std_logic; 
+             DOut       : out   std_logic_vector (7 downto 0); 
+             binO       : in    std_logic_vector (3 downto 0));
    end component;
    
-   component I_Register_MUSER_Registers
-      port ( D             : in    std_logic_vector (3 downto 0); 
-             CLR           : in    std_logic; 
-             WCLK_shiftReg : in    std_logic; 
-             EN_IReg       : in    std_logic; 
-             DebugMode     : in    std_logic; 
-             DataMode      : in    std_logic; 
-             btn_writeData : in    std_logic; 
-             C_Write       : in    std_logic; 
-             Q             : out   std_logic_vector (7 downto 0); 
-             G             : out   std_logic_vector (7 downto 0); 
-             I_RegisterO   : out   std_logic_vector (7 downto 0); 
-             IREG_hexO     : out   std_logic_vector (7 downto 0));
+   component AND4B2
+      port ( I0 : in    std_logic; 
+             I1 : in    std_logic; 
+             I2 : in    std_logic; 
+             I3 : in    std_logic; 
+             O  : out   std_logic);
    end component;
-   
-   component D_Register_MUSER_Registers
-      port ( D             : in    std_logic_vector (3 downto 0); 
-             CLR           : in    std_logic; 
-             WCLK_shiftReg : in    std_logic; 
-             EN_DReg       : in    std_logic; 
-             DebugMode     : in    std_logic; 
-             DataMode      : in    std_logic; 
-             btn_writeData : in    std_logic; 
-             C_Write       : in    std_logic; 
-             Q             : out   std_logic_vector (7 downto 0); 
-             G             : out   std_logic_vector (7 downto 0); 
-             D_RegisterO   : out   std_logic_vector (7 downto 0); 
-             DREG_hexO     : out   std_logic_vector (7 downto 0));
-   end component;
+   attribute BOX_TYPE of AND4B2 : component is "BLACK_BOX";
    
 begin
-   XLXI_129 : Address_MUSER_Registers
-      port map (AddressMode=>AddressMode,
-                btn_writeData=>btn_writeData,
-                CLR=>CLR,
-                C_write=>C_Write,
-                D(3 downto 0)=>binI(3 downto 0),
-                DebugMode=>DebugMode,
-                EN_D_Memory=>EN_D_Memory,
-                EN_I_Memory=>EN_I_Memory,
-                WCLK_shiftReg=>WCLK_shiftReg,
-                AddresshexO(7 downto 0)=>A_hexO(7 downto 0),
-                AddressO(7 downto 0)=>AddressO(7 downto 0),
-                G=>open,
-                Q=>open);
+   XLXI_119 : AND3
+      port map (I0=>DataMode,
+                I1=>EN_DR,
+                I2=>DebugMode,
+                O=>XLXN_45);
    
-   XLXI_130 : I_Register_MUSER_Registers
-      port map (btn_writeData=>btn_writeData,
+   XLXI_133 : Eight_Register_Shift_MUSER_Registers
+      port map (binO(3 downto 0)=>Din(3 downto 0),
                 CLR=>CLR,
-                C_Write=>C_Write,
-                D(3 downto 0)=>binI(3 downto 0),
-                DataMode=>Datamode,
-                DebugMode=>DebugMode,
-                EN_IReg=>EN_IR,
-                WCLK_shiftReg=>WCLK_shiftReg,
-                G=>open,
-                IREG_hexO(7 downto 0)=>I_hexO(7 downto 0),
-                I_RegisterO(7 downto 0)=>I_RegisterO(7 downto 0),
-                Q=>open);
+                C_CE=>XLXN_49,
+                WCLK_Final=>C_WriteFinal,
+                WCLK_R1=>C_WriteOne,
+                WCLK_Shift=>C_Shift,
+                DOut(7 downto 0)=>Address(7 downto 0));
    
-   XLXI_132 : D_Register_MUSER_Registers
-      port map (btn_writeData=>btn_writeData,
+   XLXI_134 : Eight_Register_Shift_MUSER_Registers
+      port map (binO(3 downto 0)=>Din(3 downto 0),
                 CLR=>CLR,
-                C_Write=>C_Write,
-                D(3 downto 0)=>binI(3 downto 0),
-                DataMode=>Datamode,
-                DebugMode=>DebugMode,
-                EN_DReg=>EN_DR,
-                WCLK_shiftReg=>WCLK_shiftReg,
-                DREG_hexO(7 downto 0)=>D_hexO(7 downto 0),
-                D_RegisterO(7 downto 0)=>D_RegisterO(7 downto 0),
-                G=>open,
-                Q=>open);
+                C_CE=>XLXN_46,
+                WCLK_Final=>C_WriteFinal,
+                WCLK_R1=>C_WriteOne,
+                WCLK_Shift=>C_Shift,
+                DOut(7 downto 0)=>Instruction(7 downto 0));
+   
+   XLXI_135 : Eight_Register_Shift_MUSER_Registers
+      port map (binO(3 downto 0)=>Din(3 downto 0),
+                CLR=>CLR,
+                C_CE=>XLXN_45,
+                WCLK_Final=>C_WriteFinal,
+                WCLK_R1=>C_WriteOne,
+                WCLK_Shift=>C_Shift,
+                DOut(7 downto 0)=>Data(7 downto 0));
+   
+   XLXI_138 : AND3
+      port map (I0=>DataMode,
+                I1=>EN_IR,
+                I2=>DebugMode,
+                O=>XLXN_46);
+   
+   XLXI_140 : AND4B2
+      port map (I0=>EN_D_Memory,
+                I1=>EN_I_Memory,
+                I2=>AddressMode,
+                I3=>DebugMode,
+                O=>XLXN_49);
    
 end BEHAVIORAL;
 

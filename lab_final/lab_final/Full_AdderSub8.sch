@@ -13,12 +13,12 @@
         <signal name="Cout" />
         <signal name="Sum(7:0)" />
         <signal name="Negative" />
-        <signal name="XLXN_8" />
-        <signal name="XLXN_9" />
         <signal name="XLXN_10" />
-        <signal name="XLXN_11" />
         <signal name="XLXN_12" />
         <signal name="OFL" />
+        <signal name="XLXN_13" />
+        <signal name="XLXN_14" />
+        <signal name="XLXN_16" />
         <port polarity="Input" name="Ain(7:0)" />
         <port polarity="Input" name="Bin(7:0)" />
         <port polarity="Input" name="nADD_SUB" />
@@ -60,7 +60,7 @@
         <block symbolname="addersub8" name="XLXI_3">
             <blockpin name="Ain(7:0)" />
             <blockpin signalname="XLXN_1(7:0)" name="Bin(7:0)" />
-            <blockpin name="nAdd_SUB" />
+            <blockpin signalname="Negative" name="nAdd_SUB" />
             <blockpin signalname="Sum(7:0)" name="Sum(7:0)" />
             <blockpin signalname="Cout" name="Cout" />
         </block>
@@ -100,14 +100,11 @@
         <iomarker fontsize="28" x="496" y="1200" name="Bin(7:0)" orien="R180" />
         <branch name="nADD_SUB">
             <wire x2="416" y1="1264" y2="1264" x1="240" />
-            <wire x2="512" y1="1264" y2="1264" x1="416" />
-            <wire x2="528" y1="1264" y2="1264" x1="512" />
-            <wire x2="416" y1="1264" y2="1280" x1="416" />
-            <wire x2="416" y1="1280" y2="1424" x1="416" />
+            <wire x2="416" y1="1264" y2="1424" x1="416" />
             <wire x2="768" y1="1424" y2="1424" x1="416" />
-            <wire x2="416" y1="1424" y2="1648" x1="416" />
-            <wire x2="768" y1="1648" y2="1648" x1="416" />
-            <wire x2="784" y1="1648" y2="1648" x1="768" />
+            <wire x2="416" y1="1424" y2="1776" x1="416" />
+            <wire x2="784" y1="1776" y2="1776" x1="416" />
+            <wire x2="528" y1="1264" y2="1264" x1="416" />
         </branch>
         <iomarker fontsize="28" x="240" y="1264" name="nADD_SUB" orien="R180" />
         <branch name="Cout">
@@ -119,12 +116,15 @@
         </branch>
         <iomarker fontsize="28" x="1984" y="1120" name="Sum(7:0)" orien="R0" />
         <instance x="768" y="1552" name="XLXI_4" orien="R0" />
-        <instance x="784" y="1776" name="XLXI_5" orien="R0" />
         <instance x="1424" y="1600" name="XLXI_6" orien="R0" />
         <branch name="Negative">
-            <wire x2="1712" y1="1504" y2="1504" x1="1680" />
+            <wire x2="1568" y1="1248" y2="1248" x1="1504" />
+            <wire x2="1504" y1="1248" y2="1344" x1="1504" />
+            <wire x2="1728" y1="1344" y2="1344" x1="1504" />
+            <wire x2="1728" y1="1344" y2="1504" x1="1728" />
+            <wire x2="1808" y1="1504" y2="1504" x1="1728" />
+            <wire x2="1728" y1="1504" y2="1504" x1="1680" />
         </branch>
-        <iomarker fontsize="28" x="1712" y="1504" name="Negative" orien="R0" />
         <branch name="XLXN_10">
             <wire x2="704" y1="1328" y2="1488" x1="704" />
             <wire x2="768" y1="1488" y2="1488" x1="704" />
@@ -135,20 +135,23 @@
             <wire x2="992" y1="1264" y2="1264" x1="912" />
             <wire x2="992" y1="1264" y2="1328" x1="992" />
         </branch>
+        <branch name="OFL">
+            <wire x2="1200" y1="1808" y2="1808" x1="1040" />
+            <wire x2="1216" y1="1680" y2="1680" x1="1200" />
+            <wire x2="1200" y1="1680" y2="1808" x1="1200" />
+        </branch>
+        <iomarker fontsize="28" x="1216" y="1680" name="OFL" orien="R0" />
+        <iomarker fontsize="28" x="1808" y="1504" name="Negative" orien="R0" />
+        <instance x="784" y="1904" name="XLXI_5" orien="R0" />
         <branch name="XLXN_12">
-            <wire x2="784" y1="1712" y2="1712" x1="768" />
-            <wire x2="768" y1="1712" y2="1808" x1="768" />
-            <wire x2="1136" y1="1808" y2="1808" x1="768" />
+            <wire x2="784" y1="1840" y2="1840" x1="720" />
+            <wire x2="720" y1="1840" y2="1920" x1="720" />
+            <wire x2="1136" y1="1920" y2="1920" x1="720" />
             <wire x2="1136" y1="1456" y2="1456" x1="1024" />
             <wire x2="1216" y1="1456" y2="1456" x1="1136" />
             <wire x2="1216" y1="1456" y2="1536" x1="1216" />
             <wire x2="1424" y1="1536" y2="1536" x1="1216" />
-            <wire x2="1136" y1="1456" y2="1808" x1="1136" />
+            <wire x2="1136" y1="1456" y2="1920" x1="1136" />
         </branch>
-        <branch name="OFL">
-            <wire x2="1056" y1="1680" y2="1680" x1="1040" />
-            <wire x2="1216" y1="1680" y2="1680" x1="1056" />
-        </branch>
-        <iomarker fontsize="28" x="1216" y="1680" name="OFL" orien="R0" />
     </sheet>
 </drawing>

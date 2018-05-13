@@ -1,17 +1,17 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Wed May 09 21:43:04 2018
+// Written by: Map P.20131013 on Sun May 13 01:52:11 2018
 //! **************************************************************************
 
 SCHEMATIC START;
-COMP "C_Write" LOCATE = SITE "B4" LEVEL 1;
+COMP "C_Shift" LOCATE = SITE "B4" LEVEL 1;
+PIN C_Shift_pin<0> = BEL "C_Shift" PINNAME PAD;
+PIN "C_Shift_pin<0>" CLOCK_DEDICATED_ROUTE = FALSE;
+COMP "C_Write" LOCATE = SITE "M4" LEVEL 1;
 PIN C_Write_pin<0> = BEL "C_Write" PINNAME PAD;
 PIN "C_Write_pin<0>" CLOCK_DEDICATED_ROUTE = FALSE;
 COMP "A_shiftO<0>" LOCATE = SITE "M5" LEVEL 1;
 COMP "A_shiftO<1>" LOCATE = SITE "M11" LEVEL 1;
 COMP "AorD" LOCATE = SITE "P11" LEVEL 1;
-COMP "WCLK_shiftReg" LOCATE = SITE "A7" LEVEL 1;
-PIN WCLK_shiftReg_pin<0> = BEL "WCLK_shiftReg" PINNAME PAD;
-PIN "WCLK_shiftReg_pin<0>" CLOCK_DEDICATED_ROUTE = FALSE;
 COMP "Toggle_Output" LOCATE = SITE "K3" LEVEL 1;
 COMP "RunMode" LOCATE = SITE "N3" LEVEL 1;
 COMP "colO<0>" LOCATE = SITE "B2" LEVEL 1;
@@ -20,6 +20,9 @@ COMP "colO<2>" LOCATE = SITE "J3" LEVEL 1;
 COMP "colO<3>" LOCATE = SITE "B5" LEVEL 1;
 COMP "Clock" LOCATE = SITE "B8" LEVEL 1;
 COMP "btn_CLR" LOCATE = SITE "G12" LEVEL 1;
+COMP "C_WriteOne" LOCATE = SITE "A7" LEVEL 1;
+PIN C_WriteOne_pin<0> = BEL "C_WriteOne" PINNAME PAD;
+PIN "C_WriteOne_pin<0>" CLOCK_DEDICATED_ROUTE = FALSE;
 COMP "sseg<0>" LOCATE = SITE "M12" LEVEL 1;
 COMP "sseg<1>" LOCATE = SITE "L13" LEVEL 1;
 COMP "sseg<2>" LOCATE = SITE "P12" LEVEL 1;
@@ -44,12 +47,11 @@ COMP "row<1>" LOCATE = SITE "B6" LEVEL 1;
 COMP "row<2>" LOCATE = SITE "C5" LEVEL 1;
 COMP "row<3>" LOCATE = SITE "B7" LEVEL 1;
 COMP "RunModeLED" LOCATE = SITE "G1" LEVEL 1;
-COMP "btn_writeData" LOCATE = SITE "M4" LEVEL 1;
-PIN btn_writeData_pin<0> = BEL "btn_writeData" PINNAME PAD;
-PIN "btn_writeData_pin<0>" CLOCK_DEDICATED_ROUTE = FALSE;
 COMP "EnableDataLED" LOCATE = SITE "N4" LEVEL 1;
-NET "WCLK_shiftReg_BUFGP/IBUFG" BEL "WCLK_shiftReg_BUFGP/BUFG.GCLKMUX"
+NET "C_Shift_BUFGP/IBUFG" BEL "C_Shift_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+NET "C_WriteOne_BUFGP/IBUFG" BEL "C_WriteOne_BUFGP/BUFG.GCLKMUX"
         USELOCALCONNECT;
+NET "C_Write_BUFGP/IBUFG" BEL "C_Write_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
 NET "Clock_BUFGP/IBUFG" BEL "Clock_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
 SCHEMATIC END;
 
