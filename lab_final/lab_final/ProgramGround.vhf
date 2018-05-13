@@ -7,11 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : ProgramGround.vhf
-<<<<<<< HEAD
--- /___/   /\     Timestamp : 05/13/2018 11:29:56
-=======
--- /___/   /\     Timestamp : 05/13/2018 12:45:47
->>>>>>> debugmode
+-- /___/   /\     Timestamp : 05/13/2018 13:48:33
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -103,7 +99,6 @@ architecture BEHAVIORAL of MUX8_generic_MUSER_ProgramGround is
              O  : out   std_logic);
    end component;
    
-<<<<<<< HEAD
    attribute HU_SET of XLXI_28 : label is "XLXI_28_49";
    attribute HU_SET of XLXI_32 : label is "XLXI_32_55";
    attribute HU_SET of XLXI_33 : label is "XLXI_33_50";
@@ -112,16 +107,6 @@ architecture BEHAVIORAL of MUX8_generic_MUSER_ProgramGround is
    attribute HU_SET of XLXI_36 : label is "XLXI_36_53";
    attribute HU_SET of XLXI_37 : label is "XLXI_37_54";
    attribute HU_SET of XLXI_44 : label is "XLXI_44_56";
-=======
-   attribute HU_SET of XLXI_28 : label is "XLXI_28_20";
-   attribute HU_SET of XLXI_32 : label is "XLXI_32_26";
-   attribute HU_SET of XLXI_33 : label is "XLXI_33_21";
-   attribute HU_SET of XLXI_34 : label is "XLXI_34_22";
-   attribute HU_SET of XLXI_35 : label is "XLXI_35_23";
-   attribute HU_SET of XLXI_36 : label is "XLXI_36_24";
-   attribute HU_SET of XLXI_37 : label is "XLXI_37_25";
-   attribute HU_SET of XLXI_44 : label is "XLXI_44_27";
->>>>>>> debugmode
 begin
    XLXI_28 : M2_1_MXILINX_ProgramGround
       port map (D0=>I_In(0),
@@ -678,11 +663,7 @@ architecture BEHAVIORAL of Register_8bit_MUSER_ProgramGround is
              Q   : out   std_logic_vector (7 downto 0));
    end component;
    
-<<<<<<< HEAD
    attribute HU_SET of XLXI_1 : label is "XLXI_1_57";
-=======
-   attribute HU_SET of XLXI_1 : label is "XLXI_1_28";
->>>>>>> debugmode
 begin
    XLXI_1 : FD8CE_MXILINX_ProgramGround
       port map (C=>R_WCLK,

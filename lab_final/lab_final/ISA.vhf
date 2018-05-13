@@ -7,11 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : ISA.vhf
-<<<<<<< HEAD
--- /___/   /\     Timestamp : 05/13/2018 11:26:45
-=======
--- /___/   /\     Timestamp : 05/13/2018 12:40:47
->>>>>>> debugmode
+-- /___/   /\     Timestamp : 05/13/2018 13:45:55
 -- \   \  /  \ 
 --  \___\/\___\ 
 --

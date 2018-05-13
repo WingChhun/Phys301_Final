@@ -30,8 +30,8 @@
         <signal name="XLXN_456" />
         <signal name="WCLK_Memory_HERE" />
         <signal name="XLXN_460" />
-        <signal name="XLXN_463(7:0)" />
-        <signal name="XLXN_466(7:0)" />
+        <signal name="DR(7:0)" />
+        <signal name="IR(7:0)" />
         <signal name="XLXN_468(7:0)" />
         <signal name="IOutorDout" />
         <signal name="Instruction(7:0)" />
@@ -48,6 +48,7 @@
         <signal name="RegC(7:0)" />
         <signal name="RegS(7:0)" />
         <signal name="row(3:0)" />
+        <signal name="XLXN_474" />
         <port polarity="Input" name="RunMode" />
         <port polarity="Input" name="Clock" />
         <port polarity="Input" name="DataMode" />
@@ -61,6 +62,8 @@
         <port polarity="Input" name="IrorDR" />
         <port polarity="Input" name="EN_hex" />
         <port polarity="Input" name="btn_Memory" />
+        <port polarity="Output" name="DR(7:0)" />
+        <port polarity="Output" name="IR(7:0)" />
         <port polarity="Input" name="IOutorDout" />
         <port polarity="Input" name="C_WriteOnce" />
         <port polarity="Input" name="C_WriteF" />
@@ -220,7 +223,7 @@
             <blockpin signalname="WCLK_IM" name="WCLK" />
             <blockpin signalname="Address(4:0)" name="A(4:0)" />
             <blockpin signalname="Instruction(7:0)" name="D(7:0)" />
-            <blockpin signalname="XLXN_466(7:0)" name="Q(7:0)" />
+            <blockpin signalname="IR(7:0)" name="Q(7:0)" />
         </block>
         <block symbolname="sRAM32x8_ex_pgm_data" name="XLXI_154">
             <blockpin name="nCS" />
@@ -228,7 +231,7 @@
             <blockpin signalname="WCLK_DM" name="WCLK" />
             <blockpin signalname="Address(4:0)" name="A(4:0)" />
             <blockpin signalname="Data(7:0)" name="D(7:0)" />
-            <blockpin signalname="XLXN_463(7:0)" name="Q(7:0)" />
+            <blockpin signalname="DR(7:0)" name="Q(7:0)" />
         </block>
         <block symbolname="and2" name="XLXI_155">
             <blockpin signalname="XLXN_454" name="I0" />
@@ -253,8 +256,8 @@
             <blockpin signalname="XLXN_456" name="O" />
         </block>
         <block symbolname="MUX8Bit" name="XLXI_141">
-            <blockpin signalname="XLXN_463(7:0)" name="D_In(7:0)" />
-            <blockpin signalname="XLXN_466(7:0)" name="I_In(7:0)" />
+            <blockpin signalname="DR(7:0)" name="D_In(7:0)" />
+            <blockpin signalname="IR(7:0)" name="I_In(7:0)" />
             <blockpin signalname="IOutorDout" name="IMem_DMem" />
             <blockpin signalname="XLXN_468(7:0)" name="DOut(7:0)" />
         </block>
@@ -481,15 +484,18 @@
         </branch>
         <instance x="2464" y="1760" name="XLXI_141" orien="R0">
         </instance>
-        <branch name="XLXN_463(7:0)">
+        <branch name="DR(7:0)">
             <wire x2="2464" y1="1664" y2="1664" x1="2384" />
             <wire x2="2384" y1="1664" y2="1888" x1="2384" />
             <wire x2="2832" y1="1888" y2="1888" x1="2384" />
             <wire x2="2832" y1="1888" y2="2416" x1="2832" />
+            <wire x2="2960" y1="2416" y2="2416" x1="2832" />
             <wire x2="2832" y1="2416" y2="2416" x1="2752" />
         </branch>
-        <branch name="XLXN_466(7:0)">
+        <branch name="IR(7:0)">
             <wire x2="2928" y1="2064" y2="2064" x1="2224" />
+            <wire x2="3072" y1="2064" y2="2064" x1="2928" />
+            <wire x2="3072" y1="2064" y2="2080" x1="3072" />
             <wire x2="2928" y1="1728" y2="1728" x1="2848" />
             <wire x2="2928" y1="1728" y2="2064" x1="2928" />
         </branch>
@@ -647,5 +653,7 @@
             <wire x2="416" y1="1456" y2="1456" x1="384" />
         </branch>
         <iomarker fontsize="28" x="384" y="1456" name="row(3:0)" orien="R180" />
+        <iomarker fontsize="28" x="2960" y="2416" name="DR(7:0)" orien="R0" />
+        <iomarker fontsize="28" x="3072" y="2080" name="IR(7:0)" orien="R90" />
     </sheet>
 </drawing>

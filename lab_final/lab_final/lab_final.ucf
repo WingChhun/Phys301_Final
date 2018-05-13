@@ -47,13 +47,13 @@ NET "SWITCH_SPeed" LOC = G3;
 #Binary LED Output INstruction
 #
 #Test LEDs for IReg
-NET "A_shiftO[0]" LOC = M5;
-NET "A_shiftO[1]" LOC = M11;
+#NET "A_shiftO[0]" LOC = M5;
+#NET "A_shiftO[1]" LOC = M11;
 #NET "A_shiftO[2]" LOC = P7;
 #NET "A_shiftO[3]" LOC = P6;
 #LEDS for DReg
-NET "D_RegisterO[0]" LOC= P7;
-NET "D_RegisterO[1]" LOC= P6;
+##NET "D_RegisterO[0]" LOC= P7;
+#NET "D_RegisterO[1]" LOC= P6;
 
 #Flag switch for subtraction or addition, 
 # 0 = Addition

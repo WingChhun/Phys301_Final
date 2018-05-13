@@ -7,11 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : Registers.vhf
-<<<<<<< HEAD
--- /___/   /\     Timestamp : 05/13/2018 11:26:41
-=======
--- /___/   /\     Timestamp : 05/13/2018 12:40:40
->>>>>>> debugmode
+-- /___/   /\     Timestamp : 05/13/2018 13:45:53
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -216,9 +212,9 @@ architecture BEHAVIORAL of Eight_Register_Shift_MUSER_Registers is
              Q   : out   std_logic_vector (7 downto 0));
    end component;
    
-   attribute HU_SET of XLXI_149 : label is "XLXI_149_52";
-   attribute HU_SET of XLXI_150 : label is "XLXI_150_51";
-   attribute HU_SET of XLXI_159 : label is "XLXI_159_53";
+   attribute HU_SET of XLXI_149 : label is "XLXI_149_1";
+   attribute HU_SET of XLXI_150 : label is "XLXI_150_0";
+   attribute HU_SET of XLXI_159 : label is "XLXI_159_2";
 begin
    XLXI_149 : FD4CE_MXILINX_Registers
       port map (C=>WCLK_R1,

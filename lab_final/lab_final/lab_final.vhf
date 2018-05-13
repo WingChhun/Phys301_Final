@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : lab_final.vhf
--- /___/   /\     Timestamp : 05/13/2018 13:39:40
+-- /___/   /\     Timestamp : 05/13/2018 13:48:29
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -99,14 +99,14 @@ architecture BEHAVIORAL of MUX8_generic_MUSER_lab_final is
              O  : out   std_logic);
    end component;
    
-   attribute HU_SET of XLXI_28 : label is "XLXI_28_61";
-   attribute HU_SET of XLXI_32 : label is "XLXI_32_67";
-   attribute HU_SET of XLXI_33 : label is "XLXI_33_62";
-   attribute HU_SET of XLXI_34 : label is "XLXI_34_63";
-   attribute HU_SET of XLXI_35 : label is "XLXI_35_64";
-   attribute HU_SET of XLXI_36 : label is "XLXI_36_65";
-   attribute HU_SET of XLXI_37 : label is "XLXI_37_66";
-   attribute HU_SET of XLXI_44 : label is "XLXI_44_68";
+   attribute HU_SET of XLXI_28 : label is "XLXI_28_0";
+   attribute HU_SET of XLXI_32 : label is "XLXI_32_6";
+   attribute HU_SET of XLXI_33 : label is "XLXI_33_1";
+   attribute HU_SET of XLXI_34 : label is "XLXI_34_2";
+   attribute HU_SET of XLXI_35 : label is "XLXI_35_3";
+   attribute HU_SET of XLXI_36 : label is "XLXI_36_4";
+   attribute HU_SET of XLXI_37 : label is "XLXI_37_5";
+   attribute HU_SET of XLXI_44 : label is "XLXI_44_7";
 begin
    XLXI_28 : M2_1_MXILINX_lab_final
       port map (D0=>I_In(0),
@@ -663,7 +663,7 @@ architecture BEHAVIORAL of Register_8bit_MUSER_lab_final is
              Q   : out   std_logic_vector (7 downto 0));
    end component;
    
-   attribute HU_SET of XLXI_1 : label is "XLXI_1_69";
+   attribute HU_SET of XLXI_1 : label is "XLXI_1_8";
 begin
    XLXI_1 : FD8CE_MXILINX_lab_final
       port map (C=>R_WCLK,
@@ -1564,9 +1564,9 @@ architecture BEHAVIORAL of Eight_Register_Shift_MUSER_lab_final is
              Q   : out   std_logic_vector (7 downto 0));
    end component;
    
-   attribute HU_SET of XLXI_149 : label is "XLXI_149_71";
-   attribute HU_SET of XLXI_150 : label is "XLXI_150_70";
-   attribute HU_SET of XLXI_159 : label is "XLXI_159_72";
+   attribute HU_SET of XLXI_149 : label is "XLXI_149_10";
+   attribute HU_SET of XLXI_150 : label is "XLXI_150_9";
+   attribute HU_SET of XLXI_159 : label is "XLXI_159_11";
 begin
    XLXI_149 : FD4CE_MXILINX_lab_final
       port map (C=>WCLK_R1,
@@ -1737,15 +1737,15 @@ architecture BEHAVIORAL of MUX8Bit_MUSER_lab_final is
              O  : out   std_logic);
    end component;
    
-   attribute HU_SET of XLXI_27 : label is "XLXI_27_73";
-   attribute HU_SET of XLXI_28 : label is "XLXI_28_74";
-   attribute HU_SET of XLXI_32 : label is "XLXI_32_80";
-   attribute HU_SET of XLXI_33 : label is "XLXI_33_75";
-   attribute HU_SET of XLXI_34 : label is "XLXI_34_76";
-   attribute HU_SET of XLXI_35 : label is "XLXI_35_77";
-   attribute HU_SET of XLXI_36 : label is "XLXI_36_78";
-   attribute HU_SET of XLXI_37 : label is "XLXI_37_79";
-   attribute HU_SET of XLXI_44 : label is "XLXI_44_81";
+   attribute HU_SET of XLXI_27 : label is "XLXI_27_12";
+   attribute HU_SET of XLXI_28 : label is "XLXI_28_13";
+   attribute HU_SET of XLXI_32 : label is "XLXI_32_19";
+   attribute HU_SET of XLXI_33 : label is "XLXI_33_14";
+   attribute HU_SET of XLXI_34 : label is "XLXI_34_15";
+   attribute HU_SET of XLXI_35 : label is "XLXI_35_16";
+   attribute HU_SET of XLXI_36 : label is "XLXI_36_17";
+   attribute HU_SET of XLXI_37 : label is "XLXI_37_18";
+   attribute HU_SET of XLXI_44 : label is "XLXI_44_20";
 begin
    XLXI_27 : M2_1_MXILINX_lab_final
       port map (D0=>XLXI_27_D0_openSignal,
@@ -1833,6 +1833,8 @@ entity MemoryV2_MUSER_lab_final is
           row         : in    std_logic_vector (3 downto 0); 
           RunMode     : in    std_logic; 
           anO         : out   std_logic_vector (3 downto 0); 
+          DR          : out   std_logic_vector (7 downto 0); 
+          IR          : out   std_logic_vector (7 downto 0); 
           sseg        : out   std_logic_vector (7 downto 0); 
           colO        : inout std_logic_vector (3 downto 0));
 end MemoryV2_MUSER_lab_final;
@@ -1854,9 +1856,9 @@ architecture BEHAVIORAL of MemoryV2_MUSER_lab_final is
    signal XLXN_454                : std_logic;
    signal XLXN_456                : std_logic;
    signal XLXN_460                : std_logic;
-   signal XLXN_463                : std_logic_vector (7 downto 0);
-   signal XLXN_466                : std_logic_vector (7 downto 0);
    signal XLXN_468                : std_logic_vector (7 downto 0);
+   signal IR_DUMMY                : std_logic_vector (7 downto 0);
+   signal DR_DUMMY                : std_logic_vector (7 downto 0);
    signal XLXI_153_nCS_openSignal : std_logic;
    signal XLXI_154_nCS_openSignal : std_logic;
    component INV
@@ -1947,6 +1949,8 @@ architecture BEHAVIORAL of MemoryV2_MUSER_lab_final is
    end component;
    
 begin
+   DR(7 downto 0) <= DR_DUMMY(7 downto 0);
+   IR(7 downto 0) <= IR_DUMMY(7 downto 0);
    XLXI_95 : INV
       port map (I=>DataMode,
                 O=>AddressMode);
@@ -1965,9 +1969,9 @@ begin
                 sseg(7 downto 0)=>sseg(7 downto 0));
    
    XLXI_141 : MUX8Bit_MUSER_lab_final
-      port map (D_In(7 downto 0)=>XLXN_463(7 downto 0),
+      port map (D_In(7 downto 0)=>DR_DUMMY(7 downto 0),
                 IMem_DMem=>IOutorDout,
-                I_In(7 downto 0)=>XLXN_466(7 downto 0),
+                I_In(7 downto 0)=>IR_DUMMY(7 downto 0),
                 DOut(7 downto 0)=>XLXN_468(7 downto 0));
    
    XLXI_144 : BUF
@@ -1990,7 +1994,7 @@ begin
                 nCS=>XLXI_153_nCS_openSignal,
                 nWE=>nWE_I,
                 WCLK=>WCLK_IM,
-                Q(7 downto 0)=>XLXN_466(7 downto 0));
+                Q(7 downto 0)=>IR_DUMMY(7 downto 0));
    
    XLXI_154 : sRAM32x8_ex_pgm_data
       port map (A(4 downto 0)=>Address(4 downto 0),
@@ -1998,7 +2002,7 @@ begin
                 nCS=>XLXI_154_nCS_openSignal,
                 nWE=>nWE_D,
                 WCLK=>WCLK_DM,
-                Q(7 downto 0)=>XLXN_463(7 downto 0));
+                Q(7 downto 0)=>DR_DUMMY(7 downto 0));
    
    XLXI_155 : AND2
       port map (I0=>XLXN_454,
@@ -2152,7 +2156,7 @@ architecture BEHAVIORAL of FTCLEX_MXILINX_lab_final is
    end component;
    attribute BOX_TYPE of FDCE : component is "BLACK_BOX";
    
-   attribute HU_SET of I_36_30 : label is "I_36_30_82";
+   attribute HU_SET of I_36_30 : label is "I_36_30_21";
    attribute RLOC of I_36_35 : label is "X0Y0";
 begin
    Q <= Q_DUMMY;
@@ -2307,14 +2311,14 @@ architecture BEHAVIORAL of CB4CLED_MXILINX_lab_final is
    end component;
    attribute BOX_TYPE of OR2 : component is "BLACK_BOX";
    
-   attribute HU_SET of I_Q0 : label is "I_Q0_86";
-   attribute HU_SET of I_Q1 : label is "I_Q1_85";
-   attribute HU_SET of I_Q2 : label is "I_Q2_84";
-   attribute HU_SET of I_Q3 : label is "I_Q3_83";
-   attribute HU_SET of I_TC : label is "I_TC_89";
-   attribute HU_SET of I_T1 : label is "I_T1_90";
-   attribute HU_SET of I_T2 : label is "I_T2_87";
-   attribute HU_SET of I_T3 : label is "I_T3_88";
+   attribute HU_SET of I_Q0 : label is "I_Q0_25";
+   attribute HU_SET of I_Q1 : label is "I_Q1_24";
+   attribute HU_SET of I_Q2 : label is "I_Q2_23";
+   attribute HU_SET of I_Q3 : label is "I_Q3_22";
+   attribute HU_SET of I_TC : label is "I_TC_28";
+   attribute HU_SET of I_T1 : label is "I_T1_29";
+   attribute HU_SET of I_T2 : label is "I_T2_26";
+   attribute HU_SET of I_T3 : label is "I_T3_27";
 begin
    Q0 <= Q0_DUMMY;
    Q1 <= Q1_DUMMY;
@@ -2609,22 +2613,22 @@ architecture BEHAVIORAL of CB8CLED_MXILINX_lab_final is
    end component;
    attribute BOX_TYPE of OR2 : component is "BLACK_BOX";
    
-   attribute HU_SET of I_Q0 : label is "I_Q0_98";
-   attribute HU_SET of I_Q1 : label is "I_Q1_97";
-   attribute HU_SET of I_Q2 : label is "I_Q2_96";
-   attribute HU_SET of I_Q3 : label is "I_Q3_95";
-   attribute HU_SET of I_Q4 : label is "I_Q4_94";
-   attribute HU_SET of I_Q5 : label is "I_Q5_93";
-   attribute HU_SET of I_Q6 : label is "I_Q6_92";
-   attribute HU_SET of I_Q7 : label is "I_Q7_91";
-   attribute HU_SET of I_TC : label is "I_TC_103";
-   attribute HU_SET of I_T1 : label is "I_T1_106";
-   attribute HU_SET of I_T2 : label is "I_T2_99";
-   attribute HU_SET of I_T3 : label is "I_T3_100";
-   attribute HU_SET of I_T4 : label is "I_T4_105";
-   attribute HU_SET of I_T5 : label is "I_T5_104";
-   attribute HU_SET of I_T6 : label is "I_T6_101";
-   attribute HU_SET of I_T7 : label is "I_T7_102";
+   attribute HU_SET of I_Q0 : label is "I_Q0_37";
+   attribute HU_SET of I_Q1 : label is "I_Q1_36";
+   attribute HU_SET of I_Q2 : label is "I_Q2_35";
+   attribute HU_SET of I_Q3 : label is "I_Q3_34";
+   attribute HU_SET of I_Q4 : label is "I_Q4_33";
+   attribute HU_SET of I_Q5 : label is "I_Q5_32";
+   attribute HU_SET of I_Q6 : label is "I_Q6_31";
+   attribute HU_SET of I_Q7 : label is "I_Q7_30";
+   attribute HU_SET of I_TC : label is "I_TC_42";
+   attribute HU_SET of I_T1 : label is "I_T1_45";
+   attribute HU_SET of I_T2 : label is "I_T2_38";
+   attribute HU_SET of I_T3 : label is "I_T3_39";
+   attribute HU_SET of I_T4 : label is "I_T4_44";
+   attribute HU_SET of I_T5 : label is "I_T5_43";
+   attribute HU_SET of I_T6 : label is "I_T6_40";
+   attribute HU_SET of I_T7 : label is "I_T7_41";
 begin
    Q(7 downto 0) <= Q_DUMMY(7 downto 0);
    TC <= TC_DUMMY;
@@ -2967,8 +2971,8 @@ architecture BEHAVIORAL of P_Counter_MUSER_lab_final is
    end component;
    attribute BOX_TYPE of AND2B1 : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_1 : label is "XLXI_1_107";
-   attribute HU_SET of XLXI_6 : label is "XLXI_6_108";
+   attribute HU_SET of XLXI_1 : label is "XLXI_1_46";
+   attribute HU_SET of XLXI_6 : label is "XLXI_6_47";
 begin
    Q(7 downto 0) <= Q_DUMMY(7 downto 0);
    XLXI_1 : CB8CLED_MXILINX_lab_final
@@ -3083,9 +3087,7 @@ entity lab_final is
           SWITCH_SPeed         : in    std_logic; 
           Toggle_Output        : in    std_logic; 
           anO                  : out   std_logic_vector (3 downto 0); 
-          A_shiftO             : out   std_logic_vector (7 downto 0); 
           CLK_1                : out   std_logic; 
-          D_RegisterO          : out   std_logic_vector (7 downto 0); 
           EnableDataLED        : out   std_logic; 
           EnableInstructionLED : out   std_logic; 
           NEG                  : out   std_logic; 
@@ -3110,9 +3112,9 @@ architecture BEHAVIORAL of lab_final is
    signal XLXN_115                : std_logic;
    signal XLXN_132                : std_logic;
    signal XLXN_133                : std_logic;
-   signal A_shiftO_DUMMY          : std_logic_vector (7 downto 0);
+   signal XLXN_141                : std_logic_vector (7 downto 0);
+   signal XLXN_142                : std_logic_vector (7 downto 0);
    signal CLK_1_DUMMY             : std_logic;
-   signal D_RegisterO_DUMMY       : std_logic_vector (7 downto 0);
    signal XLXI_60_RegC_openSignal : std_logic_vector (7 downto 0);
    signal XLXI_60_RegS_openSignal : std_logic_vector (7 downto 0);
    component AND2
@@ -3193,7 +3195,9 @@ architecture BEHAVIORAL of lab_final is
              row         : in    std_logic_vector (3 downto 0); 
              colO        : inout std_logic_vector (3 downto 0); 
              sseg        : out   std_logic_vector (7 downto 0); 
-             anO         : out   std_logic_vector (3 downto 0));
+             anO         : out   std_logic_vector (3 downto 0); 
+             DR          : out   std_logic_vector (7 downto 0); 
+             IR          : out   std_logic_vector (7 downto 0));
    end component;
    
    component ProgramGround_MUSER_lab_final
@@ -3208,11 +3212,9 @@ architecture BEHAVIORAL of lab_final is
              Neg  : out   std_logic);
    end component;
    
-   attribute HU_SET of XLXI_44 : label is "XLXI_44_109";
+   attribute HU_SET of XLXI_44 : label is "XLXI_44_48";
 begin
-   A_shiftO(7 downto 0) <= A_shiftO_DUMMY(7 downto 0);
    CLK_1 <= CLK_1_DUMMY;
-   D_RegisterO(7 downto 0) <= D_RegisterO_DUMMY(7 downto 0);
    XLXI_34 : AND2
       port map (I0=>RunMode,
                 I1=>RunMode,
@@ -3289,12 +3291,14 @@ begin
                 row(3 downto 0)=>row(3 downto 0),
                 RunMode=>RunMode,
                 anO(3 downto 0)=>anO(3 downto 0),
+                DR(7 downto 0)=>XLXN_141(7 downto 0),
+                IR(7 downto 0)=>XLXN_142(7 downto 0),
                 sseg(7 downto 0)=>sseg(7 downto 0),
                 colO(3 downto 0)=>colO(3 downto 0));
    
    XLXI_61 : ProgramGround_MUSER_lab_final
-      port map (DR(7 downto 0)=>D_RegisterO_DUMMY(7 downto 0),
-                IR(7 downto 0)=>A_shiftO_DUMMY(7 downto 0),
+      port map (DR(7 downto 0)=>XLXN_141(7 downto 0),
+                IR(7 downto 0)=>XLXN_142(7 downto 0),
                 tick(2 downto 0)=>ticks(2 downto 0),
                 HLT=>HLT,
                 Neg=>NEG,

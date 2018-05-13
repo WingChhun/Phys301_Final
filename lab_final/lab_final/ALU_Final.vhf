@@ -7,11 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : ALU_Final.vhf
-<<<<<<< HEAD
--- /___/   /\     Timestamp : 05/13/2018 11:26:48
-=======
--- /___/   /\     Timestamp : 05/13/2018 12:40:50
->>>>>>> debugmode
+-- /___/   /\     Timestamp : 05/13/2018 13:45:58
 -- \   \  /  \ 
 --  \___\/\___\ 
 --

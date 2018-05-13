@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : MemoryV2.vhf
--- /___/   /\     Timestamp : 05/13/2018 13:39:34
+-- /___/   /\     Timestamp : 05/13/2018 13:48:35
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -531,9 +531,9 @@ architecture BEHAVIORAL of Eight_Register_Shift_MUSER_MemoryV2 is
              Q   : out   std_logic_vector (7 downto 0));
    end component;
    
-   attribute HU_SET of XLXI_149 : label is "XLXI_149_1";
-   attribute HU_SET of XLXI_150 : label is "XLXI_150_0";
-   attribute HU_SET of XLXI_159 : label is "XLXI_159_2";
+   attribute HU_SET of XLXI_149 : label is "XLXI_149_59";
+   attribute HU_SET of XLXI_150 : label is "XLXI_150_58";
+   attribute HU_SET of XLXI_159 : label is "XLXI_159_60";
 begin
    XLXI_149 : FD4CE_MXILINX_MemoryV2
       port map (C=>WCLK_R1,
@@ -762,15 +762,15 @@ architecture BEHAVIORAL of MUX8Bit_MUSER_MemoryV2 is
              O  : out   std_logic);
    end component;
    
-   attribute HU_SET of XLXI_27 : label is "XLXI_27_3";
-   attribute HU_SET of XLXI_28 : label is "XLXI_28_4";
-   attribute HU_SET of XLXI_32 : label is "XLXI_32_10";
-   attribute HU_SET of XLXI_33 : label is "XLXI_33_5";
-   attribute HU_SET of XLXI_34 : label is "XLXI_34_6";
-   attribute HU_SET of XLXI_35 : label is "XLXI_35_7";
-   attribute HU_SET of XLXI_36 : label is "XLXI_36_8";
-   attribute HU_SET of XLXI_37 : label is "XLXI_37_9";
-   attribute HU_SET of XLXI_44 : label is "XLXI_44_11";
+   attribute HU_SET of XLXI_27 : label is "XLXI_27_61";
+   attribute HU_SET of XLXI_28 : label is "XLXI_28_62";
+   attribute HU_SET of XLXI_32 : label is "XLXI_32_68";
+   attribute HU_SET of XLXI_33 : label is "XLXI_33_63";
+   attribute HU_SET of XLXI_34 : label is "XLXI_34_64";
+   attribute HU_SET of XLXI_35 : label is "XLXI_35_65";
+   attribute HU_SET of XLXI_36 : label is "XLXI_36_66";
+   attribute HU_SET of XLXI_37 : label is "XLXI_37_67";
+   attribute HU_SET of XLXI_44 : label is "XLXI_44_69";
 begin
    XLXI_27 : M2_1_MXILINX_MemoryV2
       port map (D0=>XLXI_27_D0_openSignal,
@@ -858,6 +858,8 @@ entity MemoryV2 is
           row         : in    std_logic_vector (3 downto 0); 
           RunMode     : in    std_logic; 
           anO         : out   std_logic_vector (3 downto 0); 
+          DR          : out   std_logic_vector (7 downto 0); 
+          IR          : out   std_logic_vector (7 downto 0); 
           sseg        : out   std_logic_vector (7 downto 0); 
           colO        : inout std_logic_vector (3 downto 0));
 end MemoryV2;
@@ -879,9 +881,9 @@ architecture BEHAVIORAL of MemoryV2 is
    signal XLXN_454                : std_logic;
    signal XLXN_456                : std_logic;
    signal XLXN_460                : std_logic;
-   signal XLXN_463                : std_logic_vector (7 downto 0);
-   signal XLXN_466                : std_logic_vector (7 downto 0);
    signal XLXN_468                : std_logic_vector (7 downto 0);
+   signal IR_DUMMY                : std_logic_vector (7 downto 0);
+   signal DR_DUMMY                : std_logic_vector (7 downto 0);
    signal XLXI_153_nCS_openSignal : std_logic;
    signal XLXI_154_nCS_openSignal : std_logic;
    component INV
@@ -972,6 +974,8 @@ architecture BEHAVIORAL of MemoryV2 is
    end component;
    
 begin
+   DR(7 downto 0) <= DR_DUMMY(7 downto 0);
+   IR(7 downto 0) <= IR_DUMMY(7 downto 0);
    XLXI_95 : INV
       port map (I=>DataMode,
                 O=>AddressMode);
@@ -990,9 +994,9 @@ begin
                 sseg(7 downto 0)=>sseg(7 downto 0));
    
    XLXI_141 : MUX8Bit_MUSER_MemoryV2
-      port map (D_In(7 downto 0)=>XLXN_463(7 downto 0),
+      port map (D_In(7 downto 0)=>DR_DUMMY(7 downto 0),
                 IMem_DMem=>IOutorDout,
-                I_In(7 downto 0)=>XLXN_466(7 downto 0),
+                I_In(7 downto 0)=>IR_DUMMY(7 downto 0),
                 DOut(7 downto 0)=>XLXN_468(7 downto 0));
    
    XLXI_144 : BUF
@@ -1015,7 +1019,7 @@ begin
                 nCS=>XLXI_153_nCS_openSignal,
                 nWE=>nWE_I,
                 WCLK=>WCLK_IM,
-                Q(7 downto 0)=>XLXN_466(7 downto 0));
+                Q(7 downto 0)=>IR_DUMMY(7 downto 0));
    
    XLXI_154 : sRAM32x8_ex_pgm_data
       port map (A(4 downto 0)=>Address(4 downto 0),
@@ -1023,7 +1027,7 @@ begin
                 nCS=>XLXI_154_nCS_openSignal,
                 nWE=>nWE_D,
                 WCLK=>WCLK_DM,
-                Q(7 downto 0)=>XLXN_463(7 downto 0));
+                Q(7 downto 0)=>DR_DUMMY(7 downto 0));
    
    XLXI_155 : AND2
       port map (I0=>XLXN_454,
