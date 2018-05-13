@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : MemoryV2.vhf
--- /___/   /\     Timestamp : 05/13/2018 15:36:10
+-- /___/   /\     Timestamp : 05/13/2018 15:48:54
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -102,15 +102,15 @@ architecture BEHAVIORAL of MUX8_generic_MUSER_MemoryV2 is
              O  : out   std_logic);
    end component;
    
-   attribute HU_SET of XLXI_27 : label is "XLXI_27_0";
-   attribute HU_SET of XLXI_28 : label is "XLXI_28_1";
-   attribute HU_SET of XLXI_32 : label is "XLXI_32_7";
-   attribute HU_SET of XLXI_33 : label is "XLXI_33_2";
-   attribute HU_SET of XLXI_34 : label is "XLXI_34_3";
-   attribute HU_SET of XLXI_35 : label is "XLXI_35_4";
-   attribute HU_SET of XLXI_36 : label is "XLXI_36_5";
-   attribute HU_SET of XLXI_37 : label is "XLXI_37_6";
-   attribute HU_SET of XLXI_44 : label is "XLXI_44_8";
+   attribute HU_SET of XLXI_27 : label is "XLXI_27_186";
+   attribute HU_SET of XLXI_28 : label is "XLXI_28_187";
+   attribute HU_SET of XLXI_32 : label is "XLXI_32_193";
+   attribute HU_SET of XLXI_33 : label is "XLXI_33_188";
+   attribute HU_SET of XLXI_34 : label is "XLXI_34_189";
+   attribute HU_SET of XLXI_35 : label is "XLXI_35_190";
+   attribute HU_SET of XLXI_36 : label is "XLXI_36_191";
+   attribute HU_SET of XLXI_37 : label is "XLXI_37_192";
+   attribute HU_SET of XLXI_44 : label is "XLXI_44_194";
 begin
    XLXI_27 : M2_1_MXILINX_MemoryV2
       port map (D0=>XLXI_27_D0_openSignal,
@@ -363,9 +363,9 @@ architecture BEHAVIORAL of Eight_Register_Shift_MUSER_MemoryV2 is
              Q   : out   std_logic_vector (7 downto 0));
    end component;
    
-   attribute HU_SET of XLXI_149 : label is "XLXI_149_10";
-   attribute HU_SET of XLXI_150 : label is "XLXI_150_9";
-   attribute HU_SET of XLXI_159 : label is "XLXI_159_11";
+   attribute HU_SET of XLXI_149 : label is "XLXI_149_196";
+   attribute HU_SET of XLXI_150 : label is "XLXI_150_195";
+   attribute HU_SET of XLXI_159 : label is "XLXI_159_197";
 begin
    XLXI_149 : FD4CE_MXILINX_MemoryV2
       port map (C=>WCLK_R1,
@@ -855,15 +855,15 @@ architecture BEHAVIORAL of MUX8Bit_MUSER_MemoryV2 is
              O  : out   std_logic);
    end component;
    
-   attribute HU_SET of XLXI_27 : label is "XLXI_27_12";
-   attribute HU_SET of XLXI_28 : label is "XLXI_28_13";
-   attribute HU_SET of XLXI_32 : label is "XLXI_32_19";
-   attribute HU_SET of XLXI_33 : label is "XLXI_33_14";
-   attribute HU_SET of XLXI_34 : label is "XLXI_34_15";
-   attribute HU_SET of XLXI_35 : label is "XLXI_35_16";
-   attribute HU_SET of XLXI_36 : label is "XLXI_36_17";
-   attribute HU_SET of XLXI_37 : label is "XLXI_37_18";
-   attribute HU_SET of XLXI_44 : label is "XLXI_44_20";
+   attribute HU_SET of XLXI_27 : label is "XLXI_27_198";
+   attribute HU_SET of XLXI_28 : label is "XLXI_28_199";
+   attribute HU_SET of XLXI_32 : label is "XLXI_32_205";
+   attribute HU_SET of XLXI_33 : label is "XLXI_33_200";
+   attribute HU_SET of XLXI_34 : label is "XLXI_34_201";
+   attribute HU_SET of XLXI_35 : label is "XLXI_35_202";
+   attribute HU_SET of XLXI_36 : label is "XLXI_36_203";
+   attribute HU_SET of XLXI_37 : label is "XLXI_37_204";
+   attribute HU_SET of XLXI_44 : label is "XLXI_44_206";
 begin
    XLXI_27 : M2_1_MXILINX_MemoryV2
       port map (D0=>XLXI_27_D0_openSignal,

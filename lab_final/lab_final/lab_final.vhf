@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : lab_final.vhf
--- /___/   /\     Timestamp : 05/13/2018 15:36:12
+-- /___/   /\     Timestamp : 05/13/2018 16:12:05
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -102,15 +102,15 @@ architecture BEHAVIORAL of MUX8_generic_MUSER_lab_final is
              O  : out   std_logic);
    end component;
    
-   attribute HU_SET of XLXI_27 : label is "XLXI_27_21";
-   attribute HU_SET of XLXI_28 : label is "XLXI_28_22";
-   attribute HU_SET of XLXI_32 : label is "XLXI_32_28";
-   attribute HU_SET of XLXI_33 : label is "XLXI_33_23";
-   attribute HU_SET of XLXI_34 : label is "XLXI_34_24";
-   attribute HU_SET of XLXI_35 : label is "XLXI_35_25";
-   attribute HU_SET of XLXI_36 : label is "XLXI_36_26";
-   attribute HU_SET of XLXI_37 : label is "XLXI_37_27";
-   attribute HU_SET of XLXI_44 : label is "XLXI_44_29";
+   attribute HU_SET of XLXI_27 : label is "XLXI_27_77";
+   attribute HU_SET of XLXI_28 : label is "XLXI_28_78";
+   attribute HU_SET of XLXI_32 : label is "XLXI_32_84";
+   attribute HU_SET of XLXI_33 : label is "XLXI_33_79";
+   attribute HU_SET of XLXI_34 : label is "XLXI_34_80";
+   attribute HU_SET of XLXI_35 : label is "XLXI_35_81";
+   attribute HU_SET of XLXI_36 : label is "XLXI_36_82";
+   attribute HU_SET of XLXI_37 : label is "XLXI_37_83";
+   attribute HU_SET of XLXI_44 : label is "XLXI_44_85";
 begin
    XLXI_27 : M2_1_MXILINX_lab_final
       port map (D0=>XLXI_27_D0_openSignal,
@@ -673,7 +673,7 @@ architecture BEHAVIORAL of Register_8bit_MUSER_lab_final is
              Q   : out   std_logic_vector (7 downto 0));
    end component;
    
-   attribute HU_SET of XLXI_1 : label is "XLXI_1_30";
+   attribute HU_SET of XLXI_1 : label is "XLXI_1_86";
 begin
    XLXI_1 : FD8CE_MXILINX_lab_final
       port map (C=>R_WCLK,
@@ -1255,9 +1255,9 @@ architecture BEHAVIORAL of Eight_Register_Shift_MUSER_lab_final is
              Q   : out   std_logic_vector (7 downto 0));
    end component;
    
-   attribute HU_SET of XLXI_149 : label is "XLXI_149_32";
-   attribute HU_SET of XLXI_150 : label is "XLXI_150_31";
-   attribute HU_SET of XLXI_159 : label is "XLXI_159_33";
+   attribute HU_SET of XLXI_149 : label is "XLXI_149_88";
+   attribute HU_SET of XLXI_150 : label is "XLXI_150_87";
+   attribute HU_SET of XLXI_159 : label is "XLXI_159_89";
 begin
    XLXI_149 : FD4CE_MXILINX_lab_final
       port map (C=>WCLK_R1,
@@ -1747,15 +1747,15 @@ architecture BEHAVIORAL of MUX8Bit_MUSER_lab_final is
              O  : out   std_logic);
    end component;
    
-   attribute HU_SET of XLXI_27 : label is "XLXI_27_34";
-   attribute HU_SET of XLXI_28 : label is "XLXI_28_35";
-   attribute HU_SET of XLXI_32 : label is "XLXI_32_41";
-   attribute HU_SET of XLXI_33 : label is "XLXI_33_36";
-   attribute HU_SET of XLXI_34 : label is "XLXI_34_37";
-   attribute HU_SET of XLXI_35 : label is "XLXI_35_38";
-   attribute HU_SET of XLXI_36 : label is "XLXI_36_39";
-   attribute HU_SET of XLXI_37 : label is "XLXI_37_40";
-   attribute HU_SET of XLXI_44 : label is "XLXI_44_42";
+   attribute HU_SET of XLXI_27 : label is "XLXI_27_90";
+   attribute HU_SET of XLXI_28 : label is "XLXI_28_91";
+   attribute HU_SET of XLXI_32 : label is "XLXI_32_97";
+   attribute HU_SET of XLXI_33 : label is "XLXI_33_92";
+   attribute HU_SET of XLXI_34 : label is "XLXI_34_93";
+   attribute HU_SET of XLXI_35 : label is "XLXI_35_94";
+   attribute HU_SET of XLXI_36 : label is "XLXI_36_95";
+   attribute HU_SET of XLXI_37 : label is "XLXI_37_96";
+   attribute HU_SET of XLXI_44 : label is "XLXI_44_98";
 begin
    XLXI_27 : M2_1_MXILINX_lab_final
       port map (D0=>XLXI_27_D0_openSignal,
@@ -2187,7 +2187,7 @@ architecture BEHAVIORAL of FTCLEX_MXILINX_lab_final is
    end component;
    attribute BOX_TYPE of FDCE : component is "BLACK_BOX";
    
-   attribute HU_SET of I_36_30 : label is "I_36_30_43";
+   attribute HU_SET of I_36_30 : label is "I_36_30_99";
    attribute RLOC of I_36_35 : label is "X0Y0";
 begin
    Q <= Q_DUMMY;
@@ -2342,14 +2342,14 @@ architecture BEHAVIORAL of CB4CLED_MXILINX_lab_final is
    end component;
    attribute BOX_TYPE of OR2 : component is "BLACK_BOX";
    
-   attribute HU_SET of I_Q0 : label is "I_Q0_47";
-   attribute HU_SET of I_Q1 : label is "I_Q1_46";
-   attribute HU_SET of I_Q2 : label is "I_Q2_45";
-   attribute HU_SET of I_Q3 : label is "I_Q3_44";
-   attribute HU_SET of I_TC : label is "I_TC_50";
-   attribute HU_SET of I_T1 : label is "I_T1_51";
-   attribute HU_SET of I_T2 : label is "I_T2_48";
-   attribute HU_SET of I_T3 : label is "I_T3_49";
+   attribute HU_SET of I_Q0 : label is "I_Q0_103";
+   attribute HU_SET of I_Q1 : label is "I_Q1_102";
+   attribute HU_SET of I_Q2 : label is "I_Q2_101";
+   attribute HU_SET of I_Q3 : label is "I_Q3_100";
+   attribute HU_SET of I_TC : label is "I_TC_106";
+   attribute HU_SET of I_T1 : label is "I_T1_107";
+   attribute HU_SET of I_T2 : label is "I_T2_104";
+   attribute HU_SET of I_T3 : label is "I_T3_105";
 begin
    Q0 <= Q0_DUMMY;
    Q1 <= Q1_DUMMY;
@@ -2644,22 +2644,22 @@ architecture BEHAVIORAL of CB8CLED_MXILINX_lab_final is
    end component;
    attribute BOX_TYPE of OR2 : component is "BLACK_BOX";
    
-   attribute HU_SET of I_Q0 : label is "I_Q0_59";
-   attribute HU_SET of I_Q1 : label is "I_Q1_58";
-   attribute HU_SET of I_Q2 : label is "I_Q2_57";
-   attribute HU_SET of I_Q3 : label is "I_Q3_56";
-   attribute HU_SET of I_Q4 : label is "I_Q4_55";
-   attribute HU_SET of I_Q5 : label is "I_Q5_54";
-   attribute HU_SET of I_Q6 : label is "I_Q6_53";
-   attribute HU_SET of I_Q7 : label is "I_Q7_52";
-   attribute HU_SET of I_TC : label is "I_TC_64";
-   attribute HU_SET of I_T1 : label is "I_T1_67";
-   attribute HU_SET of I_T2 : label is "I_T2_60";
-   attribute HU_SET of I_T3 : label is "I_T3_61";
-   attribute HU_SET of I_T4 : label is "I_T4_66";
-   attribute HU_SET of I_T5 : label is "I_T5_65";
-   attribute HU_SET of I_T6 : label is "I_T6_62";
-   attribute HU_SET of I_T7 : label is "I_T7_63";
+   attribute HU_SET of I_Q0 : label is "I_Q0_115";
+   attribute HU_SET of I_Q1 : label is "I_Q1_114";
+   attribute HU_SET of I_Q2 : label is "I_Q2_113";
+   attribute HU_SET of I_Q3 : label is "I_Q3_112";
+   attribute HU_SET of I_Q4 : label is "I_Q4_111";
+   attribute HU_SET of I_Q5 : label is "I_Q5_110";
+   attribute HU_SET of I_Q6 : label is "I_Q6_109";
+   attribute HU_SET of I_Q7 : label is "I_Q7_108";
+   attribute HU_SET of I_TC : label is "I_TC_120";
+   attribute HU_SET of I_T1 : label is "I_T1_123";
+   attribute HU_SET of I_T2 : label is "I_T2_116";
+   attribute HU_SET of I_T3 : label is "I_T3_117";
+   attribute HU_SET of I_T4 : label is "I_T4_122";
+   attribute HU_SET of I_T5 : label is "I_T5_121";
+   attribute HU_SET of I_T6 : label is "I_T6_118";
+   attribute HU_SET of I_T7 : label is "I_T7_119";
 begin
    Q(7 downto 0) <= Q_DUMMY(7 downto 0);
    TC <= TC_DUMMY;
@@ -2895,33 +2895,35 @@ library UNISIM;
 use UNISIM.Vcomponents.ALL;
 
 entity P_Counter_MUSER_lab_final is
-   port ( CLK_Speed : in    std_logic; 
-          C_Tick    : in    std_logic; 
-          HLT       : in    std_logic; 
-          Reset     : in    std_logic; 
-          RunMode   : in    std_logic; 
-          Step      : in    std_logic; 
-          Q         : out   std_logic_vector (7 downto 0); 
-          tick1     : out   std_logic; 
-          tick2     : out   std_logic; 
-          tick3     : out   std_logic);
+   port ( CLK_Speed         : in    std_logic; 
+          C_Tick            : in    std_logic; 
+          EN_SingleStepMode : in    std_logic; 
+          HLT               : in    std_logic; 
+          Reset             : in    std_logic; 
+          RunMode           : in    std_logic; 
+          Step              : in    std_logic; 
+          Q                 : out   std_logic_vector (7 downto 0); 
+          tick1             : out   std_logic; 
+          tick2             : out   std_logic; 
+          tick3             : out   std_logic);
 end P_Counter_MUSER_lab_final;
 
 architecture BEHAVIORAL of P_Counter_MUSER_lab_final is
    attribute HU_SET     : string ;
    attribute BOX_TYPE   : string ;
+   signal nSingle_CLK_SPeed    : std_logic;
+   signal on4                  : std_logic;
    signal on32                 : std_logic;
    signal Q0                   : std_logic;
    signal Q1                   : std_logic;
    signal Q2                   : std_logic;
    signal Q3                   : std_logic;
    signal Run                  : std_logic;
-   signal UP_Tick              : std_logic;
+   signal Single_CLK_Speed     : std_logic;
    signal XLXN_3               : std_logic;
    signal XLXN_4               : std_logic;
    signal XLXN_17              : std_logic;
    signal XLXN_18              : std_logic;
-   signal XLXN_21              : std_logic;
    signal XLXN_25              : std_logic;
    signal XLXN_28              : std_logic;
    signal Q_DUMMY              : std_logic_vector (7 downto 0);
@@ -3004,15 +3006,23 @@ architecture BEHAVIORAL of P_Counter_MUSER_lab_final is
    end component;
    attribute BOX_TYPE of AND2B1 : component is "BLACK_BOX";
    
-   component AND2
+   component XOR2
       port ( I0 : in    std_logic; 
              I1 : in    std_logic; 
              O  : out   std_logic);
    end component;
-   attribute BOX_TYPE of AND2 : component is "BLACK_BOX";
+   attribute BOX_TYPE of XOR2 : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_1 : label is "XLXI_1_68";
-   attribute HU_SET of XLXI_6 : label is "XLXI_6_69";
+   component AND3
+      port ( I0 : in    std_logic; 
+             I1 : in    std_logic; 
+             I2 : in    std_logic; 
+             O  : out   std_logic);
+   end component;
+   attribute BOX_TYPE of AND3 : component is "BLACK_BOX";
+   
+   attribute HU_SET of XLXI_1 : label is "XLXI_1_124";
+   attribute HU_SET of XLXI_6 : label is "XLXI_6_125";
 begin
    Q(7 downto 0) <= Q_DUMMY(7 downto 0);
    XLXI_1 : CB8CLED_MXILINX_lab_final
@@ -3058,10 +3068,10 @@ begin
       port map (I0=>Q1,
                 I1=>Q0,
                 I2=>Q2,
-                O=>XLXN_21);
+                O=>on4);
    
    XLXI_10 : OR2
-      port map (I0=>XLXN_21,
+      port map (I0=>on4,
                 I1=>Step,
                 O=>XLXN_18);
    
@@ -3085,7 +3095,7 @@ begin
    
    XLXI_16 : OR3
       port map (I0=>Reset,
-                I1=>XLXN_21,
+                I1=>on4,
                 I2=>Step,
                 O=>XLXN_25);
    
@@ -3094,15 +3104,22 @@ begin
                 I1=>RunMode,
                 O=>Run);
    
-   XLXI_18 : OR2
-      port map (I0=>UP_Tick,
-                I1=>CLK_Speed,
+   XLXI_22 : XOR2
+      port map (I0=>Single_CLK_Speed,
+                I1=>nSingle_CLK_SPeed,
                 O=>XLXN_28);
    
-   XLXI_20 : AND2
-      port map (I0=>RunMode,
-                I1=>C_Tick,
-                O=>UP_Tick);
+   XLXI_25 : AND3B1
+      port map (I0=>EN_SingleStepMode,
+                I1=>RunMode,
+                I2=>CLK_Speed,
+                O=>nSingle_CLK_SPeed);
+   
+   XLXI_27 : AND3
+      port map (I0=>EN_SingleStepMode,
+                I1=>RunMode,
+                I2=>C_Tick,
+                O=>Single_CLK_Speed);
    
 end BEHAVIORAL;
 
@@ -3145,24 +3162,21 @@ end lab_final;
 architecture BEHAVIORAL of lab_final is
    attribute BOX_TYPE   : string ;
    attribute HU_SET     : string ;
-   signal Count                   : std_logic_vector (7 downto 0);
-   signal DebugMode               : std_logic;
-   signal HLT                     : std_logic;
-   signal RegC                    : std_logic_vector (7 downto 0);
-   signal RegS                    : std_logic_vector (7 downto 0);
-   signal RST                     : std_logic;
-   signal ticks                   : std_logic_vector (2 downto 0);
-   signal XLXN_34                 : std_logic;
-   signal XLXN_35                 : std_logic;
-   signal XLXN_115                : std_logic;
-   signal XLXN_132                : std_logic;
-   signal XLXN_133                : std_logic;
-   signal XLXN_141                : std_logic_vector (7 downto 0);
-   signal XLXN_142                : std_logic_vector (7 downto 0);
-   signal CLK_1_DUMMY             : std_logic;
-   signal XLXI_53_HLT_openSignal  : std_logic;
-   signal XLXI_60_RegC_openSignal : std_logic_vector (7 downto 0);
-   signal XLXI_60_RegS_openSignal : std_logic_vector (7 downto 0);
+   signal Count                 : std_logic_vector (7 downto 0);
+   signal DebugMode             : std_logic;
+   signal HLT                   : std_logic;
+   signal RegC                  : std_logic_vector (7 downto 0);
+   signal RegS                  : std_logic_vector (7 downto 0);
+   signal RST                   : std_logic;
+   signal ticks                 : std_logic_vector (2 downto 0);
+   signal XLXN_34               : std_logic;
+   signal XLXN_35               : std_logic;
+   signal XLXN_115              : std_logic;
+   signal XLXN_141              : std_logic_vector (7 downto 0);
+   signal XLXN_142              : std_logic_vector (7 downto 0);
+   signal XLXN_164              : std_logic;
+   signal CLK_1_DUMMY           : std_logic;
+   signal XLXI_57_I0_openSignal : std_logic;
    component AND2
       port ( I0 : in    std_logic; 
              I1 : in    std_logic; 
@@ -3194,16 +3208,17 @@ architecture BEHAVIORAL of lab_final is
    end component;
    
    component P_Counter_MUSER_lab_final
-      port ( CLK_Speed : in    std_logic; 
-             Step      : in    std_logic; 
-             Reset     : in    std_logic; 
-             HLT       : in    std_logic; 
-             RunMode   : in    std_logic; 
-             Q         : out   std_logic_vector (7 downto 0); 
-             tick1     : out   std_logic; 
-             tick2     : out   std_logic; 
-             tick3     : out   std_logic; 
-             C_Tick    : in    std_logic);
+      port ( CLK_Speed         : in    std_logic; 
+             Step              : in    std_logic; 
+             Reset             : in    std_logic; 
+             HLT               : in    std_logic; 
+             RunMode           : in    std_logic; 
+             C_Tick            : in    std_logic; 
+             Q                 : out   std_logic_vector (7 downto 0); 
+             tick1             : out   std_logic; 
+             tick2             : out   std_logic; 
+             tick3             : out   std_logic; 
+             EN_SingleStepMode : in    std_logic);
    end component;
    
    component GND
@@ -3259,7 +3274,7 @@ architecture BEHAVIORAL of lab_final is
              Neg  : out   std_logic);
    end component;
    
-   attribute HU_SET of XLXI_44 : label is "XLXI_44_70";
+   attribute HU_SET of XLXI_44 : label is "XLXI_44_126";
 begin
    CLK_1 <= CLK_1_DUMMY;
    XLXI_34 : AND2
@@ -3299,8 +3314,9 @@ begin
    XLXI_53 : P_Counter_MUSER_lab_final
       port map (CLK_Speed=>CLK_1_DUMMY,
                 C_Tick=>C_WriteOne,
-                HLT=>XLXI_53_HLT_openSignal,
-                Reset=>XLXN_133,
+                EN_SingleStepMode=>EN_I_Memory,
+                HLT=>HLT,
+                Reset=>XLXN_164,
                 RunMode=>RunMode,
                 Step=>btn_Memory,
                 Q(7 downto 0)=>Count(7 downto 0),
@@ -3312,10 +3328,10 @@ begin
       port map (G=>XLXN_115);
    
    XLXI_57 : OR3
-      port map (I0=>XLXN_132,
+      port map (I0=>XLXI_57_I0_openSignal,
                 I1=>RST,
                 I2=>btn_CLR,
-                O=>XLXN_133);
+                O=>XLXN_164);
    
    XLXI_60 : MemoryV2_MUSER_lab_final
       port map (AorD=>AorD,
@@ -3334,8 +3350,8 @@ begin
                 EN_I_Memory=>EN_I_Memory,
                 IOutorDout=>Toggle_Output,
                 IrorDR=>IRorDR,
-                RegC(7 downto 0)=>XLXI_60_RegC_openSignal(7 downto 0),
-                RegS(7 downto 0)=>XLXI_60_RegS_openSignal(7 downto 0),
+                RegC(7 downto 0)=>RegC(7 downto 0),
+                RegS(7 downto 0)=>RegS(7 downto 0),
                 row(3 downto 0)=>row(3 downto 0),
                 RunMode=>RunMode,
                 anO(3 downto 0)=>anO(3 downto 0),
