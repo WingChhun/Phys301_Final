@@ -145,3 +145,23 @@ WARNING:NetListWriters:306 - Signal bus
 Writing EDIF netlist file lab_final.edif ...
 ngc2edif: Total memory usage is 117576 kilobytes
 
+Release 14.7 - ngc2edif P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design test_FullAdder.ngc ...
+WARNING:NetListWriters:298 - No output is written to test_FullAdder.xncf,
+   ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   XLXI_142/XLXI_28/Mcompar_cnt10k_cmp_ge0000_lut<10 : 1> on block
+   test_FullAdder is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   XLXI_158/XLXI_41/Mcompar_cnt10k_cmp_ge0000_lut<10 : 1> on block
+   test_FullAdder is not reconstructed, because there are some missing bus
+   signals.
+  finished :Prep
+Writing EDIF netlist file test_FullAdder.edif ...
+ngc2edif: Total memory usage is 116916 kilobytes
+

@@ -1,0 +1,72 @@
+#INPUT DEVICES
+
+
+#Programming Mode Constraints
+NET "Clock" LOC =B8 ; #CLssOCK
+
+
+
+#Flag switch for subtraction or addition, 
+# 0 = Addition
+# 1 = Subtraction
+
+#NET "Flag" LOC = G12;
+
+NET "R_1[0]" LOC = M5;
+NET "R_1[1]" LOC = M11;
+NET "R_1[2]" LOC = P7;
+NET "R_1[3]" LOC = P6;
+
+NET "EN_hex" LOC = E2; #Allow for Hex Enable on Output
+#Clock Enablers
+NET "Eight_CE" LOC =P11 ;
+NET "R1_CE" LOC =N3 ;
+#WCLK for registers
+NET "R1_C" LOC =A7 ;
+NET "R2_C" LOC =M4 ;
+NET "R3_C" LOC =C11 ; #Switch to write to 8 bit register
+NET "R3_C" CLOCK_DEDICATED_ROUTE = FALSE;
+#NET "btn_Memory" LOC = C11;
+NET "btn_Memory" CLOCK_DEDICATED_ROUTE = FALSE;
+#Chose sub or add
+NET "nADD_SUB" LOC = L3;
+NET "CLR" LOC = G12;
+#Key
+#NET "KeyO" LOC = M5;
+NET "Neg" LOC = P4;
+NET "OFL" LOC = G1;
+#Test to see if power is running through colO
+NET "colO[0]" LOC = B2;
+NET "colO[1]" LOC = A3;
+NET "colO[2]" LOC = J3;
+NET "colO[3]" LOC = B5;
+#Anodes 0 -3
+NET "anO[3]" LOC = K14;
+NET "anO[2]" LOC = M13;
+NET "anO[1]" LOC = J12; #First anode 
+NET "anO[0]" LOC = F12; #SEcond anode on board
+#Plan ahead Cathode output
+NET "sseg[7]" LOC = N13; # decimal point dont need 
+NET "sseg[0]" LOC = M12; #CG
+NET "sseg[1]" LOC = L13; #CF
+NET "sseg[2]" LOC = P12; #CE
+NET "sseg[3]" LOC = N11; #CD
+NET "sseg[4]" LOC = N14; #CC
+NET "sseg[5]" LOC = H12; #CB
+NET "sseg[6]" LOC = L14; #CA
+
+#
+#Keypad Constraints and BCD
+#
+
+# PlanAhead Generated physical constraints 
+#Columns
+NET "colO[0]" LOC = B2;
+NET "colO[1]" LOC = A3;
+NET "colO[2]" LOC = J3;
+NET "colO[3]" LOC = B5;
+#Rows
+NET "row[0]" LOC = C6;
+NET "row[1]" LOC = B6;
+NET "row[2]" LOC = C5;
+NET "row[3]" LOC = B7;

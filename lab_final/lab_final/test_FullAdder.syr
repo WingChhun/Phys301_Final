@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.17 secs
+Total CPU time to Xst completion: 0.27 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.17 secs
+Total CPU time to Xst completion: 0.27 secs
  
 --> Reading design: test_FullAdder.prj
 
@@ -106,6 +106,16 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 Compiling vhdl file "C:/Users/James/Desktop/Github/School/Phys301/lab_final/modules/debounce.vhd" in Library work.
 Architecture behavioral of Entity switch_debounce is up to date.
+Compiling vhdl file "C:/Users/James/Desktop/Github/School/Phys301/lab_final/modules/DCM_50M.vhd" in Library work.
+Architecture behavioral of Entity dcm_50m is up to date.
+Compiling vhdl file "C:/Users/James/Desktop/Github/School/Phys301/lab_final/modules/sel_strobeB.vhd" in Library work.
+Architecture behavioral of Entity sel_strobeb is up to date.
+Compiling vhdl file "C:/Users/James/Desktop/Github/School/Phys301/lab_final/modules/bin2BCD3en.vhd" in Library work.
+Architecture behavioral of Entity bin2bcd3en is up to date.
+Compiling vhdl file "C:/Users/James/Desktop/Github/School/Phys301/lab_final/modules/mux4SSD.vhd" in Library work.
+Architecture behavioral of Entity mux4ssd is up to date.
+Compiling vhdl file "C:/Users/James/Desktop/Github/School/Phys301/lab_final/modules/SSD_1dig.vhd" in Library work.
+Architecture behavioral of Entity ssd_1dig is up to date.
 Compiling vhdl file "C:/Users/James/Desktop/Github/School/Phys301/lab_final/modules/CRenc4bin.vhd" in Library work.
 Architecture behavioral of Entity crenc4bin is up to date.
 Compiling vhdl file "C:/Users/James/Desktop/Github/School/Phys301/lab_final/modules/DCM_100M.vhd" in Library work.
@@ -120,37 +130,27 @@ Compiling vhdl file "C:/Users/James/Desktop/Github/School/Phys301/lab_final/modu
 Architecture doric of Entity decoder16keyen is up to date.
 Compiling vhdl file "C:/Users/James/Desktop/Github/School/Phys301/lab_final/modules/key4_dbnc.vhd" in Library work.
 Architecture behavioral of Entity key4_dbnc is up to date.
-Compiling vhdl file "C:/Users/James/Desktop/Github/School/Phys301/lab_final/modules/sel_strobeB.vhd" in Library work.
-Architecture behavioral of Entity sel_strobeb is up to date.
-Compiling vhdl file "C:/Users/James/Desktop/Github/School/Phys301/lab_final/modules/bin2BCD3en.vhd" in Library work.
-Architecture behavioral of Entity bin2bcd3en is up to date.
-Compiling vhdl file "C:/Users/James/Desktop/Github/School/Phys301/lab_final/modules/mux4SSD.vhd" in Library work.
-Architecture behavioral of Entity mux4ssd is up to date.
-Compiling vhdl file "C:/Users/James/Desktop/Github/School/Phys301/lab_final/modules/SSD_1dig.vhd" in Library work.
-Architecture behavioral of Entity ssd_1dig is up to date.
 Compiling vhdl file "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_KEYPAD_FINAL.vhf" in Library work.
 Architecture behavioral of Entity lab_keypad_final is up to date.
+Compiling vhdl file "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab6_experimen3.vhf" in Library work.
+Architecture behavioral of Entity lab6_experimen3 is up to date.
 Compiling vhdl file "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/test_FullAdder.vhf" in Library work.
-Entity <Output_DebugMode_MUSER_test_FullAdder> compiled.
-Entity <Output_DebugMode_MUSER_test_FullAdder> (Architecture <BEHAVIORAL>) compiled.
-Entity <FD8CE_MXILINX_test_FullAdder> compiled.
-Entity <FD8CE_MXILINX_test_FullAdder> (Architecture <BEHAVIORAL>) compiled.
-Entity <Full_Add_MUSER_test_FullAdder> compiled.
-Entity <Full_Add_MUSER_test_FullAdder> (Architecture <BEHAVIORAL>) compiled.
-Entity <addersub8_MUSER_test_FullAdder> compiled.
-Entity <addersub8_MUSER_test_FullAdder> (Architecture <BEHAVIORAL>) compiled.
-Entity <Full_AdderSub8_MUSER_test_FullAdder> compiled.
-Entity <Full_AdderSub8_MUSER_test_FullAdder> (Architecture <BEHAVIORAL>) compiled.
-Entity <FD4CE_MXILINX_test_FullAdder> compiled.
-Entity <FD4CE_MXILINX_test_FullAdder> (Architecture <BEHAVIORAL>) compiled.
-Entity <test_FullAdder> compiled.
-Entity <test_FullAdder> (Architecture <BEHAVIORAL>) compiled.
+Entity <fd8ce_mxilinx_test_fulladder> compiled.
+Entity <fd8ce_mxilinx_test_fulladder> (Architecture <behavioral>) compiled.
+Entity <full_add_muser_test_fulladder> compiled.
+Entity <full_add_muser_test_fulladder> (Architecture <behavioral>) compiled.
+Entity <addersub8_muser_test_fulladder> compiled.
+Entity <addersub8_muser_test_fulladder> (Architecture <behavioral>) compiled.
+Entity <full_addersub8_muser_test_fulladder> compiled.
+Entity <full_addersub8_muser_test_fulladder> (Architecture <behavioral>) compiled.
+Entity <fd4ce_mxilinx_test_fulladder> compiled.
+Entity <fd4ce_mxilinx_test_fulladder> (Architecture <behavioral>) compiled.
+Entity <test_fulladder> compiled.
+Entity <test_fulladder> (Architecture <behavioral>) compiled.
 Compiling vhdl file "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/Full_AdderSub8.vhf" in Library work.
 Architecture behavioral of Entity full_add_muser_full_addersub8 is up to date.
 Architecture behavioral of Entity addersub8_muser_full_addersub8 is up to date.
 Architecture behavioral of Entity full_addersub8 is up to date.
-Compiling vhdl file "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/Output_DebugMode.vhf" in Library work.
-Architecture behavioral of Entity output_debugmode is up to date.
 Compiling vhdl file "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/addersub8.vhf" in Library work.
 Architecture behavioral of Entity full_add_muser_addersub8 is up to date.
 Architecture behavioral of Entity addersub8 is up to date.
@@ -160,19 +160,19 @@ Architecture behavioral of Entity full_add is up to date.
 =========================================================================
 *                     Design Hierarchy Analysis                         *
 =========================================================================
-Analyzing hierarchy for entity <test_FullAdder> in library <work> (architecture <BEHAVIORAL>).
+Analyzing hierarchy for entity <test_FullAdder> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <FD8CE_MXILINX_test_FullAdder> in library <work> (architecture <BEHAVIORAL>).
+Analyzing hierarchy for entity <FD8CE_MXILINX_test_FullAdder> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <Full_AdderSub8_MUSER_test_FullAdder> in library <work> (architecture <BEHAVIORAL>).
+Analyzing hierarchy for entity <Full_AdderSub8_MUSER_test_FullAdder> in library <work> (architecture <behavioral>).
 
 Analyzing hierarchy for entity <lab_KEYPAD_FINAL> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <FD4CE_MXILINX_test_FullAdder> in library <work> (architecture <BEHAVIORAL>).
+Analyzing hierarchy for entity <FD4CE_MXILINX_test_FullAdder> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <Output_DebugMode_MUSER_test_FullAdder> in library <work> (architecture <BEHAVIORAL>).
+Analyzing hierarchy for entity <lab6_experimen3> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <addersub8_MUSER_test_FullAdder> in library <work> (architecture <BEHAVIORAL>).
+Analyzing hierarchy for entity <addersub8_MUSER_test_FullAdder> in library <work> (architecture <behavioral>).
 
 Analyzing hierarchy for entity <CRenc4bin> in library <work> (architecture <behavioral>).
 
@@ -197,6 +197,12 @@ Analyzing hierarchy for entity <decoder16keyEn> in library <work> (architecture 
 Analyzing hierarchy for entity <key4_dbnc> in library <work> (architecture <behavioral>) with generics.
 	lockperiod = 1000
 
+Analyzing hierarchy for entity <DCM_50M> in library <work> (architecture <behavioral>) with generics.
+	DIV100 = 50
+	DIV10k = 5000
+	DIV1k = 500
+	DIV50 = 25
+
 Analyzing hierarchy for entity <sel_strobeB> in library <work> (architecture <behavioral>).
 
 Analyzing hierarchy for entity <bin2BCD3en> in library <work> (architecture <behavioral>).
@@ -205,7 +211,7 @@ Analyzing hierarchy for entity <mux4SSD> in library <work> (architecture <behavi
 
 Analyzing hierarchy for entity <SSD_1dig> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <Full_Add_MUSER_test_FullAdder> in library <work> (architecture <BEHAVIORAL>).
+Analyzing hierarchy for entity <Full_Add_MUSER_test_FullAdder> in library <work> (architecture <behavioral>).
 
 Analyzing hierarchy for entity <switch_debounce> in library <work> (architecture <behavioral>).
 
@@ -213,14 +219,16 @@ Analyzing hierarchy for entity <switch_debounce> in library <work> (architecture
 =========================================================================
 *                            HDL Analysis                               *
 =========================================================================
-Analyzing Entity <test_FullAdder> in library <work> (Architecture <BEHAVIORAL>).
+Analyzing Entity <test_FullAdder> in library <work> (Architecture <behavioral>).
+WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/test_FullAdder.vhf" line 547: Unconnected output port 'Q' of component 'FD8CE_MXILINX_test_FullAdder'.
     Set user-defined property "HU_SET =  XLXI_1_2" for instance <XLXI_1> in unit <test_FullAdder>.
-WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/test_FullAdder.vhf" line 739: Unconnected output port 'keyO' of component 'lab_KEYPAD_FINAL'.
+WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/test_FullAdder.vhf" line 563: Unconnected output port 'keyO' of component 'lab_KEYPAD_FINAL'.
     Set user-defined property "HU_SET =  XLXI_149_0" for instance <XLXI_149> in unit <test_FullAdder>.
     Set user-defined property "HU_SET =  XLXI_150_1" for instance <XLXI_150> in unit <test_FullAdder>.
+    Set user-defined property "HU_SET =  XLXI_159_3" for instance <XLXI_159> in unit <test_FullAdder>.
 Entity <test_FullAdder> analyzed. Unit <test_FullAdder> generated.
 
-Analyzing Entity <FD8CE_MXILINX_test_FullAdder> in library <work> (Architecture <BEHAVIORAL>).
+Analyzing Entity <FD8CE_MXILINX_test_FullAdder> in library <work> (Architecture <behavioral>).
     Set user-defined property "INIT =  0" for instance <I_Q0> in unit <FD8CE_MXILINX_test_FullAdder>.
     Set user-defined property "INIT =  0" for instance <I_Q1> in unit <FD8CE_MXILINX_test_FullAdder>.
     Set user-defined property "INIT =  0" for instance <I_Q2> in unit <FD8CE_MXILINX_test_FullAdder>.
@@ -231,13 +239,13 @@ Analyzing Entity <FD8CE_MXILINX_test_FullAdder> in library <work> (Architecture 
     Set user-defined property "INIT =  0" for instance <I_Q7> in unit <FD8CE_MXILINX_test_FullAdder>.
 Entity <FD8CE_MXILINX_test_FullAdder> analyzed. Unit <FD8CE_MXILINX_test_FullAdder> generated.
 
-Analyzing Entity <Full_AdderSub8_MUSER_test_FullAdder> in library <work> (Architecture <BEHAVIORAL>).
+Analyzing Entity <Full_AdderSub8_MUSER_test_FullAdder> in library <work> (Architecture <behavioral>).
 Entity <Full_AdderSub8_MUSER_test_FullAdder> analyzed. Unit <Full_AdderSub8_MUSER_test_FullAdder> generated.
 
-Analyzing Entity <addersub8_MUSER_test_FullAdder> in library <work> (Architecture <BEHAVIORAL>).
+Analyzing Entity <addersub8_MUSER_test_FullAdder> in library <work> (Architecture <behavioral>).
 Entity <addersub8_MUSER_test_FullAdder> analyzed. Unit <addersub8_MUSER_test_FullAdder> generated.
 
-Analyzing Entity <Full_Add_MUSER_test_FullAdder> in library <work> (Architecture <BEHAVIORAL>).
+Analyzing Entity <Full_Add_MUSER_test_FullAdder> in library <work> (Architecture <behavioral>).
 Entity <Full_Add_MUSER_test_FullAdder> analyzed. Unit <Full_Add_MUSER_test_FullAdder> generated.
 
 Analyzing Entity <lab_KEYPAD_FINAL> in library <work> (Architecture <behavioral>).
@@ -281,25 +289,28 @@ Entity <key4_dbnc> analyzed. Unit <key4_dbnc> generated.
 Analyzing Entity <switch_debounce> in library <work> (Architecture <behavioral>).
 Entity <switch_debounce> analyzed. Unit <switch_debounce> generated.
 
-Analyzing Entity <FD4CE_MXILINX_test_FullAdder> in library <work> (Architecture <BEHAVIORAL>).
+Analyzing Entity <FD4CE_MXILINX_test_FullAdder> in library <work> (Architecture <behavioral>).
     Set user-defined property "INIT =  0" for instance <I_Q0> in unit <FD4CE_MXILINX_test_FullAdder>.
     Set user-defined property "INIT =  0" for instance <I_Q1> in unit <FD4CE_MXILINX_test_FullAdder>.
     Set user-defined property "INIT =  0" for instance <I_Q2> in unit <FD4CE_MXILINX_test_FullAdder>.
     Set user-defined property "INIT =  0" for instance <I_Q3> in unit <FD4CE_MXILINX_test_FullAdder>.
 Entity <FD4CE_MXILINX_test_FullAdder> analyzed. Unit <FD4CE_MXILINX_test_FullAdder> generated.
 
-Analyzing Entity <Output_DebugMode_MUSER_test_FullAdder> in library <work> (Architecture <BEHAVIORAL>).
-WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/test_FullAdder.vhf" line 135: Unconnected output port 'Dout3' of component 'bin2BCD3en'.
-WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/test_FullAdder.vhf" line 135: Unconnected output port 'Dout2' of component 'bin2BCD3en'.
-WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/test_FullAdder.vhf" line 135: Unconnected output port 'RBout' of component 'bin2BCD3en'.
-WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/test_FullAdder.vhf" line 165: Unconnected output port 'Dout3' of component 'bin2BCD3en'.
-WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/test_FullAdder.vhf" line 165: Unconnected output port 'Dout2' of component 'bin2BCD3en'.
-WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/test_FullAdder.vhf" line 165: Unconnected output port 'RBout' of component 'bin2BCD3en'.
-WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/test_FullAdder.vhf" line 175: Unconnected output port 'CLK1M' of component 'DCM_100M'.
-WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/test_FullAdder.vhf" line 175: Unconnected output port 'CLK1k' of component 'DCM_100M'.
-WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/test_FullAdder.vhf" line 175: Unconnected output port 'CLK100' of component 'DCM_100M'.
-WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/test_FullAdder.vhf" line 175: Unconnected output port 'CLK1' of component 'DCM_100M'.
-Entity <Output_DebugMode_MUSER_test_FullAdder> analyzed. Unit <Output_DebugMode_MUSER_test_FullAdder> generated.
+Analyzing Entity <lab6_experimen3> in library <work> (Architecture <behavioral>).
+WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab6_experimen3.vhf" line 104: Unconnected output port 'CLK1M' of component 'DCM_50M'.
+WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab6_experimen3.vhf" line 104: Unconnected output port 'CLK10k' of component 'DCM_50M'.
+WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab6_experimen3.vhf" line 104: Unconnected output port 'CLK1' of component 'DCM_50M'.
+WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab6_experimen3.vhf" line 104: Unconnected output port 'CLK100' of component 'DCM_50M'.
+WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab6_experimen3.vhf" line 131: Unconnected output port 'RBout' of component 'bin2BCD3en'.
+WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab6_experimen3.vhf" line 141: Unconnected output port 'dpO' of component 'mux4SSD'.
+Entity <lab6_experimen3> analyzed. Unit <lab6_experimen3> generated.
+
+Analyzing generic Entity <DCM_50M> in library <work> (Architecture <behavioral>).
+	DIV100 = 50
+	DIV10k = 5000
+	DIV1k = 500
+	DIV50 = 25
+Entity <DCM_50M> analyzed. Unit <DCM_50M> generated.
 
 Analyzing Entity <sel_strobeB> in library <work> (Architecture <behavioral>).
 Entity <sel_strobeB> analyzed. Unit <sel_strobeB> generated.
@@ -435,6 +446,34 @@ Synthesizing Unit <switch_debounce>.
 Unit <switch_debounce> synthesized.
 
 
+Synthesizing Unit <DCM_50M>.
+    Related source file is "C:/Users/James/Desktop/Github/School/Phys301/lab_final/modules/DCM_50M.vhd".
+    Found 1-bit register for signal <clk_1<0>>.
+    Found 1-bit register for signal <clk_100<0>>.
+    Found 1-bit register for signal <clk_10k<0>>.
+    Found 32-bit adder for signal <clk_1_0$add0000> created at line 164.
+    Found 1-bit register for signal <clk_1k<0>>.
+    Found 32-bit adder for signal <clk_1k_0$add0000> created at line 116.
+    Found 1-bit register for signal <clk_1m>.
+    Found 32-bit up counter for signal <cnt1>.
+    Found 32-bit comparator greater for signal <cnt1$cmp_gt0000> created at line 165.
+    Found 32-bit up counter for signal <cnt100>.
+    Found 32-bit adder for signal <cnt100$add0000> created at line 140.
+    Found 32-bit comparator greater for signal <cnt100$cmp_gt0000> created at line 141.
+    Found 32-bit up counter for signal <cnt10k>.
+    Found 32-bit adder for signal <cnt10k$add0000> created at line 92.
+    Found 32-bit comparator greater for signal <cnt10k$cmp_gt0000> created at line 93.
+    Found 32-bit up counter for signal <cnt1k>.
+    Found 32-bit comparator greater for signal <cnt1k$cmp_gt0000> created at line 117.
+    Found 5-bit up counter for signal <cnt1M>.
+    Summary:
+	inferred   5 Counter(s).
+	inferred   5 D-type flip-flop(s).
+	inferred   4 Adder/Subtractor(s).
+	inferred   4 Comparator(s).
+Unit <DCM_50M> synthesized.
+
+
 Synthesizing Unit <sel_strobeB>.
     Related source file is "C:/Users/James/Desktop/Github/School/Phys301/lab_final/modules/sel_strobeB.vhd".
     Found 4x2-bit ROM for signal <sel$mux0001> created at line 44.
@@ -489,12 +528,10 @@ Synthesizing Unit <FD4CE_MXILINX_test_FullAdder>.
 Unit <FD4CE_MXILINX_test_FullAdder> synthesized.
 
 
-Synthesizing Unit <Output_DebugMode_MUSER_test_FullAdder>.
-    Related source file is "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/test_FullAdder.vhf".
-WARNING:Xst:647 - Input <AddressIn> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:1780 - Signal <Test_thenChangetoPullup> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:646 - Signal <RunMode> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
-Unit <Output_DebugMode_MUSER_test_FullAdder> synthesized.
+Synthesizing Unit <lab6_experimen3>.
+    Related source file is "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab6_experimen3.vhf".
+WARNING:Xst:653 - Signal <XLXI_16_dp_in_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+Unit <lab6_experimen3> synthesized.
 
 
 Synthesizing Unit <Full_Add_MUSER_test_FullAdder>.
@@ -527,12 +564,7 @@ Unit <Full_AdderSub8_MUSER_test_FullAdder> synthesized.
 
 Synthesizing Unit <test_FullAdder>.
     Related source file is "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/test_FullAdder.vhf".
-WARNING:Xst:653 - Signal <XLXI_158_hex_Address_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 00000000.
-WARNING:Xst:653 - Signal <XLXI_158_EN_hex_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
-WARNING:Xst:653 - Signal <XLXI_158_DebugMode_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
-WARNING:Xst:653 - Signal <XLXI_158_AddressIn_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 00000000.
-WARNING:Xst:653 - Signal <R_2<7:4>> is used but never assigned. This sourceless signal will be automatically connected to value 0000.
-WARNING:Xst:653 - Signal <R_1<7:4>> is used but never assigned. This sourceless signal will be automatically connected to value 0000.
+WARNING:Xst:653 - Signal <XLXI_1_D_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 00000000.
 Unit <test_FullAdder> synthesized.
 
 WARNING:Xst:524 - All outputs of the instance <XLXI_79> of the block <oneshot> are unconnected in block <lab_KEYPAD_FINAL>.
@@ -542,24 +574,25 @@ WARNING:Xst:524 - All outputs of the instance <XLXI_79> of the block <oneshot> a
 HDL Synthesis Report
 
 Macro Statistics
-# ROMs                                                 : 18
- 16x4-bit ROM                                          : 14
+# ROMs                                                 : 10
+ 16x4-bit ROM                                          : 7
  16x7-bit ROM                                          : 1
  4x2-bit ROM                                           : 1
- 8x4-bit ROM                                           : 2
-# Adders/Subtractors                                   : 14
- 32-bit adder                                          : 10
+ 8x4-bit ROM                                           : 1
+# Adders/Subtractors                                   : 13
+ 32-bit adder                                          : 9
  32-bit subtractor                                     : 4
 # Counters                                             : 10
- 32-bit up counter                                     : 10
-# Registers                                            : 58
- 1-bit register                                        : 41
+ 32-bit up counter                                     : 9
+ 5-bit up counter                                      : 1
+# Registers                                            : 48
+ 1-bit register                                        : 33
  2-bit register                                        : 2
  32-bit register                                       : 4
- 4-bit register                                        : 11
-# Comparators                                          : 19
- 32-bit comparator greatequal                          : 10
- 32-bit comparator greater                             : 4
+ 4-bit register                                        : 9
+# Comparators                                          : 18
+ 32-bit comparator greatequal                          : 5
+ 32-bit comparator greater                             : 8
  32-bit comparator lessequal                           : 4
  4-bit comparator equal                                : 1
 # Multiplexers                                         : 4
@@ -575,7 +608,8 @@ Macro Statistics
 
 WARNING:Xst:1290 - Hierarchical block <XLXI_17> is unconnected in block <XLXI_142>.
    It will be removed from the design.
-WARNING:Xst:1710 - FF/Latch <Dout0_0> (without init value) has a constant value of 0 in block <XLXI_40>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <Dout2_2> in Unit <XLXI_14> is equivalent to the following FF/Latch, which will be removed : <Dout2_3> 
+WARNING:Xst:1710 - FF/Latch <Dout2_2> (without init value) has a constant value of 0 in block <XLXI_14>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:2404 -  FFs/Latches <Dout2<3:2>> (without init value) have a constant value of 0 in block <bin2BCD3en>.
 
 Synthesizing (advanced) Unit <sel_strobeB>.
@@ -586,21 +620,22 @@ Unit <sel_strobeB> synthesized (advanced).
 Advanced HDL Synthesis Report
 
 Macro Statistics
-# ROMs                                                 : 18
- 16x4-bit ROM                                          : 14
+# ROMs                                                 : 10
+ 16x4-bit ROM                                          : 7
  16x7-bit ROM                                          : 1
  4x2-bit ROM                                           : 1
- 8x4-bit ROM                                           : 2
-# Adders/Subtractors                                   : 14
- 32-bit adder                                          : 10
+ 8x4-bit ROM                                           : 1
+# Adders/Subtractors                                   : 13
+ 32-bit adder                                          : 9
  32-bit subtractor                                     : 4
 # Counters                                             : 10
- 32-bit up counter                                     : 10
-# Registers                                            : 229
- Flip-Flops                                            : 229
-# Comparators                                          : 19
- 32-bit comparator greatequal                          : 10
- 32-bit comparator greater                             : 4
+ 32-bit up counter                                     : 9
+ 5-bit up counter                                      : 1
+# Registers                                            : 223
+ Flip-Flops                                            : 223
+# Comparators                                          : 18
+ 32-bit comparator greatequal                          : 5
+ 32-bit comparator greater                             : 8
  32-bit comparator lessequal                           : 4
  4-bit comparator equal                                : 1
 # Multiplexers                                         : 4
@@ -632,6 +667,8 @@ Optimizing unit <oneshot> ...
 
 Optimizing unit <switch_debounce> ...
 
+Optimizing unit <DCM_50M> ...
+
 Optimizing unit <FD8CE_MXILINX_test_FullAdder> ...
 
 Optimizing unit <FD4CE_MXILINX_test_FullAdder> ...
@@ -640,15 +677,7 @@ Optimizing unit <bin2BCD3en> ...
 
 Optimizing unit <addersub8_MUSER_test_FullAdder> ...
 
-Optimizing unit <Output_DebugMode_MUSER_test_FullAdder> ...
-WARNING:Xst:1710 - FF/Latch <XLXI_158/XLXI_40/Dout0_0> (without init value) has a constant value of 0 in block <test_FullAdder>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <XLXI_158/XLXI_40/Dout0_2> (without init value) has a constant value of 0 in block <test_FullAdder>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <XLXI_158/XLXI_40/Dout0_3> (without init value) has a constant value of 0 in block <test_FullAdder>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <XLXI_158/XLXI_40/Dout0_1> (without init value) has a constant value of 0 in block <test_FullAdder>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <XLXI_158/XLXI_40/Dout1_3> (without init value) has a constant value of 0 in block <test_FullAdder>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <XLXI_158/XLXI_40/Dout1_2> (without init value) has a constant value of 0 in block <test_FullAdder>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <XLXI_158/XLXI_40/Dout1_1> (without init value) has a constant value of 0 in block <test_FullAdder>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <XLXI_158/XLXI_40/Dout1_0> (without init value) has a constant value of 0 in block <test_FullAdder>. This FF/Latch will be trimmed during the optimization process.
+Optimizing unit <lab6_experimen3> ...
 WARNING:Xst:2677 - Node <XLXI_142/XLXI_17/colI_3> of sequential type is unconnected in block <test_FullAdder>.
 WARNING:Xst:2677 - Node <XLXI_142/XLXI_17/colI_2> of sequential type is unconnected in block <test_FullAdder>.
 WARNING:Xst:2677 - Node <XLXI_142/XLXI_17/colI_1> of sequential type is unconnected in block <test_FullAdder>.
@@ -794,144 +823,112 @@ WARNING:Xst:2677 - Node <XLXI_142/XLXI_28/clk_100_0> of sequential type is uncon
 WARNING:Xst:2677 - Node <XLXI_142/XLXI_28/clk_1k_0> of sequential type is unconnected in block <test_FullAdder>.
 WARNING:Xst:2677 - Node <XLXI_142/XLXI_28/clk_1_0> of sequential type is unconnected in block <test_FullAdder>.
 WARNING:Xst:2677 - Node <XLXI_142/XLXI_28/clk_1m_0> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_14/Dout2_0> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_14/Dout2_1> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_14/RBout_2> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_40/Dout2_0> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_40/Dout2_1> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_40/RBout_2> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/clk_1m_0> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/clk_1_0> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/clk_1k_0> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/clk_100_0> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/cnt100_0> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/cnt100_1> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/cnt100_2> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/cnt100_3> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/cnt100_4> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/cnt100_5> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/cnt100_6> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/cnt100_7> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/cnt100_8> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/cnt100_9> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/cnt100_10> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/cnt100_11> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/cnt100_12> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/cnt100_13> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/cnt100_14> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/cnt100_15> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/cnt100_16> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/cnt100_17> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/cnt100_18> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/cnt100_19> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/cnt100_20> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/cnt100_21> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/cnt100_22> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/cnt100_23> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/cnt100_24> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/cnt100_25> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/cnt100_26> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/cnt100_27> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/cnt100_28> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/cnt100_29> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/cnt100_30> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/cnt100_31> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/cnt1k_0> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/cnt1k_1> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/cnt1k_2> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/cnt1k_3> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/cnt1k_4> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/cnt1k_5> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/cnt1k_6> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/cnt1k_7> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/cnt1k_8> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/cnt1k_9> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/cnt1k_10> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/cnt1k_11> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/cnt1k_12> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/cnt1k_13> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/cnt1k_14> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/cnt1k_15> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/cnt1k_16> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/cnt1k_17> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/cnt1k_18> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/cnt1k_19> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/cnt1k_20> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/cnt1k_21> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/cnt1k_22> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/cnt1k_23> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/cnt1k_24> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/cnt1k_25> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/cnt1k_26> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/cnt1k_27> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/cnt1k_28> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/cnt1k_29> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/cnt1k_30> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/cnt1k_31> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/cnt1M_0> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/cnt1M_1> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/cnt1M_2> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/cnt1M_3> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/cnt1M_4> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/cnt1M_5> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/cnt1M_6> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/cnt1M_7> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/cnt1M_8> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/cnt1M_9> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/cnt1M_10> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/cnt1M_11> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/cnt1M_12> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/cnt1M_13> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/cnt1M_14> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/cnt1M_15> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/cnt1M_16> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/cnt1M_17> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/cnt1M_18> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/cnt1M_19> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/cnt1M_20> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/cnt1M_21> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/cnt1M_22> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/cnt1M_23> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/cnt1M_24> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/cnt1M_25> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/cnt1M_26> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/cnt1M_27> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/cnt1M_28> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/cnt1M_29> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/cnt1M_30> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/cnt1M_31> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/cnt1_0> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/cnt1_1> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/cnt1_2> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/cnt1_3> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/cnt1_4> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/cnt1_5> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/cnt1_6> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/cnt1_7> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/cnt1_8> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/cnt1_9> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/cnt1_10> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/cnt1_11> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/cnt1_12> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/cnt1_13> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/cnt1_14> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/cnt1_15> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/cnt1_16> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/cnt1_17> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/cnt1_18> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/cnt1_19> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/cnt1_20> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/cnt1_21> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/cnt1_22> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/cnt1_23> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/cnt1_24> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/cnt1_25> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/cnt1_26> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/cnt1_27> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/cnt1_28> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/cnt1_29> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/cnt1_30> of sequential type is unconnected in block <test_FullAdder>.
-WARNING:Xst:2677 - Node <XLXI_158/XLXI_41/cnt1_31> of sequential type is unconnected in block <test_FullAdder>.
+WARNING:Xst:2677 - Node <XLXI_164/XLXI_14/RBout_2> of sequential type is unconnected in block <test_FullAdder>.
+WARNING:Xst:2677 - Node <XLXI_164/XLXI_3/clk_1m> of sequential type is unconnected in block <test_FullAdder>.
+WARNING:Xst:2677 - Node <XLXI_164/XLXI_3/clk_1_0> of sequential type is unconnected in block <test_FullAdder>.
+WARNING:Xst:2677 - Node <XLXI_164/XLXI_3/clk_100_0> of sequential type is unconnected in block <test_FullAdder>.
+WARNING:Xst:2677 - Node <XLXI_164/XLXI_3/clk_10k_0> of sequential type is unconnected in block <test_FullAdder>.
+WARNING:Xst:2677 - Node <XLXI_164/XLXI_3/cnt100_0> of sequential type is unconnected in block <test_FullAdder>.
+WARNING:Xst:2677 - Node <XLXI_164/XLXI_3/cnt100_1> of sequential type is unconnected in block <test_FullAdder>.
+WARNING:Xst:2677 - Node <XLXI_164/XLXI_3/cnt100_2> of sequential type is unconnected in block <test_FullAdder>.
+WARNING:Xst:2677 - Node <XLXI_164/XLXI_3/cnt100_3> of sequential type is unconnected in block <test_FullAdder>.
+WARNING:Xst:2677 - Node <XLXI_164/XLXI_3/cnt100_4> of sequential type is unconnected in block <test_FullAdder>.
+WARNING:Xst:2677 - Node <XLXI_164/XLXI_3/cnt100_5> of sequential type is unconnected in block <test_FullAdder>.
+WARNING:Xst:2677 - Node <XLXI_164/XLXI_3/cnt100_6> of sequential type is unconnected in block <test_FullAdder>.
+WARNING:Xst:2677 - Node <XLXI_164/XLXI_3/cnt100_7> of sequential type is unconnected in block <test_FullAdder>.
+WARNING:Xst:2677 - Node <XLXI_164/XLXI_3/cnt100_8> of sequential type is unconnected in block <test_FullAdder>.
+WARNING:Xst:2677 - Node <XLXI_164/XLXI_3/cnt100_9> of sequential type is unconnected in block <test_FullAdder>.
+WARNING:Xst:2677 - Node <XLXI_164/XLXI_3/cnt100_10> of sequential type is unconnected in block <test_FullAdder>.
+WARNING:Xst:2677 - Node <XLXI_164/XLXI_3/cnt100_11> of sequential type is unconnected in block <test_FullAdder>.
+WARNING:Xst:2677 - Node <XLXI_164/XLXI_3/cnt100_12> of sequential type is unconnected in block <test_FullAdder>.
+WARNING:Xst:2677 - Node <XLXI_164/XLXI_3/cnt100_13> of sequential type is unconnected in block <test_FullAdder>.
+WARNING:Xst:2677 - Node <XLXI_164/XLXI_3/cnt100_14> of sequential type is unconnected in block <test_FullAdder>.
+WARNING:Xst:2677 - Node <XLXI_164/XLXI_3/cnt100_15> of sequential type is unconnected in block <test_FullAdder>.
+WARNING:Xst:2677 - Node <XLXI_164/XLXI_3/cnt100_16> of sequential type is unconnected in block <test_FullAdder>.
+WARNING:Xst:2677 - Node <XLXI_164/XLXI_3/cnt100_17> of sequential type is unconnected in block <test_FullAdder>.
+WARNING:Xst:2677 - Node <XLXI_164/XLXI_3/cnt100_18> of sequential type is unconnected in block <test_FullAdder>.
+WARNING:Xst:2677 - Node <XLXI_164/XLXI_3/cnt100_19> of sequential type is unconnected in block <test_FullAdder>.
+WARNING:Xst:2677 - Node <XLXI_164/XLXI_3/cnt100_20> of sequential type is unconnected in block <test_FullAdder>.
+WARNING:Xst:2677 - Node <XLXI_164/XLXI_3/cnt100_21> of sequential type is unconnected in block <test_FullAdder>.
+WARNING:Xst:2677 - Node <XLXI_164/XLXI_3/cnt100_22> of sequential type is unconnected in block <test_FullAdder>.
+WARNING:Xst:2677 - Node <XLXI_164/XLXI_3/cnt100_23> of sequential type is unconnected in block <test_FullAdder>.
+WARNING:Xst:2677 - Node <XLXI_164/XLXI_3/cnt100_24> of sequential type is unconnected in block <test_FullAdder>.
+WARNING:Xst:2677 - Node <XLXI_164/XLXI_3/cnt100_25> of sequential type is unconnected in block <test_FullAdder>.
+WARNING:Xst:2677 - Node <XLXI_164/XLXI_3/cnt100_26> of sequential type is unconnected in block <test_FullAdder>.
+WARNING:Xst:2677 - Node <XLXI_164/XLXI_3/cnt100_27> of sequential type is unconnected in block <test_FullAdder>.
+WARNING:Xst:2677 - Node <XLXI_164/XLXI_3/cnt100_28> of sequential type is unconnected in block <test_FullAdder>.
+WARNING:Xst:2677 - Node <XLXI_164/XLXI_3/cnt100_29> of sequential type is unconnected in block <test_FullAdder>.
+WARNING:Xst:2677 - Node <XLXI_164/XLXI_3/cnt100_30> of sequential type is unconnected in block <test_FullAdder>.
+WARNING:Xst:2677 - Node <XLXI_164/XLXI_3/cnt100_31> of sequential type is unconnected in block <test_FullAdder>.
+WARNING:Xst:2677 - Node <XLXI_164/XLXI_3/cnt1M_0> of sequential type is unconnected in block <test_FullAdder>.
+WARNING:Xst:2677 - Node <XLXI_164/XLXI_3/cnt1M_1> of sequential type is unconnected in block <test_FullAdder>.
+WARNING:Xst:2677 - Node <XLXI_164/XLXI_3/cnt1M_2> of sequential type is unconnected in block <test_FullAdder>.
+WARNING:Xst:2677 - Node <XLXI_164/XLXI_3/cnt1M_3> of sequential type is unconnected in block <test_FullAdder>.
+WARNING:Xst:2677 - Node <XLXI_164/XLXI_3/cnt1M_4> of sequential type is unconnected in block <test_FullAdder>.
+WARNING:Xst:2677 - Node <XLXI_164/XLXI_3/cnt10k_0> of sequential type is unconnected in block <test_FullAdder>.
+WARNING:Xst:2677 - Node <XLXI_164/XLXI_3/cnt10k_1> of sequential type is unconnected in block <test_FullAdder>.
+WARNING:Xst:2677 - Node <XLXI_164/XLXI_3/cnt10k_2> of sequential type is unconnected in block <test_FullAdder>.
+WARNING:Xst:2677 - Node <XLXI_164/XLXI_3/cnt10k_3> of sequential type is unconnected in block <test_FullAdder>.
+WARNING:Xst:2677 - Node <XLXI_164/XLXI_3/cnt10k_4> of sequential type is unconnected in block <test_FullAdder>.
+WARNING:Xst:2677 - Node <XLXI_164/XLXI_3/cnt10k_5> of sequential type is unconnected in block <test_FullAdder>.
+WARNING:Xst:2677 - Node <XLXI_164/XLXI_3/cnt10k_6> of sequential type is unconnected in block <test_FullAdder>.
+WARNING:Xst:2677 - Node <XLXI_164/XLXI_3/cnt10k_7> of sequential type is unconnected in block <test_FullAdder>.
+WARNING:Xst:2677 - Node <XLXI_164/XLXI_3/cnt10k_8> of sequential type is unconnected in block <test_FullAdder>.
+WARNING:Xst:2677 - Node <XLXI_164/XLXI_3/cnt10k_9> of sequential type is unconnected in block <test_FullAdder>.
+WARNING:Xst:2677 - Node <XLXI_164/XLXI_3/cnt10k_10> of sequential type is unconnected in block <test_FullAdder>.
+WARNING:Xst:2677 - Node <XLXI_164/XLXI_3/cnt10k_11> of sequential type is unconnected in block <test_FullAdder>.
+WARNING:Xst:2677 - Node <XLXI_164/XLXI_3/cnt10k_12> of sequential type is unconnected in block <test_FullAdder>.
+WARNING:Xst:2677 - Node <XLXI_164/XLXI_3/cnt10k_13> of sequential type is unconnected in block <test_FullAdder>.
+WARNING:Xst:2677 - Node <XLXI_164/XLXI_3/cnt10k_14> of sequential type is unconnected in block <test_FullAdder>.
+WARNING:Xst:2677 - Node <XLXI_164/XLXI_3/cnt10k_15> of sequential type is unconnected in block <test_FullAdder>.
+WARNING:Xst:2677 - Node <XLXI_164/XLXI_3/cnt10k_16> of sequential type is unconnected in block <test_FullAdder>.
+WARNING:Xst:2677 - Node <XLXI_164/XLXI_3/cnt10k_17> of sequential type is unconnected in block <test_FullAdder>.
+WARNING:Xst:2677 - Node <XLXI_164/XLXI_3/cnt10k_18> of sequential type is unconnected in block <test_FullAdder>.
+WARNING:Xst:2677 - Node <XLXI_164/XLXI_3/cnt10k_19> of sequential type is unconnected in block <test_FullAdder>.
+WARNING:Xst:2677 - Node <XLXI_164/XLXI_3/cnt10k_20> of sequential type is unconnected in block <test_FullAdder>.
+WARNING:Xst:2677 - Node <XLXI_164/XLXI_3/cnt10k_21> of sequential type is unconnected in block <test_FullAdder>.
+WARNING:Xst:2677 - Node <XLXI_164/XLXI_3/cnt10k_22> of sequential type is unconnected in block <test_FullAdder>.
+WARNING:Xst:2677 - Node <XLXI_164/XLXI_3/cnt10k_23> of sequential type is unconnected in block <test_FullAdder>.
+WARNING:Xst:2677 - Node <XLXI_164/XLXI_3/cnt10k_24> of sequential type is unconnected in block <test_FullAdder>.
+WARNING:Xst:2677 - Node <XLXI_164/XLXI_3/cnt10k_25> of sequential type is unconnected in block <test_FullAdder>.
+WARNING:Xst:2677 - Node <XLXI_164/XLXI_3/cnt10k_26> of sequential type is unconnected in block <test_FullAdder>.
+WARNING:Xst:2677 - Node <XLXI_164/XLXI_3/cnt10k_27> of sequential type is unconnected in block <test_FullAdder>.
+WARNING:Xst:2677 - Node <XLXI_164/XLXI_3/cnt10k_28> of sequential type is unconnected in block <test_FullAdder>.
+WARNING:Xst:2677 - Node <XLXI_164/XLXI_3/cnt10k_29> of sequential type is unconnected in block <test_FullAdder>.
+WARNING:Xst:2677 - Node <XLXI_164/XLXI_3/cnt10k_30> of sequential type is unconnected in block <test_FullAdder>.
+WARNING:Xst:2677 - Node <XLXI_164/XLXI_3/cnt10k_31> of sequential type is unconnected in block <test_FullAdder>.
+WARNING:Xst:2677 - Node <XLXI_164/XLXI_3/cnt1_0> of sequential type is unconnected in block <test_FullAdder>.
+WARNING:Xst:2677 - Node <XLXI_164/XLXI_3/cnt1_1> of sequential type is unconnected in block <test_FullAdder>.
+WARNING:Xst:2677 - Node <XLXI_164/XLXI_3/cnt1_2> of sequential type is unconnected in block <test_FullAdder>.
+WARNING:Xst:2677 - Node <XLXI_164/XLXI_3/cnt1_3> of sequential type is unconnected in block <test_FullAdder>.
+WARNING:Xst:2677 - Node <XLXI_164/XLXI_3/cnt1_4> of sequential type is unconnected in block <test_FullAdder>.
+WARNING:Xst:2677 - Node <XLXI_164/XLXI_3/cnt1_5> of sequential type is unconnected in block <test_FullAdder>.
+WARNING:Xst:2677 - Node <XLXI_164/XLXI_3/cnt1_6> of sequential type is unconnected in block <test_FullAdder>.
+WARNING:Xst:2677 - Node <XLXI_164/XLXI_3/cnt1_7> of sequential type is unconnected in block <test_FullAdder>.
+WARNING:Xst:2677 - Node <XLXI_164/XLXI_3/cnt1_8> of sequential type is unconnected in block <test_FullAdder>.
+WARNING:Xst:2677 - Node <XLXI_164/XLXI_3/cnt1_9> of sequential type is unconnected in block <test_FullAdder>.
+WARNING:Xst:2677 - Node <XLXI_164/XLXI_3/cnt1_10> of sequential type is unconnected in block <test_FullAdder>.
+WARNING:Xst:2677 - Node <XLXI_164/XLXI_3/cnt1_11> of sequential type is unconnected in block <test_FullAdder>.
+WARNING:Xst:2677 - Node <XLXI_164/XLXI_3/cnt1_12> of sequential type is unconnected in block <test_FullAdder>.
+WARNING:Xst:2677 - Node <XLXI_164/XLXI_3/cnt1_13> of sequential type is unconnected in block <test_FullAdder>.
+WARNING:Xst:2677 - Node <XLXI_164/XLXI_3/cnt1_14> of sequential type is unconnected in block <test_FullAdder>.
+WARNING:Xst:2677 - Node <XLXI_164/XLXI_3/cnt1_15> of sequential type is unconnected in block <test_FullAdder>.
+WARNING:Xst:2677 - Node <XLXI_164/XLXI_3/cnt1_16> of sequential type is unconnected in block <test_FullAdder>.
+WARNING:Xst:2677 - Node <XLXI_164/XLXI_3/cnt1_17> of sequential type is unconnected in block <test_FullAdder>.
+WARNING:Xst:2677 - Node <XLXI_164/XLXI_3/cnt1_18> of sequential type is unconnected in block <test_FullAdder>.
+WARNING:Xst:2677 - Node <XLXI_164/XLXI_3/cnt1_19> of sequential type is unconnected in block <test_FullAdder>.
+WARNING:Xst:2677 - Node <XLXI_164/XLXI_3/cnt1_20> of sequential type is unconnected in block <test_FullAdder>.
+WARNING:Xst:2677 - Node <XLXI_164/XLXI_3/cnt1_21> of sequential type is unconnected in block <test_FullAdder>.
+WARNING:Xst:2677 - Node <XLXI_164/XLXI_3/cnt1_22> of sequential type is unconnected in block <test_FullAdder>.
+WARNING:Xst:2677 - Node <XLXI_164/XLXI_3/cnt1_23> of sequential type is unconnected in block <test_FullAdder>.
+WARNING:Xst:2677 - Node <XLXI_164/XLXI_3/cnt1_24> of sequential type is unconnected in block <test_FullAdder>.
+WARNING:Xst:2677 - Node <XLXI_164/XLXI_3/cnt1_25> of sequential type is unconnected in block <test_FullAdder>.
+WARNING:Xst:2677 - Node <XLXI_164/XLXI_3/cnt1_26> of sequential type is unconnected in block <test_FullAdder>.
+WARNING:Xst:2677 - Node <XLXI_164/XLXI_3/cnt1_27> of sequential type is unconnected in block <test_FullAdder>.
+WARNING:Xst:2677 - Node <XLXI_164/XLXI_3/cnt1_28> of sequential type is unconnected in block <test_FullAdder>.
+WARNING:Xst:2677 - Node <XLXI_164/XLXI_3/cnt1_29> of sequential type is unconnected in block <test_FullAdder>.
+WARNING:Xst:2677 - Node <XLXI_164/XLXI_3/cnt1_30> of sequential type is unconnected in block <test_FullAdder>.
+WARNING:Xst:2677 - Node <XLXI_164/XLXI_3/cnt1_31> of sequential type is unconnected in block <test_FullAdder>.
 
 Mapping all equations...
 Building and optimizing final netlist ...
@@ -943,8 +940,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 251
- Flip-Flops                                            : 251
+# Registers                                            : 261
+ Flip-Flops                                            : 261
 
 =========================================================================
 
@@ -970,42 +967,43 @@ Optimization Goal                  : Speed
 Keep Hierarchy                     : No
 
 Design Statistics
-# IOs                              : 51
+# IOs                              : 45
 
 Cell Usage :
-# BELS                             : 1407
+# BELS                             : 1435
 #      GND                         : 1
-#      INV                         : 11
+#      INV                         : 13
 #      LUT1                        : 66
-#      LUT2                        : 9
-#      LUT3                        : 217
+#      LUT2                        : 64
+#      LUT3                        : 181
 #      LUT3_D                      : 4
 #      LUT4                        : 302
 #      LUT4_D                      : 112
 #      LUT4_L                      : 12
-#      MUXCY                       : 370
-#      MUXF5                       : 2
+#      MUXCY                       : 373
+#      MUXF5                       : 4
 #      VCC                         : 1
 #      XOR2                        : 48
-#      XORCY                       : 252
-# FlipFlops/Latches                : 251
+#      XORCY                       : 254
+# FlipFlops/Latches                : 261
 #      FD                          : 139
-#      FDCE                        : 25
+#      FDC                         : 2
+#      FDCE                        : 33
 #      FDCP                        : 8
 #      FDE                         : 74
 #      FDR                         : 5
-# Clock Buffers                    : 5
+# Clock Buffers                    : 6
 #      BUFG                        : 1
-#      BUFGP                       : 4
-# IO Buffers                       : 46
-#      IBUF                        : 8
-#      OBUF                        : 38
+#      BUFGP                       : 5
+# IO Buffers                       : 40
+#      IBUF                        : 9
+#      OBUF                        : 31
 # Logical                          : 51
 #      NAND2                       : 48
 #      NOR2                        : 3
-# Others                           : 8
+# Others                           : 7
 #      PULLDOWN                    : 6
-#      PULLUP                      : 2
+#      PULLUP                      : 1
 =========================================================================
 
 Device utilization summary:
@@ -1013,12 +1011,12 @@ Device utilization summary:
 
 Selected Device : 3s100ecp132-4 
 
- Number of Slices:                      428  out of    960    44%  
- Number of Slice Flip Flops:            251  out of   1920    13%  
- Number of 4 input LUTs:                733  out of   1920    38%  
- Number of IOs:                          51
- Number of bonded IOBs:                  50  out of     83    60%  
- Number of GCLKs:                         5  out of     24    20%  
+ Number of Slices:                      437  out of    960    45%  
+ Number of Slice Flip Flops:            261  out of   1920    13%  
+ Number of 4 input LUTs:                754  out of   1920    39%  
+ Number of IOs:                          45
+ Number of bonded IOBs:                  45  out of     83    54%  
+ Number of GCLKs:                         6  out of     24    25%  
 
 ---------------------------
 Partition Resource Summary:
@@ -1044,10 +1042,11 @@ Clock Signal                                     | Clock buffer(FF name)        
 Clock                                            | BUFGP                              | 66    |
 XLXI_142/XLXI_77/rowON(XLXI_142/XLXI_77/rowON1:O)| NONE(*)(XLXI_142/XLXI_77/lastrow_3)| 9     |
 XLXI_142/XLXI_28/clk_10k_01                      | BUFG                               | 148   |
+R3_C                                             | BUFGP                              | 8     |
 btn_Memory                                       | BUFGP                              | 8     |
 R2_C                                             | BUFGP                              | 4     |
 R1_C                                             | BUFGP                              | 4     |
-XLXI_158/XLXI_41/clk_10k_0                       | NONE(XLXI_158/XLXI_14/Dout0_0)     | 12    |
+XLXI_164/XLXI_3/clk_1k_0                         | NONE(XLXI_164/XLXI_14/Dout0_0)     | 14    |
 -------------------------------------------------+------------------------------------+-------+
 (*) This 1 clock signal(s) are generated by combinatorial logic,
 and XST is not able to identify which are the primary clock signals.
@@ -1059,9 +1058,25 @@ Asynchronous Control Signals Information:
 ----------------------------------------------------------------------+---------------------------------+-------+
 Control Signal                                                        | Buffer(FF name)                 | Load  |
 ----------------------------------------------------------------------+---------------------------------+-------+
-CLR                                                                   | IBUF                            | 16    |
-N0(XST_GND:G)                                                         | NONE(XLXI_158/XLXI_14/Dout0_0)  | 16    |
+CLR                                                                   | IBUF                            | 24    |
 XLXI_142/XLXI_77/lobster_and0000(XLXI_142/XLXI_77/lobster_and000086:O)| NONE(XLXI_142/XLXI_77/lastcol_0)| 9     |
+EN_hex                                                                | IBUF                            | 2     |
+XLXI_164/XLXI_14/Dout0_0_and0000(XLXI_164/XLXI_14/Dout0_0_and00001:O) | NONE(XLXI_164/XLXI_14/Dout0_0)  | 1     |
+XLXI_164/XLXI_14/Dout0_0_and0001(XLXI_164/XLXI_14/Dout0_0_and00011:O) | NONE(XLXI_164/XLXI_14/Dout0_0)  | 1     |
+XLXI_164/XLXI_14/Dout0_1_and0000(XLXI_164/XLXI_14/Dout0_1_and00001:O) | NONE(XLXI_164/XLXI_14/Dout0_1)  | 1     |
+XLXI_164/XLXI_14/Dout0_1_and0001(XLXI_164/XLXI_14/Dout0_1_and00011:O) | NONE(XLXI_164/XLXI_14/Dout0_1)  | 1     |
+XLXI_164/XLXI_14/Dout0_2_and0000(XLXI_164/XLXI_14/Dout0_2_and00001:O) | NONE(XLXI_164/XLXI_14/Dout0_2)  | 1     |
+XLXI_164/XLXI_14/Dout0_2_and0001(XLXI_164/XLXI_14/Dout0_2_and00011:O) | NONE(XLXI_164/XLXI_14/Dout0_2)  | 1     |
+XLXI_164/XLXI_14/Dout0_3_and0000(XLXI_164/XLXI_14/Dout0_3_and00001:O) | NONE(XLXI_164/XLXI_14/Dout0_3)  | 1     |
+XLXI_164/XLXI_14/Dout0_3_and0001(XLXI_164/XLXI_14/Dout0_3_and00011:O) | NONE(XLXI_164/XLXI_14/Dout0_3)  | 1     |
+XLXI_164/XLXI_14/Dout1_0_and0000(XLXI_164/XLXI_14/Dout1_0_and00001:O) | NONE(XLXI_164/XLXI_14/Dout1_0)  | 1     |
+XLXI_164/XLXI_14/Dout1_0_and0001(XLXI_164/XLXI_14/Dout1_0_and00011:O) | NONE(XLXI_164/XLXI_14/Dout1_0)  | 1     |
+XLXI_164/XLXI_14/Dout1_1_and0000(XLXI_164/XLXI_14/Dout1_1_and00001:O) | NONE(XLXI_164/XLXI_14/Dout1_1)  | 1     |
+XLXI_164/XLXI_14/Dout1_1_and0001(XLXI_164/XLXI_14/Dout1_1_and00011:O) | NONE(XLXI_164/XLXI_14/Dout1_1)  | 1     |
+XLXI_164/XLXI_14/Dout1_2_and0000(XLXI_164/XLXI_14/Dout1_2_and00001:O) | NONE(XLXI_164/XLXI_14/Dout1_2)  | 1     |
+XLXI_164/XLXI_14/Dout1_2_and0001(XLXI_164/XLXI_14/Dout1_2_and00011:O) | NONE(XLXI_164/XLXI_14/Dout1_2)  | 1     |
+XLXI_164/XLXI_14/Dout1_3_and0000(XLXI_164/XLXI_14/Dout1_3_and00001:O) | NONE(XLXI_164/XLXI_14/Dout1_3)  | 1     |
+XLXI_164/XLXI_14/Dout1_3_and0001(XLXI_164/XLXI_14/Dout1_3_and00011:O) | NONE(XLXI_164/XLXI_14/Dout1_3)  | 1     |
 ----------------------------------------------------------------------+---------------------------------+-------+
 
 Timing Summary:
@@ -1069,8 +1084,8 @@ Timing Summary:
 Speed Grade: -4
 
    Minimum period: 12.289ns (Maximum Frequency: 81.375MHz)
-   Minimum input arrival time before clock: 25.291ns
-   Maximum output required time after clock: 28.184ns
+   Minimum input arrival time before clock: 30.689ns
+   Maximum output required time after clock: 28.351ns
    Maximum combinational path delay: 29.352ns
 
 Timing Detail:
@@ -1080,7 +1095,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'Clock'
   Clock period: 12.289ns (frequency: 81.375MHz)
-  Total number of paths / destination ports: 590108 / 68
+  Total number of paths / destination ports: 609743 / 68
 -------------------------------------------------------------------------
 Delay:               12.289ns (Levels of Logic = 65)
   Source:            XLXI_142/XLXI_28/cnt10k_1 (FF)
@@ -1229,23 +1244,23 @@ Delay:               11.973ns (Levels of Logic = 22)
                                        (60.8% logic, 39.2% route)
 
 =========================================================================
-Timing constraint: Default period analysis for Clock 'XLXI_158/XLXI_41/clk_10k_0'
+Timing constraint: Default period analysis for Clock 'XLXI_164/XLXI_3/clk_1k_0'
   Clock period: 2.225ns (frequency: 449.438MHz)
   Total number of paths / destination ports: 5 / 4
 -------------------------------------------------------------------------
 Delay:               2.225ns (Levels of Logic = 1)
-  Source:            XLXI_158/XLXI_4/selx_1 (FF)
-  Destination:       XLXI_158/XLXI_4/sel_0 (FF)
-  Source Clock:      XLXI_158/XLXI_41/clk_10k_0 rising
-  Destination Clock: XLXI_158/XLXI_41/clk_10k_0 rising
+  Source:            XLXI_164/XLXI_7/selx_1 (FF)
+  Destination:       XLXI_164/XLXI_7/sel_0 (FF)
+  Source Clock:      XLXI_164/XLXI_3/clk_1k_0 rising
+  Destination Clock: XLXI_164/XLXI_3/clk_1k_0 rising
 
-  Data Path: XLXI_158/XLXI_4/selx_1 to XLXI_158/XLXI_4/sel_0
+  Data Path: XLXI_164/XLXI_7/selx_1 to XLXI_164/XLXI_7/sel_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q               2   0.591   0.622  XLXI_158/XLXI_4/selx_1 (XLXI_158/XLXI_4/selx_1)
-     LUT2:I0->O            1   0.704   0.000  XLXI_158/XLXI_4/Mrom_sel_mux0001111 (XLXI_158/XLXI_4/Mrom_sel_mux00011)
-     FD:D                      0.308          XLXI_158/XLXI_4/sel_0
+     FD:C->Q               2   0.591   0.622  XLXI_164/XLXI_7/selx_1 (XLXI_164/XLXI_7/selx_1)
+     LUT2:I0->O            1   0.704   0.000  XLXI_164/XLXI_7/Mrom_sel_mux0001111 (XLXI_164/XLXI_7/Mrom_sel_mux00011)
+     FD:D                      0.308          XLXI_164/XLXI_7/sel_0
     ----------------------------------------
     Total                      2.225ns (1.603ns logic, 0.622ns route)
                                        (72.0% logic, 28.0% route)
@@ -1292,15 +1307,95 @@ Offset:              12.741ns (Levels of Logic = 23)
                                        (62.1% logic, 37.9% route)
 
 =========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'btn_Memory'
-  Total number of paths / destination ports: 416 / 16
+Timing constraint: Default OFFSET IN BEFORE for Clock 'R3_C'
+  Total number of paths / destination ports: 8 / 8
 -------------------------------------------------------------------------
-Offset:              25.291ns (Levels of Logic = 22)
-  Source:            nADD_SUB (PAD)
-  Destination:       XLXI_1/I_Q7 (FF)
+Offset:              2.807ns (Levels of Logic = 2)
+  Source:            R1_CE (PAD)
+  Destination:       XLXI_159/I_Q0 (FF)
+  Destination Clock: R3_C rising
+
+  Data Path: R1_CE to XLXI_159/I_Q0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            16   1.218   1.034  R1_CE_IBUF (R1_CE_IBUF)
+     begin scope: 'XLXI_159'
+     FDCE:CE                   0.555          I_Q0
+    ----------------------------------------
+    Total                      2.807ns (1.773ns logic, 1.034ns route)
+                                       (63.2% logic, 36.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'btn_Memory'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              2.530ns (Levels of Logic = 2)
+  Source:            Eight_CE (PAD)
+  Destination:       XLXI_1/I_Q0 (FF)
   Destination Clock: btn_Memory rising
 
-  Data Path: nADD_SUB to XLXI_1/I_Q7
+  Data Path: Eight_CE to XLXI_1/I_Q0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             8   1.218   0.757  Eight_CE_IBUF (Eight_CE_IBUF)
+     begin scope: 'XLXI_1'
+     FDCE:CE                   0.555          I_Q0
+    ----------------------------------------
+    Total                      2.530ns (1.773ns logic, 0.757ns route)
+                                       (70.1% logic, 29.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'R2_C'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              2.807ns (Levels of Logic = 2)
+  Source:            R1_CE (PAD)
+  Destination:       XLXI_150/I_Q0 (FF)
+  Destination Clock: R2_C rising
+
+  Data Path: R1_CE to XLXI_150/I_Q0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            16   1.218   1.034  R1_CE_IBUF (R1_CE_IBUF)
+     begin scope: 'XLXI_150'
+     FDCE:CE                   0.555          I_Q0
+    ----------------------------------------
+    Total                      2.807ns (1.773ns logic, 1.034ns route)
+                                       (63.2% logic, 36.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'R1_C'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              2.807ns (Levels of Logic = 2)
+  Source:            R1_CE (PAD)
+  Destination:       XLXI_149/I_Q0 (FF)
+  Destination Clock: R1_C rising
+
+  Data Path: R1_CE to XLXI_149/I_Q0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            16   1.218   1.034  R1_CE_IBUF (R1_CE_IBUF)
+     begin scope: 'XLXI_149'
+     FDCE:CE                   0.555          I_Q0
+    ----------------------------------------
+    Total                      2.807ns (1.773ns logic, 1.034ns route)
+                                       (63.2% logic, 36.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'XLXI_164/XLXI_3/clk_1k_0'
+  Total number of paths / destination ports: 60580 / 10
+-------------------------------------------------------------------------
+Offset:              30.689ns (Levels of Logic = 25)
+  Source:            nADD_SUB (PAD)
+  Destination:       XLXI_164/XLXI_14/Dout1_3 (FF)
+  Destination Clock: XLXI_164/XLXI_3/clk_1k_0 rising
+
+  Data Path: nADD_SUB to XLXI_164/XLXI_14/Dout1_3
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
@@ -1324,68 +1419,31 @@ Offset:              25.291ns (Levels of Logic = 22)
      XOR2:I0->O            1   0.704   0.420  XLXI_3/XLXI_2/XLXI_36/XLXI_4 (XLXI_3/XLXN_1<7>)
      XOR2:I0->O            2   0.704   0.447  XLXI_3/XLXI_3/XLXI_42 (XLXI_3/XLXI_3/XLXN_156)
      XOR2:I0->O            2   0.704   0.447  XLXI_3/XLXI_3/XLXI_36/XLXI_2 (XLXI_3/XLXI_3/XLXI_36/XLXN_7)
-     XOR2:I1->O            2   0.704   0.447  XLXI_3/XLXI_3/XLXI_36/XLXI_4 (Sum_7_OBUF)
-     begin scope: 'XLXI_1'
-     FDCE:D                    0.308          I_Q7
+     XOR2:I1->O            7   0.704   0.883  XLXI_3/XLXI_3/XLXI_36/XLXI_4 (XLXN_158<7>)
+     LUT4:I0->O            4   0.704   0.622  XLXI_164/XLXI_14/Mrom_b4_mux0000111 (XLXI_164/XLXI_14/Mrom_b4_mux00001)
+     LUT4:I2->O            4   0.704   0.762  XLXI_164/XLXI_14/Mrom_b6_mux0000111 (XLXI_164/XLXI_14/Mrom_b6_mux00001)
+     LUT4:I0->O            4   0.704   0.762  XLXI_164/XLXI_14/Mrom_b8_mux000031 (XLXI_164/XLXI_14/Mrom_b8_mux00003)
+     LUT4:I0->O            1   0.704   0.000  XLXI_164/XLXI_14/Mrom_b11_mux000021 (XLXI_164/XLXI_14/Mrom_b11_mux00002)
+     FDCP:D                    0.308          XLXI_164/XLXI_14/Dout1_3
     ----------------------------------------
-    Total                     25.291ns (15.606ns logic, 9.685ns route)
-                                       (61.7% logic, 38.3% route)
+    Total                     30.689ns (18.422ns logic, 12.267ns route)
+                                       (60.0% logic, 40.0% route)
 
 =========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'R2_C'
-  Total number of paths / destination ports: 4 / 4
+Timing constraint: Default OFFSET OUT AFTER for Clock 'R3_C'
+  Total number of paths / destination ports: 360 / 11
 -------------------------------------------------------------------------
-Offset:              2.530ns (Levels of Logic = 2)
-  Source:            R1_CE (PAD)
-  Destination:       XLXI_150/I_Q0 (FF)
-  Destination Clock: R2_C rising
-
-  Data Path: R1_CE to XLXI_150/I_Q0
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O             8   1.218   0.757  R1_CE_IBUF (R1_CE_IBUF)
-     begin scope: 'XLXI_150'
-     FDCE:CE                   0.555          I_Q0
-    ----------------------------------------
-    Total                      2.530ns (1.773ns logic, 0.757ns route)
-                                       (70.1% logic, 29.9% route)
-
-=========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'R1_C'
-  Total number of paths / destination ports: 4 / 4
--------------------------------------------------------------------------
-Offset:              2.530ns (Levels of Logic = 2)
-  Source:            R1_CE (PAD)
-  Destination:       XLXI_149/I_Q0 (FF)
-  Destination Clock: R1_C rising
-
-  Data Path: R1_CE to XLXI_149/I_Q0
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O             8   1.218   0.757  R1_CE_IBUF (R1_CE_IBUF)
-     begin scope: 'XLXI_149'
-     FDCE:CE                   0.555          I_Q0
-    ----------------------------------------
-    Total                      2.530ns (1.773ns logic, 0.757ns route)
-                                       (70.1% logic, 29.9% route)
-
-=========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'R2_C'
-  Total number of paths / destination ports: 420 / 11
--------------------------------------------------------------------------
-Offset:              28.184ns (Levels of Logic = 23)
-  Source:            XLXI_150/I_Q0 (FF)
+Offset:              28.351ns (Levels of Logic = 23)
+  Source:            XLXI_159/I_Q0 (FF)
   Destination:       Cout (PAD)
-  Source Clock:      R2_C rising
+  Source Clock:      R3_C rising
 
-  Data Path: XLXI_150/I_Q0 to Cout
+  Data Path: XLXI_159/I_Q0 to Cout
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDCE:C->Q             1   0.591   0.420  I_Q0 (Q0)
-     end scope: 'XLXI_150'
+     FDCE:C->Q             4   0.591   0.587  I_Q0 (Q<0>)
+     end scope: 'XLXI_159'
      XOR2:I0->O            2   0.704   0.447  XLXI_3/XLXI_2/XLXI_9 (XLXI_3/XLXI_2/XLXN_56)
      XOR2:I0->O            2   0.704   0.447  XLXI_3/XLXI_2/XLXI_29/XLXI_2 (XLXI_3/XLXI_2/XLXI_29/XLXN_7)
      NAND2:I1->O           1   0.704   0.420  XLXI_3/XLXI_2/XLXI_29/XLXI_5 (XLXI_3/XLXI_2/XLXI_29/XLXN_4)
@@ -1409,48 +1467,8 @@ Offset:              28.184ns (Levels of Logic = 23)
      NAND2:I1->O           1   0.704   0.420  XLXI_3/XLXI_3/XLXI_36/XLXI_1 (Cout_OBUF)
      OBUF:I->O                 3.272          Cout_OBUF (Cout)
     ----------------------------------------
-    Total                     28.184ns (18.647ns logic, 9.537ns route)
-                                       (66.2% logic, 33.8% route)
-
-=========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'R1_C'
-  Total number of paths / destination ports: 420 / 11
--------------------------------------------------------------------------
-Offset:              27.144ns (Levels of Logic = 22)
-  Source:            XLXI_149/I_Q0 (FF)
-  Destination:       Cout (PAD)
-  Source Clock:      R1_C rising
-
-  Data Path: XLXI_149/I_Q0 to Cout
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FDCE:C->Q             3   0.591   0.531  I_Q0 (Q0)
-     end scope: 'XLXI_149'
-     XOR2:I1->O            2   0.704   0.447  XLXI_3/XLXI_2/XLXI_29/XLXI_2 (XLXI_3/XLXI_2/XLXI_29/XLXN_7)
-     NAND2:I1->O           1   0.704   0.420  XLXI_3/XLXI_2/XLXI_29/XLXI_5 (XLXI_3/XLXI_2/XLXI_29/XLXN_4)
-     NAND2:I1->O           2   0.704   0.447  XLXI_3/XLXI_2/XLXI_29/XLXI_1 (XLXI_3/XLXI_2/XLXN_14)
-     NAND2:I0->O           1   0.704   0.420  XLXI_3/XLXI_2/XLXI_30/XLXI_5 (XLXI_3/XLXI_2/XLXI_30/XLXN_4)
-     NAND2:I1->O           2   0.704   0.447  XLXI_3/XLXI_2/XLXI_30/XLXI_1 (XLXI_3/XLXI_2/XLXN_15)
-     NAND2:I0->O           1   0.704   0.420  XLXI_3/XLXI_2/XLXI_31/XLXI_5 (XLXI_3/XLXI_2/XLXI_31/XLXN_4)
-     NAND2:I1->O           2   0.704   0.447  XLXI_3/XLXI_2/XLXI_31/XLXI_1 (XLXI_3/XLXI_2/XLXN_21)
-     NAND2:I0->O           1   0.704   0.420  XLXI_3/XLXI_2/XLXI_32/XLXI_5 (XLXI_3/XLXI_2/XLXI_32/XLXN_4)
-     NAND2:I1->O           2   0.704   0.447  XLXI_3/XLXI_2/XLXI_32/XLXI_1 (XLXI_3/XLXI_2/XLXN_120)
-     NAND2:I0->O           1   0.704   0.420  XLXI_3/XLXI_2/XLXI_33/XLXI_5 (XLXI_3/XLXI_2/XLXI_33/XLXN_4)
-     NAND2:I1->O           2   0.704   0.447  XLXI_3/XLXI_2/XLXI_33/XLXI_1 (XLXI_3/XLXI_2/XLXN_124)
-     NAND2:I0->O           1   0.704   0.420  XLXI_3/XLXI_2/XLXI_34/XLXI_5 (XLXI_3/XLXI_2/XLXI_34/XLXN_4)
-     NAND2:I1->O           2   0.704   0.447  XLXI_3/XLXI_2/XLXI_34/XLXI_1 (XLXI_3/XLXI_2/XLXN_130)
-     NAND2:I0->O           1   0.704   0.420  XLXI_3/XLXI_2/XLXI_35/XLXI_5 (XLXI_3/XLXI_2/XLXI_35/XLXN_4)
-     NAND2:I1->O           2   0.704   0.447  XLXI_3/XLXI_2/XLXI_35/XLXI_1 (XLXI_3/XLXI_2/XLXN_131)
-     XOR2:I0->O            1   0.704   0.420  XLXI_3/XLXI_2/XLXI_36/XLXI_4 (XLXI_3/XLXN_1<7>)
-     XOR2:I0->O            2   0.704   0.447  XLXI_3/XLXI_3/XLXI_42 (XLXI_3/XLXI_3/XLXN_156)
-     XOR2:I0->O            2   0.704   0.447  XLXI_3/XLXI_3/XLXI_36/XLXI_2 (XLXI_3/XLXI_3/XLXI_36/XLXN_7)
-     NAND2:I1->O           1   0.704   0.420  XLXI_3/XLXI_3/XLXI_36/XLXI_5 (XLXI_3/XLXI_3/XLXI_36/XLXN_4)
-     NAND2:I1->O           1   0.704   0.420  XLXI_3/XLXI_3/XLXI_36/XLXI_1 (Cout_OBUF)
-     OBUF:I->O                 3.272          Cout_OBUF (Cout)
-    ----------------------------------------
-    Total                     27.144ns (17.943ns logic, 9.201ns route)
-                                       (66.1% logic, 33.9% route)
+    Total                     28.351ns (18.647ns logic, 9.704ns route)
+                                       (65.8% logic, 34.2% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'XLXI_142/XLXI_28/clk_10k_01'
@@ -1472,26 +1490,6 @@ Offset:              4.496ns (Levels of Logic = 1)
                                        (85.9% logic, 14.1% route)
 
 =========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'btn_Memory'
-  Total number of paths / destination ports: 8 / 8
--------------------------------------------------------------------------
-Offset:              4.532ns (Levels of Logic = 2)
-  Source:            XLXI_1/I_Q7 (FF)
-  Destination:       SUM_BCD<7> (PAD)
-  Source Clock:      btn_Memory rising
-
-  Data Path: XLXI_1/I_Q7 to SUM_BCD<7>
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FDCE:C->Q             6   0.591   0.669  I_Q7 (Q<7>)
-     end scope: 'XLXI_1'
-     OBUF:I->O                 3.272          SUM_BCD_7_OBUF (SUM_BCD<7>)
-    ----------------------------------------
-    Total                      4.532ns (3.863ns logic, 0.669ns route)
-                                       (85.2% logic, 14.8% route)
-
-=========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'XLXI_142/XLXI_77/rowON'
   Total number of paths / destination ports: 140 / 4
 -------------------------------------------------------------------------
@@ -1507,7 +1505,7 @@ Offset:              10.114ns (Levels of Logic = 6)
      FDCE:C->Q             9   0.591   0.995  XLXI_142/XLXI_77/lastcol_1 (XLXI_142/XLXI_77/lastcol_1)
      LUT4:I0->O            4   0.704   0.622  XLXI_142/XLXI_81/binO_cmp_eq00061 (XLXI_142/XLXI_81/binO_cmp_eq0006)
      LUT3:I2->O            1   0.704   0.595  XLXI_142/XLXI_81/binO<0>40 (XLXI_142/XLXI_81/binO<0>40)
-     LUT4:I0->O            1   0.704   0.455  XLXI_142/XLXI_81/binO<0>48_SW0 (N27)
+     LUT4:I0->O            1   0.704   0.455  XLXI_142/XLXI_81/binO<0>48_SW0 (N23)
      LUT4:I2->O            1   0.704   0.000  XLXI_142/XLXI_81/binO<0>591 (XLXI_142/XLXI_81/binO<0>59)
      MUXF5:I0->O           2   0.321   0.447  XLXI_142/XLXI_81/binO<0>59_f5 (binO_0_OBUF)
      OBUF:I->O                 3.272          binO_0_OBUF (binO<0>)
@@ -1516,30 +1514,30 @@ Offset:              10.114ns (Levels of Logic = 6)
                                        (69.2% logic, 30.8% route)
 
 =========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'XLXI_158/XLXI_41/clk_10k_0'
-  Total number of paths / destination ports: 120 / 11
+Timing constraint: Default OFFSET OUT AFTER for Clock 'XLXI_164/XLXI_3/clk_1k_0'
+  Total number of paths / destination ports: 148 / 11
 -------------------------------------------------------------------------
-Offset:              8.648ns (Levels of Logic = 4)
-  Source:            XLXI_158/XLXI_4/sel_0 (FF)
+Offset:              8.003ns (Levels of Logic = 4)
+  Source:            XLXI_164/XLXI_7/sel_0 (FF)
   Destination:       sseg<6> (PAD)
-  Source Clock:      XLXI_158/XLXI_41/clk_10k_0 rising
+  Source Clock:      XLXI_164/XLXI_3/clk_1k_0 rising
 
-  Data Path: XLXI_158/XLXI_4/sel_0 to sseg<6>
+  Data Path: XLXI_164/XLXI_7/sel_0 to sseg<6>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q               6   0.591   0.748  XLXI_158/XLXI_4/sel_0 (XLXI_158/XLXI_4/sel_0)
-     LUT2:I1->O            4   0.704   0.622  XLXI_158/XLXI_15/hexO<3>_SW0 (N11)
-     LUT4:I2->O            7   0.704   0.883  XLXI_158/XLXI_15/hexO<3> (XLXI_158/XLXN_13<3>)
-     LUT4:I0->O            1   0.704   0.420  XLXI_158/XLXI_16/Mrom_hexD_rom000041 (sseg_2_OBUF)
-     OBUF:I->O                 3.272          sseg_2_OBUF (sseg<2>)
+     FD:C->Q              11   0.591   1.108  XLXI_164/XLXI_7/sel_0 (XLXI_164/XLXI_7/sel_0)
+     LUT3:I0->O            1   0.704   0.000  XLXI_164/XLXI_15/hexO<1>2 (XLXI_164/XLXI_15/hexO<1>1)
+     MUXF5:I0->O           7   0.321   0.883  XLXI_164/XLXI_15/hexO<1>_f5 (XLXI_164/XLXN_13<1>)
+     LUT4:I0->O            1   0.704   0.420  XLXI_164/XLXI_16/Mrom_hexD_rom000021 (sseg_4_OBUF)
+     OBUF:I->O                 3.272          sseg_4_OBUF (sseg<4>)
     ----------------------------------------
-    Total                      8.648ns (5.975ns logic, 2.673ns route)
-                                       (69.1% logic, 30.9% route)
+    Total                      8.003ns (5.592ns logic, 2.411ns route)
+                                       (69.9% logic, 30.1% route)
 
 =========================================================================
 Timing constraint: Default path analysis
-  Total number of paths / destination ports: 606 / 11
+  Total number of paths / destination ports: 198 / 3
 -------------------------------------------------------------------------
 Delay:               29.352ns (Levels of Logic = 23)
   Source:            nADD_SUB (PAD)
@@ -1579,14 +1577,14 @@ Delay:               29.352ns (Levels of Logic = 23)
 =========================================================================
 
 
-Total REAL time to Xst completion: 14.00 secs
-Total CPU time to Xst completion: 13.74 secs
+Total REAL time to Xst completion: 13.00 secs
+Total CPU time to Xst completion: 12.93 secs
  
 --> 
 
-Total memory usage is 373640 kilobytes
+Total memory usage is 377632 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  334 (   0 filtered)
-Number of infos    :    7 (   0 filtered)
+Number of warnings :  284 (   0 filtered)
+Number of infos    :    8 (   0 filtered)
 
