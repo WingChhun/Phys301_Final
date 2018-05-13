@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : MemoryV2.vhf
--- /___/   /\     Timestamp : 05/13/2018 01:51:35
+-- /___/   /\     Timestamp : 05/13/2018 12:38:59
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -212,9 +212,9 @@ architecture BEHAVIORAL of Eight_Register_Shift_MUSER_MemoryV2 is
              Q   : out   std_logic_vector (7 downto 0));
    end component;
    
-   attribute HU_SET of XLXI_149 : label is "XLXI_149_58";
-   attribute HU_SET of XLXI_150 : label is "XLXI_150_57";
-   attribute HU_SET of XLXI_159 : label is "XLXI_159_59";
+   attribute HU_SET of XLXI_149 : label is "XLXI_149_133";
+   attribute HU_SET of XLXI_150 : label is "XLXI_150_132";
+   attribute HU_SET of XLXI_159 : label is "XLXI_159_134";
 begin
    XLXI_149 : FD4CE_MXILINX_MemoryV2
       port map (C=>WCLK_R1,
@@ -444,15 +444,15 @@ architecture BEHAVIORAL of MUX8Bit_MUSER_MemoryV2 is
              O  : out   std_logic);
    end component;
    
-   attribute HU_SET of XLXI_27 : label is "XLXI_27_60";
-   attribute HU_SET of XLXI_28 : label is "XLXI_28_61";
-   attribute HU_SET of XLXI_32 : label is "XLXI_32_67";
-   attribute HU_SET of XLXI_33 : label is "XLXI_33_62";
-   attribute HU_SET of XLXI_34 : label is "XLXI_34_63";
-   attribute HU_SET of XLXI_35 : label is "XLXI_35_64";
-   attribute HU_SET of XLXI_36 : label is "XLXI_36_65";
-   attribute HU_SET of XLXI_37 : label is "XLXI_37_66";
-   attribute HU_SET of XLXI_44 : label is "XLXI_44_68";
+   attribute HU_SET of XLXI_27 : label is "XLXI_27_135";
+   attribute HU_SET of XLXI_28 : label is "XLXI_28_136";
+   attribute HU_SET of XLXI_32 : label is "XLXI_32_142";
+   attribute HU_SET of XLXI_33 : label is "XLXI_33_137";
+   attribute HU_SET of XLXI_34 : label is "XLXI_34_138";
+   attribute HU_SET of XLXI_35 : label is "XLXI_35_139";
+   attribute HU_SET of XLXI_36 : label is "XLXI_36_140";
+   attribute HU_SET of XLXI_37 : label is "XLXI_37_141";
+   attribute HU_SET of XLXI_44 : label is "XLXI_44_143";
 begin
    XLXI_27 : M2_1_MXILINX_MemoryV2
       port map (D0=>XLXI_27_D0_openSignal,
