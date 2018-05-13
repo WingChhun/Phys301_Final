@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <symbol version="7" name="lab_KEYPAD_FINAL">
     <symboltype>BLOCK</symboltype>
-    <timestamp>2018-5-8T1:9:52</timestamp>
+    <timestamp>2018-5-13T19:49:4</timestamp>
     <pin polarity="Input" x="0" y="-32" name="Clock" />
     <pin polarity="Input" x="0" y="-160" name="row(3:0)" />
     <pin polarity="BiDirectional" x="384" y="-32" name="colO(3:0)" />

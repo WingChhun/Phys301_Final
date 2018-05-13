@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : ALU_Final.vhf
--- /___/   /\     Timestamp : 05/13/2018 12:38:54
+-- /___/   /\     Timestamp : 05/13/2018 12:40:50
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -310,19 +310,26 @@ library UNISIM;
 use UNISIM.Vcomponents.ALL;
 
 entity ALU_Final is
-   port ( A         : in    std_logic_vector (7 downto 0); 
-          B         : in    std_logic_vector (7 downto 0); 
-          EN_ADD    : in    std_logic; 
-          EN_SIGNED : in    std_logic; 
-          EN_SUB    : in    std_logic; 
-          Neg       : out   std_logic; 
-          OFL       : out   std_logic);
+   port ( Accumulator : in    std_logic_vector (7 downto 0); 
+          EN_SIGNED   : in    std_logic; 
+          nADD_SUB    : in    std_logic; 
+          regB        : in    std_logic_vector (7 downto 0); 
+          Neg         : out   std_logic; 
+          OFL         : out   std_logic; 
+          Sum         : out   std_logic_vector (7 downto 0));
 end ALU_Final;
 
 architecture BEHAVIORAL of ALU_Final is
+   attribute BOX_TYPE   : string ;
+   signal MSB_Acc                    : std_logic;
+   signal MSB_regB                   : std_logic;
+   signal neg_Acc                    : std_logic;
+   signal neg_regB                   : std_logic;
+   signal XLXN_34                    : std_logic;
    signal XLXI_1_Ain_openSignal      : std_logic_vector (7 downto 0);
    signal XLXI_1_Bin_openSignal      : std_logic_vector (7 downto 0);
    signal XLXI_1_nADD_SUB_openSignal : std_logic;
+   signal XLXI_9_I0_openSignal       : std_logic;
    component Full_AdderSub8_MUSER_ALU_Final
       port ( Ain      : in    std_logic_vector (7 downto 0); 
              Bin      : in    std_logic_vector (7 downto 0); 
@@ -333,6 +340,34 @@ architecture BEHAVIORAL of ALU_Final is
              OFL      : out   std_logic);
    end component;
    
+   component BUF
+      port ( I : in    std_logic; 
+             O : out   std_logic);
+   end component;
+   attribute BOX_TYPE of BUF : component is "BLACK_BOX";
+   
+   component AND2
+      port ( I0 : in    std_logic; 
+             I1 : in    std_logic; 
+             O  : out   std_logic);
+   end component;
+   attribute BOX_TYPE of AND2 : component is "BLACK_BOX";
+   
+   component AND3B1
+      port ( I0 : in    std_logic; 
+             I1 : in    std_logic; 
+             I2 : in    std_logic; 
+             O  : out   std_logic);
+   end component;
+   attribute BOX_TYPE of AND3B1 : component is "BLACK_BOX";
+   
+   component OR2
+      port ( I0 : in    std_logic; 
+             I1 : in    std_logic; 
+             O  : out   std_logic);
+   end component;
+   attribute BOX_TYPE of OR2 : component is "BLACK_BOX";
+   
 begin
    XLXI_1 : Full_AdderSub8_MUSER_ALU_Final
       port map (Ain(7 downto 0)=>XLXI_1_Ain_openSignal(7 downto 0),
@@ -342,6 +377,35 @@ begin
                 Negative=>open,
                 OFL=>open,
                 Sum=>open);
+   
+   XLXI_2 : BUF
+      port map (I=>Accumulator(7),
+                O=>MSB_Acc);
+   
+   XLXI_3 : BUF
+      port map (I=>regB(7),
+                O=>MSB_regB);
+   
+   XLXI_4 : AND2
+      port map (I0=>EN_SIGNED,
+                I1=>MSB_Acc,
+                O=>neg_Acc);
+   
+   XLXI_5 : AND2
+      port map (I0=>MSB_regB,
+                I1=>EN_SIGNED,
+                O=>neg_regB);
+   
+   XLXI_7 : AND3B1
+      port map (I0=>nADD_SUB,
+                I1=>neg_regB,
+                I2=>neg_Acc,
+                O=>XLXN_34);
+   
+   XLXI_9 : OR2
+      port map (I0=>XLXI_9_I0_openSignal,
+                I1=>XLXN_34,
+                O=>Neg);
    
 end BEHAVIORAL;
 

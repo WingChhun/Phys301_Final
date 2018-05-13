@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : lab_KEYPAD_FINAL.vhf
--- /___/   /\     Timestamp : 05/13/2018 01:21:42
+-- /___/   /\     Timestamp : 05/13/2018 12:49:41
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -38,13 +38,6 @@ architecture BEHAVIORAL of lab_KEYPAD_FINAL is
    signal XLXN_43   : std_logic;
    signal XLXN_44   : std_logic;
    signal XLXN_57   : std_logic;
-   signal XLXN_168  : std_logic_vector (3 downto 0);
-   signal XLXN_169  : std_logic;
-   signal XLXN_171  : std_logic;
-   signal XLXN_172  : std_logic;
-   signal XLXN_173  : std_logic_vector (3 downto 0);
-   signal XLXN_174  : std_logic_vector (3 downto 0);
-   signal XLXN_175  : std_logic;
    signal row_DUMMY : std_logic_vector (3 downto 0);
    component CRenc4bin
       port ( clk  : in    std_logic; 
@@ -75,48 +68,15 @@ architecture BEHAVIORAL of lab_KEYPAD_FINAL is
              CLK1   : out   std_logic);
    end component;
    
-   component key_detect
-      port ( clk  : in    std_logic; 
-             row  : in    std_logic_vector (3 downto 0); 
-             col  : in    std_logic_vector (3 downto 0); 
-             keyL : out   std_logic; 
-             Lcol : out   std_logic_vector (3 downto 0); 
-             Lrow : out   std_logic_vector (3 downto 0));
-   end component;
-   
-   component col_strobe
-      port ( clk : in    std_logic; 
-             col : inout std_logic_vector (3 downto 0));
-   end component;
-   
-   component oneshot
-      port ( CLK : in    std_logic; 
-             En  : in    std_logic; 
-             P   : out   std_logic);
-   end component;
-   
-   component decoder16keyEn
-      port ( En   : in    std_logic; 
-             rowI : in    std_logic_vector (3 downto 0); 
-             colI : in    std_logic_vector (3 downto 0); 
-             binO : out   std_logic_vector (3 downto 0));
-   end component;
-   
-   component key4_dbnc
-      port ( clk : in    std_logic; 
-             swI : in    std_logic_vector (3 downto 0); 
-             swO : out   std_logic_vector (3 downto 0));
-   end component;
-   
 begin
    row_DUMMY(3 downto 0) <= row(3 downto 0);
    XLXI_17 : CRenc4bin
       port map (CE=>XLXN_44,
                 clk=>XLXN_57,
                 rowI(3 downto 0)=>row_DUMMY(3 downto 0),
-                binO=>open,
+                binO(3 downto 0)=>binO(3 downto 0),
                 keyO=>keyO,
-                colO=>open);
+                colO(3 downto 0)=>colO(3 downto 0));
    
    XLXI_24 : PULLDOWN
       port map (O=>XLXN_43);
@@ -130,8 +90,8 @@ begin
                 CLK1=>open,
                 CLK1k=>XLXN_57,
                 CLK1M=>open,
-                CLK10k=>XLXN_169,
-                CLK100=>XLXN_172);
+                CLK10k=>open,
+                CLK100=>open);
    
    XLXI_34_0 : PULLDOWN
       port map (O=>row_DUMMY(0));
@@ -144,37 +104,6 @@ begin
    
    XLXI_34_3 : PULLDOWN
       port map (O=>row_DUMMY(3));
-   
-   XLXI_77 : key_detect
-      port map (clk=>XLXN_57,
-                col(3 downto 0)=>colO(3 downto 0),
-                row(3 downto 0)=>XLXN_168(3 downto 0),
-                keyL=>XLXN_171,
-                Lcol(3 downto 0)=>XLXN_173(3 downto 0),
-                Lrow(3 downto 0)=>XLXN_174(3 downto 0));
-   
-   XLXI_78 : col_strobe
-      port map (clk=>XLXN_169,
-                col(3 downto 0)=>colO(3 downto 0));
-   
-   XLXI_79 : oneshot
-      port map (CLK=>XLXN_172,
-                En=>XLXN_171,
-                P=>open);
-   
-   XLXI_81 : decoder16keyEn
-      port map (colI(3 downto 0)=>XLXN_173(3 downto 0),
-                En=>XLXN_175,
-                rowI(3 downto 0)=>XLXN_174(3 downto 0),
-                binO(3 downto 0)=>binO(3 downto 0));
-   
-   XLXI_83 : key4_dbnc
-      port map (clk=>XLXN_169,
-                swI(3 downto 0)=>row_DUMMY(3 downto 0),
-                swO(3 downto 0)=>XLXN_168(3 downto 0));
-   
-   XLXI_84 : PULLDOWN
-      port map (O=>XLXN_175);
    
 end BEHAVIORAL;
 
