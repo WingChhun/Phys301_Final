@@ -22,7 +22,6 @@
         <signal name="IrorDR" />
         <signal name="EN_IR" />
         <signal name="EN_hex" />
-        <signal name="row(3:0)" />
         <signal name="EN_DR" />
         <signal name="btn_Memory" />
         <signal name="WCLK_IM" />
@@ -48,6 +47,7 @@
         <signal name="anO(3:0)" />
         <signal name="RegC(7:0)" />
         <signal name="RegS(7:0)" />
+        <signal name="row(3:0)" />
         <port polarity="Input" name="RunMode" />
         <port polarity="Input" name="Clock" />
         <port polarity="Input" name="DataMode" />
@@ -60,7 +60,6 @@
         <port polarity="Input" name="AorD" />
         <port polarity="Input" name="IrorDR" />
         <port polarity="Input" name="EN_hex" />
-        <port polarity="Input" name="row(3:0)" />
         <port polarity="Input" name="btn_Memory" />
         <port polarity="Input" name="IOutorDout" />
         <port polarity="Input" name="C_WriteOnce" />
@@ -71,6 +70,7 @@
         <port polarity="Output" name="anO(3:0)" />
         <port polarity="Input" name="RegC(7:0)" />
         <port polarity="Input" name="RegS(7:0)" />
+        <port polarity="Input" name="row(3:0)" />
         <blockdef name="inv">
             <timestamp>2000-1-1T10:10:10</timestamp>
             <line x2="64" y1="-32" y2="-32" x1="0" />
@@ -94,18 +94,6 @@
             <rect width="64" x="320" y="-44" height="24" />
             <line x2="384" y1="-32" y2="-32" x1="320" />
             <rect width="256" x="64" y="-192" height="448" />
-        </blockdef>
-        <blockdef name="lab_KEYPAD_FINAL">
-            <timestamp>2018-5-13T19:49:4</timestamp>
-            <rect width="256" x="64" y="-192" height="192" />
-            <rect width="64" x="0" y="-172" height="24" />
-            <line x2="0" y1="-160" y2="-160" x1="64" />
-            <line x2="0" y1="-32" y2="-32" x1="64" />
-            <line x2="384" y1="-160" y2="-160" x1="320" />
-            <rect width="64" x="320" y="-108" height="24" />
-            <line x2="384" y1="-96" y2="-96" x1="320" />
-            <rect width="64" x="320" y="-44" height="24" />
-            <line x2="384" y1="-32" y2="-32" x1="320" />
         </blockdef>
         <blockdef name="nand2">
             <timestamp>2000-1-1T10:10:10</timestamp>
@@ -196,6 +184,18 @@
             <rect width="64" x="416" y="-364" height="24" />
             <line x2="480" y1="-352" y2="-352" x1="416" />
         </blockdef>
+        <blockdef name="KEYPAD_Final">
+            <timestamp>2018-5-13T20:35:11</timestamp>
+            <rect width="256" x="64" y="-192" height="192" />
+            <line x2="0" y1="-160" y2="-160" x1="64" />
+            <rect width="64" x="0" y="-44" height="24" />
+            <line x2="0" y1="-32" y2="-32" x1="64" />
+            <line x2="384" y1="-160" y2="-160" x1="320" />
+            <rect width="64" x="320" y="-108" height="24" />
+            <line x2="384" y1="-96" y2="-96" x1="320" />
+            <rect width="64" x="320" y="-44" height="24" />
+            <line x2="384" y1="-32" y2="-32" x1="320" />
+        </blockdef>
         <block symbolname="inv" name="XLXI_95">
             <blockpin signalname="DataMode" name="I" />
             <blockpin signalname="AddressMode" name="O" />
@@ -203,13 +203,6 @@
         <block symbolname="inv" name="XLXI_118">
             <blockpin signalname="IrorDR" name="I" />
             <blockpin signalname="EN_IR" name="O" />
-        </block>
-        <block symbolname="lab_KEYPAD_FINAL" name="XLXI_142">
-            <blockpin signalname="Clock" name="Clock" />
-            <blockpin signalname="row(3:0)" name="row(3:0)" />
-            <blockpin signalname="colO(3:0)" name="colO(3:0)" />
-            <blockpin name="keyO" />
-            <blockpin signalname="binO(3:0)" name="binO(3:0)" />
         </block>
         <block symbolname="nand2" name="XLXI_151">
             <blockpin signalname="DebugMode" name="I0" />
@@ -287,9 +280,16 @@
             <blockpin signalname="Clock" name="Clock" />
             <blockpin signalname="DebugMode" name="EN_hex" />
             <blockpin signalname="DebugMode" name="DebugMode" />
-            <blockpin signalname="Count(7:0)" name="AddressIn(7:0)" />
+            <blockpin signalname="Address(7:0)" name="AddressIn(7:0)" />
             <blockpin signalname="sseg(7:0)" name="sseg(7:0)" />
             <blockpin signalname="anO(3:0)" name="anO(3:0)" />
+        </block>
+        <block symbolname="KEYPAD_Final" name="XLXI_162">
+            <blockpin signalname="Clock" name="Clock" />
+            <blockpin signalname="row(3:0)" name="row(3:0)" />
+            <blockpin name="keyO" />
+            <blockpin signalname="binO(3:0)" name="binO(3:0)" />
+            <blockpin signalname="colO(3:0)" name="colO(3:0)" />
         </block>
     </netlist>
     <sheet sheetnum="1" width="3520" height="2720">
@@ -393,15 +393,6 @@
             <wire x2="1392" y1="1632" y2="1632" x1="1312" />
             <wire x2="1392" y1="1632" y2="1648" x1="1392" />
             <wire x2="1504" y1="1648" y2="1648" x1="1392" />
-        </branch>
-        <instance x="416" y="1488" name="XLXI_142" orien="R0">
-        </instance>
-        <branch name="Clock">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="336" y="1456" type="branch" />
-            <wire x2="416" y1="1456" y2="1456" x1="336" />
-        </branch>
-        <branch name="row(3:0)">
-            <wire x2="416" y1="1328" y2="1328" x1="384" />
         </branch>
         <branch name="DebugMode">
             <wire x2="928" y1="160" y2="160" x1="880" />
@@ -597,7 +588,6 @@
         <iomarker fontsize="28" x="480" y="608" name="IrorDR" orien="R180" />
         <iomarker fontsize="28" x="992" y="528" name="EN_hex" orien="R180" />
         <iomarker fontsize="28" x="928" y="1360" name="colO(3:0)" orien="R0" />
-        <iomarker fontsize="28" x="384" y="1328" name="row(3:0)" orien="R180" />
         <iomarker fontsize="28" x="1104" y="672" name="btn_Memory" orien="R180" />
         <iomarker fontsize="28" x="2336" y="1792" name="IOutorDout" orien="R180" />
         <iomarker fontsize="28" x="432" y="2448" name="C_WriteF" orien="R180" />
@@ -635,10 +625,6 @@
         </instance>
         <iomarker fontsize="28" x="1920" y="1328" name="sseg(7:0)" orien="R0" />
         <iomarker fontsize="28" x="1920" y="1456" name="anO(3:0)" orien="R0" />
-        <branch name="Count(7:0)">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1408" y="1456" type="branch" />
-            <wire x2="1504" y1="1456" y2="1456" x1="1408" />
-        </branch>
         <branch name="RegC(7:0)">
             <wire x2="1760" y1="272" y2="272" x1="1600" />
         </branch>
@@ -647,5 +633,19 @@
             <wire x2="1776" y1="352" y2="352" x1="1616" />
         </branch>
         <iomarker fontsize="28" x="1616" y="352" name="RegS(7:0)" orien="R180" />
+        <branch name="Address(7:0)">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1424" y="1456" type="branch" />
+            <wire x2="1504" y1="1456" y2="1456" x1="1424" />
+        </branch>
+        <instance x="416" y="1488" name="XLXI_162" orien="R0">
+        </instance>
+        <branch name="Clock">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="336" y="1328" type="branch" />
+            <wire x2="416" y1="1328" y2="1328" x1="336" />
+        </branch>
+        <branch name="row(3:0)">
+            <wire x2="416" y1="1456" y2="1456" x1="384" />
+        </branch>
+        <iomarker fontsize="28" x="384" y="1456" name="row(3:0)" orien="R180" />
     </sheet>
 </drawing>

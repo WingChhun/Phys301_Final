@@ -157,7 +157,7 @@
             <line x2="48" y1="-176" y2="-176" x1="112" />
         </blockdef>
         <blockdef name="MemoryV2">
-            <timestamp>2018-5-13T19:49:31</timestamp>
+            <timestamp>2018-5-13T20:36:6</timestamp>
             <rect width="64" x="0" y="20" height="24" />
             <line x2="0" y1="32" y2="32" x1="64" />
             <rect width="64" x="0" y="84" height="24" />
@@ -274,7 +274,6 @@
             <blockpin signalname="AorD" name="AorD" />
             <blockpin signalname="IRorDR" name="IrorDR" />
             <blockpin signalname="EN_hex" name="EN_hex" />
-            <blockpin signalname="row(3:0)" name="row(3:0)" />
             <blockpin signalname="btn_Memory" name="btn_Memory" />
             <blockpin signalname="Toggle_Output" name="IOutorDout" />
             <blockpin signalname="C_WriteOne" name="C_WriteOnce" />
@@ -283,6 +282,7 @@
             <blockpin signalname="Count(7:0)" name="Count(7:0)" />
             <blockpin name="RegC(7:0)" />
             <blockpin name="RegS(7:0)" />
+            <blockpin signalname="row(3:0)" name="row(3:0)" />
             <blockpin signalname="colO(3:0)" name="colO(3:0)" />
             <blockpin signalname="sseg(7:0)" name="sseg(7:0)" />
             <blockpin signalname="anO(3:0)" name="anO(3:0)" />
@@ -611,14 +611,14 @@
             <wire x2="2080" y1="1888" y2="1888" x1="2016" />
         </branch>
         <branch name="RST">
-            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="2027" y="1952" type="branch" />
-            <wire x2="2027" y1="1952" y2="1952" x1="1968" />
-            <wire x2="2064" y1="1952" y2="1952" x1="2027" />
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="2027" y="1952" type="branch" />
+            <wire x2="2032" y1="1952" y2="1952" x1="1968" />
+            <wire x2="2064" y1="1952" y2="1952" x1="2032" />
         </branch>
         <branch name="HLT">
-            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="2038" y="2016" type="branch" />
-            <wire x2="2038" y1="2016" y2="2016" x1="1968" />
-            <wire x2="2064" y1="2016" y2="2016" x1="2038" />
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="2038" y="2016" type="branch" />
+            <wire x2="2032" y1="2016" y2="2016" x1="1968" />
+            <wire x2="2064" y1="2016" y2="2016" x1="2032" />
         </branch>
     </sheet>
 </drawing>

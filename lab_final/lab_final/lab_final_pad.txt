@@ -1,7 +1,7 @@
 Release 14.7 - par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Sun May 13 12:50:40 2018
+Sun May 13 13:41:14 2018
 
 
 INFO: The IO information is provided in three file formats as part of the Place and Route (PAR) process.  These formats are:
@@ -102,7 +102,7 @@ Pinout by Pin Number:
 |K2        |                    |         |NC                       |         |           |              |          |         |           |         |       |          |           |                |
 |K3        |Toggle_Output       |IBUF     |IP/VREF_3                |INPUT    |LVCMOS25*  |3             |          |         |           |NONE     |       |LOCATED   |NO         |NONE            |
 |K12       |                    |         |GND                      |         |           |              |          |         |           |         |       |          |           |                |
-|K13       |D_RegisterO<4>      |IOB      |IO/VREF_1                |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |NONE**     |         |       |UNLOCATED |NO         |NONE            |
+|K13       |D_RegisterO<3>      |IOB      |IO/VREF_1                |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |NONE**     |         |       |UNLOCATED |NO         |NONE            |
 |K14       |anO<3>              |IOB      |IO_L04P_1/A10/RHCLK0     |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |NONE**     |         |       |LOCATED   |NO         |NONE            |
 |L1        |                    |DIFFM    |IO_L08P_3                |UNUSED   |           |3             |          |         |           |         |       |          |           |                |
 |L2        |                    |DIFFS    |IO_L08N_3                |UNUSED   |           |3             |          |         |           |         |       |          |           |                |
@@ -130,12 +130,12 @@ Pinout by Pin Number:
 |N4        |EnableDataLED       |IOB      |IO_L03N_2/D6/GCLK13      |OUTPUT   |LVCMOS25*  |2             |12        |SLOW     |NONE**     |         |       |LOCATED   |NO         |NONE            |
 |N5        |A_shiftO<6>         |IOB      |IO_L04N_2/D3/GCLK15      |OUTPUT   |LVCMOS25*  |2             |12        |SLOW     |NONE**     |         |       |UNLOCATED |NO         |NONE            |
 |N6        |                    |DIFFSI   |IP_L05N_2/M2/GCLK1       |UNUSED   |           |2             |          |         |           |         |       |          |           |                |
-|N7        |D_RegisterO<3>      |IOB      |IO/M1                    |OUTPUT   |LVCMOS25*  |2             |12        |SLOW     |NONE**     |         |       |UNLOCATED |NO         |NONE            |
-|N8        |NEG                 |IOB      |IO_L07N_2/DIN/D0         |OUTPUT   |LVCMOS25*  |2             |12        |SLOW     |NONE**     |         |       |UNLOCATED |NO         |NONE            |
+|N7        |A_shiftO<7>         |IOB      |IO/M1                    |OUTPUT   |LVCMOS25*  |2             |12        |SLOW     |NONE**     |         |       |UNLOCATED |NO         |NONE            |
+|N8        |D_RegisterO<4>      |IOB      |IO_L07N_2/DIN/D0         |OUTPUT   |LVCMOS25*  |2             |12        |SLOW     |NONE**     |         |       |UNLOCATED |NO         |NONE            |
 |N9        |                    |         |NC                       |         |           |              |          |         |           |         |       |          |           |                |
 |N10       |                    |         |NC                       |         |           |              |          |         |           |         |       |          |           |                |
 |N11       |sseg<3>             |IOB      |IO_L10P_2/VS2/A19        |OUTPUT   |LVCMOS25*  |2             |12        |SLOW     |NONE**     |         |       |LOCATED   |NO         |NONE            |
-|N12       |A_shiftO<7>         |IOB      |IO_L11N_2/CCLK           |OUTPUT   |LVCMOS25*  |2             |12        |SLOW     |NONE**     |         |       |UNLOCATED |NO         |NONE            |
+|N12       |NEG                 |IOB      |IO_L11N_2/CCLK           |OUTPUT   |LVCMOS25*  |2             |12        |SLOW     |NONE**     |         |       |UNLOCATED |NO         |NONE            |
 |N13       |D_RegisterO<2>      |IOB      |IO_L01P_1/A16            |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |NONE**     |         |       |UNLOCATED |NO         |NONE            |
 |N14       |sseg<4>             |IOB      |IO_L01N_1/A15            |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |NONE**     |         |       |LOCATED   |NO         |NONE            |
 |P1        |A_shiftO<4>         |IOB      |IO_L02P_2/DOUT/BUSY      |OUTPUT   |LVCMOS25*  |2             |12        |SLOW     |NONE**     |         |       |UNLOCATED |NO         |NONE            |
