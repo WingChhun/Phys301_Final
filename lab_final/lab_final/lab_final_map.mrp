@@ -9,11 +9,16 @@ Target Device  : xc3s100e
 Target Package : cp132
 Target Speed   : -4
 Mapper Version : spartan3e -- $Revision: 1.55 $
+<<<<<<< HEAD
 Mapped Date    : Sun May 13 11:49:45 2018
+=======
+Mapped Date    : Sun May 13 12:50:21 2018
+>>>>>>> debugmode
 
 Design Summary
 --------------
 Number of errors:      0
+<<<<<<< HEAD
 Number of warnings:    7
 Logic Utilization:
   Number of Slice Flip Flops:           840 out of   1,920   43%
@@ -25,20 +30,37 @@ Logic Distribution:
       *See NOTES below for an explanation of the effects of unrelated logic.
   Total Number of 4 input LUTs:       1,284 out of   1,920   66%
     Number used as logic:             1,151
+=======
+Number of warnings:    5
+Logic Utilization:
+  Number of Slice Flip Flops:           695 out of   1,920   36%
+  Number of 4 input LUTs:               640 out of   1,920   33%
+Logic Distribution:
+  Number of occupied Slices:            685 out of     960   71%
+    Number of Slices containing only related logic:     685 out of     685 100%
+    Number of Slices containing unrelated logic:          0 out of     685   0%
+      *See NOTES below for an explanation of the effects of unrelated logic.
+  Total Number of 4 input LUTs:         773 out of   1,920   40%
+    Number used as logic:               640
+>>>>>>> debugmode
     Number used as a route-thru:        133
 
   The Slice Logic Distribution report is not meaningful if the design is
   over-mapped for a non-slice resource or if Placement fails.
 
   Number of bonded IOBs:                 54 out of      83   65%
-  Number of BUFGMUXs:                     8 out of      24   33%
+  Number of BUFGMUXs:                     7 out of      24   29%
 
   Number of RPM macros:           11
+<<<<<<< HEAD
 Average Fanout of Non-Clock Nets:                2.82
+=======
+Average Fanout of Non-Clock Nets:                2.69
+>>>>>>> debugmode
 
-Peak Memory Usage:  345 MB
-Total REAL time to MAP completion:  3 secs 
-Total CPU time to MAP completion:   3 secs 
+Peak Memory Usage:  329 MB
+Total REAL time to MAP completion:  2 secs 
+Total CPU time to MAP completion:   2 secs 
 
 NOTES:
 
@@ -79,10 +101,13 @@ Section 1 - Errors
 
 Section 2 - Warnings
 --------------------
+<<<<<<< HEAD
 WARNING:Pack:249 - The following adjacent carry multiplexers occupy different
    slice components.  The resulting carry chain will have suboptimal timing.
    	XLXI_60/XLXI_142/XLXI_28/Mcompar_cnt10k_cmp_ge0000_cy<10>
    	XLXI_60/XLXI_142/XLXI_28/Mcount_cnt10k_cy<0>
+=======
+>>>>>>> debugmode
 WARNING:Pack:249 - The following adjacent carry multiplexers occupy different
    slice components.  The resulting carry chain will have suboptimal timing.
    	XLXI_43/Mcompar_cnt1M_cmp_ge0000_cy<10>
@@ -101,10 +126,13 @@ WARNING:PhysDesignRules:372 - Gated clock. Clock net XLXI_53/XLXN_18 is sourced
 WARNING:PhysDesignRules:372 - Gated clock. Clock net CLK_1_OBUF is sourced by a
    combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
+<<<<<<< HEAD
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
    XLXI_60/XLXI_142/XLXI_77/rowON is sourced by a combinatorial pin. This is not
    good design practice. Use the CE pin to control the loading of data into the
    flip-flop.
+=======
+>>>>>>> debugmode
 
 Section 3 - Informational
 -------------------------
@@ -112,10 +140,17 @@ INFO:LIT:243 - Logical network btn_writeData has no load.
 INFO:LIT:395 - The above info message is repeated 56 more times for the
    following (max. 5 shown):
    EN_hex,
+<<<<<<< HEAD
    XLXI_60/XLXI_161/XLXI_133/XLXI_159/Q<5>,
    XLXI_60/XLXI_161/XLXI_133/XLXI_159/Q<6>,
    XLXI_60/XLXI_161/XLXI_133/XLXI_159/Q<7>,
    XLXI_60/XLXI_161/XLXI_134/XLXI_159/Q<7>
+=======
+   XLXI_60/XLXI_161/XLXI_134/XLXI_159/Q<7>,
+   XLXI_60/XLXI_161/XLXI_133/XLXI_159/Q<5>,
+   XLXI_60/XLXI_161/XLXI_133/XLXI_159/Q<6>,
+   XLXI_60/XLXI_161/XLXI_133/XLXI_159/Q<7>
+>>>>>>> debugmode
    To see the details of these info messages, please use the -detail switch.
 INFO:MapLib:562 - No environment variables are currently set.
 INFO:LIT:244 - All of the single ended outputs in this design are using slew
@@ -124,9 +159,15 @@ INFO:LIT:244 - All of the single ended outputs in this design are using slew
 
 Section 4 - Removed Logic Summary
 ---------------------------------
+<<<<<<< HEAD
  250 block(s) removed
   68 block(s) optimized away
  240 signal(s) removed
+=======
+ 254 block(s) removed
+  63 block(s) optimized away
+ 244 signal(s) removed
+>>>>>>> debugmode
 
 Section 5 - Removed Logic
 -------------------------
@@ -151,6 +192,17 @@ Loadless block "XLXI_61/XLXI_1/XLXI_49" (AND) removed.
 Loadless block "XLXI_61/XLXI_1/XLXI_50" (AND) removed.
  The signal "XLXI_61/XLXI_1/Val9_2" is loadless and has been removed.
   Loadless block "XLXI_61/XLXI_1/XLXI_22" (AND) removed.
+<<<<<<< HEAD
+=======
+Loadless block "XLXI_61/XLXI_1/XLXI_57" (AND) removed.
+ The signal "XLXI_61/XLXI_1/ValE_2" is loadless and has been removed.
+  Loadless block "XLXI_61/XLXI_1/XLXI_42" (AND) removed.
+ The signal "XLXI_61/XLXI_1/ValF_1" is loadless and has been removed.
+  Loadless block "XLXI_61/XLXI_1/XLXI_3" (AND) removed.
+Loadless block "XLXI_61/XLXI_1/XLXI_58" (AND) removed.
+ The signal "XLXI_61/XLXI_1/ValF_2" is loadless and has been removed.
+  Loadless block "XLXI_61/XLXI_1/XLXI_43" (AND) removed.
+>>>>>>> debugmode
 Loadless block "XLXI_61/XLXI_121/XLXI_1/XLXI_3/XLXI_29/XLXI_4" (XOR) removed.
  The signal "XLXI_61/XLXI_121/XLXI_1/Negative_DUMMY" is loadless and has been
 removed.
@@ -424,6 +476,7 @@ Loadless block "XLXI_61/XLXI_5" (OR) removed.
   Loadless block "XLXI_61/XLXI_1/XLXI_46" (AND) removed.
  The signal "XLXI_61/STA" is loadless and has been removed.
   Loadless block "XLXI_61/XLXI_1/XLXI_45" (AND) removed.
+<<<<<<< HEAD
 The signal "XLXI_60/XLXI_161/XLXI_133/XLXI_159/Q<5>" is sourceless and has been
 removed.
 The signal "XLXI_60/XLXI_161/XLXI_133/XLXI_159/Q<6>" is sourceless and has been
@@ -432,6 +485,16 @@ The signal "XLXI_60/XLXI_161/XLXI_133/XLXI_159/Q<7>" is sourceless and has been
 removed.
 The signal "XLXI_60/XLXI_161/XLXI_134/XLXI_159/Q<7>" is sourceless and has been
 removed.
+=======
+The signal "XLXI_60/XLXI_161/XLXI_134/XLXI_159/Q<7>" is sourceless and has been
+removed.
+The signal "XLXI_60/XLXI_161/XLXI_133/XLXI_159/Q<5>" is sourceless and has been
+removed.
+The signal "XLXI_60/XLXI_161/XLXI_133/XLXI_159/Q<6>" is sourceless and has been
+removed.
+The signal "XLXI_60/XLXI_161/XLXI_133/XLXI_159/Q<7>" is sourceless and has been
+removed.
+>>>>>>> debugmode
 The signal "XLXI_60/XLXI_141/XLXI_27/M0" is sourceless and has been removed.
  Sourceless block "XLXI_60/XLXI_141/XLXI_27/I_36_8" (OR) removed.
   The signal "XLXI_60/XLXI_141/XLXI_27/O" is sourceless and has been removed.
@@ -593,6 +656,10 @@ The trimmed logic reported below is either:
    3. a side-effect of other trimmed logic
 
 The signal "XLXI_60/XLXI_142/XLXI_28/RST_inv" is unused and has been removed.
+<<<<<<< HEAD
+=======
+The signal "XLXI_60/XLXI_142/XLXN_44" is unused and has been removed.
+>>>>>>> debugmode
 The signal "XLXI_60/XLXI_161/XLXI_133/R1<5>" is unused and has been removed.
  Unused block "XLXI_60/XLXI_161/XLXI_133/XLXI_150/I_Q1" (FF) removed.
 The signal "XLXI_60/XLXI_161/XLXI_133/R1<6>" is unused and has been removed.
@@ -667,7 +734,10 @@ Unused block "XLXI_53/XLXI_6/I_36_3" (AND) removed.
 Unused block "XLXI_53/XLXI_6/I_Q3/I_36_30/I_36_9" (AND) removed.
 Unused block "XLXI_60/XLXI_141/XLXI_27/I_36_7" (AND) removed.
 Unused block "XLXI_60/XLXI_141/XLXI_27/I_36_9" (AND) removed.
+<<<<<<< HEAD
 Unused block "XLXI_60/XLXI_142/XLXI_25" (PULLUP) removed.
+=======
+>>>>>>> debugmode
 Unused block "XLXI_60/XLXI_161/XLXI_133/XLXI_159/I_Q5" (FF) removed.
 Unused block "XLXI_60/XLXI_161/XLXI_133/XLXI_159/I_Q6" (FF) removed.
 Unused block "XLXI_60/XLXI_161/XLXI_133/XLXI_159/I_Q7" (FF) removed.
@@ -751,8 +821,12 @@ GND 		XLXI_56
 PULLUP 		XLXI_60/XLXI_133/XLXI_39
 AND2B1 		XLXI_60/XLXI_141/XLXI_44/I_36_7
 PULLDOWN 		XLXI_60/XLXI_142/XLXI_24
+PULLUP 		XLXI_60/XLXI_142/XLXI_25
 INV 		XLXI_60/XLXI_142/XLXI_28/RST_inv1_INV_0
+<<<<<<< HEAD
 PULLDOWN 		XLXI_60/XLXI_142/XLXI_84
+=======
+>>>>>>> debugmode
 AND4B4 		XLXI_61/XLXI_1/XLXI_1
 AND4B3 		XLXI_61/XLXI_1/XLXI_14
 AND4B3 		XLXI_61/XLXI_1/XLXI_15
@@ -762,9 +836,12 @@ AND4B2 		XLXI_61/XLXI_1/XLXI_18
 AND4B2 		XLXI_61/XLXI_1/XLXI_19
 AND4B3 		XLXI_61/XLXI_1/XLXI_2
 AND4B1 		XLXI_61/XLXI_1/XLXI_20
+<<<<<<< HEAD
 AND4 		XLXI_61/XLXI_1/XLXI_3
 AND4B1 		XLXI_61/XLXI_1/XLXI_42
 AND4 		XLXI_61/XLXI_1/XLXI_43
+=======
+>>>>>>> debugmode
 AND2 		XLXI_61/XLXI_1/XLXI_44
 AND2 		XLXI_61/XLXI_1/XLXI_48
 AND2 		XLXI_61/XLXI_1/XLXI_51
@@ -773,8 +850,11 @@ AND2 		XLXI_61/XLXI_1/XLXI_53
 AND2 		XLXI_61/XLXI_1/XLXI_54
 AND2 		XLXI_61/XLXI_1/XLXI_55
 AND2 		XLXI_61/XLXI_1/XLXI_56
+<<<<<<< HEAD
 AND2 		XLXI_61/XLXI_1/XLXI_57
 AND2 		XLXI_61/XLXI_1/XLXI_58
+=======
+>>>>>>> debugmode
 BUF 		XLXI_61/XLXI_121/XLXI_2
 BUF 		XLXI_61/XLXI_121/XLXI_3
 AND2 		XLXI_61/XLXI_121/XLXI_4
@@ -861,6 +941,7 @@ Section 6 - IOB Properties
 
 Section 7 - RPMs
 ----------------
+<<<<<<< HEAD
 XLXI_53/XLXI_1/XLXI_1_I_Q0_37           
 XLXI_53/XLXI_1/XLXI_1_I_Q1_36           
 XLXI_53/XLXI_1/XLXI_1_I_Q2_35           
@@ -872,6 +953,19 @@ XLXI_53/XLXI_1/XLXI_1_I_Q7_30
 XLXI_53/XLXI_6/XLXI_6_I_Q0_25           
 XLXI_53/XLXI_6/XLXI_6_I_Q1_24           
 XLXI_53/XLXI_6/XLXI_6_I_Q2_23           
+=======
+XLXI_53/XLXI_1/XLXI_1_I_Q0_98           
+XLXI_53/XLXI_1/XLXI_1_I_Q1_97           
+XLXI_53/XLXI_1/XLXI_1_I_Q2_96           
+XLXI_53/XLXI_1/XLXI_1_I_Q3_95           
+XLXI_53/XLXI_1/XLXI_1_I_Q4_94           
+XLXI_53/XLXI_1/XLXI_1_I_Q5_93           
+XLXI_53/XLXI_1/XLXI_1_I_Q6_92           
+XLXI_53/XLXI_1/XLXI_1_I_Q7_91           
+XLXI_53/XLXI_6/XLXI_6_I_Q0_86           
+XLXI_53/XLXI_6/XLXI_6_I_Q1_85           
+XLXI_53/XLXI_6/XLXI_6_I_Q2_84           
+>>>>>>> debugmode
 
 Section 8 - Guide Report
 ------------------------

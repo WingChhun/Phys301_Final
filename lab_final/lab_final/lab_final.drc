@@ -1,7 +1,11 @@
 Release 14.7 Drc P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
+<<<<<<< HEAD
 Sun May 13 11:50:35 2018
+=======
+Sun May 13 12:50:49 2018
+>>>>>>> debugmode
 
 drc -z lab_final.ncd lab_final.pcf
 
@@ -11,9 +15,13 @@ WARNING:PhysDesignRules:372 - Gated clock. Clock net XLXI_53/XLXN_18 is sourced
 WARNING:PhysDesignRules:372 - Gated clock. Clock net CLK_1_OBUF is sourced by a
    combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
+<<<<<<< HEAD
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
    XLXI_60/XLXI_142/XLXI_77/rowON is sourced by a combinatorial pin. This is not
    good design practice. Use the CE pin to control the loading of data into the
    flip-flop.
 DRC detected 0 errors and 3 warnings.  Please see the previously displayed
+=======
+DRC detected 0 errors and 2 warnings.  Please see the previously displayed
+>>>>>>> debugmode
 individual error or warning messages for more details.

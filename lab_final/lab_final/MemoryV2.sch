@@ -46,10 +46,13 @@
         <signal name="Count(7:0)" />
         <signal name="sseg(7:0)" />
         <signal name="anO(3:0)" />
+<<<<<<< HEAD
         <signal name="XLXN_472" />
         <signal name="XLXN_473(7:0)" />
         <signal name="XLXN_474" />
         <signal name="XLXN_475" />
+=======
+>>>>>>> debugmode
         <signal name="RegC(7:0)" />
         <signal name="RegS(7:0)" />
         <port polarity="Input" name="RunMode" />
@@ -100,7 +103,7 @@
             <rect width="256" x="64" y="-192" height="448" />
         </blockdef>
         <blockdef name="lab_KEYPAD_FINAL">
-            <timestamp>2018-5-8T1:9:52</timestamp>
+            <timestamp>2018-5-13T19:49:4</timestamp>
             <rect width="256" x="64" y="-192" height="192" />
             <rect width="64" x="0" y="-172" height="24" />
             <line x2="0" y1="-160" y2="-160" x1="64" />

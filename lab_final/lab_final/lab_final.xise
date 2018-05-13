@@ -17,6 +17,7 @@
   <files>
     <file xil_pn:name="lab_final.sch" xil_pn:type="FILE_SCHEMATIC">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="1"/>
+<<<<<<< HEAD
       <association xil_pn:name="Implementation" xil_pn:seqID="30"/>
     </file>
     <file xil_pn:name="../modules/bin2BCD3en.vhd" xil_pn:type="FILE_VHDL">
@@ -26,6 +27,17 @@
     <file xil_pn:name="../modules/CRenc4bin.vhd" xil_pn:type="FILE_VHDL">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="4"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="12"/>
+=======
+      <association xil_pn:name="Implementation" xil_pn:seqID="24"/>
+    </file>
+    <file xil_pn:name="../modules/bin2BCD3en.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="2"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="7"/>
+    </file>
+    <file xil_pn:name="../modules/CRenc4bin.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="4"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="6"/>
+>>>>>>> debugmode
     </file>
     <file xil_pn:name="../modules/DCM_50M.vhd" xil_pn:type="FILE_VHDL">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="6"/>
@@ -33,6 +45,7 @@
     </file>
     <file xil_pn:name="../modules/DCM_100M.vhd" xil_pn:type="FILE_VHDL">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="7"/>
+<<<<<<< HEAD
       <association xil_pn:name="Implementation" xil_pn:seqID="11"/>
     </file>
     <file xil_pn:name="../modules/decoder16keyEn.vhd" xil_pn:type="FILE_VHDL">
@@ -58,6 +71,33 @@
     <file xil_pn:name="../modules/sel_strobeB.vhd" xil_pn:type="FILE_VHDL">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="14"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="5"/>
+=======
+      <association xil_pn:name="Implementation" xil_pn:seqID="5"/>
+    </file>
+    <file xil_pn:name="../modules/decoder16keyEn.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="9"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+    </file>
+    <file xil_pn:name="../modules/key_detect.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="10"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+    </file>
+    <file xil_pn:name="../modules/key4_dbnc.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="11"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+    </file>
+    <file xil_pn:name="../modules/mux4SSD.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="12"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="4"/>
+    </file>
+    <file xil_pn:name="../modules/oneshot.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="13"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+    </file>
+    <file xil_pn:name="../modules/sel_strobeB.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="14"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="3"/>
+>>>>>>> debugmode
     </file>
     <file xil_pn:name="../modules/shiftreg_hex2D.vhd" xil_pn:type="FILE_VHDL">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="15"/>
@@ -65,6 +105,7 @@
     </file>
     <file xil_pn:name="../modules/sRAM32x8_ex_pgm_data.vhd" xil_pn:type="FILE_VHDL">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="16"/>
+<<<<<<< HEAD
       <association xil_pn:name="Implementation" xil_pn:seqID="18"/>
     </file>
     <file xil_pn:name="../modules/sRAM32x8_ex_pgm_instr.vhd" xil_pn:type="FILE_VHDL">
@@ -78,6 +119,21 @@
     <file xil_pn:name="../../lab6_projects/lab6_experiment4/lab_KEYPAD_FINAL.sch" xil_pn:type="FILE_SCHEMATIC">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="84"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="26"/>
+=======
+      <association xil_pn:name="Implementation" xil_pn:seqID="12"/>
+    </file>
+    <file xil_pn:name="../modules/sRAM32x8_ex_pgm_instr.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="17"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="11"/>
+    </file>
+    <file xil_pn:name="../modules/SSD_1dig.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="20"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="2"/>
+    </file>
+    <file xil_pn:name="../../lab6_projects/lab6_experiment4/lab_KEYPAD_FINAL.sch" xil_pn:type="FILE_SCHEMATIC">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="84"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="20"/>
+>>>>>>> debugmode
     </file>
     <file xil_pn:name="../../lab6_projects/lab_experiment3/lab6_experimen3.sch" xil_pn:type="FILE_SCHEMATIC">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="122"/>
@@ -85,7 +141,11 @@
     </file>
     <file xil_pn:name="Registers.sch" xil_pn:type="FILE_SCHEMATIC">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="122"/>
+<<<<<<< HEAD
       <association xil_pn:name="Implementation" xil_pn:seqID="20"/>
+=======
+      <association xil_pn:name="Implementation" xil_pn:seqID="14"/>
+>>>>>>> debugmode
     </file>
     <file xil_pn:name="I_Memory.sch" xil_pn:type="FILE_SCHEMATIC">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="123"/>
@@ -109,7 +169,11 @@
     </file>
     <file xil_pn:name="Output_DebugMode.sch" xil_pn:type="FILE_SCHEMATIC">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="116"/>
+<<<<<<< HEAD
       <association xil_pn:name="Implementation" xil_pn:seqID="21"/>
+=======
+      <association xil_pn:name="Implementation" xil_pn:seqID="15"/>
+>>>>>>> debugmode
     </file>
     <file xil_pn:name="keypad_shift.sch" xil_pn:type="FILE_SCHEMATIC">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="120"/>
@@ -125,7 +189,7 @@
     </file>
     <file xil_pn:name="../modules/debounce.vhd" xil_pn:type="FILE_VHDL">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="122"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="1"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
     </file>
     <file xil_pn:name="../keypad_shift.sch" xil_pn:type="FILE_SCHEMATIC">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="125"/>
@@ -137,7 +201,11 @@
     </file>
     <file xil_pn:name="P_Counter.sch" xil_pn:type="FILE_SCHEMATIC">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="166"/>
+<<<<<<< HEAD
       <association xil_pn:name="Implementation" xil_pn:seqID="27"/>
+=======
+      <association xil_pn:name="Implementation" xil_pn:seqID="21"/>
+>>>>>>> debugmode
     </file>
     <file xil_pn:name="../../lab7_projects/lab7_experiment7/test_shiftReg.sch" xil_pn:type="FILE_SCHEMATIC">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="167"/>
@@ -165,11 +233,19 @@
     </file>
     <file xil_pn:name="MUX8Bit.sch" xil_pn:type="FILE_SCHEMATIC">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="178"/>
+<<<<<<< HEAD
       <association xil_pn:name="Implementation" xil_pn:seqID="24"/>
     </file>
     <file xil_pn:name="ProgramGround.sch" xil_pn:type="FILE_SCHEMATIC">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="149"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="28"/>
+=======
+      <association xil_pn:name="Implementation" xil_pn:seqID="18"/>
+    </file>
+    <file xil_pn:name="ProgramGround.sch" xil_pn:type="FILE_SCHEMATIC">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="149"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="22"/>
+>>>>>>> debugmode
     </file>
     <file xil_pn:name="../../../../../../Documents/Xlink_projects/lab_final/modules/decoder16keyEn.vhd" xil_pn:type="FILE_VHDL">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="158"/>
@@ -177,7 +253,11 @@
     </file>
     <file xil_pn:name="../../../../../../Documents/Xlink_projects/lab_final/modules/col_strobe.vhd" xil_pn:type="FILE_VHDL">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="161"/>
+<<<<<<< HEAD
       <association xil_pn:name="Implementation" xil_pn:seqID="3"/>
+=======
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+>>>>>>> debugmode
     </file>
     <file xil_pn:name="../../../../../../Downloads/Control.sch" xil_pn:type="FILE_SCHEMATIC">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="160"/>
@@ -185,7 +265,11 @@
     </file>
     <file xil_pn:name="../../../../../../Downloads/ISA.sch" xil_pn:type="FILE_SCHEMATIC">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="161"/>
+<<<<<<< HEAD
       <association xil_pn:name="Implementation" xil_pn:seqID="16"/>
+=======
+      <association xil_pn:name="Implementation" xil_pn:seqID="10"/>
+>>>>>>> debugmode
     </file>
     <file xil_pn:name="../../../../../../Downloads/program_counter.sch" xil_pn:type="FILE_SCHEMATIC">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="162"/>
@@ -209,7 +293,11 @@
     </file>
     <file xil_pn:name="Full_AdderSub8.sch" xil_pn:type="FILE_SCHEMATIC">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="181"/>
+<<<<<<< HEAD
       <association xil_pn:name="Implementation" xil_pn:seqID="14"/>
+=======
+      <association xil_pn:name="Implementation" xil_pn:seqID="8"/>
+>>>>>>> debugmode
     </file>
     <file xil_pn:name="test_ProgramCounter.sch" xil_pn:type="FILE_SCHEMATIC">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="173"/>
@@ -221,7 +309,11 @@
     </file>
     <file xil_pn:name="Register_8bit.sch" xil_pn:type="FILE_SCHEMATIC">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="212"/>
+<<<<<<< HEAD
       <association xil_pn:name="Implementation" xil_pn:seqID="19"/>
+=======
+      <association xil_pn:name="Implementation" xil_pn:seqID="13"/>
+>>>>>>> debugmode
     </file>
     <file xil_pn:name="test_FullAdder.sch" xil_pn:type="FILE_SCHEMATIC">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="213"/>
@@ -229,17 +321,26 @@
     </file>
     <file xil_pn:name="addersub8.vhd" xil_pn:type="FILE_VHDL">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="259"/>
+<<<<<<< HEAD
       <association xil_pn:name="Implementation" xil_pn:seqID="2"/>
     </file>
     <file xil_pn:name="Eight_Register_Shift.sch" xil_pn:type="FILE_SCHEMATIC">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="260"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="15"/>
+=======
+      <association xil_pn:name="Implementation" xil_pn:seqID="1"/>
+    </file>
+    <file xil_pn:name="Eight_Register_Shift.sch" xil_pn:type="FILE_SCHEMATIC">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="260"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="9"/>
+>>>>>>> debugmode
     </file>
     <file xil_pn:name="lab_final.ucf" xil_pn:type="FILE_UCF">
       <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
     </file>
     <file xil_pn:name="MemoryV2.sch" xil_pn:type="FILE_SCHEMATIC">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="268"/>
+<<<<<<< HEAD
       <association xil_pn:name="Implementation" xil_pn:seqID="29"/>
     </file>
     <file xil_pn:name="MUX_DR.sch" xil_pn:type="FILE_SCHEMATIC">
@@ -260,6 +361,21 @@
     <file xil_pn:name="MUX8_generic.sch" xil_pn:type="FILE_SCHEMATIC">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="221"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="23"/>
+=======
+      <association xil_pn:name="Implementation" xil_pn:seqID="23"/>
+    </file>
+    <file xil_pn:name="MUX_DR.sch" xil_pn:type="FILE_SCHEMATIC">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="334"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="16"/>
+    </file>
+    <file xil_pn:name="ALU_Final.sch" xil_pn:type="FILE_SCHEMATIC">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="336"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="19"/>
+    </file>
+    <file xil_pn:name="MUX8_generic.sch" xil_pn:type="FILE_SCHEMATIC">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="130"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="17"/>
+>>>>>>> debugmode
     </file>
   </files>
 

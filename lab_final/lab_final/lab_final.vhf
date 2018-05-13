@@ -7,7 +7,11 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : lab_final.vhf
+<<<<<<< HEAD
 -- /___/   /\     Timestamp : 05/13/2018 11:49:07
+=======
+-- /___/   /\     Timestamp : 05/13/2018 12:49:46
+>>>>>>> debugmode
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -99,6 +103,7 @@ architecture BEHAVIORAL of MUX8_generic_MUSER_lab_final is
              O  : out   std_logic);
    end component;
    
+<<<<<<< HEAD
    attribute HU_SET of XLXI_28 : label is "XLXI_28_0";
    attribute HU_SET of XLXI_32 : label is "XLXI_32_6";
    attribute HU_SET of XLXI_33 : label is "XLXI_33_1";
@@ -107,6 +112,16 @@ architecture BEHAVIORAL of MUX8_generic_MUSER_lab_final is
    attribute HU_SET of XLXI_36 : label is "XLXI_36_4";
    attribute HU_SET of XLXI_37 : label is "XLXI_37_5";
    attribute HU_SET of XLXI_44 : label is "XLXI_44_7";
+=======
+   attribute HU_SET of XLXI_28 : label is "XLXI_28_61";
+   attribute HU_SET of XLXI_32 : label is "XLXI_32_67";
+   attribute HU_SET of XLXI_33 : label is "XLXI_33_62";
+   attribute HU_SET of XLXI_34 : label is "XLXI_34_63";
+   attribute HU_SET of XLXI_35 : label is "XLXI_35_64";
+   attribute HU_SET of XLXI_36 : label is "XLXI_36_65";
+   attribute HU_SET of XLXI_37 : label is "XLXI_37_66";
+   attribute HU_SET of XLXI_44 : label is "XLXI_44_68";
+>>>>>>> debugmode
 begin
    XLXI_28 : M2_1_MXILINX_lab_final
       port map (D0=>I_In(0),
@@ -663,7 +678,11 @@ architecture BEHAVIORAL of Register_8bit_MUSER_lab_final is
              Q   : out   std_logic_vector (7 downto 0));
    end component;
    
+<<<<<<< HEAD
    attribute HU_SET of XLXI_1 : label is "XLXI_1_8";
+=======
+   attribute HU_SET of XLXI_1 : label is "XLXI_1_69";
+>>>>>>> debugmode
 begin
    XLXI_1 : FD8CE_MXILINX_lab_final
       port map (C=>R_WCLK,
@@ -1414,9 +1433,15 @@ architecture BEHAVIORAL of Eight_Register_Shift_MUSER_lab_final is
              Q   : out   std_logic_vector (7 downto 0));
    end component;
    
+<<<<<<< HEAD
    attribute HU_SET of XLXI_149 : label is "XLXI_149_10";
    attribute HU_SET of XLXI_150 : label is "XLXI_150_9";
    attribute HU_SET of XLXI_159 : label is "XLXI_159_11";
+=======
+   attribute HU_SET of XLXI_149 : label is "XLXI_149_71";
+   attribute HU_SET of XLXI_150 : label is "XLXI_150_70";
+   attribute HU_SET of XLXI_159 : label is "XLXI_159_72";
+>>>>>>> debugmode
 begin
    XLXI_149 : FD4CE_MXILINX_lab_final
       port map (C=>WCLK_R1,
@@ -1587,6 +1612,7 @@ architecture BEHAVIORAL of MUX8Bit_MUSER_lab_final is
              O  : out   std_logic);
    end component;
    
+<<<<<<< HEAD
    attribute HU_SET of XLXI_27 : label is "XLXI_27_12";
    attribute HU_SET of XLXI_28 : label is "XLXI_28_13";
    attribute HU_SET of XLXI_32 : label is "XLXI_32_19";
@@ -1596,6 +1622,17 @@ architecture BEHAVIORAL of MUX8Bit_MUSER_lab_final is
    attribute HU_SET of XLXI_36 : label is "XLXI_36_17";
    attribute HU_SET of XLXI_37 : label is "XLXI_37_18";
    attribute HU_SET of XLXI_44 : label is "XLXI_44_20";
+=======
+   attribute HU_SET of XLXI_27 : label is "XLXI_27_73";
+   attribute HU_SET of XLXI_28 : label is "XLXI_28_74";
+   attribute HU_SET of XLXI_32 : label is "XLXI_32_80";
+   attribute HU_SET of XLXI_33 : label is "XLXI_33_75";
+   attribute HU_SET of XLXI_34 : label is "XLXI_34_76";
+   attribute HU_SET of XLXI_35 : label is "XLXI_35_77";
+   attribute HU_SET of XLXI_36 : label is "XLXI_36_78";
+   attribute HU_SET of XLXI_37 : label is "XLXI_37_79";
+   attribute HU_SET of XLXI_44 : label is "XLXI_44_81";
+>>>>>>> debugmode
 begin
    XLXI_27 : M2_1_MXILINX_lab_final
       port map (D0=>XLXI_27_D0_openSignal,
@@ -2002,7 +2039,11 @@ architecture BEHAVIORAL of FTCLEX_MXILINX_lab_final is
    end component;
    attribute BOX_TYPE of FDCE : component is "BLACK_BOX";
    
+<<<<<<< HEAD
    attribute HU_SET of I_36_30 : label is "I_36_30_21";
+=======
+   attribute HU_SET of I_36_30 : label is "I_36_30_82";
+>>>>>>> debugmode
    attribute RLOC of I_36_35 : label is "X0Y0";
 begin
    Q <= Q_DUMMY;
@@ -2157,6 +2198,7 @@ architecture BEHAVIORAL of CB4CLED_MXILINX_lab_final is
    end component;
    attribute BOX_TYPE of OR2 : component is "BLACK_BOX";
    
+<<<<<<< HEAD
    attribute HU_SET of I_Q0 : label is "I_Q0_25";
    attribute HU_SET of I_Q1 : label is "I_Q1_24";
    attribute HU_SET of I_Q2 : label is "I_Q2_23";
@@ -2165,6 +2207,16 @@ architecture BEHAVIORAL of CB4CLED_MXILINX_lab_final is
    attribute HU_SET of I_T1 : label is "I_T1_29";
    attribute HU_SET of I_T2 : label is "I_T2_26";
    attribute HU_SET of I_T3 : label is "I_T3_27";
+=======
+   attribute HU_SET of I_Q0 : label is "I_Q0_86";
+   attribute HU_SET of I_Q1 : label is "I_Q1_85";
+   attribute HU_SET of I_Q2 : label is "I_Q2_84";
+   attribute HU_SET of I_Q3 : label is "I_Q3_83";
+   attribute HU_SET of I_TC : label is "I_TC_89";
+   attribute HU_SET of I_T1 : label is "I_T1_90";
+   attribute HU_SET of I_T2 : label is "I_T2_87";
+   attribute HU_SET of I_T3 : label is "I_T3_88";
+>>>>>>> debugmode
 begin
    Q0 <= Q0_DUMMY;
    Q1 <= Q1_DUMMY;
@@ -2459,6 +2511,7 @@ architecture BEHAVIORAL of CB8CLED_MXILINX_lab_final is
    end component;
    attribute BOX_TYPE of OR2 : component is "BLACK_BOX";
    
+<<<<<<< HEAD
    attribute HU_SET of I_Q0 : label is "I_Q0_37";
    attribute HU_SET of I_Q1 : label is "I_Q1_36";
    attribute HU_SET of I_Q2 : label is "I_Q2_35";
@@ -2475,6 +2528,24 @@ architecture BEHAVIORAL of CB8CLED_MXILINX_lab_final is
    attribute HU_SET of I_T5 : label is "I_T5_43";
    attribute HU_SET of I_T6 : label is "I_T6_40";
    attribute HU_SET of I_T7 : label is "I_T7_41";
+=======
+   attribute HU_SET of I_Q0 : label is "I_Q0_98";
+   attribute HU_SET of I_Q1 : label is "I_Q1_97";
+   attribute HU_SET of I_Q2 : label is "I_Q2_96";
+   attribute HU_SET of I_Q3 : label is "I_Q3_95";
+   attribute HU_SET of I_Q4 : label is "I_Q4_94";
+   attribute HU_SET of I_Q5 : label is "I_Q5_93";
+   attribute HU_SET of I_Q6 : label is "I_Q6_92";
+   attribute HU_SET of I_Q7 : label is "I_Q7_91";
+   attribute HU_SET of I_TC : label is "I_TC_103";
+   attribute HU_SET of I_T1 : label is "I_T1_106";
+   attribute HU_SET of I_T2 : label is "I_T2_99";
+   attribute HU_SET of I_T3 : label is "I_T3_100";
+   attribute HU_SET of I_T4 : label is "I_T4_105";
+   attribute HU_SET of I_T5 : label is "I_T5_104";
+   attribute HU_SET of I_T6 : label is "I_T6_101";
+   attribute HU_SET of I_T7 : label is "I_T7_102";
+>>>>>>> debugmode
 begin
    Q(7 downto 0) <= Q_DUMMY(7 downto 0);
    TC <= TC_DUMMY;
@@ -2531,6 +2602,7 @@ begin
                 L=>L,
                 T=>T5,
                 Q=>Q_DUMMY(5));
+<<<<<<< HEAD
    
    I_Q6 : FTCLEX_MXILINX_lab_final
       port map (C=>C,
@@ -2658,6 +2730,135 @@ begin
                 I3=>Q_DUMMY(0),
                 O=>T4_DN);
    
+=======
+   
+   I_Q6 : FTCLEX_MXILINX_lab_final
+      port map (C=>C,
+                CE=>OR_CE_L,
+                CLR=>CLR,
+                D=>D(6),
+                L=>L,
+                T=>T6,
+                Q=>Q_DUMMY(6));
+   
+   I_Q7 : FTCLEX_MXILINX_lab_final
+      port map (C=>C,
+                CE=>OR_CE_L,
+                CLR=>CLR,
+                D=>D(7),
+                L=>L,
+                T=>T7,
+                Q=>Q_DUMMY(7));
+   
+   I_TC : M2_1_MXILINX_lab_final
+      port map (D0=>TC_DN,
+                D1=>TC_UP,
+                S0=>UP,
+                O=>TC_DUMMY);
+   
+   I_T1 : M2_1B1_MXILINX_lab_final
+      port map (D0=>Q_DUMMY(0),
+                D1=>Q_DUMMY(0),
+                S0=>UP,
+                O=>T1);
+   
+   I_T2 : M2_1_MXILINX_lab_final
+      port map (D0=>T2_DN,
+                D1=>T2_UP,
+                S0=>UP,
+                O=>T2);
+   
+   I_T3 : M2_1_MXILINX_lab_final
+      port map (D0=>T3_DN,
+                D1=>T3_UP,
+                S0=>UP,
+                O=>T3);
+   
+   I_T4 : M2_1_MXILINX_lab_final
+      port map (D0=>T4_DN,
+                D1=>T4_UP,
+                S0=>UP,
+                O=>T4);
+   
+   I_T5 : M2_1_MXILINX_lab_final
+      port map (D0=>T5_DN,
+                D1=>T5_UP,
+                S0=>UP,
+                O=>T5);
+   
+   I_T6 : M2_1_MXILINX_lab_final
+      port map (D0=>T6_DN,
+                D1=>T6_UP,
+                S0=>UP,
+                O=>T6);
+   
+   I_T7 : M2_1_MXILINX_lab_final
+      port map (D0=>T7_DN,
+                D1=>T7_UP,
+                S0=>UP,
+                O=>T7);
+   
+   I_36_31 : AND5
+      port map (I0=>Q_DUMMY(7),
+                I1=>Q_DUMMY(6),
+                I2=>Q_DUMMY(5),
+                I3=>Q_DUMMY(4),
+                I4=>T4,
+                O=>TC_UP);
+   
+   I_36_33 : AND4
+      port map (I0=>Q_DUMMY(6),
+                I1=>Q_DUMMY(5),
+                I2=>Q_DUMMY(4),
+                I3=>T4,
+                O=>T7_UP);
+   
+   I_36_34 : AND4B3
+      port map (I0=>Q_DUMMY(6),
+                I1=>Q_DUMMY(5),
+                I2=>Q_DUMMY(4),
+                I3=>T4,
+                O=>T7_DN);
+   
+   I_36_36 : AND2B2
+      port map (I0=>Q_DUMMY(1),
+                I1=>Q_DUMMY(0),
+                O=>T2_DN);
+   
+   I_36_38 : VCC
+      port map (P=>XLXN_1);
+   
+   I_36_40 : AND2B1
+      port map (I0=>Q_DUMMY(4),
+                I1=>T4,
+                O=>T5_DN);
+   
+   I_36_41 : AND3
+      port map (I0=>Q_DUMMY(5),
+                I1=>Q_DUMMY(4),
+                I2=>T4,
+                O=>T6_UP);
+   
+   I_36_42 : AND3B2
+      port map (I0=>Q_DUMMY(5),
+                I1=>Q_DUMMY(4),
+                I2=>T4,
+                O=>T6_DN);
+   
+   I_36_46 : AND3B3
+      port map (I0=>Q_DUMMY(2),
+                I1=>Q_DUMMY(1),
+                I2=>Q_DUMMY(0),
+                O=>T3_DN);
+   
+   I_36_47 : AND4B4
+      port map (I0=>Q_DUMMY(3),
+                I1=>Q_DUMMY(2),
+                I2=>Q_DUMMY(1),
+                I3=>Q_DUMMY(0),
+                O=>T4_DN);
+   
+>>>>>>> debugmode
    I_36_48 : AND4
       port map (I0=>Q_DUMMY(3),
                 I1=>Q_DUMMY(2),
@@ -2817,8 +3018,13 @@ architecture BEHAVIORAL of P_Counter_MUSER_lab_final is
    end component;
    attribute BOX_TYPE of AND2B1 : component is "BLACK_BOX";
    
+<<<<<<< HEAD
    attribute HU_SET of XLXI_1 : label is "XLXI_1_46";
    attribute HU_SET of XLXI_6 : label is "XLXI_6_47";
+=======
+   attribute HU_SET of XLXI_1 : label is "XLXI_1_107";
+   attribute HU_SET of XLXI_6 : label is "XLXI_6_108";
+>>>>>>> debugmode
 begin
    Q(7 downto 0) <= Q_DUMMY(7 downto 0);
    XLXI_1 : CB8CLED_MXILINX_lab_final
@@ -3038,6 +3244,9 @@ architecture BEHAVIORAL of lab_final is
              C_WriteOnce : in    std_logic; 
              C_WriteF    : in    std_logic; 
              C_ShiftR    : in    std_logic; 
+             Count       : in    std_logic_vector (7 downto 0); 
+             RegC        : in    std_logic_vector (7 downto 0); 
+             RegS        : in    std_logic_vector (7 downto 0); 
              colO        : inout std_logic_vector (3 downto 0); 
              sseg        : out   std_logic_vector (7 downto 0); 
              anO         : out   std_logic_vector (3 downto 0); 
@@ -3048,6 +3257,7 @@ architecture BEHAVIORAL of lab_final is
    
    component ProgramGround_MUSER_lab_final
       port ( DR   : in    std_logic_vector (7 downto 0); 
+<<<<<<< HEAD
              IR   : in    std_logic_vector (7 downto 0); 
              OFL  : out   std_logic; 
              Neg  : out   std_logic; 
@@ -3059,6 +3269,19 @@ architecture BEHAVIORAL of lab_final is
    end component;
    
    attribute HU_SET of XLXI_44 : label is "XLXI_44_48";
+=======
+             tick : in    std_logic_vector (2 downto 0); 
+             IR   : in    std_logic_vector (7 downto 0); 
+             RegC : out   std_logic_vector (7 downto 0); 
+             RegS : out   std_logic_vector (7 downto 0); 
+             RST  : out   std_logic; 
+             HLT  : out   std_logic; 
+             OFL  : out   std_logic; 
+             Neg  : out   std_logic);
+   end component;
+   
+   attribute HU_SET of XLXI_44 : label is "XLXI_44_109";
+>>>>>>> debugmode
 begin
    A_shiftO(7 downto 0) <= A_shiftO_DUMMY(7 downto 0);
    CLK_1 <= CLK_1_DUMMY;
@@ -3146,12 +3369,20 @@ begin
       port map (DR(7 downto 0)=>D_RegisterO_DUMMY(7 downto 0),
                 IR(7 downto 0)=>A_shiftO_DUMMY(7 downto 0),
                 tick(2 downto 0)=>ticks(2 downto 0),
+<<<<<<< HEAD
                 HLT=>HLT,
+=======
+                HLT=>open,
+>>>>>>> debugmode
                 Neg=>NEG,
                 OFL=>OFL,
                 RegC(7 downto 0)=>RegC(7 downto 0),
                 RegS(7 downto 0)=>RegS(7 downto 0),
+<<<<<<< HEAD
                 RST=>RST);
+=======
+                RST=>open);
+>>>>>>> debugmode
    
 end BEHAVIORAL;
 

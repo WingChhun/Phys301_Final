@@ -1,1 +1,7 @@
+<<<<<<< HEAD
+=======
+sch2hdl,-intstyle,ise,-family,spartan3e,-flat,-suppress,-vhdl,C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_KEYPAD_FINAL.vhf,-w,C:/Users/James/Desktop/Github/School/Phys301/lab6_projects/lab6_experiment4/lab_KEYPAD_FINAL.sch
+sch2hdl,-intstyle,ise,-family,spartan3e,-flat,-suppress,-vhdl,C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf,-w,C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.sch
+sch2hdl,-intstyle,ise,-family,spartan3e,-flat,-suppress,-vhdl,C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/MemoryV2.vhf,-w,C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/MemoryV2.sch
+>>>>>>> debugmode
 sch2hdl,-intstyle,ise,-family,spartan3e,-flat,-suppress,-vhdl,C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf,-w,C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.sch

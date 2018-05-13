@@ -7,7 +7,11 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : Output_DebugMode.vhf
+<<<<<<< HEAD
 -- /___/   /\     Timestamp : 05/13/2018 11:26:41
+=======
+-- /___/   /\     Timestamp : 05/13/2018 12:40:39
+>>>>>>> debugmode
 -- \   \  /  \ 
 --  \___\/\___\ 
 --

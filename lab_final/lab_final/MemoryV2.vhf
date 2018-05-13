@@ -7,7 +7,11 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : MemoryV2.vhf
+<<<<<<< HEAD
 -- /___/   /\     Timestamp : 05/13/2018 11:41:41
+=======
+-- /___/   /\     Timestamp : 05/13/2018 12:49:49
+>>>>>>> debugmode
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -381,9 +385,15 @@ architecture BEHAVIORAL of Eight_Register_Shift_MUSER_MemoryV2 is
              Q   : out   std_logic_vector (7 downto 0));
    end component;
    
+<<<<<<< HEAD
    attribute HU_SET of XLXI_149 : label is "XLXI_149_50";
    attribute HU_SET of XLXI_150 : label is "XLXI_150_49";
    attribute HU_SET of XLXI_159 : label is "XLXI_159_51";
+=======
+   attribute HU_SET of XLXI_149 : label is "XLXI_149_111";
+   attribute HU_SET of XLXI_150 : label is "XLXI_150_110";
+   attribute HU_SET of XLXI_159 : label is "XLXI_159_112";
+>>>>>>> debugmode
 begin
    XLXI_149 : FD4CE_MXILINX_MemoryV2
       port map (C=>WCLK_R1,
@@ -612,6 +622,7 @@ architecture BEHAVIORAL of MUX8Bit_MUSER_MemoryV2 is
              O  : out   std_logic);
    end component;
    
+<<<<<<< HEAD
    attribute HU_SET of XLXI_27 : label is "XLXI_27_52";
    attribute HU_SET of XLXI_28 : label is "XLXI_28_53";
    attribute HU_SET of XLXI_32 : label is "XLXI_32_59";
@@ -621,6 +632,17 @@ architecture BEHAVIORAL of MUX8Bit_MUSER_MemoryV2 is
    attribute HU_SET of XLXI_36 : label is "XLXI_36_57";
    attribute HU_SET of XLXI_37 : label is "XLXI_37_58";
    attribute HU_SET of XLXI_44 : label is "XLXI_44_60";
+=======
+   attribute HU_SET of XLXI_27 : label is "XLXI_27_113";
+   attribute HU_SET of XLXI_28 : label is "XLXI_28_114";
+   attribute HU_SET of XLXI_32 : label is "XLXI_32_120";
+   attribute HU_SET of XLXI_33 : label is "XLXI_33_115";
+   attribute HU_SET of XLXI_34 : label is "XLXI_34_116";
+   attribute HU_SET of XLXI_35 : label is "XLXI_35_117";
+   attribute HU_SET of XLXI_36 : label is "XLXI_36_118";
+   attribute HU_SET of XLXI_37 : label is "XLXI_37_119";
+   attribute HU_SET of XLXI_44 : label is "XLXI_44_121";
+>>>>>>> debugmode
 begin
    XLXI_27 : M2_1_MXILINX_MemoryV2
       port map (D0=>XLXI_27_D0_openSignal,

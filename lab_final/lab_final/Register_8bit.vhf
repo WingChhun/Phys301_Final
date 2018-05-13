@@ -7,7 +7,11 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : Register_8bit.vhf
+<<<<<<< HEAD
 -- /___/   /\     Timestamp : 05/13/2018 11:26:46
+=======
+-- /___/   /\     Timestamp : 05/13/2018 12:40:48
+>>>>>>> debugmode
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -130,7 +134,11 @@ architecture BEHAVIORAL of Register_8bit is
              Q   : out   std_logic_vector (7 downto 0));
    end component;
    
+<<<<<<< HEAD
    attribute HU_SET of XLXI_1 : label is "XLXI_1_99";
+=======
+   attribute HU_SET of XLXI_1 : label is "XLXI_1_100";
+>>>>>>> debugmode
 begin
    XLXI_1 : FD8CE_MXILINX_Register_8bit
       port map (C=>R_WCLK,
