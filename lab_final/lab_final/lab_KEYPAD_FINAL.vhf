@@ -7,7 +7,11 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : lab_KEYPAD_FINAL.vhf
+<<<<<<< HEAD
+-- /___/   /\     Timestamp : 05/13/2018 11:26:37
+=======
 -- /___/   /\     Timestamp : 05/13/2018 12:49:41
+>>>>>>> debugmode
 -- \   \  /  \ 
 --  \___\/\___\ 
 --

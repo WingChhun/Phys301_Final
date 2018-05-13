@@ -7,7 +7,11 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : MUX8_generic.vhf
+<<<<<<< HEAD
+-- /___/   /\     Timestamp : 05/13/2018 11:26:46
+=======
 -- /___/   /\     Timestamp : 05/13/2018 12:45:46
+>>>>>>> debugmode
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -99,6 +103,16 @@ architecture BEHAVIORAL of MUX8_generic is
              O  : out   std_logic);
    end component;
    
+<<<<<<< HEAD
+   attribute HU_SET of XLXI_28 : label is "XLXI_28_100";
+   attribute HU_SET of XLXI_32 : label is "XLXI_32_106";
+   attribute HU_SET of XLXI_33 : label is "XLXI_33_101";
+   attribute HU_SET of XLXI_34 : label is "XLXI_34_102";
+   attribute HU_SET of XLXI_35 : label is "XLXI_35_103";
+   attribute HU_SET of XLXI_36 : label is "XLXI_36_104";
+   attribute HU_SET of XLXI_37 : label is "XLXI_37_105";
+   attribute HU_SET of XLXI_44 : label is "XLXI_44_107";
+=======
    attribute HU_SET of XLXI_28 : label is "XLXI_28_12";
    attribute HU_SET of XLXI_32 : label is "XLXI_32_18";
    attribute HU_SET of XLXI_33 : label is "XLXI_33_13";
@@ -107,6 +121,7 @@ architecture BEHAVIORAL of MUX8_generic is
    attribute HU_SET of XLXI_36 : label is "XLXI_36_16";
    attribute HU_SET of XLXI_37 : label is "XLXI_37_17";
    attribute HU_SET of XLXI_44 : label is "XLXI_44_19";
+>>>>>>> debugmode
 begin
    XLXI_28 : M2_1_MXILINX_MUX8_generic
       port map (D0=>I_In(0),

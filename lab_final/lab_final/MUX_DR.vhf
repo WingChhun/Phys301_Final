@@ -7,7 +7,11 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : MUX_DR.vhf
+<<<<<<< HEAD
+-- /___/   /\     Timestamp : 05/13/2018 11:26:46
+=======
 -- /___/   /\     Timestamp : 05/13/2018 12:40:48
+>>>>>>> debugmode
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
