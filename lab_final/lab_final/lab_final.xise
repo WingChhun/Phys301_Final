@@ -254,6 +254,18 @@
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="183"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="24"/>
     </file>
+    <file xil_pn:name="MUX4_generic.sch" xil_pn:type="FILE_SCHEMATIC">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="184"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="184"/>
+    </file>
+    <file xil_pn:name="De_MUX8bit_generic.sch" xil_pn:type="FILE_SCHEMATIC">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="187"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="187"/>
+    </file>
+    <file xil_pn:name="MUX5_1.sch" xil_pn:type="FILE_SCHEMATIC">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="188"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="188"/>
+    </file>
   </files>
 
   <properties>

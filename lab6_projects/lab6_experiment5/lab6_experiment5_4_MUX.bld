@@ -6,8 +6,8 @@ Command Line: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe
 xc3s100e-cp132-4 lab6_experiment5_4_MUX.ngc lab6_experiment5_4_MUX.ngd
 
 Reading NGO file
-"C:/Users/James/Documents/Xlink_projects/lab6_projects/lab6_experiment5/lab6_exp
-eriment5_4_MUX.ngc" ...
+"C:/Users/James/Desktop/Github/School/Phys301/lab6_projects/lab6_experiment5/lab
+6_experiment5_4_MUX.ngc" ...
 Gathering constraint information from source properties...
 Done.
 
@@ -29,10 +29,10 @@ NGDBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings:   0
 
-Total memory usage is 227792 kilobytes
+Total memory usage is 227824 kilobytes
 
 Writing NGD file "lab6_experiment5_4_MUX.ngd" ...
-Total REAL time to NGDBUILD completion:  3 sec
-Total CPU time to NGDBUILD completion:   3 sec
+Total REAL time to NGDBUILD completion:  6 sec
+Total CPU time to NGDBUILD completion:   5 sec
 
 Writing NGDBUILD log file "lab6_experiment5_4_MUX.bld"...

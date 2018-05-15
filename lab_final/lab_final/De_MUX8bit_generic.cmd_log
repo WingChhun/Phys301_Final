@@ -1,0 +1,2 @@
+sch2sym -intstyle ise -family spartan3e -w -refsym De_MUX8bit_generic C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/De_MUX8bit_generic.sch C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/De_MUX8bit_generic.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym De_MUX8bit_generic C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/De_MUX8bit_generic.sch C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/De_MUX8bit_generic.sym 

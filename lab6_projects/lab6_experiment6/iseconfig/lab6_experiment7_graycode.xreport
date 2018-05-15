@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2018-03-06T07:58:31</DateModified>
+  <DateModified>2018-05-14T21:24:27</DateModified>
   <ModuleName>lab6_experiment7_graycode</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>C:/Users/James/Documents/Xlink_projects/lab6_projects/lab6_experiment6/iseconfig/lab6_experiment7_graycode.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/James/Documents/Xlink_projects/lab6_projects/lab6_experiment6</ImplementationReportsDirectory>
+  <SavedFilePath>C:/Users/James/Desktop/Github/School/Phys301/lab6_projects/lab6_experiment6/iseconfig/lab6_experiment7_graycode.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/Users/James/Desktop/Github/School/Phys301/lab6_projects/lab6_experiment6\</ImplementationReportsDirectory>
   <DateInitialized>2018-03-06T07:58:30</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

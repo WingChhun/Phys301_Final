@@ -10,3 +10,4 @@ sch2sym -intstyle ise -family spartan3e -w -refsym MemoryV2 C:/Users/James/Deskt
 sch2sym -intstyle ise -family spartan3e -w -refsym MemoryV2 C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/MemoryV2.sch C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/MemoryV2.sym 
 sch2sym -intstyle ise -family spartan3e -w -refsym MemoryV2 C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/MemoryV2.sch C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/MemoryV2.sym 
 sch2sym -intstyle ise -family spartan3e -w -refsym MemoryV2 C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/MemoryV2.sch C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/MemoryV2.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym MemoryV2 C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/MemoryV2.sch C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/MemoryV2.sym 

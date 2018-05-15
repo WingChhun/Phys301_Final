@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.13 secs
+Total CPU time to Xst completion: 0.18 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.13 secs
+Total CPU time to Xst completion: 0.18 secs
  
 --> Reading design: lab6_experiment5_4_MUX.prj
 
@@ -104,27 +104,24 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
-Compiling vhdl file "C:/Users/James/Documents/Xlink_projects/lab6_projects/swag/DCM_50M.vhd" in Library work.
-Architecture behavioral of Entity dcm_50m is up to date.
-Compiling vhdl file "C:/Users/James/Documents/Xlink_projects/lab6_projects/swag/sel_strobeB.vhd" in Library work.
-Architecture behavioral of Entity sel_strobeb is up to date.
-Compiling vhdl file "C:/Users/James/Documents/Xlink_projects/lab6_projects/swag/bin2BCD3en.vhd" in Library work.
-Architecture behavioral of Entity bin2bcd3en is up to date.
-Compiling vhdl file "C:/Users/James/Documents/Xlink_projects/lab6_projects/swag/mux4SSD.vhd" in Library work.
-Architecture behavioral of Entity mux4ssd is up to date.
-Compiling vhdl file "C:/Users/James/Documents/Xlink_projects/lab6_projects/swag/SSD_1dig.vhd" in Library work.
-Architecture behavioral of Entity ssd_1dig is up to date.
-Compiling vhdl file "C:/Users/James/Documents/Xlink_projects/lab6_projects/lab6_experiment5/lab6_experimen3.vhf" in Library work.
+WARNING:HDLParsers:3607 - Unit work/lab6_experiment5_2_1_MUX_MUSER_lab6_experiment5_4_MUX is now defined in a different file.  It was defined in "C:/Users/James/Documents/Xlink_projects/lab6_projects/lab6_experiment5/lab6_experiment5_4_MUX.vhf", and is now defined in "C:/Users/James/Desktop/Github/School/Phys301/lab6_projects/lab6_experiment5/lab6_experiment5_4_MUX.vhf".
+WARNING:HDLParsers:3607 - Unit work/lab6_experiment5_2_1_MUX_MUSER_lab6_experiment5_4_MUX/BEHAVIORAL is now defined in a different file.  It was defined in "C:/Users/James/Documents/Xlink_projects/lab6_projects/lab6_experiment5/lab6_experiment5_4_MUX.vhf", and is now defined in "C:/Users/James/Desktop/Github/School/Phys301/lab6_projects/lab6_experiment5/lab6_experiment5_4_MUX.vhf".
+WARNING:HDLParsers:3607 - Unit work/lab6_experiment5_4_MUX is now defined in a different file.  It was defined in "C:/Users/James/Documents/Xlink_projects/lab6_projects/lab6_experiment5/lab6_experiment5_4_MUX.vhf", and is now defined in "C:/Users/James/Desktop/Github/School/Phys301/lab6_projects/lab6_experiment5/lab6_experiment5_4_MUX.vhf".
+WARNING:HDLParsers:3607 - Unit work/lab6_experiment5_4_MUX/BEHAVIORAL is now defined in a different file.  It was defined in "C:/Users/James/Documents/Xlink_projects/lab6_projects/lab6_experiment5/lab6_experiment5_4_MUX.vhf", and is now defined in "C:/Users/James/Desktop/Github/School/Phys301/lab6_projects/lab6_experiment5/lab6_experiment5_4_MUX.vhf".
+WARNING:HDLParsers:3607 - Unit work/lab6_experiment5_2_1_MUX is now defined in a different file.  It was defined in "C:/Users/James/Documents/Xlink_projects/lab6_projects/lab6_experiment5/lab6_experiment5_2_1_MUX.vhf", and is now defined in "C:/Users/James/Desktop/Github/School/Phys301/lab6_projects/lab6_experiment5/lab6_experiment5_2_1_MUX.vhf".
+WARNING:HDLParsers:3607 - Unit work/lab6_experiment5_2_1_MUX/BEHAVIORAL is now defined in a different file.  It was defined in "C:/Users/James/Documents/Xlink_projects/lab6_projects/lab6_experiment5/lab6_experiment5_2_1_MUX.vhf", and is now defined in "C:/Users/James/Desktop/Github/School/Phys301/lab6_projects/lab6_experiment5/lab6_experiment5_2_1_MUX.vhf".
+WARNING:HDLParsers:3607 - Unit work/lab6_experimen3 is now defined in a different file.  It was defined in "C:/Users/James/Documents/Xlink_projects/lab6_projects/lab6_experiment5/lab6_experimen3.vhf", and is now defined in "C:/Users/James/Desktop/Github/School/Phys301/lab6_projects/lab6_experiment5/lab6_experimen3.vhf".
+WARNING:HDLParsers:3607 - Unit work/lab6_experimen3/BEHAVIORAL is now defined in a different file.  It was defined in "C:/Users/James/Documents/Xlink_projects/lab6_projects/lab6_experiment5/lab6_experimen3.vhf", and is now defined in "C:/Users/James/Desktop/Github/School/Phys301/lab6_projects/lab6_experiment5/lab6_experimen3.vhf".
+Compiling vhdl file "C:/Users/James/Desktop/Github/School/Phys301/lab6_projects/lab6_experiment5/lab6_experimen3.vhf" in Library work.
 Entity <lab6_experimen3> compiled.
 Entity <lab6_experimen3> (Architecture <behavioral>) compiled.
-Compiling vhdl file "C:/Users/James/Documents/Xlink_projects/lab6_projects/lab6_experiment5/lab6_experiment5_4_MUX.vhf" in Library work.
+Compiling vhdl file "C:/Users/James/Desktop/Github/School/Phys301/lab6_projects/lab6_experiment5/lab6_experiment5_4_MUX.vhf" in Library work.
 Entity <lab6_experiment5_2_1_mux_muser_lab6_experiment5_4_mux> compiled.
 Entity <lab6_experiment5_2_1_mux_muser_lab6_experiment5_4_mux> (Architecture <behavioral>) compiled.
 Entity <lab6_experiment5_4_mux> compiled.
 Entity <lab6_experiment5_4_mux> (Architecture <behavioral>) compiled.
-Compiling vhdl file "C:/Users/James/Documents/Xlink_projects/lab6_projects/lab6_experiment5/lab6_experiment5_2_1_MUX.vhf" in Library work.
-Entity <lab6_experiment5_2_1_mux> compiled.
-Entity <lab6_experiment5_2_1_mux> (Architecture <behavioral>) compiled.
+Compiling vhdl file "C:/Users/James/Desktop/Github/School/Phys301/lab6_projects/lab6_experiment5/lab6_experiment5_2_1_MUX.vhf" in Library work.
+Architecture behavioral of Entity lab6_experiment5_2_1_mux is up to date.
 
 =========================================================================
 *                     Design Hierarchy Analysis                         *
@@ -159,11 +156,11 @@ Analyzing Entity <lab6_experiment5_2_1_MUX_MUSER_lab6_experiment5_4_MUX> in libr
 Entity <lab6_experiment5_2_1_MUX_MUSER_lab6_experiment5_4_MUX> analyzed. Unit <lab6_experiment5_2_1_MUX_MUSER_lab6_experiment5_4_MUX> generated.
 
 Analyzing Entity <lab6_experimen3> in library <work> (Architecture <behavioral>).
-WARNING:Xst:753 - "C:/Users/James/Documents/Xlink_projects/lab6_projects/lab6_experiment5/lab6_experimen3.vhf" line 104: Unconnected output port 'CLK1M' of component 'DCM_50M'.
-WARNING:Xst:753 - "C:/Users/James/Documents/Xlink_projects/lab6_projects/lab6_experiment5/lab6_experimen3.vhf" line 104: Unconnected output port 'CLK10k' of component 'DCM_50M'.
-WARNING:Xst:753 - "C:/Users/James/Documents/Xlink_projects/lab6_projects/lab6_experiment5/lab6_experimen3.vhf" line 104: Unconnected output port 'CLK1' of component 'DCM_50M'.
-WARNING:Xst:753 - "C:/Users/James/Documents/Xlink_projects/lab6_projects/lab6_experiment5/lab6_experimen3.vhf" line 134: Unconnected output port 'RBout' of component 'bin2BCD3en'.
-WARNING:Xst:753 - "C:/Users/James/Documents/Xlink_projects/lab6_projects/lab6_experiment5/lab6_experimen3.vhf" line 144: Unconnected output port 'dpO' of component 'mux4SSD'.
+WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab6_projects/lab6_experiment5/lab6_experimen3.vhf" line 104: Unconnected output port 'CLK1M' of component 'DCM_50M'.
+WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab6_projects/lab6_experiment5/lab6_experimen3.vhf" line 104: Unconnected output port 'CLK10k' of component 'DCM_50M'.
+WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab6_projects/lab6_experiment5/lab6_experimen3.vhf" line 104: Unconnected output port 'CLK1' of component 'DCM_50M'.
+WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab6_projects/lab6_experiment5/lab6_experimen3.vhf" line 131: Unconnected output port 'RBout' of component 'bin2BCD3en'.
+WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab6_projects/lab6_experiment5/lab6_experimen3.vhf" line 141: Unconnected output port 'dpO' of component 'mux4SSD'.
 Entity <lab6_experimen3> analyzed. Unit <lab6_experimen3> generated.
 
 Analyzing generic Entity <DCM_50M> in library <work> (Architecture <behavioral>).
@@ -265,18 +262,18 @@ Unit <SSD_1dig> synthesized.
 
 
 Synthesizing Unit <lab6_experiment5_2_1_MUX_MUSER_lab6_experiment5_4_MUX>.
-    Related source file is "C:/Users/James/Documents/Xlink_projects/lab6_projects/lab6_experiment5/lab6_experiment5_4_MUX.vhf".
+    Related source file is "C:/Users/James/Desktop/Github/School/Phys301/lab6_projects/lab6_experiment5/lab6_experiment5_4_MUX.vhf".
 Unit <lab6_experiment5_2_1_MUX_MUSER_lab6_experiment5_4_MUX> synthesized.
 
 
 Synthesizing Unit <lab6_experimen3>.
-    Related source file is "C:/Users/James/Documents/Xlink_projects/lab6_projects/lab6_experiment5/lab6_experimen3.vhf".
+    Related source file is "C:/Users/James/Desktop/Github/School/Phys301/lab6_projects/lab6_experiment5/lab6_experimen3.vhf".
 WARNING:Xst:653 - Signal <XLXI_16_dp_in_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
 Unit <lab6_experimen3> synthesized.
 
 
 Synthesizing Unit <lab6_experiment5_4_MUX>.
-    Related source file is "C:/Users/James/Documents/Xlink_projects/lab6_projects/lab6_experiment5/lab6_experiment5_4_MUX.vhf".
+    Related source file is "C:/Users/James/Desktop/Github/School/Phys301/lab6_projects/lab6_experiment5/lab6_experiment5_4_MUX.vhf".
 Unit <lab6_experiment5_4_MUX> synthesized.
 
 
@@ -809,14 +806,14 @@ Offset:              8.003ns (Levels of Logic = 4)
 =========================================================================
 
 
-Total REAL time to Xst completion: 7.00 secs
-Total CPU time to Xst completion: 6.96 secs
+Total REAL time to Xst completion: 10.00 secs
+Total CPU time to Xst completion: 10.24 secs
  
 --> 
 
 Total memory usage is 361408 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   77 (   0 filtered)
+Number of warnings :   85 (   0 filtered)
 Number of infos    :    7 (   0 filtered)
 

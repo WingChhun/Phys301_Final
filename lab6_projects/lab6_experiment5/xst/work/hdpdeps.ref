@@ -1,39 +1,42 @@
-V3 38
-FL C:/Users/James/Documents/Xlink_projects/lab6_projects/lab6_experiment5/lab6_experimen3.vhf 2018/03/01.11:16:26 P.20131013
-EN work/lab6_experimen3 1519931800 \
-      FL C:/Users/James/Documents/Xlink_projects/lab6_projects/lab6_experiment5/lab6_experimen3.vhf \
+V3 41
+FL C:/Users/James/Desktop/Github/School/Phys301/lab6_projects/lab6_experiment5/lab6_experimen3.vhf 2018/05/14.19:53:39 P.20131013
+EN work/lab6_experimen3 1526352824 \
+      FL C:/Users/James/Desktop/Github/School/Phys301/lab6_projects/lab6_experiment5/lab6_experimen3.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/lab6_experimen3/BEHAVIORAL 1519931801 \
-      FL C:/Users/James/Documents/Xlink_projects/lab6_projects/lab6_experiment5/lab6_experimen3.vhf \
-      EN work/lab6_experimen3 1519931800 CP DCM_50M CP sel_strobeB CP GND CP VCC \
-      CP bin2BCD3en CP mux4SSD CP SSD_1dig
-FL C:/Users/James/Documents/Xlink_projects/lab6_projects/lab6_experiment5/lab6_experiment5_2_1_MUX.vhf 2018/03/01.11:16:26 P.20131013
-EN work/lab6_experiment5_2_1_MUX 1519931806 \
-      FL C:/Users/James/Documents/Xlink_projects/lab6_projects/lab6_experiment5/lab6_experiment5_2_1_MUX.vhf \
+AR work/lab6_experimen3/BEHAVIORAL 1526352825 \
+      FL C:/Users/James/Desktop/Github/School/Phys301/lab6_projects/lab6_experiment5/lab6_experimen3.vhf \
+      EN work/lab6_experimen3 1526352824 CP DCM_50M CP sel_strobeB CP GND \
+      CP bin2BCD3en CP mux4SSD CP SSD_1dig CP VCC
+FL C:/Users/James/Desktop/Github/School/Phys301/lab6_projects/lab6_experiment5/lab6_experiment5_2_1_MUX.vhf 2018/03/01.12:16:26 P.20131013
+EN work/lab6_experiment5_2_1_MUX 1526352830 \
+      FL C:/Users/James/Desktop/Github/School/Phys301/lab6_projects/lab6_experiment5/lab6_experiment5_2_1_MUX.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/lab6_experiment5_2_1_MUX/BEHAVIORAL 1519931807 \
-      FL C:/Users/James/Documents/Xlink_projects/lab6_projects/lab6_experiment5/lab6_experiment5_2_1_MUX.vhf \
-      EN work/lab6_experiment5_2_1_MUX 1519931806 CP NAND2
-FL C:/Users/James/Documents/Xlink_projects/lab6_projects/lab6_experiment5/lab6_experiment5_4_MUX.vhf 2018/03/01.11:16:26 P.20131013
-EN work/lab6_experiment5_2_1_MUX_MUSER_lab6_experiment5_4_MUX 1519931802 \
-      FL C:/Users/James/Documents/Xlink_projects/lab6_projects/lab6_experiment5/lab6_experiment5_4_MUX.vhf \
+AR work/lab6_experiment5_2_1_MUX/BEHAVIORAL 1526352831 \
+      FL C:/Users/James/Desktop/Github/School/Phys301/lab6_projects/lab6_experiment5/lab6_experiment5_2_1_MUX.vhf \
+      EN work/lab6_experiment5_2_1_MUX 1526352830 CP NAND2
+FL C:/Users/James/Desktop/Github/School/Phys301/lab6_projects/lab6_experiment5/lab6_experiment5_4_MUX.vhf 2018/05/14.19:53:39 P.20131013
+EN work/lab6_experiment5_2_1_MUX_MUSER_lab6_experiment5_4_MUX 1526352826 \
+      FL C:/Users/James/Desktop/Github/School/Phys301/lab6_projects/lab6_experiment5/lab6_experiment5_4_MUX.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/lab6_experiment5_2_1_MUX_MUSER_lab6_experiment5_4_MUX/BEHAVIORAL 1519931803 \
-      FL C:/Users/James/Documents/Xlink_projects/lab6_projects/lab6_experiment5/lab6_experiment5_4_MUX.vhf \
-      EN work/lab6_experiment5_2_1_MUX_MUSER_lab6_experiment5_4_MUX 1519931802 \
+AR work/lab6_experiment5_2_1_MUX_MUSER_lab6_experiment5_4_MUX/BEHAVIORAL 1526352827 \
+      FL C:/Users/James/Desktop/Github/School/Phys301/lab6_projects/lab6_experiment5/lab6_experiment5_4_MUX.vhf \
+      EN work/lab6_experiment5_2_1_MUX_MUSER_lab6_experiment5_4_MUX 1526352826 \
       CP NAND2
-EN work/lab6_experiment5_4_MUX 1519931804 \
-      FL C:/Users/James/Documents/Xlink_projects/lab6_projects/lab6_experiment5/lab6_experiment5_4_MUX.vhf \
+EN work/lab6_experiment5_4_MUX 1526352828 \
+      FL C:/Users/James/Desktop/Github/School/Phys301/lab6_projects/lab6_experiment5/lab6_experiment5_4_MUX.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/lab6_experiment5_4_MUX/BEHAVIORAL 1519931805 \
-      FL C:/Users/James/Documents/Xlink_projects/lab6_projects/lab6_experiment5/lab6_experiment5_4_MUX.vhf \
-      EN work/lab6_experiment5_4_MUX 1519931804 \
+AR work/lab6_experiment5_4_MUX/BEHAVIORAL 1526352829 \
+      FL C:/Users/James/Desktop/Github/School/Phys301/lab6_projects/lab6_experiment5/lab6_experiment5_4_MUX.vhf \
+      EN work/lab6_experiment5_4_MUX 1526352828 \
       CP lab6_experiment5_2_1_MUX_MUSER_lab6_experiment5_4_MUX CP lab6_experimen3 \
       CP PULLDOWN
+FL C:/Users/James/Documents/Xlink_projects/lab6_projects/lab6_experiment5/lab6_experimen3.vhf 2018/03/01.11:16:26 P.20131013
+FL C:/Users/James/Documents/Xlink_projects/lab6_projects/lab6_experiment5/lab6_experiment5_2_1_MUX.vhf 2018/03/01.11:16:26 P.20131013
+FL C:/Users/James/Documents/Xlink_projects/lab6_projects/lab6_experiment5/lab6_experiment5_4_MUX.vhf 2018/03/01.11:16:26 P.20131013
 FL C:/Users/James/Documents/Xlink_projects/lab6_projects/swag/bin2BCD3en.vhd 2016/09/28.14:04:02 P.20131013
 EN work/bin2BCD3en 1519931794 \
       FL C:/Users/James/Documents/Xlink_projects/lab6_projects/swag/bin2BCD3en.vhd \

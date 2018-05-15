@@ -7,11 +7,11 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : lab6_experiment5_4_MUX.vhf
--- /___/   /\     Timestamp : 03/01/2018 11:16:26
+-- /___/   /\     Timestamp : 05/14/2018 19:53:39
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
---Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl C:/Users/James/Documents/Xlink_projects/lab6_projects/lab6_experiment5/lab6_experiment5_4_MUX.vhf -w C:/Users/James/Documents/Xlink_projects/lab6_projects/lab6_experiment5/lab6_experiment5_4_MUX.sch
+--Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl C:/Users/James/Desktop/Github/School/Phys301/lab6_projects/lab6_experiment5/lab6_experiment5_4_MUX.vhf -w C:/Users/James/Desktop/Github/School/Phys301/lab6_projects/lab6_experiment5/lab6_experiment5_4_MUX.sch
 --Design Name: lab6_experiment5_4_MUX
 --Device: spartan3e
 --Purpose:

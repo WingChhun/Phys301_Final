@@ -3,6 +3,7 @@
 
 #Programming Mode Constraints
 NET "Clock" LOC =B8 ; #CLssOCK
+NET "CLK_LED" LOC =N5 ;
 NET "RunMode" LOC = N3; #Turn on for Run Mode, Off by default is Debug mode
 
 NET "RunModeLED" LOC = G1; #LED to display Run Mode, 1 for Run, 0 for Debug(default)

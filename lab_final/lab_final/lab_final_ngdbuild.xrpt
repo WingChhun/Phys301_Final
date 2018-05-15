@@ -5,7 +5,7 @@
     The structure and the elements are likely to change over the next few releases.
     This means code written to parse this file will need to be revisited each subsequent release.-->
 
-  <application stringID="NgdBuild" timeStamp="Sun May 13 16:12:51 2018">
+  <application stringID="NgdBuild" timeStamp="Mon May 14 19:56:29 2018">
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>
@@ -66,7 +66,7 @@
         <item dataType="int" stringID="NGDBUILD_NUM_INFOS" value="0"/>
       </section>
       <section stringID="NGDBUILD_PRE_UNISIM_SUMMARY">
-        <item dataType="int" stringID="NGDBUILD_NUM_AND2" value="96"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_AND2" value="97"/>
         <item dataType="int" stringID="NGDBUILD_NUM_AND2B1" value="61"/>
         <item dataType="int" stringID="NGDBUILD_NUM_AND2B2" value="4"/>
         <item dataType="int" stringID="NGDBUILD_NUM_AND3" value="6"/>
@@ -105,7 +105,7 @@
         <item dataType="int" stringID="NGDBUILD_NUM_NAND2" value="50"/>
         <item dataType="int" stringID="NGDBUILD_NUM_NOR2" value="3"/>
         <item dataType="int" stringID="NGDBUILD_NUM_NOR3" value="1"/>
-        <item dataType="int" stringID="NGDBUILD_NUM_OBUF" value="21"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_OBUF" value="22"/>
         <item dataType="int" stringID="NGDBUILD_NUM_OR2" value="70"/>
         <item dataType="int" stringID="NGDBUILD_NUM_OR3" value="4"/>
         <item dataType="int" stringID="NGDBUILD_NUM_OR3B1" value="1"/>
@@ -117,7 +117,7 @@
         <item dataType="int" stringID="NGDBUILD_NUM_XORCY" value="434"/>
       </section>
       <section stringID="NGDBUILD_POST_UNISIM_SUMMARY">
-        <item dataType="int" stringID="NGDBUILD_NUM_AND2" value="96"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_AND2" value="97"/>
         <item dataType="int" stringID="NGDBUILD_NUM_AND2B1" value="61"/>
         <item dataType="int" stringID="NGDBUILD_NUM_AND2B2" value="4"/>
         <item dataType="int" stringID="NGDBUILD_NUM_AND3" value="6"/>
@@ -156,7 +156,7 @@
         <item dataType="int" stringID="NGDBUILD_NUM_NAND2" value="50"/>
         <item dataType="int" stringID="NGDBUILD_NUM_NOR2" value="3"/>
         <item dataType="int" stringID="NGDBUILD_NUM_NOR3" value="1"/>
-        <item dataType="int" stringID="NGDBUILD_NUM_OBUF" value="21"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_OBUF" value="22"/>
         <item dataType="int" stringID="NGDBUILD_NUM_OR2" value="70"/>
         <item dataType="int" stringID="NGDBUILD_NUM_OR3" value="4"/>
         <item dataType="int" stringID="NGDBUILD_NUM_OR3B1" value="1"/>

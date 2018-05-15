@@ -5,19 +5,43 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/James/Documents/Xlink_projects/lab6_projects/lab6_experiment5/lab6_experimen3.vhf</arg>&quot; line <arg fmt="%d" index="2">104</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">CLK1M</arg>&apos; of component &apos;<arg fmt="%s" index="4">DCM_50M</arg>&apos;.
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/lab6_experiment5_2_1_MUX_MUSER_lab6_experiment5_4_MUX</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/James/Documents/Xlink_projects/lab6_projects/lab6_experiment5/lab6_experiment5_4_MUX.vhf</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/James/Desktop/Github/School/Phys301/lab6_projects/lab6_experiment5/lab6_experiment5_4_MUX.vhf</arg>&quot;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/James/Documents/Xlink_projects/lab6_projects/lab6_experiment5/lab6_experimen3.vhf</arg>&quot; line <arg fmt="%d" index="2">104</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">CLK10k</arg>&apos; of component &apos;<arg fmt="%s" index="4">DCM_50M</arg>&apos;.
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/lab6_experiment5_2_1_MUX_MUSER_lab6_experiment5_4_MUX/BEHAVIORAL</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/James/Documents/Xlink_projects/lab6_projects/lab6_experiment5/lab6_experiment5_4_MUX.vhf</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/James/Desktop/Github/School/Phys301/lab6_projects/lab6_experiment5/lab6_experiment5_4_MUX.vhf</arg>&quot;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/James/Documents/Xlink_projects/lab6_projects/lab6_experiment5/lab6_experimen3.vhf</arg>&quot; line <arg fmt="%d" index="2">104</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">CLK1</arg>&apos; of component &apos;<arg fmt="%s" index="4">DCM_50M</arg>&apos;.
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/lab6_experiment5_4_MUX</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/James/Documents/Xlink_projects/lab6_projects/lab6_experiment5/lab6_experiment5_4_MUX.vhf</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/James/Desktop/Github/School/Phys301/lab6_projects/lab6_experiment5/lab6_experiment5_4_MUX.vhf</arg>&quot;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/James/Documents/Xlink_projects/lab6_projects/lab6_experiment5/lab6_experimen3.vhf</arg>&quot; line <arg fmt="%d" index="2">134</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">RBout</arg>&apos; of component &apos;<arg fmt="%s" index="4">bin2BCD3en</arg>&apos;.
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/lab6_experiment5_4_MUX/BEHAVIORAL</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/James/Documents/Xlink_projects/lab6_projects/lab6_experiment5/lab6_experiment5_4_MUX.vhf</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/James/Desktop/Github/School/Phys301/lab6_projects/lab6_experiment5/lab6_experiment5_4_MUX.vhf</arg>&quot;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/James/Documents/Xlink_projects/lab6_projects/lab6_experiment5/lab6_experimen3.vhf</arg>&quot; line <arg fmt="%d" index="2">144</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">dpO</arg>&apos; of component &apos;<arg fmt="%s" index="4">mux4SSD</arg>&apos;.
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/lab6_experiment5_2_1_MUX</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/James/Documents/Xlink_projects/lab6_projects/lab6_experiment5/lab6_experiment5_2_1_MUX.vhf</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/James/Desktop/Github/School/Phys301/lab6_projects/lab6_experiment5/lab6_experiment5_2_1_MUX.vhf</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/lab6_experiment5_2_1_MUX/BEHAVIORAL</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/James/Documents/Xlink_projects/lab6_projects/lab6_experiment5/lab6_experiment5_2_1_MUX.vhf</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/James/Desktop/Github/School/Phys301/lab6_projects/lab6_experiment5/lab6_experiment5_2_1_MUX.vhf</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/lab6_experimen3</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/James/Documents/Xlink_projects/lab6_projects/lab6_experiment5/lab6_experimen3.vhf</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/James/Desktop/Github/School/Phys301/lab6_projects/lab6_experiment5/lab6_experimen3.vhf</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/lab6_experimen3/BEHAVIORAL</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/James/Documents/Xlink_projects/lab6_projects/lab6_experiment5/lab6_experimen3.vhf</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/James/Desktop/Github/School/Phys301/lab6_projects/lab6_experiment5/lab6_experimen3.vhf</arg>&quot;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/James/Desktop/Github/School/Phys301/lab6_projects/lab6_experiment5/lab6_experimen3.vhf</arg>&quot; line <arg fmt="%d" index="2">104</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">CLK1M</arg>&apos; of component &apos;<arg fmt="%s" index="4">DCM_50M</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/James/Desktop/Github/School/Phys301/lab6_projects/lab6_experiment5/lab6_experimen3.vhf</arg>&quot; line <arg fmt="%d" index="2">104</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">CLK10k</arg>&apos; of component &apos;<arg fmt="%s" index="4">DCM_50M</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/James/Desktop/Github/School/Phys301/lab6_projects/lab6_experiment5/lab6_experimen3.vhf</arg>&quot; line <arg fmt="%d" index="2">104</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">CLK1</arg>&apos; of component &apos;<arg fmt="%s" index="4">DCM_50M</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/James/Desktop/Github/School/Phys301/lab6_projects/lab6_experiment5/lab6_experimen3.vhf</arg>&quot; line <arg fmt="%d" index="2">131</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">RBout</arg>&apos; of component &apos;<arg fmt="%s" index="4">bin2BCD3en</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/James/Desktop/Github/School/Phys301/lab6_projects/lab6_experiment5/lab6_experimen3.vhf</arg>&quot; line <arg fmt="%d" index="2">141</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">dpO</arg>&apos; of component &apos;<arg fmt="%s" index="4">mux4SSD</arg>&apos;.
 </msg>
 
 <msg type="info" file="Xst" num="1561" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/James/Documents/Xlink_projects/lab6_projects/swag/bin2BCD3en.vhd</arg>&quot; line <arg fmt="%d" index="2">62</arg>: Mux is complete : default of case is discarded

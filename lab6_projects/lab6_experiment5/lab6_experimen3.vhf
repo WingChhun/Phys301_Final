@@ -7,11 +7,11 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : lab6_experimen3.vhf
--- /___/   /\     Timestamp : 03/01/2018 11:16:26
+-- /___/   /\     Timestamp : 05/14/2018 19:53:39
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
---Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl C:/Users/James/Documents/Xlink_projects/lab6_projects/lab6_experiment5/lab6_experimen3.vhf -w C:/Users/James/Documents/Xlink_projects/lab6_projects/lab_experiment3/lab6_experimen3.sch
+--Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl C:/Users/James/Desktop/Github/School/Phys301/lab6_projects/lab6_experiment5/lab6_experimen3.vhf -w C:/Users/James/Desktop/Github/School/Phys301/lab6_projects/lab_experiment3/lab6_experimen3.sch
 --Design Name: lab6_experimen3
 --Device: spartan3e
 --Purpose:
@@ -43,8 +43,8 @@ architecture BEHAVIORAL of lab6_experimen3 is
    signal XLXN_13                  : std_logic_vector (3 downto 0);
    signal XLXN_15                  : std_logic_vector (0 to 1);
    signal XLXN_16                  : std_logic;
-   signal XLXN_24                  : std_logic;
    signal XLXN_31                  : std_logic;
+   signal XLXN_32                  : std_logic;
    signal XLXI_16_dp_in_openSignal : std_logic;
    component DCM_50M
       port ( CLK    : in    std_logic; 
@@ -64,11 +64,6 @@ architecture BEHAVIORAL of lab6_experimen3 is
       port ( G : out   std_logic);
    end component;
    attribute BOX_TYPE of GND : component is "BLACK_BOX";
-   
-   component VCC
-      port ( P : out   std_logic);
-   end component;
-   attribute BOX_TYPE of VCC : component is "BLACK_BOX";
    
    component bin2BCD3en
       port ( CLK   : in    std_logic; 
@@ -100,6 +95,11 @@ architecture BEHAVIORAL of lab6_experimen3 is
              sseg  : out   std_logic_vector (7 downto 0));
    end component;
    
+   component VCC
+      port ( P : out   std_logic);
+   end component;
+   attribute BOX_TYPE of VCC : component is "BLACK_BOX";
+   
 begin
    XLXI_3 : DCM_50M
       port map (CLK=>Clock,
@@ -128,9 +128,6 @@ begin
    XLXI_12 : GND
       port map (G=>dp_in(0));
    
-   XLXI_13 : VCC
-      port map (P=>XLXN_24);
-   
    XLXI_14 : bin2BCD3en
       port map (CLK=>XLXN_31,
                 Din(7 downto 0)=>Din(7 downto 0),
@@ -147,7 +144,7 @@ begin
                 hexB(3 downto 0)=>XLXN_7(3 downto 0),
                 hexC(3 downto 0)=>XLXN_8(3 downto 0),
                 hexD(3 downto 0)=>XLXN_9(3 downto 0),
-                rb_in=>XLXN_24,
+                rb_in=>XLXN_32,
                 sel(0 to 1)=>XLXN_15(0 to 1),
                 anO(3 downto 0)=>anO(3 downto 0),
                 dpO=>open,
@@ -157,6 +154,9 @@ begin
       port map (dp_in=>XLXI_16_dp_in_openSignal,
                 hexD(3 downto 0)=>XLXN_13(3 downto 0),
                 sseg(7 downto 0)=>sseg(7 downto 0));
+   
+   XLXI_17 : VCC
+      port map (P=>XLXN_32);
    
 end BEHAVIORAL;
 

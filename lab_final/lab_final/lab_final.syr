@@ -3,14 +3,14 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.42 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.20 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.42 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.20 secs
  
 --> Reading design: lab_final.prj
 
@@ -104,8 +104,6 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
-WARNING:HDLParsers:3607 - Unit work/decoder16keyEn is now defined in a different file.  It was defined in "C:/Users/James/Documents/Xlink_projects/lab_final/modules/decoder16keyEn.vhd", and is now defined in "C:/Users/James/Desktop/Github/School/Phys301/lab_final/modules/decoder16keyEn.vhd".
-WARNING:HDLParsers:3607 - Unit work/decoder16keyEn/Doric is now defined in a different file.  It was defined in "C:/Users/James/Documents/Xlink_projects/lab_final/modules/decoder16keyEn.vhd", and is now defined in "C:/Users/James/Desktop/Github/School/Phys301/lab_final/modules/decoder16keyEn.vhd".
 Compiling vhdl file "C:/Users/James/Desktop/Github/School/Phys301/lab_final/modules/debounce.vhd" in Library work.
 Architecture behavioral of Entity switch_debounce is up to date.
 Compiling vhdl file "C:/Users/James/Desktop/Github/School/Phys301/lab_final/modules/sel_strobeB.vhd" in Library work.
@@ -122,10 +120,8 @@ Compiling vhdl file "C:/Users/James/Desktop/Github/School/Phys301/lab_final/modu
 Architecture behavioral of Entity crenc4bin is up to date.
 Compiling vhdl file "C:/Users/James/Desktop/Github/School/Phys301/lab_final/modules/key_detect.vhd" in Library work.
 Architecture behavioral of Entity key_detect is up to date.
-ERROR:HDLParsers - Cannot rename dependency database for library "work", file is "xst/work/hdpdeps.ref", Temporary database file "C:\Users\James\Desktop\Github\School\Phys301\lab_final\lab_final\xst\work\xil_10792_15" will remain.  System error message is:  File exists
 Compiling vhdl file "C:/Users/James/Desktop/Github/School/Phys301/lab_final/modules/key4_dbnc.vhd" in Library work.
 Architecture behavioral of Entity key4_dbnc is up to date.
-ERROR:HDLParsers - Cannot rename dependency database for library "work", file is "xst/work/hdpdeps.ref", Temporary database file "C:\Users\James\Desktop\Github\School\Phys301\lab_final\lab_final\xst\work\xil_10792_16" will remain.  System error message is:  File exists
 Compiling vhdl file "C:/Users/James/Documents/Xlink_projects/lab_final/modules/col_strobe.vhd" in Library work.
 Architecture behavioral of Entity col_strobe is up to date.
 Compiling vhdl file "C:/Users/James/Desktop/Github/School/Phys301/lab_final/modules/decoder16keyEn.vhd" in Library work.
@@ -206,18 +202,12 @@ Architecture behavioral of Entity register_8bit_muser_programground is up to dat
 Architecture behavioral of Entity mux_dr_muser_programground is up to date.
 Architecture behavioral of Entity programground is up to date.
 Compiling vhdl file "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/P_Counter.vhf" in Library work.
-Entity <m2_1b1_mxilinx_p_counter> compiled.
-Entity <m2_1b1_mxilinx_p_counter> (Architecture <behavioral>) compiled.
-Entity <m2_1_mxilinx_p_counter> compiled.
-Entity <m2_1_mxilinx_p_counter> (Architecture <behavioral>) compiled.
-Entity <ftclex_mxilinx_p_counter> compiled.
-Entity <ftclex_mxilinx_p_counter> (Architecture <behavioral>) compiled.
-Entity <cb4cled_mxilinx_p_counter> compiled.
-Entity <cb4cled_mxilinx_p_counter> (Architecture <behavioral>) compiled.
-Entity <cb8cled_mxilinx_p_counter> compiled.
-Entity <cb8cled_mxilinx_p_counter> (Architecture <behavioral>) compiled.
-Entity <p_counter> compiled.
-Entity <p_counter> (Architecture <behavioral>) compiled.
+Architecture behavioral of Entity m2_1b1_mxilinx_p_counter is up to date.
+Architecture behavioral of Entity m2_1_mxilinx_p_counter is up to date.
+Architecture behavioral of Entity ftclex_mxilinx_p_counter is up to date.
+Architecture behavioral of Entity cb4cled_mxilinx_p_counter is up to date.
+Architecture behavioral of Entity cb8cled_mxilinx_p_counter is up to date.
+Architecture behavioral of Entity p_counter is up to date.
 Compiling vhdl file "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/ALU_Final.vhf" in Library work.
 Architecture behavioral of Entity full_add_muser_alu_final is up to date.
 Architecture behavioral of Entity addersub8_muser_alu_final is up to date.
@@ -352,10 +342,10 @@ Analyzing hierarchy for entity <Full_Add_MUSER_lab_final> in library <work> (arc
 *                            HDL Analysis                               *
 =========================================================================
 Analyzing Entity <lab_final> in library <work> (Architecture <behavioral>).
-WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 3299: Unconnected output port 'CLK10k' of component 'DCM_100M'.
-WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 3299: Unconnected output port 'CLK1k' of component 'DCM_100M'.
-WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 3299: Unconnected output port 'CLK100' of component 'DCM_100M'.
-    Set user-defined property "HU_SET =  XLXI_44_126" for instance <XLXI_44> in unit <lab_final>.
+WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 3300: Unconnected output port 'CLK10k' of component 'DCM_100M'.
+WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 3300: Unconnected output port 'CLK1k' of component 'DCM_100M'.
+WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 3300: Unconnected output port 'CLK100' of component 'DCM_100M'.
+    Set user-defined property "HU_SET =  XLXI_44_49" for instance <XLXI_44> in unit <lab_final>.
 Entity <lab_final> analyzed. Unit <lab_final> generated.
 
 Analyzing generic Entity <DCM_100M> in library <work> (Architecture <behavioral>).
@@ -372,35 +362,35 @@ Entity <M2_1_MXILINX_lab_final> analyzed. Unit <M2_1_MXILINX_lab_final> generate
 Analyzing Entity <P_Counter_MUSER_lab_final> in library <work> (Architecture <behavioral>).
 WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 3028: Unconnected output port 'CEO' of component 'CB8CLED_MXILINX_lab_final'.
 WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 3028: Unconnected output port 'TC' of component 'CB8CLED_MXILINX_lab_final'.
-    Set user-defined property "HU_SET =  XLXI_1_124" for instance <XLXI_1> in unit <P_Counter_MUSER_lab_final>.
+    Set user-defined property "HU_SET =  XLXI_1_47" for instance <XLXI_1> in unit <P_Counter_MUSER_lab_final>.
 WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 3047: Unconnected output port 'CEO' of component 'CB4CLED_MXILINX_lab_final'.
 WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 3047: Unconnected output port 'Q3' of component 'CB4CLED_MXILINX_lab_final'.
 WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 3047: Unconnected output port 'TC' of component 'CB4CLED_MXILINX_lab_final'.
-    Set user-defined property "HU_SET =  XLXI_6_125" for instance <XLXI_6> in unit <P_Counter_MUSER_lab_final>.
+    Set user-defined property "HU_SET =  XLXI_6_48" for instance <XLXI_6> in unit <P_Counter_MUSER_lab_final>.
 Entity <P_Counter_MUSER_lab_final> analyzed. Unit <P_Counter_MUSER_lab_final> generated.
 
 Analyzing Entity <CB8CLED_MXILINX_lab_final> in library <work> (Architecture <behavioral>).
-    Set user-defined property "HU_SET =  I_Q0_115" for instance <I_Q0> in unit <CB8CLED_MXILINX_lab_final>.
-    Set user-defined property "HU_SET =  I_Q1_114" for instance <I_Q1> in unit <CB8CLED_MXILINX_lab_final>.
-    Set user-defined property "HU_SET =  I_Q2_113" for instance <I_Q2> in unit <CB8CLED_MXILINX_lab_final>.
-    Set user-defined property "HU_SET =  I_Q3_112" for instance <I_Q3> in unit <CB8CLED_MXILINX_lab_final>.
-    Set user-defined property "HU_SET =  I_Q4_111" for instance <I_Q4> in unit <CB8CLED_MXILINX_lab_final>.
-    Set user-defined property "HU_SET =  I_Q5_110" for instance <I_Q5> in unit <CB8CLED_MXILINX_lab_final>.
-    Set user-defined property "HU_SET =  I_Q6_109" for instance <I_Q6> in unit <CB8CLED_MXILINX_lab_final>.
-    Set user-defined property "HU_SET =  I_Q7_108" for instance <I_Q7> in unit <CB8CLED_MXILINX_lab_final>.
-    Set user-defined property "HU_SET =  I_TC_120" for instance <I_TC> in unit <CB8CLED_MXILINX_lab_final>.
-    Set user-defined property "HU_SET =  I_T1_123" for instance <I_T1> in unit <CB8CLED_MXILINX_lab_final>.
-    Set user-defined property "HU_SET =  I_T2_116" for instance <I_T2> in unit <CB8CLED_MXILINX_lab_final>.
-    Set user-defined property "HU_SET =  I_T3_117" for instance <I_T3> in unit <CB8CLED_MXILINX_lab_final>.
-    Set user-defined property "HU_SET =  I_T4_122" for instance <I_T4> in unit <CB8CLED_MXILINX_lab_final>.
-    Set user-defined property "HU_SET =  I_T5_121" for instance <I_T5> in unit <CB8CLED_MXILINX_lab_final>.
-    Set user-defined property "HU_SET =  I_T6_118" for instance <I_T6> in unit <CB8CLED_MXILINX_lab_final>.
-    Set user-defined property "HU_SET =  I_T7_119" for instance <I_T7> in unit <CB8CLED_MXILINX_lab_final>.
+    Set user-defined property "HU_SET =  I_Q0_38" for instance <I_Q0> in unit <CB8CLED_MXILINX_lab_final>.
+    Set user-defined property "HU_SET =  I_Q1_37" for instance <I_Q1> in unit <CB8CLED_MXILINX_lab_final>.
+    Set user-defined property "HU_SET =  I_Q2_36" for instance <I_Q2> in unit <CB8CLED_MXILINX_lab_final>.
+    Set user-defined property "HU_SET =  I_Q3_35" for instance <I_Q3> in unit <CB8CLED_MXILINX_lab_final>.
+    Set user-defined property "HU_SET =  I_Q4_34" for instance <I_Q4> in unit <CB8CLED_MXILINX_lab_final>.
+    Set user-defined property "HU_SET =  I_Q5_33" for instance <I_Q5> in unit <CB8CLED_MXILINX_lab_final>.
+    Set user-defined property "HU_SET =  I_Q6_32" for instance <I_Q6> in unit <CB8CLED_MXILINX_lab_final>.
+    Set user-defined property "HU_SET =  I_Q7_31" for instance <I_Q7> in unit <CB8CLED_MXILINX_lab_final>.
+    Set user-defined property "HU_SET =  I_TC_43" for instance <I_TC> in unit <CB8CLED_MXILINX_lab_final>.
+    Set user-defined property "HU_SET =  I_T1_46" for instance <I_T1> in unit <CB8CLED_MXILINX_lab_final>.
+    Set user-defined property "HU_SET =  I_T2_39" for instance <I_T2> in unit <CB8CLED_MXILINX_lab_final>.
+    Set user-defined property "HU_SET =  I_T3_40" for instance <I_T3> in unit <CB8CLED_MXILINX_lab_final>.
+    Set user-defined property "HU_SET =  I_T4_45" for instance <I_T4> in unit <CB8CLED_MXILINX_lab_final>.
+    Set user-defined property "HU_SET =  I_T5_44" for instance <I_T5> in unit <CB8CLED_MXILINX_lab_final>.
+    Set user-defined property "HU_SET =  I_T6_41" for instance <I_T6> in unit <CB8CLED_MXILINX_lab_final>.
+    Set user-defined property "HU_SET =  I_T7_42" for instance <I_T7> in unit <CB8CLED_MXILINX_lab_final>.
 Entity <CB8CLED_MXILINX_lab_final> analyzed. Unit <CB8CLED_MXILINX_lab_final> generated.
 
 Analyzing generic Entity <FTCLEX_MXILINX_lab_final> in library <work> (Architecture <behavioral>).
 	INIT = '0'
-    Set user-defined property "HU_SET =  I_36_30_99" for instance <I_36_30> in unit <FTCLEX_MXILINX_lab_final>.
+    Set user-defined property "HU_SET =  I_36_30_22" for instance <I_36_30> in unit <FTCLEX_MXILINX_lab_final>.
     Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCLEX_MXILINX_lab_final>.
     Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCLEX_MXILINX_lab_final>.
 Entity <FTCLEX_MXILINX_lab_final> analyzed. Unit <FTCLEX_MXILINX_lab_final> generated.
@@ -409,14 +399,14 @@ Analyzing Entity <M2_1B1_MXILINX_lab_final> in library <work> (Architecture <beh
 Entity <M2_1B1_MXILINX_lab_final> analyzed. Unit <M2_1B1_MXILINX_lab_final> generated.
 
 Analyzing Entity <CB4CLED_MXILINX_lab_final> in library <work> (Architecture <behavioral>).
-    Set user-defined property "HU_SET =  I_Q0_103" for instance <I_Q0> in unit <CB4CLED_MXILINX_lab_final>.
-    Set user-defined property "HU_SET =  I_Q1_102" for instance <I_Q1> in unit <CB4CLED_MXILINX_lab_final>.
-    Set user-defined property "HU_SET =  I_Q2_101" for instance <I_Q2> in unit <CB4CLED_MXILINX_lab_final>.
-    Set user-defined property "HU_SET =  I_Q3_100" for instance <I_Q3> in unit <CB4CLED_MXILINX_lab_final>.
-    Set user-defined property "HU_SET =  I_TC_106" for instance <I_TC> in unit <CB4CLED_MXILINX_lab_final>.
-    Set user-defined property "HU_SET =  I_T1_107" for instance <I_T1> in unit <CB4CLED_MXILINX_lab_final>.
-    Set user-defined property "HU_SET =  I_T2_104" for instance <I_T2> in unit <CB4CLED_MXILINX_lab_final>.
-    Set user-defined property "HU_SET =  I_T3_105" for instance <I_T3> in unit <CB4CLED_MXILINX_lab_final>.
+    Set user-defined property "HU_SET =  I_Q0_26" for instance <I_Q0> in unit <CB4CLED_MXILINX_lab_final>.
+    Set user-defined property "HU_SET =  I_Q1_25" for instance <I_Q1> in unit <CB4CLED_MXILINX_lab_final>.
+    Set user-defined property "HU_SET =  I_Q2_24" for instance <I_Q2> in unit <CB4CLED_MXILINX_lab_final>.
+    Set user-defined property "HU_SET =  I_Q3_23" for instance <I_Q3> in unit <CB4CLED_MXILINX_lab_final>.
+    Set user-defined property "HU_SET =  I_TC_29" for instance <I_TC> in unit <CB4CLED_MXILINX_lab_final>.
+    Set user-defined property "HU_SET =  I_T1_30" for instance <I_T1> in unit <CB4CLED_MXILINX_lab_final>.
+    Set user-defined property "HU_SET =  I_T2_27" for instance <I_T2> in unit <CB4CLED_MXILINX_lab_final>.
+    Set user-defined property "HU_SET =  I_T3_28" for instance <I_T3> in unit <CB4CLED_MXILINX_lab_final>.
 Entity <CB4CLED_MXILINX_lab_final> analyzed. Unit <CB4CLED_MXILINX_lab_final> generated.
 
 Analyzing Entity <MemoryV2_MUSER_lab_final> in library <work> (Architecture <behavioral>).
@@ -453,15 +443,15 @@ Entity <SSD_1dig> analyzed. Unit <SSD_1dig> generated.
 
 Analyzing Entity <MUX8Bit_MUSER_lab_final> in library <work> (Architecture <behavioral>).
 WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 1760: Unconnected output port 'O' of component 'M2_1_MXILINX_lab_final'.
-    Set user-defined property "HU_SET =  XLXI_27_90" for instance <XLXI_27> in unit <MUX8Bit_MUSER_lab_final>.
-    Set user-defined property "HU_SET =  XLXI_28_91" for instance <XLXI_28> in unit <MUX8Bit_MUSER_lab_final>.
-    Set user-defined property "HU_SET =  XLXI_32_97" for instance <XLXI_32> in unit <MUX8Bit_MUSER_lab_final>.
-    Set user-defined property "HU_SET =  XLXI_33_92" for instance <XLXI_33> in unit <MUX8Bit_MUSER_lab_final>.
-    Set user-defined property "HU_SET =  XLXI_34_93" for instance <XLXI_34> in unit <MUX8Bit_MUSER_lab_final>.
-    Set user-defined property "HU_SET =  XLXI_35_94" for instance <XLXI_35> in unit <MUX8Bit_MUSER_lab_final>.
-    Set user-defined property "HU_SET =  XLXI_36_95" for instance <XLXI_36> in unit <MUX8Bit_MUSER_lab_final>.
-    Set user-defined property "HU_SET =  XLXI_37_96" for instance <XLXI_37> in unit <MUX8Bit_MUSER_lab_final>.
-    Set user-defined property "HU_SET =  XLXI_44_98" for instance <XLXI_44> in unit <MUX8Bit_MUSER_lab_final>.
+    Set user-defined property "HU_SET =  XLXI_27_13" for instance <XLXI_27> in unit <MUX8Bit_MUSER_lab_final>.
+    Set user-defined property "HU_SET =  XLXI_28_14" for instance <XLXI_28> in unit <MUX8Bit_MUSER_lab_final>.
+    Set user-defined property "HU_SET =  XLXI_32_20" for instance <XLXI_32> in unit <MUX8Bit_MUSER_lab_final>.
+    Set user-defined property "HU_SET =  XLXI_33_15" for instance <XLXI_33> in unit <MUX8Bit_MUSER_lab_final>.
+    Set user-defined property "HU_SET =  XLXI_34_16" for instance <XLXI_34> in unit <MUX8Bit_MUSER_lab_final>.
+    Set user-defined property "HU_SET =  XLXI_35_17" for instance <XLXI_35> in unit <MUX8Bit_MUSER_lab_final>.
+    Set user-defined property "HU_SET =  XLXI_36_18" for instance <XLXI_36> in unit <MUX8Bit_MUSER_lab_final>.
+    Set user-defined property "HU_SET =  XLXI_37_19" for instance <XLXI_37> in unit <MUX8Bit_MUSER_lab_final>.
+    Set user-defined property "HU_SET =  XLXI_44_21" for instance <XLXI_44> in unit <MUX8Bit_MUSER_lab_final>.
 Entity <MUX8Bit_MUSER_lab_final> analyzed. Unit <MUX8Bit_MUSER_lab_final> generated.
 
 Analyzing Entity <sRAM32x8_ex_pgm_instr> in library <work> (Architecture <behavioral>).
@@ -474,9 +464,9 @@ Analyzing Entity <Registers_MUSER_lab_final> in library <work> (Architecture <be
 Entity <Registers_MUSER_lab_final> analyzed. Unit <Registers_MUSER_lab_final> generated.
 
 Analyzing Entity <Eight_Register_Shift_MUSER_lab_final> in library <work> (Architecture <behavioral>).
-    Set user-defined property "HU_SET =  XLXI_149_88" for instance <XLXI_149> in unit <Eight_Register_Shift_MUSER_lab_final>.
-    Set user-defined property "HU_SET =  XLXI_150_87" for instance <XLXI_150> in unit <Eight_Register_Shift_MUSER_lab_final>.
-    Set user-defined property "HU_SET =  XLXI_159_89" for instance <XLXI_159> in unit <Eight_Register_Shift_MUSER_lab_final>.
+    Set user-defined property "HU_SET =  XLXI_149_11" for instance <XLXI_149> in unit <Eight_Register_Shift_MUSER_lab_final>.
+    Set user-defined property "HU_SET =  XLXI_150_10" for instance <XLXI_150> in unit <Eight_Register_Shift_MUSER_lab_final>.
+    Set user-defined property "HU_SET =  XLXI_159_12" for instance <XLXI_159> in unit <Eight_Register_Shift_MUSER_lab_final>.
 Entity <Eight_Register_Shift_MUSER_lab_final> analyzed. Unit <Eight_Register_Shift_MUSER_lab_final> generated.
 
 Analyzing Entity <FD4CE_MXILINX_lab_final> in library <work> (Architecture <behavioral>).
@@ -526,15 +516,15 @@ Entity <decoder16keyEn> analyzed. Unit <decoder16keyEn> generated.
 
 Analyzing Entity <MUX8_generic_MUSER_lab_final> in library <work> (Architecture <behavioral>).
 WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 115: Unconnected output port 'O' of component 'M2_1_MXILINX_lab_final'.
-    Set user-defined property "HU_SET =  XLXI_27_77" for instance <XLXI_27> in unit <MUX8_generic_MUSER_lab_final>.
-    Set user-defined property "HU_SET =  XLXI_28_78" for instance <XLXI_28> in unit <MUX8_generic_MUSER_lab_final>.
-    Set user-defined property "HU_SET =  XLXI_32_84" for instance <XLXI_32> in unit <MUX8_generic_MUSER_lab_final>.
-    Set user-defined property "HU_SET =  XLXI_33_79" for instance <XLXI_33> in unit <MUX8_generic_MUSER_lab_final>.
-    Set user-defined property "HU_SET =  XLXI_34_80" for instance <XLXI_34> in unit <MUX8_generic_MUSER_lab_final>.
-    Set user-defined property "HU_SET =  XLXI_35_81" for instance <XLXI_35> in unit <MUX8_generic_MUSER_lab_final>.
-    Set user-defined property "HU_SET =  XLXI_36_82" for instance <XLXI_36> in unit <MUX8_generic_MUSER_lab_final>.
-    Set user-defined property "HU_SET =  XLXI_37_83" for instance <XLXI_37> in unit <MUX8_generic_MUSER_lab_final>.
-    Set user-defined property "HU_SET =  XLXI_44_85" for instance <XLXI_44> in unit <MUX8_generic_MUSER_lab_final>.
+    Set user-defined property "HU_SET =  XLXI_27_0" for instance <XLXI_27> in unit <MUX8_generic_MUSER_lab_final>.
+    Set user-defined property "HU_SET =  XLXI_28_1" for instance <XLXI_28> in unit <MUX8_generic_MUSER_lab_final>.
+    Set user-defined property "HU_SET =  XLXI_32_7" for instance <XLXI_32> in unit <MUX8_generic_MUSER_lab_final>.
+    Set user-defined property "HU_SET =  XLXI_33_2" for instance <XLXI_33> in unit <MUX8_generic_MUSER_lab_final>.
+    Set user-defined property "HU_SET =  XLXI_34_3" for instance <XLXI_34> in unit <MUX8_generic_MUSER_lab_final>.
+    Set user-defined property "HU_SET =  XLXI_35_4" for instance <XLXI_35> in unit <MUX8_generic_MUSER_lab_final>.
+    Set user-defined property "HU_SET =  XLXI_36_5" for instance <XLXI_36> in unit <MUX8_generic_MUSER_lab_final>.
+    Set user-defined property "HU_SET =  XLXI_37_6" for instance <XLXI_37> in unit <MUX8_generic_MUSER_lab_final>.
+    Set user-defined property "HU_SET =  XLXI_44_8" for instance <XLXI_44> in unit <MUX8_generic_MUSER_lab_final>.
 Entity <MUX8_generic_MUSER_lab_final> analyzed. Unit <MUX8_generic_MUSER_lab_final> generated.
 
 Analyzing Entity <ProgramGround_MUSER_lab_final> in library <work> (Architecture <behavioral>).
@@ -544,7 +534,7 @@ Analyzing Entity <ISA> in library <work> (Architecture <behavioral>).
 Entity <ISA> analyzed. Unit <ISA> generated.
 
 Analyzing Entity <Register_8bit_MUSER_lab_final> in library <work> (Architecture <behavioral>).
-    Set user-defined property "HU_SET =  XLXI_1_86" for instance <XLXI_1> in unit <Register_8bit_MUSER_lab_final>.
+    Set user-defined property "HU_SET =  XLXI_1_9" for instance <XLXI_1> in unit <Register_8bit_MUSER_lab_final>.
 Entity <Register_8bit_MUSER_lab_final> analyzed. Unit <Register_8bit_MUSER_lab_final> generated.
 
 Analyzing Entity <MUX_DR_MUSER_lab_final> in library <work> (Architecture <behavioral>).
@@ -1442,11 +1432,11 @@ Optimization Goal                  : Speed
 Keep Hierarchy                     : No
 
 Design Statistics
-# IOs                              : 41
+# IOs                              : 42
 
 Cell Usage :
-# BELS                             : 2960
-#      AND2                        : 96
+# BELS                             : 2961
+#      AND2                        : 97
 #      AND2B1                      : 61
 #      AND2B2                      : 4
 #      AND3                        : 6
@@ -1490,9 +1480,9 @@ Cell Usage :
 # Clock Buffers                    : 9
 #      BUFG                        : 6
 #      BUFGP                       : 3
-# IO Buffers                       : 35
+# IO Buffers                       : 36
 #      IBUF                        : 14
-#      OBUF                        : 21
+#      OBUF                        : 22
 # Logical                          : 54
 #      NAND2                       : 50
 #      NOR2                        : 3
@@ -1510,8 +1500,8 @@ Selected Device : 3s100ecp132-4
  Number of Slices:                     1008  out of    960   105% (*) 
  Number of Slice Flip Flops:            970  out of   1920    50%  
  Number of 4 input LUTs:               1333  out of   1920    69%  
- Number of IOs:                          41
- Number of bonded IOBs:                  38  out of     83    45%  
+ Number of IOs:                          42
+ Number of bonded IOBs:                  39  out of     83    46%  
  Number of GCLKs:                         9  out of     24    37%  
 
 WARNING:Xst:1336 -  (*) More than 100% of Device resources are used
@@ -1879,7 +1869,7 @@ Delay:               13.829ns (Levels of Logic = 14)
 Timing constraint: Default OFFSET IN BEFORE for Clock 'XLXI_60/WCLK_IM1'
   Total number of paths / destination ports: 3072 / 256
 -------------------------------------------------------------------------
-Offset:              9.395ns (Levels of Logic = 5)
+Offset:              9.396ns (Levels of Logic = 5)
   Source:            RunMode (PAD)
   Destination:       XLXI_60/XLXI_153/mem_29_7 (FF)
   Destination Clock: XLXI_60/WCLK_IM1 rising
@@ -1888,21 +1878,21 @@ Offset:              9.395ns (Levels of Logic = 5)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            38   1.218   1.264  RunMode_IBUF (RunMode_IBUF)
+     IBUF:I->O            39   1.218   1.264  RunMode_IBUF (RunMode_IBUF)
      INV:I->O             38   0.704   1.264  XLXI_40 (DebugMode)
      NAND2:I0->O           9   0.704   0.899  XLXI_60/XLXI_151 (XLXI_60/nWE_I)
      LUT4:I1->O            4   0.704   0.622  XLXI_60/XLXI_153/mem_19_and000011 (XLXI_60/XLXI_153/N8)
      LUT3:I2->O            8   0.704   0.757  XLXI_60/XLXI_153/mem_31_and00001 (XLXI_60/XLXI_153/mem_31_and0000)
      FDE:CE                    0.555          XLXI_60/XLXI_153/mem_31_0
     ----------------------------------------
-    Total                      9.395ns (4.589ns logic, 4.806ns route)
+    Total                      9.396ns (4.589ns logic, 4.807ns route)
                                        (48.8% logic, 51.2% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'XLXI_60/WCLK_DM1'
   Total number of paths / destination ports: 3072 / 256
 -------------------------------------------------------------------------
-Offset:              9.395ns (Levels of Logic = 5)
+Offset:              9.396ns (Levels of Logic = 5)
   Source:            RunMode (PAD)
   Destination:       XLXI_60/XLXI_154/mem_29_7 (FF)
   Destination Clock: XLXI_60/WCLK_DM1 rising
@@ -1911,14 +1901,14 @@ Offset:              9.395ns (Levels of Logic = 5)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            38   1.218   1.264  RunMode_IBUF (RunMode_IBUF)
+     IBUF:I->O            39   1.218   1.264  RunMode_IBUF (RunMode_IBUF)
      INV:I->O             38   0.704   1.264  XLXI_40 (DebugMode)
      NAND2:I0->O           9   0.704   0.899  XLXI_60/XLXI_152 (XLXI_60/nWE_D)
      LUT4:I1->O            4   0.704   0.622  XLXI_60/XLXI_154/mem_19_and000011 (XLXI_60/XLXI_154/N8)
      LUT3:I2->O            8   0.704   0.757  XLXI_60/XLXI_154/mem_31_and00001 (XLXI_60/XLXI_154/mem_31_and0000)
      FDE:CE                    0.555          XLXI_60/XLXI_154/mem_31_0
     ----------------------------------------
-    Total                      9.395ns (4.589ns logic, 4.806ns route)
+    Total                      9.396ns (4.589ns logic, 4.807ns route)
                                        (48.8% logic, 51.2% route)
 
 =========================================================================
@@ -1959,7 +1949,7 @@ Offset:              12.664ns (Levels of Logic = 16)
 Timing constraint: Default OFFSET IN BEFORE for Clock 'C_WriteOne'
   Total number of paths / destination ports: 40 / 12
 -------------------------------------------------------------------------
-Offset:              6.743ns (Levels of Logic = 4)
+Offset:              6.744ns (Levels of Logic = 4)
   Source:            RunMode (PAD)
   Destination:       XLXI_60/XLXI_161/XLXI_133/XLXI_149/I_Q0 (FF)
   Destination Clock: C_WriteOne rising
@@ -1968,20 +1958,20 @@ Offset:              6.743ns (Levels of Logic = 4)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            38   1.218   1.264  RunMode_IBUF (RunMode_IBUF)
+     IBUF:I->O            39   1.218   1.264  RunMode_IBUF (RunMode_IBUF)
      INV:I->O             38   0.704   1.264  XLXI_40 (DebugMode)
      AND4B2:I3->O         16   0.704   1.034  XLXI_60/XLXI_161/XLXI_140 (XLXI_60/XLXI_161/XLXN_49)
      begin scope: 'XLXI_60/XLXI_161/XLXI_133/XLXI_149'
      FDCE:CE                   0.555          I_Q0
     ----------------------------------------
-    Total                      6.743ns (3.181ns logic, 3.562ns route)
+    Total                      6.744ns (3.181ns logic, 3.563ns route)
                                        (47.2% logic, 52.8% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'C_Shift'
   Total number of paths / destination ports: 40 / 12
 -------------------------------------------------------------------------
-Offset:              6.743ns (Levels of Logic = 4)
+Offset:              6.744ns (Levels of Logic = 4)
   Source:            RunMode (PAD)
   Destination:       XLXI_60/XLXI_161/XLXI_133/XLXI_150/I_Q0 (FF)
   Destination Clock: C_Shift rising
@@ -1990,20 +1980,20 @@ Offset:              6.743ns (Levels of Logic = 4)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            38   1.218   1.264  RunMode_IBUF (RunMode_IBUF)
+     IBUF:I->O            39   1.218   1.264  RunMode_IBUF (RunMode_IBUF)
      INV:I->O             38   0.704   1.264  XLXI_40 (DebugMode)
      AND4B2:I3->O         16   0.704   1.034  XLXI_60/XLXI_161/XLXI_140 (XLXI_60/XLXI_161/XLXN_49)
      begin scope: 'XLXI_60/XLXI_161/XLXI_133/XLXI_150'
      FDCE:CE                   0.555          I_Q0
     ----------------------------------------
-    Total                      6.743ns (3.181ns logic, 3.562ns route)
+    Total                      6.744ns (3.181ns logic, 3.563ns route)
                                        (47.2% logic, 52.8% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'C_Write'
   Total number of paths / destination ports: 80 / 24
 -------------------------------------------------------------------------
-Offset:              6.743ns (Levels of Logic = 4)
+Offset:              6.744ns (Levels of Logic = 4)
   Source:            RunMode (PAD)
   Destination:       XLXI_60/XLXI_161/XLXI_133/XLXI_159/I_Q0 (FF)
   Destination Clock: C_Write rising
@@ -2012,13 +2002,13 @@ Offset:              6.743ns (Levels of Logic = 4)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            38   1.218   1.264  RunMode_IBUF (RunMode_IBUF)
+     IBUF:I->O            39   1.218   1.264  RunMode_IBUF (RunMode_IBUF)
      INV:I->O             38   0.704   1.264  XLXI_40 (DebugMode)
      AND4B2:I3->O         16   0.704   1.034  XLXI_60/XLXI_161/XLXI_140 (XLXI_60/XLXI_161/XLXN_49)
      begin scope: 'XLXI_60/XLXI_161/XLXI_133/XLXI_159'
      FDCE:CE                   0.555          I_Q0
     ----------------------------------------
-    Total                      6.743ns (3.181ns logic, 3.562ns route)
+    Total                      6.744ns (3.181ns logic, 3.563ns route)
                                        (47.2% logic, 52.8% route)
 
 =========================================================================
@@ -2034,7 +2024,7 @@ Offset:              17.066ns (Levels of Logic = 16)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            38   1.218   1.264  RunMode_IBUF (RunMode_IBUF)
+     IBUF:I->O            39   1.218   1.264  RunMode_IBUF (RunMode_IBUF)
      begin scope: 'XLXI_60/XLXI_164/XLXI_28'
      AND2B1:I0->O          1   0.704   0.420  I_36_7 (M0)
      OR2:I1->O           272   0.704   1.513  I_36_8 (O)
@@ -2070,7 +2060,7 @@ Offset:              14.617ns (Levels of Logic = 14)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            38   1.218   1.264  RunMode_IBUF (RunMode_IBUF)
+     IBUF:I->O            39   1.218   1.264  RunMode_IBUF (RunMode_IBUF)
      begin scope: 'XLXI_60/XLXI_164/XLXI_28'
      AND2B1:I0->O          1   0.704   0.420  I_36_7 (M0)
      OR2:I1->O           272   0.704   1.373  I_36_8 (O)
@@ -2104,7 +2094,7 @@ Offset:              14.787ns (Levels of Logic = 14)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            38   1.218   1.264  RunMode_IBUF (RunMode_IBUF)
+     IBUF:I->O            39   1.218   1.264  RunMode_IBUF (RunMode_IBUF)
      begin scope: 'XLXI_60/XLXI_164/XLXI_28'
      AND2B1:I0->O          1   0.704   0.420  I_36_7 (M0)
      OR2:I1->O           272   0.704   1.373  I_36_8 (O)
@@ -2138,7 +2128,7 @@ Offset:              14.860ns (Levels of Logic = 14)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            38   1.218   1.264  RunMode_IBUF (RunMode_IBUF)
+     IBUF:I->O            39   1.218   1.264  RunMode_IBUF (RunMode_IBUF)
      begin scope: 'XLXI_60/XLXI_164/XLXI_28'
      AND2B1:I0->O          1   0.704   0.420  I_36_7 (M0)
      OR2:I1->O           272   0.704   1.373  I_36_8 (O)
@@ -2171,7 +2161,7 @@ Offset:              14.701ns (Levels of Logic = 14)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            38   1.218   1.264  RunMode_IBUF (RunMode_IBUF)
+     IBUF:I->O            39   1.218   1.264  RunMode_IBUF (RunMode_IBUF)
      begin scope: 'XLXI_60/XLXI_164/XLXI_28'
      AND2B1:I0->O          1   0.704   0.420  I_36_7 (M0)
      OR2:I1->O           272   0.704   1.373  I_36_8 (O)
@@ -2190,6 +2180,30 @@ Offset:              14.701ns (Levels of Logic = 14)
     ----------------------------------------
     Total                     14.701ns (8.585ns logic, 6.116ns route)
                                        (58.4% logic, 41.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Clock'
+  Total number of paths / destination ports: 4 / 2
+-------------------------------------------------------------------------
+Offset:              7.793ns (Levels of Logic = 5)
+  Source:            XLXI_43/clk_1m_0 (FF)
+  Destination:       CLK_LED (PAD)
+  Source Clock:      Clock rising
+
+  Data Path: XLXI_43/clk_1m_0 to CLK_LED
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              2   0.591   0.447  XLXI_43/clk_1m_0 (XLXI_43/clk_1m_0)
+     begin scope: 'XLXI_44'
+     AND2:I0->O            1   0.704   0.420  I_36_9 (M1)
+     OR2:I0->O             3   0.704   0.531  I_36_8 (O)
+     end scope: 'XLXI_44'
+     AND2:I1->O            1   0.704   0.420  XLXI_62 (CLK_LED_OBUF)
+     OBUF:I->O                 3.272          CLK_LED_OBUF (CLK_LED)
+    ----------------------------------------
+    Total                      7.793ns (5.975ns logic, 1.818ns route)
+                                       (76.7% logic, 23.3% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'XLXI_60/WCLK_IM1'
@@ -2317,29 +2331,6 @@ Offset:              8.890ns (Levels of Logic = 6)
                                        (75.1% logic, 24.9% route)
 
 =========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'Clock'
-  Total number of paths / destination ports: 2 / 1
--------------------------------------------------------------------------
-Offset:              6.585ns (Levels of Logic = 4)
-  Source:            XLXI_43/clk_1m_0 (FF)
-  Destination:       CLK_1 (PAD)
-  Source Clock:      Clock rising
-
-  Data Path: XLXI_43/clk_1m_0 to CLK_1
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FDE:C->Q              2   0.591   0.447  XLXI_43/clk_1m_0 (XLXI_43/clk_1m_0)
-     begin scope: 'XLXI_44'
-     AND2:I0->O            1   0.704   0.420  I_36_9 (M1)
-     OR2:I0->O             2   0.704   0.447  I_36_8 (O)
-     end scope: 'XLXI_44'
-     OBUF:I->O                 3.272          CLK_1_OBUF (CLK_1)
-    ----------------------------------------
-    Total                      6.585ns (5.271ns logic, 1.314ns route)
-                                       (80.0% logic, 20.0% route)
-
-=========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'XLXI_60/XLXI_162/XLXI_28/clk_100_0'
   Total number of paths / destination ports: 4 / 4
 -------------------------------------------------------------------------
@@ -2382,7 +2373,7 @@ Offset:              8.053ns (Levels of Logic = 4)
 
 =========================================================================
 Timing constraint: Default path analysis
-  Total number of paths / destination ports: 6952 / 5
+  Total number of paths / destination ports: 6955 / 6
 -------------------------------------------------------------------------
 Delay:               19.329ns (Levels of Logic = 16)
   Source:            RunMode (PAD)
@@ -2392,7 +2383,7 @@ Delay:               19.329ns (Levels of Logic = 16)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            38   1.218   1.264  RunMode_IBUF (RunMode_IBUF)
+     IBUF:I->O            39   1.218   1.264  RunMode_IBUF (RunMode_IBUF)
      begin scope: 'XLXI_60/XLXI_164/XLXI_28'
      AND2B1:I0->O          1   0.704   0.420  I_36_7 (M0)
      OR2:I1->O           272   0.704   1.373  I_36_8 (O)
@@ -2416,14 +2407,14 @@ Delay:               19.329ns (Levels of Logic = 16)
 =========================================================================
 
 
-Total REAL time to Xst completion: 30.00 secs
-Total CPU time to Xst completion: 29.36 secs
+Total REAL time to Xst completion: 22.00 secs
+Total CPU time to Xst completion: 22.35 secs
  
 --> 
 
-Total memory usage is 409972 kilobytes
+Total memory usage is 410052 kilobytes
 
-Number of errors   :    2 (   0 filtered)
-Number of warnings :  457 (   0 filtered)
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  455 (   0 filtered)
 Number of infos    :    9 (   0 filtered)
 

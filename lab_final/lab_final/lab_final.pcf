@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Sun May 13 16:12:57 2018
+// Written by: Map P.20131013 on Mon May 14 19:56:35 2018
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -44,6 +44,7 @@ COMP "row<2>" LOCATE = SITE "C5" LEVEL 1;
 COMP "row<3>" LOCATE = SITE "B7" LEVEL 1;
 COMP "RunModeLED" LOCATE = SITE "G1" LEVEL 1;
 COMP "EnableDataLED" LOCATE = SITE "N4" LEVEL 1;
+COMP "CLK_LED" LOCATE = SITE "N5" LEVEL 1;
 NET "C_Shift_BUFGP/IBUFG" BEL "C_Shift_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
 NET "C_Write_BUFGP/IBUFG" BEL "C_Write_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
 NET "Clock_BUFGP/IBUFG" BEL "Clock_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
