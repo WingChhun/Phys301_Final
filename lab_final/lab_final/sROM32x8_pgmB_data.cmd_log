@@ -1,0 +1,2 @@
+vhdtdtfi -lib work ../modules/sROM32x8_pgmB_data.vhd -prj lab_final -o sROM32x8_pgmB_data.spl -module sROM32x8_pgmB_data -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w sROM32x8_pgmB_data.spl C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/sROM32x8_pgmB_data.sym 

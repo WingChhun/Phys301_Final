@@ -1,0 +1,2 @@
+vhdtdtfi -lib work ../modules/sRAM32x8_pgmA_instr.vhd -prj lab_final -o sRAM32x8_pgmA_instr.spl -module sRAM32x8_pgmA_instr -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w sRAM32x8_pgmA_instr.spl C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/sRAM32x8_pgmA_instr.sym 

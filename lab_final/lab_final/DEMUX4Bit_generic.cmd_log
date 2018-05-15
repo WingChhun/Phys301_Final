@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan3e -w -refsym DEMUX4Bit_generic C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/DEMUX4Bit_generic.sch C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/DEMUX4Bit_generic.sym 

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <symbol version="7" name="Registers">
     <symboltype>BLOCK</symboltype>
-    <timestamp>2018-5-13T8:51:17</timestamp>
+    <timestamp>2018-5-15T6:54:19</timestamp>
     <pin polarity="Input" x="0" y="-448" name="CLR" />
     <pin polarity="Input" x="0" y="-336" name="DebugMode" />
     <pin polarity="Input" x="0" y="-272" name="AddressMode" />

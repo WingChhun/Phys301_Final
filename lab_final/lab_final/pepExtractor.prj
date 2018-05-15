@@ -1,1 +1,1 @@
-work	"../modules/decoder16keyEn.vhd"
+work	"../modules/sRAM32x8_pgmA_instr.vhd"

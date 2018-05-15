@@ -24,9 +24,6 @@
         <signal name="XLXN_46" />
         <signal name="EN_I_Memory" />
         <signal name="XLXN_49" />
-        <signal name="XLXN_50" />
-        <signal name="XLXN_51" />
-        <signal name="XLXN_52" />
         <port polarity="Input" name="CLR" />
         <port polarity="Input" name="DebugMode" />
         <port polarity="Input" name="AddressMode" />
@@ -96,15 +93,6 @@
             <blockpin signalname="CLR" name="CLR" />
             <blockpin signalname="C_WriteFinal" name="WCLK_Final" />
             <blockpin signalname="Instruction(7:0)" name="DOut(7:0)" />
-            <blockpin signalname="Din(3:0)" name="binO(3:0)" />
-        </block>
-        <block symbolname="Eight_Register_Shift" name="XLXI_135">
-            <blockpin signalname="C_Shift" name="WCLK_Shift" />
-            <blockpin signalname="XLXN_45" name="C_CE" />
-            <blockpin signalname="C_WriteOne" name="WCLK_R1" />
-            <blockpin signalname="CLR" name="CLR" />
-            <blockpin signalname="C_WriteFinal" name="WCLK_Final" />
-            <blockpin signalname="Data(7:0)" name="DOut(7:0)" />
             <blockpin signalname="Din(3:0)" name="binO(3:0)" />
         </block>
         <block symbolname="and3" name="XLXI_119">
@@ -187,8 +175,6 @@
         <instance x="1664" y="560" name="XLXI_133" orien="R0">
         </instance>
         <instance x="1568" y="1056" name="XLXI_134" orien="R0">
-        </instance>
-        <instance x="1360" y="1584" name="XLXI_135" orien="R0">
         </instance>
         <branch name="Address(7:0)">
             <wire x2="2080" y1="208" y2="208" x1="2048" />

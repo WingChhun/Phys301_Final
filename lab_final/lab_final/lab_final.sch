@@ -43,7 +43,6 @@
         <signal name="C_Shift" />
         <signal name="NEG" />
         <signal name="OFL" />
-        <signal name="RegC(7:0)" />
         <signal name="RegS(7:0)" />
         <signal name="XLXN_141(7:0)" />
         <signal name="XLXN_142(7:0)" />
@@ -51,6 +50,7 @@
         <signal name="CLK_LED" />
         <signal name="RegS_Neg" />
         <signal name="RegS_OFL" />
+        <signal name="Accumulator(7:0)" />
         <port polarity="Input" name="RunMode" />
         <port polarity="Input" name="btn_writeData" />
         <port polarity="Input" name="btn_CLR" />
@@ -162,7 +162,7 @@
             <line x2="48" y1="-176" y2="-176" x1="112" />
         </blockdef>
         <blockdef name="MemoryV2">
-            <timestamp>2018-5-15T3:37:38</timestamp>
+            <timestamp>2018-5-15T6:26:50</timestamp>
             <rect width="64" x="0" y="20" height="24" />
             <line x2="0" y1="32" y2="32" x1="64" />
             <rect width="64" x="0" y="84" height="24" />
@@ -202,22 +202,25 @@
             <line x2="448" y1="-512" y2="-512" x1="384" />
         </blockdef>
         <blockdef name="ProgramGround">
-            <timestamp>2018-5-13T20:46:26</timestamp>
-            <rect width="256" x="64" y="-384" height="384" />
+            <timestamp>2018-5-15T7:37:36</timestamp>
+            <rect width="64" x="320" y="148" height="24" />
+            <line x2="384" y1="160" y2="160" x1="320" />
+            <line x2="0" y1="96" y2="96" x1="64" />
+            <rect width="64" x="320" y="20" height="24" />
+            <line x2="384" y1="32" y2="32" x1="320" />
             <rect width="64" x="0" y="-364" height="24" />
             <line x2="0" y1="-352" y2="-352" x1="64" />
             <rect width="64" x="0" y="-204" height="24" />
             <line x2="0" y1="-192" y2="-192" x1="64" />
             <rect width="64" x="0" y="-44" height="24" />
             <line x2="0" y1="-32" y2="-32" x1="64" />
-            <rect width="64" x="320" y="-364" height="24" />
-            <line x2="384" y1="-352" y2="-352" x1="320" />
             <rect width="64" x="320" y="-300" height="24" />
             <line x2="384" y1="-288" y2="-288" x1="320" />
             <line x2="384" y1="-224" y2="-224" x1="320" />
             <line x2="384" y1="-160" y2="-160" x1="320" />
             <line x2="384" y1="-96" y2="-96" x1="320" />
             <line x2="384" y1="-32" y2="-32" x1="320" />
+            <rect width="256" x="64" y="-384" height="576" />
         </blockdef>
         <block symbolname="and2" name="XLXI_34">
             <blockpin signalname="RunMode" name="I0" />
@@ -283,7 +286,7 @@
             <blockpin signalname="EN_hex" name="EN_hex" />
             <blockpin signalname="btn_Memory" name="btn_Memory" />
             <blockpin signalname="Count(7:0)" name="Count(7:0)" />
-            <blockpin signalname="RegC(7:0)" name="RegC(7:0)" />
+            <blockpin signalname="Accumulator(7:0)" name="RegC(7:0)" />
             <blockpin signalname="RegS(7:0)" name="RegS(7:0)" />
             <blockpin signalname="row(3:0)" name="row(3:0)" />
             <blockpin signalname="C_WriteOne" name="C_WriteOnce" />
@@ -302,12 +305,14 @@
             <blockpin signalname="XLXN_141(7:0)" name="DR(7:0)" />
             <blockpin signalname="ticks(2:0)" name="tick(2:0)" />
             <blockpin signalname="XLXN_142(7:0)" name="IR(7:0)" />
-            <blockpin signalname="RegC(7:0)" name="RegC(7:0)" />
-            <blockpin signalname="RegS(7:0)" name="RegS(7:0)" />
+            <blockpin name="btn_CLR" />
+            <blockpin signalname="Accumulator(7:0)" name="Accumulator(7:0)" />
             <blockpin signalname="RST" name="RST" />
             <blockpin signalname="HLT" name="HLT" />
+            <blockpin signalname="RegS(7:0)" name="RegS(7:0)" />
             <blockpin signalname="OFL" name="OFL" />
             <blockpin signalname="NEG" name="Neg" />
+            <blockpin name="RegC(7:0)" />
         </block>
         <block symbolname="or3" name="XLXI_57">
             <blockpin name="I0" />
@@ -581,10 +586,6 @@
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="2038" y="1344" type="branch" />
             <wire x2="2064" y1="1344" y2="1344" x1="1968" />
         </branch>
-        <branch name="RegC(7:0)">
-            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="2027" y="1152" type="branch" />
-            <wire x2="2080" y1="1152" y2="1152" x1="1968" />
-        </branch>
         <branch name="RegS(7:0)">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="2022" y="1216" type="branch" />
             <wire x2="2080" y1="1216" y2="1216" x1="1968" />
@@ -604,9 +605,16 @@
             <wire x2="256" y1="1152" y2="1216" x1="256" />
             <wire x2="272" y1="1216" y2="1216" x1="256" />
         </branch>
-        <branch name="RegC(7:0)">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="608" y="2592" type="branch" />
+        <branch name="Accumulator(7:0)">
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="608" y="2592" type="branch" />
+            <wire x2="64" y1="1344" y2="2592" x1="64" />
+            <wire x2="608" y1="2592" y2="2592" x1="64" />
             <wire x2="688" y1="2592" y2="2592" x1="608" />
+            <wire x2="224" y1="1344" y2="1344" x1="64" />
+            <wire x2="224" y1="736" y2="1344" x1="224" />
+            <wire x2="1984" y1="736" y2="736" x1="224" />
+            <wire x2="1984" y1="736" y2="1536" x1="1984" />
+            <wire x2="1984" y1="1536" y2="1536" x1="1968" />
         </branch>
         <branch name="RegS(7:0)">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="608" y="2656" type="branch" />

@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : Registers.vhf
--- /___/   /\     Timestamp : 05/13/2018 13:56:59
+-- /___/   /\     Timestamp : 05/14/2018 23:54:33
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -212,9 +212,9 @@ architecture BEHAVIORAL of Eight_Register_Shift_MUSER_Registers is
              Q   : out   std_logic_vector (7 downto 0));
    end component;
    
-   attribute HU_SET of XLXI_149 : label is "XLXI_149_70";
-   attribute HU_SET of XLXI_150 : label is "XLXI_150_69";
-   attribute HU_SET of XLXI_159 : label is "XLXI_159_71";
+   attribute HU_SET of XLXI_149 : label is "XLXI_149_1";
+   attribute HU_SET of XLXI_150 : label is "XLXI_150_0";
+   attribute HU_SET of XLXI_159 : label is "XLXI_159_2";
 begin
    XLXI_149 : FD4CE_MXILINX_Registers
       port map (C=>WCLK_R1,
@@ -333,15 +333,6 @@ begin
                 WCLK_R1=>C_WriteOne,
                 WCLK_Shift=>C_Shift,
                 DOut(7 downto 0)=>Instruction(7 downto 0));
-   
-   XLXI_135 : Eight_Register_Shift_MUSER_Registers
-      port map (binO(3 downto 0)=>Din(3 downto 0),
-                CLR=>CLR,
-                C_CE=>XLXN_45,
-                WCLK_Final=>C_WriteFinal,
-                WCLK_R1=>C_WriteOne,
-                WCLK_Shift=>C_Shift,
-                DOut(7 downto 0)=>Data(7 downto 0));
    
    XLXI_138 : AND3
       port map (I0=>DataMode,

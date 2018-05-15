@@ -38,22 +38,9 @@
         <signal name="XLXN_165(7:0)" />
         <signal name="R2_CE" />
         <signal name="Cout" />
-        <signal name="XLXN_181" />
-        <signal name="XLXN_182(7:0)" />
-        <signal name="XLXN_183" />
-        <signal name="XLXN_184" />
         <signal name="Sum(7:0)" />
-        <signal name="XLXN_187" />
-        <signal name="XLXN_188" />
-        <signal name="XLXN_189(7:0)" />
         <signal name="OFL" />
-        <signal name="XLXN_194" />
-        <signal name="XLXN_196(7:0)" />
-        <signal name="XLXN_203" />
         <signal name="Neg" />
-        <signal name="XLXN_205(7:0)" />
-        <signal name="XLXN_206" />
-        <signal name="XLXN_207" />
         <port polarity="Input" name="row(3:0)" />
         <port polarity="Input" name="Clock" />
         <port polarity="BiDirectional" name="colO(3:0)" />
@@ -103,7 +90,7 @@
             <line x2="384" y1="-32" y2="-32" x1="320" />
         </blockdef>
         <blockdef name="lab_KEYPAD_FINAL">
-            <timestamp>2018-5-8T1:9:52</timestamp>
+            <timestamp>2018-5-13T19:55:19</timestamp>
             <rect width="256" x="64" y="-192" height="192" />
             <rect width="64" x="0" y="-172" height="24" />
             <line x2="0" y1="-160" y2="-160" x1="64" />

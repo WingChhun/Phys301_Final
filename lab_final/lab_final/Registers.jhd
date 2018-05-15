@@ -3,5 +3,3 @@ MODULE Registers
 		INSTANCE XLXI_133
 	SUBMODULE Eight_Register_Shift
 		INSTANCE XLXI_134
-	SUBMODULE Eight_Register_Shift
-		INSTANCE XLXI_135

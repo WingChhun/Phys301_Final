@@ -45,8 +45,8 @@ Setup/Hold to clock C_Shift
             |Max Setup to|Max Hold to |                  | Clock  |
 Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
 ------------+------------+------------+------------------+--------+
-AorD        |    3.186(R)|   -0.224(R)|C_Shift_BUFGP     |   0.000|
-IRorDR      |    2.672(R)|    0.187(R)|C_Shift_BUFGP     |   0.000|
+AorD        |    3.227(R)|    0.126(R)|C_Shift_BUFGP     |   0.000|
+IRorDR      |    2.941(R)|    0.105(R)|C_Shift_BUFGP     |   0.000|
 ------------+------------+------------+------------------+--------+
 
 Setup/Hold to clock C_Write
@@ -54,8 +54,8 @@ Setup/Hold to clock C_Write
             |Max Setup to|Max Hold to |                  | Clock  |
 Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
 ------------+------------+------------+------------------+--------+
-AorD        |    4.747(R)|   -0.841(R)|C_Write_BUFGP     |   0.000|
-IRorDR      |    4.233(R)|   -0.430(R)|C_Write_BUFGP     |   0.000|
+AorD        |    4.124(R)|   -0.480(R)|C_Write_BUFGP     |   0.000|
+IRorDR      |    3.838(R)|   -0.512(R)|C_Write_BUFGP     |   0.000|
 ------------+------------+------------+------------------+--------+
 
 Setup/Hold to clock C_WriteOne
@@ -63,17 +63,68 @@ Setup/Hold to clock C_WriteOne
             |Max Setup to|Max Hold to |                  | Clock  |
 Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
 ------------+------------+------------+------------------+--------+
-AorD        |    3.739(R)|   -0.738(R)|C_WriteOne_IBUF   |   0.000|
-IRorDR      |    2.786(R)|   -0.383(R)|C_WriteOne_IBUF   |   0.000|
+AorD        |    3.264(R)|   -0.527(R)|C_WriteOne_IBUF   |   0.000|
+IRorDR      |    2.978(R)|   -0.298(R)|C_WriteOne_IBUF   |   0.000|
 ------------+------------+------------+------------------+--------+
+
+Clock C_Write to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+NEG         |   31.160(R)|C_Write_BUFGP     |   0.000|
+OFL         |   30.876(R)|C_Write_BUFGP     |   0.000|
+------------+------------+------------------+--------+
 
 Clock Clock to Pad
 ------------+------------+------------------+--------+
             | clk (edge) |                  | Clock  |
 Destination |   to PAD   |Internal Clock(s) | Phase  |
 ------------+------------+------------------+--------+
-CLK_1       |    9.152(R)|Clock_BUFGP       |   0.000|
-CLK_LED     |   10.849(R)|Clock_BUFGP       |   0.000|
+CLK_1       |    9.072(R)|Clock_BUFGP       |   0.000|
+CLK_LED     |    9.397(R)|Clock_BUFGP       |   0.000|
+------------+------------+------------------+--------+
+
+Clock EN_D_Memory to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+NEG         |   33.138(R)|XLXI_60/WCLK_DM   |   0.000|
+OFL         |   32.854(R)|XLXI_60/WCLK_DM   |   0.000|
+------------+------------+------------------+--------+
+
+Clock EN_I_Memory to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+NEG         |   30.566(R)|XLXI_60/WCLK_IM   |   0.000|
+OFL         |   30.282(R)|XLXI_60/WCLK_IM   |   0.000|
+------------+------------+------------------+--------+
+
+Clock RunMode to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+NEG         |   33.204(R)|XLXI_60/WCLK_DM   |   0.000|
+            |   32.104(R)|XLXI_60/WCLK_IM   |   0.000|
+OFL         |   32.920(R)|XLXI_60/WCLK_DM   |   0.000|
+            |   31.820(R)|XLXI_60/WCLK_IM   |   0.000|
+------------+------------+------------------+--------+
+
+Clock btn_Memory to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+NEG         |   32.146(R)|XLXI_53/XLXN_18   |   0.000|
+            |   32.351(R)|XLXI_60/WCLK_DM   |   0.000|
+            |   29.899(R)|XLXI_60/WCLK_IM   |   0.000|
+OFL         |   31.862(R)|XLXI_53/XLXN_18   |   0.000|
+            |   32.067(R)|XLXI_60/WCLK_DM   |   0.000|
+            |   29.615(R)|XLXI_60/WCLK_IM   |   0.000|
 ------------+------------+------------------+--------+
 
 Clock to Setup on destination clock C_Shift
@@ -81,10 +132,10 @@ Clock to Setup on destination clock C_Shift
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-C_WriteOne     |    3.175|         |         |         |
-EN_D_Memory    |    2.476|    2.476|         |         |
-EN_I_Memory    |    2.188|    2.188|         |         |
-RunMode        |    3.285|    3.285|         |         |
+C_WriteOne     |    2.656|         |         |         |
+EN_D_Memory    |    2.845|    2.845|         |         |
+EN_I_Memory    |    3.374|    3.374|         |         |
+RunMode        |    3.361|    3.361|         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock C_Write
@@ -92,11 +143,11 @@ Clock to Setup on destination clock C_Write
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-C_Shift        |    2.599|         |         |         |
-C_WriteOne     |    3.491|         |         |         |
-EN_D_Memory    |    3.155|    3.155|         |         |
-EN_I_Memory    |    2.867|    2.867|         |         |
-RunMode        |    4.580|    4.580|         |         |
+C_Shift        |    2.270|         |         |         |
+C_WriteOne     |    2.589|         |         |         |
+EN_D_Memory    |    4.135|    4.135|         |         |
+EN_I_Memory    |    4.664|    4.664|         |         |
+RunMode        |    4.258|    4.258|         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock C_WriteOne
@@ -104,13 +155,13 @@ Clock to Setup on destination clock C_WriteOne
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-C_Write        |   10.519|         |         |         |
-C_WriteOne     |    2.207|         |         |         |
-EN_D_Memory    |    3.395|    3.395|         |         |
-EN_I_Memory    |   13.468|    3.107|         |         |
-RunMode        |   13.468|    7.746|         |         |
-SWITCH_SPeed   |    2.207|         |         |         |
-btn_Memory     |   13.468|         |         |         |
+C_Write        |   12.065|         |         |         |
+C_WriteOne     |    2.214|         |         |         |
+EN_D_Memory    |    4.141|    4.141|         |         |
+EN_I_Memory    |   12.696|    4.670|         |         |
+RunMode        |   12.696|   10.355|         |         |
+SWITCH_SPeed   |    2.214|         |         |         |
+btn_Memory     |   12.696|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock Clock
@@ -118,7 +169,7 @@ Clock to Setup on destination clock Clock
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-Clock          |   12.635|         |         |         |
+Clock          |   12.908|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock EN_D_Memory
@@ -126,10 +177,10 @@ Clock to Setup on destination clock EN_D_Memory
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-C_Write        |   11.917|         |         |         |
-EN_D_Memory    |    6.801|    6.801|         |         |
-RunMode        |    7.657|    7.657|         |         |
-btn_Memory     |   12.079|         |         |         |
+C_Write        |   10.807|         |         |         |
+EN_D_Memory    |    4.666|    4.666|         |         |
+RunMode        |    6.615|    6.615|         |         |
+btn_Memory     |   10.204|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock EN_I_Memory
@@ -137,12 +188,12 @@ Clock to Setup on destination clock EN_I_Memory
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-C_Write        |   10.519|         |         |         |
-C_WriteOne     |    2.207|         |         |         |
-EN_I_Memory    |   13.468|    5.159|         |         |
-RunMode        |   13.468|    8.568|         |         |
-SWITCH_SPeed   |    2.207|         |         |         |
-btn_Memory     |   13.468|         |         |         |
+C_Write        |   12.065|         |         |         |
+C_WriteOne     |    2.214|         |         |         |
+EN_I_Memory    |   12.696|    4.569|         |         |
+RunMode        |   12.696|   10.297|         |         |
+SWITCH_SPeed   |    2.214|         |         |         |
+btn_Memory     |   12.696|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock RunMode
@@ -150,13 +201,13 @@ Clock to Setup on destination clock RunMode
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-C_Write        |   11.917|         |         |         |
-C_WriteOne     |    2.207|         |         |         |
-EN_D_Memory    |    7.036|    7.036|         |         |
-EN_I_Memory    |   13.468|    5.450|         |         |
-RunMode        |   13.468|    7.892|         |         |
-SWITCH_SPeed   |    2.207|         |         |         |
-btn_Memory     |   13.468|         |         |         |
+C_Write        |   12.065|         |         |         |
+C_WriteOne     |    2.214|         |         |         |
+EN_D_Memory    |    4.613|    4.613|         |         |
+EN_I_Memory    |   12.696|    3.338|         |         |
+RunMode        |   12.696|    9.836|         |         |
+SWITCH_SPeed   |    2.214|         |         |         |
+btn_Memory     |   12.696|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock SWITCH_SPeed
@@ -164,12 +215,12 @@ Clock to Setup on destination clock SWITCH_SPeed
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-C_Write        |   10.519|         |         |         |
-C_WriteOne     |    2.207|         |         |         |
-EN_I_Memory    |   13.468|         |         |         |
-RunMode        |   13.468|    8.206|         |         |
-SWITCH_SPeed   |    2.207|         |         |         |
-btn_Memory     |   13.468|         |         |         |
+C_Write        |   12.065|         |         |         |
+C_WriteOne     |    2.214|         |         |         |
+EN_I_Memory    |   12.696|         |         |         |
+RunMode        |   12.696|    9.610|         |         |
+SWITCH_SPeed   |    2.214|         |         |         |
+btn_Memory     |   12.696|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock btn_Memory
@@ -177,27 +228,36 @@ Clock to Setup on destination clock btn_Memory
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-C_Write        |   11.917|         |         |         |
-EN_D_Memory    |    7.107|    7.107|         |         |
-EN_I_Memory    |   12.015|    5.521|         |         |
-RunMode        |   12.015|    7.963|         |         |
-btn_Memory     |   12.079|         |         |         |
+C_Write        |   11.571|         |         |         |
+EN_D_Memory    |    5.295|    5.295|         |         |
+EN_I_Memory    |   12.271|    5.102|         |         |
+RunMode        |   12.271|   10.539|         |         |
+btn_Memory     |   12.271|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Pad to Pad
 ---------------+--------------------+---------+
 Source Pad     |Destination Pad     |  Delay  |
 ---------------+--------------------+---------+
-EN_D_Memory    |EnableDataLED       |    6.148|
-EN_I_Memory    |EnableInstructionLED|    6.630|
-RunMode        |CLK_LED             |    9.166|
-RunMode        |RunModeLED          |    7.495|
-SWITCH_SPeed   |CLK_1               |    6.586|
-SWITCH_SPeed   |CLK_LED             |    8.476|
+EN_D_Memory    |EnableDataLED       |    6.163|
+EN_I_Memory    |EnableInstructionLED|    6.627|
+RunMode        |CLK_LED             |    8.591|
+RunMode        |NEG                 |   30.731|
+RunMode        |OFL                 |   30.447|
+RunMode        |RunModeLED          |    6.599|
+RunMode        |sseg<0>             |   14.156|
+RunMode        |sseg<1>             |   12.521|
+RunMode        |sseg<2>             |   11.902|
+RunMode        |sseg<3>             |   11.351|
+RunMode        |sseg<4>             |   11.778|
+RunMode        |sseg<5>             |   12.558|
+RunMode        |sseg<6>             |   12.539|
+SWITCH_SPeed   |CLK_1               |    7.785|
+SWITCH_SPeed   |CLK_LED             |    7.589|
 ---------------+--------------------+---------+
 
 
-Analysis completed Mon May 14 19:57:27 2018 
+Analysis completed Tue May 15 00:39:37 2018 
 --------------------------------------------------------------------------------
 
 Trace Settings:
