@@ -7,3 +7,5 @@ MODULE test_FullAdder
 		INSTANCE XLXI_164
 	SUBMODULE Eight_Register_Shift
 		INSTANCE XLXI_169
+	SUBMODULE Eight_Register_Shift
+		INSTANCE XLXI_170

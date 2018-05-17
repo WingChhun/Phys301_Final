@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : MUX4_generic.vhf
--- /___/   /\     Timestamp : 05/14/2018 22:34:14
+-- /___/   /\     Timestamp : 05/16/2018 12:45:19
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -102,11 +102,11 @@ architecture BEHAVIORAL of MUX4_generic is
              O  : out   std_logic);
    end component;
    
-   attribute HU_SET of XLXI_27 : label is "XLXI_27_46";
-   attribute HU_SET of XLXI_28 : label is "XLXI_28_47";
-   attribute HU_SET of XLXI_32 : label is "XLXI_32_50";
-   attribute HU_SET of XLXI_33 : label is "XLXI_33_48";
-   attribute HU_SET of XLXI_34 : label is "XLXI_34_49";
+   attribute HU_SET of XLXI_27 : label is "XLXI_27_93";
+   attribute HU_SET of XLXI_28 : label is "XLXI_28_94";
+   attribute HU_SET of XLXI_32 : label is "XLXI_32_97";
+   attribute HU_SET of XLXI_33 : label is "XLXI_33_95";
+   attribute HU_SET of XLXI_34 : label is "XLXI_34_96";
 begin
    XLXI_27 : M2_1_MXILINX_MUX4_generic
       port map (D0=>XLXI_27_D0_openSignal,

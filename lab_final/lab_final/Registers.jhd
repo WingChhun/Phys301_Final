@@ -2,4 +2,6 @@ MODULE Registers
 	SUBMODULE Eight_Register_Shift
 		INSTANCE XLXI_133
 	SUBMODULE Eight_Register_Shift
-		INSTANCE XLXI_134
+		INSTANCE XLXI_141
+	SUBMODULE Eight_Register_Shift
+		INSTANCE XLXI_143

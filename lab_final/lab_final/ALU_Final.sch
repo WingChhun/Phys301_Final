@@ -17,8 +17,6 @@
         <signal name="Reg1(7:0)" />
         <signal name="DataReg(7:0)" />
         <signal name="Sum(7:0)" />
-        <signal name="OFL" />
-        <signal name="Neg" />
         <signal name="r3" />
         <signal name="r0" />
         <signal name="r1" />
@@ -31,21 +29,21 @@
         <signal name="Reg0(7:0)" />
         <signal name="Reg2(7:0)" />
         <signal name="Reg3(7:0)" />
-        <signal name="XLXN_142(7:0)" />
         <signal name="XLXN_143(7:0)" />
-        <signal name="XLXN_146(7:0)" />
         <signal name="XLXN_147(7:0)" />
         <signal name="XLXN_148(7:0)" />
-        <signal name="XLXN_152(7:0)" />
-        <signal name="XLXN_153(7:0)" />
+        <signal name="OFL" />
+        <signal name="Negative" />
+        <signal name="ADD" />
+        <signal name="SUB" />
+        <signal name="XLXN_158(7:0)" />
+        <signal name="XLXN_159" />
         <port polarity="Input" name="Accumulator(7:0)" />
         <port polarity="Input" name="EN_SIGNED" />
         <port polarity="Input" name="nADD_SUB" />
         <port polarity="Input" name="Reg1(7:0)" />
         <port polarity="Input" name="DataReg(7:0)" />
         <port polarity="Output" name="Sum(7:0)" />
-        <port polarity="Output" name="OFL" />
-        <port polarity="Output" name="Neg" />
         <port polarity="Input" name="r3" />
         <port polarity="Input" name="r0" />
         <port polarity="Input" name="r1" />
@@ -54,6 +52,10 @@
         <port polarity="Input" name="Reg0(7:0)" />
         <port polarity="Input" name="Reg2(7:0)" />
         <port polarity="Input" name="Reg3(7:0)" />
+        <port polarity="Output" name="OFL" />
+        <port polarity="BiDirectional" name="Negative" />
+        <port polarity="Input" name="ADD" />
+        <port polarity="Input" name="SUB" />
         <blockdef name="Full_AdderSub8">
             <timestamp>2018-5-13T6:19:47</timestamp>
             <rect width="256" x="64" y="-256" height="256" />
@@ -172,15 +174,6 @@
             <blockpin signalname="XLXN_34" name="I1" />
             <blockpin name="O" />
         </block>
-        <block symbolname="Full_AdderSub8" name="XLXI_1">
-            <blockpin signalname="Accumulator(7:0)" name="Ain(7:0)" />
-            <blockpin signalname="XLXN_134(7:0)" name="Bin(7:0)" />
-            <blockpin signalname="nADD_SUB" name="nADD_SUB" />
-            <blockpin name="Cout" />
-            <blockpin signalname="Sum(7:0)" name="Sum(7:0)" />
-            <blockpin signalname="Neg" name="Negative" />
-            <blockpin signalname="OFL" name="OFL" />
-        </block>
         <block symbolname="xor2" name="XLXI_16">
             <blockpin signalname="r2" name="I0" />
             <blockpin signalname="r0" name="I1" />
@@ -222,10 +215,31 @@
             <blockpin signalname="XLXN_134(7:0)" name="DOut(7:0)" />
             <blockpin signalname="r3" name="nIM_Din" />
         </block>
+        <block symbolname="Full_AdderSub8" name="XLXI_1">
+            <blockpin signalname="Accumulator(7:0)" name="Ain(7:0)" />
+            <blockpin signalname="XLXN_134(7:0)" name="Bin(7:0)" />
+            <blockpin signalname="SUB" name="nADD_SUB" />
+            <blockpin name="Cout" />
+            <blockpin signalname="Sum(7:0)" name="Sum(7:0)" />
+            <blockpin signalname="Negative" name="Negative" />
+            <blockpin signalname="OFL" name="OFL" />
+        </block>
+        <block symbolname="buf" name="XLXI_29">
+            <blockpin signalname="EN_SIGNED" name="I" />
+            <blockpin name="O" />
+        </block>
+        <block symbolname="buf" name="XLXI_30">
+            <blockpin signalname="EN_ADDorSUB" name="I" />
+            <blockpin name="O" />
+        </block>
     </netlist>
     <sheet sheetnum="1" width="3520" height="2720">
         <branch name="EN_SIGNED">
             <wire x2="480" y1="368" y2="368" x1="304" />
+            <wire x2="480" y1="352" y2="352" x1="400" />
+            <wire x2="480" y1="352" y2="368" x1="480" />
+            <wire x2="400" y1="352" y2="448" x1="400" />
+            <wire x2="480" y1="448" y2="448" x1="400" />
         </branch>
         <iomarker fontsize="28" x="272" y="128" name="Accumulator(7:0)" orien="R180" />
         <iomarker fontsize="28" x="304" y="368" name="EN_SIGNED" orien="R180" />
@@ -287,8 +301,7 @@
         <branch name="DataReg(7:0)">
             <wire x2="416" y1="880" y2="880" x1="400" />
             <wire x2="416" y1="880" y2="1600" x1="416" />
-            <wire x2="944" y1="1600" y2="1600" x1="416" />
-            <wire x2="1328" y1="1600" y2="1600" x1="944" />
+            <wire x2="1328" y1="1600" y2="1600" x1="416" />
             <wire x2="1616" y1="1536" y2="1536" x1="1328" />
             <wire x2="1328" y1="1536" y2="1600" x1="1328" />
             <wire x2="1744" y1="1520" y2="1520" x1="1616" />
@@ -296,35 +309,26 @@
         </branch>
         <iomarker fontsize="28" x="400" y="880" name="DataReg(7:0)" orien="R180" />
         <branch name="Sum(7:0)">
-            <wire x2="2928" y1="928" y2="928" x1="2480" />
+            <wire x2="2432" y1="880" y2="880" x1="2304" />
+            <wire x2="2496" y1="880" y2="880" x1="2432" />
+            <wire x2="2496" y1="880" y2="928" x1="2496" />
+            <wire x2="2928" y1="928" y2="928" x1="2496" />
             <wire x2="3120" y1="592" y2="592" x1="2928" />
             <wire x2="2928" y1="592" y2="928" x1="2928" />
         </branch>
-        <instance x="2096" y="1088" name="XLXI_1" orien="R0">
-        </instance>
-        <branch name="OFL">
-            <wire x2="2608" y1="1056" y2="1056" x1="2480" />
-        </branch>
-        <branch name="Neg">
-            <wire x2="2592" y1="992" y2="992" x1="2480" />
-        </branch>
-        <branch name="nADD_SUB">
-            <wire x2="2096" y1="1056" y2="1056" x1="1872" />
-        </branch>
         <iomarker fontsize="28" x="3120" y="592" name="Sum(7:0)" orien="R0" />
         <iomarker fontsize="28" x="2608" y="1056" name="OFL" orien="R0" />
-        <iomarker fontsize="28" x="2592" y="992" name="Neg" orien="R0" />
-        <iomarker fontsize="28" x="1872" y="1056" name="nADD_SUB" orien="R180" />
         <branch name="Accumulator(7:0)">
-            <attrtext style="alignment:SOFT-TCENTER;fontsize:28;fontname:Arial" attrname="Name" x="1184" y="912" type="branch" />
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="1744" y="816" type="branch" />
             <wire x2="624" y1="128" y2="128" x1="272" />
             <wire x2="624" y1="128" y2="144" x1="624" />
             <wire x2="624" y1="144" y2="400" x1="624" />
             <wire x2="1184" y1="400" y2="400" x1="624" />
             <wire x2="1184" y1="400" y2="912" x1="1184" />
-            <wire x2="1632" y1="912" y2="912" x1="1184" />
-            <wire x2="1632" y1="864" y2="912" x1="1632" />
-            <wire x2="2096" y1="864" y2="864" x1="1632" />
+            <wire x2="1616" y1="912" y2="912" x1="1184" />
+            <wire x2="1616" y1="816" y2="912" x1="1616" />
+            <wire x2="1744" y1="816" y2="816" x1="1616" />
+            <wire x2="1920" y1="816" y2="816" x1="1744" />
         </branch>
         <branch name="r3">
             <wire x2="368" y1="2256" y2="2256" x1="336" />
@@ -347,6 +351,8 @@
             <wire x2="320" y1="1024" y2="1296" x1="320" />
             <wire x2="720" y1="1296" y2="1296" x1="320" />
             <wire x2="320" y1="1008" y2="1024" x1="320" />
+            <wire x2="816" y1="1280" y2="1280" x1="720" />
+            <wire x2="720" y1="1280" y2="1296" x1="720" />
         </branch>
         <iomarker fontsize="28" x="288" y="1024" name="EN_ADDorSUB" orien="R180" />
         <instance x="896" y="2176" name="XLXI_16" orien="R0" />
@@ -360,8 +366,7 @@
         </branch>
         <branch name="EN_S0">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="1210" y="2080" type="branch" />
-            <wire x2="1216" y1="2080" y2="2080" x1="1152" />
-            <wire x2="1232" y1="2080" y2="2080" x1="1216" />
+            <wire x2="1232" y1="2080" y2="2080" x1="1152" />
         </branch>
         <instance x="912" y="2368" name="XLXI_20" orien="R0" />
         <branch name="r1">
@@ -374,14 +379,12 @@
         </branch>
         <branch name="EN_S1">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="1226" y="2272" type="branch" />
-            <wire x2="1232" y1="2272" y2="2272" x1="1168" />
-            <wire x2="1248" y1="2272" y2="2272" x1="1232" />
+            <wire x2="1248" y1="2272" y2="2272" x1="1168" />
         </branch>
         <instance x="960" y="2720" name="XLXI_21" orien="R0" />
         <branch name="EN_S2">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="1262" y="2560" type="branch" />
-            <wire x2="1264" y1="2560" y2="2560" x1="1216" />
-            <wire x2="1296" y1="2560" y2="2560" x1="1264" />
+            <wire x2="1296" y1="2560" y2="2560" x1="1216" />
         </branch>
         <branch name="r3">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="880" y="2464" type="branch" />
@@ -400,13 +403,13 @@
             <wire x2="960" y1="2656" y2="2656" x1="896" />
         </branch>
         <branch name="XLXN_134(7:0)">
-            <wire x2="2096" y1="960" y2="960" x1="2016" />
-            <wire x2="2016" y1="960" y2="1152" x1="2016" />
-            <wire x2="3184" y1="1152" y2="1152" x1="2016" />
-            <wire x2="3184" y1="1152" y2="1504" x1="3184" />
-            <wire x2="3120" y1="1920" y2="1920" x1="2832" />
-            <wire x2="3184" y1="1504" y2="1504" x1="3120" />
-            <wire x2="3120" y1="1504" y2="1920" x1="3120" />
+            <wire x2="1696" y1="880" y2="1184" x1="1696" />
+            <wire x2="2848" y1="1184" y2="1184" x1="1696" />
+            <wire x2="2848" y1="1184" y2="1920" x1="2848" />
+            <wire x2="1888" y1="880" y2="880" x1="1696" />
+            <wire x2="1888" y1="880" y2="912" x1="1888" />
+            <wire x2="1920" y1="912" y2="912" x1="1888" />
+            <wire x2="2848" y1="1920" y2="1920" x1="2832" />
         </branch>
         <instance x="1744" y="1616" name="XLXI_22" orien="R0">
         </instance>
@@ -471,6 +474,40 @@
         <branch name="r3">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2352" y="2112" type="branch" />
             <wire x2="2448" y1="2112" y2="2112" x1="2352" />
+        </branch>
+        <branch name="nADD_SUB">
+            <wire x2="2016" y1="608" y2="608" x1="1792" />
+        </branch>
+        <iomarker fontsize="28" x="1792" y="608" name="nADD_SUB" orien="R180" />
+        <branch name="OFL">
+            <wire x2="2368" y1="1008" y2="1008" x1="2304" />
+            <wire x2="2368" y1="816" y2="1008" x1="2368" />
+            <wire x2="2432" y1="816" y2="816" x1="2368" />
+            <wire x2="2480" y1="816" y2="816" x1="2432" />
+            <wire x2="2480" y1="816" y2="1056" x1="2480" />
+            <wire x2="2608" y1="1056" y2="1056" x1="2480" />
+        </branch>
+        <branch name="Negative">
+            <wire x2="2432" y1="944" y2="944" x1="2304" />
+            <wire x2="2800" y1="944" y2="944" x1="2432" />
+            <wire x2="2800" y1="944" y2="976" x1="2800" />
+        </branch>
+        <iomarker fontsize="28" x="2800" y="976" name="Negative" orien="R0" />
+        <instance x="480" y="480" name="XLXI_29" orien="R0" />
+        <instance x="816" y="1312" name="XLXI_30" orien="R0" />
+        <branch name="ADD">
+            <wire x2="400" y1="240" y2="240" x1="288" />
+        </branch>
+        <branch name="SUB">
+            <wire x2="384" y1="288" y2="288" x1="304" />
+        </branch>
+        <iomarker fontsize="28" x="288" y="240" name="ADD" orien="R180" />
+        <iomarker fontsize="28" x="304" y="288" name="SUB" orien="R180" />
+        <instance x="1920" y="1040" name="XLXI_1" orien="R0">
+        </instance>
+        <branch name="SUB">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1824" y="1008" type="branch" />
+            <wire x2="1920" y1="1008" y2="1008" x1="1824" />
         </branch>
     </sheet>
 </drawing>

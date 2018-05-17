@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : Registers.vhf
--- /___/   /\     Timestamp : 05/14/2018 23:54:33
+-- /___/   /\     Timestamp : 05/16/2018 13:07:00
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -212,9 +212,9 @@ architecture BEHAVIORAL of Eight_Register_Shift_MUSER_Registers is
              Q   : out   std_logic_vector (7 downto 0));
    end component;
    
-   attribute HU_SET of XLXI_149 : label is "XLXI_149_1";
-   attribute HU_SET of XLXI_150 : label is "XLXI_150_0";
-   attribute HU_SET of XLXI_159 : label is "XLXI_159_2";
+   attribute HU_SET of XLXI_149 : label is "XLXI_149_56";
+   attribute HU_SET of XLXI_150 : label is "XLXI_150_55";
+   attribute HU_SET of XLXI_159 : label is "XLXI_159_57";
 begin
    XLXI_149 : FD4CE_MXILINX_Registers
       port map (C=>WCLK_R1,
@@ -325,15 +325,6 @@ begin
                 WCLK_Shift=>C_Shift,
                 DOut(7 downto 0)=>Address(7 downto 0));
    
-   XLXI_134 : Eight_Register_Shift_MUSER_Registers
-      port map (binO(3 downto 0)=>Din(3 downto 0),
-                CLR=>CLR,
-                C_CE=>XLXN_46,
-                WCLK_Final=>C_WriteFinal,
-                WCLK_R1=>C_WriteOne,
-                WCLK_Shift=>C_Shift,
-                DOut(7 downto 0)=>Instruction(7 downto 0));
-   
    XLXI_138 : AND3
       port map (I0=>DataMode,
                 I1=>EN_IR,
@@ -346,6 +337,24 @@ begin
                 I2=>AddressMode,
                 I3=>DebugMode,
                 O=>XLXN_49);
+   
+   XLXI_141 : Eight_Register_Shift_MUSER_Registers
+      port map (binO(3 downto 0)=>Din(3 downto 0),
+                CLR=>CLR,
+                C_CE=>XLXN_46,
+                WCLK_Final=>C_WriteFinal,
+                WCLK_R1=>C_WriteOne,
+                WCLK_Shift=>C_Shift,
+                DOut(7 downto 0)=>Instruction(7 downto 0));
+   
+   XLXI_143 : Eight_Register_Shift_MUSER_Registers
+      port map (binO(3 downto 0)=>Din(3 downto 0),
+                CLR=>CLR,
+                C_CE=>XLXN_45,
+                WCLK_Final=>C_WriteFinal,
+                WCLK_R1=>C_WriteOne,
+                WCLK_Shift=>C_Shift,
+                DOut(7 downto 0)=>Data(7 downto 0));
    
 end BEHAVIORAL;
 

@@ -18,8 +18,8 @@
    <arg fmt="%d" index="2">2</arg> CLK pins and <arg fmt="%d" index="3">0</arg> NON_CLK pins failed to route using a CLK template.
 </msg>
 
-<msg type="warning" file="Route" num="455" delta="old" >CLK Net:<arg fmt="%s" index="1">XLXI_60/XLXI_162/XLXI_36/rowON</arg> may have excessive skew because 
-   <arg fmt="%d" index="2">5</arg> CLK pins and <arg fmt="%d" index="3">0</arg> NON_CLK pins failed to route using a CLK template.
+<msg type="warning" file="Route" num="455" delta="new" >CLK Net:<arg fmt="%s" index="1">XLXI_60/XLXI_162/XLXI_36/rowON</arg> may have excessive skew because 
+   <arg fmt="%d" index="2">3</arg> CLK pins and <arg fmt="%d" index="3">0</arg> NON_CLK pins failed to route using a CLK template.
 </msg>
 
 <msg type="warning" file="Route" num="455" delta="old" >CLK Net:<arg fmt="%s" index="1">XLXI_60/XLXI_162/XLXI_28/clk_100&lt;0&gt;</arg> may have excessive skew because 

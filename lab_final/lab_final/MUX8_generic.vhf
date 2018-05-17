@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : MUX8_generic.vhf
--- /___/   /\     Timestamp : 05/13/2018 15:48:48
+-- /___/   /\     Timestamp : 05/16/2018 12:45:20
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -102,15 +102,15 @@ architecture BEHAVIORAL of MUX8_generic is
              O  : out   std_logic);
    end component;
    
-   attribute HU_SET of XLXI_27 : label is "XLXI_27_117";
-   attribute HU_SET of XLXI_28 : label is "XLXI_28_118";
-   attribute HU_SET of XLXI_32 : label is "XLXI_32_124";
-   attribute HU_SET of XLXI_33 : label is "XLXI_33_119";
-   attribute HU_SET of XLXI_34 : label is "XLXI_34_120";
-   attribute HU_SET of XLXI_35 : label is "XLXI_35_121";
-   attribute HU_SET of XLXI_36 : label is "XLXI_36_122";
-   attribute HU_SET of XLXI_37 : label is "XLXI_37_123";
-   attribute HU_SET of XLXI_44 : label is "XLXI_44_125";
+   attribute HU_SET of XLXI_27 : label is "XLXI_27_107";
+   attribute HU_SET of XLXI_28 : label is "XLXI_28_108";
+   attribute HU_SET of XLXI_32 : label is "XLXI_32_114";
+   attribute HU_SET of XLXI_33 : label is "XLXI_33_109";
+   attribute HU_SET of XLXI_34 : label is "XLXI_34_110";
+   attribute HU_SET of XLXI_35 : label is "XLXI_35_111";
+   attribute HU_SET of XLXI_36 : label is "XLXI_36_112";
+   attribute HU_SET of XLXI_37 : label is "XLXI_37_113";
+   attribute HU_SET of XLXI_44 : label is "XLXI_44_115";
 begin
    XLXI_27 : M2_1_MXILINX_MUX8_generic
       port map (D0=>XLXI_27_D0_openSignal,

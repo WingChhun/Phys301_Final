@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : lab_final.vhf
--- /___/   /\     Timestamp : 05/15/2018 00:38:13
+-- /___/   /\     Timestamp : 05/16/2018 13:52:52
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -130,7 +130,7 @@ architecture BEHAVIORAL of Register_8bit_MUSER_lab_final is
              Q   : out   std_logic_vector (7 downto 0));
    end component;
    
-   attribute HU_SET of XLXI_1 : label is "XLXI_1_105";
+   attribute HU_SET of XLXI_1 : label is "XLXI_1_26";
 begin
    XLXI_1 : FD8CE_MXILINX_lab_final
       port map (C=>R_WCLK,
@@ -214,157 +214,6 @@ begin
                 I2=>DR_In(0),
                 I3=>DR_In(1),
                 O=>r2);
-   
-end BEHAVIORAL;
-
-
-
-library ieee;
-use ieee.std_logic_1164.ALL;
-use ieee.numeric_std.ALL;
-library UNISIM;
-use UNISIM.Vcomponents.ALL;
-
-entity M2_1_MXILINX_lab_final is
-   port ( D0 : in    std_logic; 
-          D1 : in    std_logic; 
-          S0 : in    std_logic; 
-          O  : out   std_logic);
-end M2_1_MXILINX_lab_final;
-
-architecture BEHAVIORAL of M2_1_MXILINX_lab_final is
-   attribute BOX_TYPE   : string ;
-   signal M0 : std_logic;
-   signal M1 : std_logic;
-   component AND2B1
-      port ( I0 : in    std_logic; 
-             I1 : in    std_logic; 
-             O  : out   std_logic);
-   end component;
-   attribute BOX_TYPE of AND2B1 : component is "BLACK_BOX";
-   
-   component OR2
-      port ( I0 : in    std_logic; 
-             I1 : in    std_logic; 
-             O  : out   std_logic);
-   end component;
-   attribute BOX_TYPE of OR2 : component is "BLACK_BOX";
-   
-   component AND2
-      port ( I0 : in    std_logic; 
-             I1 : in    std_logic; 
-             O  : out   std_logic);
-   end component;
-   attribute BOX_TYPE of AND2 : component is "BLACK_BOX";
-   
-begin
-   I_36_7 : AND2B1
-      port map (I0=>S0,
-                I1=>D0,
-                O=>M0);
-   
-   I_36_8 : OR2
-      port map (I0=>M1,
-                I1=>M0,
-                O=>O);
-   
-   I_36_9 : AND2
-      port map (I0=>D1,
-                I1=>S0,
-                O=>M1);
-   
-end BEHAVIORAL;
-
-
-
-library ieee;
-use ieee.std_logic_1164.ALL;
-use ieee.numeric_std.ALL;
-library UNISIM;
-use UNISIM.Vcomponents.ALL;
-
-entity MUX8_generic_MUSER_lab_final is
-   port ( D_In    : in    std_logic_vector (7 downto 0); 
-          I_In    : in    std_logic_vector (7 downto 0); 
-          nIM_Din : in    std_logic; 
-          DOut    : out   std_logic_vector (7 downto 0));
-end MUX8_generic_MUSER_lab_final;
-
-architecture BEHAVIORAL of MUX8_generic_MUSER_lab_final is
-   attribute HU_SET     : string ;
-   signal XLXI_27_D0_openSignal : std_logic;
-   signal XLXI_27_D1_openSignal : std_logic;
-   signal XLXI_27_S0_openSignal : std_logic;
-   component M2_1_MXILINX_lab_final
-      port ( D0 : in    std_logic; 
-             D1 : in    std_logic; 
-             S0 : in    std_logic; 
-             O  : out   std_logic);
-   end component;
-   
-   attribute HU_SET of XLXI_27 : label is "XLXI_27_106";
-   attribute HU_SET of XLXI_28 : label is "XLXI_28_107";
-   attribute HU_SET of XLXI_32 : label is "XLXI_32_113";
-   attribute HU_SET of XLXI_33 : label is "XLXI_33_108";
-   attribute HU_SET of XLXI_34 : label is "XLXI_34_109";
-   attribute HU_SET of XLXI_35 : label is "XLXI_35_110";
-   attribute HU_SET of XLXI_36 : label is "XLXI_36_111";
-   attribute HU_SET of XLXI_37 : label is "XLXI_37_112";
-   attribute HU_SET of XLXI_44 : label is "XLXI_44_114";
-begin
-   XLXI_27 : M2_1_MXILINX_lab_final
-      port map (D0=>XLXI_27_D0_openSignal,
-                D1=>XLXI_27_D1_openSignal,
-                S0=>XLXI_27_S0_openSignal,
-                O=>open);
-   
-   XLXI_28 : M2_1_MXILINX_lab_final
-      port map (D0=>I_In(0),
-                D1=>D_In(0),
-                S0=>nIM_Din,
-                O=>DOut(0));
-   
-   XLXI_32 : M2_1_MXILINX_lab_final
-      port map (D0=>I_In(1),
-                D1=>D_In(1),
-                S0=>nIM_Din,
-                O=>DOut(1));
-   
-   XLXI_33 : M2_1_MXILINX_lab_final
-      port map (D0=>I_In(2),
-                D1=>D_In(2),
-                S0=>nIM_Din,
-                O=>DOut(2));
-   
-   XLXI_34 : M2_1_MXILINX_lab_final
-      port map (D0=>I_In(3),
-                D1=>D_In(3),
-                S0=>nIM_Din,
-                O=>DOut(3));
-   
-   XLXI_35 : M2_1_MXILINX_lab_final
-      port map (D0=>I_In(4),
-                D1=>D_In(4),
-                S0=>nIM_Din,
-                O=>DOut(4));
-   
-   XLXI_36 : M2_1_MXILINX_lab_final
-      port map (D0=>I_In(5),
-                D1=>D_In(5),
-                S0=>nIM_Din,
-                O=>DOut(5));
-   
-   XLXI_37 : M2_1_MXILINX_lab_final
-      port map (D0=>I_In(6),
-                D1=>D_In(6),
-                S0=>nIM_Din,
-                O=>DOut(6));
-   
-   XLXI_44 : M2_1_MXILINX_lab_final
-      port map (D0=>I_In(7),
-                D1=>D_In(7),
-                S0=>nIM_Din,
-                O=>DOut(7));
    
 end BEHAVIORAL;
 
@@ -660,8 +509,160 @@ use ieee.numeric_std.ALL;
 library UNISIM;
 use UNISIM.Vcomponents.ALL;
 
+entity M2_1_MXILINX_lab_final is
+   port ( D0 : in    std_logic; 
+          D1 : in    std_logic; 
+          S0 : in    std_logic; 
+          O  : out   std_logic);
+end M2_1_MXILINX_lab_final;
+
+architecture BEHAVIORAL of M2_1_MXILINX_lab_final is
+   attribute BOX_TYPE   : string ;
+   signal M0 : std_logic;
+   signal M1 : std_logic;
+   component AND2B1
+      port ( I0 : in    std_logic; 
+             I1 : in    std_logic; 
+             O  : out   std_logic);
+   end component;
+   attribute BOX_TYPE of AND2B1 : component is "BLACK_BOX";
+   
+   component OR2
+      port ( I0 : in    std_logic; 
+             I1 : in    std_logic; 
+             O  : out   std_logic);
+   end component;
+   attribute BOX_TYPE of OR2 : component is "BLACK_BOX";
+   
+   component AND2
+      port ( I0 : in    std_logic; 
+             I1 : in    std_logic; 
+             O  : out   std_logic);
+   end component;
+   attribute BOX_TYPE of AND2 : component is "BLACK_BOX";
+   
+begin
+   I_36_7 : AND2B1
+      port map (I0=>S0,
+                I1=>D0,
+                O=>M0);
+   
+   I_36_8 : OR2
+      port map (I0=>M1,
+                I1=>M0,
+                O=>O);
+   
+   I_36_9 : AND2
+      port map (I0=>D1,
+                I1=>S0,
+                O=>M1);
+   
+end BEHAVIORAL;
+
+
+
+library ieee;
+use ieee.std_logic_1164.ALL;
+use ieee.numeric_std.ALL;
+library UNISIM;
+use UNISIM.Vcomponents.ALL;
+
+entity MUX8_generic_MUSER_lab_final is
+   port ( D_In    : in    std_logic_vector (7 downto 0); 
+          I_In    : in    std_logic_vector (7 downto 0); 
+          nIM_Din : in    std_logic; 
+          DOut    : out   std_logic_vector (7 downto 0));
+end MUX8_generic_MUSER_lab_final;
+
+architecture BEHAVIORAL of MUX8_generic_MUSER_lab_final is
+   attribute HU_SET     : string ;
+   signal XLXI_27_D0_openSignal : std_logic;
+   signal XLXI_27_D1_openSignal : std_logic;
+   signal XLXI_27_S0_openSignal : std_logic;
+   component M2_1_MXILINX_lab_final
+      port ( D0 : in    std_logic; 
+             D1 : in    std_logic; 
+             S0 : in    std_logic; 
+             O  : out   std_logic);
+   end component;
+   
+   attribute HU_SET of XLXI_27 : label is "XLXI_27_27";
+   attribute HU_SET of XLXI_28 : label is "XLXI_28_28";
+   attribute HU_SET of XLXI_32 : label is "XLXI_32_34";
+   attribute HU_SET of XLXI_33 : label is "XLXI_33_29";
+   attribute HU_SET of XLXI_34 : label is "XLXI_34_30";
+   attribute HU_SET of XLXI_35 : label is "XLXI_35_31";
+   attribute HU_SET of XLXI_36 : label is "XLXI_36_32";
+   attribute HU_SET of XLXI_37 : label is "XLXI_37_33";
+   attribute HU_SET of XLXI_44 : label is "XLXI_44_35";
+begin
+   XLXI_27 : M2_1_MXILINX_lab_final
+      port map (D0=>XLXI_27_D0_openSignal,
+                D1=>XLXI_27_D1_openSignal,
+                S0=>XLXI_27_S0_openSignal,
+                O=>open);
+   
+   XLXI_28 : M2_1_MXILINX_lab_final
+      port map (D0=>I_In(0),
+                D1=>D_In(0),
+                S0=>nIM_Din,
+                O=>DOut(0));
+   
+   XLXI_32 : M2_1_MXILINX_lab_final
+      port map (D0=>I_In(1),
+                D1=>D_In(1),
+                S0=>nIM_Din,
+                O=>DOut(1));
+   
+   XLXI_33 : M2_1_MXILINX_lab_final
+      port map (D0=>I_In(2),
+                D1=>D_In(2),
+                S0=>nIM_Din,
+                O=>DOut(2));
+   
+   XLXI_34 : M2_1_MXILINX_lab_final
+      port map (D0=>I_In(3),
+                D1=>D_In(3),
+                S0=>nIM_Din,
+                O=>DOut(3));
+   
+   XLXI_35 : M2_1_MXILINX_lab_final
+      port map (D0=>I_In(4),
+                D1=>D_In(4),
+                S0=>nIM_Din,
+                O=>DOut(4));
+   
+   XLXI_36 : M2_1_MXILINX_lab_final
+      port map (D0=>I_In(5),
+                D1=>D_In(5),
+                S0=>nIM_Din,
+                O=>DOut(5));
+   
+   XLXI_37 : M2_1_MXILINX_lab_final
+      port map (D0=>I_In(6),
+                D1=>D_In(6),
+                S0=>nIM_Din,
+                O=>DOut(6));
+   
+   XLXI_44 : M2_1_MXILINX_lab_final
+      port map (D0=>I_In(7),
+                D1=>D_In(7),
+                S0=>nIM_Din,
+                O=>DOut(7));
+   
+end BEHAVIORAL;
+
+
+
+library ieee;
+use ieee.std_logic_1164.ALL;
+use ieee.numeric_std.ALL;
+library UNISIM;
+use UNISIM.Vcomponents.ALL;
+
 entity ALU_Final_MUSER_lab_final is
    port ( Accumulator : in    std_logic_vector (7 downto 0); 
+          ADD         : in    std_logic; 
           DataReg     : in    std_logic_vector (7 downto 0); 
           EN_ADDorSUB : in    std_logic; 
           EN_SIGNED   : in    std_logic; 
@@ -674,9 +675,10 @@ entity ALU_Final_MUSER_lab_final is
           r1          : in    std_logic; 
           r2          : in    std_logic; 
           r3          : in    std_logic; 
-          Neg         : out   std_logic; 
+          SUB         : in    std_logic; 
           OFL         : out   std_logic; 
-          Sum         : out   std_logic_vector (7 downto 0));
+          Sum         : out   std_logic_vector (7 downto 0); 
+          Negative    : inout std_logic);
 end ALU_Final_MUSER_lab_final;
 
 architecture BEHAVIORAL of ALU_Final_MUSER_lab_final is
@@ -759,9 +761,9 @@ begin
    XLXI_1 : Full_AdderSub8_MUSER_lab_final
       port map (Ain(7 downto 0)=>Accumulator(7 downto 0),
                 Bin(7 downto 0)=>XLXN_134(7 downto 0),
-                nADD_SUB=>nADD_SUB,
+                nADD_SUB=>SUB,
                 Cout=>open,
-                Negative=>Neg,
+                Negative=>Negative,
                 OFL=>OFL,
                 Sum(7 downto 0)=>Sum(7 downto 0));
    
@@ -831,6 +833,14 @@ begin
                 nIM_Din=>r3,
                 DOut(7 downto 0)=>XLXN_134(7 downto 0));
    
+   XLXI_29 : BUF
+      port map (I=>EN_SIGNED,
+                O=>open);
+   
+   XLXI_30 : BUF
+      port map (I=>EN_ADDorSUB,
+                O=>open);
+   
 end BEHAVIORAL;
 
 
@@ -857,59 +867,68 @@ end ProgramGround_MUSER_lab_final;
 
 architecture BEHAVIORAL of ProgramGround_MUSER_lab_final is
    attribute BOX_TYPE   : string ;
-   signal ADD               : std_logic;
-   signal ADDU              : std_logic;
-   signal ADI               : std_logic;
-   signal CE_Accum          : std_logic;
-   signal CE_regS           : std_logic;
-   signal CE_Reg0           : std_logic;
-   signal CE_Reg1           : std_logic;
-   signal CE_Reg2           : std_logic;
-   signal CE_Reg3           : std_logic;
-   signal CLR               : std_logic;
-   signal CLR1              : std_logic;
-   signal Din               : std_logic_vector (7 downto 0);
-   signal EN_ADDorSUB       : std_logic;
-   signal EN_r0             : std_logic;
-   signal EN_r1             : std_logic;
-   signal EN_r2             : std_logic;
-   signal EN_r3             : std_logic;
-   signal EN_SUB            : std_logic;
-   signal GET               : std_logic;
-   signal LCA               : std_logic;
-   signal LDA               : std_logic;
-   signal MVI               : std_logic;
-   signal MVI_r0            : std_logic;
-   signal MVI_r1            : std_logic;
-   signal MVI_r2            : std_logic;
-   signal MVI_r3            : std_logic;
-   signal nADD_SUB          : std_logic;
-   signal nEN_ADD           : std_logic;
-   signal RegS_0_isNegative : std_logic;
-   signal RegS_1_isOverFlow : std_logic;
-   signal RegWrite          : std_logic;
-   signal Reg0              : std_logic_vector (7 downto 0);
-   signal Reg1              : std_logic_vector (7 downto 0);
-   signal Reg2              : std_logic_vector (7 downto 0);
-   signal Reg3              : std_logic_vector (7 downto 0);
-   signal r0                : std_logic;
-   signal r1                : std_logic;
-   signal r2                : std_logic;
-   signal r3                : std_logic;
-   signal SBI               : std_logic;
-   signal SET               : std_logic;
-   signal Signed            : std_logic;
-   signal STA               : std_logic;
-   signal STA_r0            : std_logic;
-   signal STA_r1            : std_logic;
-   signal STA_r2            : std_logic;
-   signal STA_r3            : std_logic;
-   signal SUB               : std_logic;
-   signal SUBU              : std_logic;
-   signal Sum               : std_logic_vector (7 downto 0);
-   signal Three_CLK_Ticks   : std_logic;
-   signal XLXN_347          : std_logic_vector (7 downto 0);
-   signal Accumulator_DUMMY : std_logic_vector (7 downto 0);
+   signal ADD                     : std_logic;
+   signal ADDU                    : std_logic;
+   signal ADI                     : std_logic;
+   signal CE_Accum                : std_logic;
+   signal CE_regS                 : std_logic;
+   signal CE_Reg0                 : std_logic;
+   signal CE_Reg1                 : std_logic;
+   signal CE_Reg2                 : std_logic;
+   signal CE_Reg3                 : std_logic;
+   signal CLR                     : std_logic;
+   signal CLR1                    : std_logic;
+   signal Din                     : std_logic_vector (7 downto 0);
+   signal dr3_0_strobeSTARegister : std_logic;
+   signal dr4_7_strobeMVIRegister : std_logic;
+   signal EN_MVI_NOP              : std_logic;
+   signal EN_r0                   : std_logic;
+   signal EN_r1                   : std_logic;
+   signal EN_r2                   : std_logic;
+   signal EN_r3                   : std_logic;
+   signal EN_SUB                  : std_logic;
+   signal GET                     : std_logic;
+   signal LCA                     : std_logic;
+   signal LDA                     : std_logic;
+   signal MVI                     : std_logic;
+   signal MVI_r0                  : std_logic;
+   signal MVI_r1                  : std_logic;
+   signal MVI_r2                  : std_logic;
+   signal MVI_r3                  : std_logic;
+   signal nADD_SUB                : std_logic;
+   signal nEN_ADD                 : std_logic;
+   signal NOP                     : std_logic;
+   signal RegS_0_isNegative       : std_logic;
+   signal RegS_1_isOverFlow       : std_logic;
+   signal RegWrite                : std_logic;
+   signal Reg0                    : std_logic_vector (7 downto 0);
+   signal Reg1                    : std_logic_vector (7 downto 0);
+   signal Reg2                    : std_logic_vector (7 downto 0);
+   signal Reg3                    : std_logic_vector (7 downto 0);
+   signal r0                      : std_logic;
+   signal r1                      : std_logic;
+   signal r2                      : std_logic;
+   signal r3                      : std_logic;
+   signal SBI                     : std_logic;
+   signal SET                     : std_logic;
+   signal Signed                  : std_logic;
+   signal STA                     : std_logic;
+   signal STA_r0                  : std_logic;
+   signal STA_r1                  : std_logic;
+   signal STA_r2                  : std_logic;
+   signal STA_r3                  : std_logic;
+   signal SUB                     : std_logic;
+   signal SUBU                    : std_logic;
+   signal Sum                     : std_logic_vector (7 downto 0);
+   signal Three_CLK_Ticks         : std_logic;
+   signal XLXN_347                : std_logic_vector (7 downto 0);
+   signal XLXN_366                : std_logic;
+   signal XLXN_367                : std_logic;
+   signal XLXN_371                : std_logic;
+   signal Accumulator_DUMMY       : std_logic_vector (7 downto 0);
+   signal XLXI_156_I0_openSignal  : std_logic;
+   signal XLXI_156_I1_openSignal  : std_logic;
+   signal XLXI_156_I2_openSignal  : std_logic;
    component ISA
       port ( IR   : in    std_logic_vector (7 downto 0); 
              LDA  : out   std_logic; 
@@ -926,7 +945,16 @@ architecture BEHAVIORAL of ProgramGround_MUSER_lab_final is
              SUB  : out   std_logic; 
              SUBU : out   std_logic; 
              HLT  : out   std_logic; 
-             RST  : out   std_logic);
+             RST  : out   std_logic; 
+             NOP  : out   std_logic);
+   end component;
+   
+   component Register_8bit_MUSER_lab_final
+      port ( R_In   : in    std_logic_vector (7 downto 0); 
+             R_CE   : in    std_logic; 
+             R_WCLK : in    std_logic; 
+             R_CLR  : in    std_logic; 
+             R_Out  : out   std_logic_vector (7 downto 0));
    end component;
    
    component OR3
@@ -936,14 +964,6 @@ architecture BEHAVIORAL of ProgramGround_MUSER_lab_final is
              O  : out   std_logic);
    end component;
    attribute BOX_TYPE of OR3 : component is "BLACK_BOX";
-   
-   component Register_8bit_MUSER_lab_final
-      port ( R_In   : in    std_logic_vector (7 downto 0); 
-             R_CE   : in    std_logic; 
-             R_WCLK : in    std_logic; 
-             R_CLR  : in    std_logic; 
-             R_Out  : out   std_logic_vector (7 downto 0));
-   end component;
    
    component NOR3
       port ( I0 : in    std_logic; 
@@ -961,13 +981,6 @@ architecture BEHAVIORAL of ProgramGround_MUSER_lab_final is
              O  : out   std_logic);
    end component;
    attribute BOX_TYPE of OR4 : component is "BLACK_BOX";
-   
-   component XOR2
-      port ( I0 : in    std_logic; 
-             I1 : in    std_logic; 
-             O  : out   std_logic);
-   end component;
-   attribute BOX_TYPE of XOR2 : component is "BLACK_BOX";
    
    component MUX_DR_MUSER_lab_final
       port ( r1    : out   std_logic; 
@@ -1014,22 +1027,24 @@ architecture BEHAVIORAL of ProgramGround_MUSER_lab_final is
    attribute BOX_TYPE of OR2B1 : component is "BLACK_BOX";
    
    component ALU_Final_MUSER_lab_final
-      port ( r3          : in    std_logic; 
+      port ( Accumulator : in    std_logic_vector (7 downto 0); 
+             EN_SIGNED   : in    std_logic; 
+             nADD_SUB    : in    std_logic; 
+             Reg1        : in    std_logic_vector (7 downto 0); 
+             DataReg     : in    std_logic_vector (7 downto 0); 
+             r3          : in    std_logic; 
              r0          : in    std_logic; 
              r1          : in    std_logic; 
              r2          : in    std_logic; 
              EN_ADDorSUB : in    std_logic; 
-             Sum         : out   std_logic_vector (7 downto 0); 
-             OFL         : out   std_logic; 
-             Neg         : out   std_logic; 
-             EN_SIGNED   : in    std_logic; 
-             Accumulator : in    std_logic_vector (7 downto 0); 
-             nADD_SUB    : in    std_logic; 
-             Reg1        : in    std_logic_vector (7 downto 0); 
-             DataReg     : in    std_logic_vector (7 downto 0); 
              Reg0        : in    std_logic_vector (7 downto 0); 
              Reg2        : in    std_logic_vector (7 downto 0); 
-             Reg3        : in    std_logic_vector (7 downto 0));
+             Reg3        : in    std_logic_vector (7 downto 0); 
+             Sum         : out   std_logic_vector (7 downto 0); 
+             OFL         : out   std_logic; 
+             ADD         : in    std_logic; 
+             SUB         : in    std_logic; 
+             Negative    : inout std_logic);
    end component;
    
 begin
@@ -1045,18 +1060,13 @@ begin
                 LCA=>LCA,
                 LDA=>LDA,
                 MVI=>MVI,
+                NOP=>NOP,
                 RST=>RST,
                 SBI=>SBI,
                 SET=>SET,
                 STA=>STA,
                 SUB=>SUB,
                 SUBU=>SUBU);
-   
-   XLXI_5 : OR3
-      port map (I0=>CLR,
-                I1=>MVI,
-                I2=>STA,
-                O=>RegWrite);
    
    XLXI_43 : Register_8bit_MUSER_lab_final
       port map (R_CE=>CE_Accum,
@@ -1065,24 +1075,17 @@ begin
                 R_WCLK=>tick(1),
                 R_Out(7 downto 0)=>Accumulator_DUMMY(7 downto 0));
    
-   XLXI_48 : Register_8bit_MUSER_lab_final
-      port map (R_CE=>CE_Reg1,
-                R_CLR=>CLR1,
-                R_In(7 downto 0)=>Din(7 downto 0),
-                R_WCLK=>tick(0),
-                R_Out(7 downto 0)=>Reg1(7 downto 0));
-   
    XLXI_51 : OR3
       port map (I0=>SUBU,
                 I1=>SUB,
                 I2=>SBI,
-                O=>EN_SUB);
+                O=>XLXN_367);
    
    XLXI_53 : NOR3
       port map (I0=>ADDU,
                 I1=>ADD,
                 I2=>ADI,
-                O=>nEN_ADD);
+                O=>XLXN_366);
    
    XLXI_55 : OR4
       port map (I0=>SBI,
@@ -1097,11 +1100,6 @@ begin
                 R_In(7 downto 0)=>Accumulator_DUMMY(7 downto 0),
                 R_WCLK=>tick(1),
                 R_Out(7 downto 0)=>RegC(7 downto 0));
-   
-   XLXI_66 : XOR2
-      port map (I0=>EN_SUB,
-                I1=>nEN_ADD,
-                O=>nADD_SUB);
    
    XLXI_67 : MUX_DR_MUSER_lab_final
       port map (DR_In(3)=>DR(4),
@@ -1175,13 +1173,6 @@ begin
                 I1=>STA,
                 O=>STA_r0);
    
-   XLXI_119 : Register_8bit_MUSER_lab_final
-      port map (R_CE=>CE_Reg3,
-                R_CLR=>CLR1,
-                R_In(7 downto 0)=>Din(7 downto 0),
-                R_WCLK=>tick(0),
-                R_Out(7 downto 0)=>Reg3(7 downto 0));
-   
    XLXI_120 : OR2
       port map (I0=>MVI_r3,
                 I1=>STA_r3,
@@ -1196,7 +1187,7 @@ begin
    XLXI_136 : MUX8_generic_MUSER_lab_final
       port map (D_In(7 downto 0)=>Sum(7 downto 0),
                 I_In(7 downto 0)=>DR(7 downto 0),
-                nIM_Din=>EN_ADDorSUB,
+                nIM_Din=>XLXN_371,
                 DOut(7 downto 0)=>XLXN_347(7 downto 0));
    
    XLXI_138 : OR2B1
@@ -1207,18 +1198,14 @@ begin
    XLXI_146 : MUX8_generic_MUSER_lab_final
       port map (D_In(7 downto 0)=>DR(7 downto 0),
                 I_In(7 downto 0)=>Accumulator_DUMMY(7 downto 0),
-                nIM_Din=>MVI,
+                nIM_Din=>EN_MVI_NOP,
                 DOut(7 downto 0)=>Din(7 downto 0));
-   
-   XLXI_149 : OR2B1
-      port map (I0=>nEN_ADD,
-                I1=>EN_SUB,
-                O=>EN_ADDorSUB);
    
    XLXI_151 : ALU_Final_MUSER_lab_final
       port map (Accumulator(7 downto 0)=>Accumulator_DUMMY(7 downto 0),
+                ADD=>XLXN_366,
                 DataReg(7 downto 0)=>DR(7 downto 0),
-                EN_ADDorSUB=>EN_ADDorSUB,
+                EN_ADDorSUB=>XLXN_371,
                 EN_SIGNED=>Signed,
                 nADD_SUB=>nADD_SUB,
                 Reg0(7 downto 0)=>Reg0(7 downto 0),
@@ -1229,28 +1216,209 @@ begin
                 r1=>r1,
                 r2=>r2,
                 r3=>r3,
-                Neg=>Neg,
+                SUB=>XLXN_367,
                 OFL=>OFL,
-                Sum(7 downto 0)=>Sum(7 downto 0));
+                Sum(7 downto 0)=>Sum(7 downto 0),
+                Negative=>open);
    
-   XLXI_153 : Register_8bit_MUSER_lab_final
-      port map (R_CE=>CE_Reg0,
-                R_CLR=>CLR1,
-                R_In(7 downto 0)=>Din(7 downto 0),
-                R_WCLK=>tick(0),
-                R_Out(7 downto 0)=>Reg0(7 downto 0));
+   XLXI_155 : OR2
+      port map (I0=>CLR,
+                I1=>btn_CLR,
+                O=>CLR1);
    
-   XLXI_154 : Register_8bit_MUSER_lab_final
+   XLXI_156 : OR3
+      port map (I0=>XLXI_156_I0_openSignal,
+                I1=>XLXI_156_I1_openSignal,
+                I2=>XLXI_156_I2_openSignal,
+                O=>open);
+   
+   XLXI_157 : OR2
+      port map (I0=>ADD,
+                I1=>SUB,
+                O=>XLXN_371);
+   
+   XLXI_161 : Register_8bit_MUSER_lab_final
       port map (R_CE=>CE_Reg2,
                 R_CLR=>CLR1,
                 R_In(7 downto 0)=>Din(7 downto 0),
                 R_WCLK=>tick(0),
                 R_Out(7 downto 0)=>Reg2(7 downto 0));
    
-   XLXI_155 : OR2
-      port map (I0=>CLR,
-                I1=>btn_CLR,
-                O=>CLR1);
+   XLXI_163 : Register_8bit_MUSER_lab_final
+      port map (R_CE=>CE_Reg1,
+                R_CLR=>CLR1,
+                R_In(7 downto 0)=>Din(7 downto 0),
+                R_WCLK=>tick(0),
+                R_Out(7 downto 0)=>Reg1(7 downto 0));
+   
+   XLXI_164 : Register_8bit_MUSER_lab_final
+      port map (R_CE=>CE_Reg0,
+                R_CLR=>CLR1,
+                R_In(7 downto 0)=>Din(7 downto 0),
+                R_WCLK=>tick(0),
+                R_Out(7 downto 0)=>Reg0(7 downto 0));
+   
+   XLXI_165 : Register_8bit_MUSER_lab_final
+      port map (R_CE=>CE_Reg3,
+                R_CLR=>CLR1,
+                R_In(7 downto 0)=>Din(7 downto 0),
+                R_WCLK=>tick(0),
+                R_Out(7 downto 0)=>Reg3(7 downto 0));
+   
+   XLXI_166 : OR2
+      port map (I0=>NOP,
+                I1=>MVI,
+                O=>EN_MVI_NOP);
+   
+end BEHAVIORAL;
+
+
+
+library ieee;
+use ieee.std_logic_1164.ALL;
+use ieee.numeric_std.ALL;
+library UNISIM;
+use UNISIM.Vcomponents.ALL;
+
+entity KEYPAD_Final_MUSER_lab_final is
+   port ( Clock : in    std_logic; 
+          row   : in    std_logic_vector (3 downto 0); 
+          binO  : out   std_logic_vector (3 downto 0); 
+          keyO  : out   std_logic; 
+          colO  : inout std_logic_vector (3 downto 0));
+end KEYPAD_Final_MUSER_lab_final;
+
+architecture BEHAVIORAL of KEYPAD_Final_MUSER_lab_final is
+   attribute BOX_TYPE   : string ;
+   signal XLXN_43                 : std_logic;
+   signal XLXN_44                 : std_logic;
+   signal XLXN_57                 : std_logic;
+   signal XLXN_58                 : std_logic;
+   signal XLXN_61                 : std_logic;
+   signal XLXN_62                 : std_logic_vector (3 downto 0);
+   signal XLXN_65                 : std_logic_vector (3 downto 0);
+   signal XLXN_66                 : std_logic_vector (3 downto 0);
+   signal XLXN_67                 : std_logic;
+   signal row_DUMMY               : std_logic_vector (3 downto 0);
+   signal XLXI_17_rowI_openSignal : std_logic_vector (3 downto 0);
+   component CRenc4bin
+      port ( clk  : in    std_logic; 
+             CE   : in    std_logic; 
+             rowI : in    std_logic_vector (3 downto 0); 
+             keyO : out   std_logic; 
+             binO : out   std_logic_vector (3 downto 0); 
+             colO : inout std_logic_vector (3 downto 0));
+   end component;
+   
+   component PULLDOWN
+      port ( O : out   std_logic);
+   end component;
+   attribute BOX_TYPE of PULLDOWN : component is "BLACK_BOX";
+   
+   component PULLUP
+      port ( O : out   std_logic);
+   end component;
+   attribute BOX_TYPE of PULLUP : component is "BLACK_BOX";
+   
+   component DCM_100M
+      port ( CLK    : in    std_logic; 
+             RST    : in    std_logic; 
+             CLK1M  : out   std_logic; 
+             CLK10k : out   std_logic; 
+             CLK1k  : out   std_logic; 
+             CLK100 : out   std_logic; 
+             CLK1   : out   std_logic);
+   end component;
+   
+   component key_detect
+      port ( clk  : in    std_logic; 
+             row  : in    std_logic_vector (3 downto 0); 
+             col  : in    std_logic_vector (3 downto 0); 
+             keyL : out   std_logic; 
+             Lcol : out   std_logic_vector (3 downto 0); 
+             Lrow : out   std_logic_vector (3 downto 0));
+   end component;
+   
+   component key4_dbnc
+      port ( clk : in    std_logic; 
+             swI : in    std_logic_vector (3 downto 0); 
+             swO : out   std_logic_vector (3 downto 0));
+   end component;
+   
+   component col_strobe
+      port ( clk : in    std_logic; 
+             col : inout std_logic_vector (3 downto 0));
+   end component;
+   
+   component decoder16keyEn
+      port ( En   : in    std_logic; 
+             rowI : in    std_logic_vector (3 downto 0); 
+             colI : in    std_logic_vector (3 downto 0); 
+             binO : out   std_logic_vector (3 downto 0));
+   end component;
+   
+begin
+   row_DUMMY(3 downto 0) <= row(3 downto 0);
+   XLXI_17 : CRenc4bin
+      port map (CE=>XLXN_44,
+                clk=>XLXN_57,
+                rowI(3 downto 0)=>XLXI_17_rowI_openSignal(3 downto 0),
+                binO=>open,
+                keyO=>keyO,
+                colO=>open);
+   
+   XLXI_24 : PULLDOWN
+      port map (O=>XLXN_43);
+   
+   XLXI_25 : PULLUP
+      port map (O=>XLXN_44);
+   
+   XLXI_28 : DCM_100M
+      port map (CLK=>Clock,
+                RST=>XLXN_43,
+                CLK1=>open,
+                CLK1k=>XLXN_57,
+                CLK1M=>open,
+                CLK10k=>XLXN_61,
+                CLK100=>XLXN_58);
+   
+   XLXI_34_0 : PULLDOWN
+      port map (O=>row_DUMMY(0));
+   
+   XLXI_34_1 : PULLDOWN
+      port map (O=>row_DUMMY(1));
+   
+   XLXI_34_2 : PULLDOWN
+      port map (O=>row_DUMMY(2));
+   
+   XLXI_34_3 : PULLDOWN
+      port map (O=>row_DUMMY(3));
+   
+   XLXI_36 : key_detect
+      port map (clk=>XLXN_57,
+                col(3 downto 0)=>colO(3 downto 0),
+                row(3 downto 0)=>XLXN_62(3 downto 0),
+                keyL=>open,
+                Lcol(3 downto 0)=>XLXN_65(3 downto 0),
+                Lrow(3 downto 0)=>XLXN_66(3 downto 0));
+   
+   XLXI_37 : key4_dbnc
+      port map (clk=>XLXN_61,
+                swI(3 downto 0)=>row_DUMMY(3 downto 0),
+                swO(3 downto 0)=>XLXN_62(3 downto 0));
+   
+   XLXI_38 : col_strobe
+      port map (clk=>XLXN_58,
+                col(3 downto 0)=>colO(3 downto 0));
+   
+   XLXI_40 : decoder16keyEn
+      port map (colI(3 downto 0)=>XLXN_65(3 downto 0),
+                En=>XLXN_67,
+                rowI(3 downto 0)=>XLXN_66(3 downto 0),
+                binO(3 downto 0)=>binO(3 downto 0));
+   
+   XLXI_46 : PULLDOWN
+      port map (O=>XLXN_67);
    
 end BEHAVIORAL;
 
@@ -1362,9 +1530,9 @@ architecture BEHAVIORAL of Eight_Register_Shift_MUSER_lab_final is
              Q   : out   std_logic_vector (7 downto 0));
    end component;
    
-   attribute HU_SET of XLXI_149 : label is "XLXI_149_116";
-   attribute HU_SET of XLXI_150 : label is "XLXI_150_115";
-   attribute HU_SET of XLXI_159 : label is "XLXI_159_117";
+   attribute HU_SET of XLXI_149 : label is "XLXI_149_37";
+   attribute HU_SET of XLXI_150 : label is "XLXI_150_36";
+   attribute HU_SET of XLXI_159 : label is "XLXI_159_38";
 begin
    XLXI_149 : FD4CE_MXILINX_lab_final
       port map (C=>WCLK_R1,
@@ -1475,15 +1643,6 @@ begin
                 WCLK_Shift=>C_Shift,
                 DOut(7 downto 0)=>Address(7 downto 0));
    
-   XLXI_134 : Eight_Register_Shift_MUSER_lab_final
-      port map (binO(3 downto 0)=>Din(3 downto 0),
-                CLR=>CLR,
-                C_CE=>XLXN_46,
-                WCLK_Final=>C_WriteFinal,
-                WCLK_R1=>C_WriteOne,
-                WCLK_Shift=>C_Shift,
-                DOut(7 downto 0)=>Instruction(7 downto 0));
-   
    XLXI_138 : AND3
       port map (I0=>DataMode,
                 I1=>EN_IR,
@@ -1496,6 +1655,24 @@ begin
                 I2=>AddressMode,
                 I3=>DebugMode,
                 O=>XLXN_49);
+   
+   XLXI_141 : Eight_Register_Shift_MUSER_lab_final
+      port map (binO(3 downto 0)=>Din(3 downto 0),
+                CLR=>CLR,
+                C_CE=>XLXN_46,
+                WCLK_Final=>C_WriteFinal,
+                WCLK_R1=>C_WriteOne,
+                WCLK_Shift=>C_Shift,
+                DOut(7 downto 0)=>Instruction(7 downto 0));
+   
+   XLXI_143 : Eight_Register_Shift_MUSER_lab_final
+      port map (binO(3 downto 0)=>Din(3 downto 0),
+                CLR=>CLR,
+                C_CE=>XLXN_45,
+                WCLK_Final=>C_WriteFinal,
+                WCLK_R1=>C_WriteOne,
+                WCLK_Shift=>C_Shift,
+                DOut(7 downto 0)=>Data(7 downto 0));
    
 end BEHAVIORAL;
 
@@ -1526,11 +1703,11 @@ architecture BEHAVIORAL of MUX4_generic_MUSER_lab_final is
              O  : out   std_logic);
    end component;
    
-   attribute HU_SET of XLXI_27 : label is "XLXI_27_118";
-   attribute HU_SET of XLXI_28 : label is "XLXI_28_119";
-   attribute HU_SET of XLXI_32 : label is "XLXI_32_122";
-   attribute HU_SET of XLXI_33 : label is "XLXI_33_120";
-   attribute HU_SET of XLXI_34 : label is "XLXI_34_121";
+   attribute HU_SET of XLXI_27 : label is "XLXI_27_39";
+   attribute HU_SET of XLXI_28 : label is "XLXI_28_40";
+   attribute HU_SET of XLXI_32 : label is "XLXI_32_43";
+   attribute HU_SET of XLXI_33 : label is "XLXI_33_41";
+   attribute HU_SET of XLXI_34 : label is "XLXI_34_42";
 begin
    XLXI_27 : M2_1_MXILINX_lab_final
       port map (D0=>XLXI_27_D0_openSignal,
@@ -1779,156 +1956,6 @@ use ieee.numeric_std.ALL;
 library UNISIM;
 use UNISIM.Vcomponents.ALL;
 
-entity KEYPAD_Final_MUSER_lab_final is
-   port ( Clock : in    std_logic; 
-          row   : in    std_logic_vector (3 downto 0); 
-          binO  : out   std_logic_vector (3 downto 0); 
-          keyO  : out   std_logic; 
-          colO  : inout std_logic_vector (3 downto 0));
-end KEYPAD_Final_MUSER_lab_final;
-
-architecture BEHAVIORAL of KEYPAD_Final_MUSER_lab_final is
-   attribute BOX_TYPE   : string ;
-   signal XLXN_43                 : std_logic;
-   signal XLXN_44                 : std_logic;
-   signal XLXN_57                 : std_logic;
-   signal XLXN_58                 : std_logic;
-   signal XLXN_61                 : std_logic;
-   signal XLXN_62                 : std_logic_vector (3 downto 0);
-   signal XLXN_65                 : std_logic_vector (3 downto 0);
-   signal XLXN_66                 : std_logic_vector (3 downto 0);
-   signal XLXN_67                 : std_logic;
-   signal row_DUMMY               : std_logic_vector (3 downto 0);
-   signal XLXI_17_rowI_openSignal : std_logic_vector (3 downto 0);
-   component CRenc4bin
-      port ( clk  : in    std_logic; 
-             CE   : in    std_logic; 
-             rowI : in    std_logic_vector (3 downto 0); 
-             keyO : out   std_logic; 
-             binO : out   std_logic_vector (3 downto 0); 
-             colO : inout std_logic_vector (3 downto 0));
-   end component;
-   
-   component PULLDOWN
-      port ( O : out   std_logic);
-   end component;
-   attribute BOX_TYPE of PULLDOWN : component is "BLACK_BOX";
-   
-   component PULLUP
-      port ( O : out   std_logic);
-   end component;
-   attribute BOX_TYPE of PULLUP : component is "BLACK_BOX";
-   
-   component DCM_100M
-      port ( CLK    : in    std_logic; 
-             RST    : in    std_logic; 
-             CLK1M  : out   std_logic; 
-             CLK10k : out   std_logic; 
-             CLK1k  : out   std_logic; 
-             CLK100 : out   std_logic; 
-             CLK1   : out   std_logic);
-   end component;
-   
-   component key_detect
-      port ( clk  : in    std_logic; 
-             row  : in    std_logic_vector (3 downto 0); 
-             col  : in    std_logic_vector (3 downto 0); 
-             keyL : out   std_logic; 
-             Lcol : out   std_logic_vector (3 downto 0); 
-             Lrow : out   std_logic_vector (3 downto 0));
-   end component;
-   
-   component key4_dbnc
-      port ( clk : in    std_logic; 
-             swI : in    std_logic_vector (3 downto 0); 
-             swO : out   std_logic_vector (3 downto 0));
-   end component;
-   
-   component col_strobe
-      port ( clk : in    std_logic; 
-             col : inout std_logic_vector (3 downto 0));
-   end component;
-   
-   component decoder16keyEn
-      port ( En   : in    std_logic; 
-             rowI : in    std_logic_vector (3 downto 0); 
-             colI : in    std_logic_vector (3 downto 0); 
-             binO : out   std_logic_vector (3 downto 0));
-   end component;
-   
-begin
-   row_DUMMY(3 downto 0) <= row(3 downto 0);
-   XLXI_17 : CRenc4bin
-      port map (CE=>XLXN_44,
-                clk=>XLXN_57,
-                rowI(3 downto 0)=>XLXI_17_rowI_openSignal(3 downto 0),
-                binO=>open,
-                keyO=>keyO,
-                colO=>open);
-   
-   XLXI_24 : PULLDOWN
-      port map (O=>XLXN_43);
-   
-   XLXI_25 : PULLUP
-      port map (O=>XLXN_44);
-   
-   XLXI_28 : DCM_100M
-      port map (CLK=>Clock,
-                RST=>XLXN_43,
-                CLK1=>open,
-                CLK1k=>XLXN_57,
-                CLK1M=>open,
-                CLK10k=>XLXN_61,
-                CLK100=>XLXN_58);
-   
-   XLXI_34_0 : PULLDOWN
-      port map (O=>row_DUMMY(0));
-   
-   XLXI_34_1 : PULLDOWN
-      port map (O=>row_DUMMY(1));
-   
-   XLXI_34_2 : PULLDOWN
-      port map (O=>row_DUMMY(2));
-   
-   XLXI_34_3 : PULLDOWN
-      port map (O=>row_DUMMY(3));
-   
-   XLXI_36 : key_detect
-      port map (clk=>XLXN_57,
-                col(3 downto 0)=>colO(3 downto 0),
-                row(3 downto 0)=>XLXN_62(3 downto 0),
-                keyL=>open,
-                Lcol(3 downto 0)=>XLXN_65(3 downto 0),
-                Lrow(3 downto 0)=>XLXN_66(3 downto 0));
-   
-   XLXI_37 : key4_dbnc
-      port map (clk=>XLXN_61,
-                swI(3 downto 0)=>row_DUMMY(3 downto 0),
-                swO(3 downto 0)=>XLXN_62(3 downto 0));
-   
-   XLXI_38 : col_strobe
-      port map (clk=>XLXN_58,
-                col(3 downto 0)=>colO(3 downto 0));
-   
-   XLXI_40 : decoder16keyEn
-      port map (colI(3 downto 0)=>XLXN_65(3 downto 0),
-                En=>XLXN_67,
-                rowI(3 downto 0)=>XLXN_66(3 downto 0),
-                binO(3 downto 0)=>binO(3 downto 0));
-   
-   XLXI_46 : PULLDOWN
-      port map (O=>XLXN_67);
-   
-end BEHAVIORAL;
-
-
-
-library ieee;
-use ieee.std_logic_1164.ALL;
-use ieee.numeric_std.ALL;
-library UNISIM;
-use UNISIM.Vcomponents.ALL;
-
 entity MUX8Bit_MUSER_lab_final is
    port ( D_In    : in    std_logic_vector (7 downto 0); 
           I_In    : in    std_logic_vector (7 downto 0); 
@@ -1948,15 +1975,15 @@ architecture BEHAVIORAL of MUX8Bit_MUSER_lab_final is
              O  : out   std_logic);
    end component;
    
-   attribute HU_SET of XLXI_27 : label is "XLXI_27_123";
-   attribute HU_SET of XLXI_28 : label is "XLXI_28_124";
-   attribute HU_SET of XLXI_32 : label is "XLXI_32_130";
-   attribute HU_SET of XLXI_33 : label is "XLXI_33_125";
-   attribute HU_SET of XLXI_34 : label is "XLXI_34_126";
-   attribute HU_SET of XLXI_35 : label is "XLXI_35_127";
-   attribute HU_SET of XLXI_36 : label is "XLXI_36_128";
-   attribute HU_SET of XLXI_37 : label is "XLXI_37_129";
-   attribute HU_SET of XLXI_44 : label is "XLXI_44_131";
+   attribute HU_SET of XLXI_27 : label is "XLXI_27_44";
+   attribute HU_SET of XLXI_28 : label is "XLXI_28_45";
+   attribute HU_SET of XLXI_32 : label is "XLXI_32_51";
+   attribute HU_SET of XLXI_33 : label is "XLXI_33_46";
+   attribute HU_SET of XLXI_34 : label is "XLXI_34_47";
+   attribute HU_SET of XLXI_35 : label is "XLXI_35_48";
+   attribute HU_SET of XLXI_36 : label is "XLXI_36_49";
+   attribute HU_SET of XLXI_37 : label is "XLXI_37_50";
+   attribute HU_SET of XLXI_44 : label is "XLXI_44_52";
 begin
    XLXI_27 : M2_1_MXILINX_lab_final
       port map (D0=>XLXI_27_D0_openSignal,
@@ -2054,28 +2081,31 @@ end MemoryV2_MUSER_lab_final;
 
 architecture BEHAVIORAL of MemoryV2_MUSER_lab_final is
    attribute BOX_TYPE   : string ;
-   signal Address                 : std_logic_vector (7 downto 0);
-   signal AddressMode             : std_logic;
-   signal AOrCount                : std_logic_vector (7 downto 0);
-   signal binO                    : std_logic_vector (3 downto 0);
-   signal EN_DR                   : std_logic;
-   signal EN_IR                   : std_logic;
-   signal nWE_D                   : std_logic;
-   signal nWE_I                   : std_logic;
-   signal WCLK_DM                 : std_logic;
-   signal WCLK_IM                 : std_logic;
-   signal WCLK_Memory_HERE        : std_logic;
-   signal XLXN_454                : std_logic;
-   signal XLXN_456                : std_logic;
-   signal XLXN_460                : std_logic;
-   signal XLXN_468                : std_logic_vector (7 downto 0);
-   signal XLXN_544                : std_logic_vector (7 downto 0);
-   signal XLXN_545                : std_logic_vector (7 downto 0);
-   signal XLXN_560                : std_logic_vector (7 downto 0);
-   signal IR_DUMMY                : std_logic_vector (7 downto 0);
-   signal DR_DUMMY                : std_logic_vector (7 downto 0);
-   signal XLXI_168_nCS_openSignal : std_logic;
-   signal XLXI_169_nCS_openSignal : std_logic;
+   signal Address                  : std_logic_vector (7 downto 0);
+   signal AddressMode              : std_logic;
+   signal AOrCount                 : std_logic_vector (7 downto 0);
+   signal binO                     : std_logic_vector (3 downto 0);
+   signal Data_Mem                 : std_logic_vector (7 downto 0);
+   signal EN_DR                    : std_logic;
+   signal EN_IR                    : std_logic;
+   signal I_Data                   : std_logic_vector (7 downto 0);
+   signal nWE_D                    : std_logic;
+   signal nWE_I                    : std_logic;
+   signal WCLK_DM                  : std_logic;
+   signal WCLK_IM                  : std_logic;
+   signal WCLK_Memory_HERE         : std_logic;
+   signal XLXN_454                 : std_logic;
+   signal XLXN_456                 : std_logic;
+   signal XLXN_460                 : std_logic;
+   signal XLXN_468                 : std_logic_vector (7 downto 0);
+   signal XLXN_560                 : std_logic_vector (7 downto 0);
+   signal XLXN_578                 : std_logic;
+   signal IR_DUMMY                 : std_logic_vector (7 downto 0);
+   signal DR_DUMMY                 : std_logic_vector (7 downto 0);
+   signal XLXI_171_I_In_openSignal : std_logic_vector (7 downto 0);
+   signal XLXI_177_nCS_openSignal  : std_logic;
+   signal XLXI_178_D_openSignal    : std_logic_vector (7 downto 0);
+   signal XLXI_178_nCS_openSignal  : std_logic;
    component INV
       port ( I : in    std_logic; 
              O : out   std_logic);
@@ -2154,7 +2184,7 @@ architecture BEHAVIORAL of MemoryV2_MUSER_lab_final is
              nIM_Din : in    std_logic);
    end component;
    
-   component sRAM32x8_pgmA_data
+   component sRAM32x8_pgmA_instr
       port ( nCS  : in    std_logic; 
              nWE  : in    std_logic; 
              WCLK : in    std_logic; 
@@ -2163,7 +2193,7 @@ architecture BEHAVIORAL of MemoryV2_MUSER_lab_final is
              Q    : out   std_logic_vector (7 downto 0));
    end component;
    
-   component sRAM32x8_pgmA_instr
+   component sRAM32x8_pgmA_data
       port ( nCS  : in    std_logic; 
              nWE  : in    std_logic; 
              WCLK : in    std_logic; 
@@ -2246,8 +2276,8 @@ begin
                 EN_IR=>EN_IR,
                 EN_I_Memory=>EN_I_Memory,
                 Address(7 downto 0)=>Address(7 downto 0),
-                Data(7 downto 0)=>XLXN_545(7 downto 0),
-                Instruction(7 downto 0)=>XLXN_544(7 downto 0));
+                Data=>open,
+                Instruction(7 downto 0)=>I_Data(7 downto 0));
    
    XLXI_162 : KEYPAD_Final_MUSER_lab_final
       port map (Clock=>Clock,
@@ -2278,21 +2308,32 @@ begin
                 I1=>RegS(1),
                 O=>RegS_OFL);
    
-   XLXI_168 : sRAM32x8_pgmA_data
-      port map (A(4 downto 0)=>AOrCount(4 downto 0),
-                D(7 downto 0)=>XLXN_545(7 downto 0),
-                nCS=>XLXI_168_nCS_openSignal,
-                nWE=>nWE_D,
-                WCLK=>WCLK_DM,
-                Q(7 downto 0)=>DR_DUMMY(7 downto 0));
+   XLXI_171 : MUX8_generic_MUSER_lab_final
+      port map (D_In(7 downto 0)=>I_Data(7 downto 0),
+                I_In(7 downto 0)=>XLXI_171_I_In_openSignal(7 downto 0),
+                nIM_Din=>XLXN_578,
+                DOut(7 downto 0)=>Data_Mem(7 downto 0));
    
-   XLXI_169 : sRAM32x8_pgmA_instr
+   XLXI_174 : AND2
+      port map (I0=>DebugMode,
+                I1=>EN_DR,
+                O=>XLXN_578);
+   
+   XLXI_177 : sRAM32x8_pgmA_instr
       port map (A(4 downto 0)=>AOrCount(4 downto 0),
-                D(7 downto 0)=>XLXN_544(7 downto 0),
-                nCS=>XLXI_169_nCS_openSignal,
+                D(7 downto 0)=>I_Data(7 downto 0),
+                nCS=>XLXI_177_nCS_openSignal,
                 nWE=>nWE_I,
                 WCLK=>WCLK_IM,
                 Q(7 downto 0)=>IR_DUMMY(7 downto 0));
+   
+   XLXI_178 : sRAM32x8_pgmA_data
+      port map (A(4 downto 0)=>AOrCount(4 downto 0),
+                D(7 downto 0)=>XLXI_178_D_openSignal(7 downto 0),
+                nCS=>XLXI_178_nCS_openSignal,
+                nWE=>nWE_D,
+                WCLK=>WCLK_DM,
+                Q(7 downto 0)=>DR_DUMMY(7 downto 0));
    
 end BEHAVIORAL;
 
@@ -2404,7 +2445,7 @@ architecture BEHAVIORAL of FTCLEX_MXILINX_lab_final is
    end component;
    attribute BOX_TYPE of FDCE : component is "BLACK_BOX";
    
-   attribute HU_SET of I_36_30 : label is "I_36_30_132";
+   attribute HU_SET of I_36_30 : label is "I_36_30_53";
    attribute RLOC of I_36_35 : label is "X0Y0";
 begin
    Q <= Q_DUMMY;
@@ -2559,14 +2600,14 @@ architecture BEHAVIORAL of CB4CLED_MXILINX_lab_final is
    end component;
    attribute BOX_TYPE of OR2 : component is "BLACK_BOX";
    
-   attribute HU_SET of I_Q0 : label is "I_Q0_136";
-   attribute HU_SET of I_Q1 : label is "I_Q1_135";
-   attribute HU_SET of I_Q2 : label is "I_Q2_134";
-   attribute HU_SET of I_Q3 : label is "I_Q3_133";
-   attribute HU_SET of I_TC : label is "I_TC_139";
-   attribute HU_SET of I_T1 : label is "I_T1_140";
-   attribute HU_SET of I_T2 : label is "I_T2_137";
-   attribute HU_SET of I_T3 : label is "I_T3_138";
+   attribute HU_SET of I_Q0 : label is "I_Q0_57";
+   attribute HU_SET of I_Q1 : label is "I_Q1_56";
+   attribute HU_SET of I_Q2 : label is "I_Q2_55";
+   attribute HU_SET of I_Q3 : label is "I_Q3_54";
+   attribute HU_SET of I_TC : label is "I_TC_60";
+   attribute HU_SET of I_T1 : label is "I_T1_61";
+   attribute HU_SET of I_T2 : label is "I_T2_58";
+   attribute HU_SET of I_T3 : label is "I_T3_59";
 begin
    Q0 <= Q0_DUMMY;
    Q1 <= Q1_DUMMY;
@@ -2861,22 +2902,22 @@ architecture BEHAVIORAL of CB8CLED_MXILINX_lab_final is
    end component;
    attribute BOX_TYPE of OR2 : component is "BLACK_BOX";
    
-   attribute HU_SET of I_Q0 : label is "I_Q0_148";
-   attribute HU_SET of I_Q1 : label is "I_Q1_147";
-   attribute HU_SET of I_Q2 : label is "I_Q2_146";
-   attribute HU_SET of I_Q3 : label is "I_Q3_145";
-   attribute HU_SET of I_Q4 : label is "I_Q4_144";
-   attribute HU_SET of I_Q5 : label is "I_Q5_143";
-   attribute HU_SET of I_Q6 : label is "I_Q6_142";
-   attribute HU_SET of I_Q7 : label is "I_Q7_141";
-   attribute HU_SET of I_TC : label is "I_TC_153";
-   attribute HU_SET of I_T1 : label is "I_T1_156";
-   attribute HU_SET of I_T2 : label is "I_T2_149";
-   attribute HU_SET of I_T3 : label is "I_T3_150";
-   attribute HU_SET of I_T4 : label is "I_T4_155";
-   attribute HU_SET of I_T5 : label is "I_T5_154";
-   attribute HU_SET of I_T6 : label is "I_T6_151";
-   attribute HU_SET of I_T7 : label is "I_T7_152";
+   attribute HU_SET of I_Q0 : label is "I_Q0_69";
+   attribute HU_SET of I_Q1 : label is "I_Q1_68";
+   attribute HU_SET of I_Q2 : label is "I_Q2_67";
+   attribute HU_SET of I_Q3 : label is "I_Q3_66";
+   attribute HU_SET of I_Q4 : label is "I_Q4_65";
+   attribute HU_SET of I_Q5 : label is "I_Q5_64";
+   attribute HU_SET of I_Q6 : label is "I_Q6_63";
+   attribute HU_SET of I_Q7 : label is "I_Q7_62";
+   attribute HU_SET of I_TC : label is "I_TC_74";
+   attribute HU_SET of I_T1 : label is "I_T1_77";
+   attribute HU_SET of I_T2 : label is "I_T2_70";
+   attribute HU_SET of I_T3 : label is "I_T3_71";
+   attribute HU_SET of I_T4 : label is "I_T4_76";
+   attribute HU_SET of I_T5 : label is "I_T5_75";
+   attribute HU_SET of I_T6 : label is "I_T6_72";
+   attribute HU_SET of I_T7 : label is "I_T7_73";
 begin
    Q(7 downto 0) <= Q_DUMMY(7 downto 0);
    TC <= TC_DUMMY;
@@ -3238,8 +3279,8 @@ architecture BEHAVIORAL of P_Counter_MUSER_lab_final is
    end component;
    attribute BOX_TYPE of AND3 : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_1 : label is "XLXI_1_157";
-   attribute HU_SET of XLXI_6 : label is "XLXI_6_158";
+   attribute HU_SET of XLXI_1 : label is "XLXI_1_78";
+   attribute HU_SET of XLXI_6 : label is "XLXI_6_79";
 begin
    Q(7 downto 0) <= Q_DUMMY(7 downto 0);
    XLXI_1 : CB8CLED_MXILINX_lab_final
@@ -3382,22 +3423,22 @@ end lab_final;
 architecture BEHAVIORAL of lab_final is
    attribute BOX_TYPE   : string ;
    attribute HU_SET     : string ;
-   signal Accumulator                : std_logic_vector (7 downto 0);
-   signal Count                      : std_logic_vector (7 downto 0);
-   signal DebugMode                  : std_logic;
-   signal HLT                        : std_logic;
-   signal RegS                       : std_logic_vector (7 downto 0);
-   signal RST                        : std_logic;
-   signal ticks                      : std_logic_vector (2 downto 0);
-   signal XLXN_34                    : std_logic;
-   signal XLXN_35                    : std_logic;
-   signal XLXN_115                   : std_logic;
-   signal XLXN_141                   : std_logic_vector (7 downto 0);
-   signal XLXN_142                   : std_logic_vector (7 downto 0);
-   signal XLXN_164                   : std_logic;
-   signal CLK_1_DUMMY                : std_logic;
-   signal XLXI_57_I0_openSignal      : std_logic;
-   signal XLXI_61_btn_CLR_openSignal : std_logic;
+   signal Accumulator           : std_logic_vector (7 downto 0);
+   signal Count                 : std_logic_vector (7 downto 0);
+   signal DebugMode             : std_logic;
+   signal DR                    : std_logic_vector (7 downto 0);
+   signal HLT                   : std_logic;
+   signal IR                    : std_logic_vector (7 downto 0);
+   signal RegC                  : std_logic_vector (7 downto 0);
+   signal RegS                  : std_logic_vector (7 downto 0);
+   signal RST                   : std_logic;
+   signal ticks                 : std_logic_vector (2 downto 0);
+   signal XLXN_34               : std_logic;
+   signal XLXN_35               : std_logic;
+   signal XLXN_115              : std_logic;
+   signal XLXN_164              : std_logic;
+   signal CLK_1_DUMMY           : std_logic;
+   signal XLXI_57_I0_openSignal : std_logic;
    component AND2
       port ( I0 : in    std_logic; 
              I1 : in    std_logic; 
@@ -3466,16 +3507,16 @@ architecture BEHAVIORAL of lab_final is
              EN_I_Memory : in    std_logic; 
              AorD        : in    std_logic; 
              IrorDR      : in    std_logic; 
-             EN_hex      : in    std_logic; 
-             btn_Memory  : in    std_logic; 
              Count       : in    std_logic_vector (7 downto 0); 
              RegC        : in    std_logic_vector (7 downto 0); 
              RegS        : in    std_logic_vector (7 downto 0); 
-             row         : in    std_logic_vector (3 downto 0); 
              C_WriteOnce : in    std_logic; 
              C_WriteF    : in    std_logic; 
              C_ShiftR    : in    std_logic; 
              IOutorDout  : in    std_logic; 
+             row         : in    std_logic_vector (3 downto 0); 
+             EN_hex      : in    std_logic; 
+             btn_Memory  : in    std_logic; 
              colO        : inout std_logic_vector (3 downto 0); 
              DR          : out   std_logic_vector (7 downto 0); 
              IR          : out   std_logic_vector (7 downto 0); 
@@ -3491,15 +3532,15 @@ architecture BEHAVIORAL of lab_final is
              IR          : in    std_logic_vector (7 downto 0); 
              btn_CLR     : in    std_logic; 
              Accumulator : out   std_logic_vector (7 downto 0); 
-             RST         : out   std_logic; 
-             HLT         : out   std_logic; 
              RegS        : out   std_logic_vector (7 downto 0); 
              OFL         : out   std_logic; 
              Neg         : out   std_logic; 
-             RegC        : out   std_logic_vector (7 downto 0));
+             RegC        : out   std_logic_vector (7 downto 0); 
+             HLT         : out   std_logic; 
+             RST         : out   std_logic);
    end component;
    
-   attribute HU_SET of XLXI_44 : label is "XLXI_44_159";
+   attribute HU_SET of XLXI_44 : label is "XLXI_44_80";
 begin
    CLK_1 <= CLK_1_DUMMY;
    XLXI_34 : AND2
@@ -3580,23 +3621,23 @@ begin
                 row(3 downto 0)=>row(3 downto 0),
                 RunMode=>RunMode,
                 anO(3 downto 0)=>anO(3 downto 0),
-                DR(7 downto 0)=>XLXN_141(7 downto 0),
-                IR(7 downto 0)=>XLXN_142(7 downto 0),
+                DR(7 downto 0)=>DR(7 downto 0),
+                IR(7 downto 0)=>IR(7 downto 0),
                 RegS_Neg=>RegS_Neg,
                 RegS_OFL=>RegS_OFL,
                 sseg(7 downto 0)=>sseg(7 downto 0),
                 colO(3 downto 0)=>colO(3 downto 0));
    
    XLXI_61 : ProgramGround_MUSER_lab_final
-      port map (btn_CLR=>XLXI_61_btn_CLR_openSignal,
-                DR(7 downto 0)=>XLXN_141(7 downto 0),
-                IR(7 downto 0)=>XLXN_142(7 downto 0),
+      port map (btn_CLR=>btn_CLR,
+                DR(7 downto 0)=>DR(7 downto 0),
+                IR(7 downto 0)=>IR(7 downto 0),
                 tick(2 downto 0)=>ticks(2 downto 0),
                 Accumulator(7 downto 0)=>Accumulator(7 downto 0),
                 HLT=>HLT,
                 Neg=>NEG,
                 OFL=>OFL,
-                RegC=>open,
+                RegC(7 downto 0)=>RegC(7 downto 0),
                 RegS(7 downto 0)=>RegS(7 downto 0),
                 RST=>RST);
    

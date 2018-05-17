@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : ISA.vhf
--- /___/   /\     Timestamp : 05/13/2018 13:56:58
+-- /___/   /\     Timestamp : 05/16/2018 12:45:12
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -36,6 +36,7 @@ entity ISA is
           LCA  : out   std_logic; 
           LDA  : out   std_logic; 
           MVI  : out   std_logic; 
+          NOP  : out   std_logic; 
           RST  : out   std_logic; 
           SBI  : out   std_logic; 
           SET  : out   std_logic; 
@@ -111,6 +112,13 @@ architecture BEHAVIORAL of ISA is
              O  : out   std_logic);
    end component;
    attribute BOX_TYPE of AND2 : component is "BLACK_BOX";
+   
+   component AND2B1
+      port ( I0 : in    std_logic; 
+             I1 : in    std_logic; 
+             O  : out   std_logic);
+   end component;
+   attribute BOX_TYPE of AND2B1 : component is "BLACK_BOX";
    
 begin
    XLXI_1 : AND4B4
@@ -285,6 +293,11 @@ begin
       port map (I0=>ValF_2,
                 I1=>ValF_1,
                 O=>RST);
+   
+   XLXI_59 : AND2B1
+      port map (I0=>ValF_2,
+                I1=>Val0_1,
+                O=>NOP);
    
 end BEHAVIORAL;
 

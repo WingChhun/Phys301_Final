@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : ProgramGround.vhf
--- /___/   /\     Timestamp : 05/15/2018 00:38:02
+-- /___/   /\     Timestamp : 05/16/2018 13:33:19
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -214,157 +214,6 @@ begin
                 I2=>DR_In(0),
                 I3=>DR_In(1),
                 O=>r2);
-   
-end BEHAVIORAL;
-
-
-
-library ieee;
-use ieee.std_logic_1164.ALL;
-use ieee.numeric_std.ALL;
-library UNISIM;
-use UNISIM.Vcomponents.ALL;
-
-entity M2_1_MXILINX_ProgramGround is
-   port ( D0 : in    std_logic; 
-          D1 : in    std_logic; 
-          S0 : in    std_logic; 
-          O  : out   std_logic);
-end M2_1_MXILINX_ProgramGround;
-
-architecture BEHAVIORAL of M2_1_MXILINX_ProgramGround is
-   attribute BOX_TYPE   : string ;
-   signal M0 : std_logic;
-   signal M1 : std_logic;
-   component AND2B1
-      port ( I0 : in    std_logic; 
-             I1 : in    std_logic; 
-             O  : out   std_logic);
-   end component;
-   attribute BOX_TYPE of AND2B1 : component is "BLACK_BOX";
-   
-   component OR2
-      port ( I0 : in    std_logic; 
-             I1 : in    std_logic; 
-             O  : out   std_logic);
-   end component;
-   attribute BOX_TYPE of OR2 : component is "BLACK_BOX";
-   
-   component AND2
-      port ( I0 : in    std_logic; 
-             I1 : in    std_logic; 
-             O  : out   std_logic);
-   end component;
-   attribute BOX_TYPE of AND2 : component is "BLACK_BOX";
-   
-begin
-   I_36_7 : AND2B1
-      port map (I0=>S0,
-                I1=>D0,
-                O=>M0);
-   
-   I_36_8 : OR2
-      port map (I0=>M1,
-                I1=>M0,
-                O=>O);
-   
-   I_36_9 : AND2
-      port map (I0=>D1,
-                I1=>S0,
-                O=>M1);
-   
-end BEHAVIORAL;
-
-
-
-library ieee;
-use ieee.std_logic_1164.ALL;
-use ieee.numeric_std.ALL;
-library UNISIM;
-use UNISIM.Vcomponents.ALL;
-
-entity MUX8_generic_MUSER_ProgramGround is
-   port ( D_In    : in    std_logic_vector (7 downto 0); 
-          I_In    : in    std_logic_vector (7 downto 0); 
-          nIM_Din : in    std_logic; 
-          DOut    : out   std_logic_vector (7 downto 0));
-end MUX8_generic_MUSER_ProgramGround;
-
-architecture BEHAVIORAL of MUX8_generic_MUSER_ProgramGround is
-   attribute HU_SET     : string ;
-   signal XLXI_27_D0_openSignal : std_logic;
-   signal XLXI_27_D1_openSignal : std_logic;
-   signal XLXI_27_S0_openSignal : std_logic;
-   component M2_1_MXILINX_ProgramGround
-      port ( D0 : in    std_logic; 
-             D1 : in    std_logic; 
-             S0 : in    std_logic; 
-             O  : out   std_logic);
-   end component;
-   
-   attribute HU_SET of XLXI_27 : label is "XLXI_27_1";
-   attribute HU_SET of XLXI_28 : label is "XLXI_28_2";
-   attribute HU_SET of XLXI_32 : label is "XLXI_32_8";
-   attribute HU_SET of XLXI_33 : label is "XLXI_33_3";
-   attribute HU_SET of XLXI_34 : label is "XLXI_34_4";
-   attribute HU_SET of XLXI_35 : label is "XLXI_35_5";
-   attribute HU_SET of XLXI_36 : label is "XLXI_36_6";
-   attribute HU_SET of XLXI_37 : label is "XLXI_37_7";
-   attribute HU_SET of XLXI_44 : label is "XLXI_44_9";
-begin
-   XLXI_27 : M2_1_MXILINX_ProgramGround
-      port map (D0=>XLXI_27_D0_openSignal,
-                D1=>XLXI_27_D1_openSignal,
-                S0=>XLXI_27_S0_openSignal,
-                O=>open);
-   
-   XLXI_28 : M2_1_MXILINX_ProgramGround
-      port map (D0=>I_In(0),
-                D1=>D_In(0),
-                S0=>nIM_Din,
-                O=>DOut(0));
-   
-   XLXI_32 : M2_1_MXILINX_ProgramGround
-      port map (D0=>I_In(1),
-                D1=>D_In(1),
-                S0=>nIM_Din,
-                O=>DOut(1));
-   
-   XLXI_33 : M2_1_MXILINX_ProgramGround
-      port map (D0=>I_In(2),
-                D1=>D_In(2),
-                S0=>nIM_Din,
-                O=>DOut(2));
-   
-   XLXI_34 : M2_1_MXILINX_ProgramGround
-      port map (D0=>I_In(3),
-                D1=>D_In(3),
-                S0=>nIM_Din,
-                O=>DOut(3));
-   
-   XLXI_35 : M2_1_MXILINX_ProgramGround
-      port map (D0=>I_In(4),
-                D1=>D_In(4),
-                S0=>nIM_Din,
-                O=>DOut(4));
-   
-   XLXI_36 : M2_1_MXILINX_ProgramGround
-      port map (D0=>I_In(5),
-                D1=>D_In(5),
-                S0=>nIM_Din,
-                O=>DOut(5));
-   
-   XLXI_37 : M2_1_MXILINX_ProgramGround
-      port map (D0=>I_In(6),
-                D1=>D_In(6),
-                S0=>nIM_Din,
-                O=>DOut(6));
-   
-   XLXI_44 : M2_1_MXILINX_ProgramGround
-      port map (D0=>I_In(7),
-                D1=>D_In(7),
-                S0=>nIM_Din,
-                O=>DOut(7));
    
 end BEHAVIORAL;
 
@@ -660,8 +509,160 @@ use ieee.numeric_std.ALL;
 library UNISIM;
 use UNISIM.Vcomponents.ALL;
 
+entity M2_1_MXILINX_ProgramGround is
+   port ( D0 : in    std_logic; 
+          D1 : in    std_logic; 
+          S0 : in    std_logic; 
+          O  : out   std_logic);
+end M2_1_MXILINX_ProgramGround;
+
+architecture BEHAVIORAL of M2_1_MXILINX_ProgramGround is
+   attribute BOX_TYPE   : string ;
+   signal M0 : std_logic;
+   signal M1 : std_logic;
+   component AND2B1
+      port ( I0 : in    std_logic; 
+             I1 : in    std_logic; 
+             O  : out   std_logic);
+   end component;
+   attribute BOX_TYPE of AND2B1 : component is "BLACK_BOX";
+   
+   component OR2
+      port ( I0 : in    std_logic; 
+             I1 : in    std_logic; 
+             O  : out   std_logic);
+   end component;
+   attribute BOX_TYPE of OR2 : component is "BLACK_BOX";
+   
+   component AND2
+      port ( I0 : in    std_logic; 
+             I1 : in    std_logic; 
+             O  : out   std_logic);
+   end component;
+   attribute BOX_TYPE of AND2 : component is "BLACK_BOX";
+   
+begin
+   I_36_7 : AND2B1
+      port map (I0=>S0,
+                I1=>D0,
+                O=>M0);
+   
+   I_36_8 : OR2
+      port map (I0=>M1,
+                I1=>M0,
+                O=>O);
+   
+   I_36_9 : AND2
+      port map (I0=>D1,
+                I1=>S0,
+                O=>M1);
+   
+end BEHAVIORAL;
+
+
+
+library ieee;
+use ieee.std_logic_1164.ALL;
+use ieee.numeric_std.ALL;
+library UNISIM;
+use UNISIM.Vcomponents.ALL;
+
+entity MUX8_generic_MUSER_ProgramGround is
+   port ( D_In    : in    std_logic_vector (7 downto 0); 
+          I_In    : in    std_logic_vector (7 downto 0); 
+          nIM_Din : in    std_logic; 
+          DOut    : out   std_logic_vector (7 downto 0));
+end MUX8_generic_MUSER_ProgramGround;
+
+architecture BEHAVIORAL of MUX8_generic_MUSER_ProgramGround is
+   attribute HU_SET     : string ;
+   signal XLXI_27_D0_openSignal : std_logic;
+   signal XLXI_27_D1_openSignal : std_logic;
+   signal XLXI_27_S0_openSignal : std_logic;
+   component M2_1_MXILINX_ProgramGround
+      port ( D0 : in    std_logic; 
+             D1 : in    std_logic; 
+             S0 : in    std_logic; 
+             O  : out   std_logic);
+   end component;
+   
+   attribute HU_SET of XLXI_27 : label is "XLXI_27_1";
+   attribute HU_SET of XLXI_28 : label is "XLXI_28_2";
+   attribute HU_SET of XLXI_32 : label is "XLXI_32_8";
+   attribute HU_SET of XLXI_33 : label is "XLXI_33_3";
+   attribute HU_SET of XLXI_34 : label is "XLXI_34_4";
+   attribute HU_SET of XLXI_35 : label is "XLXI_35_5";
+   attribute HU_SET of XLXI_36 : label is "XLXI_36_6";
+   attribute HU_SET of XLXI_37 : label is "XLXI_37_7";
+   attribute HU_SET of XLXI_44 : label is "XLXI_44_9";
+begin
+   XLXI_27 : M2_1_MXILINX_ProgramGround
+      port map (D0=>XLXI_27_D0_openSignal,
+                D1=>XLXI_27_D1_openSignal,
+                S0=>XLXI_27_S0_openSignal,
+                O=>open);
+   
+   XLXI_28 : M2_1_MXILINX_ProgramGround
+      port map (D0=>I_In(0),
+                D1=>D_In(0),
+                S0=>nIM_Din,
+                O=>DOut(0));
+   
+   XLXI_32 : M2_1_MXILINX_ProgramGround
+      port map (D0=>I_In(1),
+                D1=>D_In(1),
+                S0=>nIM_Din,
+                O=>DOut(1));
+   
+   XLXI_33 : M2_1_MXILINX_ProgramGround
+      port map (D0=>I_In(2),
+                D1=>D_In(2),
+                S0=>nIM_Din,
+                O=>DOut(2));
+   
+   XLXI_34 : M2_1_MXILINX_ProgramGround
+      port map (D0=>I_In(3),
+                D1=>D_In(3),
+                S0=>nIM_Din,
+                O=>DOut(3));
+   
+   XLXI_35 : M2_1_MXILINX_ProgramGround
+      port map (D0=>I_In(4),
+                D1=>D_In(4),
+                S0=>nIM_Din,
+                O=>DOut(4));
+   
+   XLXI_36 : M2_1_MXILINX_ProgramGround
+      port map (D0=>I_In(5),
+                D1=>D_In(5),
+                S0=>nIM_Din,
+                O=>DOut(5));
+   
+   XLXI_37 : M2_1_MXILINX_ProgramGround
+      port map (D0=>I_In(6),
+                D1=>D_In(6),
+                S0=>nIM_Din,
+                O=>DOut(6));
+   
+   XLXI_44 : M2_1_MXILINX_ProgramGround
+      port map (D0=>I_In(7),
+                D1=>D_In(7),
+                S0=>nIM_Din,
+                O=>DOut(7));
+   
+end BEHAVIORAL;
+
+
+
+library ieee;
+use ieee.std_logic_1164.ALL;
+use ieee.numeric_std.ALL;
+library UNISIM;
+use UNISIM.Vcomponents.ALL;
+
 entity ALU_Final_MUSER_ProgramGround is
    port ( Accumulator : in    std_logic_vector (7 downto 0); 
+          ADD         : in    std_logic; 
           DataReg     : in    std_logic_vector (7 downto 0); 
           EN_ADDorSUB : in    std_logic; 
           EN_SIGNED   : in    std_logic; 
@@ -674,9 +675,10 @@ entity ALU_Final_MUSER_ProgramGround is
           r1          : in    std_logic; 
           r2          : in    std_logic; 
           r3          : in    std_logic; 
-          Neg         : out   std_logic; 
+          SUB         : in    std_logic; 
           OFL         : out   std_logic; 
-          Sum         : out   std_logic_vector (7 downto 0));
+          Sum         : out   std_logic_vector (7 downto 0); 
+          Negative    : inout std_logic);
 end ALU_Final_MUSER_ProgramGround;
 
 architecture BEHAVIORAL of ALU_Final_MUSER_ProgramGround is
@@ -759,9 +761,9 @@ begin
    XLXI_1 : Full_AdderSub8_MUSER_ProgramGround
       port map (Ain(7 downto 0)=>Accumulator(7 downto 0),
                 Bin(7 downto 0)=>XLXN_134(7 downto 0),
-                nADD_SUB=>nADD_SUB,
+                nADD_SUB=>SUB,
                 Cout=>open,
-                Negative=>Neg,
+                Negative=>Negative,
                 OFL=>OFL,
                 Sum(7 downto 0)=>Sum(7 downto 0));
    
@@ -831,6 +833,14 @@ begin
                 nIM_Din=>r3,
                 DOut(7 downto 0)=>XLXN_134(7 downto 0));
    
+   XLXI_29 : BUF
+      port map (I=>EN_SIGNED,
+                O=>open);
+   
+   XLXI_30 : BUF
+      port map (I=>EN_ADDorSUB,
+                O=>open);
+   
 end BEHAVIORAL;
 
 
@@ -857,59 +867,68 @@ end ProgramGround;
 
 architecture BEHAVIORAL of ProgramGround is
    attribute BOX_TYPE   : string ;
-   signal ADD               : std_logic;
-   signal ADDU              : std_logic;
-   signal ADI               : std_logic;
-   signal CE_Accum          : std_logic;
-   signal CE_regS           : std_logic;
-   signal CE_Reg0           : std_logic;
-   signal CE_Reg1           : std_logic;
-   signal CE_Reg2           : std_logic;
-   signal CE_Reg3           : std_logic;
-   signal CLR               : std_logic;
-   signal CLR1              : std_logic;
-   signal Din               : std_logic_vector (7 downto 0);
-   signal EN_ADDorSUB       : std_logic;
-   signal EN_r0             : std_logic;
-   signal EN_r1             : std_logic;
-   signal EN_r2             : std_logic;
-   signal EN_r3             : std_logic;
-   signal EN_SUB            : std_logic;
-   signal GET               : std_logic;
-   signal LCA               : std_logic;
-   signal LDA               : std_logic;
-   signal MVI               : std_logic;
-   signal MVI_r0            : std_logic;
-   signal MVI_r1            : std_logic;
-   signal MVI_r2            : std_logic;
-   signal MVI_r3            : std_logic;
-   signal nADD_SUB          : std_logic;
-   signal nEN_ADD           : std_logic;
-   signal RegS_0_isNegative : std_logic;
-   signal RegS_1_isOverFlow : std_logic;
-   signal RegWrite          : std_logic;
-   signal Reg0              : std_logic_vector (7 downto 0);
-   signal Reg1              : std_logic_vector (7 downto 0);
-   signal Reg2              : std_logic_vector (7 downto 0);
-   signal Reg3              : std_logic_vector (7 downto 0);
-   signal r0                : std_logic;
-   signal r1                : std_logic;
-   signal r2                : std_logic;
-   signal r3                : std_logic;
-   signal SBI               : std_logic;
-   signal SET               : std_logic;
-   signal Signed            : std_logic;
-   signal STA               : std_logic;
-   signal STA_r0            : std_logic;
-   signal STA_r1            : std_logic;
-   signal STA_r2            : std_logic;
-   signal STA_r3            : std_logic;
-   signal SUB               : std_logic;
-   signal SUBU              : std_logic;
-   signal Sum               : std_logic_vector (7 downto 0);
-   signal Three_CLK_Ticks   : std_logic;
-   signal XLXN_347          : std_logic_vector (7 downto 0);
-   signal Accumulator_DUMMY : std_logic_vector (7 downto 0);
+   signal ADD                     : std_logic;
+   signal ADDU                    : std_logic;
+   signal ADI                     : std_logic;
+   signal CE_Accum                : std_logic;
+   signal CE_regS                 : std_logic;
+   signal CE_Reg0                 : std_logic;
+   signal CE_Reg1                 : std_logic;
+   signal CE_Reg2                 : std_logic;
+   signal CE_Reg3                 : std_logic;
+   signal CLR                     : std_logic;
+   signal CLR1                    : std_logic;
+   signal Din                     : std_logic_vector (7 downto 0);
+   signal dr3_0_strobeSTARegister : std_logic;
+   signal dr4_7_strobeMVIRegister : std_logic;
+   signal EN_MVI_NOP              : std_logic;
+   signal EN_r0                   : std_logic;
+   signal EN_r1                   : std_logic;
+   signal EN_r2                   : std_logic;
+   signal EN_r3                   : std_logic;
+   signal EN_SUB                  : std_logic;
+   signal GET                     : std_logic;
+   signal LCA                     : std_logic;
+   signal LDA                     : std_logic;
+   signal MVI                     : std_logic;
+   signal MVI_r0                  : std_logic;
+   signal MVI_r1                  : std_logic;
+   signal MVI_r2                  : std_logic;
+   signal MVI_r3                  : std_logic;
+   signal nADD_SUB                : std_logic;
+   signal nEN_ADD                 : std_logic;
+   signal NOP                     : std_logic;
+   signal RegS_0_isNegative       : std_logic;
+   signal RegS_1_isOverFlow       : std_logic;
+   signal RegWrite                : std_logic;
+   signal Reg0                    : std_logic_vector (7 downto 0);
+   signal Reg1                    : std_logic_vector (7 downto 0);
+   signal Reg2                    : std_logic_vector (7 downto 0);
+   signal Reg3                    : std_logic_vector (7 downto 0);
+   signal r0                      : std_logic;
+   signal r1                      : std_logic;
+   signal r2                      : std_logic;
+   signal r3                      : std_logic;
+   signal SBI                     : std_logic;
+   signal SET                     : std_logic;
+   signal Signed                  : std_logic;
+   signal STA                     : std_logic;
+   signal STA_r0                  : std_logic;
+   signal STA_r1                  : std_logic;
+   signal STA_r2                  : std_logic;
+   signal STA_r3                  : std_logic;
+   signal SUB                     : std_logic;
+   signal SUBU                    : std_logic;
+   signal Sum                     : std_logic_vector (7 downto 0);
+   signal Three_CLK_Ticks         : std_logic;
+   signal XLXN_347                : std_logic_vector (7 downto 0);
+   signal XLXN_366                : std_logic;
+   signal XLXN_367                : std_logic;
+   signal XLXN_371                : std_logic;
+   signal Accumulator_DUMMY       : std_logic_vector (7 downto 0);
+   signal XLXI_156_I0_openSignal  : std_logic;
+   signal XLXI_156_I1_openSignal  : std_logic;
+   signal XLXI_156_I2_openSignal  : std_logic;
    component ISA
       port ( IR   : in    std_logic_vector (7 downto 0); 
              LDA  : out   std_logic; 
@@ -926,7 +945,16 @@ architecture BEHAVIORAL of ProgramGround is
              SUB  : out   std_logic; 
              SUBU : out   std_logic; 
              HLT  : out   std_logic; 
-             RST  : out   std_logic);
+             RST  : out   std_logic; 
+             NOP  : out   std_logic);
+   end component;
+   
+   component Register_8bit_MUSER_ProgramGround
+      port ( R_In   : in    std_logic_vector (7 downto 0); 
+             R_CE   : in    std_logic; 
+             R_WCLK : in    std_logic; 
+             R_CLR  : in    std_logic; 
+             R_Out  : out   std_logic_vector (7 downto 0));
    end component;
    
    component OR3
@@ -936,14 +964,6 @@ architecture BEHAVIORAL of ProgramGround is
              O  : out   std_logic);
    end component;
    attribute BOX_TYPE of OR3 : component is "BLACK_BOX";
-   
-   component Register_8bit_MUSER_ProgramGround
-      port ( R_In   : in    std_logic_vector (7 downto 0); 
-             R_CE   : in    std_logic; 
-             R_WCLK : in    std_logic; 
-             R_CLR  : in    std_logic; 
-             R_Out  : out   std_logic_vector (7 downto 0));
-   end component;
    
    component NOR3
       port ( I0 : in    std_logic; 
@@ -961,13 +981,6 @@ architecture BEHAVIORAL of ProgramGround is
              O  : out   std_logic);
    end component;
    attribute BOX_TYPE of OR4 : component is "BLACK_BOX";
-   
-   component XOR2
-      port ( I0 : in    std_logic; 
-             I1 : in    std_logic; 
-             O  : out   std_logic);
-   end component;
-   attribute BOX_TYPE of XOR2 : component is "BLACK_BOX";
    
    component MUX_DR_MUSER_ProgramGround
       port ( r1    : out   std_logic; 
@@ -1014,22 +1027,24 @@ architecture BEHAVIORAL of ProgramGround is
    attribute BOX_TYPE of OR2B1 : component is "BLACK_BOX";
    
    component ALU_Final_MUSER_ProgramGround
-      port ( r3          : in    std_logic; 
+      port ( Accumulator : in    std_logic_vector (7 downto 0); 
+             EN_SIGNED   : in    std_logic; 
+             nADD_SUB    : in    std_logic; 
+             Reg1        : in    std_logic_vector (7 downto 0); 
+             DataReg     : in    std_logic_vector (7 downto 0); 
+             r3          : in    std_logic; 
              r0          : in    std_logic; 
              r1          : in    std_logic; 
              r2          : in    std_logic; 
              EN_ADDorSUB : in    std_logic; 
-             Sum         : out   std_logic_vector (7 downto 0); 
-             OFL         : out   std_logic; 
-             Neg         : out   std_logic; 
-             EN_SIGNED   : in    std_logic; 
-             Accumulator : in    std_logic_vector (7 downto 0); 
-             nADD_SUB    : in    std_logic; 
-             Reg1        : in    std_logic_vector (7 downto 0); 
-             DataReg     : in    std_logic_vector (7 downto 0); 
              Reg0        : in    std_logic_vector (7 downto 0); 
              Reg2        : in    std_logic_vector (7 downto 0); 
-             Reg3        : in    std_logic_vector (7 downto 0));
+             Reg3        : in    std_logic_vector (7 downto 0); 
+             Sum         : out   std_logic_vector (7 downto 0); 
+             OFL         : out   std_logic; 
+             ADD         : in    std_logic; 
+             SUB         : in    std_logic; 
+             Negative    : inout std_logic);
    end component;
    
 begin
@@ -1045,18 +1060,13 @@ begin
                 LCA=>LCA,
                 LDA=>LDA,
                 MVI=>MVI,
+                NOP=>NOP,
                 RST=>RST,
                 SBI=>SBI,
                 SET=>SET,
                 STA=>STA,
                 SUB=>SUB,
                 SUBU=>SUBU);
-   
-   XLXI_5 : OR3
-      port map (I0=>CLR,
-                I1=>MVI,
-                I2=>STA,
-                O=>RegWrite);
    
    XLXI_43 : Register_8bit_MUSER_ProgramGround
       port map (R_CE=>CE_Accum,
@@ -1065,24 +1075,17 @@ begin
                 R_WCLK=>tick(1),
                 R_Out(7 downto 0)=>Accumulator_DUMMY(7 downto 0));
    
-   XLXI_48 : Register_8bit_MUSER_ProgramGround
-      port map (R_CE=>CE_Reg1,
-                R_CLR=>CLR1,
-                R_In(7 downto 0)=>Din(7 downto 0),
-                R_WCLK=>tick(0),
-                R_Out(7 downto 0)=>Reg1(7 downto 0));
-   
    XLXI_51 : OR3
       port map (I0=>SUBU,
                 I1=>SUB,
                 I2=>SBI,
-                O=>EN_SUB);
+                O=>XLXN_367);
    
    XLXI_53 : NOR3
       port map (I0=>ADDU,
                 I1=>ADD,
                 I2=>ADI,
-                O=>nEN_ADD);
+                O=>XLXN_366);
    
    XLXI_55 : OR4
       port map (I0=>SBI,
@@ -1097,11 +1100,6 @@ begin
                 R_In(7 downto 0)=>Accumulator_DUMMY(7 downto 0),
                 R_WCLK=>tick(1),
                 R_Out(7 downto 0)=>RegC(7 downto 0));
-   
-   XLXI_66 : XOR2
-      port map (I0=>EN_SUB,
-                I1=>nEN_ADD,
-                O=>nADD_SUB);
    
    XLXI_67 : MUX_DR_MUSER_ProgramGround
       port map (DR_In(3)=>DR(4),
@@ -1175,13 +1173,6 @@ begin
                 I1=>STA,
                 O=>STA_r0);
    
-   XLXI_119 : Register_8bit_MUSER_ProgramGround
-      port map (R_CE=>CE_Reg3,
-                R_CLR=>CLR1,
-                R_In(7 downto 0)=>Din(7 downto 0),
-                R_WCLK=>tick(0),
-                R_Out(7 downto 0)=>Reg3(7 downto 0));
-   
    XLXI_120 : OR2
       port map (I0=>MVI_r3,
                 I1=>STA_r3,
@@ -1196,7 +1187,7 @@ begin
    XLXI_136 : MUX8_generic_MUSER_ProgramGround
       port map (D_In(7 downto 0)=>Sum(7 downto 0),
                 I_In(7 downto 0)=>DR(7 downto 0),
-                nIM_Din=>EN_ADDorSUB,
+                nIM_Din=>XLXN_371,
                 DOut(7 downto 0)=>XLXN_347(7 downto 0));
    
    XLXI_138 : OR2B1
@@ -1207,18 +1198,14 @@ begin
    XLXI_146 : MUX8_generic_MUSER_ProgramGround
       port map (D_In(7 downto 0)=>DR(7 downto 0),
                 I_In(7 downto 0)=>Accumulator_DUMMY(7 downto 0),
-                nIM_Din=>MVI,
+                nIM_Din=>EN_MVI_NOP,
                 DOut(7 downto 0)=>Din(7 downto 0));
-   
-   XLXI_149 : OR2B1
-      port map (I0=>nEN_ADD,
-                I1=>EN_SUB,
-                O=>EN_ADDorSUB);
    
    XLXI_151 : ALU_Final_MUSER_ProgramGround
       port map (Accumulator(7 downto 0)=>Accumulator_DUMMY(7 downto 0),
+                ADD=>XLXN_366,
                 DataReg(7 downto 0)=>DR(7 downto 0),
-                EN_ADDorSUB=>EN_ADDorSUB,
+                EN_ADDorSUB=>XLXN_371,
                 EN_SIGNED=>Signed,
                 nADD_SUB=>nADD_SUB,
                 Reg0(7 downto 0)=>Reg0(7 downto 0),
@@ -1229,28 +1216,59 @@ begin
                 r1=>r1,
                 r2=>r2,
                 r3=>r3,
-                Neg=>Neg,
+                SUB=>XLXN_367,
                 OFL=>OFL,
-                Sum(7 downto 0)=>Sum(7 downto 0));
+                Sum(7 downto 0)=>Sum(7 downto 0),
+                Negative=>open);
    
-   XLXI_153 : Register_8bit_MUSER_ProgramGround
-      port map (R_CE=>CE_Reg0,
-                R_CLR=>CLR1,
-                R_In(7 downto 0)=>Din(7 downto 0),
-                R_WCLK=>tick(0),
-                R_Out(7 downto 0)=>Reg0(7 downto 0));
+   XLXI_155 : OR2
+      port map (I0=>CLR,
+                I1=>btn_CLR,
+                O=>CLR1);
    
-   XLXI_154 : Register_8bit_MUSER_ProgramGround
+   XLXI_156 : OR3
+      port map (I0=>XLXI_156_I0_openSignal,
+                I1=>XLXI_156_I1_openSignal,
+                I2=>XLXI_156_I2_openSignal,
+                O=>open);
+   
+   XLXI_157 : OR2
+      port map (I0=>ADD,
+                I1=>SUB,
+                O=>XLXN_371);
+   
+   XLXI_161 : Register_8bit_MUSER_ProgramGround
       port map (R_CE=>CE_Reg2,
                 R_CLR=>CLR1,
                 R_In(7 downto 0)=>Din(7 downto 0),
                 R_WCLK=>tick(0),
                 R_Out(7 downto 0)=>Reg2(7 downto 0));
    
-   XLXI_155 : OR2
-      port map (I0=>CLR,
-                I1=>btn_CLR,
-                O=>CLR1);
+   XLXI_163 : Register_8bit_MUSER_ProgramGround
+      port map (R_CE=>CE_Reg1,
+                R_CLR=>CLR1,
+                R_In(7 downto 0)=>Din(7 downto 0),
+                R_WCLK=>tick(0),
+                R_Out(7 downto 0)=>Reg1(7 downto 0));
+   
+   XLXI_164 : Register_8bit_MUSER_ProgramGround
+      port map (R_CE=>CE_Reg0,
+                R_CLR=>CLR1,
+                R_In(7 downto 0)=>Din(7 downto 0),
+                R_WCLK=>tick(0),
+                R_Out(7 downto 0)=>Reg0(7 downto 0));
+   
+   XLXI_165 : Register_8bit_MUSER_ProgramGround
+      port map (R_CE=>CE_Reg3,
+                R_CLR=>CLR1,
+                R_In(7 downto 0)=>Din(7 downto 0),
+                R_WCLK=>tick(0),
+                R_Out(7 downto 0)=>Reg3(7 downto 0));
+   
+   XLXI_166 : OR2
+      port map (I0=>NOP,
+                I1=>MVI,
+                O=>EN_MVI_NOP);
    
 end BEHAVIORAL;
 
