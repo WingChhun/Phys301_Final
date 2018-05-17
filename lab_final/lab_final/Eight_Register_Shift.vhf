@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : Eight_Register_Shift.vhf
--- /___/   /\     Timestamp : 05/16/2018 12:45:09
+-- /___/   /\     Timestamp : 05/16/2018 21:01:47
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -212,9 +212,9 @@ architecture BEHAVIORAL of Eight_Register_Shift is
              Q   : out   std_logic_vector (7 downto 0));
    end component;
    
-   attribute HU_SET of XLXI_149 : label is "XLXI_149_1";
-   attribute HU_SET of XLXI_150 : label is "XLXI_150_0";
-   attribute HU_SET of XLXI_159 : label is "XLXI_159_2";
+   attribute HU_SET of XLXI_149 : label is "XLXI_149_6";
+   attribute HU_SET of XLXI_150 : label is "XLXI_150_5";
+   attribute HU_SET of XLXI_159 : label is "XLXI_159_7";
 begin
    XLXI_149 : FD4CE_MXILINX_Eight_Register_Shift
       port map (C=>WCLK_R1,

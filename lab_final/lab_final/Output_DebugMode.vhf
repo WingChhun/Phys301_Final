@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : Output_DebugMode.vhf
--- /___/   /\     Timestamp : 05/16/2018 12:45:16
+-- /___/   /\     Timestamp : 05/17/2018 00:42:52
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -102,11 +102,11 @@ architecture BEHAVIORAL of MUX4_generic_MUSER_Output_DebugMode is
              O  : out   std_logic);
    end component;
    
-   attribute HU_SET of XLXI_27 : label is "XLXI_27_43";
-   attribute HU_SET of XLXI_28 : label is "XLXI_28_44";
-   attribute HU_SET of XLXI_32 : label is "XLXI_32_47";
-   attribute HU_SET of XLXI_33 : label is "XLXI_33_45";
-   attribute HU_SET of XLXI_34 : label is "XLXI_34_46";
+   attribute HU_SET of XLXI_27 : label is "XLXI_27_82";
+   attribute HU_SET of XLXI_28 : label is "XLXI_28_83";
+   attribute HU_SET of XLXI_32 : label is "XLXI_32_86";
+   attribute HU_SET of XLXI_33 : label is "XLXI_33_84";
+   attribute HU_SET of XLXI_34 : label is "XLXI_34_85";
 begin
    XLXI_27 : M2_1_MXILINX_Output_DebugMode
       port map (D0=>XLXI_27_D0_openSignal,
@@ -167,15 +167,15 @@ architecture BEHAVIORAL of MUX8_generic_MUSER_Output_DebugMode is
              O  : out   std_logic);
    end component;
    
-   attribute HU_SET of XLXI_27 : label is "XLXI_27_48";
-   attribute HU_SET of XLXI_28 : label is "XLXI_28_49";
-   attribute HU_SET of XLXI_32 : label is "XLXI_32_55";
-   attribute HU_SET of XLXI_33 : label is "XLXI_33_50";
-   attribute HU_SET of XLXI_34 : label is "XLXI_34_51";
-   attribute HU_SET of XLXI_35 : label is "XLXI_35_52";
-   attribute HU_SET of XLXI_36 : label is "XLXI_36_53";
-   attribute HU_SET of XLXI_37 : label is "XLXI_37_54";
-   attribute HU_SET of XLXI_44 : label is "XLXI_44_56";
+   attribute HU_SET of XLXI_27 : label is "XLXI_27_87";
+   attribute HU_SET of XLXI_28 : label is "XLXI_28_88";
+   attribute HU_SET of XLXI_32 : label is "XLXI_32_94";
+   attribute HU_SET of XLXI_33 : label is "XLXI_33_89";
+   attribute HU_SET of XLXI_34 : label is "XLXI_34_90";
+   attribute HU_SET of XLXI_35 : label is "XLXI_35_91";
+   attribute HU_SET of XLXI_36 : label is "XLXI_36_92";
+   attribute HU_SET of XLXI_37 : label is "XLXI_37_93";
+   attribute HU_SET of XLXI_44 : label is "XLXI_44_95";
 begin
    XLXI_27 : M2_1_MXILINX_Output_DebugMode
       port map (D0=>XLXI_27_D0_openSignal,
@@ -242,36 +242,46 @@ library UNISIM;
 use UNISIM.Vcomponents.ALL;
 
 entity Output_DebugMode is
-   port ( AddressIn : in    std_logic_vector (7 downto 0); 
-          Clock     : in    std_logic; 
-          DataInput : in    std_logic_vector (7 downto 0); 
-          DebugMode : in    std_logic; 
-          EN_hex    : in    std_logic; 
-          RegC      : in    std_logic_vector (7 downto 0); 
-          RegS      : in    std_logic_vector (7 downto 0); 
-          anO       : out   std_logic_vector (3 downto 0); 
-          sseg      : out   std_logic_vector (7 downto 0));
+   port ( Accumulator       : in    std_logic_vector (7 downto 0); 
+          AddressIn         : in    std_logic_vector (7 downto 0); 
+          Clock             : in    std_logic; 
+          DataInput         : in    std_logic_vector (7 downto 0); 
+          DebugMode         : in    std_logic; 
+          EN_hex            : in    std_logic; 
+          EN_Reg0           : in    std_logic; 
+          EN_Reg1           : in    std_logic; 
+          EN_SingleStepMode : in    std_logic; 
+          RegC              : in    std_logic_vector (7 downto 0); 
+          RegS              : in    std_logic_vector (7 downto 0); 
+          Reg0              : in    std_logic_vector (7 downto 0); 
+          anO               : out   std_logic_vector (3 downto 0); 
+          sseg              : out   std_logic_vector (7 downto 0));
 end Output_DebugMode;
 
 architecture BEHAVIORAL of Output_DebugMode is
    attribute BOX_TYPE   : string ;
-   signal DataOut1  : std_logic_vector (3 downto 0);
-   signal DataOut2  : std_logic_vector (3 downto 0);
-   signal dp_in     : std_logic_vector (3 downto 0);
-   signal nDin_RegC : std_logic_vector (7 downto 0);
-   signal RunMode   : std_logic;
-   signal XLXN_13   : std_logic_vector (3 downto 0);
-   signal XLXN_15   : std_logic_vector (0 to 1);
-   signal XLXN_16   : std_logic;
-   signal XLXN_69   : std_logic;
-   signal XLXN_84   : std_logic;
-   signal XLXN_86   : std_logic;
-   signal XLXN_151  : std_logic_vector (3 downto 0);
-   signal XLXN_152  : std_logic_vector (3 downto 0);
-   signal XLXN_153  : std_logic_vector (3 downto 0);
-   signal XLXN_154  : std_logic_vector (3 downto 0);
-   signal XLXN_156  : std_logic_vector (3 downto 0);
-   signal XLXN_157  : std_logic_vector (3 downto 0);
+   signal DataOut1          : std_logic_vector (3 downto 0);
+   signal DataOut2          : std_logic_vector (3 downto 0);
+   signal dp_in             : std_logic_vector (3 downto 0);
+   signal EN_Single         : std_logic;
+   signal RunMode           : std_logic;
+   signal XLXN_13           : std_logic_vector (3 downto 0);
+   signal XLXN_15           : std_logic_vector (0 to 1);
+   signal XLXN_16           : std_logic;
+   signal XLXN_69           : std_logic;
+   signal XLXN_84           : std_logic;
+   signal XLXN_86           : std_logic;
+   signal XLXN_151          : std_logic_vector (3 downto 0);
+   signal XLXN_152          : std_logic_vector (3 downto 0);
+   signal XLXN_153          : std_logic_vector (3 downto 0);
+   signal XLXN_156          : std_logic_vector (3 downto 0);
+   signal XLXN_157          : std_logic_vector (3 downto 0);
+   signal XLXN_160          : std_logic_vector (7 downto 0);
+   signal XLXN_161          : std_logic_vector (7 downto 0);
+   signal XLXN_172          : std_logic;
+   signal XLXN_173          : std_logic_vector (3 downto 0);
+   signal XLXN_174          : std_logic_vector (3 downto 0);
+   signal XLXN_180          : std_logic;
    component GND
       port ( G : out   std_logic);
    end component;
@@ -347,6 +357,20 @@ architecture BEHAVIORAL of Output_DebugMode is
              DOut    : out   std_logic_vector (3 downto 0));
    end component;
    
+   component AND2
+      port ( I0 : in    std_logic; 
+             I1 : in    std_logic; 
+             O  : out   std_logic);
+   end component;
+   attribute BOX_TYPE of AND2 : component is "BLACK_BOX";
+   
+   component OR2
+      port ( I0 : in    std_logic; 
+             I1 : in    std_logic; 
+             O  : out   std_logic);
+   end component;
+   attribute BOX_TYPE of OR2 : component is "BLACK_BOX";
+   
 begin
    XLXI_3 : GND
       port map (G=>XLXN_16);
@@ -369,7 +393,7 @@ begin
    
    XLXI_14 : bin2BCD3en
       port map (CLK=>XLXN_69,
-                Din(7 downto 0)=>nDin_RegC(7 downto 0),
+                Din(7 downto 0)=>XLXN_160(7 downto 0),
                 En=>EN_hex,
                 Dout0(3 downto 0)=>DataOut2(3 downto 0),
                 Dout1(3 downto 0)=>DataOut1(3 downto 0),
@@ -382,7 +406,7 @@ begin
                 hexA(3 downto 0)=>DataOut2(3 downto 0),
                 hexB(3 downto 0)=>DataOut1(3 downto 0),
                 hexC(3 downto 0)=>XLXN_153(3 downto 0),
-                hexD(3 downto 0)=>XLXN_154(3 downto 0),
+                hexD(3 downto 0)=>XLXN_174(3 downto 0),
                 rb_in=>XLXN_86,
                 sel(0 to 1)=>XLXN_15(0 to 1),
                 anO(3 downto 0)=>anO(3 downto 0),
@@ -400,7 +424,7 @@ begin
    XLXI_40 : bin2BCD3en
       port map (CLK=>XLXN_69,
                 Din(7 downto 0)=>AddressIn(7 downto 0),
-                En=>EN_hex,
+                En=>XLXN_180,
                 Dout0(3 downto 0)=>XLXN_151(3 downto 0),
                 Dout1(3 downto 0)=>XLXN_152(3 downto 0),
                 Dout2=>open,
@@ -424,7 +448,7 @@ begin
       port map (D_In(7 downto 0)=>RegC(7 downto 0),
                 I_In(7 downto 0)=>DataInput(7 downto 0),
                 nIM_Din=>RunMode,
-                DOut(7 downto 0)=>nDin_RegC(7 downto 0));
+                DOut(7 downto 0)=>XLXN_161(7 downto 0));
    
    XLXI_56 : MUX4_generic_MUSER_Output_DebugMode
       port map (D_In(3 downto 0)=>XLXN_157(3 downto 0),
@@ -436,7 +460,29 @@ begin
       port map (D_In(3 downto 0)=>XLXN_156(3 downto 0),
                 I_In(3 downto 0)=>XLXN_152(3 downto 0),
                 nIn_Din=>RunMode,
-                DOut(3 downto 0)=>XLXN_154(3 downto 0));
+                DOut(3 downto 0)=>XLXN_173(3 downto 0));
+   
+   XLXI_61 : MUX8_generic_MUSER_Output_DebugMode
+      port map (D_In(7 downto 0)=>Accumulator(7 downto 0),
+                I_In(7 downto 0)=>XLXN_161(7 downto 0),
+                nIM_Din=>EN_Single,
+                DOut(7 downto 0)=>XLXN_160(7 downto 0));
+   
+   XLXI_62 : AND2
+      port map (I0=>EN_SingleStepMode,
+                I1=>RunMode,
+                O=>EN_Single);
+   
+   XLXI_63 : MUX4_generic_MUSER_Output_DebugMode
+      port map (D_In(3 downto 0)=>XLXN_151(3 downto 0),
+                I_In(3 downto 0)=>XLXN_173(3 downto 0),
+                nIn_Din=>EN_Single,
+                DOut(3 downto 0)=>XLXN_174(3 downto 0));
+   
+   XLXI_64 : OR2
+      port map (I0=>EN_hex,
+                I1=>EN_Single,
+                O=>XLXN_180);
    
 end BEHAVIORAL;
 

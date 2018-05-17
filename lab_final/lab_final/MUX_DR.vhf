@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : MUX_DR.vhf
--- /___/   /\     Timestamp : 05/16/2018 12:45:18
+-- /___/   /\     Timestamp : 05/16/2018 21:01:47
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -27,10 +27,10 @@ use UNISIM.Vcomponents.ALL;
 
 entity MUX_DR is
    port ( DR_In : in    std_logic_vector (3 downto 0); 
-          r0    : out   std_logic; 
-          r1    : out   std_logic; 
-          r2    : out   std_logic; 
-          r3    : out   std_logic);
+          EN_0  : out   std_logic; 
+          EN_1  : out   std_logic; 
+          EN_2  : out   std_logic; 
+          EN_3  : out   std_logic);
 end MUX_DR;
 
 architecture BEHAVIORAL of MUX_DR is
@@ -68,28 +68,28 @@ begin
                 I1=>DR_In(2),
                 I2=>DR_In(1),
                 I3=>DR_In(0),
-                O=>r1);
+                O=>EN_1);
    
    XLXI_4 : AND4B2
       port map (I0=>DR_In(3),
                 I1=>DR_In(2),
                 I2=>DR_In(1),
                 I3=>DR_In(0),
-                O=>r3);
+                O=>EN_3);
    
    XLXI_5 : AND4B4
       port map (I0=>DR_In(2),
                 I1=>DR_In(1),
                 I2=>DR_In(3),
                 I3=>DR_In(0),
-                O=>r0);
+                O=>EN_0);
    
    XLXI_6 : AND4B3
       port map (I0=>DR_In(3),
                 I1=>DR_In(2),
                 I2=>DR_In(0),
                 I3=>DR_In(1),
-                O=>r2);
+                O=>EN_2);
    
 end BEHAVIORAL;
 

@@ -18,7 +18,7 @@ NET "Sum[2]" LOC = P7;
 NET "Sum[3]" LOC = P6;
 
 NET "Sum[4]" LOC = N5;
-NET "Sum[5]" LOC = N4;
+#NET "Sum[5]" LOC = N4;
 
 
 NET "EN_hex" LOC = F3; #Allow for Hex Enable on Output
@@ -38,8 +38,9 @@ NET "nADD_SUB" LOC = L3;
 NET "CLR" LOC = G12;
 #Key
 #NET "KeyO" LOC = M5;
-NET "Neg" LOC = P4;
+NET "Neg" LOC = N4;
 NET "OFL" LOC = G1;
+NET "Cout_OFL" Loc = P4;
 #Test to see if power is running through colO
 NET "colO[0]" LOC = B2;
 NET "colO[1]" LOC = A3;

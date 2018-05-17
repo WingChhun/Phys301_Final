@@ -6,20 +6,15 @@
         <trait edittrait="all:0" />
     </attr>
     <netlist>
-        <signal name="XLXN_78" />
         <signal name="Ain(7:0)" />
         <signal name="Bin(7:0)" />
         <signal name="Ain(1)" />
         <signal name="Ain(2)" />
         <signal name="Ain(3)" />
         <signal name="Ain(0)" />
-        <signal name="XLXN_81" />
         <signal name="XLXN_14" />
-        <signal name="XLXN_83" />
-        <signal name="XLXN_86" />
         <signal name="Sum(3)" />
         <signal name="Sum(2)" />
-        <signal name="XLXN_91" />
         <signal name="XLXN_21" />
         <signal name="XLXN_51" />
         <signal name="Bin(1)" />
@@ -33,10 +28,6 @@
         <signal name="Sum(0)" />
         <signal name="XLXN_15" />
         <signal name="Sum(1)" />
-        <signal name="XLXN_107" />
-        <signal name="XLXN_110" />
-        <signal name="XLXN_112" />
-        <signal name="XLXN_115" />
         <signal name="Sum(7:0)" />
         <signal name="XLXN_120" />
         <signal name="Ain(4)" />
@@ -45,7 +36,6 @@
         <signal name="XLXN_129" />
         <signal name="XLXN_130" />
         <signal name="XLXN_131" />
-        <signal name="XLXN_133" />
         <signal name="Sum(5)" />
         <signal name="Sum(6)" />
         <signal name="Sum(7)" />
@@ -53,10 +43,6 @@
         <signal name="Ain(5)" />
         <signal name="Ain(6)" />
         <signal name="Ain(7)" />
-        <signal name="XLXN_141" />
-        <signal name="XLXN_142" />
-        <signal name="XLXN_143" />
-        <signal name="XLXN_144" />
         <signal name="Bin(4)" />
         <signal name="Bin(5)" />
         <signal name="Bin(6)" />
@@ -65,11 +51,13 @@
         <signal name="XLXN_154" />
         <signal name="XLXN_155" />
         <signal name="XLXN_156" />
+        <signal name="Cout_OFL" />
         <port polarity="Input" name="Ain(7:0)" />
         <port polarity="Input" name="Bin(7:0)" />
         <port polarity="Input" name="nAdd_SUB" />
         <port polarity="Output" name="Sum(7:0)" />
         <port polarity="Output" name="Cout" />
+        <port polarity="Output" name="Cout_OFL" />
         <blockdef name="xor2">
             <timestamp>2000-1-1T10:10:10</timestamp>
             <line x2="64" y1="-64" y2="-64" x1="0" />
@@ -148,7 +136,7 @@
         </block>
         <block symbolname="Full_Add" name="XLXI_36">
             <blockpin signalname="XLXN_156" name="Bin" />
-            <blockpin signalname="XLXN_131" name="Cin" />
+            <blockpin signalname="Cout_OFL" name="Cin" />
             <blockpin signalname="Ain(7)" name="Ain" />
             <blockpin signalname="Sum(7)" name="S0out" />
             <blockpin signalname="Cout" name="Cout" />
@@ -158,7 +146,7 @@
             <blockpin signalname="XLXN_130" name="Cin" />
             <blockpin signalname="Ain(6)" name="Ain" />
             <blockpin signalname="Sum(6)" name="S0out" />
-            <blockpin signalname="XLXN_131" name="Cout" />
+            <blockpin signalname="Cout_OFL" name="Cout" />
         </block>
         <block symbolname="Full_Add" name="XLXI_34">
             <blockpin signalname="XLXN_154" name="Bin" />
@@ -190,20 +178,28 @@
     </netlist>
     <sheet sheetnum="1" width="3520" height="2720">
         <branch name="Ain(7:0)">
-            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="494" y="448" type="branch" />
-            <wire x2="494" y1="448" y2="448" x1="400" />
-            <wire x2="576" y1="448" y2="448" x1="494" />
-            <wire x2="576" y1="448" y2="1680" x1="576" />
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="494" y="448" type="branch" />
+            <wire x2="496" y1="448" y2="448" x1="400" />
+            <wire x2="576" y1="448" y2="448" x1="496" />
+            <wire x2="576" y1="448" y2="528" x1="576" />
+            <wire x2="576" y1="528" y2="880" x1="576" />
+            <wire x2="576" y1="880" y2="1216" x1="576" />
+            <wire x2="576" y1="1216" y2="1552" x1="576" />
+            <wire x2="576" y1="1552" y2="1680" x1="576" />
             <wire x2="576" y1="1680" y2="1792" x1="576" />
             <wire x2="576" y1="1792" y2="1920" x1="576" />
             <wire x2="576" y1="1920" y2="2032" x1="576" />
             <wire x2="576" y1="2032" y2="2304" x1="576" />
         </branch>
         <branch name="Bin(7:0)">
-            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="546" y="352" type="branch" />
-            <wire x2="546" y1="352" y2="352" x1="400" />
-            <wire x2="704" y1="352" y2="352" x1="546" />
-            <wire x2="704" y1="352" y2="1616" x1="704" />
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="546" y="352" type="branch" />
+            <wire x2="544" y1="352" y2="352" x1="400" />
+            <wire x2="704" y1="352" y2="352" x1="544" />
+            <wire x2="704" y1="352" y2="432" x1="704" />
+            <wire x2="704" y1="432" y2="784" x1="704" />
+            <wire x2="704" y1="784" y2="1120" x1="704" />
+            <wire x2="704" y1="1120" y2="1456" x1="704" />
+            <wire x2="704" y1="1456" y2="1616" x1="704" />
             <wire x2="704" y1="1616" y2="1728" x1="704" />
             <wire x2="704" y1="1728" y2="1840" x1="704" />
             <wire x2="704" y1="1840" y2="1968" x1="704" />
@@ -255,9 +251,9 @@
         <instance x="1168" y="1184" name="XLXI_11" orien="R0" />
         <bustap x2="800" y1="784" y2="784" x1="704" />
         <branch name="Bin(1)">
-            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="984" y="784" type="branch" />
-            <wire x2="984" y1="784" y2="784" x1="800" />
-            <wire x2="1168" y1="784" y2="784" x1="984" />
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="984" y="784" type="branch" />
+            <wire x2="992" y1="784" y2="784" x1="800" />
+            <wire x2="1168" y1="784" y2="784" x1="992" />
         </branch>
         <branch name="Bin(0)">
             <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="976" y="432" type="branch" />
@@ -283,9 +279,9 @@
         <bustap x2="800" y1="1456" y2="1456" x1="704" />
         <bustap x2="800" y1="1120" y2="1120" x1="704" />
         <branch name="Bin(2)">
-            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="984" y="1120" type="branch" />
-            <wire x2="984" y1="1120" y2="1120" x1="800" />
-            <wire x2="1168" y1="1120" y2="1120" x1="984" />
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="984" y="1120" type="branch" />
+            <wire x2="992" y1="1120" y2="1120" x1="800" />
+            <wire x2="1168" y1="1120" y2="1120" x1="992" />
         </branch>
         <branch name="nAdd_SUB">
             <wire x2="1008" y1="1392" y2="1392" x1="192" />
@@ -384,18 +380,18 @@
             <wire x2="2096" y1="1536" y2="1984" x1="2096" />
         </branch>
         <branch name="Ain(4)">
-            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="935" y="1680" type="branch" />
-            <wire x2="935" y1="1680" y2="1680" x1="672" />
-            <wire x2="1168" y1="1680" y2="1680" x1="935" />
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="935" y="1680" type="branch" />
+            <wire x2="928" y1="1680" y2="1680" x1="672" />
+            <wire x2="1168" y1="1680" y2="1680" x1="928" />
             <wire x2="1168" y1="1680" y2="1888" x1="1168" />
             <wire x2="1664" y1="1888" y2="1888" x1="1168" />
         </branch>
         <branch name="Sum(4)">
-            <attrtext style="alignment:SOFT-TVCENTER;fontsize:28;fontname:Arial" attrname="Name" x="2256" y="1705" type="branch" />
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="2256" y="1705" type="branch" />
             <wire x2="2256" y1="1904" y2="1904" x1="2048" />
             <wire x2="2480" y1="1648" y2="1648" x1="2256" />
-            <wire x2="2256" y1="1648" y2="1705" x1="2256" />
-            <wire x2="2256" y1="1705" y2="1904" x1="2256" />
+            <wire x2="2256" y1="1648" y2="1712" x1="2256" />
+            <wire x2="2256" y1="1712" y2="1904" x1="2256" />
         </branch>
         <instance x="1664" y="2400" name="XLXI_35" orien="R0">
         </instance>
@@ -421,60 +417,53 @@
             <wire x2="2128" y1="2128" y2="2128" x1="2048" />
             <wire x2="2128" y1="2128" y2="2448" x1="2128" />
         </branch>
-        <branch name="XLXN_131">
-            <wire x2="1664" y1="2560" y2="2560" x1="1584" />
-            <wire x2="1584" y1="2560" y2="2704" x1="1584" />
-            <wire x2="2112" y1="2704" y2="2704" x1="1584" />
-            <wire x2="2112" y1="2352" y2="2352" x1="2048" />
-            <wire x2="2112" y1="2352" y2="2704" x1="2112" />
-        </branch>
         <branch name="Sum(5)">
-            <attrtext style="alignment:SOFT-TVCENTER;fontsize:28;fontname:Arial" attrname="Name" x="2272" y="1950" type="branch" />
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="2272" y="1950" type="branch" />
             <wire x2="2272" y1="2160" y2="2160" x1="2048" />
             <wire x2="2480" y1="1872" y2="1872" x1="2272" />
-            <wire x2="2272" y1="1872" y2="1950" x1="2272" />
-            <wire x2="2272" y1="1950" y2="2160" x1="2272" />
+            <wire x2="2272" y1="1872" y2="1952" x1="2272" />
+            <wire x2="2272" y1="1952" y2="2160" x1="2272" />
             <wire x2="2480" y1="1808" y2="1808" x1="2464" />
             <wire x2="2464" y1="1808" y2="1856" x1="2464" />
             <wire x2="2480" y1="1856" y2="1856" x1="2464" />
             <wire x2="2480" y1="1856" y2="1872" x1="2480" />
         </branch>
         <branch name="Sum(6)">
-            <attrtext style="alignment:SOFT-TVCENTER;fontsize:28;fontname:Arial" attrname="Name" x="2288" y="2107" type="branch" />
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="2288" y="2107" type="branch" />
             <wire x2="2288" y1="2384" y2="2384" x1="2048" />
             <wire x2="2480" y1="1984" y2="1984" x1="2288" />
-            <wire x2="2288" y1="1984" y2="2107" x1="2288" />
-            <wire x2="2288" y1="2107" y2="2384" x1="2288" />
+            <wire x2="2288" y1="1984" y2="2112" x1="2288" />
+            <wire x2="2288" y1="2112" y2="2384" x1="2288" />
         </branch>
         <branch name="Sum(7)">
-            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="2417" y="2176" type="branch" />
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="2417" y="2176" type="branch" />
             <wire x2="2304" y1="2640" y2="2640" x1="2048" />
             <wire x2="2304" y1="2176" y2="2640" x1="2304" />
-            <wire x2="2417" y1="2176" y2="2176" x1="2304" />
-            <wire x2="2480" y1="2176" y2="2176" x1="2417" />
+            <wire x2="2416" y1="2176" y2="2176" x1="2304" />
+            <wire x2="2480" y1="2176" y2="2176" x1="2416" />
         </branch>
         <branch name="Cout">
             <wire x2="2448" y1="2608" y2="2608" x1="2048" />
         </branch>
         <iomarker fontsize="28" x="2448" y="2608" name="Cout" orien="R0" />
         <branch name="Ain(5)">
-            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="901" y="1792" type="branch" />
-            <wire x2="901" y1="1792" y2="1792" x1="672" />
-            <wire x2="1152" y1="1792" y2="1792" x1="901" />
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="901" y="1792" type="branch" />
+            <wire x2="896" y1="1792" y2="1792" x1="672" />
+            <wire x2="1152" y1="1792" y2="1792" x1="896" />
             <wire x2="1152" y1="1792" y2="2144" x1="1152" />
             <wire x2="1664" y1="2144" y2="2144" x1="1152" />
         </branch>
         <branch name="Ain(6)">
-            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="883" y="1920" type="branch" />
-            <wire x2="883" y1="1920" y2="1920" x1="672" />
-            <wire x2="1136" y1="1920" y2="1920" x1="883" />
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="883" y="1920" type="branch" />
+            <wire x2="880" y1="1920" y2="1920" x1="672" />
+            <wire x2="1136" y1="1920" y2="1920" x1="880" />
             <wire x2="1136" y1="1920" y2="2368" x1="1136" />
             <wire x2="1664" y1="2368" y2="2368" x1="1136" />
         </branch>
         <branch name="Ain(7)">
-            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="845" y="2032" type="branch" />
-            <wire x2="845" y1="2032" y2="2032" x1="672" />
-            <wire x2="1120" y1="2032" y2="2032" x1="845" />
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="845" y="2032" type="branch" />
+            <wire x2="848" y1="2032" y2="2032" x1="672" />
+            <wire x2="1120" y1="2032" y2="2032" x1="848" />
             <wire x2="1120" y1="2032" y2="2624" x1="1120" />
             <wire x2="1664" y1="2624" y2="2624" x1="1120" />
         </branch>
@@ -483,30 +472,30 @@
         <instance x="224" y="2160" name="XLXI_41" orien="R0" />
         <instance x="208" y="2416" name="XLXI_42" orien="R0" />
         <branch name="Bin(4)">
-            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="905" y="1616" type="branch" />
-            <wire x2="905" y1="1616" y2="1616" x1="800" />
-            <wire x2="944" y1="1616" y2="1616" x1="905" />
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="905" y="1616" type="branch" />
+            <wire x2="912" y1="1616" y2="1616" x1="800" />
+            <wire x2="944" y1="1616" y2="1616" x1="912" />
         </branch>
         <branch name="Bin(5)">
-            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="866" y="1728" type="branch" />
-            <wire x2="866" y1="1728" y2="1728" x1="800" />
-            <wire x2="944" y1="1728" y2="1728" x1="866" />
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="866" y="1728" type="branch" />
+            <wire x2="864" y1="1728" y2="1728" x1="800" />
+            <wire x2="944" y1="1728" y2="1728" x1="864" />
         </branch>
         <branch name="Bin(6)">
-            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="874" y="1840" type="branch" />
-            <wire x2="874" y1="1840" y2="1840" x1="800" />
-            <wire x2="944" y1="1840" y2="1840" x1="874" />
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="874" y="1840" type="branch" />
+            <wire x2="880" y1="1840" y2="1840" x1="800" />
+            <wire x2="944" y1="1840" y2="1840" x1="880" />
         </branch>
         <branch name="Bin(7)">
-            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="911" y="1968" type="branch" />
-            <wire x2="911" y1="1968" y2="1968" x1="800" />
-            <wire x2="944" y1="1968" y2="1968" x1="911" />
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="911" y="1968" type="branch" />
+            <wire x2="912" y1="1968" y2="1968" x1="800" />
+            <wire x2="944" y1="1968" y2="1968" x1="912" />
         </branch>
         <branch name="Bin(4)">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="112" y="1712" type="branch" />
-            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="161" y="1712" type="branch" />
-            <wire x2="161" y1="1712" y2="1712" x1="112" />
-            <wire x2="208" y1="1712" y2="1712" x1="161" />
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="161" y="1712" type="branch" />
+            <wire x2="160" y1="1712" y2="1712" x1="112" />
+            <wire x2="208" y1="1712" y2="1712" x1="160" />
         </branch>
         <branch name="Bin(5)">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="128" y="1904" type="branch" />
@@ -541,5 +530,17 @@
             <wire x2="1056" y1="2320" y2="2496" x1="1056" />
             <wire x2="1664" y1="2496" y2="2496" x1="1056" />
         </branch>
+        <branch name="Cout_OFL">
+            <wire x2="1664" y1="2560" y2="2560" x1="1584" />
+            <wire x2="1584" y1="2560" y2="2704" x1="1584" />
+            <wire x2="2112" y1="2704" y2="2704" x1="1584" />
+            <wire x2="2112" y1="2352" y2="2352" x1="2048" />
+            <wire x2="2112" y1="2352" y2="2528" x1="2112" />
+            <wire x2="2112" y1="2528" y2="2704" x1="2112" />
+            <wire x2="2720" y1="2528" y2="2528" x1="2112" />
+            <wire x2="2720" y1="2528" y2="2544" x1="2720" />
+            <wire x2="2832" y1="2544" y2="2544" x1="2720" />
+        </branch>
+        <iomarker fontsize="28" x="2832" y="2544" name="Cout_OFL" orien="R0" />
     </sheet>
 </drawing>

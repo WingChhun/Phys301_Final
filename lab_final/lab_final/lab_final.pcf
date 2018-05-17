@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Wed May 16 13:53:38 2018
+// Written by: Map P.20131013 on Thu May 17 02:03:00 2018
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -9,6 +9,8 @@ PIN "C_Shift_pin<0>" CLOCK_DEDICATED_ROUTE = FALSE;
 COMP "C_Write" LOCATE = SITE "M4" LEVEL 1;
 PIN C_Write_pin<0> = BEL "C_Write" PINNAME PAD;
 PIN "C_Write_pin<0>" CLOCK_DEDICATED_ROUTE = FALSE;
+COMP "NEG" LOCATE = SITE "M5" LEVEL 1;
+COMP "OFL" LOCATE = SITE "M11" LEVEL 1;
 COMP "AorD" LOCATE = SITE "P11" LEVEL 1;
 COMP "Toggle_Output" LOCATE = SITE "K3" LEVEL 1;
 COMP "RunMode" LOCATE = SITE "N3" LEVEL 1;

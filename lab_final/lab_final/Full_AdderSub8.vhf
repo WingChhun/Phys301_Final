@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : Full_AdderSub8.vhf
--- /___/   /\     Timestamp : 05/16/2018 12:45:14
+-- /___/   /\     Timestamp : 05/16/2018 22:20:38
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -93,27 +93,28 @@ entity addersub8_MUSER_Full_AdderSub8 is
           Bin      : in    std_logic_vector (7 downto 0); 
           nAdd_SUB : in    std_logic; 
           Cout     : out   std_logic; 
+          Cout_OFL : out   std_logic; 
           Sum      : out   std_logic_vector (7 downto 0));
 end addersub8_MUSER_Full_AdderSub8;
 
 architecture BEHAVIORAL of addersub8_MUSER_Full_AdderSub8 is
    attribute BOX_TYPE   : string ;
-   signal XLXN_14  : std_logic;
-   signal XLXN_15  : std_logic;
-   signal XLXN_21  : std_logic;
-   signal XLXN_51  : std_logic;
-   signal XLXN_56  : std_logic;
-   signal XLXN_57  : std_logic;
-   signal XLXN_61  : std_logic;
-   signal XLXN_120 : std_logic;
-   signal XLXN_124 : std_logic;
-   signal XLXN_129 : std_logic;
-   signal XLXN_130 : std_logic;
-   signal XLXN_131 : std_logic;
-   signal XLXN_153 : std_logic;
-   signal XLXN_154 : std_logic;
-   signal XLXN_155 : std_logic;
-   signal XLXN_156 : std_logic;
+   signal XLXN_14        : std_logic;
+   signal XLXN_15        : std_logic;
+   signal XLXN_21        : std_logic;
+   signal XLXN_51        : std_logic;
+   signal XLXN_56        : std_logic;
+   signal XLXN_57        : std_logic;
+   signal XLXN_61        : std_logic;
+   signal XLXN_120       : std_logic;
+   signal XLXN_124       : std_logic;
+   signal XLXN_129       : std_logic;
+   signal XLXN_130       : std_logic;
+   signal XLXN_153       : std_logic;
+   signal XLXN_154       : std_logic;
+   signal XLXN_155       : std_logic;
+   signal XLXN_156       : std_logic;
+   signal Cout_OFL_DUMMY : std_logic;
    component XOR2
       port ( I0 : in    std_logic; 
              I1 : in    std_logic; 
@@ -130,6 +131,7 @@ architecture BEHAVIORAL of addersub8_MUSER_Full_AdderSub8 is
    end component;
    
 begin
+   Cout_OFL <= Cout_OFL_DUMMY;
    XLXI_9 : XOR2
       port map (I0=>Bin(0),
                 I1=>nAdd_SUB,
@@ -196,13 +198,13 @@ begin
       port map (Ain=>Ain(6),
                 Bin=>XLXN_155,
                 Cin=>XLXN_130,
-                Cout=>XLXN_131,
+                Cout=>Cout_OFL_DUMMY,
                 S0out=>Sum(6));
    
    XLXI_36 : Full_Add_MUSER_Full_AdderSub8
       port map (Ain=>Ain(7),
                 Bin=>XLXN_156,
-                Cin=>XLXN_131,
+                Cin=>Cout_OFL_DUMMY,
                 Cout=>Cout,
                 S0out=>Sum(7));
    
@@ -241,6 +243,7 @@ entity Full_AdderSub8 is
           Bin      : in    std_logic_vector (7 downto 0); 
           nADD_SUB : in    std_logic; 
           Cout     : out   std_logic; 
+          Cout_OFL : out   std_logic; 
           Negative : out   std_logic; 
           OFL      : out   std_logic; 
           Sum      : out   std_logic_vector (7 downto 0));
@@ -249,8 +252,8 @@ end Full_AdderSub8;
 architecture BEHAVIORAL of Full_AdderSub8 is
    attribute BOX_TYPE   : string ;
    signal XLXN_1                : std_logic_vector (7 downto 0);
-   signal XLXN_10               : std_logic;
    signal XLXN_12               : std_logic;
+   signal XLXN_17               : std_logic;
    signal Negative_DUMMY        : std_logic;
    signal XLXI_3_Ain_openSignal : std_logic_vector (7 downto 0);
    component addersub8_MUSER_Full_AdderSub8
@@ -258,7 +261,8 @@ architecture BEHAVIORAL of Full_AdderSub8 is
              Bin      : in    std_logic_vector (7 downto 0); 
              nAdd_SUB : in    std_logic; 
              Sum      : out   std_logic_vector (7 downto 0); 
-             Cout     : out   std_logic);
+             Cout     : out   std_logic; 
+             Cout_OFL : out   std_logic);
    end component;
    
    component NOR2
@@ -274,18 +278,20 @@ begin
       port map (Ain(7 downto 0)=>Ain(7 downto 0),
                 Bin(7 downto 0)=>Bin(7 downto 0),
                 nAdd_SUB=>nADD_SUB,
-                Cout=>XLXN_10,
+                Cout=>XLXN_17,
+                Cout_OFL=>Cout_OFL,
                 Sum(7 downto 0)=>XLXN_1(7 downto 0));
    
    XLXI_3 : addersub8_MUSER_Full_AdderSub8
       port map (Ain(7 downto 0)=>XLXI_3_Ain_openSignal(7 downto 0),
                 Bin(7 downto 0)=>XLXN_1(7 downto 0),
                 nAdd_SUB=>Negative_DUMMY,
-                Cout=>Cout,
+                Cout=>open,
+                Cout_OFL=>Cout,
                 Sum(7 downto 0)=>Sum(7 downto 0));
    
    XLXI_4 : NOR2
-      port map (I0=>XLXN_10,
+      port map (I0=>XLXN_17,
                 I1=>nADD_SUB,
                 O=>XLXN_12);
    
@@ -296,7 +302,7 @@ begin
    
    XLXI_6 : NOR2
       port map (I0=>XLXN_12,
-                I1=>XLXN_10,
+                I1=>XLXN_17,
                 O=>Negative_DUMMY);
    
 end BEHAVIORAL;

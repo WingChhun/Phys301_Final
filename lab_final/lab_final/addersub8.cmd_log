@@ -1,1 +1,4 @@
 sch2sym -intstyle ise -family spartan3e -w -refsym addersub8 C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/addersub8.sch C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/addersub8.sym 
+vhdtdtfi -lib work addersub8.vhd -prj lab_final -o addersub8.spl -module addersub8 -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w addersub8.spl C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/addersub8.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym addersub8 C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/addersub8.sch C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/addersub8.sym 

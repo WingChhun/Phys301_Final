@@ -13,12 +13,11 @@
         <signal name="Cout" />
         <signal name="Sum(7:0)" />
         <signal name="Negative" />
-        <signal name="XLXN_10" />
         <signal name="XLXN_12" />
         <signal name="OFL" />
-        <signal name="XLXN_13" />
-        <signal name="XLXN_14" />
-        <signal name="XLXN_16" />
+        <signal name="XLXN_17" />
+        <signal name="Cout_OFL" />
+        <signal name="XLXN_19" />
         <port polarity="Input" name="Ain(7:0)" />
         <port polarity="Input" name="Bin(7:0)" />
         <port polarity="Input" name="nADD_SUB" />
@@ -26,8 +25,9 @@
         <port polarity="Output" name="Sum(7:0)" />
         <port polarity="Output" name="Negative" />
         <port polarity="Output" name="OFL" />
+        <port polarity="Output" name="Cout_OFL" />
         <blockdef name="addersub8">
-            <timestamp>2018-5-8T20:19:24</timestamp>
+            <timestamp>2018-5-17T5:16:13</timestamp>
             <rect width="256" x="64" y="-192" height="192" />
             <rect width="64" x="0" y="-172" height="24" />
             <line x2="0" y1="-160" y2="-160" x1="64" />
@@ -36,6 +36,7 @@
             <line x2="0" y1="-32" y2="-32" x1="64" />
             <rect width="64" x="320" y="-172" height="24" />
             <line x2="384" y1="-160" y2="-160" x1="320" />
+            <line x2="384" y1="-96" y2="-96" x1="320" />
             <line x2="384" y1="-32" y2="-32" x1="320" />
         </blockdef>
         <blockdef name="nor2">
@@ -55,17 +56,19 @@
             <blockpin signalname="Bin(7:0)" name="Bin(7:0)" />
             <blockpin signalname="nADD_SUB" name="nAdd_SUB" />
             <blockpin signalname="XLXN_1(7:0)" name="Sum(7:0)" />
-            <blockpin signalname="XLXN_10" name="Cout" />
+            <blockpin signalname="XLXN_17" name="Cout" />
+            <blockpin signalname="Cout_OFL" name="Cout_OFL" />
         </block>
         <block symbolname="addersub8" name="XLXI_3">
             <blockpin name="Ain(7:0)" />
             <blockpin signalname="XLXN_1(7:0)" name="Bin(7:0)" />
             <blockpin signalname="Negative" name="nAdd_SUB" />
             <blockpin signalname="Sum(7:0)" name="Sum(7:0)" />
-            <blockpin signalname="Cout" name="Cout" />
+            <blockpin name="Cout" />
+            <blockpin signalname="Cout" name="Cout_OFL" />
         </block>
         <block symbolname="nor2" name="XLXI_4">
-            <blockpin signalname="XLXN_10" name="I0" />
+            <blockpin signalname="XLXN_17" name="I0" />
             <blockpin signalname="nADD_SUB" name="I1" />
             <blockpin signalname="XLXN_12" name="O" />
         </block>
@@ -76,7 +79,7 @@
         </block>
         <block symbolname="nor2" name="XLXI_6">
             <blockpin signalname="XLXN_12" name="I0" />
-            <blockpin signalname="XLXN_10" name="I1" />
+            <blockpin signalname="XLXN_17" name="I1" />
             <blockpin signalname="Negative" name="O" />
         </block>
     </netlist>
@@ -125,16 +128,6 @@
             <wire x2="1808" y1="1504" y2="1504" x1="1728" />
             <wire x2="1728" y1="1504" y2="1504" x1="1680" />
         </branch>
-        <branch name="XLXN_10">
-            <wire x2="704" y1="1328" y2="1488" x1="704" />
-            <wire x2="768" y1="1488" y2="1488" x1="704" />
-            <wire x2="992" y1="1328" y2="1328" x1="704" />
-            <wire x2="1232" y1="1328" y2="1328" x1="992" />
-            <wire x2="1232" y1="1328" y2="1472" x1="1232" />
-            <wire x2="1424" y1="1472" y2="1472" x1="1232" />
-            <wire x2="992" y1="1264" y2="1264" x1="912" />
-            <wire x2="992" y1="1264" y2="1328" x1="992" />
-        </branch>
         <branch name="OFL">
             <wire x2="1200" y1="1808" y2="1808" x1="1040" />
             <wire x2="1216" y1="1680" y2="1680" x1="1200" />
@@ -153,5 +146,22 @@
             <wire x2="1424" y1="1536" y2="1536" x1="1216" />
             <wire x2="1136" y1="1456" y2="1920" x1="1136" />
         </branch>
+        <branch name="XLXN_17">
+            <wire x2="768" y1="1488" y2="1488" x1="704" />
+            <wire x2="704" y1="1488" y2="1568" x1="704" />
+            <wire x2="1088" y1="1568" y2="1568" x1="704" />
+            <wire x2="1088" y1="1200" y2="1200" x1="912" />
+            <wire x2="1088" y1="1200" y2="1360" x1="1088" />
+            <wire x2="1088" y1="1360" y2="1568" x1="1088" />
+            <wire x2="1248" y1="1360" y2="1360" x1="1088" />
+            <wire x2="1248" y1="1360" y2="1472" x1="1248" />
+            <wire x2="1424" y1="1472" y2="1472" x1="1248" />
+        </branch>
+        <branch name="Cout_OFL">
+            <wire x2="1376" y1="1264" y2="1264" x1="912" />
+            <wire x2="1376" y1="1264" y2="1712" x1="1376" />
+            <wire x2="1712" y1="1712" y2="1712" x1="1376" />
+        </branch>
+        <iomarker fontsize="28" x="1712" y="1712" name="Cout_OFL" orien="R0" />
     </sheet>
 </drawing>

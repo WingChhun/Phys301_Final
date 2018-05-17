@@ -1,0 +1,4 @@
+sch2sym -intstyle ise -family spartan3e -w -refsym ALU_Control_Logic C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/ALU_Control_Logic.sch C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/ALU_Control_Logic.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym ALU_Control_Logic C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/ALU_Control_Logic.sch C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/ALU_Control_Logic.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym ALU_Control_Logic C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/ALU_Control_Logic.sch C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/ALU_Control_Logic.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym ALU_Control_Logic C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/ALU_Control_Logic.sch C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/ALU_Control_Logic.sym 

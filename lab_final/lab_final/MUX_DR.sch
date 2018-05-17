@@ -7,32 +7,19 @@
     </attr>
     <netlist>
         <signal name="DR_In(3:0)" />
-        <signal name="r1" />
-        <signal name="r3" />
-        <signal name="r0" />
-        <signal name="r2" />
+        <signal name="EN_1" />
+        <signal name="EN_3" />
+        <signal name="EN_0" />
+        <signal name="EN_2" />
         <signal name="DR_In(3)" />
-        <signal name="XLXN_15" />
-        <signal name="XLXN_16" />
-        <signal name="XLXN_17" />
-        <signal name="XLXN_18" />
-        <signal name="XLXN_20" />
         <signal name="DR_In(1)" />
-        <signal name="XLXN_22" />
         <signal name="DR_In(2)" />
         <signal name="DR_In(0)" />
-        <signal name="XLXN_25" />
-        <signal name="XLXN_26" />
-        <signal name="XLXN_27" />
-        <signal name="XLXN_28" />
-        <signal name="XLXN_29" />
-        <signal name="XLXN_30" />
-        <signal name="XLXN_31" />
         <port polarity="Input" name="DR_In(3:0)" />
-        <port polarity="Output" name="r1" />
-        <port polarity="Output" name="r3" />
-        <port polarity="Output" name="r0" />
-        <port polarity="Output" name="r2" />
+        <port polarity="Output" name="EN_1" />
+        <port polarity="Output" name="EN_3" />
+        <port polarity="Output" name="EN_0" />
+        <port polarity="Output" name="EN_2" />
         <blockdef name="and4b3">
             <timestamp>2000-1-1T10:10:10</timestamp>
             <line x2="40" y1="-64" y2="-64" x1="0" />
@@ -83,28 +70,28 @@
             <blockpin signalname="DR_In(2)" name="I1" />
             <blockpin signalname="DR_In(1)" name="I2" />
             <blockpin signalname="DR_In(0)" name="I3" />
-            <blockpin signalname="r1" name="O" />
+            <blockpin signalname="EN_1" name="O" />
         </block>
         <block symbolname="and4b2" name="XLXI_4">
             <blockpin signalname="DR_In(3)" name="I0" />
             <blockpin signalname="DR_In(2)" name="I1" />
             <blockpin signalname="DR_In(1)" name="I2" />
             <blockpin signalname="DR_In(0)" name="I3" />
-            <blockpin signalname="r3" name="O" />
+            <blockpin signalname="EN_3" name="O" />
         </block>
         <block symbolname="and4b4" name="XLXI_5">
             <blockpin signalname="DR_In(2)" name="I0" />
             <blockpin signalname="DR_In(1)" name="I1" />
             <blockpin signalname="DR_In(3)" name="I2" />
             <blockpin signalname="DR_In(0)" name="I3" />
-            <blockpin signalname="r0" name="O" />
+            <blockpin signalname="EN_0" name="O" />
         </block>
         <block symbolname="and4b3" name="XLXI_6">
             <blockpin signalname="DR_In(3)" name="I0" />
             <blockpin signalname="DR_In(2)" name="I1" />
             <blockpin signalname="DR_In(0)" name="I2" />
             <blockpin signalname="DR_In(1)" name="I3" />
-            <blockpin signalname="r2" name="O" />
+            <blockpin signalname="EN_2" name="O" />
         </block>
     </netlist>
     <sheet sheetnum="1" width="3520" height="2720">
@@ -122,30 +109,30 @@
         <bustap x2="464" y1="240" y2="240" x1="368" />
         <bustap x2="464" y1="352" y2="352" x1="368" />
         <bustap x2="464" y1="464" y2="464" x1="368" />
-        <branch name="r1">
+        <branch name="EN_1">
             <wire x2="1008" y1="512" y2="512" x1="976" />
         </branch>
-        <iomarker fontsize="28" x="1008" y="512" name="r1" orien="R0" />
-        <branch name="r3">
+        <iomarker fontsize="28" x="1008" y="512" name="EN_1" orien="R0" />
+        <branch name="EN_3">
             <wire x2="1008" y1="800" y2="800" x1="976" />
         </branch>
-        <iomarker fontsize="28" x="1008" y="800" name="r3" orien="R0" />
+        <iomarker fontsize="28" x="1008" y="800" name="EN_3" orien="R0" />
         <instance x="1328" y="448" name="XLXI_5" orien="R0" />
-        <branch name="r0">
+        <branch name="EN_0">
             <wire x2="1616" y1="288" y2="288" x1="1584" />
         </branch>
-        <iomarker fontsize="28" x="1616" y="288" name="r0" orien="R0" />
+        <iomarker fontsize="28" x="1616" y="288" name="EN_0" orien="R0" />
         <instance x="1280" y="800" name="XLXI_6" orien="R0" />
-        <branch name="r2">
+        <branch name="EN_2">
             <wire x2="1568" y1="640" y2="640" x1="1536" />
         </branch>
-        <iomarker fontsize="28" x="1568" y="640" name="r2" orien="R0" />
+        <iomarker fontsize="28" x="1568" y="640" name="EN_2" orien="R0" />
         <instance x="720" y="960" name="XLXI_4" orien="R0" />
         <bustap x2="464" y1="560" y2="560" x1="368" />
         <branch name="DR_In(3)">
-            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="507" y="560" type="branch" />
-            <wire x2="507" y1="560" y2="560" x1="464" />
-            <wire x2="528" y1="560" y2="560" x1="507" />
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="507" y="560" type="branch" />
+            <wire x2="512" y1="560" y2="560" x1="464" />
+            <wire x2="528" y1="560" y2="560" x1="512" />
             <wire x2="528" y1="560" y2="608" x1="528" />
             <wire x2="720" y1="608" y2="608" x1="528" />
             <wire x2="528" y1="608" y2="896" x1="528" />

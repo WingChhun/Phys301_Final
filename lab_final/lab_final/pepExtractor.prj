@@ -1,1 +1,1 @@
-work	"../addsub8.vhd"
+work	"../modules/sRAM32x8_pgmC_data.vhd"

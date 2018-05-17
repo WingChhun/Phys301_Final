@@ -45,6 +45,13 @@ NET "SWITCH_SPeed" LOC = G3;
 #NET "Step" LOC = C11; #Push and increment run counter by 1
 
 #
+# NEG And Overflow - Register S
+#
+
+NET "Neg" LOC = M5;
+NET "OFL" LOC = M11;
+
+#
 #Binary LED Output INstruction
 #
 #Test LEDs for IReg
