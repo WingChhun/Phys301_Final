@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : Output_DebugMode.vhf
--- /___/   /\     Timestamp : 05/17/2018 00:42:52
+-- /___/   /\     Timestamp : 05/17/2018 11:11:34
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -102,11 +102,11 @@ architecture BEHAVIORAL of MUX4_generic_MUSER_Output_DebugMode is
              O  : out   std_logic);
    end component;
    
-   attribute HU_SET of XLXI_27 : label is "XLXI_27_82";
-   attribute HU_SET of XLXI_28 : label is "XLXI_28_83";
-   attribute HU_SET of XLXI_32 : label is "XLXI_32_86";
-   attribute HU_SET of XLXI_33 : label is "XLXI_33_84";
-   attribute HU_SET of XLXI_34 : label is "XLXI_34_85";
+   attribute HU_SET of XLXI_27 : label is "XLXI_27_3";
+   attribute HU_SET of XLXI_28 : label is "XLXI_28_4";
+   attribute HU_SET of XLXI_32 : label is "XLXI_32_7";
+   attribute HU_SET of XLXI_33 : label is "XLXI_33_5";
+   attribute HU_SET of XLXI_34 : label is "XLXI_34_6";
 begin
    XLXI_27 : M2_1_MXILINX_Output_DebugMode
       port map (D0=>XLXI_27_D0_openSignal,
@@ -167,15 +167,15 @@ architecture BEHAVIORAL of MUX8_generic_MUSER_Output_DebugMode is
              O  : out   std_logic);
    end component;
    
-   attribute HU_SET of XLXI_27 : label is "XLXI_27_87";
-   attribute HU_SET of XLXI_28 : label is "XLXI_28_88";
-   attribute HU_SET of XLXI_32 : label is "XLXI_32_94";
-   attribute HU_SET of XLXI_33 : label is "XLXI_33_89";
-   attribute HU_SET of XLXI_34 : label is "XLXI_34_90";
-   attribute HU_SET of XLXI_35 : label is "XLXI_35_91";
-   attribute HU_SET of XLXI_36 : label is "XLXI_36_92";
-   attribute HU_SET of XLXI_37 : label is "XLXI_37_93";
-   attribute HU_SET of XLXI_44 : label is "XLXI_44_95";
+   attribute HU_SET of XLXI_27 : label is "XLXI_27_8";
+   attribute HU_SET of XLXI_28 : label is "XLXI_28_9";
+   attribute HU_SET of XLXI_32 : label is "XLXI_32_15";
+   attribute HU_SET of XLXI_33 : label is "XLXI_33_10";
+   attribute HU_SET of XLXI_34 : label is "XLXI_34_11";
+   attribute HU_SET of XLXI_35 : label is "XLXI_35_12";
+   attribute HU_SET of XLXI_36 : label is "XLXI_36_13";
+   attribute HU_SET of XLXI_37 : label is "XLXI_37_14";
+   attribute HU_SET of XLXI_44 : label is "XLXI_44_16";
 begin
    XLXI_27 : M2_1_MXILINX_Output_DebugMode
       port map (D0=>XLXI_27_D0_openSignal,

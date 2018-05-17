@@ -82,7 +82,6 @@
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/par.xmsgs"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/trce.xmsgs"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
-    <file xil_pn:fileType="FILE_SPL" xil_pn:name="addersub8.spl"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="addersub8.sym" xil_pn:origination="imported"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VHDL" xil_pn:name="addersub8.vhf"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="addsub8.sym" xil_pn:origination="imported"/>
@@ -95,10 +94,8 @@
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="key_detect.sym" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="lab5_experiment2_addr_subtr.sym" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="lab6_experimen3.sym" xil_pn:origination="imported"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VHDL" xil_pn:name="lab6_experimen3.vhf"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="lab9_BCDBus.sym" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="lab_KEYPAD_FINAL.sym" xil_pn:origination="imported"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VHDL" xil_pn:name="lab_KEYPAD_FINAL.vhf"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="lab_final.bgn" xil_pn:subbranch="FPGAConfiguration"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BIT" xil_pn:name="lab_final.bit" xil_pn:subbranch="FPGAConfiguration"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="lab_final.bld"/>
@@ -143,58 +140,24 @@
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="lab_final_xst.xrpt"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="mux4SSD.sym" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="oneshot.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="planAhead_run_4"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="program_counter.sym" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="sRAM32x8_ex_pgm_data.sym" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="sRAM32x8_ex_pgm_instr.sym" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="sRAM32x8_generic.sym" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="sRAM32x8_pgmA_data.sym" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="sRAM32x8_pgmA_instr.sym" xil_pn:origination="imported"/>
-    <file xil_pn:fileType="FILE_SPL" xil_pn:name="sRAM32x8_pgmC_data.spl"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="sRAM32x8_pgmC_data.sym" xil_pn:origination="imported"/>
-    <file xil_pn:fileType="FILE_SPL" xil_pn:name="sRAM32x8_pgmC_instr.spl"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="sRAM32x8_pgmC_instr.sym" xil_pn:origination="imported"/>
-    <file xil_pn:fileType="FILE_SPL" xil_pn:name="sROM32x8_pgmB_data.spl"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="sROM32x8_pgmB_data.sym" xil_pn:origination="imported"/>
-    <file xil_pn:fileType="FILE_SPL" xil_pn:name="sROM32x8_pgmB_instr.spl"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="sROM32x8_pgmB_instr.sym" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="sel_strobeB.sym" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="shiftreg_hex2D.sym" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="sseg_mux4D.sym" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="switch_debounce.sym" xil_pn:origination="imported"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="test_FullAdder.bld"/>
-    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="test_FullAdder.cmd_log"/>
-    <file xil_pn:fileType="FILE_JHD" xil_pn:name="test_FullAdder.jhd"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="test_FullAdder.lso"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="test_FullAdder.ncd" xil_pn:subbranch="Par"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="test_FullAdder.ngc"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="test_FullAdder.ngd"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="test_FullAdder.ngr"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="test_FullAdder.par" xil_pn:subbranch="Par"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="test_FullAdder.pcf" xil_pn:subbranch="Map"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="test_FullAdder.prj"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="test_FullAdder.stx"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="test_FullAdder.syr"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="test_FullAdder.twr" xil_pn:subbranch="Par"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="test_FullAdder.twx" xil_pn:subbranch="Par"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="test_FullAdder.unroutes" xil_pn:subbranch="Par"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="test_FullAdder.ut" xil_pn:subbranch="FPGAConfiguration"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VHDL" xil_pn:name="test_FullAdder.vhf"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="test_FullAdder.xst"/>
-    <file xil_pn:fileType="FILE_HTML" xil_pn:name="test_FullAdder_envsettings.html"/>
     <file xil_pn:fileType="FILE_NCD" xil_pn:name="test_FullAdder_guide.ncd" xil_pn:origination="imported"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="test_FullAdder_map.map" xil_pn:subbranch="Map"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="test_FullAdder_map.mrp" xil_pn:subbranch="Map"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="test_FullAdder_map.ncd" xil_pn:subbranch="Map"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="test_FullAdder_map.ngm" xil_pn:subbranch="Map"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="test_FullAdder_pad.csv" xil_pn:subbranch="Par"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="test_FullAdder_pad.txt" xil_pn:subbranch="Par"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="test_FullAdder_vhdl.prj"/>
-    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="test_FullAdder_xst.xrpt"/>
     <file xil_pn:fileType="FILE_NCD" xil_pn:name="test_Memory_guide.ncd" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_NCD" xil_pn:name="test_ProgramCounter_guide.ncd" xil_pn:origination="imported"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="test_fulladder.bgn" xil_pn:subbranch="FPGAConfiguration"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BIT" xil_pn:name="test_fulladder.bit" xil_pn:subbranch="FPGAConfiguration"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_DRC" xil_pn:name="test_fulladder.drc" xil_pn:subbranch="FPGAConfiguration"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="test_hexShifter.sym" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="usage_statistics_webtalk.html"/>
     <file xil_pn:fileType="FILE_LOG" xil_pn:name="webtalk.log"/>
@@ -204,15 +167,13 @@
   </files>
 
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
-    <transform xil_pn:end_ts="1526547731" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1526547731">
+    <transform xil_pn:end_ts="1526586299" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1526586299">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1526547743" xil_pn:in_ck="-4660804259569988944" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-6600027702754069376" xil_pn:start_ts="1526547731">
+    <transform xil_pn:end_ts="1526586310" xil_pn:in_ck="-4660804259569988944" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-6600027702754069376" xil_pn:start_ts="1526586299">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="ALU_Control_Logic.vhf"/>
       <outfile xil_pn:name="ALU_Final.vhf"/>
       <outfile xil_pn:name="Eight_Register_Shift.vhf"/>
@@ -232,38 +193,32 @@
       <outfile xil_pn:name="Register_8bit.vhf"/>
       <outfile xil_pn:name="Registers.vhf"/>
       <outfile xil_pn:name="addersub8.vhf"/>
-      <outfile xil_pn:name="lab6_experimen3.vhf"/>
-      <outfile xil_pn:name="lab_KEYPAD_FINAL.vhf"/>
       <outfile xil_pn:name="lab_final.vhf"/>
-      <outfile xil_pn:name="test_FullAdder.vhf"/>
     </transform>
-    <transform xil_pn:end_ts="1526547743" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-5760475763527146128" xil_pn:start_ts="1526547743">
+    <transform xil_pn:end_ts="1526586310" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-1753132555133324243" xil_pn:start_ts="1526586310">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1526547743" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1526547743">
+    <transform xil_pn:end_ts="1526586310" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1526586310">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1526547743" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="-1326313605535855554" xil_pn:start_ts="1526547743">
+    <transform xil_pn:end_ts="1526586310" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="-1326313605535855554" xil_pn:start_ts="1526586310">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1526547743" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="2988080280822507185" xil_pn:start_ts="1526547743">
+    <transform xil_pn:end_ts="1526586310" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="-3893270297158069842" xil_pn:start_ts="1526586310">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
     </transform>
-    <transform xil_pn:end_ts="1526547743" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-456734612759316486" xil_pn:start_ts="1526547743">
+    <transform xil_pn:end_ts="1526586310" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="3550608595634505399" xil_pn:start_ts="1526586310">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
     </transform>
-    <transform xil_pn:end_ts="1526547770" xil_pn:in_ck="4964020632635112735" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="929477405813843238" xil_pn:start_ts="1526547743">
+    <transform xil_pn:end_ts="1526586338" xil_pn:in_ck="4568491081593085177" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="7365851617359035811" xil_pn:start_ts="1526586310">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
@@ -280,29 +235,24 @@
       <outfile xil_pn:name="webtalk_pn.xml"/>
       <outfile xil_pn:name="xst"/>
     </transform>
-    <transform xil_pn:end_ts="1526547770" xil_pn:in_ck="-3778432731210989054" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-8119198861439800038" xil_pn:start_ts="1526547770">
+    <transform xil_pn:end_ts="1526586338" xil_pn:in_ck="-3778432731210989054" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-8119198861439800038" xil_pn:start_ts="1526586338">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
     </transform>
-    <transform xil_pn:end_ts="1526547776" xil_pn:in_ck="-5998265984681713864" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="4536263253350538781" xil_pn:start_ts="1526547770">
+    <transform xil_pn:end_ts="1526586345" xil_pn:in_ck="5421698425400512672" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-4109333741495576966" xil_pn:start_ts="1526586338">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="_ngo"/>
       <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
       <outfile xil_pn:name="lab_final.bld"/>
       <outfile xil_pn:name="lab_final.ngd"/>
       <outfile xil_pn:name="lab_final_ngdbuild.xrpt"/>
     </transform>
-    <transform xil_pn:end_ts="1526547783" xil_pn:in_ck="4376673628857936794" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="-1303429204059397298" xil_pn:start_ts="1526547776">
+    <transform xil_pn:end_ts="1526586351" xil_pn:in_ck="-5711050915177719679" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="-5849673150125579957" xil_pn:start_ts="1526586345">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
       <outfile xil_pn:name="lab_final.pcf"/>
       <outfile xil_pn:name="lab_final_map.map"/>
@@ -313,11 +263,10 @@
       <outfile xil_pn:name="lab_final_summary.xml"/>
       <outfile xil_pn:name="lab_final_usage.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1526547827" xil_pn:in_ck="6873357219741398188" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="-4078461964484670437" xil_pn:start_ts="1526547783">
+    <transform xil_pn:end_ts="1526586392" xil_pn:in_ck="5830240848887512442" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="-3872219738485705569" xil_pn:start_ts="1526586351">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
       <outfile xil_pn:name="lab_final.ncd"/>
       <outfile xil_pn:name="lab_final.pad"/>
@@ -329,11 +278,10 @@
       <outfile xil_pn:name="lab_final_pad.txt"/>
       <outfile xil_pn:name="lab_final_par.xrpt"/>
     </transform>
-    <transform xil_pn:end_ts="1526547838" xil_pn:in_ck="273243876291378736" xil_pn:name="TRANEXT_bitFile_spartan3e" xil_pn:prop_ck="-7817169320884990698" xil_pn:start_ts="1526547827">
+    <transform xil_pn:end_ts="1526586403" xil_pn:in_ck="721863115835501019" xil_pn:name="TRANEXT_bitFile_spartan3e" xil_pn:prop_ck="-7817169320884990698" xil_pn:start_ts="1526586392">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
       <outfile xil_pn:name="lab_final.bgn"/>
       <outfile xil_pn:name="lab_final.bit"/>
@@ -343,10 +291,9 @@
       <outfile xil_pn:name="webtalk.log"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1526547827" xil_pn:in_ck="-56293903869130478" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416186" xil_pn:start_ts="1526547822">
+    <transform xil_pn:end_ts="1526586392" xil_pn:in_ck="6519080218094372989" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416186" xil_pn:start_ts="1526586384">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
       <outfile xil_pn:name="lab_final.twr"/>
       <outfile xil_pn:name="lab_final.twx"/>

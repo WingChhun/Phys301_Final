@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : ALU_Control_Logic.vhf
--- /___/   /\     Timestamp : 05/17/2018 00:13:49
+-- /___/   /\     Timestamp : 05/17/2018 11:11:53
 -- \   \  /  \ 
 --  \___\/\___\ 
 --

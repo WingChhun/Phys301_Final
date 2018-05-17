@@ -1,0 +1,170 @@
+
+****** PlanAhead v14.7
+  **** Build 321239 by xbuild on Fri Sep 27 19:31:35 MDT 2013
+    ** Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
+
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Common 17-86] Your PlanAhead license expires in -1659 day(s)
+INFO: [Device 21-36] Loading parts and site information from C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/pa.fromHdl.tcl
+# create_project -name lab_final -dir "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/planAhead_run_4" -part xc3s500efg320-4
+# set_param project.pinAheadLayout yes
+# set srcset [get_property srcset [current_run -impl]]
+# set_property target_constrs_file "lab_final.ucf" [current_fileset -constrset]
+Adding file 'C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.ucf' to fileset 'constrs_1'
+# set hdlfile [add_files [list {Full_Add.vhf}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {../modules/debounce.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {addersub8.vhf}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {../../../../../../Documents/Xlink_projects/lab_final/modules/col_strobe.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {../modules/SSD_1dig.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {../modules/sel_strobeB.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {../modules/mux4SSD.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {../modules/key_detect.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {../modules/key4_dbnc.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {../modules/decoder16keyEn.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {../modules/DCM_100M.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {../modules/CRenc4bin.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {../modules/bin2BCD3en.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {MUX_DR.vhf}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {MUX8_generic.vhf}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {MUX4_generic.vhf}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {Full_AdderSub8.vhf}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {Eight_Register_Shift.vhf}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {ISA.vhf}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {../modules/sRAM32x8_pgmC_instr.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {../modules/sRAM32x8_pgmC_data.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {Register_8bit.vhf}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {Register_4bBit.vhf}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {Registers.vhf}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {Output_DebugMode.vhf}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {MUX8Bit.vhf}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {KEYPAD_Final.vhf}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {ALU_Final.vhf}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {ALU_Control_Logic.vhf}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {P_Counter.vhf}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {ProgramGround.vhf}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {MemoryV2.vhf}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {lab_final.vhf}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set_property top lab_final $srcset
+# add_files [list {lab_final.ucf}] -fileset [get_property constrset [current_run]]
+# open_rtl_design -part xc3s500efg320-4
+Using Verific elaboration
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Parsing VHDL file "C:/Users/James/Desktop/Github/School/Phys301/lab_final/modules/debounce.vhd" into library work
+Parsing VHDL file "C:/Users/James/Documents/Xlink_projects/lab_final/modules/col_strobe.vhd" into library work
+Parsing VHDL file "C:/Users/James/Desktop/Github/School/Phys301/lab_final/modules/SSD_1dig.vhd" into library work
+Parsing VHDL file "C:/Users/James/Desktop/Github/School/Phys301/lab_final/modules/sRAM32x8_pgmC_instr.vhd" into library work
+Parsing VHDL file "C:/Users/James/Desktop/Github/School/Phys301/lab_final/modules/sRAM32x8_pgmC_data.vhd" into library work
+Parsing VHDL file "C:/Users/James/Desktop/Github/School/Phys301/lab_final/modules/sel_strobeB.vhd" into library work
+Parsing VHDL file "C:/Users/James/Desktop/Github/School/Phys301/lab_final/modules/mux4SSD.vhd" into library work
+Parsing VHDL file "C:/Users/James/Desktop/Github/School/Phys301/lab_final/modules/key_detect.vhd" into library work
+Parsing VHDL file "C:/Users/James/Desktop/Github/School/Phys301/lab_final/modules/key4_dbnc.vhd" into library work
+Parsing VHDL file "C:/Users/James/Desktop/Github/School/Phys301/lab_final/modules/decoder16keyEn.vhd" into library work
+Parsing VHDL file "C:/Users/James/Desktop/Github/School/Phys301/lab_final/modules/DCM_100M.vhd" into library work
+Parsing VHDL file "C:/Users/James/Desktop/Github/School/Phys301/lab_final/modules/CRenc4bin.vhd" into library work
+Parsing VHDL file "C:/Users/James/Desktop/Github/School/Phys301/lab_final/modules/bin2BCD3en.vhd" into library work
+Parsing VHDL file "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/ISA.vhf" into library work
+Parsing VHDL file "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" into library work
+INFO: [Designutils 20-910] Reading macro library C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn
+Parsing EDIF File [C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn]
+Finished Parsing EDIF File [C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn]
+Loading clock regions from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s500e/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s500e/ClockBuffers.xml
+Loading package from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s500e/fg320/Package.xml
+Loading io standards from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/IOStandards.xml
+INFO: [Device 21-19] Loading pkg sso from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s500e/fg320/SSORules.xml
+Loading list of drcs for the architecture : C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/drc.xml
+INFO: [Timing 38-77] Reading timing library C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/spartan3e-4.lib.
+INFO: [Timing 38-34] Done reading timing library C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/spartan3e-4.lib.
+Parsing UCF File [C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.ucf]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site B17 [C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.ucf:117]
+Finished Parsing UCF File [C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.ucf]
+INFO: [Designutils 20-20] Invalid constraints found, use command 'write_ucf -constraints invalid <file>' to save all the invalid constraints to a file
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Phase 0 | Netlist Checksum: c90d4b16
+open_rtl_design: Time (s): elapsed = 00:00:08 . Memory (MB): peak = 489.586 ; gain = 64.219
+update_compile_order -fileset sim_1
+refresh_design
+INFO: [Timing 38-77] Reading timing library C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/spartan3e-4.lib.
+INFO: [Timing 38-34] Done reading timing library C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/spartan3e-4.lib.
+Parsing UCF File [C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.ucf]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site B17 [C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.ucf:117]
+Finished Parsing UCF File [C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.ucf]
+INFO: [Designutils 20-20] Invalid constraints found, use command 'write_ucf -constraints invalid <file>' to save all the invalid constraints to a file
+exit
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Thu May 17 12:02:20 2018...
+INFO: [Common 17-83] Releasing license: PlanAhead

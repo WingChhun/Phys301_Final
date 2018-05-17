@@ -1,0 +1,145 @@
+#INPUT DEVICES
+
+#XIL_MAP_LOCWARN
+#Programming Mode Constraints
+NET "Clock" LOC =B8 ; #CLssOCK
+NET "CLK_LED" LOC =E17 ;
+NET "RunMode" LOC = R17; #Turn on for Run Mode, Off by default is Debug mode
+
+NET "RunModeLED" LOC = R4; #LED to display Run Mode, 1 for Run, 0 for Debug(default)
+
+
+NET "btn_CLR" LOC = B18; #CLEAR - current address in memory
+NET "btn_Memory" LOC = D18; #Button to write to memory
+
+NET "Toggle_Output" LOC = K18; #DEBUG - Switch between INS-Mem output, and D-mem output
+NET "En_D_Memory" LOC = L13; #DEBUG - Enable write to Data memory
+NET "En_I_Memory" LOC = N17; #DEBUG - Enable write to Instruction Memory
+
+#NET "EN_hex" LOC = G3;
+NET "EnableDataLED" LOC = P15; #DEBUG - LED for Data Enable
+NET "EnableInstructionLED" LOC = F4; #DEBUG - Enable LED for Enable Instruction
+
+#
+#WCLK for Keypad Registers Input
+#
+NET "C_WriteOne" LOC = H13; #BTN - Powers writeDataEnable
+NET "C_WriteOne" CLOCK_DEDICATED_ROUTE = FALSE;
+
+NET "C_Write" CLOCK_DEDICATED_ROUTE = FALSE;
+NET "C_Write" LOC = E18; #Debug - Toggle switch to write address, using adder,
+								#If wanting to use shiftreg, Load, SHift, Load, then toggle this switch to write correctly
+NET "C_Shift" LOC = K17; #BTN - Powers writeAddress
+NET "C_Shift" CLOCK_DEDICATED_ROUTE = FALSE;
+
+#
+# Chose between IR/DR, AddressMode/DataMode and SwitchSpeed
+#
+NET "AorD" LOC = G18; #Address or Data for programming purposes
+NET "IRorDR" LOC = H18; #DEBUG- load between Instruction register and data register
+#NET "Pulse" LOC = P6;
+#
+# Program counter 
+#
+NET "SWITCH_SPeed" LOC = L14;
+#NET "Step" LOC = C11; #Push and increment run counter by 1
+
+#
+# NEG And Overflow - Register S
+#
+
+NET "Neg" LOC = J14;
+NET "OFL" LOC = J15;
+
+#
+#Binary LED Output INstruction
+#
+#Test LEDs for IReg
+#NET "A_shiftO[0]" LOC = M5;
+#NET "A_shiftO[1]" LOC = M11;
+#NET "A_shiftO[2]" LOC = P7;
+#NET "A_shiftO[3]" LOC = P6;
+#LEDS for DReg
+##NET "D_RegisterO[0]" LOC= P7;
+#NET "D_RegisterO[1]" LOC= P6;
+
+#Flag switch for subtraction or addition, 
+# 0 = Addition
+# 1 = Subtraction
+
+#NET "Flag" LOC = G12;
+
+#NET "A_shiftO[0]" LOC = M5;
+#NET "A_shiftO[1]" LOC = M11;
+#NET "A_shiftO[2]" LOC = P7;
+#NET "A_shiftO[3]" LOC = P6;
+
+#NET "D_Output[0]" LOC = M5;
+#NET "D_Output[1]" LOC = M11;
+#NET "D_Output[2]" LOC = P7;
+#NET "D_Output[3]" LOC = P6;
+
+#Debug mode Constrains
+
+#
+#
+#
+
+#
+#Constraints for Instruction Memory
+#
+
+#
+#Constraints for Data Memory
+#
+
+
+
+
+
+
+
+
+
+
+#
+#Nexsys2 Cutoff
+#
+
+#
+#NExys2s BCD display
+#
+
+#Rows
+NET "row<0>" LOC = R11;
+NET "row<1>" LOC = R13;
+NET "row<2>" LOC = R15;
+NET "row<3>" LOC = R17; 
+
+#Test to see if power is running through colO
+NET "colO<0>" LOC = R1;
+NET "colO<1>" LOC = R3;
+NET "colO<2>" LOC = R6;
+NET "colO<3>" LOC = R8;
+
+#Anodes 0 -3
+NET "anO<3>" LOC = F17;
+NET "anO<2>" LOC = H17;
+NET "anO<1>" LOC = C18; #First anode 
+NET "anO<0>" LOC = F15; #SEcond anode on board
+
+#Plan ahead Cathode output
+NET "sseg<7>" LOC = C17; # decimal point dont need 
+NET "sseg<0>" LOC = H14; #CG
+NET "sseg<1>" LOC = J17; #CF
+NET "sseg<2>" LOC = G14; #CE
+NET "sseg<3>" LOC = D16; #CD
+NET "sseg<4>" LOC = D17; #CC
+NET "sseg<5>" LOC = F18; #CB
+NET "sseg<6>" LOC = L18; #CA
+
+#
+#Keypad Constraints and BCD
+#
+
+

@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : ALU_Final.vhf
--- /___/   /\     Timestamp : 05/17/2018 01:40:10
+-- /___/   /\     Timestamp : 05/17/2018 12:26:44
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -493,20 +493,23 @@ end ALU_Final;
 
 architecture BEHAVIORAL of ALU_Final is
    attribute BOX_TYPE   : string ;
-   signal EN_Registers : std_logic;
-   signal EN_r0        : std_logic;
-   signal EN_r1        : std_logic;
-   signal EN_r2        : std_logic;
-   signal EN_r3        : std_logic;
-   signal OnlySUB      : std_logic;
-   signal XLXN_134     : std_logic_vector (7 downto 0);
-   signal XLXN_143     : std_logic_vector (7 downto 0);
-   signal XLXN_147     : std_logic_vector (7 downto 0);
-   signal XLXN_148     : std_logic_vector (7 downto 0);
-   signal XLXN_181     : std_logic_vector (7 downto 0);
-   signal XLXN_184     : std_logic_vector (7 downto 0);
-   signal XLXN_186     : std_logic_vector (7 downto 0);
-   signal XLXN_188     : std_logic_vector (7 downto 0);
+   signal EN_Registers            : std_logic;
+   signal EN_r0                   : std_logic;
+   signal EN_r1                   : std_logic;
+   signal EN_r2                   : std_logic;
+   signal EN_r3                   : std_logic;
+   signal OnlySUB                 : std_logic;
+   signal XLXN_134                : std_logic_vector (7 downto 0);
+   signal XLXN_143                : std_logic_vector (7 downto 0);
+   signal XLXN_147                : std_logic_vector (7 downto 0);
+   signal XLXN_148                : std_logic_vector (7 downto 0);
+   signal XLXN_181                : std_logic_vector (7 downto 0);
+   signal XLXN_184                : std_logic_vector (7 downto 0);
+   signal XLXN_186                : std_logic_vector (7 downto 0);
+   signal XLXN_188                : std_logic_vector (7 downto 0);
+   signal XLXI_74_A_openSignal    : std_logic_vector (7 downto 0);
+   signal XLXI_74_B_openSignal    : std_logic_vector (7 downto 0);
+   signal XLXI_74_CTRL_openSignal : std_logic_vector (1 downto 0);
    component Full_AdderSub8_MUSER_ALU_Final
       port ( Ain      : in    std_logic_vector (7 downto 0); 
              Bin      : in    std_logic_vector (7 downto 0); 
@@ -554,6 +557,15 @@ architecture BEHAVIORAL of ALU_Final is
       port ( O : out   std_logic);
    end component;
    attribute BOX_TYPE of PULLUP : component is "BLACK_BOX";
+   
+   component addsub8
+      port ( A    : in    std_logic_vector (7 downto 0); 
+             B    : in    std_logic_vector (7 downto 0); 
+             CTRL : in    std_logic_vector (1 downto 0); 
+             NEG  : inout std_logic; 
+             OVF  : out   std_logic; 
+             C    : out   std_logic_vector (7 downto 0));
+   end component;
    
 begin
    XLXI_1 : Full_AdderSub8_MUSER_ALU_Final
@@ -663,6 +675,14 @@ begin
                 I_In(7 downto 0)=>XLXN_188(7 downto 0),
                 nIM_Din=>EN_ADDorSUB,
                 DOut(7 downto 0)=>XLXN_186(7 downto 0));
+   
+   XLXI_74 : addsub8
+      port map (A(7 downto 0)=>XLXI_74_A_openSignal(7 downto 0),
+                B(7 downto 0)=>XLXI_74_B_openSignal(7 downto 0),
+                CTRL(1 downto 0)=>XLXI_74_CTRL_openSignal(1 downto 0),
+                C=>open,
+                OVF=>open,
+                NEG=>open);
    
 end BEHAVIORAL;
 

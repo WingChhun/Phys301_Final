@@ -1,6 +1,0 @@
-[Inputs]
-nCS
-=A[4:0]=
-[Outputs]
-=Q[7:0]=
-[BiDir]

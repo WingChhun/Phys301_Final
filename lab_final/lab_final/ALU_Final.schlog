@@ -1,0 +1,7 @@
+select figure at 1411 773 8 -branches -sn=1
+select figure at 1575 290 8 -branches -sn=1
+add autowire 1376 192 1264 192 8 -sn=1
+add autowire 1376 256 1264 256 8 -sn=1
+add autowire 1376 320 1264 320 8 -sn=1
+add autowire 1664 608 1264 192 8 -sn=1
+select figure at 970 403 8 -branches -sn=1

@@ -1,1 +1,1 @@
-work	"../modules/sRAM32x8_pgmC_data.vhd"
+work	"../modules/sROM32x8_pgmB_instr.vhd"

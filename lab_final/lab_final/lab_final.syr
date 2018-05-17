@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.23 secs
+Total CPU time to Xst completion: 0.16 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.24 secs
+Total CPU time to Xst completion: 0.16 secs
  
 --> Reading design: lab_final.prj
 
@@ -42,7 +42,7 @@ Ignore Synthesis Constraint File   : NO
 ---- Target Parameters
 Output File Name                   : "lab_final"
 Output Format                      : NGC
-Target Device                      : xc3s100e-4-cp132
+Target Device                      : xc3s500e-4-fg320
 
 ---- Source Options
 Top Module Name                    : lab_final
@@ -126,12 +126,19 @@ Compiling vhdl file "C:/Users/James/Documents/Xlink_projects/lab_final/modules/c
 Architecture behavioral of Entity col_strobe is up to date.
 Compiling vhdl file "C:/Users/James/Desktop/Github/School/Phys301/lab_final/modules/decoder16keyEn.vhd" in Library work.
 Architecture doric of Entity decoder16keyen is up to date.
+Compiling vhdl file "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/addsub8.vhd" in Library work.
+Architecture minimalist of Entity fulladd is up to date.
+Architecture corinthian of Entity iod8 is up to date.
+Architecture postmodern of Entity fa8 is up to date.
+Architecture behavioral of Entity addsub8 is up to date.
 Compiling vhdl file "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/ISA.vhf" in Library work.
 Architecture behavioral of Entity isa is up to date.
-Compiling vhdl file "C:/Users/James/Desktop/Github/School/Phys301/lab_final/modules/sRAM32x8_pgmC_data.vhd" in Library work.
-Architecture behavioral of Entity sram32x8_pgmc_data is up to date.
-Compiling vhdl file "C:/Users/James/Desktop/Github/School/Phys301/lab_final/modules/sRAM32x8_pgmC_instr.vhd" in Library work.
-Architecture behavioral of Entity sram32x8_pgmc_instr is up to date.
+Compiling vhdl file "C:/Users/James/Desktop/Github/School/Phys301/lab_final/modules/sRAM32x8_pgmA_data.vhd" in Library work.
+Entity <sRAM32x8_pgmA_data> compiled.
+Entity <sRAM32x8_pgmA_data> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/James/Desktop/Github/School/Phys301/lab_final/modules/sRAM32x8_pgmA_instr.vhd" in Library work.
+Entity <sRAM32x8_pgmA_instr> compiled.
+Entity <sRAM32x8_pgmA_instr> (Architecture <Behavioral>) compiled.
 Compiling vhdl file "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" in Library work.
 Entity <m2_1_mxilinx_lab_final> compiled.
 Entity <m2_1_mxilinx_lab_final> (Architecture <behavioral>) compiled.
@@ -186,44 +193,42 @@ Entity <p_counter_muser_lab_final> (Architecture <behavioral>) compiled.
 Entity <lab_final> compiled.
 Entity <lab_final> (Architecture <behavioral>) compiled.
 Compiling vhdl file "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/MemoryV2.vhf" in Library work.
-Architecture behavioral of Entity m2_1_mxilinx_memoryv2 is up to date.
-Architecture behavioral of Entity mux4_generic_muser_memoryv2 is up to date.
-Architecture behavioral of Entity mux8_generic_muser_memoryv2 is up to date.
-Architecture behavioral of Entity output_debugmode_muser_memoryv2 is up to date.
-Architecture behavioral of Entity keypad_final_muser_memoryv2 is up to date.
-Architecture behavioral of Entity fd8ce_mxilinx_memoryv2 is up to date.
-Architecture behavioral of Entity fd4ce_mxilinx_memoryv2 is up to date.
-Architecture behavioral of Entity eight_register_shift_muser_memoryv2 is up to date.
-Architecture behavioral of Entity registers_muser_memoryv2 is up to date.
-Architecture behavioral of Entity mux8bit_muser_memoryv2 is up to date.
-Architecture behavioral of Entity memoryv2 is up to date.
+Entity <m2_1_mxilinx_memoryv2> compiled.
+Entity <m2_1_mxilinx_memoryv2> (Architecture <behavioral>) compiled.
+Entity <mux4_generic_muser_memoryv2> compiled.
+Entity <mux4_generic_muser_memoryv2> (Architecture <behavioral>) compiled.
+Entity <mux8_generic_muser_memoryv2> compiled.
+Entity <mux8_generic_muser_memoryv2> (Architecture <behavioral>) compiled.
+Entity <output_debugmode_muser_memoryv2> compiled.
+Entity <output_debugmode_muser_memoryv2> (Architecture <behavioral>) compiled.
+Entity <keypad_final_muser_memoryv2> compiled.
+Entity <keypad_final_muser_memoryv2> (Architecture <behavioral>) compiled.
+Entity <fd8ce_mxilinx_memoryv2> compiled.
+Entity <fd8ce_mxilinx_memoryv2> (Architecture <behavioral>) compiled.
+Entity <fd4ce_mxilinx_memoryv2> compiled.
+Entity <fd4ce_mxilinx_memoryv2> (Architecture <behavioral>) compiled.
+Entity <eight_register_shift_muser_memoryv2> compiled.
+Entity <eight_register_shift_muser_memoryv2> (Architecture <behavioral>) compiled.
+Entity <registers_muser_memoryv2> compiled.
+Entity <registers_muser_memoryv2> (Architecture <behavioral>) compiled.
+Entity <mux8bit_muser_memoryv2> compiled.
+Entity <mux8bit_muser_memoryv2> (Architecture <behavioral>) compiled.
+Entity <memoryv2> compiled.
+Entity <memoryv2> (Architecture <behavioral>) compiled.
 Compiling vhdl file "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/ProgramGround.vhf" in Library work.
-Entity <m2_1_mxilinx_programground> compiled.
-Entity <m2_1_mxilinx_programground> (Architecture <behavioral>) compiled.
-Entity <mux8_generic_muser_programground> compiled.
-Entity <mux8_generic_muser_programground> (Architecture <behavioral>) compiled.
-Entity <fd8ce_mxilinx_programground> compiled.
-Entity <fd8ce_mxilinx_programground> (Architecture <behavioral>) compiled.
-Entity <register_8bit_muser_programground> compiled.
-Entity <register_8bit_muser_programground> (Architecture <behavioral>) compiled.
-Entity <mux_dr_muser_programground> compiled.
-Entity <mux_dr_muser_programground> (Architecture <behavioral>) compiled.
-Entity <fd4ce_mxilinx_programground> compiled.
-Entity <fd4ce_mxilinx_programground> (Architecture <behavioral>) compiled.
-Entity <register_4bbit_muser_programground> compiled.
-Entity <register_4bbit_muser_programground> (Architecture <behavioral>) compiled.
-Entity <alu_control_logic_muser_programground> compiled.
-Entity <alu_control_logic_muser_programground> (Architecture <behavioral>) compiled.
-Entity <full_add_muser_programground> compiled.
-Entity <full_add_muser_programground> (Architecture <behavioral>) compiled.
-Entity <addersub8_muser_programground> compiled.
-Entity <addersub8_muser_programground> (Architecture <behavioral>) compiled.
-Entity <full_addersub8_muser_programground> compiled.
-Entity <full_addersub8_muser_programground> (Architecture <behavioral>) compiled.
-Entity <alu_final_muser_programground> compiled.
-Entity <alu_final_muser_programground> (Architecture <behavioral>) compiled.
-Entity <programground> compiled.
-Entity <programground> (Architecture <behavioral>) compiled.
+Architecture behavioral of Entity m2_1_mxilinx_programground is up to date.
+Architecture behavioral of Entity mux8_generic_muser_programground is up to date.
+Architecture behavioral of Entity fd8ce_mxilinx_programground is up to date.
+Architecture behavioral of Entity register_8bit_muser_programground is up to date.
+Architecture behavioral of Entity mux_dr_muser_programground is up to date.
+Architecture behavioral of Entity fd4ce_mxilinx_programground is up to date.
+Architecture behavioral of Entity register_4bbit_muser_programground is up to date.
+Architecture behavioral of Entity alu_control_logic_muser_programground is up to date.
+Architecture behavioral of Entity full_add_muser_programground is up to date.
+Architecture behavioral of Entity addersub8_muser_programground is up to date.
+Architecture behavioral of Entity full_addersub8_muser_programground is up to date.
+Architecture behavioral of Entity alu_final_muser_programground is up to date.
+Architecture behavioral of Entity programground is up to date.
 Compiling vhdl file "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/P_Counter.vhf" in Library work.
 Architecture behavioral of Entity m2_1b1_mxilinx_p_counter is up to date.
 Architecture behavioral of Entity m2_1_mxilinx_p_counter is up to date.
@@ -318,9 +323,9 @@ Analyzing hierarchy for entity <KEYPAD_Final_MUSER_lab_final> in library <work> 
 
 Analyzing hierarchy for entity <MUX8_generic_MUSER_lab_final> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <sRAM32x8_pgmC_data> in library <work> (architecture <behavioral>).
+Analyzing hierarchy for entity <sRAM32x8_pgmA_data> in library <work> (architecture <Behavioral>).
 
-Analyzing hierarchy for entity <sRAM32x8_pgmC_instr> in library <work> (architecture <behavioral>).
+Analyzing hierarchy for entity <sRAM32x8_pgmA_instr> in library <work> (architecture <Behavioral>).
 
 Analyzing hierarchy for entity <ISA> in library <work> (architecture <behavioral>).
 
@@ -377,6 +382,8 @@ Analyzing hierarchy for entity <Full_AdderSub8_MUSER_lab_final> in library <work
 
 Analyzing hierarchy for entity <MUX8_generic_MUSER_lab_final> in library <work> (architecture <behavioral>).
 
+Analyzing hierarchy for entity <addsub8> in library <work> (architecture <behavioral>).
+
 Analyzing hierarchy for entity <FD4CE_MXILINX_lab_final> in library <work> (architecture <behavioral>).
 
 Analyzing hierarchy for entity <MUX_DR_MUSER_lab_final> in library <work> (architecture <behavioral>).
@@ -387,17 +394,24 @@ Analyzing hierarchy for entity <switch_debounce> in library <work> (architecture
 
 Analyzing hierarchy for entity <addersub8_MUSER_lab_final> in library <work> (architecture <behavioral>).
 
+Analyzing hierarchy for entity <IoD8> in library <work> (architecture <corinthian>).
+
+Analyzing hierarchy for entity <FA8> in library <work> (architecture <postmodern>).
+
 Analyzing hierarchy for entity <Full_Add_MUSER_lab_final> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <fulladd> in library <work> (architecture <minimalist>).
 
 
 =========================================================================
 *                            HDL Analysis                               *
 =========================================================================
 Analyzing Entity <lab_final> in library <work> (Architecture <behavioral>).
-WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 3959: Unconnected output port 'CLK10k' of component 'DCM_100M'.
-WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 3959: Unconnected output port 'CLK1k' of component 'DCM_100M'.
-WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 3959: Unconnected output port 'CLK100' of component 'DCM_100M'.
-    Set user-defined property "HU_SET =  XLXI_44_66" for instance <XLXI_44> in unit <lab_final>.
+WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 3970: Unconnected output port 'CLK10k' of component 'DCM_100M'.
+WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 3970: Unconnected output port 'CLK1k' of component 'DCM_100M'.
+WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 3970: Unconnected output port 'CLK100' of component 'DCM_100M'.
+    Set user-defined property "HU_SET =  XLXI_44_81" for instance <XLXI_44> in unit <lab_final>.
+WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 4039: Unconnected output port 'OFL' of component 'ProgramGround_MUSER_lab_final'.
 Entity <lab_final> analyzed. Unit <lab_final> generated.
 
 Analyzing generic Entity <DCM_100M> in library <work> (Architecture <behavioral>).
@@ -412,37 +426,37 @@ Analyzing Entity <M2_1_MXILINX_lab_final> in library <work> (Architecture <behav
 Entity <M2_1_MXILINX_lab_final> analyzed. Unit <M2_1_MXILINX_lab_final> generated.
 
 Analyzing Entity <P_Counter_MUSER_lab_final> in library <work> (Architecture <behavioral>).
-WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 3669: Unconnected output port 'CEO' of component 'CB8CLED_MXILINX_lab_final'.
-WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 3669: Unconnected output port 'TC' of component 'CB8CLED_MXILINX_lab_final'.
-    Set user-defined property "HU_SET =  XLXI_1_64" for instance <XLXI_1> in unit <P_Counter_MUSER_lab_final>.
-WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 3688: Unconnected output port 'CEO' of component 'CB4CLED_MXILINX_lab_final'.
-WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 3688: Unconnected output port 'Q3' of component 'CB4CLED_MXILINX_lab_final'.
-WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 3688: Unconnected output port 'TC' of component 'CB4CLED_MXILINX_lab_final'.
-    Set user-defined property "HU_SET =  XLXI_6_65" for instance <XLXI_6> in unit <P_Counter_MUSER_lab_final>.
+WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 3676: Unconnected output port 'CEO' of component 'CB8CLED_MXILINX_lab_final'.
+WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 3676: Unconnected output port 'TC' of component 'CB8CLED_MXILINX_lab_final'.
+    Set user-defined property "HU_SET =  XLXI_1_79" for instance <XLXI_1> in unit <P_Counter_MUSER_lab_final>.
+WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 3695: Unconnected output port 'CEO' of component 'CB4CLED_MXILINX_lab_final'.
+WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 3695: Unconnected output port 'Q3' of component 'CB4CLED_MXILINX_lab_final'.
+WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 3695: Unconnected output port 'TC' of component 'CB4CLED_MXILINX_lab_final'.
+    Set user-defined property "HU_SET =  XLXI_6_80" for instance <XLXI_6> in unit <P_Counter_MUSER_lab_final>.
 Entity <P_Counter_MUSER_lab_final> analyzed. Unit <P_Counter_MUSER_lab_final> generated.
 
 Analyzing Entity <CB8CLED_MXILINX_lab_final> in library <work> (Architecture <behavioral>).
-    Set user-defined property "HU_SET =  I_Q0_55" for instance <I_Q0> in unit <CB8CLED_MXILINX_lab_final>.
-    Set user-defined property "HU_SET =  I_Q1_54" for instance <I_Q1> in unit <CB8CLED_MXILINX_lab_final>.
-    Set user-defined property "HU_SET =  I_Q2_53" for instance <I_Q2> in unit <CB8CLED_MXILINX_lab_final>.
-    Set user-defined property "HU_SET =  I_Q3_52" for instance <I_Q3> in unit <CB8CLED_MXILINX_lab_final>.
-    Set user-defined property "HU_SET =  I_Q4_51" for instance <I_Q4> in unit <CB8CLED_MXILINX_lab_final>.
-    Set user-defined property "HU_SET =  I_Q5_50" for instance <I_Q5> in unit <CB8CLED_MXILINX_lab_final>.
-    Set user-defined property "HU_SET =  I_Q6_49" for instance <I_Q6> in unit <CB8CLED_MXILINX_lab_final>.
-    Set user-defined property "HU_SET =  I_Q7_48" for instance <I_Q7> in unit <CB8CLED_MXILINX_lab_final>.
-    Set user-defined property "HU_SET =  I_TC_60" for instance <I_TC> in unit <CB8CLED_MXILINX_lab_final>.
-    Set user-defined property "HU_SET =  I_T1_63" for instance <I_T1> in unit <CB8CLED_MXILINX_lab_final>.
-    Set user-defined property "HU_SET =  I_T2_56" for instance <I_T2> in unit <CB8CLED_MXILINX_lab_final>.
-    Set user-defined property "HU_SET =  I_T3_57" for instance <I_T3> in unit <CB8CLED_MXILINX_lab_final>.
-    Set user-defined property "HU_SET =  I_T4_62" for instance <I_T4> in unit <CB8CLED_MXILINX_lab_final>.
-    Set user-defined property "HU_SET =  I_T5_61" for instance <I_T5> in unit <CB8CLED_MXILINX_lab_final>.
-    Set user-defined property "HU_SET =  I_T6_58" for instance <I_T6> in unit <CB8CLED_MXILINX_lab_final>.
-    Set user-defined property "HU_SET =  I_T7_59" for instance <I_T7> in unit <CB8CLED_MXILINX_lab_final>.
+    Set user-defined property "HU_SET =  I_Q0_70" for instance <I_Q0> in unit <CB8CLED_MXILINX_lab_final>.
+    Set user-defined property "HU_SET =  I_Q1_69" for instance <I_Q1> in unit <CB8CLED_MXILINX_lab_final>.
+    Set user-defined property "HU_SET =  I_Q2_68" for instance <I_Q2> in unit <CB8CLED_MXILINX_lab_final>.
+    Set user-defined property "HU_SET =  I_Q3_67" for instance <I_Q3> in unit <CB8CLED_MXILINX_lab_final>.
+    Set user-defined property "HU_SET =  I_Q4_66" for instance <I_Q4> in unit <CB8CLED_MXILINX_lab_final>.
+    Set user-defined property "HU_SET =  I_Q5_65" for instance <I_Q5> in unit <CB8CLED_MXILINX_lab_final>.
+    Set user-defined property "HU_SET =  I_Q6_64" for instance <I_Q6> in unit <CB8CLED_MXILINX_lab_final>.
+    Set user-defined property "HU_SET =  I_Q7_63" for instance <I_Q7> in unit <CB8CLED_MXILINX_lab_final>.
+    Set user-defined property "HU_SET =  I_TC_75" for instance <I_TC> in unit <CB8CLED_MXILINX_lab_final>.
+    Set user-defined property "HU_SET =  I_T1_78" for instance <I_T1> in unit <CB8CLED_MXILINX_lab_final>.
+    Set user-defined property "HU_SET =  I_T2_71" for instance <I_T2> in unit <CB8CLED_MXILINX_lab_final>.
+    Set user-defined property "HU_SET =  I_T3_72" for instance <I_T3> in unit <CB8CLED_MXILINX_lab_final>.
+    Set user-defined property "HU_SET =  I_T4_77" for instance <I_T4> in unit <CB8CLED_MXILINX_lab_final>.
+    Set user-defined property "HU_SET =  I_T5_76" for instance <I_T5> in unit <CB8CLED_MXILINX_lab_final>.
+    Set user-defined property "HU_SET =  I_T6_73" for instance <I_T6> in unit <CB8CLED_MXILINX_lab_final>.
+    Set user-defined property "HU_SET =  I_T7_74" for instance <I_T7> in unit <CB8CLED_MXILINX_lab_final>.
 Entity <CB8CLED_MXILINX_lab_final> analyzed. Unit <CB8CLED_MXILINX_lab_final> generated.
 
 Analyzing generic Entity <FTCLEX_MXILINX_lab_final> in library <work> (Architecture <behavioral>).
 	INIT = '0'
-    Set user-defined property "HU_SET =  I_36_30_39" for instance <I_36_30> in unit <FTCLEX_MXILINX_lab_final>.
+    Set user-defined property "HU_SET =  I_36_30_54" for instance <I_36_30> in unit <FTCLEX_MXILINX_lab_final>.
     Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCLEX_MXILINX_lab_final>.
     Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCLEX_MXILINX_lab_final>.
 Entity <FTCLEX_MXILINX_lab_final> analyzed. Unit <FTCLEX_MXILINX_lab_final> generated.
@@ -451,18 +465,17 @@ Analyzing Entity <M2_1B1_MXILINX_lab_final> in library <work> (Architecture <beh
 Entity <M2_1B1_MXILINX_lab_final> analyzed. Unit <M2_1B1_MXILINX_lab_final> generated.
 
 Analyzing Entity <CB4CLED_MXILINX_lab_final> in library <work> (Architecture <behavioral>).
-    Set user-defined property "HU_SET =  I_Q0_43" for instance <I_Q0> in unit <CB4CLED_MXILINX_lab_final>.
-    Set user-defined property "HU_SET =  I_Q1_42" for instance <I_Q1> in unit <CB4CLED_MXILINX_lab_final>.
-    Set user-defined property "HU_SET =  I_Q2_41" for instance <I_Q2> in unit <CB4CLED_MXILINX_lab_final>.
-    Set user-defined property "HU_SET =  I_Q3_40" for instance <I_Q3> in unit <CB4CLED_MXILINX_lab_final>.
-    Set user-defined property "HU_SET =  I_TC_46" for instance <I_TC> in unit <CB4CLED_MXILINX_lab_final>.
-    Set user-defined property "HU_SET =  I_T1_47" for instance <I_T1> in unit <CB4CLED_MXILINX_lab_final>.
-    Set user-defined property "HU_SET =  I_T2_44" for instance <I_T2> in unit <CB4CLED_MXILINX_lab_final>.
-    Set user-defined property "HU_SET =  I_T3_45" for instance <I_T3> in unit <CB4CLED_MXILINX_lab_final>.
+    Set user-defined property "HU_SET =  I_Q0_58" for instance <I_Q0> in unit <CB4CLED_MXILINX_lab_final>.
+    Set user-defined property "HU_SET =  I_Q1_57" for instance <I_Q1> in unit <CB4CLED_MXILINX_lab_final>.
+    Set user-defined property "HU_SET =  I_Q2_56" for instance <I_Q2> in unit <CB4CLED_MXILINX_lab_final>.
+    Set user-defined property "HU_SET =  I_Q3_55" for instance <I_Q3> in unit <CB4CLED_MXILINX_lab_final>.
+    Set user-defined property "HU_SET =  I_TC_61" for instance <I_TC> in unit <CB4CLED_MXILINX_lab_final>.
+    Set user-defined property "HU_SET =  I_T1_62" for instance <I_T1> in unit <CB4CLED_MXILINX_lab_final>.
+    Set user-defined property "HU_SET =  I_T2_59" for instance <I_T2> in unit <CB4CLED_MXILINX_lab_final>.
+    Set user-defined property "HU_SET =  I_T3_60" for instance <I_T3> in unit <CB4CLED_MXILINX_lab_final>.
 Entity <CB4CLED_MXILINX_lab_final> analyzed. Unit <CB4CLED_MXILINX_lab_final> generated.
 
 Analyzing Entity <MemoryV2_MUSER_lab_final> in library <work> (Architecture <behavioral>).
-WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 1310: Unconnected output port 'Data' of component 'Registers_MUSER_lab_final'.
 WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 1327: Unconnected output port 'keyO' of component 'KEYPAD_Final_MUSER_lab_final'.
 Entity <MemoryV2_MUSER_lab_final> analyzed. Unit <MemoryV2_MUSER_lab_final> generated.
 
@@ -494,33 +507,33 @@ Entity <SSD_1dig> analyzed. Unit <SSD_1dig> generated.
 
 Analyzing Entity <MUX4_generic_MUSER_lab_final> in library <work> (Architecture <behavioral>).
 WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 111: Unconnected output port 'O' of component 'M2_1_MXILINX_lab_final'.
-    Set user-defined property "HU_SET =  XLXI_27_11" for instance <XLXI_27> in unit <MUX4_generic_MUSER_lab_final>.
-    Set user-defined property "HU_SET =  XLXI_28_12" for instance <XLXI_28> in unit <MUX4_generic_MUSER_lab_final>.
-    Set user-defined property "HU_SET =  XLXI_32_15" for instance <XLXI_32> in unit <MUX4_generic_MUSER_lab_final>.
-    Set user-defined property "HU_SET =  XLXI_33_13" for instance <XLXI_33> in unit <MUX4_generic_MUSER_lab_final>.
-    Set user-defined property "HU_SET =  XLXI_34_14" for instance <XLXI_34> in unit <MUX4_generic_MUSER_lab_final>.
+    Set user-defined property "HU_SET =  XLXI_27_26" for instance <XLXI_27> in unit <MUX4_generic_MUSER_lab_final>.
+    Set user-defined property "HU_SET =  XLXI_28_27" for instance <XLXI_28> in unit <MUX4_generic_MUSER_lab_final>.
+    Set user-defined property "HU_SET =  XLXI_32_30" for instance <XLXI_32> in unit <MUX4_generic_MUSER_lab_final>.
+    Set user-defined property "HU_SET =  XLXI_33_28" for instance <XLXI_33> in unit <MUX4_generic_MUSER_lab_final>.
+    Set user-defined property "HU_SET =  XLXI_34_29" for instance <XLXI_34> in unit <MUX4_generic_MUSER_lab_final>.
 Entity <MUX4_generic_MUSER_lab_final> analyzed. Unit <MUX4_generic_MUSER_lab_final> generated.
 
 Analyzing Entity <MUX8Bit_MUSER_lab_final> in library <work> (Architecture <behavioral>).
 WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 1017: Unconnected output port 'O' of component 'M2_1_MXILINX_lab_final'.
-    Set user-defined property "HU_SET =  XLXI_27_28" for instance <XLXI_27> in unit <MUX8Bit_MUSER_lab_final>.
-    Set user-defined property "HU_SET =  XLXI_28_29" for instance <XLXI_28> in unit <MUX8Bit_MUSER_lab_final>.
-    Set user-defined property "HU_SET =  XLXI_32_35" for instance <XLXI_32> in unit <MUX8Bit_MUSER_lab_final>.
-    Set user-defined property "HU_SET =  XLXI_33_30" for instance <XLXI_33> in unit <MUX8Bit_MUSER_lab_final>.
-    Set user-defined property "HU_SET =  XLXI_34_31" for instance <XLXI_34> in unit <MUX8Bit_MUSER_lab_final>.
-    Set user-defined property "HU_SET =  XLXI_35_32" for instance <XLXI_35> in unit <MUX8Bit_MUSER_lab_final>.
-    Set user-defined property "HU_SET =  XLXI_36_33" for instance <XLXI_36> in unit <MUX8Bit_MUSER_lab_final>.
-    Set user-defined property "HU_SET =  XLXI_37_34" for instance <XLXI_37> in unit <MUX8Bit_MUSER_lab_final>.
-    Set user-defined property "HU_SET =  XLXI_44_36" for instance <XLXI_44> in unit <MUX8Bit_MUSER_lab_final>.
+    Set user-defined property "HU_SET =  XLXI_27_43" for instance <XLXI_27> in unit <MUX8Bit_MUSER_lab_final>.
+    Set user-defined property "HU_SET =  XLXI_28_44" for instance <XLXI_28> in unit <MUX8Bit_MUSER_lab_final>.
+    Set user-defined property "HU_SET =  XLXI_32_50" for instance <XLXI_32> in unit <MUX8Bit_MUSER_lab_final>.
+    Set user-defined property "HU_SET =  XLXI_33_45" for instance <XLXI_33> in unit <MUX8Bit_MUSER_lab_final>.
+    Set user-defined property "HU_SET =  XLXI_34_46" for instance <XLXI_34> in unit <MUX8Bit_MUSER_lab_final>.
+    Set user-defined property "HU_SET =  XLXI_35_47" for instance <XLXI_35> in unit <MUX8Bit_MUSER_lab_final>.
+    Set user-defined property "HU_SET =  XLXI_36_48" for instance <XLXI_36> in unit <MUX8Bit_MUSER_lab_final>.
+    Set user-defined property "HU_SET =  XLXI_37_49" for instance <XLXI_37> in unit <MUX8Bit_MUSER_lab_final>.
+    Set user-defined property "HU_SET =  XLXI_44_51" for instance <XLXI_44> in unit <MUX8Bit_MUSER_lab_final>.
 Entity <MUX8Bit_MUSER_lab_final> analyzed. Unit <MUX8Bit_MUSER_lab_final> generated.
 
 Analyzing Entity <Registers_MUSER_lab_final> in library <work> (Architecture <behavioral>).
 Entity <Registers_MUSER_lab_final> analyzed. Unit <Registers_MUSER_lab_final> generated.
 
 Analyzing Entity <Eight_Register_Shift_MUSER_lab_final> in library <work> (Architecture <behavioral>).
-    Set user-defined property "HU_SET =  XLXI_149_26" for instance <XLXI_149> in unit <Eight_Register_Shift_MUSER_lab_final>.
-    Set user-defined property "HU_SET =  XLXI_150_25" for instance <XLXI_150> in unit <Eight_Register_Shift_MUSER_lab_final>.
-    Set user-defined property "HU_SET =  XLXI_159_27" for instance <XLXI_159> in unit <Eight_Register_Shift_MUSER_lab_final>.
+    Set user-defined property "HU_SET =  XLXI_149_41" for instance <XLXI_149> in unit <Eight_Register_Shift_MUSER_lab_final>.
+    Set user-defined property "HU_SET =  XLXI_150_40" for instance <XLXI_150> in unit <Eight_Register_Shift_MUSER_lab_final>.
+    Set user-defined property "HU_SET =  XLXI_159_42" for instance <XLXI_159> in unit <Eight_Register_Shift_MUSER_lab_final>.
 Entity <Eight_Register_Shift_MUSER_lab_final> analyzed. Unit <Eight_Register_Shift_MUSER_lab_final> generated.
 
 Analyzing Entity <FD4CE_MXILINX_lab_final> in library <work> (Architecture <behavioral>).
@@ -570,42 +583,45 @@ Entity <decoder16keyEn> analyzed. Unit <decoder16keyEn> generated.
 
 Analyzing Entity <MUX8_generic_MUSER_lab_final> in library <work> (Architecture <behavioral>).
 WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 180: Unconnected output port 'O' of component 'M2_1_MXILINX_lab_final'.
-    Set user-defined property "HU_SET =  XLXI_27_16" for instance <XLXI_27> in unit <MUX8_generic_MUSER_lab_final>.
-    Set user-defined property "HU_SET =  XLXI_28_17" for instance <XLXI_28> in unit <MUX8_generic_MUSER_lab_final>.
-    Set user-defined property "HU_SET =  XLXI_32_23" for instance <XLXI_32> in unit <MUX8_generic_MUSER_lab_final>.
-    Set user-defined property "HU_SET =  XLXI_33_18" for instance <XLXI_33> in unit <MUX8_generic_MUSER_lab_final>.
-    Set user-defined property "HU_SET =  XLXI_34_19" for instance <XLXI_34> in unit <MUX8_generic_MUSER_lab_final>.
-    Set user-defined property "HU_SET =  XLXI_35_20" for instance <XLXI_35> in unit <MUX8_generic_MUSER_lab_final>.
-    Set user-defined property "HU_SET =  XLXI_36_21" for instance <XLXI_36> in unit <MUX8_generic_MUSER_lab_final>.
-    Set user-defined property "HU_SET =  XLXI_37_22" for instance <XLXI_37> in unit <MUX8_generic_MUSER_lab_final>.
-    Set user-defined property "HU_SET =  XLXI_44_24" for instance <XLXI_44> in unit <MUX8_generic_MUSER_lab_final>.
+    Set user-defined property "HU_SET =  XLXI_27_31" for instance <XLXI_27> in unit <MUX8_generic_MUSER_lab_final>.
+    Set user-defined property "HU_SET =  XLXI_28_32" for instance <XLXI_28> in unit <MUX8_generic_MUSER_lab_final>.
+    Set user-defined property "HU_SET =  XLXI_32_38" for instance <XLXI_32> in unit <MUX8_generic_MUSER_lab_final>.
+    Set user-defined property "HU_SET =  XLXI_33_33" for instance <XLXI_33> in unit <MUX8_generic_MUSER_lab_final>.
+    Set user-defined property "HU_SET =  XLXI_34_34" for instance <XLXI_34> in unit <MUX8_generic_MUSER_lab_final>.
+    Set user-defined property "HU_SET =  XLXI_35_35" for instance <XLXI_35> in unit <MUX8_generic_MUSER_lab_final>.
+    Set user-defined property "HU_SET =  XLXI_36_36" for instance <XLXI_36> in unit <MUX8_generic_MUSER_lab_final>.
+    Set user-defined property "HU_SET =  XLXI_37_37" for instance <XLXI_37> in unit <MUX8_generic_MUSER_lab_final>.
+    Set user-defined property "HU_SET =  XLXI_44_39" for instance <XLXI_44> in unit <MUX8_generic_MUSER_lab_final>.
 Entity <MUX8_generic_MUSER_lab_final> analyzed. Unit <MUX8_generic_MUSER_lab_final> generated.
 
-Analyzing Entity <sRAM32x8_pgmC_data> in library <work> (Architecture <behavioral>).
-Entity <sRAM32x8_pgmC_data> analyzed. Unit <sRAM32x8_pgmC_data> generated.
+Analyzing Entity <sRAM32x8_pgmA_data> in library <work> (Architecture <Behavioral>).
+Entity <sRAM32x8_pgmA_data> analyzed. Unit <sRAM32x8_pgmA_data> generated.
 
-Analyzing Entity <sRAM32x8_pgmC_instr> in library <work> (Architecture <behavioral>).
-Entity <sRAM32x8_pgmC_instr> analyzed. Unit <sRAM32x8_pgmC_instr> generated.
+Analyzing Entity <sRAM32x8_pgmA_instr> in library <work> (Architecture <Behavioral>).
+Entity <sRAM32x8_pgmA_instr> analyzed. Unit <sRAM32x8_pgmA_instr> generated.
 
 Analyzing Entity <ProgramGround_MUSER_lab_final> in library <work> (Architecture <behavioral>).
-WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 2689: Unconnected output port 'EN_Reg1' of component 'Register_4bBit_MUSER_lab_final'.
-WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 2689: Unconnected output port 'EN_Reg3' of component 'Register_4bBit_MUSER_lab_final'.
-WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 2689: Unconnected output port 'EN_Reg0' of component 'Register_4bBit_MUSER_lab_final'.
-WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 2689: Unconnected output port 'EN_Reg2' of component 'Register_4bBit_MUSER_lab_final'.
+WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 2701: Unconnected output port 'EN_Reg1' of component 'Register_4bBit_MUSER_lab_final'.
+WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 2701: Unconnected output port 'EN_Reg3' of component 'Register_4bBit_MUSER_lab_final'.
+WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 2701: Unconnected output port 'EN_Reg0' of component 'Register_4bBit_MUSER_lab_final'.
+WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 2701: Unconnected output port 'EN_Reg2' of component 'Register_4bBit_MUSER_lab_final'.
 Entity <ProgramGround_MUSER_lab_final> analyzed. Unit <ProgramGround_MUSER_lab_final> generated.
 
 Analyzing Entity <ISA> in library <work> (Architecture <behavioral>).
 Entity <ISA> analyzed. Unit <ISA> generated.
 
 Analyzing Entity <Register_8bit_MUSER_lab_final> in library <work> (Architecture <behavioral>).
-    Set user-defined property "HU_SET =  XLXI_1_37" for instance <XLXI_1> in unit <Register_8bit_MUSER_lab_final>.
+    Set user-defined property "HU_SET =  XLXI_1_52" for instance <XLXI_1> in unit <Register_8bit_MUSER_lab_final>.
 Entity <Register_8bit_MUSER_lab_final> analyzed. Unit <Register_8bit_MUSER_lab_final> generated.
 
 Analyzing Entity <MUX_DR_MUSER_lab_final> in library <work> (Architecture <behavioral>).
 Entity <MUX_DR_MUSER_lab_final> analyzed. Unit <MUX_DR_MUSER_lab_final> generated.
 
 Analyzing Entity <ALU_Final_MUSER_lab_final> in library <work> (Architecture <behavioral>).
-WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 2148: Unconnected output port 'Cout' of component 'Full_AdderSub8_MUSER_lab_final'.
+WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 2160: Unconnected output port 'Cout' of component 'Full_AdderSub8_MUSER_lab_final'.
+WARNING:Xst:754 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 2268: Unconnected inout port 'NEG' of component 'addsub8'.
+WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 2268: Unconnected output port 'OVF' of component 'addsub8'.
+WARNING:Xst:753 - "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf" line 2268: Unconnected output port 'C' of component 'addsub8'.
 Entity <ALU_Final_MUSER_lab_final> analyzed. Unit <ALU_Final_MUSER_lab_final> generated.
 
 Analyzing Entity <Full_AdderSub8_MUSER_lab_final> in library <work> (Architecture <behavioral>).
@@ -618,11 +634,23 @@ Entity <addersub8_MUSER_lab_final> analyzed. Unit <addersub8_MUSER_lab_final> ge
 Analyzing Entity <Full_Add_MUSER_lab_final> in library <work> (Architecture <behavioral>).
 Entity <Full_Add_MUSER_lab_final> analyzed. Unit <Full_Add_MUSER_lab_final> generated.
 
+Analyzing Entity <addsub8> in library <work> (Architecture <behavioral>).
+Entity <addsub8> analyzed. Unit <addsub8> generated.
+
+Analyzing Entity <IoD8> in library <work> (Architecture <corinthian>).
+Entity <IoD8> analyzed. Unit <IoD8> generated.
+
+Analyzing Entity <FA8> in library <work> (Architecture <postmodern>).
+Entity <FA8> analyzed. Unit <FA8> generated.
+
+Analyzing Entity <fulladd> in library <work> (Architecture <minimalist>).
+Entity <fulladd> analyzed. Unit <fulladd> generated.
+
 Analyzing Entity <ALU_Control_Logic_MUSER_lab_final> in library <work> (Architecture <behavioral>).
 Entity <ALU_Control_Logic_MUSER_lab_final> analyzed. Unit <ALU_Control_Logic_MUSER_lab_final> generated.
 
 Analyzing Entity <Register_4bBit_MUSER_lab_final> in library <work> (Architecture <behavioral>).
-    Set user-defined property "HU_SET =  XLXI_1_38" for instance <XLXI_1> in unit <Register_4bBit_MUSER_lab_final>.
+    Set user-defined property "HU_SET =  XLXI_1_53" for instance <XLXI_1> in unit <Register_4bBit_MUSER_lab_final>.
 Entity <Register_4bBit_MUSER_lab_final> analyzed. Unit <Register_4bBit_MUSER_lab_final> generated.
 
 
@@ -662,8 +690,8 @@ Synthesizing Unit <DCM_100M>.
 Unit <DCM_100M> synthesized.
 
 
-Synthesizing Unit <sRAM32x8_pgmC_data>.
-    Related source file is "C:/Users/James/Desktop/Github/School/Phys301/lab_final/modules/sRAM32x8_pgmC_data.vhd".
+Synthesizing Unit <sRAM32x8_pgmA_data>.
+    Related source file is "C:/Users/James/Desktop/Github/School/Phys301/lab_final/modules/sRAM32x8_pgmA_data.vhd".
     Found 8-bit tristate buffer for signal <Q>.
     Found 256-bit register for signal <mem>.
     Found 8-bit 32-to-1 multiplexer for signal <Q$mux0000> created at line 71.
@@ -672,11 +700,11 @@ INFO:Xst:738 - HDL ADVISOR - 256 flip-flops were inferred for signal <mem>. You 
 	inferred 256 D-type flip-flop(s).
 	inferred   8 Multiplexer(s).
 	inferred   8 Tristate(s).
-Unit <sRAM32x8_pgmC_data> synthesized.
+Unit <sRAM32x8_pgmA_data> synthesized.
 
 
-Synthesizing Unit <sRAM32x8_pgmC_instr>.
-    Related source file is "C:/Users/James/Desktop/Github/School/Phys301/lab_final/modules/sRAM32x8_pgmC_instr.vhd".
+Synthesizing Unit <sRAM32x8_pgmA_instr>.
+    Related source file is "C:/Users/James/Desktop/Github/School/Phys301/lab_final/modules/sRAM32x8_pgmA_instr.vhd".
     Found 8-bit tristate buffer for signal <Q>.
     Found 256-bit register for signal <mem>.
     Found 8-bit 32-to-1 multiplexer for signal <Q$mux0000> created at line 71.
@@ -685,7 +713,7 @@ INFO:Xst:738 - HDL ADVISOR - 256 flip-flops were inferred for signal <mem>. You 
 	inferred 256 D-type flip-flop(s).
 	inferred   8 Multiplexer(s).
 	inferred   8 Tristate(s).
-Unit <sRAM32x8_pgmC_instr> synthesized.
+Unit <sRAM32x8_pgmA_instr> synthesized.
 
 
 Synthesizing Unit <sel_strobeB>.
@@ -798,6 +826,20 @@ Synthesizing Unit <switch_debounce>.
 Unit <switch_debounce> synthesized.
 
 
+Synthesizing Unit <IoD8>.
+    Related source file is "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/addsub8.vhd".
+    Found 8-bit xor2 for signal <Q>.
+Unit <IoD8> synthesized.
+
+
+Synthesizing Unit <fulladd>.
+    Related source file is "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/addsub8.vhd".
+    Found 1-bit xor3 for signal <S>.
+    Summary:
+	inferred   1 Xor(s).
+Unit <fulladd> synthesized.
+
+
 Synthesizing Unit <M2_1_MXILINX_lab_final>.
     Related source file is "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf".
 Unit <M2_1_MXILINX_lab_final> synthesized.
@@ -843,6 +885,11 @@ Unit <ALU_Control_Logic_MUSER_lab_final> synthesized.
 Synthesizing Unit <Full_Add_MUSER_lab_final>.
     Related source file is "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf".
 Unit <Full_Add_MUSER_lab_final> synthesized.
+
+
+Synthesizing Unit <FA8>.
+    Related source file is "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/addsub8.vhd".
+Unit <FA8> synthesized.
 
 
 Synthesizing Unit <FTCLEX_MXILINX_lab_final>.
@@ -893,6 +940,17 @@ Unit <Register_8bit_MUSER_lab_final> synthesized.
 Synthesizing Unit <Register_4bBit_MUSER_lab_final>.
     Related source file is "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf".
 Unit <Register_4bBit_MUSER_lab_final> synthesized.
+
+
+Synthesizing Unit <addsub8>.
+    Related source file is "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/addsub8.vhd".
+WARNING:Xst:647 - Input <CTRL<1>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1780 - Signal <t> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <Cm> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Found 8-bit adder for signal <C$addsub0000> created at line 170.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <addsub8> synthesized.
 
 
 Synthesizing Unit <addersub8_MUSER_lab_final>.
@@ -952,10 +1010,9 @@ WARNING:Xst:647 - Input <Reg0> is never used. This port will be preserved and le
 WARNING:Xst:647 - Input <RegS<3:2>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <AorD> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <EN_hex> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:653 - Signal <XLXN_600> is used but never assigned. This sourceless signal will be automatically connected to value 00000000.
 WARNING:Xst:1780 - Signal <XLXN_460> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:653 - Signal <XLXI_180_nCS_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
-WARNING:Xst:653 - Signal <XLXI_179_nCS_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <XLXI_204_nCS_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <XLXI_203_nCS_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
 WARNING:Xst:653 - Signal <XLXI_171_I_In_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 00000000.
 WARNING:Xst:653 - Signal <XLXI_133_Reg0_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 00000000.
 WARNING:Xst:653 - Signal <XLXI_133_EN_Reg1_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
@@ -972,6 +1029,9 @@ WARNING:Xst:647 - Input <nADD_SUB> is never used. This port will be preserved an
 WARNING:Xst:647 - Input <ADI> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:653 - Signal <XLXN_188> is used but never assigned. This sourceless signal will be automatically connected to value 00000000.
 WARNING:Xst:653 - Signal <XLXN_181> is used but never assigned. This sourceless signal will be automatically connected to value 00000000.
+WARNING:Xst:653 - Signal <XLXI_74_CTRL_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 00.
+WARNING:Xst:653 - Signal <XLXI_74_B_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 00000000.
+WARNING:Xst:653 - Signal <XLXI_74_A_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 00000000.
 Unit <ALU_Final_MUSER_lab_final> synthesized.
 
 
@@ -979,13 +1039,10 @@ Synthesizing Unit <ProgramGround_MUSER_lab_final>.
     Related source file is "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf".
 WARNING:Xst:647 - Input <tick<2>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <tick<0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:653 - Signal <XLXN_472> is used but never assigned. This sourceless signal will be automatically connected to value 0.
-WARNING:Xst:653 - Signal <XLXN_471> is used but never assigned. This sourceless signal will be automatically connected to value 0.
-WARNING:Xst:653 - Signal <XLXN_469> is used but never assigned. This sourceless signal will be automatically connected to value 0.
-WARNING:Xst:653 - Signal <XLXN_465> is used but never assigned. This sourceless signal will be automatically connected to value 0000.
 WARNING:Xst:653 - Signal <XLXI_151_nADD_SUB_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
 WARNING:Xst:646 - Signal <SET> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:1780 - Signal <RegWrite> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <RegIn<3:2>> is used but never assigned. This sourceless signal will be automatically connected to value 00.
 WARNING:Xst:646 - Signal <MVI_r3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <MVI_r2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <MVI_r1> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
@@ -1001,6 +1058,8 @@ Unit <ProgramGround_MUSER_lab_final> synthesized.
 Synthesizing Unit <lab_final>.
     Related source file is "C:/Users/James/Desktop/Github/School/Phys301/lab_final/lab_final/lab_final.vhf".
 WARNING:Xst:647 - Input <btn_writeData> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:653 - Signal <XLXI_68_I1_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <XLXI_68_I0_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
 WARNING:Xst:653 - Signal <XLXI_57_I0_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
 WARNING:Xst:646 - Signal <Reg3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <Reg2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
@@ -1016,9 +1075,10 @@ Macro Statistics
  16x7-bit ROM                                          : 1
  4x2-bit ROM                                           : 1
  8x4-bit ROM                                           : 2
-# Adders/Subtractors                                   : 19
+# Adders/Subtractors                                   : 20
  32-bit adder                                          : 15
  32-bit subtractor                                     : 4
+ 8-bit adder                                           : 1
 # Counters                                             : 15
  32-bit up counter                                     : 15
 # Registers                                            : 127
@@ -1037,8 +1097,9 @@ Macro Statistics
  8-bit 32-to-1 multiplexer                             : 2
 # Tristates                                            : 2
  8-bit tristate buffer                                 : 2
-# Xors                                                 : 4
- 1-bit xor2                                            : 4
+# Xors                                                 : 20
+ 1-bit xor2                                            : 12
+ 1-bit xor3                                            : 8
 
 =========================================================================
 
@@ -1048,322 +1109,10 @@ Macro Statistics
 
 WARNING:Xst:1290 - Hierarchical block <XLXI_17> is unconnected in block <XLXI_162>.
    It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <XLXI_74> is unconnected in block <XLXI_151>.
+   It will be removed from the design.
 INFO:Xst:2261 - The FF/Latch <Dout2_2> in Unit <XLXI_14> is equivalent to the following FF/Latch, which will be removed : <Dout2_3> 
-WARNING:Xst:1426 - The value init of the FF/Latch mem_1_1 hinder the constant cleaning in the block XLXI_180.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch mem_1_2 hinder the constant cleaning in the block XLXI_180.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch mem_2_0 hinder the constant cleaning in the block XLXI_180.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch mem_3_1 hinder the constant cleaning in the block XLXI_180.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch mem_5_0 hinder the constant cleaning in the block XLXI_180.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch mem_6_1 hinder the constant cleaning in the block XLXI_180.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch mem_7_0 hinder the constant cleaning in the block XLXI_180.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch mem_8_1 hinder the constant cleaning in the block XLXI_180.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch mem_9_0 hinder the constant cleaning in the block XLXI_180.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch mem_9_4 hinder the constant cleaning in the block XLXI_180.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch mem_10_0 hinder the constant cleaning in the block XLXI_180.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch mem_10_2 hinder the constant cleaning in the block XLXI_180.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch mem_12_1 hinder the constant cleaning in the block XLXI_180.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch mem_12_2 hinder the constant cleaning in the block XLXI_180.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch mem_12_4 hinder the constant cleaning in the block XLXI_180.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch mem_13_0 hinder the constant cleaning in the block XLXI_180.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch mem_13_2 hinder the constant cleaning in the block XLXI_180.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch mem_14_1 hinder the constant cleaning in the block XLXI_180.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch mem_14_2 hinder the constant cleaning in the block XLXI_180.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch mem_14_4 hinder the constant cleaning in the block XLXI_180.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch mem_15_0 hinder the constant cleaning in the block XLXI_180.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch mem_15_2 hinder the constant cleaning in the block XLXI_180.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch mem_16_0 hinder the constant cleaning in the block XLXI_180.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch mem_16_1 hinder the constant cleaning in the block XLXI_180.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch mem_16_4 hinder the constant cleaning in the block XLXI_180.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch mem_17_0 hinder the constant cleaning in the block XLXI_180.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch mem_17_2 hinder the constant cleaning in the block XLXI_180.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch mem_18_1 hinder the constant cleaning in the block XLXI_180.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch mem_19_0 hinder the constant cleaning in the block XLXI_180.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch mem_20_0 hinder the constant cleaning in the block XLXI_180.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch mem_20_2 hinder the constant cleaning in the block XLXI_180.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch mem_20_4 hinder the constant cleaning in the block XLXI_180.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch mem_21_0 hinder the constant cleaning in the block XLXI_180.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch mem_21_2 hinder the constant cleaning in the block XLXI_180.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch mem_23_0 hinder the constant cleaning in the block XLXI_180.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch mem_23_4 hinder the constant cleaning in the block XLXI_180.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch mem_24_0 hinder the constant cleaning in the block XLXI_180.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch mem_24_2 hinder the constant cleaning in the block XLXI_180.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch mem_25_0 hinder the constant cleaning in the block XLXI_180.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch mem_25_4 hinder the constant cleaning in the block XLXI_180.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch mem_27_0 hinder the constant cleaning in the block XLXI_180.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch mem_27_2 hinder the constant cleaning in the block XLXI_180.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch mem_28_0 hinder the constant cleaning in the block XLXI_180.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch mem_28_1 hinder the constant cleaning in the block XLXI_180.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch mem_28_2 hinder the constant cleaning in the block XLXI_180.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch mem_28_3 hinder the constant cleaning in the block XLXI_180.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch mem_28_4 hinder the constant cleaning in the block XLXI_180.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch mem_28_5 hinder the constant cleaning in the block XLXI_180.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch mem_28_6 hinder the constant cleaning in the block XLXI_180.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch mem_28_7 hinder the constant cleaning in the block XLXI_180.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch mem_31_1 hinder the constant cleaning in the block XLXI_180.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch mem_31_2 hinder the constant cleaning in the block XLXI_180.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch mem_31_3 hinder the constant cleaning in the block XLXI_180.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch mem_31_4 hinder the constant cleaning in the block XLXI_180.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch mem_31_5 hinder the constant cleaning in the block XLXI_180.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch mem_31_6 hinder the constant cleaning in the block XLXI_180.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch mem_31_7 hinder the constant cleaning in the block XLXI_180.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch mem_1_0 hinder the constant cleaning in the block XLXI_180.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1293 - FF/Latch <mem_18_5> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_18_6> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_18_7> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_19_1> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_19_2> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_19_3> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_19_4> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_19_5> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_19_6> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_19_7> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_30_0> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_30_1> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_30_2> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_30_3> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_30_4> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_30_5> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_30_6> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_30_7> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_25_1> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_25_2> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_25_3> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_25_5> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_25_6> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_25_7> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_22_5> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_22_6> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_22_7> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_17_1> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_17_3> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_17_4> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_17_5> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_17_6> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_17_7> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_24_1> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_24_3> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_24_4> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_24_5> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_24_6> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_24_7> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_23_1> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_23_2> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_23_3> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_23_5> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_23_6> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_23_7> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_18_0> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_18_2> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_18_3> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_18_4> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_1_5> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_1_6> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_1_7> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_2_1> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_2_2> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_2_3> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_2_4> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_2_5> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_2_6> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_2_7> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_29_0> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_29_1> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_29_2> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_29_3> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_29_4> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_29_5> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_29_6> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_29_7> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_3_0> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_3_2> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_3_3> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_3_4> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_3_5> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_3_6> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_3_7> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_31_0> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_26_0> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_26_1> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_26_2> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_26_3> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_26_4> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_26_5> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_26_6> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_26_7> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_0_0> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_0_1> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_0_2> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_0_3> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_0_4> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_0_5> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_0_6> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_0_7> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_27_1> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_27_3> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_27_4> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_27_5> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_27_6> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_27_7> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_1_3> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_1_4> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_7_3> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_7_4> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_7_5> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_7_6> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_7_7> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_8_0> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_8_2> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_8_3> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_8_4> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_8_5> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_8_6> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_8_7> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_9_1> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_9_2> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_9_3> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_9_5> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_9_6> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_9_7> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_10_1> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_10_3> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_10_4> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_10_5> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_10_6> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_10_7> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_11_0> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <Dout2_2> (without init value) has a constant value of 0 in block <XLXI_14>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_6_0> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_6_2> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_6_3> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_6_4> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_6_5> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_6_6> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_6_7> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_4_0> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_4_1> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_4_2> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_4_3> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_4_4> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_4_5> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_4_6> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_4_7> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_5_1> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_5_2> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_5_3> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_5_4> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_5_5> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_5_6> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_5_7> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_7_1> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_7_2> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_20_5> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_20_6> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_20_7> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_15_1> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_15_3> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_15_4> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_15_5> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_15_6> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_15_7> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_21_1> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_21_3> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_21_4> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_21_5> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_21_6> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_21_7> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_16_2> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_16_3> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_16_5> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_16_6> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_16_7> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_22_0> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_22_1> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_22_2> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_22_3> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_22_4> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_11_1> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_11_2> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_11_3> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_11_4> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_11_5> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_11_6> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_11_7> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_12_0> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_12_3> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_12_5> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_12_6> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_12_7> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_13_1> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_13_3> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_13_4> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_13_5> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_13_6> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_13_7> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_14_0> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_14_3> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_14_5> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_14_6> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_14_7> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_20_1> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <mem_20_3> has a constant value of 0 in block <XLXI_180>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:2404 -  FFs/Latches <Dout2<3:2>> (without init value) have a constant value of 0 in block <bin2BCD3en>.
 
 Synthesizing (advanced) Unit <sel_strobeB>.
@@ -1379,9 +1128,10 @@ Macro Statistics
  16x7-bit ROM                                          : 1
  4x2-bit ROM                                           : 1
  8x4-bit ROM                                           : 2
-# Adders/Subtractors                                   : 19
+# Adders/Subtractors                                   : 20
  32-bit adder                                          : 15
  32-bit subtractor                                     : 4
+ 8-bit adder                                           : 1
 # Counters                                             : 15
  32-bit up counter                                     : 15
 # Registers                                            : 846
@@ -1394,8 +1144,9 @@ Macro Statistics
 # Multiplexers                                         : 6
  32-bit 4-to-1 multiplexer                             : 4
  8-bit 32-to-1 multiplexer                             : 2
-# Xors                                                 : 4
- 1-bit xor2                                            : 4
+# Xors                                                 : 20
+ 1-bit xor2                                            : 12
+ 1-bit xor3                                            : 8
 
 =========================================================================
 
@@ -1403,135 +1154,7 @@ Macro Statistics
 *                         Low Level Synthesis                           *
 =========================================================================
 INFO:Xst:2261 - The FF/Latch <lobster> in Unit <key_detect> is equivalent to the following FF/Latch, which will be removed : <keyL> 
-INFO:Xst:2261 - The FF/Latch <mem_11_0> in Unit <sRAM32x8_pgmC_instr> is equivalent to the following 7 FFs/Latches, which will be removed : <mem_11_1> <mem_11_2> <mem_11_3> <mem_11_4> <mem_11_5> <mem_11_6> <mem_11_7> 
-INFO:Xst:2261 - The FF/Latch <mem_4_0> in Unit <sRAM32x8_pgmC_instr> is equivalent to the following 7 FFs/Latches, which will be removed : <mem_4_1> <mem_4_2> <mem_4_3> <mem_4_4> <mem_4_5> <mem_4_6> <mem_4_7> 
-INFO:Xst:2261 - The FF/Latch <mem_29_0> in Unit <sRAM32x8_pgmC_instr> is equivalent to the following 7 FFs/Latches, which will be removed : <mem_29_1> <mem_29_2> <mem_29_3> <mem_29_4> <mem_29_5> <mem_29_6> <mem_29_7> 
-INFO:Xst:2261 - The FF/Latch <mem_2_1> in Unit <sRAM32x8_pgmC_instr> is equivalent to the following 6 FFs/Latches, which will be removed : <mem_2_2> <mem_2_3> <mem_2_4> <mem_2_5> <mem_2_6> <mem_2_7> 
-INFO:Xst:2261 - The FF/Latch <mem_27_1> in Unit <sRAM32x8_pgmC_instr> is equivalent to the following 5 FFs/Latches, which will be removed : <mem_27_3> <mem_27_4> <mem_27_5> <mem_27_6> <mem_27_7> 
-INFO:Xst:2261 - The FF/Latch <mem_27_0> in Unit <sRAM32x8_pgmC_instr> is equivalent to the following FF/Latch, which will be removed : <mem_27_2> 
-INFO:Xst:2261 - The FF/Latch <mem_30_0> in Unit <sRAM32x8_pgmC_instr> is equivalent to the following 7 FFs/Latches, which will be removed : <mem_30_1> <mem_30_2> <mem_30_3> <mem_30_4> <mem_30_5> <mem_30_6> <mem_30_7> 
-INFO:Xst:2261 - The FF/Latch <mem_25_1> in Unit <sRAM32x8_pgmC_instr> is equivalent to the following 5 FFs/Latches, which will be removed : <mem_25_2> <mem_25_3> <mem_25_5> <mem_25_6> <mem_25_7> 
-INFO:Xst:2261 - The FF/Latch <mem_25_0> in Unit <sRAM32x8_pgmC_instr> is equivalent to the following FF/Latch, which will be removed : <mem_25_4> 
-INFO:Xst:2261 - The FF/Latch <mem_23_1> in Unit <sRAM32x8_pgmC_instr> is equivalent to the following 5 FFs/Latches, which will be removed : <mem_23_2> <mem_23_3> <mem_23_5> <mem_23_6> <mem_23_7> 
-INFO:Xst:2261 - The FF/Latch <mem_23_0> in Unit <sRAM32x8_pgmC_instr> is equivalent to the following FF/Latch, which will be removed : <mem_23_4> 
-INFO:Xst:2261 - The FF/Latch <mem_18_0> in Unit <sRAM32x8_pgmC_instr> is equivalent to the following 6 FFs/Latches, which will be removed : <mem_18_2> <mem_18_3> <mem_18_4> <mem_18_5> <mem_18_6> <mem_18_7> 
-INFO:Xst:2261 - The FF/Latch <mem_21_1> in Unit <sRAM32x8_pgmC_instr> is equivalent to the following 5 FFs/Latches, which will be removed : <mem_21_3> <mem_21_4> <mem_21_5> <mem_21_6> <mem_21_7> 
-INFO:Xst:2261 - The FF/Latch <mem_21_0> in Unit <sRAM32x8_pgmC_instr> is equivalent to the following FF/Latch, which will be removed : <mem_21_2> 
-INFO:Xst:2261 - The FF/Latch <mem_16_2> in Unit <sRAM32x8_pgmC_instr> is equivalent to the following 4 FFs/Latches, which will be removed : <mem_16_3> <mem_16_5> <mem_16_6> <mem_16_7> 
-INFO:Xst:2261 - The FF/Latch <mem_16_0> in Unit <sRAM32x8_pgmC_instr> is equivalent to the following 2 FFs/Latches, which will be removed : <mem_16_1> <mem_16_4> 
-INFO:Xst:2261 - The FF/Latch <mem_9_1> in Unit <sRAM32x8_pgmC_instr> is equivalent to the following 5 FFs/Latches, which will be removed : <mem_9_2> <mem_9_3> <mem_9_5> <mem_9_6> <mem_9_7> 
-INFO:Xst:2261 - The FF/Latch <mem_9_0> in Unit <sRAM32x8_pgmC_instr> is equivalent to the following FF/Latch, which will be removed : <mem_9_4> 
-INFO:Xst:2261 - The FF/Latch <mem_14_0> in Unit <sRAM32x8_pgmC_instr> is equivalent to the following 4 FFs/Latches, which will be removed : <mem_14_3> <mem_14_5> <mem_14_6> <mem_14_7> 
-INFO:Xst:2261 - The FF/Latch <mem_14_1> in Unit <sRAM32x8_pgmC_instr> is equivalent to the following 2 FFs/Latches, which will be removed : <mem_14_2> <mem_14_4> 
-INFO:Xst:2261 - The FF/Latch <mem_7_1> in Unit <sRAM32x8_pgmC_instr> is equivalent to the following 6 FFs/Latches, which will be removed : <mem_7_2> <mem_7_3> <mem_7_4> <mem_7_5> <mem_7_6> <mem_7_7> 
-INFO:Xst:2261 - The FF/Latch <mem_0_0> in Unit <sRAM32x8_pgmC_instr> is equivalent to the following 7 FFs/Latches, which will be removed : <mem_0_1> <mem_0_2> <mem_0_3> <mem_0_4> <mem_0_5> <mem_0_6> <mem_0_7> 
-INFO:Xst:2261 - The FF/Latch <mem_12_0> in Unit <sRAM32x8_pgmC_instr> is equivalent to the following 4 FFs/Latches, which will be removed : <mem_12_3> <mem_12_5> <mem_12_6> <mem_12_7> 
-INFO:Xst:2261 - The FF/Latch <mem_12_1> in Unit <sRAM32x8_pgmC_instr> is equivalent to the following 2 FFs/Latches, which will be removed : <mem_12_2> <mem_12_4> 
-INFO:Xst:2261 - The FF/Latch <mem_5_1> in Unit <sRAM32x8_pgmC_instr> is equivalent to the following 6 FFs/Latches, which will be removed : <mem_5_2> <mem_5_3> <mem_5_4> <mem_5_5> <mem_5_6> <mem_5_7> 
-INFO:Xst:2261 - The FF/Latch <mem_10_1> in Unit <sRAM32x8_pgmC_instr> is equivalent to the following 5 FFs/Latches, which will be removed : <mem_10_3> <mem_10_4> <mem_10_5> <mem_10_6> <mem_10_7> 
-INFO:Xst:2261 - The FF/Latch <mem_10_0> in Unit <sRAM32x8_pgmC_instr> is equivalent to the following FF/Latch, which will be removed : <mem_10_2> 
-INFO:Xst:2261 - The FF/Latch <mem_3_0> in Unit <sRAM32x8_pgmC_instr> is equivalent to the following 6 FFs/Latches, which will be removed : <mem_3_2> <mem_3_3> <mem_3_4> <mem_3_5> <mem_3_6> <mem_3_7> 
-INFO:Xst:2261 - The FF/Latch <mem_28_0> in Unit <sRAM32x8_pgmC_instr> is equivalent to the following 7 FFs/Latches, which will be removed : <mem_28_1> <mem_28_2> <mem_28_3> <mem_28_4> <mem_28_5> <mem_28_6> <mem_28_7> 
-INFO:Xst:2261 - The FF/Latch <mem_1_3> in Unit <sRAM32x8_pgmC_instr> is equivalent to the following 4 FFs/Latches, which will be removed : <mem_1_4> <mem_1_5> <mem_1_6> <mem_1_7> 
-INFO:Xst:2261 - The FF/Latch <mem_1_0> in Unit <sRAM32x8_pgmC_instr> is equivalent to the following 2 FFs/Latches, which will be removed : <mem_1_1> <mem_1_2> 
-INFO:Xst:2261 - The FF/Latch <mem_31_1> in Unit <sRAM32x8_pgmC_instr> is equivalent to the following 6 FFs/Latches, which will be removed : <mem_31_2> <mem_31_3> <mem_31_4> <mem_31_5> <mem_31_6> <mem_31_7> 
-INFO:Xst:2261 - The FF/Latch <mem_26_0> in Unit <sRAM32x8_pgmC_instr> is equivalent to the following 7 FFs/Latches, which will be removed : <mem_26_1> <mem_26_2> <mem_26_3> <mem_26_4> <mem_26_5> <mem_26_6> <mem_26_7> 
-INFO:Xst:2261 - The FF/Latch <mem_24_1> in Unit <sRAM32x8_pgmC_instr> is equivalent to the following 5 FFs/Latches, which will be removed : <mem_24_3> <mem_24_4> <mem_24_5> <mem_24_6> <mem_24_7> 
-INFO:Xst:2261 - The FF/Latch <mem_24_0> in Unit <sRAM32x8_pgmC_instr> is equivalent to the following FF/Latch, which will be removed : <mem_24_2> 
-INFO:Xst:2261 - The FF/Latch <mem_19_1> in Unit <sRAM32x8_pgmC_instr> is equivalent to the following 6 FFs/Latches, which will be removed : <mem_19_2> <mem_19_3> <mem_19_4> <mem_19_5> <mem_19_6> <mem_19_7> 
-INFO:Xst:2261 - The FF/Latch <mem_22_0> in Unit <sRAM32x8_pgmC_instr> is equivalent to the following 7 FFs/Latches, which will be removed : <mem_22_1> <mem_22_2> <mem_22_3> <mem_22_4> <mem_22_5> <mem_22_6> <mem_22_7> 
-INFO:Xst:2261 - The FF/Latch <mem_17_1> in Unit <sRAM32x8_pgmC_instr> is equivalent to the following 5 FFs/Latches, which will be removed : <mem_17_3> <mem_17_4> <mem_17_5> <mem_17_6> <mem_17_7> 
-INFO:Xst:2261 - The FF/Latch <mem_17_0> in Unit <sRAM32x8_pgmC_instr> is equivalent to the following FF/Latch, which will be removed : <mem_17_2> 
-INFO:Xst:2261 - The FF/Latch <mem_20_1> in Unit <sRAM32x8_pgmC_instr> is equivalent to the following 4 FFs/Latches, which will be removed : <mem_20_3> <mem_20_5> <mem_20_6> <mem_20_7> 
-INFO:Xst:2261 - The FF/Latch <mem_20_0> in Unit <sRAM32x8_pgmC_instr> is equivalent to the following 2 FFs/Latches, which will be removed : <mem_20_2> <mem_20_4> 
-INFO:Xst:2261 - The FF/Latch <mem_15_1> in Unit <sRAM32x8_pgmC_instr> is equivalent to the following 5 FFs/Latches, which will be removed : <mem_15_3> <mem_15_4> <mem_15_5> <mem_15_6> <mem_15_7> 
-INFO:Xst:2261 - The FF/Latch <mem_15_0> in Unit <sRAM32x8_pgmC_instr> is equivalent to the following FF/Latch, which will be removed : <mem_15_2> 
-INFO:Xst:2261 - The FF/Latch <mem_8_0> in Unit <sRAM32x8_pgmC_instr> is equivalent to the following 6 FFs/Latches, which will be removed : <mem_8_2> <mem_8_3> <mem_8_4> <mem_8_5> <mem_8_6> <mem_8_7> 
-INFO:Xst:2261 - The FF/Latch <mem_13_1> in Unit <sRAM32x8_pgmC_instr> is equivalent to the following 5 FFs/Latches, which will be removed : <mem_13_3> <mem_13_4> <mem_13_5> <mem_13_6> <mem_13_7> 
-INFO:Xst:2261 - The FF/Latch <mem_13_0> in Unit <sRAM32x8_pgmC_instr> is equivalent to the following FF/Latch, which will be removed : <mem_13_2> 
-INFO:Xst:2261 - The FF/Latch <mem_6_0> in Unit <sRAM32x8_pgmC_instr> is equivalent to the following 6 FFs/Latches, which will be removed : <mem_6_2> <mem_6_3> <mem_6_4> <mem_6_5> <mem_6_6> <mem_6_7> 
 INFO:Xst:2261 - The FF/Latch <RBout_1> in Unit <bin2BCD3en> is equivalent to the following FF/Latch, which will be removed : <RBout_0> 
-WARNING:Xst:1426 - The value init of the FF/Latch mem_31_1 hinder the constant cleaning in the block sRAM32x8_pgmC_instr.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch mem_28_0 hinder the constant cleaning in the block sRAM32x8_pgmC_instr.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch mem_27_0 hinder the constant cleaning in the block sRAM32x8_pgmC_instr.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch mem_25_0 hinder the constant cleaning in the block sRAM32x8_pgmC_instr.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch mem_24_0 hinder the constant cleaning in the block sRAM32x8_pgmC_instr.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch mem_23_0 hinder the constant cleaning in the block sRAM32x8_pgmC_instr.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch mem_21_0 hinder the constant cleaning in the block sRAM32x8_pgmC_instr.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch mem_20_0 hinder the constant cleaning in the block sRAM32x8_pgmC_instr.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch mem_19_0 hinder the constant cleaning in the block sRAM32x8_pgmC_instr.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch mem_18_1 hinder the constant cleaning in the block sRAM32x8_pgmC_instr.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch mem_17_0 hinder the constant cleaning in the block sRAM32x8_pgmC_instr.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch mem_16_0 hinder the constant cleaning in the block sRAM32x8_pgmC_instr.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch mem_15_0 hinder the constant cleaning in the block sRAM32x8_pgmC_instr.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch mem_14_1 hinder the constant cleaning in the block sRAM32x8_pgmC_instr.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch mem_13_0 hinder the constant cleaning in the block sRAM32x8_pgmC_instr.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch mem_12_1 hinder the constant cleaning in the block sRAM32x8_pgmC_instr.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch mem_10_0 hinder the constant cleaning in the block sRAM32x8_pgmC_instr.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch mem_9_0 hinder the constant cleaning in the block sRAM32x8_pgmC_instr.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch mem_8_1 hinder the constant cleaning in the block sRAM32x8_pgmC_instr.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch mem_7_0 hinder the constant cleaning in the block sRAM32x8_pgmC_instr.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch mem_6_1 hinder the constant cleaning in the block sRAM32x8_pgmC_instr.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch mem_5_0 hinder the constant cleaning in the block sRAM32x8_pgmC_instr.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch mem_3_1 hinder the constant cleaning in the block sRAM32x8_pgmC_instr.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch mem_2_0 hinder the constant cleaning in the block sRAM32x8_pgmC_instr.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch mem_1_0 hinder the constant cleaning in the block sRAM32x8_pgmC_instr.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1293 - FF/Latch <mem_3_0> has a constant value of 0 in block <sRAM32x8_pgmC_instr>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <mem_29_0> has a constant value of 0 in block <sRAM32x8_pgmC_instr>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <mem_2_1> has a constant value of 0 in block <sRAM32x8_pgmC_instr>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <mem_1_3> has a constant value of 0 in block <sRAM32x8_pgmC_instr>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <mem_27_1> has a constant value of 0 in block <sRAM32x8_pgmC_instr>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <mem_0_0> has a constant value of 0 in block <sRAM32x8_pgmC_instr>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <mem_26_0> has a constant value of 0 in block <sRAM32x8_pgmC_instr>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <mem_31_0> has a constant value of 0 in block <sRAM32x8_pgmC_instr>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <mem_25_1> has a constant value of 0 in block <sRAM32x8_pgmC_instr>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <mem_30_0> has a constant value of 0 in block <sRAM32x8_pgmC_instr>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <mem_19_1> has a constant value of 0 in block <sRAM32x8_pgmC_instr>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <mem_18_0> has a constant value of 0 in block <sRAM32x8_pgmC_instr>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <mem_23_1> has a constant value of 0 in block <sRAM32x8_pgmC_instr>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <mem_24_1> has a constant value of 0 in block <sRAM32x8_pgmC_instr>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <mem_17_1> has a constant value of 0 in block <sRAM32x8_pgmC_instr>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <mem_22_0> has a constant value of 0 in block <sRAM32x8_pgmC_instr>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <mem_16_2> has a constant value of 0 in block <sRAM32x8_pgmC_instr>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <mem_21_1> has a constant value of 0 in block <sRAM32x8_pgmC_instr>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <mem_15_1> has a constant value of 0 in block <sRAM32x8_pgmC_instr>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <mem_20_1> has a constant value of 0 in block <sRAM32x8_pgmC_instr>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <mem_14_0> has a constant value of 0 in block <sRAM32x8_pgmC_instr>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <mem_13_1> has a constant value of 0 in block <sRAM32x8_pgmC_instr>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <mem_12_0> has a constant value of 0 in block <sRAM32x8_pgmC_instr>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <mem_11_0> has a constant value of 0 in block <sRAM32x8_pgmC_instr>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <mem_10_1> has a constant value of 0 in block <sRAM32x8_pgmC_instr>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <mem_9_1> has a constant value of 0 in block <sRAM32x8_pgmC_instr>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <mem_8_0> has a constant value of 0 in block <sRAM32x8_pgmC_instr>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <mem_7_1> has a constant value of 0 in block <sRAM32x8_pgmC_instr>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <mem_5_1> has a constant value of 0 in block <sRAM32x8_pgmC_instr>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <mem_4_0> has a constant value of 0 in block <sRAM32x8_pgmC_instr>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <mem_6_0> has a constant value of 0 in block <sRAM32x8_pgmC_instr>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <binO_0> (without init value) has a constant value of 0 in block <CRenc4bin>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <binO_1> (without init value) has a constant value of 0 in block <CRenc4bin>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <binO_2> (without init value) has a constant value of 0 in block <CRenc4bin>. This FF/Latch will be trimmed during the optimization process.
@@ -1544,9 +1167,9 @@ Optimizing unit <lab_final> ...
 
 Optimizing unit <DCM_100M> ...
 
-Optimizing unit <sRAM32x8_pgmC_data> ...
+Optimizing unit <sRAM32x8_pgmA_data> ...
 
-Optimizing unit <sRAM32x8_pgmC_instr> ...
+Optimizing unit <sRAM32x8_pgmA_instr> ...
 
 Optimizing unit <CRenc4bin> ...
 
@@ -1569,6 +1192,8 @@ Optimizing unit <ISA> ...
 Optimizing unit <ALU_Control_Logic_MUSER_lab_final> ...
 
 Optimizing unit <bin2BCD3en> ...
+
+Optimizing unit <FA8> ...
 
 Optimizing unit <FTCLEX_MXILINX_lab_final> ...
 
@@ -1932,7 +1557,7 @@ WARNING:Xst:2677 - Node <XLXI_60/XLXI_133/XLXI_41/cnt1_31> of sequential type is
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block lab_final, actual ratio is 89.
+Found area constraint ratio of 100 (+ 5) on block lab_final, actual ratio is 22.
 
 Final Macro Processing ...
 
@@ -1940,8 +1565,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 741
- Flip-Flops                                            : 741
+# Registers                                            : 972
+ Flip-Flops                                            : 972
 
 =========================================================================
 
@@ -1967,11 +1592,11 @@ Optimization Goal                  : Speed
 Keep Hierarchy                     : No
 
 Design Statistics
-# IOs                              : 44
+# IOs                              : 43
 
 Cell Usage :
-# BELS                             : 3142
-#      AND2                        : 221
+# BELS                             : 3341
+#      AND2                        : 220
 #      AND2B1                      : 177
 #      AND2B2                      : 4
 #      AND3                        : 6
@@ -1985,40 +1610,40 @@ Cell Usage :
 #      AND4B4                      : 6
 #      AND5                        : 1
 #      AND5B4                      : 1
-#      BUF                         : 3
+#      BUF                         : 5
 #      GND                         : 1
 #      INV                         : 33
 #      LUT1                        : 167
-#      LUT2                        : 49
-#      LUT3                        : 454
-#      LUT4                        : 532
+#      LUT2                        : 46
+#      LUT3                        : 592
+#      LUT4                        : 493
 #      MUXCY                       : 592
-#      MUXF5                       : 103
-#      MUXF6                       : 35
-#      MUXF7                       : 16
-#      MUXF8                       : 8
-#      OR2                         : 193
+#      MUXF5                       : 153
+#      MUXF6                       : 64
+#      MUXF7                       : 32
+#      MUXF8                       : 16
+#      OR2                         : 192
 #      OR3                         : 4
 #      OR3B1                       : 1
 #      OR4                         : 1
 #      VCC                         : 3
 #      XOR2                        : 61
 #      XORCY                       : 434
-# FlipFlops/Latches                : 741
+# FlipFlops/Latches                : 972
 #      FD                          : 139
 #      FDC                         : 2
 #      FDCE                        : 125
 #      FDCP                        : 16
-#      FDE                         : 454
+#      FDE                         : 685
 #      FDR                         : 5
 # Clock Buffers                    : 9
 #      BUFG                        : 6
 #      BUFGP                       : 3
-# IO Buffers                       : 38
+# IO Buffers                       : 37
 #      IBUF                        : 14
-#      OBUF                        : 24
-# Logical                          : 53
-#      NAND2                       : 50
+#      OBUF                        : 23
+# Logical                          : 54
+#      NAND2                       : 51
 #      NOR2                        : 3
 # Others                           : 18
 #      PULLDOWN                    : 7
@@ -2028,13 +1653,13 @@ Cell Usage :
 Device utilization summary:
 ---------------------------
 
-Selected Device : 3s100ecp132-4 
+Selected Device : 3s500efg320-4 
 
- Number of Slices:                      618  out of    960    64%  
- Number of Slice Flip Flops:            741  out of   1920    38%  
- Number of 4 input LUTs:               1235  out of   1920    64%  
- Number of IOs:                          44
- Number of bonded IOBs:                  41  out of     83    49%  
+ Number of Slices:                      666  out of   4656    14%  
+ Number of Slice Flip Flops:            972  out of   9312    10%  
+ Number of 4 input LUTs:               1331  out of   9312    14%  
+ Number of IOs:                          43
+ Number of bonded IOBs:                  40  out of    232    17%  
  Number of GCLKs:                         9  out of     24    37%  
 
 ---------------------------
@@ -2059,8 +1684,8 @@ Clock Information:
 Clock Signal                                                     | Clock buffer(FF name)                      | Load  |
 -----------------------------------------------------------------+--------------------------------------------+-------+
 Clock                                                            | BUFGP                                      | 165   |
-XLXI_60/WCLK_DM1(XLXI_60/XLXI_156:O)                             | BUFG(*)(XLXI_60/XLXI_179/mem_3_7)          | 256   |
-XLXI_60/WCLK_IM1(XLXI_60/XLXI_155:O)                             | BUFG(*)(XLXI_60/XLXI_180/mem_3_1)          | 25    |
+XLXI_60/WCLK_DM1(XLXI_60/XLXI_156:O)                             | BUFG(*)(XLXI_60/XLXI_203/mem_3_7)          | 256   |
+XLXI_60/WCLK_IM1(XLXI_60/XLXI_155:O)                             | BUFG(*)(XLXI_60/XLXI_204/mem_3_7)          | 256   |
 XLXI_60/XLXI_162/XLXI_36/rowON(XLXI_60/XLXI_162/XLXI_36/rowON1:O)| NONE(*)(XLXI_60/XLXI_162/XLXI_36/lastrow_3)| 9     |
 XLXI_60/XLXI_162/XLXI_28/clk_100_0                               | NONE(XLXI_60/XLXI_162/XLXI_38/colx_3)      | 8     |
 XLXI_60/XLXI_162/XLXI_28/clk_10k_01                              | BUFG                                       | 140   |
@@ -2071,9 +1696,9 @@ XLXI_60/XLXI_133/XLXI_41/clk_10k_01                              | BUFG         
 XLXI_53/XLXN_28(XLXI_53/XLXI_22:O)                               | NONE(*)(XLXI_53/XLXI_6/I_Q3/I_36_35)       | 4     |
 XLXI_53/XLXN_18(XLXI_53/XLXI_10:O)                               | NONE(*)(XLXI_53/XLXI_1/I_Q7/I_36_35)       | 8     |
 ticks<1>1(XLXI_53/XLXI_11:O)                                     | BUFG(*)(XLXI_61/XLXI_165/XLXI_1/I_Q0)      | 52    |
-XLXN_115                                                         | NONE(XLXI_61/XLXI_177/XLXI_1/I_Q0)         | 4     |
+XLXI_61/EN_ADDorSUB(XLXI_61/XLXI_168/XLXI_120:O)                 | NONE(*)(XLXI_61/XLXI_177/XLXI_1/I_Q0)      | 4     |
 -----------------------------------------------------------------+--------------------------------------------+-------+
-(*) These 6 clock signal(s) are generated by combinatorial logic,
+(*) These 7 clock signal(s) are generated by combinatorial logic,
 and XST is not able to identify which are the primary clock signals.
 Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
 INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
@@ -2083,13 +1708,12 @@ Asynchronous Control Signals Information:
 --------------------------------------------------------------------------------------+-----------------------------------------+-------+
 Control Signal                                                                        | Buffer(FF name)                         | Load  |
 --------------------------------------------------------------------------------------+-----------------------------------------+-------+
-XLXI_61/CLR1(XLXI_61/XLXI_155:O)                                                      | NONE(XLXI_61/XLXI_161/XLXI_1/I_Q0)      | 52    |
+XLXI_61/CLR1(XLXI_61/XLXI_155:O)                                                      | NONE(XLXI_61/XLXI_161/XLXI_1/I_Q0)      | 56    |
 btn_CLR                                                                               | IBUF                                    | 48    |
 XLXI_60/XLXI_162/XLXI_36/lobster_and0000(XLXI_60/XLXI_162/XLXI_36/lobster_and000086:O)| NONE(XLXI_60/XLXI_162/XLXI_36/lastcol_0)| 9     |
 XLXI_53/on32(XLXI_53/XLXI_3:O)                                                        | NONE(XLXI_53/XLXI_1/I_Q0/I_36_35)       | 8     |
 XLXI_53/XLXN_25(XLXI_53/XLXI_16:O)                                                    | NONE(XLXI_53/XLXI_6/I_Q0/I_36_35)       | 4     |
-XLXN_115(XLXI_56:G)                                                                   | NONE(XLXI_61/XLXI_177/XLXI_1/I_Q0)      | 4     |
-DebugMode(XLXI_40:O)                                                                  | NONE(XLXI_60/XLXI_133/XLXI_14/Dout2_0)  | 2     |
+XLXN_168(XLXI_67:O)                                                                   | NONE(XLXI_60/XLXI_133/XLXI_14/Dout2_0)  | 2     |
 XLXI_60/XLXI_133/XLXI_14/Dout0_0_and0000(XLXI_60/XLXI_133/XLXI_14/Dout0_0_and00001:O) | NONE(XLXI_60/XLXI_133/XLXI_14/Dout0_0)  | 1     |
 XLXI_60/XLXI_133/XLXI_14/Dout0_0_and0001(XLXI_60/XLXI_133/XLXI_14/Dout0_0_and00011:O) | NONE(XLXI_60/XLXI_133/XLXI_14/Dout0_0)  | 1     |
 XLXI_60/XLXI_133/XLXI_14/Dout0_1_and0000(XLXI_60/XLXI_133/XLXI_14/Dout0_1_and00001:O) | NONE(XLXI_60/XLXI_133/XLXI_14/Dout0_1)  | 1     |
@@ -2129,9 +1753,9 @@ Timing Summary:
 Speed Grade: -4
 
    Minimum period: 55.284ns (Maximum Frequency: 18.088MHz)
-   Minimum input arrival time before clock: 73.242ns
-   Maximum output required time after clock: 53.648ns
-   Maximum combinational path delay: 54.607ns
+   Minimum input arrival time before clock: 71.376ns
+   Maximum output required time after clock: 11.815ns
+   Maximum combinational path delay: 17.217ns
 
 Timing Detail:
 --------------
@@ -2251,16 +1875,16 @@ Timing constraint: Default period analysis for Clock 'XLXI_60/XLXI_162/XLXI_28/c
   Total number of paths / destination ports: 20 / 12
 -------------------------------------------------------------------------
 Delay:               2.365ns (Levels of Logic = 1)
-  Source:            XLXI_60/XLXI_162/XLXI_38/colx_2 (FF)
+  Source:            XLXI_60/XLXI_162/XLXI_38/colx_1 (FF)
   Destination:       XLXI_60/XLXI_162/XLXI_38/col_3 (FF)
   Source Clock:      XLXI_60/XLXI_162/XLXI_28/clk_100_0 rising
   Destination Clock: XLXI_60/XLXI_162/XLXI_28/clk_100_0 rising
 
-  Data Path: XLXI_60/XLXI_162/XLXI_38/colx_2 to XLXI_60/XLXI_162/XLXI_38/col_3
+  Data Path: XLXI_60/XLXI_162/XLXI_38/colx_1 to XLXI_60/XLXI_162/XLXI_38/col_3
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q               4   0.591   0.762  XLXI_60/XLXI_162/XLXI_38/colx_2 (XLXI_60/XLXI_162/XLXI_38/colx_2)
+     FD:C->Q               4   0.591   0.762  XLXI_60/XLXI_162/XLXI_38/colx_1 (XLXI_60/XLXI_162/XLXI_38/colx_1)
      LUT3:I0->O            1   0.704   0.000  XLXI_60/XLXI_162/XLXI_38/col_cmp_eq00031 (XLXI_60/XLXI_162/XLXI_38/col_mux0001<0>_norst)
      FDR:D                     0.308          XLXI_60/XLXI_162/XLXI_38/col_3
     ----------------------------------------
@@ -2364,10 +1988,10 @@ Delay:               8.604ns (Levels of Logic = 9)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'XLXI_53/XLXN_18'
-  Clock period: 15.835ns (frequency: 63.150MHz)
-  Total number of paths / destination ports: 1032 / 16
+  Clock period: 13.969ns (frequency: 71.587MHz)
+  Total number of paths / destination ports: 2072 / 16
 -------------------------------------------------------------------------
-Delay:               15.835ns (Levels of Logic = 14)
+Delay:               13.969ns (Levels of Logic = 14)
   Source:            XLXI_53/XLXI_1/I_Q0/I_36_35 (FF)
   Destination:       XLXI_53/XLXI_1/I_Q7/I_36_35 (FF)
   Source Clock:      XLXI_53/XLXN_18 rising
@@ -2382,13 +2006,13 @@ Delay:               15.835ns (Levels of Logic = 14)
      end scope: 'XLXI_53/XLXI_1'
      begin scope: 'XLXI_60/XLXI_164/XLXI_28'
      AND2:I0->O            1   0.704   0.420  I_36_9 (M1)
-     OR2:I0->O           178   0.704   1.483  I_36_8 (O)
+     OR2:I0->O           272   0.704   1.513  I_36_8 (O)
      end scope: 'XLXI_60/XLXI_164/XLXI_28'
-     LUT3:I0->O            1   0.704   0.424  XLXI_60/XLXI_180/A<0>81 (XLXI_60/XLXI_180/A<0>1)
-     LUT4:I3->O            1   0.704   0.000  XLXI_60/XLXI_180/Mmux_Q_mux0000_12 (XLXI_60/XLXI_180/Mmux_Q_mux0000_12)
-     MUXF5:I0->O           1   0.321   0.499  XLXI_60/XLXI_180/Mmux_Q_mux0000_10_f5 (XLXI_60/XLXI_180/Mmux_Q_mux0000_10_f5)
-     LUT2:I1->O            1   0.704   0.424  XLXI_60/XLXI_180/Q<0>64 (XLXI_60/XLXI_180/Q<0>64)
-     LUT4:I3->O           12   0.704   0.961  XLXI_60/XLXI_180/Q<0>100 (IR<0>)
+     LUT3:I0->O            1   0.704   0.000  XLXI_60/XLXI_204/Mmux_Q_mux0000_6 (XLXI_60/XLXI_204/Mmux_Q_mux0000_6)
+     MUXF5:I1->O           1   0.321   0.000  XLXI_60/XLXI_204/Mmux_Q_mux0000_5_f5 (XLXI_60/XLXI_204/Mmux_Q_mux0000_5_f5)
+     MUXF6:I1->O           1   0.521   0.000  XLXI_60/XLXI_204/Mmux_Q_mux0000_4_f6 (XLXI_60/XLXI_204/Mmux_Q_mux0000_4_f6)
+     MUXF7:I1->O           1   0.521   0.000  XLXI_60/XLXI_204/Mmux_Q_mux0000_3_f7 (XLXI_60/XLXI_204/Mmux_Q_mux0000_3_f7)
+     MUXF8:I1->O          12   0.521   0.961  XLXI_60/XLXI_204/Mmux_Q_mux0000_2_f8 (IR<0>)
      AND4B1:I0->O          1   0.704   0.420  XLXI_61/XLXI_1/XLXI_42 (XLXI_61/XLXI_1/ValE_2)
      AND2:I0->O            1   0.704   0.420  XLXI_61/XLXI_1/XLXI_57 (HLT)
      AND2B1:I0->O          4   0.704   0.587  XLXI_53/XLXI_17 (XLXI_53/Run)
@@ -2397,13 +2021,13 @@ Delay:               15.835ns (Levels of Logic = 14)
      begin scope: 'I_Q7'
      FDCE:CE                   0.555          I_36_35
     ----------------------------------------
-    Total                     15.835ns (8.507ns logic, 7.328ns route)
-                                       (53.7% logic, 46.3% route)
+    Total                     13.969ns (7.958ns logic, 6.011ns route)
+                                       (57.0% logic, 43.0% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'ticks<1>1'
   Clock period: 55.284ns (frequency: 18.088MHz)
-  Total number of paths / destination ports: 15808 / 80
+  Total number of paths / destination ports: 13408 / 80
 -------------------------------------------------------------------------
 Delay:               55.284ns (Levels of Logic = 53)
   Source:            XLXI_61/XLXI_164/XLXI_1/I_Q0 (FF)
@@ -2448,11 +2072,11 @@ Delay:               55.284ns (Levels of Logic = 53)
      NAND2:I0->O           1   0.704   0.420  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_34/XLXI_5 (XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_34/XLXN_4)
      NAND2:I1->O           2   0.704   0.447  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_34/XLXI_1 (XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXN_130)
      NAND2:I0->O           1   0.704   0.420  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_35/XLXI_5 (XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_35/XLXN_4)
-     NAND2:I1->O           3   0.704   0.531  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_35/XLXI_1 (XLXI_61/OFL_C)
+     NAND2:I1->O           3   0.704   0.531  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_35/XLXI_1 (XLXI_61/RegIn<1>)
      NAND2:I0->O           1   0.704   0.420  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_36/XLXI_5 (XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_36/XLXN_4)
      NAND2:I1->O           2   0.704   0.447  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_36/XLXI_1 (XLXI_61/XLXI_151/XLXI_1/XLXN_17)
      NOR2:I0->O            2   0.704   0.447  XLXI_61/XLXI_151/XLXI_1/XLXI_4 (XLXI_61/XLXI_151/XLXI_1/XLXN_12)
-     NOR2:I0->O           11   0.704   0.933  XLXI_61/XLXI_151/XLXI_1/XLXI_6 (NEG_OBUF)
+     NOR2:I0->O           11   0.704   0.933  XLXI_61/XLXI_151/XLXI_1/XLXI_6 (XLXI_61/RegIn<0>)
      XOR2:I1->O            2   0.704   0.447  XLXI_61/XLXI_151/XLXI_1/XLXI_3/XLXI_9 (XLXI_61/XLXI_151/XLXI_1/XLXI_3/XLXN_56)
      XOR2:I0->O            2   0.704   0.447  XLXI_61/XLXI_151/XLXI_1/XLXI_3/XLXI_29/XLXI_2 (XLXI_61/XLXI_151/XLXI_1/XLXI_3/XLXI_29/XLXN_7)
      NAND2:I1->O           1   0.704   0.420  XLXI_61/XLXI_151/XLXI_1/XLXI_3/XLXI_29/XLXI_5 (XLXI_61/XLXI_151/XLXI_1/XLXI_3/XLXI_29/XLXN_4)
@@ -2484,47 +2108,47 @@ Delay:               55.284ns (Levels of Logic = 53)
 Timing constraint: Default OFFSET IN BEFORE for Clock 'XLXI_60/WCLK_DM1'
   Total number of paths / destination ports: 3072 / 256
 -------------------------------------------------------------------------
-Offset:              9.532ns (Levels of Logic = 5)
+Offset:              9.391ns (Levels of Logic = 5)
   Source:            RunMode (PAD)
-  Destination:       XLXI_60/XLXI_179/mem_1_7 (FF)
+  Destination:       XLXI_60/XLXI_203/mem_29_7 (FF)
   Destination Clock: XLXI_60/WCLK_DM1 rising
 
-  Data Path: RunMode to XLXI_60/XLXI_179/mem_1_7
+  Data Path: RunMode to XLXI_60/XLXI_203/mem_29_7
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            39   1.218   1.264  RunMode_IBUF (RunMode_IBUF)
-     INV:I->O             26   0.704   1.260  XLXI_40 (DebugMode)
+     IBUF:I->O            37   1.218   1.264  RunMode_IBUF (RunMode_IBUF)
+     INV:I->O             26   0.704   1.260  XLXI_67 (XLXN_168)
      NAND2:I0->O           9   0.704   0.899  XLXI_60/XLXI_152 (XLXI_60/nWE_D)
-     LUT4:I1->O            4   0.704   0.762  XLXI_60/XLXI_179/mem_19_and000011 (XLXI_60/XLXI_179/N8)
-     LUT3:I0->O            8   0.704   0.757  XLXI_60/XLXI_179/mem_19_and00002 (XLXI_60/XLXI_179/mem_19_and0000)
-     FDE:CE                    0.555          XLXI_60/XLXI_179/mem_19_0
+     LUT4:I1->O            4   0.704   0.622  XLXI_60/XLXI_203/mem_19_and000011 (XLXI_60/XLXI_203/N8)
+     LUT3:I2->O            8   0.704   0.757  XLXI_60/XLXI_203/mem_31_and00001 (XLXI_60/XLXI_203/mem_31_and0000)
+     FDE:CE                    0.555          XLXI_60/XLXI_203/mem_31_0
     ----------------------------------------
-    Total                      9.532ns (4.589ns logic, 4.943ns route)
-                                       (48.1% logic, 51.9% route)
+    Total                      9.391ns (4.589ns logic, 4.802ns route)
+                                       (48.9% logic, 51.1% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'XLXI_60/WCLK_IM1'
-  Total number of paths / destination ports: 300 / 25
+  Total number of paths / destination ports: 3072 / 256
 -------------------------------------------------------------------------
-Offset:              9.074ns (Levels of Logic = 5)
+Offset:              9.391ns (Levels of Logic = 5)
   Source:            RunMode (PAD)
-  Destination:       XLXI_60/XLXI_180/mem_3_1 (FF)
+  Destination:       XLXI_60/XLXI_204/mem_29_7 (FF)
   Destination Clock: XLXI_60/WCLK_IM1 rising
 
-  Data Path: RunMode to XLXI_60/XLXI_180/mem_3_1
+  Data Path: RunMode to XLXI_60/XLXI_204/mem_29_7
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            39   1.218   1.264  RunMode_IBUF (RunMode_IBUF)
-     INV:I->O             26   0.704   1.260  XLXI_40 (DebugMode)
-     NAND2:I0->O           6   0.704   0.748  XLXI_60/XLXI_151 (XLXI_60/nWE_I)
-     LUT3:I1->O            8   0.704   0.792  XLXI_60/XLXI_180/mem_17_and000011 (XLXI_60/XLXI_180/N0)
-     LUT4:I2->O            1   0.704   0.420  XLXI_60/XLXI_180/mem_7_and00001 (XLXI_60/XLXI_180/mem_7_and0000)
-     FDE:CE                    0.555          XLXI_60/XLXI_180/mem_7_0
+     IBUF:I->O            37   1.218   1.264  RunMode_IBUF (RunMode_IBUF)
+     INV:I->O             26   0.704   1.260  XLXI_67 (XLXN_168)
+     NAND2:I0->O           9   0.704   0.899  XLXI_60/XLXI_151 (XLXI_60/nWE_I)
+     LUT4:I1->O            4   0.704   0.622  XLXI_60/XLXI_204/mem_19_and000011 (XLXI_60/XLXI_204/N8)
+     LUT3:I2->O            8   0.704   0.757  XLXI_60/XLXI_204/mem_31_and00001 (XLXI_60/XLXI_204/mem_31_and0000)
+     FDE:CE                    0.555          XLXI_60/XLXI_204/mem_31_0
     ----------------------------------------
-    Total                      9.074ns (4.589ns logic, 4.485ns route)
-                                       (50.6% logic, 49.4% route)
+    Total                      9.391ns (4.589ns logic, 4.802ns route)
+                                       (48.9% logic, 51.1% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'XLXI_60/XLXI_162/XLXI_28/clk_10k_01'
@@ -2569,7 +2193,7 @@ Offset:              12.788ns (Levels of Logic = 21)
 Timing constraint: Default OFFSET IN BEFORE for Clock 'C_WriteOne'
   Total number of paths / destination ports: 40 / 12
 -------------------------------------------------------------------------
-Offset:              6.740ns (Levels of Logic = 4)
+Offset:              6.739ns (Levels of Logic = 4)
   Source:            RunMode (PAD)
   Destination:       XLXI_60/XLXI_161/XLXI_133/XLXI_149/I_Q0 (FF)
   Destination Clock: C_WriteOne rising
@@ -2578,20 +2202,20 @@ Offset:              6.740ns (Levels of Logic = 4)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            39   1.218   1.264  RunMode_IBUF (RunMode_IBUF)
-     INV:I->O             26   0.704   1.260  XLXI_40 (DebugMode)
+     IBUF:I->O            37   1.218   1.264  RunMode_IBUF (RunMode_IBUF)
+     INV:I->O             26   0.704   1.260  XLXI_67 (XLXN_168)
      AND4B2:I3->O         16   0.704   1.034  XLXI_60/XLXI_161/XLXI_140 (XLXI_60/XLXI_161/XLXN_49)
      begin scope: 'XLXI_60/XLXI_161/XLXI_133/XLXI_149'
      FDCE:CE                   0.555          I_Q0
     ----------------------------------------
-    Total                      6.740ns (3.181ns logic, 3.559ns route)
+    Total                      6.739ns (3.181ns logic, 3.558ns route)
                                        (47.2% logic, 52.8% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'C_Shift'
   Total number of paths / destination ports: 40 / 12
 -------------------------------------------------------------------------
-Offset:              6.740ns (Levels of Logic = 4)
+Offset:              6.739ns (Levels of Logic = 4)
   Source:            RunMode (PAD)
   Destination:       XLXI_60/XLXI_161/XLXI_133/XLXI_150/I_Q0 (FF)
   Destination Clock: C_Shift rising
@@ -2600,20 +2224,20 @@ Offset:              6.740ns (Levels of Logic = 4)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            39   1.218   1.264  RunMode_IBUF (RunMode_IBUF)
-     INV:I->O             26   0.704   1.260  XLXI_40 (DebugMode)
+     IBUF:I->O            37   1.218   1.264  RunMode_IBUF (RunMode_IBUF)
+     INV:I->O             26   0.704   1.260  XLXI_67 (XLXN_168)
      AND4B2:I3->O         16   0.704   1.034  XLXI_60/XLXI_161/XLXI_140 (XLXI_60/XLXI_161/XLXN_49)
      begin scope: 'XLXI_60/XLXI_161/XLXI_133/XLXI_150'
      FDCE:CE                   0.555          I_Q0
     ----------------------------------------
-    Total                      6.740ns (3.181ns logic, 3.559ns route)
+    Total                      6.739ns (3.181ns logic, 3.558ns route)
                                        (47.2% logic, 52.8% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'C_Write'
   Total number of paths / destination ports: 80 / 24
 -------------------------------------------------------------------------
-Offset:              6.740ns (Levels of Logic = 4)
+Offset:              6.739ns (Levels of Logic = 4)
   Source:            RunMode (PAD)
   Destination:       XLXI_60/XLXI_161/XLXI_133/XLXI_159/I_Q0 (FF)
   Destination Clock: C_Write rising
@@ -2622,20 +2246,20 @@ Offset:              6.740ns (Levels of Logic = 4)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            39   1.218   1.264  RunMode_IBUF (RunMode_IBUF)
-     INV:I->O             26   0.704   1.260  XLXI_40 (DebugMode)
+     IBUF:I->O            37   1.218   1.264  RunMode_IBUF (RunMode_IBUF)
+     INV:I->O             26   0.704   1.260  XLXI_67 (XLXN_168)
      AND4B2:I3->O         16   0.704   1.034  XLXI_60/XLXI_161/XLXI_140 (XLXI_60/XLXI_161/XLXN_49)
      begin scope: 'XLXI_60/XLXI_161/XLXI_133/XLXI_159'
      FDCE:CE                   0.555          I_Q0
     ----------------------------------------
-    Total                      6.740ns (3.181ns logic, 3.559ns route)
+    Total                      6.739ns (3.181ns logic, 3.558ns route)
                                        (47.2% logic, 52.8% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'XLXI_60/XLXI_133/XLXI_41/clk_10k_01'
-  Total number of paths / destination ports: 68224 / 18
+  Total number of paths / destination ports: 99670 / 18
 -------------------------------------------------------------------------
-Offset:              22.140ns (Levels of Logic = 20)
+Offset:              21.480ns (Levels of Logic = 22)
   Source:            RunMode (PAD)
   Destination:       XLXI_60/XLXI_133/XLXI_14/Dout1_3 (FF)
   Destination Clock: XLXI_60/XLXI_133/XLXI_41/clk_10k_01 rising
@@ -2644,17 +2268,19 @@ Offset:              22.140ns (Levels of Logic = 20)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            39   1.218   1.264  RunMode_IBUF (RunMode_IBUF)
-     begin scope: 'XLXI_60/XLXI_164/XLXI_32'
+     IBUF:I->O            37   1.218   1.264  RunMode_IBUF (RunMode_IBUF)
+     begin scope: 'XLXI_60/XLXI_164/XLXI_28'
      AND2B1:I0->O          1   0.704   0.420  I_36_7 (M0)
-     OR2:I1->O           113   0.704   1.463  I_36_8 (O)
-     end scope: 'XLXI_60/XLXI_164/XLXI_32'
-     LUT4:I0->O            4   0.704   0.591  XLXI_60/XLXI_180/A<1>11 (XLXI_60/XLXI_180/A<1>_mmx_out1)
-     LUT4:I3->O            1   0.704   0.595  XLXI_60/XLXI_180/A<4>913 (XLXI_60/XLXI_180/A<4>913)
-     LUT4:I0->O            4   0.704   0.587  XLXI_60/XLXI_180/A<4>9118 (IR<4>)
+     OR2:I1->O           272   0.704   1.513  I_36_8 (O)
+     end scope: 'XLXI_60/XLXI_164/XLXI_28'
+     LUT3:I0->O            1   0.704   0.000  XLXI_60/XLXI_203/Mmux_Q_mux0000_64 (XLXI_60/XLXI_203/Mmux_Q_mux0000_64)
+     MUXF5:I1->O           1   0.321   0.000  XLXI_60/XLXI_203/Mmux_Q_mux0000_5_f5_3 (XLXI_60/XLXI_203/Mmux_Q_mux0000_5_f54)
+     MUXF6:I1->O           1   0.521   0.000  XLXI_60/XLXI_203/Mmux_Q_mux0000_4_f6_3 (XLXI_60/XLXI_203/Mmux_Q_mux0000_4_f64)
+     MUXF7:I1->O           1   0.521   0.000  XLXI_60/XLXI_203/Mmux_Q_mux0000_3_f7_3 (XLXI_60/XLXI_203/Mmux_Q_mux0000_3_f74)
+     MUXF8:I1->O           4   0.521   0.587  XLXI_60/XLXI_203/Mmux_Q_mux0000_2_f8_3 (DR<4>)
      begin scope: 'XLXI_60/XLXI_141/XLXI_35'
-     AND2B1:I1->O          1   0.704   0.420  I_36_7 (M0)
-     OR2:I1->O             1   0.704   0.420  I_36_8 (O)
+     AND2:I0->O            1   0.704   0.420  I_36_9 (M1)
+     OR2:I0->O             1   0.704   0.420  I_36_8 (O)
      end scope: 'XLXI_60/XLXI_141/XLXI_35'
      begin scope: 'XLXI_60/XLXI_133/XLXI_44/XLXI_35'
      AND2B1:I1->O          1   0.704   0.420  I_36_7 (M0)
@@ -2670,14 +2296,14 @@ Offset:              22.140ns (Levels of Logic = 20)
      LUT4:I0->O            1   0.704   0.000  XLXI_60/XLXI_133/XLXI_14/Mrom_b11_mux000021 (XLXI_60/XLXI_133/XLXI_14/Mrom_b11_mux00002)
      FDCP:D                    0.308          XLXI_60/XLXI_133/XLXI_14/Dout1_3
     ----------------------------------------
-    Total                     22.140ns (12.086ns logic, 10.054ns route)
-                                       (54.6% logic, 45.4% route)
+    Total                     21.480ns (12.562ns logic, 8.918ns route)
+                                       (58.5% logic, 41.5% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'XLXI_53/XLXN_28'
-  Total number of paths / destination ports: 948 / 4
+  Total number of paths / destination ports: 1988 / 4
 -------------------------------------------------------------------------
-Offset:              16.624ns (Levels of Logic = 14)
+Offset:              14.757ns (Levels of Logic = 14)
   Source:            RunMode (PAD)
   Destination:       XLXI_53/XLXI_6/I_Q3/I_36_35 (FF)
   Destination Clock: XLXI_53/XLXN_28 rising
@@ -2686,16 +2312,16 @@ Offset:              16.624ns (Levels of Logic = 14)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            39   1.218   1.264  RunMode_IBUF (RunMode_IBUF)
+     IBUF:I->O            37   1.218   1.264  RunMode_IBUF (RunMode_IBUF)
      begin scope: 'XLXI_60/XLXI_164/XLXI_28'
      AND2B1:I0->O          1   0.704   0.420  I_36_7 (M0)
-     OR2:I1->O           178   0.704   1.483  I_36_8 (O)
+     OR2:I1->O           272   0.704   1.513  I_36_8 (O)
      end scope: 'XLXI_60/XLXI_164/XLXI_28'
-     LUT3:I0->O            1   0.704   0.424  XLXI_60/XLXI_180/A<0>81 (XLXI_60/XLXI_180/A<0>1)
-     LUT4:I3->O            1   0.704   0.000  XLXI_60/XLXI_180/Mmux_Q_mux0000_12 (XLXI_60/XLXI_180/Mmux_Q_mux0000_12)
-     MUXF5:I0->O           1   0.321   0.499  XLXI_60/XLXI_180/Mmux_Q_mux0000_10_f5 (XLXI_60/XLXI_180/Mmux_Q_mux0000_10_f5)
-     LUT2:I1->O            1   0.704   0.424  XLXI_60/XLXI_180/Q<0>64 (XLXI_60/XLXI_180/Q<0>64)
-     LUT4:I3->O           12   0.704   0.961  XLXI_60/XLXI_180/Q<0>100 (IR<0>)
+     LUT3:I0->O            1   0.704   0.000  XLXI_60/XLXI_204/Mmux_Q_mux0000_6 (XLXI_60/XLXI_204/Mmux_Q_mux0000_6)
+     MUXF5:I1->O           1   0.321   0.000  XLXI_60/XLXI_204/Mmux_Q_mux0000_5_f5 (XLXI_60/XLXI_204/Mmux_Q_mux0000_5_f5)
+     MUXF6:I1->O           1   0.521   0.000  XLXI_60/XLXI_204/Mmux_Q_mux0000_4_f6 (XLXI_60/XLXI_204/Mmux_Q_mux0000_4_f6)
+     MUXF7:I1->O           1   0.521   0.000  XLXI_60/XLXI_204/Mmux_Q_mux0000_3_f7 (XLXI_60/XLXI_204/Mmux_Q_mux0000_3_f7)
+     MUXF8:I1->O          12   0.521   0.961  XLXI_60/XLXI_204/Mmux_Q_mux0000_2_f8 (IR<0>)
      AND4B1:I0->O          1   0.704   0.420  XLXI_61/XLXI_1/XLXI_42 (XLXI_61/XLXI_1/ValE_2)
      AND2:I0->O            1   0.704   0.420  XLXI_61/XLXI_1/XLXI_57 (HLT)
      AND2B1:I0->O          4   0.704   0.587  XLXI_53/XLXI_17 (XLXI_53/Run)
@@ -2704,14 +2330,14 @@ Offset:              16.624ns (Levels of Logic = 14)
      begin scope: 'I_Q3'
      FDCE:CE                   0.555          I_36_35
     ----------------------------------------
-    Total                     16.624ns (9.134ns logic, 7.490ns route)
-                                       (54.9% logic, 45.1% route)
+    Total                     14.757ns (8.585ns logic, 6.172ns route)
+                                       (58.2% logic, 41.8% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'XLXI_53/XLXN_18'
-  Total number of paths / destination ports: 1896 / 8
+  Total number of paths / destination ports: 3976 / 8
 -------------------------------------------------------------------------
-Offset:              16.794ns (Levels of Logic = 14)
+Offset:              14.927ns (Levels of Logic = 14)
   Source:            RunMode (PAD)
   Destination:       XLXI_53/XLXI_1/I_Q7/I_36_35 (FF)
   Destination Clock: XLXI_53/XLXN_18 rising
@@ -2720,16 +2346,16 @@ Offset:              16.794ns (Levels of Logic = 14)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            39   1.218   1.264  RunMode_IBUF (RunMode_IBUF)
+     IBUF:I->O            37   1.218   1.264  RunMode_IBUF (RunMode_IBUF)
      begin scope: 'XLXI_60/XLXI_164/XLXI_28'
      AND2B1:I0->O          1   0.704   0.420  I_36_7 (M0)
-     OR2:I1->O           178   0.704   1.483  I_36_8 (O)
+     OR2:I1->O           272   0.704   1.513  I_36_8 (O)
      end scope: 'XLXI_60/XLXI_164/XLXI_28'
-     LUT3:I0->O            1   0.704   0.424  XLXI_60/XLXI_180/A<0>81 (XLXI_60/XLXI_180/A<0>1)
-     LUT4:I3->O            1   0.704   0.000  XLXI_60/XLXI_180/Mmux_Q_mux0000_12 (XLXI_60/XLXI_180/Mmux_Q_mux0000_12)
-     MUXF5:I0->O           1   0.321   0.499  XLXI_60/XLXI_180/Mmux_Q_mux0000_10_f5 (XLXI_60/XLXI_180/Mmux_Q_mux0000_10_f5)
-     LUT2:I1->O            1   0.704   0.424  XLXI_60/XLXI_180/Q<0>64 (XLXI_60/XLXI_180/Q<0>64)
-     LUT4:I3->O           12   0.704   0.961  XLXI_60/XLXI_180/Q<0>100 (IR<0>)
+     LUT3:I0->O            1   0.704   0.000  XLXI_60/XLXI_204/Mmux_Q_mux0000_6 (XLXI_60/XLXI_204/Mmux_Q_mux0000_6)
+     MUXF5:I1->O           1   0.321   0.000  XLXI_60/XLXI_204/Mmux_Q_mux0000_5_f5 (XLXI_60/XLXI_204/Mmux_Q_mux0000_5_f5)
+     MUXF6:I1->O           1   0.521   0.000  XLXI_60/XLXI_204/Mmux_Q_mux0000_4_f6 (XLXI_60/XLXI_204/Mmux_Q_mux0000_4_f6)
+     MUXF7:I1->O           1   0.521   0.000  XLXI_60/XLXI_204/Mmux_Q_mux0000_3_f7 (XLXI_60/XLXI_204/Mmux_Q_mux0000_3_f7)
+     MUXF8:I1->O          12   0.521   0.961  XLXI_60/XLXI_204/Mmux_Q_mux0000_2_f8 (IR<0>)
      AND4B1:I0->O          1   0.704   0.420  XLXI_61/XLXI_1/XLXI_42 (XLXI_61/XLXI_1/ValE_2)
      AND2:I0->O            1   0.704   0.420  XLXI_61/XLXI_1/XLXI_57 (HLT)
      AND2B1:I0->O          4   0.704   0.587  XLXI_53/XLXI_17 (XLXI_53/Run)
@@ -2738,14 +2364,14 @@ Offset:              16.794ns (Levels of Logic = 14)
      begin scope: 'I_Q7'
      FDCE:CE                   0.555          I_36_35
     ----------------------------------------
-    Total                     16.794ns (9.134ns logic, 7.660ns route)
-                                       (54.4% logic, 45.6% route)
+    Total                     14.927ns (8.585ns logic, 6.342ns route)
+                                       (57.5% logic, 42.5% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'ticks<1>1'
-  Total number of paths / destination ports: 50263976 / 72
+  Total number of paths / destination ports: 83455224 / 64
 -------------------------------------------------------------------------
-Offset:              73.242ns (Levels of Logic = 69)
+Offset:              71.376ns (Levels of Logic = 69)
   Source:            RunMode (PAD)
   Destination:       XLXI_61/XLXI_43/XLXI_1/I_Q7 (FF)
   Destination Clock: ticks<1>1 rising
@@ -2754,20 +2380,20 @@ Offset:              73.242ns (Levels of Logic = 69)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            39   1.218   1.264  RunMode_IBUF (RunMode_IBUF)
+     IBUF:I->O            37   1.218   1.264  RunMode_IBUF (RunMode_IBUF)
      begin scope: 'XLXI_60/XLXI_164/XLXI_28'
      AND2B1:I0->O          1   0.704   0.420  I_36_7 (M0)
-     OR2:I1->O           178   0.704   1.483  I_36_8 (O)
+     OR2:I1->O           272   0.704   1.513  I_36_8 (O)
      end scope: 'XLXI_60/XLXI_164/XLXI_28'
-     LUT3:I0->O            1   0.704   0.424  XLXI_60/XLXI_180/A<0>81 (XLXI_60/XLXI_180/A<0>1)
-     LUT4:I3->O            1   0.704   0.000  XLXI_60/XLXI_180/Mmux_Q_mux0000_12 (XLXI_60/XLXI_180/Mmux_Q_mux0000_12)
-     MUXF5:I0->O           1   0.321   0.499  XLXI_60/XLXI_180/Mmux_Q_mux0000_10_f5 (XLXI_60/XLXI_180/Mmux_Q_mux0000_10_f5)
-     LUT2:I1->O            1   0.704   0.424  XLXI_60/XLXI_180/Q<0>64 (XLXI_60/XLXI_180/Q<0>64)
-     LUT4:I3->O           12   0.704   0.961  XLXI_60/XLXI_180/Q<0>100 (IR<0>)
+     LUT3:I0->O            1   0.704   0.000  XLXI_60/XLXI_204/Mmux_Q_mux0000_6 (XLXI_60/XLXI_204/Mmux_Q_mux0000_6)
+     MUXF5:I1->O           1   0.321   0.000  XLXI_60/XLXI_204/Mmux_Q_mux0000_5_f5 (XLXI_60/XLXI_204/Mmux_Q_mux0000_5_f5)
+     MUXF6:I1->O           1   0.521   0.000  XLXI_60/XLXI_204/Mmux_Q_mux0000_4_f6 (XLXI_60/XLXI_204/Mmux_Q_mux0000_4_f6)
+     MUXF7:I1->O           1   0.521   0.000  XLXI_60/XLXI_204/Mmux_Q_mux0000_3_f7 (XLXI_60/XLXI_204/Mmux_Q_mux0000_3_f7)
+     MUXF8:I1->O          12   0.521   0.961  XLXI_60/XLXI_204/Mmux_Q_mux0000_2_f8 (IR<0>)
      AND4B3:I0->O          2   0.704   0.447  XLXI_61/XLXI_1/XLXI_15 (XLXI_61/XLXI_1/Val2_2)
      AND2:I0->O            3   0.704   0.531  XLXI_61/XLXI_1/XLXI_52 (XLXI_61/ADD)
      OR3:I2->O             1   0.704   0.420  XLXI_61/XLXI_168/XLXI_119 (XLXI_61/XLXI_168/EN_ADD_DUMMY)
-     OR2:I1->O            51   0.704   1.268  XLXI_61/XLXI_168/XLXI_120 (XLXI_61/EN_ADDorSUB)
+     OR2:I1->O            55   0.704   1.269  XLXI_61/XLXI_168/XLXI_120 (XLXI_61/EN_ADDorSUB)
      begin scope: 'XLXI_61/XLXI_151/XLXI_72/XLXI_28'
      AND2B1:I0->O          1   0.704   0.420  I_36_7 (M0)
      OR2:I1->O             1   0.704   0.420  I_36_8 (O)
@@ -2803,11 +2429,11 @@ Offset:              73.242ns (Levels of Logic = 69)
      NAND2:I0->O           1   0.704   0.420  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_34/XLXI_5 (XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_34/XLXN_4)
      NAND2:I1->O           2   0.704   0.447  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_34/XLXI_1 (XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXN_130)
      NAND2:I0->O           1   0.704   0.420  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_35/XLXI_5 (XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_35/XLXN_4)
-     NAND2:I1->O           3   0.704   0.531  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_35/XLXI_1 (XLXI_61/OFL_C)
+     NAND2:I1->O           3   0.704   0.531  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_35/XLXI_1 (XLXI_61/RegIn<1>)
      NAND2:I0->O           1   0.704   0.420  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_36/XLXI_5 (XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_36/XLXN_4)
      NAND2:I1->O           2   0.704   0.447  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_36/XLXI_1 (XLXI_61/XLXI_151/XLXI_1/XLXN_17)
      NOR2:I0->O            2   0.704   0.447  XLXI_61/XLXI_151/XLXI_1/XLXI_4 (XLXI_61/XLXI_151/XLXI_1/XLXN_12)
-     NOR2:I0->O           11   0.704   0.933  XLXI_61/XLXI_151/XLXI_1/XLXI_6 (NEG_OBUF)
+     NOR2:I0->O           11   0.704   0.933  XLXI_61/XLXI_151/XLXI_1/XLXI_6 (XLXI_61/RegIn<0>)
      XOR2:I1->O            2   0.704   0.447  XLXI_61/XLXI_151/XLXI_1/XLXI_3/XLXI_9 (XLXI_61/XLXI_151/XLXI_1/XLXI_3/XLXN_56)
      XOR2:I0->O            2   0.704   0.447  XLXI_61/XLXI_151/XLXI_1/XLXI_3/XLXI_29/XLXI_2 (XLXI_61/XLXI_151/XLXI_1/XLXI_3/XLXI_29/XLXN_7)
      NAND2:I1->O           1   0.704   0.420  XLXI_61/XLXI_151/XLXI_1/XLXI_3/XLXI_29/XLXI_5 (XLXI_61/XLXI_151/XLXI_1/XLXI_3/XLXI_29/XLXN_4)
@@ -2832,7 +2458,80 @@ Offset:              73.242ns (Levels of Logic = 69)
      begin scope: 'XLXI_61/XLXI_43/XLXI_1'
      FDCE:D                    0.308          I_Q7
     ----------------------------------------
-    Total                     73.242ns (43.383ns logic, 29.859ns route)
+    Total                     71.376ns (42.834ns logic, 28.542ns route)
+                                       (60.0% logic, 40.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'XLXI_61/EN_ADDorSUB'
+  Total number of paths / destination ports: 1446212 / 2
+-------------------------------------------------------------------------
+Offset:              49.777ns (Levels of Logic = 49)
+  Source:            RunMode (PAD)
+  Destination:       XLXI_61/XLXI_177/XLXI_1/I_Q0 (FF)
+  Destination Clock: XLXI_61/EN_ADDorSUB rising
+
+  Data Path: RunMode to XLXI_61/XLXI_177/XLXI_1/I_Q0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            37   1.218   1.264  RunMode_IBUF (RunMode_IBUF)
+     begin scope: 'XLXI_60/XLXI_164/XLXI_28'
+     AND2B1:I0->O          1   0.704   0.420  I_36_7 (M0)
+     OR2:I1->O           272   0.704   1.513  I_36_8 (O)
+     end scope: 'XLXI_60/XLXI_164/XLXI_28'
+     LUT3:I0->O            1   0.704   0.000  XLXI_60/XLXI_204/Mmux_Q_mux0000_6 (XLXI_60/XLXI_204/Mmux_Q_mux0000_6)
+     MUXF5:I1->O           1   0.321   0.000  XLXI_60/XLXI_204/Mmux_Q_mux0000_5_f5 (XLXI_60/XLXI_204/Mmux_Q_mux0000_5_f5)
+     MUXF6:I1->O           1   0.521   0.000  XLXI_60/XLXI_204/Mmux_Q_mux0000_4_f6 (XLXI_60/XLXI_204/Mmux_Q_mux0000_4_f6)
+     MUXF7:I1->O           1   0.521   0.000  XLXI_60/XLXI_204/Mmux_Q_mux0000_3_f7 (XLXI_60/XLXI_204/Mmux_Q_mux0000_3_f7)
+     MUXF8:I1->O          12   0.521   0.961  XLXI_60/XLXI_204/Mmux_Q_mux0000_2_f8 (IR<0>)
+     AND4B3:I0->O          2   0.704   0.447  XLXI_61/XLXI_1/XLXI_15 (XLXI_61/XLXI_1/Val2_2)
+     AND2:I0->O            3   0.704   0.531  XLXI_61/XLXI_1/XLXI_52 (XLXI_61/ADD)
+     OR3:I2->O             1   0.704   0.420  XLXI_61/XLXI_168/XLXI_119 (XLXI_61/XLXI_168/EN_ADD_DUMMY)
+     OR2:I1->O            55   0.704   1.269  XLXI_61/XLXI_168/XLXI_120 (XLXI_61/EN_ADDorSUB)
+     begin scope: 'XLXI_61/XLXI_151/XLXI_72/XLXI_28'
+     AND2B1:I0->O          1   0.704   0.420  I_36_7 (M0)
+     OR2:I1->O             1   0.704   0.420  I_36_8 (O)
+     end scope: 'XLXI_61/XLXI_151/XLXI_72/XLXI_28'
+     begin scope: 'XLXI_61/XLXI_151/XLXI_22/XLXI_28'
+     AND2B1:I1->O          1   0.704   0.420  I_36_7 (M0)
+     OR2:I1->O             1   0.704   0.420  I_36_8 (O)
+     end scope: 'XLXI_61/XLXI_151/XLXI_22/XLXI_28'
+     begin scope: 'XLXI_61/XLXI_151/XLXI_23/XLXI_28'
+     AND2B1:I1->O          1   0.704   0.420  I_36_7 (M0)
+     OR2:I1->O             1   0.704   0.420  I_36_8 (O)
+     end scope: 'XLXI_61/XLXI_151/XLXI_23/XLXI_28'
+     begin scope: 'XLXI_61/XLXI_151/XLXI_24/XLXI_28'
+     AND2B1:I1->O          1   0.704   0.420  I_36_7 (M0)
+     OR2:I1->O             1   0.704   0.420  I_36_8 (O)
+     end scope: 'XLXI_61/XLXI_151/XLXI_24/XLXI_28'
+     begin scope: 'XLXI_61/XLXI_151/XLXI_25/XLXI_28'
+     AND2B1:I1->O          1   0.704   0.420  I_36_7 (M0)
+     OR2:I1->O             1   0.704   0.420  I_36_8 (O)
+     end scope: 'XLXI_61/XLXI_151/XLXI_25/XLXI_28'
+     XOR2:I0->O            2   0.704   0.447  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_9 (XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXN_56)
+     XOR2:I0->O            2   0.704   0.447  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_29/XLXI_2 (XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_29/XLXN_7)
+     NAND2:I1->O           1   0.704   0.420  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_29/XLXI_5 (XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_29/XLXN_4)
+     NAND2:I1->O           2   0.704   0.447  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_29/XLXI_1 (XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXN_14)
+     NAND2:I0->O           1   0.704   0.420  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_30/XLXI_5 (XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_30/XLXN_4)
+     NAND2:I1->O           2   0.704   0.447  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_30/XLXI_1 (XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXN_15)
+     NAND2:I0->O           1   0.704   0.420  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_31/XLXI_5 (XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_31/XLXN_4)
+     NAND2:I1->O           2   0.704   0.447  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_31/XLXI_1 (XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXN_21)
+     NAND2:I0->O           1   0.704   0.420  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_32/XLXI_5 (XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_32/XLXN_4)
+     NAND2:I1->O           2   0.704   0.447  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_32/XLXI_1 (XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXN_120)
+     NAND2:I0->O           1   0.704   0.420  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_33/XLXI_5 (XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_33/XLXN_4)
+     NAND2:I1->O           2   0.704   0.447  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_33/XLXI_1 (XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXN_124)
+     NAND2:I0->O           1   0.704   0.420  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_34/XLXI_5 (XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_34/XLXN_4)
+     NAND2:I1->O           2   0.704   0.447  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_34/XLXI_1 (XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXN_130)
+     NAND2:I0->O           1   0.704   0.420  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_35/XLXI_5 (XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_35/XLXN_4)
+     NAND2:I1->O           3   0.704   0.531  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_35/XLXI_1 (XLXI_61/RegIn<1>)
+     NAND2:I0->O           1   0.704   0.420  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_36/XLXI_5 (XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_36/XLXN_4)
+     NAND2:I1->O           2   0.704   0.447  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_36/XLXI_1 (XLXI_61/XLXI_151/XLXI_1/XLXN_17)
+     NOR2:I0->O            2   0.704   0.447  XLXI_61/XLXI_151/XLXI_1/XLXI_4 (XLXI_61/XLXI_151/XLXI_1/XLXN_12)
+     NOR2:I0->O           11   0.704   0.933  XLXI_61/XLXI_151/XLXI_1/XLXI_6 (XLXI_61/RegIn<0>)
+     begin scope: 'XLXI_61/XLXI_177/XLXI_1'
+     FDCE:D                    0.308          I_Q0
+    ----------------------------------------
+    Total                     49.777ns (29.458ns logic, 20.319ns route)
                                        (59.2% logic, 40.8% route)
 
 =========================================================================
@@ -2860,358 +2559,25 @@ Offset:              7.793ns (Levels of Logic = 5)
                                        (76.7% logic, 23.3% route)
 
 =========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'C_Write'
-  Total number of paths / destination ports: 385404 / 2
+Timing constraint: Default OFFSET OUT AFTER for Clock 'XLXI_61/EN_ADDorSUB'
+  Total number of paths / destination ports: 6 / 4
 -------------------------------------------------------------------------
-Offset:              53.162ns (Levels of Logic = 49)
-  Source:            XLXI_60/XLXI_161/XLXI_133/XLXI_159/I_Q0 (FF)
-  Destination:       NEG (PAD)
-  Source Clock:      C_Write rising
+Offset:              6.189ns (Levels of Logic = 3)
+  Source:            XLXI_61/XLXI_177/XLXI_1/I_Q1 (FF)
+  Destination:       OFL (PAD)
+  Source Clock:      XLXI_61/EN_ADDorSUB rising
 
-  Data Path: XLXI_60/XLXI_161/XLXI_133/XLXI_159/I_Q0 to NEG
+  Data Path: XLXI_61/XLXI_177/XLXI_1/I_Q1 to OFL
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDCE:C->Q             2   0.591   0.447  I_Q0 (Q<0>)
-     end scope: 'XLXI_60/XLXI_161/XLXI_133/XLXI_159'
-     begin scope: 'XLXI_60/XLXI_164/XLXI_28'
-     AND2B1:I1->O          1   0.704   0.420  I_36_7 (M0)
-     OR2:I1->O           178   0.704   1.483  I_36_8 (O)
-     end scope: 'XLXI_60/XLXI_164/XLXI_28'
-     LUT3:I0->O            1   0.704   0.424  XLXI_60/XLXI_180/A<0>81 (XLXI_60/XLXI_180/A<0>1)
-     LUT4:I3->O            1   0.704   0.000  XLXI_60/XLXI_180/Mmux_Q_mux0000_12 (XLXI_60/XLXI_180/Mmux_Q_mux0000_12)
-     MUXF5:I0->O           1   0.321   0.499  XLXI_60/XLXI_180/Mmux_Q_mux0000_10_f5 (XLXI_60/XLXI_180/Mmux_Q_mux0000_10_f5)
-     LUT2:I1->O            1   0.704   0.424  XLXI_60/XLXI_180/Q<0>64 (XLXI_60/XLXI_180/Q<0>64)
-     LUT4:I3->O           12   0.704   0.961  XLXI_60/XLXI_180/Q<0>100 (IR<0>)
-     AND4B3:I0->O          2   0.704   0.447  XLXI_61/XLXI_1/XLXI_15 (XLXI_61/XLXI_1/Val2_2)
-     AND2:I0->O            3   0.704   0.531  XLXI_61/XLXI_1/XLXI_52 (XLXI_61/ADD)
-     OR3:I2->O             1   0.704   0.420  XLXI_61/XLXI_168/XLXI_119 (XLXI_61/XLXI_168/EN_ADD_DUMMY)
-     OR2:I1->O            51   0.704   1.268  XLXI_61/XLXI_168/XLXI_120 (XLXI_61/EN_ADDorSUB)
-     begin scope: 'XLXI_61/XLXI_151/XLXI_72/XLXI_28'
-     AND2B1:I0->O          1   0.704   0.420  I_36_7 (M0)
-     OR2:I1->O             1   0.704   0.420  I_36_8 (O)
-     end scope: 'XLXI_61/XLXI_151/XLXI_72/XLXI_28'
-     begin scope: 'XLXI_61/XLXI_151/XLXI_22/XLXI_28'
-     AND2B1:I1->O          1   0.704   0.420  I_36_7 (M0)
-     OR2:I1->O             1   0.704   0.420  I_36_8 (O)
-     end scope: 'XLXI_61/XLXI_151/XLXI_22/XLXI_28'
-     begin scope: 'XLXI_61/XLXI_151/XLXI_23/XLXI_28'
-     AND2B1:I1->O          1   0.704   0.420  I_36_7 (M0)
-     OR2:I1->O             1   0.704   0.420  I_36_8 (O)
-     end scope: 'XLXI_61/XLXI_151/XLXI_23/XLXI_28'
-     begin scope: 'XLXI_61/XLXI_151/XLXI_24/XLXI_28'
-     AND2B1:I1->O          1   0.704   0.420  I_36_7 (M0)
-     OR2:I1->O             1   0.704   0.420  I_36_8 (O)
-     end scope: 'XLXI_61/XLXI_151/XLXI_24/XLXI_28'
-     begin scope: 'XLXI_61/XLXI_151/XLXI_25/XLXI_28'
-     AND2B1:I1->O          1   0.704   0.420  I_36_7 (M0)
-     OR2:I1->O             1   0.704   0.420  I_36_8 (O)
-     end scope: 'XLXI_61/XLXI_151/XLXI_25/XLXI_28'
-     XOR2:I0->O            2   0.704   0.447  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_9 (XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXN_56)
-     XOR2:I0->O            2   0.704   0.447  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_29/XLXI_2 (XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_29/XLXN_7)
-     NAND2:I1->O           1   0.704   0.420  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_29/XLXI_5 (XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_29/XLXN_4)
-     NAND2:I1->O           2   0.704   0.447  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_29/XLXI_1 (XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXN_14)
-     NAND2:I0->O           1   0.704   0.420  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_30/XLXI_5 (XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_30/XLXN_4)
-     NAND2:I1->O           2   0.704   0.447  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_30/XLXI_1 (XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXN_15)
-     NAND2:I0->O           1   0.704   0.420  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_31/XLXI_5 (XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_31/XLXN_4)
-     NAND2:I1->O           2   0.704   0.447  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_31/XLXI_1 (XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXN_21)
-     NAND2:I0->O           1   0.704   0.420  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_32/XLXI_5 (XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_32/XLXN_4)
-     NAND2:I1->O           2   0.704   0.447  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_32/XLXI_1 (XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXN_120)
-     NAND2:I0->O           1   0.704   0.420  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_33/XLXI_5 (XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_33/XLXN_4)
-     NAND2:I1->O           2   0.704   0.447  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_33/XLXI_1 (XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXN_124)
-     NAND2:I0->O           1   0.704   0.420  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_34/XLXI_5 (XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_34/XLXN_4)
-     NAND2:I1->O           2   0.704   0.447  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_34/XLXI_1 (XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXN_130)
-     NAND2:I0->O           1   0.704   0.420  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_35/XLXI_5 (XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_35/XLXN_4)
-     NAND2:I1->O           3   0.704   0.531  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_35/XLXI_1 (XLXI_61/OFL_C)
-     NAND2:I0->O           1   0.704   0.420  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_36/XLXI_5 (XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_36/XLXN_4)
-     NAND2:I1->O           2   0.704   0.447  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_36/XLXI_1 (XLXI_61/XLXI_151/XLXI_1/XLXN_17)
-     NOR2:I0->O            2   0.704   0.447  XLXI_61/XLXI_151/XLXI_1/XLXI_4 (XLXI_61/XLXI_151/XLXI_1/XLXN_12)
-     NOR2:I0->O           11   0.704   0.933  XLXI_61/XLXI_151/XLXI_1/XLXI_6 (NEG_OBUF)
-     OBUF:I->O                 3.272          NEG_OBUF (NEG)
-    ----------------------------------------
-    Total                     53.162ns (32.344ns logic, 20.819ns route)
-                                       (60.8% logic, 39.2% route)
-
-=========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'XLXI_53/XLXN_18'
-  Total number of paths / destination ports: 385404 / 2
--------------------------------------------------------------------------
-Offset:              53.648ns (Levels of Logic = 49)
-  Source:            XLXI_53/XLXI_1/I_Q0/I_36_35 (FF)
-  Destination:       NEG (PAD)
-  Source Clock:      XLXI_53/XLXN_18 rising
-
-  Data Path: XLXI_53/XLXI_1/I_Q0/I_36_35 to NEG
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FDCE:C->Q            11   0.591   0.933  I_36_35 (Q)
-     end scope: 'I_Q0'
-     end scope: 'XLXI_53/XLXI_1'
-     begin scope: 'XLXI_60/XLXI_164/XLXI_28'
-     AND2:I0->O            1   0.704   0.420  I_36_9 (M1)
-     OR2:I0->O           178   0.704   1.483  I_36_8 (O)
-     end scope: 'XLXI_60/XLXI_164/XLXI_28'
-     LUT3:I0->O            1   0.704   0.424  XLXI_60/XLXI_180/A<0>81 (XLXI_60/XLXI_180/A<0>1)
-     LUT4:I3->O            1   0.704   0.000  XLXI_60/XLXI_180/Mmux_Q_mux0000_12 (XLXI_60/XLXI_180/Mmux_Q_mux0000_12)
-     MUXF5:I0->O           1   0.321   0.499  XLXI_60/XLXI_180/Mmux_Q_mux0000_10_f5 (XLXI_60/XLXI_180/Mmux_Q_mux0000_10_f5)
-     LUT2:I1->O            1   0.704   0.424  XLXI_60/XLXI_180/Q<0>64 (XLXI_60/XLXI_180/Q<0>64)
-     LUT4:I3->O           12   0.704   0.961  XLXI_60/XLXI_180/Q<0>100 (IR<0>)
-     AND4B3:I0->O          2   0.704   0.447  XLXI_61/XLXI_1/XLXI_15 (XLXI_61/XLXI_1/Val2_2)
-     AND2:I0->O            3   0.704   0.531  XLXI_61/XLXI_1/XLXI_52 (XLXI_61/ADD)
-     OR3:I2->O             1   0.704   0.420  XLXI_61/XLXI_168/XLXI_119 (XLXI_61/XLXI_168/EN_ADD_DUMMY)
-     OR2:I1->O            51   0.704   1.268  XLXI_61/XLXI_168/XLXI_120 (XLXI_61/EN_ADDorSUB)
-     begin scope: 'XLXI_61/XLXI_151/XLXI_72/XLXI_28'
-     AND2B1:I0->O          1   0.704   0.420  I_36_7 (M0)
-     OR2:I1->O             1   0.704   0.420  I_36_8 (O)
-     end scope: 'XLXI_61/XLXI_151/XLXI_72/XLXI_28'
-     begin scope: 'XLXI_61/XLXI_151/XLXI_22/XLXI_28'
-     AND2B1:I1->O          1   0.704   0.420  I_36_7 (M0)
-     OR2:I1->O             1   0.704   0.420  I_36_8 (O)
-     end scope: 'XLXI_61/XLXI_151/XLXI_22/XLXI_28'
-     begin scope: 'XLXI_61/XLXI_151/XLXI_23/XLXI_28'
-     AND2B1:I1->O          1   0.704   0.420  I_36_7 (M0)
-     OR2:I1->O             1   0.704   0.420  I_36_8 (O)
-     end scope: 'XLXI_61/XLXI_151/XLXI_23/XLXI_28'
-     begin scope: 'XLXI_61/XLXI_151/XLXI_24/XLXI_28'
-     AND2B1:I1->O          1   0.704   0.420  I_36_7 (M0)
-     OR2:I1->O             1   0.704   0.420  I_36_8 (O)
-     end scope: 'XLXI_61/XLXI_151/XLXI_24/XLXI_28'
-     begin scope: 'XLXI_61/XLXI_151/XLXI_25/XLXI_28'
-     AND2B1:I1->O          1   0.704   0.420  I_36_7 (M0)
-     OR2:I1->O             1   0.704   0.420  I_36_8 (O)
-     end scope: 'XLXI_61/XLXI_151/XLXI_25/XLXI_28'
-     XOR2:I0->O            2   0.704   0.447  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_9 (XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXN_56)
-     XOR2:I0->O            2   0.704   0.447  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_29/XLXI_2 (XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_29/XLXN_7)
-     NAND2:I1->O           1   0.704   0.420  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_29/XLXI_5 (XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_29/XLXN_4)
-     NAND2:I1->O           2   0.704   0.447  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_29/XLXI_1 (XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXN_14)
-     NAND2:I0->O           1   0.704   0.420  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_30/XLXI_5 (XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_30/XLXN_4)
-     NAND2:I1->O           2   0.704   0.447  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_30/XLXI_1 (XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXN_15)
-     NAND2:I0->O           1   0.704   0.420  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_31/XLXI_5 (XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_31/XLXN_4)
-     NAND2:I1->O           2   0.704   0.447  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_31/XLXI_1 (XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXN_21)
-     NAND2:I0->O           1   0.704   0.420  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_32/XLXI_5 (XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_32/XLXN_4)
-     NAND2:I1->O           2   0.704   0.447  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_32/XLXI_1 (XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXN_120)
-     NAND2:I0->O           1   0.704   0.420  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_33/XLXI_5 (XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_33/XLXN_4)
-     NAND2:I1->O           2   0.704   0.447  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_33/XLXI_1 (XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXN_124)
-     NAND2:I0->O           1   0.704   0.420  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_34/XLXI_5 (XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_34/XLXN_4)
-     NAND2:I1->O           2   0.704   0.447  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_34/XLXI_1 (XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXN_130)
-     NAND2:I0->O           1   0.704   0.420  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_35/XLXI_5 (XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_35/XLXN_4)
-     NAND2:I1->O           3   0.704   0.531  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_35/XLXI_1 (XLXI_61/OFL_C)
-     NAND2:I0->O           1   0.704   0.420  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_36/XLXI_5 (XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_36/XLXN_4)
-     NAND2:I1->O           2   0.704   0.447  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_36/XLXI_1 (XLXI_61/XLXI_151/XLXI_1/XLXN_17)
-     NOR2:I0->O            2   0.704   0.447  XLXI_61/XLXI_151/XLXI_1/XLXI_4 (XLXI_61/XLXI_151/XLXI_1/XLXN_12)
-     NOR2:I0->O           11   0.704   0.933  XLXI_61/XLXI_151/XLXI_1/XLXI_6 (NEG_OBUF)
-     OBUF:I->O                 3.272          NEG_OBUF (NEG)
-    ----------------------------------------
-    Total                     53.648ns (32.344ns logic, 21.305ns route)
-                                       (60.3% logic, 39.7% route)
-
-=========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'XLXI_60/WCLK_DM1'
-  Total number of paths / destination ports: 50688 / 2
--------------------------------------------------------------------------
-Offset:              43.165ns (Levels of Logic = 40)
-  Source:            XLXI_60/XLXI_179/mem_0_2 (FF)
-  Destination:       NEG (PAD)
-  Source Clock:      XLXI_60/WCLK_DM1 rising
-
-  Data Path: XLXI_60/XLXI_179/mem_0_2 to NEG
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FDE:C->Q              1   0.591   0.499  XLXI_60/XLXI_179/mem_0_2 (XLXI_60/XLXI_179/mem_0_2)
-     LUT3:I1->O            1   0.704   0.000  XLXI_60/XLXI_179/Mmux_Q_mux0000_102 (XLXI_60/XLXI_179/Mmux_Q_mux0000_102)
-     MUXF5:I0->O           1   0.321   0.000  XLXI_60/XLXI_179/Mmux_Q_mux0000_8_f5_1 (XLXI_60/XLXI_179/Mmux_Q_mux0000_8_f52)
-     MUXF6:I0->O           1   0.521   0.000  XLXI_60/XLXI_179/Mmux_Q_mux0000_6_f6_1 (XLXI_60/XLXI_179/Mmux_Q_mux0000_6_f62)
-     MUXF7:I0->O           1   0.521   0.000  XLXI_60/XLXI_179/Mmux_Q_mux0000_4_f7_1 (XLXI_60/XLXI_179/Mmux_Q_mux0000_4_f72)
-     MUXF8:I0->O           9   0.521   0.820  XLXI_60/XLXI_179/Mmux_Q_mux0000_2_f8_1 (DR<2>)
-     AND4B4:I0->O          4   0.704   0.587  XLXI_61/XLXI_100/XLXI_5 (XLXI_61/r0)
-     AND2:I1->O           16   0.704   1.034  XLXI_61/XLXI_151/XLXI_31 (XLXI_61/XLXI_151/EN_r0)
-     begin scope: 'XLXI_61/XLXI_151/XLXI_22/XLXI_28'
-     AND2B1:I0->O          1   0.704   0.420  I_36_7 (M0)
-     OR2:I1->O             1   0.704   0.420  I_36_8 (O)
-     end scope: 'XLXI_61/XLXI_151/XLXI_22/XLXI_28'
-     begin scope: 'XLXI_61/XLXI_151/XLXI_23/XLXI_28'
-     AND2B1:I1->O          1   0.704   0.420  I_36_7 (M0)
-     OR2:I1->O             1   0.704   0.420  I_36_8 (O)
-     end scope: 'XLXI_61/XLXI_151/XLXI_23/XLXI_28'
-     begin scope: 'XLXI_61/XLXI_151/XLXI_24/XLXI_28'
-     AND2B1:I1->O          1   0.704   0.420  I_36_7 (M0)
-     OR2:I1->O             1   0.704   0.420  I_36_8 (O)
-     end scope: 'XLXI_61/XLXI_151/XLXI_24/XLXI_28'
-     begin scope: 'XLXI_61/XLXI_151/XLXI_25/XLXI_28'
-     AND2B1:I1->O          1   0.704   0.420  I_36_7 (M0)
-     OR2:I1->O             1   0.704   0.420  I_36_8 (O)
-     end scope: 'XLXI_61/XLXI_151/XLXI_25/XLXI_28'
-     XOR2:I0->O            2   0.704   0.447  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_9 (XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXN_56)
-     XOR2:I0->O            2   0.704   0.447  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_29/XLXI_2 (XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_29/XLXN_7)
-     NAND2:I1->O           1   0.704   0.420  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_29/XLXI_5 (XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_29/XLXN_4)
-     NAND2:I1->O           2   0.704   0.447  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_29/XLXI_1 (XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXN_14)
-     NAND2:I0->O           1   0.704   0.420  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_30/XLXI_5 (XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_30/XLXN_4)
-     NAND2:I1->O           2   0.704   0.447  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_30/XLXI_1 (XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXN_15)
-     NAND2:I0->O           1   0.704   0.420  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_31/XLXI_5 (XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_31/XLXN_4)
-     NAND2:I1->O           2   0.704   0.447  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_31/XLXI_1 (XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXN_21)
-     NAND2:I0->O           1   0.704   0.420  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_32/XLXI_5 (XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_32/XLXN_4)
-     NAND2:I1->O           2   0.704   0.447  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_32/XLXI_1 (XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXN_120)
-     NAND2:I0->O           1   0.704   0.420  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_33/XLXI_5 (XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_33/XLXN_4)
-     NAND2:I1->O           2   0.704   0.447  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_33/XLXI_1 (XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXN_124)
-     NAND2:I0->O           1   0.704   0.420  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_34/XLXI_5 (XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_34/XLXN_4)
-     NAND2:I1->O           2   0.704   0.447  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_34/XLXI_1 (XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXN_130)
-     NAND2:I0->O           1   0.704   0.420  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_35/XLXI_5 (XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_35/XLXN_4)
-     NAND2:I1->O           3   0.704   0.531  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_35/XLXI_1 (XLXI_61/OFL_C)
-     NAND2:I0->O           1   0.704   0.420  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_36/XLXI_5 (XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_36/XLXN_4)
-     NAND2:I1->O           2   0.704   0.447  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_36/XLXI_1 (XLXI_61/XLXI_151/XLXI_1/XLXN_17)
-     NOR2:I0->O            2   0.704   0.447  XLXI_61/XLXI_151/XLXI_1/XLXI_4 (XLXI_61/XLXI_151/XLXI_1/XLXN_12)
-     NOR2:I0->O           11   0.704   0.933  XLXI_61/XLXI_151/XLXI_1/XLXI_6 (NEG_OBUF)
-     OBUF:I->O                 3.272          NEG_OBUF (NEG)
-    ----------------------------------------
-    Total                     43.165ns (27.571ns logic, 15.594ns route)
-                                       (63.9% logic, 36.1% route)
-
-=========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'XLXI_60/WCLK_IM1'
-  Total number of paths / destination ports: 173850 / 2
--------------------------------------------------------------------------
-Offset:              49.930ns (Levels of Logic = 45)
-  Source:            XLXI_60/XLXI_180/mem_24_0 (FF)
-  Destination:       NEG (PAD)
-  Source Clock:      XLXI_60/WCLK_IM1 rising
-
-  Data Path: XLXI_60/XLXI_180/mem_24_0 to NEG
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FDE:C->Q              2   0.591   0.526  XLXI_60/XLXI_180/mem_24_0 (XLXI_60/XLXI_180/mem_24_0)
-     LUT3:I1->O            1   0.704   0.424  XLXI_60/XLXI_180/A<0>81 (XLXI_60/XLXI_180/A<0>1)
-     LUT4:I3->O            1   0.704   0.000  XLXI_60/XLXI_180/Mmux_Q_mux0000_12 (XLXI_60/XLXI_180/Mmux_Q_mux0000_12)
-     MUXF5:I0->O           1   0.321   0.499  XLXI_60/XLXI_180/Mmux_Q_mux0000_10_f5 (XLXI_60/XLXI_180/Mmux_Q_mux0000_10_f5)
-     LUT2:I1->O            1   0.704   0.424  XLXI_60/XLXI_180/Q<0>64 (XLXI_60/XLXI_180/Q<0>64)
-     LUT4:I3->O           12   0.704   0.961  XLXI_60/XLXI_180/Q<0>100 (IR<0>)
-     AND4B3:I0->O          2   0.704   0.447  XLXI_61/XLXI_1/XLXI_15 (XLXI_61/XLXI_1/Val2_2)
-     AND2:I0->O            3   0.704   0.531  XLXI_61/XLXI_1/XLXI_52 (XLXI_61/ADD)
-     OR3:I2->O             1   0.704   0.420  XLXI_61/XLXI_168/XLXI_119 (XLXI_61/XLXI_168/EN_ADD_DUMMY)
-     OR2:I1->O            51   0.704   1.268  XLXI_61/XLXI_168/XLXI_120 (XLXI_61/EN_ADDorSUB)
-     begin scope: 'XLXI_61/XLXI_151/XLXI_72/XLXI_28'
-     AND2B1:I0->O          1   0.704   0.420  I_36_7 (M0)
-     OR2:I1->O             1   0.704   0.420  I_36_8 (O)
-     end scope: 'XLXI_61/XLXI_151/XLXI_72/XLXI_28'
-     begin scope: 'XLXI_61/XLXI_151/XLXI_22/XLXI_28'
-     AND2B1:I1->O          1   0.704   0.420  I_36_7 (M0)
-     OR2:I1->O             1   0.704   0.420  I_36_8 (O)
-     end scope: 'XLXI_61/XLXI_151/XLXI_22/XLXI_28'
-     begin scope: 'XLXI_61/XLXI_151/XLXI_23/XLXI_28'
-     AND2B1:I1->O          1   0.704   0.420  I_36_7 (M0)
-     OR2:I1->O             1   0.704   0.420  I_36_8 (O)
-     end scope: 'XLXI_61/XLXI_151/XLXI_23/XLXI_28'
-     begin scope: 'XLXI_61/XLXI_151/XLXI_24/XLXI_28'
-     AND2B1:I1->O          1   0.704   0.420  I_36_7 (M0)
-     OR2:I1->O             1   0.704   0.420  I_36_8 (O)
-     end scope: 'XLXI_61/XLXI_151/XLXI_24/XLXI_28'
-     begin scope: 'XLXI_61/XLXI_151/XLXI_25/XLXI_28'
-     AND2B1:I1->O          1   0.704   0.420  I_36_7 (M0)
-     OR2:I1->O             1   0.704   0.420  I_36_8 (O)
-     end scope: 'XLXI_61/XLXI_151/XLXI_25/XLXI_28'
-     XOR2:I0->O            2   0.704   0.447  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_9 (XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXN_56)
-     XOR2:I0->O            2   0.704   0.447  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_29/XLXI_2 (XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_29/XLXN_7)
-     NAND2:I1->O           1   0.704   0.420  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_29/XLXI_5 (XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_29/XLXN_4)
-     NAND2:I1->O           2   0.704   0.447  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_29/XLXI_1 (XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXN_14)
-     NAND2:I0->O           1   0.704   0.420  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_30/XLXI_5 (XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_30/XLXN_4)
-     NAND2:I1->O           2   0.704   0.447  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_30/XLXI_1 (XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXN_15)
-     NAND2:I0->O           1   0.704   0.420  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_31/XLXI_5 (XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_31/XLXN_4)
-     NAND2:I1->O           2   0.704   0.447  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_31/XLXI_1 (XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXN_21)
-     NAND2:I0->O           1   0.704   0.420  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_32/XLXI_5 (XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_32/XLXN_4)
-     NAND2:I1->O           2   0.704   0.447  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_32/XLXI_1 (XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXN_120)
-     NAND2:I0->O           1   0.704   0.420  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_33/XLXI_5 (XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_33/XLXN_4)
-     NAND2:I1->O           2   0.704   0.447  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_33/XLXI_1 (XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXN_124)
-     NAND2:I0->O           1   0.704   0.420  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_34/XLXI_5 (XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_34/XLXN_4)
-     NAND2:I1->O           2   0.704   0.447  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_34/XLXI_1 (XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXN_130)
-     NAND2:I0->O           1   0.704   0.420  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_35/XLXI_5 (XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_35/XLXN_4)
-     NAND2:I1->O           3   0.704   0.531  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_35/XLXI_1 (XLXI_61/OFL_C)
-     NAND2:I0->O           1   0.704   0.420  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_36/XLXI_5 (XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_36/XLXN_4)
-     NAND2:I1->O           2   0.704   0.447  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_36/XLXI_1 (XLXI_61/XLXI_151/XLXI_1/XLXN_17)
-     NOR2:I0->O            2   0.704   0.447  XLXI_61/XLXI_151/XLXI_1/XLXI_4 (XLXI_61/XLXI_151/XLXI_1/XLXN_12)
-     NOR2:I0->O           11   0.704   0.933  XLXI_61/XLXI_151/XLXI_1/XLXI_6 (NEG_OBUF)
-     OBUF:I->O                 3.272          NEG_OBUF (NEG)
-    ----------------------------------------
-    Total                     49.930ns (30.936ns logic, 18.994ns route)
-                                       (62.0% logic, 38.0% route)
-
-=========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'ticks<1>1'
-  Total number of paths / destination ports: 240 / 2
--------------------------------------------------------------------------
-Offset:              36.649ns (Levels of Logic = 34)
-  Source:            XLXI_61/XLXI_164/XLXI_1/I_Q0 (FF)
-  Destination:       NEG (PAD)
-  Source Clock:      ticks<1>1 rising
-
-  Data Path: XLXI_61/XLXI_164/XLXI_1/I_Q0 to NEG
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FDCE:C->Q             1   0.591   0.420  I_Q0 (Q<0>)
-     end scope: 'XLXI_61/XLXI_164/XLXI_1'
-     begin scope: 'XLXI_61/XLXI_151/XLXI_22/XLXI_28'
-     AND2:I0->O            1   0.704   0.420  I_36_9 (M1)
-     OR2:I0->O             1   0.704   0.420  I_36_8 (O)
-     end scope: 'XLXI_61/XLXI_151/XLXI_22/XLXI_28'
-     begin scope: 'XLXI_61/XLXI_151/XLXI_23/XLXI_28'
-     AND2B1:I1->O          1   0.704   0.420  I_36_7 (M0)
-     OR2:I1->O             1   0.704   0.420  I_36_8 (O)
-     end scope: 'XLXI_61/XLXI_151/XLXI_23/XLXI_28'
-     begin scope: 'XLXI_61/XLXI_151/XLXI_24/XLXI_28'
-     AND2B1:I1->O          1   0.704   0.420  I_36_7 (M0)
-     OR2:I1->O             1   0.704   0.420  I_36_8 (O)
-     end scope: 'XLXI_61/XLXI_151/XLXI_24/XLXI_28'
-     begin scope: 'XLXI_61/XLXI_151/XLXI_25/XLXI_28'
-     AND2B1:I1->O          1   0.704   0.420  I_36_7 (M0)
-     OR2:I1->O             1   0.704   0.420  I_36_8 (O)
-     end scope: 'XLXI_61/XLXI_151/XLXI_25/XLXI_28'
-     XOR2:I0->O            2   0.704   0.447  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_9 (XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXN_56)
-     XOR2:I0->O            2   0.704   0.447  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_29/XLXI_2 (XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_29/XLXN_7)
-     NAND2:I1->O           1   0.704   0.420  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_29/XLXI_5 (XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_29/XLXN_4)
-     NAND2:I1->O           2   0.704   0.447  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_29/XLXI_1 (XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXN_14)
-     NAND2:I0->O           1   0.704   0.420  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_30/XLXI_5 (XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_30/XLXN_4)
-     NAND2:I1->O           2   0.704   0.447  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_30/XLXI_1 (XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXN_15)
-     NAND2:I0->O           1   0.704   0.420  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_31/XLXI_5 (XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_31/XLXN_4)
-     NAND2:I1->O           2   0.704   0.447  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_31/XLXI_1 (XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXN_21)
-     NAND2:I0->O           1   0.704   0.420  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_32/XLXI_5 (XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_32/XLXN_4)
-     NAND2:I1->O           2   0.704   0.447  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_32/XLXI_1 (XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXN_120)
-     NAND2:I0->O           1   0.704   0.420  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_33/XLXI_5 (XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_33/XLXN_4)
-     NAND2:I1->O           2   0.704   0.447  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_33/XLXI_1 (XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXN_124)
-     NAND2:I0->O           1   0.704   0.420  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_34/XLXI_5 (XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_34/XLXN_4)
-     NAND2:I1->O           2   0.704   0.447  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_34/XLXI_1 (XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXN_130)
-     NAND2:I0->O           1   0.704   0.420  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_35/XLXI_5 (XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_35/XLXN_4)
-     NAND2:I1->O           3   0.704   0.531  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_35/XLXI_1 (XLXI_61/OFL_C)
-     NAND2:I0->O           1   0.704   0.420  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_36/XLXI_5 (XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_36/XLXN_4)
-     NAND2:I1->O           2   0.704   0.447  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_36/XLXI_1 (XLXI_61/XLXI_151/XLXI_1/XLXN_17)
-     NOR2:I0->O            2   0.704   0.447  XLXI_61/XLXI_151/XLXI_1/XLXI_4 (XLXI_61/XLXI_151/XLXI_1/XLXN_12)
-     NOR2:I0->O           11   0.704   0.933  XLXI_61/XLXI_151/XLXI_1/XLXI_6 (NEG_OBUF)
-     OBUF:I->O                 3.272          NEG_OBUF (NEG)
-    ----------------------------------------
-    Total                     36.649ns (23.575ns logic, 13.074ns route)
-                                       (64.3% logic, 35.7% route)
-
-=========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'XLXN_115'
-  Total number of paths / destination ports: 4 / 2
--------------------------------------------------------------------------
-Offset:              5.656ns (Levels of Logic = 3)
-  Source:            XLXI_61/XLXI_177/XLXI_1/I_Q0 (FF)
-  Destination:       RegS_Neg (PAD)
-  Source Clock:      XLXN_115 rising
-
-  Data Path: XLXI_61/XLXI_177/XLXI_1/I_Q0 to RegS_Neg
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FDCE:C->Q             6   0.591   0.669  I_Q0 (Q0)
+     FDCE:C->Q            23   0.591   1.202  I_Q1 (Q1)
      end scope: 'XLXI_61/XLXI_177/XLXI_1'
-     AND2:I0->O            1   0.704   0.420  XLXI_60/XLXI_166 (RegS_Neg_OBUF)
-     OBUF:I->O                 3.272          RegS_Neg_OBUF (RegS_Neg)
+     BUF:I->O              1   0.704   0.420  XLXI_63 (OFL_OBUF)
+     OBUF:I->O                 3.272          OFL_OBUF (OFL)
     ----------------------------------------
-    Total                      5.656ns (4.567ns logic, 1.089ns route)
-                                       (80.7% logic, 19.3% route)
+    Total                      6.189ns (4.567ns logic, 1.622ns route)
+                                       (73.8% logic, 26.2% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'XLXI_60/XLXI_162/XLXI_28/clk_100_0'
@@ -3264,86 +2630,46 @@ Offset:              11.815ns (Levels of Logic = 10)
 
 =========================================================================
 Timing constraint: Default path analysis
-  Total number of paths / destination ports: 771043 / 14
+  Total number of paths / destination ports: 233 / 11
 -------------------------------------------------------------------------
-Delay:               54.607ns (Levels of Logic = 49)
+Delay:               17.217ns (Levels of Logic = 13)
   Source:            RunMode (PAD)
-  Destination:       NEG (PAD)
+  Destination:       sseg<6> (PAD)
 
-  Data Path: RunMode to NEG
+  Data Path: RunMode to sseg<6>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            39   1.218   1.264  RunMode_IBUF (RunMode_IBUF)
-     begin scope: 'XLXI_60/XLXI_164/XLXI_28'
-     AND2B1:I0->O          1   0.704   0.420  I_36_7 (M0)
-     OR2:I1->O           178   0.704   1.483  I_36_8 (O)
-     end scope: 'XLXI_60/XLXI_164/XLXI_28'
-     LUT3:I0->O            1   0.704   0.424  XLXI_60/XLXI_180/A<0>81 (XLXI_60/XLXI_180/A<0>1)
-     LUT4:I3->O            1   0.704   0.000  XLXI_60/XLXI_180/Mmux_Q_mux0000_12 (XLXI_60/XLXI_180/Mmux_Q_mux0000_12)
-     MUXF5:I0->O           1   0.321   0.499  XLXI_60/XLXI_180/Mmux_Q_mux0000_10_f5 (XLXI_60/XLXI_180/Mmux_Q_mux0000_10_f5)
-     LUT2:I1->O            1   0.704   0.424  XLXI_60/XLXI_180/Q<0>64 (XLXI_60/XLXI_180/Q<0>64)
-     LUT4:I3->O           12   0.704   0.961  XLXI_60/XLXI_180/Q<0>100 (IR<0>)
-     AND4B3:I0->O          2   0.704   0.447  XLXI_61/XLXI_1/XLXI_15 (XLXI_61/XLXI_1/Val2_2)
-     AND2:I0->O            3   0.704   0.531  XLXI_61/XLXI_1/XLXI_52 (XLXI_61/ADD)
-     OR3:I2->O             1   0.704   0.420  XLXI_61/XLXI_168/XLXI_119 (XLXI_61/XLXI_168/EN_ADD_DUMMY)
-     OR2:I1->O            51   0.704   1.268  XLXI_61/XLXI_168/XLXI_120 (XLXI_61/EN_ADDorSUB)
-     begin scope: 'XLXI_61/XLXI_151/XLXI_72/XLXI_28'
+     IBUF:I->O            37   1.218   1.264  RunMode_IBUF (RunMode_IBUF)
+     INV:I->O             26   0.704   1.260  XLXI_67 (XLXN_168)
+     INV:I->O             33   0.704   1.263  XLXI_60/XLXI_133/XLXI_42 (XLXI_60/XLXI_133/RunMode)
+     begin scope: 'XLXI_60/XLXI_133/XLXI_60/XLXI_28'
      AND2B1:I0->O          1   0.704   0.420  I_36_7 (M0)
      OR2:I1->O             1   0.704   0.420  I_36_8 (O)
-     end scope: 'XLXI_61/XLXI_151/XLXI_72/XLXI_28'
-     begin scope: 'XLXI_61/XLXI_151/XLXI_22/XLXI_28'
+     end scope: 'XLXI_60/XLXI_133/XLXI_60/XLXI_28'
+     begin scope: 'XLXI_60/XLXI_133/XLXI_63/XLXI_28'
      AND2B1:I1->O          1   0.704   0.420  I_36_7 (M0)
-     OR2:I1->O             1   0.704   0.420  I_36_8 (O)
-     end scope: 'XLXI_61/XLXI_151/XLXI_22/XLXI_28'
-     begin scope: 'XLXI_61/XLXI_151/XLXI_23/XLXI_28'
-     AND2B1:I1->O          1   0.704   0.420  I_36_7 (M0)
-     OR2:I1->O             1   0.704   0.420  I_36_8 (O)
-     end scope: 'XLXI_61/XLXI_151/XLXI_23/XLXI_28'
-     begin scope: 'XLXI_61/XLXI_151/XLXI_24/XLXI_28'
-     AND2B1:I1->O          1   0.704   0.420  I_36_7 (M0)
-     OR2:I1->O             1   0.704   0.420  I_36_8 (O)
-     end scope: 'XLXI_61/XLXI_151/XLXI_24/XLXI_28'
-     begin scope: 'XLXI_61/XLXI_151/XLXI_25/XLXI_28'
-     AND2B1:I1->O          1   0.704   0.420  I_36_7 (M0)
-     OR2:I1->O             1   0.704   0.420  I_36_8 (O)
-     end scope: 'XLXI_61/XLXI_151/XLXI_25/XLXI_28'
-     XOR2:I0->O            2   0.704   0.447  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_9 (XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXN_56)
-     XOR2:I0->O            2   0.704   0.447  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_29/XLXI_2 (XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_29/XLXN_7)
-     NAND2:I1->O           1   0.704   0.420  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_29/XLXI_5 (XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_29/XLXN_4)
-     NAND2:I1->O           2   0.704   0.447  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_29/XLXI_1 (XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXN_14)
-     NAND2:I0->O           1   0.704   0.420  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_30/XLXI_5 (XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_30/XLXN_4)
-     NAND2:I1->O           2   0.704   0.447  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_30/XLXI_1 (XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXN_15)
-     NAND2:I0->O           1   0.704   0.420  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_31/XLXI_5 (XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_31/XLXN_4)
-     NAND2:I1->O           2   0.704   0.447  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_31/XLXI_1 (XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXN_21)
-     NAND2:I0->O           1   0.704   0.420  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_32/XLXI_5 (XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_32/XLXN_4)
-     NAND2:I1->O           2   0.704   0.447  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_32/XLXI_1 (XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXN_120)
-     NAND2:I0->O           1   0.704   0.420  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_33/XLXI_5 (XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_33/XLXN_4)
-     NAND2:I1->O           2   0.704   0.447  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_33/XLXI_1 (XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXN_124)
-     NAND2:I0->O           1   0.704   0.420  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_34/XLXI_5 (XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_34/XLXN_4)
-     NAND2:I1->O           2   0.704   0.447  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_34/XLXI_1 (XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXN_130)
-     NAND2:I0->O           1   0.704   0.420  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_35/XLXI_5 (XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_35/XLXN_4)
-     NAND2:I1->O           3   0.704   0.531  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_35/XLXI_1 (XLXI_61/OFL_C)
-     NAND2:I0->O           1   0.704   0.420  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_36/XLXI_5 (XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_36/XLXN_4)
-     NAND2:I1->O           2   0.704   0.447  XLXI_61/XLXI_151/XLXI_1/XLXI_2/XLXI_36/XLXI_1 (XLXI_61/XLXI_151/XLXI_1/XLXN_17)
-     NOR2:I0->O            2   0.704   0.447  XLXI_61/XLXI_151/XLXI_1/XLXI_4 (XLXI_61/XLXI_151/XLXI_1/XLXN_12)
-     NOR2:I0->O           11   0.704   0.933  XLXI_61/XLXI_151/XLXI_1/XLXI_6 (NEG_OBUF)
-     OBUF:I->O                 3.272          NEG_OBUF (NEG)
+     OR2:I1->O             1   0.704   0.424  I_36_8 (O)
+     end scope: 'XLXI_60/XLXI_133/XLXI_63/XLXI_28'
+     LUT4:I3->O            1   0.704   0.000  XLXI_60/XLXI_133/XLXI_15/hexO<0>1 (XLXI_60/XLXI_133/XLXI_15/hexO<0>)
+     MUXF5:I1->O           7   0.321   0.883  XLXI_60/XLXI_133/XLXI_15/hexO<0>_f5 (XLXI_60/XLXI_133/XLXN_13<0>)
+     LUT4:I0->O            1   0.704   0.420  XLXI_60/XLXI_133/XLXI_16/Mrom_hexD_rom000031 (sseg_3_OBUF)
+     OBUF:I->O                 3.272          sseg_3_OBUF (sseg<3>)
     ----------------------------------------
-    Total                     54.607ns (32.971ns logic, 21.636ns route)
-                                       (60.4% logic, 39.6% route)
+    Total                     17.217ns (10.443ns logic, 6.774ns route)
+                                       (60.7% logic, 39.3% route)
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 23.00 secs
-Total CPU time to Xst completion: 23.31 secs
+Total REAL time to Xst completion: 24.00 secs
+Total CPU time to Xst completion: 24.68 secs
  
 --> 
 
-Total memory usage is 411072 kilobytes
+Total memory usage is 410056 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  774 (   0 filtered)
-Number of infos    :   57 (   0 filtered)
+Number of warnings :  470 (   0 filtered)
+Number of infos    :   10 (   0 filtered)
 

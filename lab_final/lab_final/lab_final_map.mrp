@@ -3,40 +3,40 @@ Xilinx Mapping Report File for Design 'lab_final'
 
 Design Information
 ------------------
-Command Line   : map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off
+Command Line   : map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off
 -c 100 -o lab_final_map.ncd lab_final.ngd lab_final.pcf 
-Target Device  : xc3s100e
-Target Package : cp132
+Target Device  : xc3s500e
+Target Package : fg320
 Target Speed   : -4
 Mapper Version : spartan3e -- $Revision: 1.55 $
-Mapped Date    : Thu May 17 02:02:58 2018
+Mapped Date    : Thu May 17 12:45:46 2018
 
 Design Summary
 --------------
 Number of errors:      0
-Number of warnings:    7
+Number of warnings:    8
 Logic Utilization:
-  Number of Slice Flip Flops:           720 out of   1,920   37%
-  Number of 4 input LUTs:             1,239 out of   1,920   64%
+  Number of Slice Flip Flops:           969 out of   9,312   10%
+  Number of 4 input LUTs:             1,336 out of   9,312   14%
 Logic Distribution:
-  Number of occupied Slices:            933 out of     960   97%
-    Number of Slices containing only related logic:     933 out of     933 100%
-    Number of Slices containing unrelated logic:          0 out of     933   0%
+  Number of occupied Slices:          1,095 out of   4,656   23%
+    Number of Slices containing only related logic:   1,095 out of   1,095 100%
+    Number of Slices containing unrelated logic:          0 out of   1,095   0%
       *See NOTES below for an explanation of the effects of unrelated logic.
-  Total Number of 4 input LUTs:       1,422 out of   1,920   74%
-    Number used as logic:             1,239
+  Total Number of 4 input LUTs:       1,519 out of   9,312   16%
+    Number used as logic:             1,336
     Number used as a route-thru:        183
 
   The Slice Logic Distribution report is not meaningful if the design is
   over-mapped for a non-slice resource or if Placement fails.
 
-  Number of bonded IOBs:                 41 out of      83   49%
+  Number of bonded IOBs:                 40 out of     232   17%
   Number of BUFGMUXs:                     9 out of      24   37%
 
   Number of RPM macros:           11
-Average Fanout of Non-Clock Nets:                2.86
+Average Fanout of Non-Clock Nets:                2.85
 
-Peak Memory Usage:  345 MB
+Peak Memory Usage:  347 MB
 Total REAL time to MAP completion:  3 secs 
 Total CPU time to MAP completion:   3 secs 
 
@@ -95,21 +95,24 @@ WARNING:Pack:249 - The following adjacent carry multiplexers occupy different
    slice components.  The resulting carry chain will have suboptimal timing.
    	XLXI_60/XLXI_133/XLXI_41/Mcompar_cnt10k_cmp_ge0000_cy<10>
    	XLXI_60/XLXI_133/XLXI_41/Mcount_cnt10k_cy<0>
+WARNING:PhysDesignRules:372 - Gated clock. Clock net XLXI_61/EN_ADDorSUB is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   XLXI_60/XLXI_162/XLXI_36/rowON is sourced by a combinatorial pin. This is not
+   good design practice. Use the CE pin to control the loading of data into the
+   flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net XLXI_53/XLXN_18 is sourced
    by a combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net XLXI_53/XLXN_28 is sourced
    by a combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   XLXI_60/XLXI_162/XLXI_36/rowON is sourced by a combinatorial pin. This is not
-   good design practice. Use the CE pin to control the loading of data into the
-   flip-flop.
 
 Section 3 - Informational
 -------------------------
 INFO:LIT:243 - Logical network btn_writeData has no load.
-INFO:LIT:395 - The above info message is repeated 48 more times for the
+INFO:LIT:395 - The above info message is repeated 40 more times for the
    following (max. 5 shown):
    EN_hex,
    XLXI_60/XLXI_171/XLXI_44/O,
@@ -124,9 +127,9 @@ INFO:LIT:244 - All of the single ended outputs in this design are using slew
 
 Section 4 - Removed Logic Summary
 ---------------------------------
- 185 block(s) removed
-  72 block(s) optimized away
- 169 signal(s) removed
+ 169 block(s) removed
+  68 block(s) optimized away
+ 151 signal(s) removed
 
 Section 5 - Removed Logic
 -------------------------
@@ -156,6 +159,7 @@ been removed.
  The signal "XLXI_61/XLXI_151/XLXI_1/XLXI_3/XLXI_36/XLXN_4" is loadless and has
 been removed.
   Loadless block "XLXI_61/XLXI_151/XLXI_1/XLXI_3/XLXI_36/XLXI_5" (AND) removed.
+Loadless block "XLXI_61/XLXI_151/XLXI_1/XLXI_5" (OR) removed.
 Loadless block "XLXI_61/XLXI_151/XLXI_29" (BUF) removed.
  The signal "XLXI_61/Signed" is loadless and has been removed.
   Loadless block "XLXI_61/XLXI_168/XLXI_55" (OR) removed.
@@ -166,13 +170,14 @@ Loadless block "XLXI_61/XLXI_168/XLXI_82" (AND) removed.
 Loadless block "XLXI_61/XLXI_168/XLXI_83" (AND) removed.
 Loadless block "XLXI_61/XLXI_168/XLXI_84" (AND) removed.
 Loadless block "XLXI_61/XLXI_177/XLXI_2/XLXI_2" (AND) removed.
- The signal "XLXI_61/RegS<3>" is loadless and has been removed.
+ The signal "XLXI_61/RegS_DUMMY<3>" is loadless and has been removed.
   Loadless block "XLXI_61/XLXI_177/XLXI_1/I_Q3" (FF) removed.
- The signal "XLXI_61/RegS<2>" is loadless and has been removed.
+ The signal "XLXI_61/RegS_DUMMY<2>" is loadless and has been removed.
   Loadless block "XLXI_61/XLXI_177/XLXI_1/I_Q2" (FF) removed.
 Loadless block "XLXI_61/XLXI_177/XLXI_2/XLXI_4" (AND) removed.
 Loadless block "XLXI_61/XLXI_177/XLXI_2/XLXI_5" (AND) removed.
 Loadless block "XLXI_61/XLXI_177/XLXI_2/XLXI_6" (AND) removed.
+Loadless block "XLXI_68" (AND) removed.
 The signal "XLXI_60/XLXI_171/XLXI_44/M0" is sourceless and has been removed.
  Sourceless block "XLXI_60/XLXI_171/XLXI_44/I_36_8" (OR) removed.
   The signal "XLXI_60/XLXI_171/XLXI_44/O" is sourceless and has been removed.
@@ -229,22 +234,6 @@ The signal "XLXI_60/XLXI_164/XLXI_27/M0" is sourceless and has been removed.
  Sourceless block "XLXI_60/XLXI_164/XLXI_27/I_36_8" (OR) removed.
   The signal "XLXI_60/XLXI_164/XLXI_27/O" is sourceless and has been removed.
 The signal "XLXI_60/XLXI_164/XLXI_27/M1" is sourceless and has been removed.
-The signal "XLXI_60/XLXI_161/XLXI_143/XLXI_159/Q<0>" is sourceless and has been
-removed.
-The signal "XLXI_60/XLXI_161/XLXI_143/XLXI_159/Q<1>" is sourceless and has been
-removed.
-The signal "XLXI_60/XLXI_161/XLXI_143/XLXI_159/Q<2>" is sourceless and has been
-removed.
-The signal "XLXI_60/XLXI_161/XLXI_143/XLXI_159/Q<3>" is sourceless and has been
-removed.
-The signal "XLXI_60/XLXI_161/XLXI_143/XLXI_159/Q<4>" is sourceless and has been
-removed.
-The signal "XLXI_60/XLXI_161/XLXI_143/XLXI_159/Q<5>" is sourceless and has been
-removed.
-The signal "XLXI_60/XLXI_161/XLXI_143/XLXI_159/Q<6>" is sourceless and has been
-removed.
-The signal "XLXI_60/XLXI_161/XLXI_143/XLXI_159/Q<7>" is sourceless and has been
-removed.
 The signal "XLXI_60/XLXI_141/XLXI_27/M0" is sourceless and has been removed.
  Sourceless block "XLXI_60/XLXI_141/XLXI_27/I_36_8" (OR) removed.
   The signal "XLXI_60/XLXI_141/XLXI_27/O" is sourceless and has been removed.
@@ -422,26 +411,6 @@ The trimmed logic reported below is either:
    2. part of disabled logic
    3. a side-effect of other trimmed logic
 
-The signal "XLXI_60/EN_DR" is unused and has been removed.
- Unused block "XLXI_60/XLXI_144" (BUF) removed.
-The signal "XLXI_60/XLXI_161/XLXI_143/R1<0>" is unused and has been removed.
- Unused block "XLXI_60/XLXI_161/XLXI_143/XLXI_149/I_Q0" (FF) removed.
-  The signal "XLXI_60/XLXI_161/XLXN_45" is unused and has been removed.
-   Unused block "XLXI_60/XLXI_161/XLXI_119" (AND) removed.
-The signal "XLXI_60/XLXI_161/XLXI_143/R1<1>" is unused and has been removed.
- Unused block "XLXI_60/XLXI_161/XLXI_143/XLXI_149/I_Q1" (FF) removed.
-The signal "XLXI_60/XLXI_161/XLXI_143/R1<2>" is unused and has been removed.
- Unused block "XLXI_60/XLXI_161/XLXI_143/XLXI_149/I_Q2" (FF) removed.
-The signal "XLXI_60/XLXI_161/XLXI_143/R1<3>" is unused and has been removed.
- Unused block "XLXI_60/XLXI_161/XLXI_143/XLXI_149/I_Q3" (FF) removed.
-The signal "XLXI_60/XLXI_161/XLXI_143/R1<4>" is unused and has been removed.
- Unused block "XLXI_60/XLXI_161/XLXI_143/XLXI_150/I_Q0" (FF) removed.
-The signal "XLXI_60/XLXI_161/XLXI_143/R1<5>" is unused and has been removed.
- Unused block "XLXI_60/XLXI_161/XLXI_143/XLXI_150/I_Q1" (FF) removed.
-The signal "XLXI_60/XLXI_161/XLXI_143/R1<6>" is unused and has been removed.
- Unused block "XLXI_60/XLXI_161/XLXI_143/XLXI_150/I_Q2" (FF) removed.
-The signal "XLXI_60/XLXI_161/XLXI_143/R1<7>" is unused and has been removed.
- Unused block "XLXI_60/XLXI_161/XLXI_143/XLXI_150/I_Q3" (FF) removed.
 The signal "XLXI_60/XLXI_162/XLXI_28/RST_inv" is unused and has been removed.
 The signal "XLXI_60/XLXN_578" is unused and has been removed.
  Unused block "XLXI_60/XLXI_174" (AND) removed.
@@ -473,14 +442,6 @@ Unused block "XLXI_60/XLXI_133/XLXI_63/XLXI_27/I_36_7" (AND) removed.
 Unused block "XLXI_60/XLXI_133/XLXI_63/XLXI_27/I_36_9" (AND) removed.
 Unused block "XLXI_60/XLXI_141/XLXI_27/I_36_7" (AND) removed.
 Unused block "XLXI_60/XLXI_141/XLXI_27/I_36_9" (AND) removed.
-Unused block "XLXI_60/XLXI_161/XLXI_143/XLXI_159/I_Q0" (FF) removed.
-Unused block "XLXI_60/XLXI_161/XLXI_143/XLXI_159/I_Q1" (FF) removed.
-Unused block "XLXI_60/XLXI_161/XLXI_143/XLXI_159/I_Q2" (FF) removed.
-Unused block "XLXI_60/XLXI_161/XLXI_143/XLXI_159/I_Q3" (FF) removed.
-Unused block "XLXI_60/XLXI_161/XLXI_143/XLXI_159/I_Q4" (FF) removed.
-Unused block "XLXI_60/XLXI_161/XLXI_143/XLXI_159/I_Q5" (FF) removed.
-Unused block "XLXI_60/XLXI_161/XLXI_143/XLXI_159/I_Q6" (FF) removed.
-Unused block "XLXI_60/XLXI_161/XLXI_143/XLXI_159/I_Q7" (FF) removed.
 Unused block "XLXI_60/XLXI_162/XLXI_25" (PULLUP) removed.
 Unused block "XLXI_60/XLXI_164/XLXI_27/I_36_7" (AND) removed.
 Unused block "XLXI_60/XLXI_164/XLXI_27/I_36_9" (AND) removed.
@@ -582,8 +543,6 @@ AND2 		XLXI_60/XLXI_133/XLXI_60/XLXI_34/I_36_9
 PULLDOWN 		XLXI_60/XLXI_162/XLXI_24
 INV 		XLXI_60/XLXI_162/XLXI_28/RST_inv1_INV_0
 PULLDOWN 		XLXI_60/XLXI_162/XLXI_46
-AND2 		XLXI_60/XLXI_166
-AND2 		XLXI_60/XLXI_167
 NAND2 		XLXI_61/XLXI_151/XLXI_1/XLXI_3/XLXI_29/XLXI_3
 NAND2 		XLXI_61/XLXI_151/XLXI_1/XLXI_3/XLXI_30/XLXI_3
 NAND2 		XLXI_61/XLXI_151/XLXI_1/XLXI_3/XLXI_31/XLXI_3
@@ -615,10 +574,6 @@ AND2B1 		XLXI_61/XLXI_151/XLXI_72/XLXI_35/I_36_7
 AND2B1 		XLXI_61/XLXI_151/XLXI_72/XLXI_36/I_36_7
 AND2B1 		XLXI_61/XLXI_151/XLXI_72/XLXI_37/I_36_7
 AND2B1 		XLXI_61/XLXI_151/XLXI_72/XLXI_44/I_36_7
-FDCE 		XLXI_61/XLXI_177/XLXI_1/I_Q0
-   optimized to 0
-FDCE 		XLXI_61/XLXI_177/XLXI_1/I_Q1
-   optimized to 0
 AND2 		XLXI_61/XLXI_182/XLXI_44/I_36_9
 VCC 		XST_VCC
 
@@ -644,12 +599,11 @@ Section 6 - IOB Properties
 | EnableDataLED                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
 | EnableInstructionLED               | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
 | IRorDR                             | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
-| NEG                                | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| Neg                                | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
 | OFL                                | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
 | RegS_Neg                           | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
 | RegS_OFL                           | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
 | RunMode                            | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
-| RunModeLED                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
 | SWITCH_SPeed                       | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
 | Toggle_Output                      | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
 | anO<0>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
@@ -677,17 +631,17 @@ Section 6 - IOB Properties
 
 Section 7 - RPMs
 ----------------
-XLXI_53/XLXI_1/XLXI_1_I_Q0_55           
-XLXI_53/XLXI_1/XLXI_1_I_Q1_54           
-XLXI_53/XLXI_1/XLXI_1_I_Q2_53           
-XLXI_53/XLXI_1/XLXI_1_I_Q3_52           
-XLXI_53/XLXI_1/XLXI_1_I_Q4_51           
-XLXI_53/XLXI_1/XLXI_1_I_Q5_50           
-XLXI_53/XLXI_1/XLXI_1_I_Q6_49           
-XLXI_53/XLXI_1/XLXI_1_I_Q7_48           
-XLXI_53/XLXI_6/XLXI_6_I_Q0_43           
-XLXI_53/XLXI_6/XLXI_6_I_Q1_42           
-XLXI_53/XLXI_6/XLXI_6_I_Q2_41           
+XLXI_53/XLXI_1/XLXI_1_I_Q0_70           
+XLXI_53/XLXI_1/XLXI_1_I_Q1_69           
+XLXI_53/XLXI_1/XLXI_1_I_Q2_68           
+XLXI_53/XLXI_1/XLXI_1_I_Q3_67           
+XLXI_53/XLXI_1/XLXI_1_I_Q4_66           
+XLXI_53/XLXI_1/XLXI_1_I_Q5_65           
+XLXI_53/XLXI_1/XLXI_1_I_Q6_64           
+XLXI_53/XLXI_1/XLXI_1_I_Q7_63           
+XLXI_53/XLXI_6/XLXI_6_I_Q0_58           
+XLXI_53/XLXI_6/XLXI_6_I_Q1_57           
+XLXI_53/XLXI_6/XLXI_6_I_Q2_56           
 
 Section 8 - Guide Report
 ------------------------

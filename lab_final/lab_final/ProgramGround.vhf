@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : ProgramGround.vhf
--- /___/   /\     Timestamp : 05/17/2018 02:02:12
+-- /___/   /\     Timestamp : 05/17/2018 12:26:46
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -102,15 +102,15 @@ architecture BEHAVIORAL of MUX8_generic_MUSER_ProgramGround is
              O  : out   std_logic);
    end component;
    
-   attribute HU_SET of XLXI_27 : label is "XLXI_27_0";
-   attribute HU_SET of XLXI_28 : label is "XLXI_28_1";
-   attribute HU_SET of XLXI_32 : label is "XLXI_32_7";
-   attribute HU_SET of XLXI_33 : label is "XLXI_33_2";
-   attribute HU_SET of XLXI_34 : label is "XLXI_34_3";
-   attribute HU_SET of XLXI_35 : label is "XLXI_35_4";
-   attribute HU_SET of XLXI_36 : label is "XLXI_36_5";
-   attribute HU_SET of XLXI_37 : label is "XLXI_37_6";
-   attribute HU_SET of XLXI_44 : label is "XLXI_44_8";
+   attribute HU_SET of XLXI_27 : label is "XLXI_27_9";
+   attribute HU_SET of XLXI_28 : label is "XLXI_28_10";
+   attribute HU_SET of XLXI_32 : label is "XLXI_32_16";
+   attribute HU_SET of XLXI_33 : label is "XLXI_33_11";
+   attribute HU_SET of XLXI_34 : label is "XLXI_34_12";
+   attribute HU_SET of XLXI_35 : label is "XLXI_35_13";
+   attribute HU_SET of XLXI_36 : label is "XLXI_36_14";
+   attribute HU_SET of XLXI_37 : label is "XLXI_37_15";
+   attribute HU_SET of XLXI_44 : label is "XLXI_44_17";
 begin
    XLXI_27 : M2_1_MXILINX_ProgramGround
       port map (D0=>XLXI_27_D0_openSignal,
@@ -281,7 +281,7 @@ architecture BEHAVIORAL of Register_8bit_MUSER_ProgramGround is
              Q   : out   std_logic_vector (7 downto 0));
    end component;
    
-   attribute HU_SET of XLXI_1 : label is "XLXI_1_9";
+   attribute HU_SET of XLXI_1 : label is "XLXI_1_18";
 begin
    XLXI_1 : FD8CE_MXILINX_ProgramGround
       port map (C=>R_WCLK,
@@ -478,7 +478,7 @@ architecture BEHAVIORAL of Register_4bBit_MUSER_ProgramGround is
              EN_2  : out   std_logic);
    end component;
    
-   attribute HU_SET of XLXI_1 : label is "XLXI_1_10";
+   attribute HU_SET of XLXI_1 : label is "XLXI_1_19";
 begin
    EN_Reg(3 downto 0) <= EN_Reg_DUMMY(3 downto 0);
    XLXI_1 : FD4CE_MXILINX_ProgramGround
@@ -1020,20 +1020,23 @@ end ALU_Final_MUSER_ProgramGround;
 
 architecture BEHAVIORAL of ALU_Final_MUSER_ProgramGround is
    attribute BOX_TYPE   : string ;
-   signal EN_Registers : std_logic;
-   signal EN_r0        : std_logic;
-   signal EN_r1        : std_logic;
-   signal EN_r2        : std_logic;
-   signal EN_r3        : std_logic;
-   signal OnlySUB      : std_logic;
-   signal XLXN_134     : std_logic_vector (7 downto 0);
-   signal XLXN_143     : std_logic_vector (7 downto 0);
-   signal XLXN_147     : std_logic_vector (7 downto 0);
-   signal XLXN_148     : std_logic_vector (7 downto 0);
-   signal XLXN_181     : std_logic_vector (7 downto 0);
-   signal XLXN_184     : std_logic_vector (7 downto 0);
-   signal XLXN_186     : std_logic_vector (7 downto 0);
-   signal XLXN_188     : std_logic_vector (7 downto 0);
+   signal EN_Registers            : std_logic;
+   signal EN_r0                   : std_logic;
+   signal EN_r1                   : std_logic;
+   signal EN_r2                   : std_logic;
+   signal EN_r3                   : std_logic;
+   signal OnlySUB                 : std_logic;
+   signal XLXN_134                : std_logic_vector (7 downto 0);
+   signal XLXN_143                : std_logic_vector (7 downto 0);
+   signal XLXN_147                : std_logic_vector (7 downto 0);
+   signal XLXN_148                : std_logic_vector (7 downto 0);
+   signal XLXN_181                : std_logic_vector (7 downto 0);
+   signal XLXN_184                : std_logic_vector (7 downto 0);
+   signal XLXN_186                : std_logic_vector (7 downto 0);
+   signal XLXN_188                : std_logic_vector (7 downto 0);
+   signal XLXI_74_A_openSignal    : std_logic_vector (7 downto 0);
+   signal XLXI_74_B_openSignal    : std_logic_vector (7 downto 0);
+   signal XLXI_74_CTRL_openSignal : std_logic_vector (1 downto 0);
    component Full_AdderSub8_MUSER_ProgramGround
       port ( Ain      : in    std_logic_vector (7 downto 0); 
              Bin      : in    std_logic_vector (7 downto 0); 
@@ -1081,6 +1084,15 @@ architecture BEHAVIORAL of ALU_Final_MUSER_ProgramGround is
       port ( O : out   std_logic);
    end component;
    attribute BOX_TYPE of PULLUP : component is "BLACK_BOX";
+   
+   component addsub8
+      port ( A    : in    std_logic_vector (7 downto 0); 
+             B    : in    std_logic_vector (7 downto 0); 
+             CTRL : in    std_logic_vector (1 downto 0); 
+             NEG  : inout std_logic; 
+             OVF  : out   std_logic; 
+             C    : out   std_logic_vector (7 downto 0));
+   end component;
    
 begin
    XLXI_1 : Full_AdderSub8_MUSER_ProgramGround
@@ -1191,6 +1203,14 @@ begin
                 nIM_Din=>EN_ADDorSUB,
                 DOut(7 downto 0)=>XLXN_186(7 downto 0));
    
+   XLXI_74 : addsub8
+      port map (A(7 downto 0)=>XLXI_74_A_openSignal(7 downto 0),
+                B(7 downto 0)=>XLXI_74_B_openSignal(7 downto 0),
+                CTRL(1 downto 0)=>XLXI_74_CTRL_openSignal(1 downto 0),
+                C=>open,
+                OVF=>open,
+                NEG=>open);
+   
 end BEHAVIORAL;
 
 
@@ -1208,7 +1228,6 @@ entity ProgramGround is
           tick        : in    std_logic_vector (2 downto 0); 
           Accumulator : out   std_logic_vector (7 downto 0); 
           HLT         : out   std_logic; 
-          Neg         : out   std_logic; 
           OFL         : out   std_logic; 
           RegC        : out   std_logic_vector (7 downto 0); 
           RegS        : out   std_logic_vector (3 downto 0); 
@@ -1234,7 +1253,6 @@ architecture BEHAVIORAL of ProgramGround is
    signal Din                          : std_logic_vector (7 downto 0);
    signal EN_ADD                       : std_logic;
    signal EN_ADDorSUB                  : std_logic;
-   signal EN_OFL                       : std_logic;
    signal EN_Reg                       : std_logic_vector (3 downto 0);
    signal EN_Reg0                      : std_logic;
    signal EN_Reg1                      : std_logic;
@@ -1254,8 +1272,8 @@ architecture BEHAVIORAL of ProgramGround is
    signal NOP_Reg1                     : std_logic;
    signal NOP_Reg2                     : std_logic;
    signal NOP_Reg3                     : std_logic;
-   signal OFL_C                        : std_logic;
    signal Overflow                     : std_logic_vector (7 downto 0);
+   signal RegIn                        : std_logic_vector (3 downto 0);
    signal RegWrite                     : std_logic;
    signal r0                           : std_logic;
    signal r1                           : std_logic;
@@ -1272,22 +1290,17 @@ architecture BEHAVIORAL of ProgramGround is
    signal SUB                          : std_logic;
    signal SUBU                         : std_logic;
    signal Sum                          : std_logic_vector (7 downto 0);
-   signal XLXN_465                     : std_logic_vector (3 downto 0);
-   signal XLXN_469                     : std_logic;
-   signal XLXN_471                     : std_logic;
-   signal XLXN_472                     : std_logic;
    signal XLXN_475                     : std_logic;
    signal XLXN_476                     : std_logic;
    signal XLXN_499                     : std_logic_vector (7 downto 0);
    signal XLXN_545                     : std_logic_vector (7 downto 0);
    signal XLXN_555                     : std_logic;
    signal XLXN_564                     : std_logic;
-   signal Neg_DUMMY                    : std_logic;
    signal Reg0_DUMMY                   : std_logic_vector (7 downto 0);
    signal Reg1_DUMMY                   : std_logic_vector (7 downto 0);
    signal Reg2_DUMMY                   : std_logic_vector (7 downto 0);
    signal Reg3_DUMMY                   : std_logic_vector (7 downto 0);
-   signal OFL_DUMMY                    : std_logic;
+   signal RegS_DUMMY                   : std_logic_vector (3 downto 0);
    signal Accumulator_DUMMY            : std_logic_vector (7 downto 0);
    signal XLXI_151_nADD_SUB_openSignal : std_logic;
    component ISA
@@ -1426,8 +1439,7 @@ architecture BEHAVIORAL of ProgramGround is
    
 begin
    Accumulator(7 downto 0) <= Accumulator_DUMMY(7 downto 0);
-   Neg <= Neg_DUMMY;
-   OFL <= OFL_DUMMY;
+   RegS(3 downto 0) <= RegS_DUMMY(3 downto 0);
    Reg0(7 downto 0) <= Reg0_DUMMY(7 downto 0);
    Reg1(7 downto 0) <= Reg1_DUMMY(7 downto 0);
    Reg2(7 downto 0) <= Reg2_DUMMY(7 downto 0);
@@ -1522,11 +1534,11 @@ begin
                 r3=>r3,
                 SBI=>SBI,
                 SUBorSUBU=>XLXN_475,
-                EN_OFL=>OFL_C,
-                OFL=>OFL_DUMMY,
+                EN_OFL=>RegIn(1),
+                OFL=>OFL,
                 Overflow(7 downto 0)=>Overflow(7 downto 0),
                 Sum(7 downto 0)=>Sum(7 downto 0),
-                Negative=>Neg_DUMMY);
+                Negative=>RegIn(0));
    
    XLXI_155 : OR2
       port map (I0=>CLR,
@@ -1625,11 +1637,11 @@ begin
                 O=>NOP_Reg1);
    
    XLXI_177 : Register_4bBit_MUSER_ProgramGround
-      port map (Din(3 downto 0)=>XLXN_465(3 downto 0),
-                R_CE=>XLXN_471,
-                R_CLR=>XLXN_472,
-                R_WCLK=>XLXN_469,
-                EN_Reg(3 downto 0)=>RegS(3 downto 0),
+      port map (Din(3 downto 0)=>RegIn(3 downto 0),
+                R_CE=>tick(1),
+                R_CLR=>CLR1,
+                R_WCLK=>EN_ADDorSUB,
+                EN_Reg(3 downto 0)=>RegS_DUMMY(3 downto 0),
                 EN_Reg0=>open,
                 EN_Reg1=>open,
                 EN_Reg2=>open,
@@ -1638,13 +1650,8 @@ begin
    XLXI_182 : MUX8_generic_MUSER_ProgramGround
       port map (D_In(7 downto 0)=>Overflow(7 downto 0),
                 I_In(7 downto 0)=>Accumulator_DUMMY(7 downto 0),
-                nIM_Din=>EN_OFL,
+                nIM_Din=>RegS_DUMMY(1),
                 DOut(7 downto 0)=>XLXN_499(7 downto 0));
-   
-   XLXI_193 : OR2
-      port map (I0=>OFL_C,
-                I1=>OFL_DUMMY,
-                O=>EN_OFL);
    
    XLXI_194 : OR2
       port map (I0=>XLXN_564,

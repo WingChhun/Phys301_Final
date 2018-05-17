@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : addersub8.vhf
--- /___/   /\     Timestamp : 05/16/2018 22:20:34
+-- /___/   /\     Timestamp : 05/17/2018 11:11:46
 -- \   \  /  \ 
 --  \___\/\___\ 
 --

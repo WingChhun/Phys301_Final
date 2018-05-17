@@ -158,6 +158,20 @@
             <line x2="48" y1="-48" y2="-56" x1="64" />
             <line x2="64" y1="-32" y2="-48" x1="64" />
         </blockdef>
+        <blockdef name="addsub8">
+            <timestamp>2018-5-16T0:52:42</timestamp>
+            <rect width="256" x="64" y="-192" height="192" />
+            <rect width="64" x="0" y="-172" height="24" />
+            <line x2="0" y1="-160" y2="-160" x1="64" />
+            <rect width="64" x="0" y="-108" height="24" />
+            <line x2="0" y1="-96" y2="-96" x1="64" />
+            <rect width="64" x="0" y="-44" height="24" />
+            <line x2="0" y1="-32" y2="-32" x1="64" />
+            <line x2="384" y1="-160" y2="-160" x1="320" />
+            <rect width="64" x="320" y="-108" height="24" />
+            <line x2="384" y1="-96" y2="-96" x1="320" />
+            <line x2="384" y1="-32" y2="-32" x1="320" />
+        </blockdef>
         <block symbolname="MUX8_generic" name="XLXI_22">
             <blockpin signalname="Reg0(7:0)" name="D_In(7:0)" />
             <blockpin signalname="XLXN_186(7:0)" name="I_In(7:0)" />
@@ -265,6 +279,14 @@
             <blockpin signalname="XLXN_188(7:0)" name="I_In(7:0)" />
             <blockpin signalname="XLXN_186(7:0)" name="DOut(7:0)" />
             <blockpin signalname="EN_ADDorSUB" name="nIM_Din" />
+        </block>
+        <block symbolname="addsub8" name="XLXI_74">
+            <blockpin name="A(7:0)" />
+            <blockpin name="B(7:0)" />
+            <blockpin name="CTRL(1:0)" />
+            <blockpin name="NEG" />
+            <blockpin name="OVF" />
+            <blockpin name="C(7:0)" />
         </block>
     </netlist>
     <sheet sheetnum="1" width="3520" height="2720">
@@ -643,5 +665,7 @@
         <branch name="XLXN_188(7:0)">
             <wire x2="928" y1="1680" y2="1680" x1="880" />
         </branch>
+        <instance x="1376" y="352" name="XLXI_74" orien="R0">
+        </instance>
     </sheet>
 </drawing>

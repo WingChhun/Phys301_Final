@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : MemoryV2.vhf
--- /___/   /\     Timestamp : 05/17/2018 01:55:09
+-- /___/   /\     Timestamp : 05/17/2018 12:45:01
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -1132,15 +1132,15 @@ architecture BEHAVIORAL of MemoryV2 is
    signal XLXN_468                    : std_logic_vector (7 downto 0);
    signal XLXN_560                    : std_logic_vector (7 downto 0);
    signal XLXN_578                    : std_logic;
-   signal XLXN_600                    : std_logic_vector (7 downto 0);
+   signal XLXN_581                    : std_logic_vector (7 downto 0);
    signal IR_DUMMY                    : std_logic_vector (7 downto 0);
    signal DR_DUMMY                    : std_logic_vector (7 downto 0);
    signal XLXI_133_EN_Reg0_openSignal : std_logic;
    signal XLXI_133_EN_Reg1_openSignal : std_logic;
    signal XLXI_133_Reg0_openSignal    : std_logic_vector (7 downto 0);
    signal XLXI_171_I_In_openSignal    : std_logic_vector (7 downto 0);
-   signal XLXI_179_nCS_openSignal     : std_logic;
-   signal XLXI_180_nCS_openSignal     : std_logic;
+   signal XLXI_203_nCS_openSignal     : std_logic;
+   signal XLXI_204_nCS_openSignal     : std_logic;
    component INV
       port ( I : in    std_logic; 
              O : out   std_logic);
@@ -1224,7 +1224,7 @@ architecture BEHAVIORAL of MemoryV2 is
              nIM_Din : in    std_logic);
    end component;
    
-   component sRAM32x8_pgmC_data
+   component sRAM32x8_pgmA_data
       port ( nCS  : in    std_logic; 
              nWE  : in    std_logic; 
              WCLK : in    std_logic; 
@@ -1233,7 +1233,7 @@ architecture BEHAVIORAL of MemoryV2 is
              Q    : out   std_logic_vector (7 downto 0));
    end component;
    
-   component sRAM32x8_pgmC_instr
+   component sRAM32x8_pgmA_instr
       port ( nCS  : in    std_logic; 
              nWE  : in    std_logic; 
              WCLK : in    std_logic; 
@@ -1321,7 +1321,7 @@ begin
                 EN_IR=>EN_IR,
                 EN_I_Memory=>EN_I_Memory,
                 Address(7 downto 0)=>Address(7 downto 0),
-                Data=>open,
+                Data(7 downto 0)=>XLXN_581(7 downto 0),
                 Instruction(7 downto 0)=>I_Data(7 downto 0));
    
    XLXI_162 : KEYPAD_Final_MUSER_MemoryV2
@@ -1364,18 +1364,18 @@ begin
                 I1=>EN_DR,
                 O=>XLXN_578);
    
-   XLXI_179 : sRAM32x8_pgmC_data
+   XLXI_203 : sRAM32x8_pgmA_data
       port map (A(4 downto 0)=>AOrCount(4 downto 0),
-                D(7 downto 0)=>I_Data(7 downto 0),
-                nCS=>XLXI_179_nCS_openSignal,
+                D(7 downto 0)=>XLXN_581(7 downto 0),
+                nCS=>XLXI_203_nCS_openSignal,
                 nWE=>nWE_D,
                 WCLK=>WCLK_DM,
                 Q(7 downto 0)=>DR_DUMMY(7 downto 0));
    
-   XLXI_180 : sRAM32x8_pgmC_instr
+   XLXI_204 : sRAM32x8_pgmA_instr
       port map (A(4 downto 0)=>AOrCount(4 downto 0),
-                D(7 downto 0)=>XLXN_600(7 downto 0),
-                nCS=>XLXI_180_nCS_openSignal,
+                D(7 downto 0)=>I_Data(7 downto 0),
+                nCS=>XLXI_204_nCS_openSignal,
                 nWE=>nWE_I,
                 WCLK=>WCLK_IM,
                 Q(7 downto 0)=>IR_DUMMY(7 downto 0));

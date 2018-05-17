@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : Register_4bBit.vhf
--- /___/   /\     Timestamp : 05/16/2018 21:02:00
+-- /___/   /\     Timestamp : 05/17/2018 11:11:52
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -203,7 +203,7 @@ architecture BEHAVIORAL of Register_4bBit is
              EN_2  : out   std_logic);
    end component;
    
-   attribute HU_SET of XLXI_1 : label is "XLXI_1_126";
+   attribute HU_SET of XLXI_1 : label is "XLXI_1_173";
 begin
    EN_Reg(3 downto 0) <= EN_Reg_DUMMY(3 downto 0);
    XLXI_1 : FD4CE_MXILINX_Register_4bBit
